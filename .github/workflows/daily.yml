@@ -1,0 +1,32 @@
+name: Daily listings
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Write tg_config.json
+        run: |
+          echo '{"token": "${{ secrets.TG_TOKEN }}", "chat_id": ${{ secrets.TG_CHAT_ID }}}' > tg_config.json
+
+      - name: Run notifier
+        run: python3 notify_new_listings.py
+
+      - name: Commit updated CSV and seen_ids
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add listings_latest.csv seen_ids.json || true
+          git diff --cached --quiet || git commit -m "update listings $(date +%Y-%m-%d)"
+          git push
