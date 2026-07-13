@@ -2,7 +2,7 @@ name: Daily listings
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 3 * * *'
   workflow_dispatch:
 
 permissions:
@@ -11,6 +11,9 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
+    env:
+      TG_TOKEN: ${{ secrets.TG_TOKEN }}
+      TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
     steps:
       - uses: actions/checkout@v4
 
@@ -18,17 +21,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
-      - name: Write tg_config.json
-        env:
-          TG_TOKEN: ${{ secrets.TG_TOKEN }}
-          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-        run: |
-          python3 -c "
-          import json, os
-          cfg = {'token': os.environ['TG_TOKEN'], 'chat_id': int(os.environ['TG_CHAT_ID'])}
-          open('tg_config.json', 'w').write(json.dumps(cfg))
-          "
 
       - name: Run notifier
         run: python3 notify_new_listings.py
