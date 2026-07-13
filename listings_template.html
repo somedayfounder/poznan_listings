@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Новостройки Познань — __TOTAL__ объявлений</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:13px;background:#f5f5f3;color:#1a1a19}
+.wrap{padding:20px;max-width:1600px;margin:0 auto}
+h1{font-size:17px;font-weight:500;margin-bottom:14px}
+.controls{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center}
+.controls input,.controls select{font-size:12px;padding:5px 10px;border:1px solid #ccc;border-radius:6px;background:#fff;color:#1a1a19;height:30px}
+.controls input{flex:1;min-width:180px}
+.tbl-wrap{overflow-x:auto;border-radius:10px;border:1px solid #d3d1c7;background:#fff}
+table{width:100%;border-collapse:collapse}
+thead th{background:#f8f8f6;font-size:11px;font-weight:500;color:#666;padding:9px 11px;text-align:left;border-bottom:1px solid #e0dfd8;cursor:pointer;white-space:nowrap;position:sticky;top:0;z-index:1}
+thead th:hover{color:#111}
+thead th.asc::after{content:' ↑'}
+thead th.desc::after{content:' ↓'}
+td{padding:7px 11px;border-bottom:0.5px solid #eee;vertical-align:middle;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#fafaf8}
+.tp{display:inline-block;font-size:10px;padding:2px 6px;border-radius:4px;font-weight:500}
+.m{background:#dbeafe;color:#1e40af}
+.d{background:#dcfce7;color:#166534}
+a{color:#1d4ed8;text-decoration:none;max-width:240px;display:inline-block;overflow:hidden;text-overflow:ellipsis;vertical-align:bottom}
+a:hover{text-decoration:underline}
+.bar{display:inline-block;height:5px;background:#bfdbfe;border-radius:2px;vertical-align:middle;margin-right:5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Новостройки Познань — квартиры и дома, от 80 м², до 1 400 000 zł &nbsp;<span id="cnt" style="color:#888;font-weight:400"></span></h1>
+<div class="controls">
+  <input id="sq" placeholder="Поиск по названию, улице, городу, проекту..." oninput="render()">
+  <select id="st" onchange="render()">
+    <option value="">Все типы</option>
+    <option value="mieszkanie">Квартиры</option>
+    <option value="dom">Дома</option>
+  </select>
+  <select id="sr" onchange="render()">
+    <option value="">Любые комнаты</option>
+    <option value="2">от 2 комнат</option>
+    <option value="3">от 3 комнат</option>
+    <option value="4">от 4 комнат</option>
+    <option value="5">от 5 комнат</option>
+  </select>
+  <select id="sa" onchange="render()">
+    <option value="">Любая площадь</option>
+    <option value="90">от 90 м²</option>
+    <option value="100">от 100 м²</option>
+    <option value="120">от 120 м²</option>
+    <option value="150">от 150 м²</option>
+  </select>
+  <select id="sp" onchange="render()">
+    <option value="">Любая цена</option>
+    <option value="600000">до 600 000 zł</option>
+    <option value="800000">до 800 000 zł</option>
+    <option value="1000000">до 1 000 000 zł</option>
+    <option value="1200000">до 1 200 000 zł</option>
+  </select>
+  <select id="sd_min" onchange="render()">
+    <option value="">От ратуши от</option>
+    <option value="3">от 3 км</option>
+    <option value="6">от 6 км</option>
+    <option value="9">от 9 км</option>
+    <option value="12">от 12 км</option>
+    <option value="15">от 15 км</option>
+    <option value="18">от 18 км</option>
+  </select>
+  <select id="sd" onchange="render()">
+    <option value="">до</option>
+    <option value="3">до 3 км</option>
+    <option value="6">до 6 км</option>
+    <option value="9">до 9 км</option>
+    <option value="12">до 12 км</option>
+    <option value="15">до 15 км</option>
+    <option value="18">до 18 км</option>
+    <option value="21">до 21 км</option>
+    <option value="30">до 30 км</option>
+  </select>
+  <select id="stram_min" onchange="render()">
+    <option value="">До трамвая от</option>
+    <option value="0.5">от 500 м</option>
+    <option value="1">от 1 км</option>
+    <option value="2">от 2 км</option>
+    <option value="3">от 3 км</option>
+    <option value="5">от 5 км</option>
+    <option value="8">от 8 км</option>
+    <option value="12">от 12 км</option>
+  </select>
+  <select id="stram" onchange="render()">
+    <option value="">до</option>
+    <option value="0.5">до 500 м</option>
+    <option value="1">до 1 км</option>
+    <option value="2">до 2 км</option>
+    <option value="3">до 3 км</option>
+    <option value="5">до 5 км</option>
+    <option value="8">до 8 км</option>
+    <option value="12">до 12 км</option>
+    <option value="20">до 20 км</option>
+  </select>
+</div>
+<div class="tbl-wrap">
+<table>
+<thead><tr>
+  <th onclick="sort('title')" style="min-width:220px">Объявление</th>
+  <th onclick="sort('type')">Тип</th>
+  <th onclick="sort('area')">м²</th>
+  <th onclick="sort('rooms')">Ком.</th>
+  <th onclick="sort('floor')">Этаж</th>
+  <th onclick="sort('price')">Цена zł</th>
+  <th onclick="sort('price_m2')">zł/м²</th>
+  <th onclick="sort('city')">Город</th>
+  <th onclick="sort('project')" style="min-width:140px">Проект</th>
+  <th onclick="sort('dist')" class="asc">До ратуши</th>
+  <th onclick="sort('dist_tram')">Транспорт</th>
+</tr></thead>
+<tbody id="tb"></tbody>
+</table>
+</div>
+</div>
+<script>
+const D=__DATA__;
+const MX=__MX__;
+let sk='dist',sd_=1;
+function sort(k){if(sk===k)sd_*=-1;else{sk=k;sd_=1;}
+document.querySelectorAll('thead th').forEach(t=>t.className='');
+const ths=document.querySelectorAll('thead th');
+const ki=['title','type','area','rooms','floor','price','price_m2','city','project','dist','dist_tram'];
+const idx=ki.indexOf(k);if(idx>=0)ths[idx].className=sd_===1?'asc':'desc';render();}
+function render(){
+const q=(document.getElementById('sq').value||'').toLowerCase();
+const st=document.getElementById('st').value;
+const sr=parseInt(document.getElementById('sr').value)||0;
+const sa=parseFloat(document.getElementById('sa').value)||0;
+const sp=parseFloat(document.getElementById('sp').value)||0;
+const md=parseFloat(document.getElementById('sd').value)||Infinity;
+const md_min=parseFloat(document.getElementById('sd_min').value)||0;
+const mtram=parseFloat(document.getElementById('stram').value)||Infinity;
+const mtram_min=parseFloat(document.getElementById('stram_min').value)||0;
+let rs=D.filter(r=>{
+  if(st&&r.type!==st)return false;
+  if(sr&&(r.rooms==null||r.rooms<sr))return false;
+  if(sa&&(r.area==null||r.area<sa))return false;
+  if(sp&&r.price&&r.price>sp)return false;
+  if(md<Infinity&&(r.dist==null||r.dist>md))return false;
+  if(md_min&&(r.dist==null||r.dist<md_min))return false;
+  if(mtram<Infinity&&(r.dist_tram==null||r.dist_tram>mtram))return false;
+  if(mtram_min&&(r.dist_tram==null||r.dist_tram<mtram_min))return false;
+  if(q&&![r.title,r.city,r.street||'',r.project||''].join(' ').toLowerCase().includes(q))return false;
+  return true;
+});
+rs.sort((a,b)=>{
+  let av=a[sk],bv=b[sk];
+  if(av==null)av=sd_>0?1e9:-1e9;
+  if(bv==null)bv=sd_>0?1e9:-1e9;
+  return(av<bv?-1:av>bv?1:0)*sd_;
+});
+document.getElementById('cnt').textContent=rs.length+' из __TOTAL__';
+document.getElementById('tb').innerHTML=rs.map(r=>{
+const bw=r.dist?Math.round(r.dist/MX*55):0;
+const dc=r.dist!=null?`<span class="bar" style="width:${bw}px"></span>${r.dist} км`:'—';
+const dt_v=r.dist_tram;
+const dt_c=dt_v==null?'#999':dt_v<=0.5?'#166534':dt_v<=2?'#1e40af':dt_v<=8?'#854d0e':'#991b1b';
+const dt_s=dt_v==null?'—':dt_v<1?(dt_v*1000|0)+' м':dt_v.toFixed(1)+' км';
+const dt=dt_v!=null?`<span style="color:${dt_c};font-weight:500" title="${r.tram_tip||''}">🚊 ${dt_s}</span>`:'';
+const dr_v=r.dist_rail;
+const dr_c=dr_v==null?'#999':dr_v<=2?'#166534':dr_v<=8?'#1e40af':dr_v<=20?'#854d0e':'#991b1b';
+const dr_s=dr_v==null?'—':dr_v<1?(dr_v*1000|0)+' м':dr_v.toFixed(1)+' км';
+const dr=dr_v!=null?`<span style="color:${dr_c};font-weight:500" title="${r.rail_tip||''}">🚆 ${dr_s}</span>`:'';
+const transport=dt||dr?[dt,dr].filter(Boolean).join(' &nbsp;'):'—';
+const pr=r.price?r.price.toLocaleString('pl')+' zł':'—';
+const pm=r.price_m2?r.price_m2.toLocaleString('pl'):'—';
+const tc=r.type==='mieszkanie'?'m':'d';
+const tl=r.type==='mieszkanie'?'кв.':'дом';
+return`<tr>
+<td><a href="${r.url}" target="_blank" title="${r.title}">${r.title}</a></td>
+<td><span class="tp ${tc}">${tl}</span></td>
+<td>${r.area!=null?r.area:'—'}</td>
+<td>${r.rooms||'—'}</td>
+<td>${r.floor!=null?r.floor:'—'}</td>
+<td style="font-variant-numeric:tabular-nums">${pr}</td>
+<td style="font-variant-numeric:tabular-nums">${pm}</td>
+<td>${r.city}</td>
+<td style="max-width:150px;overflow:hidden;text-overflow:ellipsis;color:#666" title="${r.project||''}">${r.project||'—'}</td>
+<td style="white-space:nowrap">${dc}</td>
+<td style="white-space:nowrap">${transport}</td>
+</tr>`;
+}).join('');
+}
+render();
+</script>
+</body>
+</html>
