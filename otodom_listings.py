@@ -50,6 +50,10 @@ EXCLUDED_CITIES = {"Komorniki", "Plewiska", "Robakowo", "Nowinki", "Wierzyce",
                    "Dachowa", "Rokietnica", "Murowana Goślina", "Bolechowo",
                    "Swarzędz", "Mosina", "Luboń", "Czerwonak"}
 
+# Отдельные НП, которые на самом деле внутри Познани
+POZNAN_SUBURBS = {"Smochowice", "Naramowice", "Strzeszyn", "Morasko",
+                  "Szczepankowo", "Spławie", "Głuszyna", "Fabianowo"}
+
 RATUSZ = (52.40832, 16.93361)
 TRAM_STOPS_FILE = DATA_DIR / "tram_stops.json"
 TRAMS = json.loads(TRAM_STOPS_FILE.read_text()) if TRAM_STOPS_FILE.exists() else []
@@ -84,6 +88,11 @@ def parse_item(item, estate_type, trams):
     district = ""
     if len(rev) >= 2:
         district = rev[-1].get("fullName", "").split(",")[0].strip()
+
+    # НП внутри Познани, которые Otodom отдаёт как отдельный город
+    if city in POZNAN_SUBURBS:
+        district = city
+        city = "Poznań"
 
     # координаты прямо из otodom
     coords = (item.get("location") or {}).get("coordinates") or {}

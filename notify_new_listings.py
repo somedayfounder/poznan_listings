@@ -13,6 +13,12 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
 
+EXCLUDED_CITIES = {"Komorniki", "Plewiska", "Robakowo", "Nowinki", "Wierzyce",
+                   "Dachowa", "Rokietnica", "Murowana Goślina", "Bolechowo",
+                   "Swarzędz", "Mosina", "Luboń", "Czerwonak"}
+POZNAN_SUBURBS = {"Smochowice", "Naramowice", "Strzeszyn", "Morasko",
+                  "Szczepankowo", "Spławie", "Głuszyna", "Fabianowo"}
+
 DATA_DIR = Path(__file__).parent
 
 def _cfg():
@@ -43,6 +49,19 @@ def tg_send_photo(photo_url, caption):
     url = f"https://api.telegram.org/bot{TOKEN}/sendPhoto"
     data = urlencode({"chat_id": CHAT_ID, "photo": photo_url,
                       "caption": caption, "parse_mode": "HTML"}).encode()
+    urlopen(Request(url, data=data), timeout=15)
+
+
+def tg_send_media_group(photo_urls, caption):
+    media = []
+    for i, u in enumerate(photo_urls[:3]):
+        entry = {"type": "photo", "media": u}
+        if i == 0:
+            entry["caption"] = caption
+            entry["parse_mode"] = "HTML"
+        media.append(entry)
+    url = f"https://api.telegram.org/bot{TOKEN}/sendMediaGroup"
+    data = urlencode({"chat_id": CHAT_ID, "media": json.dumps(media)}).encode()
     urlopen(Request(url, data=data), timeout=15)
 
 
@@ -110,8 +129,9 @@ for r in rows:
             r['lat'] = round(coords['latitude'], 5)
             r['lon'] = round(coords['longitude'], 5)
         images = ad.get('images') or []
-        if images:
-            r['photo_url'] = images[0].get('large') or images[0].get('medium') or ''
+        urls = [img.get('large') or img.get('medium') or '' for img in images[:3] if img.get('large') or img.get('medium')]
+        if urls:
+            r['photo_url'] = ','.join(urls)
     except: pass
     time.sleep(0.3)
 fields = list(rows[0].keys())
@@ -131,6 +151,13 @@ print('coords done')
 
     # 4. Читаем результат
     rows = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
+    # Страховочный фильтр: исключаем НП не из нашей зоны
+    rows = [r for r in rows if r.get("city") not in EXCLUDED_CITIES]
+    # Маппинг НП внутри Познани
+    for r in rows:
+        if r.get("city") in POZNAN_SUBURBS:
+            r["district"] = r["city"]
+            r["city"] = "Poznań"
     all_ids = set(r["id"] for r in rows)
     new_rows = [r for r in rows if r["id"] not in seen]
     print(f"Новых объявлений: {len(new_rows)}")
@@ -151,7 +178,7 @@ print('coords done')
             dist_r = fmt_dist(r.get("drive_ratusz_km") or r.get("dist_km"))
             dist_t = fmt_dist(r.get("drive_tram_km") or r.get("dist_tram"))
             tram = r.get("drive_tram_name") or r.get("tram_name") or ""
-            photo = r.get("photo_url", "")
+            photos = [u for u in (r.get("photo_url") or "").split(",") if u]
             caption = (
                 f"<b>{_escape(r['title'])}</b>\n"
                 f"{tp} · {area} · {price}\n"
@@ -161,8 +188,10 @@ print('coords done')
                 f"<a href=\"{r['url']}\">Открыть →</a>"
             )
             try:
-                if photo:
-                    tg_send_photo(photo, caption)
+                if len(photos) >= 2:
+                    tg_send_media_group(photos, caption)
+                elif photos:
+                    tg_send_photo(photos[0], caption)
                 else:
                     tg_send(caption)
                 time.sleep(0.3)
