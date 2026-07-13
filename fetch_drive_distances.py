@@ -74,13 +74,11 @@ if new_rows:
         for src in sources
     ]
 
-    # Уникальные остановки
-    all_tram_set = {(t["lat"], t["lon"], t["name"]) for ts in top_trams_per_row for t in ts}
+    # Уникальные ж/д остановки
     all_rail_set = {(s["lat"], s["lon"], s["name"]) for ss in top_rails_per_row for s in ss}
-    tram_list = list(all_tram_set)
     rail_list = list(all_rail_set)
-    tram_idx = {(t[0], t[1]): i for i, t in enumerate(tram_list)}
     rail_idx = {(s[0], s[1]): i for i, s in enumerate(rail_list)}
+    rail_dests = [(s[0], s[1]) for s in rail_list]
 
     # Батч-запросы (OSRM ограничен ~500 точек в URL)
     BATCH = 200
@@ -97,12 +95,6 @@ if new_rows:
             time.sleep(0.3)
         return result
 
-    tram_dests = [(t[0], t[1]) for t in tram_list]
-    rail_dests = [(s[0], s[1]) for s in rail_list]
-
-    print("  Считаем расстояния до трамваев…")
-    tram_mat = batch_table(sources, tram_dests) if tram_dests else []
-
     print("  Считаем расстояния до ж/д…")
     rail_mat = batch_table(sources, rail_dests) if rail_dests else []
 
@@ -110,22 +102,16 @@ if new_rows:
     ratusz_mat = batch_table(sources, [RATUSZ])
 
     for i, r in enumerate(new_rows):
+        src = sources[i]
         entry = {}
 
         # Ратуша
         entry["drive_ratusz_km"] = (ratusz_mat[i][0] if ratusz_mat and ratusz_mat[i] else None) or ""
 
-        # Трамваи
-        best_tram_d, best_tram_n = None, ""
-        if tram_mat and tram_mat[i]:
-            for t in top_trams_per_row[i]:
-                j = tram_idx.get((t["lat"], t["lon"]))
-                if j is not None and tram_mat[i][j] is not None:
-                    d = tram_mat[i][j]
-                    if best_tram_d is None or d < best_tram_d:
-                        best_tram_d, best_tram_n = d, t["name"]
-        entry["drive_tram_km"] = best_tram_d or ""
-        entry["drive_tram_name"] = best_tram_n
+        # Трамваи — haversine (пешком, прямая линия достаточно точна)
+        nearest = min(top_trams_per_row[i], key=lambda t: hav(*src, t["lat"], t["lon"]))
+        entry["drive_tram_km"] = round(hav(*src, nearest["lat"], nearest["lon"]), 2)
+        entry["drive_tram_name"] = nearest["name"]
 
         # Ж/д
         best_rail_d, best_rail_n = None, ""
