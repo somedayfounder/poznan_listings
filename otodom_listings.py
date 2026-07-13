@@ -45,6 +45,11 @@ FLOOR_MAP = {
     "BASEMENT": "piwnica",
 }
 
+# Населённые пункты за пределами интереса (слишком далеко / не тот район)
+EXCLUDED_CITIES = {"Komorniki", "Plewiska", "Robakowo", "Nowinki", "Wierzyce",
+                   "Dachowa", "Rokietnica", "Murowana Goślina", "Bolechowo",
+                   "Swarzędz", "Mosina", "Luboń", "Czerwonak"}
+
 RATUSZ = (52.40832, 16.93361)
 TRAM_STOPS_FILE = DATA_DIR / "tram_stops.json"
 TRAMS = json.loads(TRAM_STOPS_FILE.read_text()) if TRAM_STOPS_FILE.exists() else []
@@ -163,8 +168,11 @@ def get_all_listings():
                     continue
                 if item.get("estate") == "INVESTMENT":
                     continue
+                parsed = parse_item(item, estate_type, TRAMS)
+                if parsed["city"] in EXCLUDED_CITIES:
+                    continue
                 seen_ids.add(item["id"])
-                results.append(parse_item(item, estate_type, TRAMS))
+                results.append(parsed)
                 new_on_page += 1
 
             print(f"    page {page}/{total_pages} — {new_on_page} new (total={total_items})")
