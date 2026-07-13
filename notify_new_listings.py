@@ -197,7 +197,7 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
     if not new_rows:
         pass  # уже сообщили выше
     else:
-        for r in new_rows[:30]:  # не больше 30 за раз
+        for r in new_rows:
             price = f"{int(float(r['price_zl'])):,}".replace(",", " ") + " zł" if r.get("price_zl") else "цена не указана"
             area = f"{r['area_m2']} м²" if r.get("area_m2") else ""
             tp = "кв." if r["type"] == "mieszkanie" else "дом"
@@ -232,8 +232,6 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
                 except Exception as e2:
                     print(f"TG fallback error: {e2}")
 
-        if len(new_rows) > 30:
-            tg_send(f"... и ещё {len(new_rows)-30} объявлений")
 
     # 6. Обновляем seen
     save_seen(all_ids)
