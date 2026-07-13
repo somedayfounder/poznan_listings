@@ -149,7 +149,8 @@ for r in rows:
             entry['lat'] = round(coords['latitude'], 5)
             entry['lon'] = round(coords['longitude'], 5)
         images = ad.get('images') or []
-        urls = [img.get('large') or img.get('medium') or '' for img in images[:3] if img.get('large') or img.get('medium')]
+        def _u(i): return i.get('large') or i.get('medium') or ''
+        urls = [_u(i) for i in images[1:4] if _u(i)] or [_u(i) for i in images[0:1] if _u(i)]
         if urls:
             entry['photo_url'] = ','.join(urls)
     except: pass
