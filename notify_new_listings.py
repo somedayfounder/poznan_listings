@@ -115,20 +115,30 @@ def run():
 
     # Считаем сколько объявлений спарсили
     _rows_after_parse = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
-    _need_coords = sum(1 for row in _rows_after_parse if not row.get("lat"))
-    tg_safe(f"📋 <b>Спарсили:</b> {len(_rows_after_parse)} объявлений, нужно координат: {_need_coords}", "parse")
+    _cache_file = DATA_DIR / "coords_cache.json"
+    _cache = json.loads(_cache_file.read_text()) if _cache_file.exists() else {}
+    _need_coords = sum(1 for row in _rows_after_parse if row["id"] not in _cache)
+    tg_safe(f"📋 <b>Спарсили:</b> {len(_rows_after_parse)} объявлений, нужно загрузить: {_need_coords}", "parse")
 
-    # 2. Координаты с otodom
+    # 2. Координаты с otodom — только новые, кэшируем по id
     print("Получаем координаты...")
     if _need_coords:
         tg_safe(f"🌐 Загружаем {_need_coords} страниц для координат и фото…", "coords")
     subprocess.run([sys.executable, "-c", f"""
 import csv, re, json, time
+from pathlib import Path
 from urllib.request import Request, urlopen
 HEADERS = {{'User-Agent': 'Mozilla/5.0'}}
+cache_file = Path('coords_cache.json')
+cache = json.loads(cache_file.read_text()) if cache_file.exists() else {{}}
 rows = list(csv.DictReader(open('listings_latest.csv', encoding='utf-8-sig')))
+fetched = 0
 for r in rows:
-    if r.get('lat') and r.get('lon'): continue
+    rid = r['id']
+    if rid in cache:
+        r.update(cache[rid])
+        continue
+    entry = {{}}
     try:
         req = Request(r['url'], headers=HEADERS)
         html = urlopen(req, timeout=15).read().decode('utf-8','replace')
@@ -136,14 +146,21 @@ for r in rows:
         ad = json.loads(m.group(1))['props']['pageProps'].get('ad') or {{}}
         coords = (ad.get('location') or {{}}).get('coordinates') or {{}}
         if coords.get('latitude'):
-            r['lat'] = round(coords['latitude'], 5)
-            r['lon'] = round(coords['longitude'], 5)
+            entry['lat'] = round(coords['latitude'], 5)
+            entry['lon'] = round(coords['longitude'], 5)
         images = ad.get('images') or []
         urls = [img.get('large') or img.get('medium') or '' for img in images[:3] if img.get('large') or img.get('medium')]
         if urls:
-            r['photo_url'] = ','.join(urls)
+            entry['photo_url'] = ','.join(urls)
     except: pass
+    cache[rid] = entry
+    r.update(entry)
+    fetched += 1
+    if fetched % 50 == 0:
+        cache_file.write_text(json.dumps(cache))
+        print(f'  coords: {{fetched}} fetched')
     time.sleep(0.3)
+cache_file.write_text(json.dumps(cache))
 fields = list(rows[0].keys())
 for extra in ['photo_url','drive_ratusz_km','drive_tram_km','drive_tram_name','drive_rail_km','drive_rail_name']:
     if extra not in fields: fields.append(extra)
@@ -151,7 +168,7 @@ import csv as c2
 with open('listings_latest.csv','w',newline='',encoding='utf-8-sig') as f:
     w = c2.DictWriter(f, fieldnames=fields, extrasaction='ignore')
     w.writeheader(); w.writerows(rows)
-print('coords done')
+print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
 """], cwd=DATA_DIR, capture_output=True, text=True)
 
     tg_safe("🗺 Считаем маршруты…", "osrm")
