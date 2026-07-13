@@ -58,6 +58,10 @@ for r in rows:
     r["drive_rail_km"] = best_rail[0] if best_rail[0] else ""
     r["drive_rail_name"] = best_rail[1] if best_rail[0] else ""
 
+    # расстояние до Ратуши Познани
+    RATUSZ = (52.4082, 16.9335)
+    r["drive_ratusz_km"] = osrm_drive(lat, lon, *RATUSZ) or ""
+
     done += 1
     if done % 50 == 0:
         print(f"  {done}/{total}")
@@ -67,10 +71,9 @@ print(f"Готово: {done}/{total}")
 
 fields = ["id","type","title","area_m2","rooms","floor","price_zl","price_per_m2",
           "street","district","city","project","lat","lon","dist_km","dist_tram","tram_name",
-          "drive_tram_km","drive_tram_name","drive_rail_km","drive_rail_name","url"]
+          "drive_ratusz_km","drive_tram_km","drive_tram_name","drive_rail_km","drive_rail_name","url"]
 with open("listings_latest.csv", "w", newline="", encoding="utf-8-sig") as f:
     w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
     w.writeheader()
     w.writerows(rows)
 print("CSV обновлён")
-# --- добавляем drive_ratusz_km ---
