@@ -71,7 +71,7 @@ print(f"Готово: {done}/{total}")
 
 fields = ["id","type","title","area_m2","rooms","floor","price_zl","price_per_m2",
           "street","district","city","project","lat","lon","dist_km","dist_tram","tram_name",
-          "drive_ratusz_km","drive_tram_km","drive_tram_name","drive_rail_km","drive_rail_name","url"]
+          "photo_url","drive_ratusz_km","drive_tram_km","drive_tram_name","drive_rail_km","drive_rail_name","url"]
 with open("listings_latest.csv", "w", newline="", encoding="utf-8-sig") as f:
     w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
     w.writeheader()
