@@ -160,7 +160,7 @@ rs.sort((a,b)=>{
 document.getElementById('cnt').textContent=rs.length+' из __TOTAL__';
 document.getElementById('tb').innerHTML=rs.map(r=>{
 const bw=r.dist?Math.round(r.dist/MX*55):0;
-const dc=r.dist!=null?`<span class="bar" style="width:${bw}px"></span>${r.dist} км`:'—';
+const dc=r.dist!=null?`<span class="bar" style="width:${bw}px"></span>${r.dist.toFixed(1)} км`:'—';
 const dt_v=r.dist_tram;
 const dt_c=dt_v==null?'#999':dt_v<=0.5?'#166534':dt_v<=2?'#1e40af':dt_v<=8?'#854d0e':'#991b1b';
 const dt_s=dt_v==null?'—':dt_v<1?(dt_v*1000|0)+' м':dt_v.toFixed(1)+' км';
