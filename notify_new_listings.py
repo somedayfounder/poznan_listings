@@ -14,9 +14,17 @@ from urllib.request import Request, urlopen
 from urllib.parse import urlencode
 
 DATA_DIR = Path(__file__).parent
-TG_CONFIG = json.loads((DATA_DIR / "tg_config.json").read_text())
-TOKEN = TG_CONFIG["token"]
-CHAT_ID = TG_CONFIG["chat_id"]
+
+def _cfg():
+    token = os.environ.get("TG_TOKEN")
+    chat_id = os.environ.get("TG_CHAT_ID")
+    if token and chat_id:
+        return token, int(chat_id)
+    cfg = json.loads((DATA_DIR / "tg_config.json").read_text())
+    return cfg["token"], cfg["chat_id"]
+
+import os
+TOKEN, CHAT_ID = _cfg()
 SEEN_FILE = DATA_DIR / "seen_ids.json"
 
 
@@ -54,6 +62,11 @@ def fmt_dist(d):
 def run():
     today = date.today().isoformat()
     print(f"=== {today} ===")
+
+    try:
+        tg_send(f"⏳ <b>Квартиры</b>: запуск {today}…")
+    except Exception as e:
+        print(f"TG start error: {e}")
 
     seen = load_seen()
     print(f"Известно объявлений: {len(seen)}")
@@ -139,6 +152,10 @@ print('coords done')
     # 6. Обновляем seen
     save_seen(all_ids)
     print("Готово")
+    try:
+        tg_send(f"✅ <b>Квартиры</b>: готово. Всего {len(rows)}, новых {len(new_rows)}")
+    except Exception as e:
+        print(f"TG finish error: {e}")
 
 
 if __name__ == "__main__":
