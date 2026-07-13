@@ -28,6 +28,10 @@ TOKEN, CHAT_ID = _cfg()
 SEEN_FILE = DATA_DIR / "seen_ids.json"
 
 
+def _escape(s):
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
 def tg_send(text):
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
     data = urlencode({"chat_id": CHAT_ID, "text": text, "parse_mode": "HTML",
@@ -149,7 +153,7 @@ print('coords done')
             tram = r.get("drive_tram_name") or r.get("tram_name") or ""
             photo = r.get("photo_url", "")
             caption = (
-                f"<b>{r['title']}</b>\n"
+                f"<b>{_escape(r['title'])}</b>\n"
                 f"{tp} · {area} · {price}\n"
                 f"📍 {location}\n"
                 f"🏛 до ратуши {dist_r} · 🚊 до трамвая {dist_t}"
