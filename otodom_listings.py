@@ -9,12 +9,28 @@ Otodom — квартиры и дома, первичный рынок, от 80 
 
 import csv
 import json
+import os
 import re
 import time
 from datetime import date
 from math import radians, sin, cos, sqrt, atan2
 from pathlib import Path
+from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+
+
+def _tg_safe(text):
+    token = os.environ.get("TG_TOKEN")
+    chat_id = os.environ.get("TG_CHAT_ID")
+    if not token or not chat_id:
+        return
+    try:
+        data = urlencode({"chat_id": chat_id, "text": text, "parse_mode": "HTML",
+                          "disable_web_page_preview": "true"}).encode()
+        urlopen(Request(f"https://api.telegram.org/bot{token}/sendMessage",
+                        data=data), timeout=10)
+    except Exception as e:
+        print(f"TG error: {e}")
 
 BASE = "https://www.otodom.pl"
 DATA_DIR = Path(__file__).parent
@@ -183,6 +199,8 @@ def get_all_listings():
                 seen_ids.add(item["id"])
                 results.append(parsed)
                 new_on_page += 1
+                if len(results) % 100 == 0:
+                    _tg_safe(f"🔄 Парсинг: собрано {len(results)} объявлений…")
 
             print(f"    page {page}/{total_pages} — {new_on_page} new (total={total_items})")
 
