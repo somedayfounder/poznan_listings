@@ -101,6 +101,8 @@ for r in rows:
     except: pass
     time.sleep(0.3)
 fields = list(rows[0].keys())
+for extra in ['drive_ratusz_km','drive_tram_km','drive_tram_name','drive_rail_km','drive_rail_name']:
+    if extra not in fields: fields.append(extra)
 import csv as c2
 with open('listings_latest.csv','w',newline='',encoding='utf-8-sig') as f:
     w = c2.DictWriter(f, fieldnames=fields, extrasaction='ignore')
