@@ -93,10 +93,13 @@ def run():
     today = date.today().isoformat()
     print(f"=== {today} ===")
 
-    try:
-        tg_send(f"⏳ <b>Квартиры</b>: запуск {today}…")
-    except Exception as e:
-        print(f"TG start error: {e}")
+    def tg_safe(text, label=""):
+        try:
+            tg_send(text)
+        except Exception as e:
+            print(f"TG error {label}: {e}")
+
+    tg_safe(f"⏳ <b>Квартиры</b>: запуск {today}…", "start")
 
     seen = load_seen()
     print(f"Известно объявлений: {len(seen)}")
@@ -106,12 +109,19 @@ def run():
     r = subprocess.run([sys.executable, str(DATA_DIR / "otodom_listings.py")],
                        capture_output=True, text=True, cwd=DATA_DIR)
     if r.returncode != 0:
-        tg_send(f"❌ Ошибка парсера:\n{r.stderr[-500:]}")
+        tg_safe(f"❌ Ошибка парсера:\n{r.stderr[-500:]}")
         return
     print(r.stdout[-300:])
 
+    # Считаем сколько объявлений спарсили
+    _rows_after_parse = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
+    _need_coords = sum(1 for row in _rows_after_parse if not row.get("lat"))
+    tg_safe(f"📋 <b>Спарсили:</b> {len(_rows_after_parse)} объявлений, нужно координат: {_need_coords}", "parse")
+
     # 2. Координаты с otodom
     print("Получаем координаты...")
+    if _need_coords:
+        tg_safe(f"🌐 Загружаем {_need_coords} страниц для координат и фото…", "coords")
     subprocess.run([sys.executable, "-c", f"""
 import csv, re, json, time
 from urllib.request import Request, urlopen
@@ -144,6 +154,8 @@ with open('listings_latest.csv','w',newline='',encoding='utf-8-sig') as f:
 print('coords done')
 """], cwd=DATA_DIR, capture_output=True, text=True)
 
+    tg_safe("🗺 Считаем маршруты…", "osrm")
+
     # 3. Маршруты OSRM
     print("Считаем маршруты...")
     subprocess.run([sys.executable, str(DATA_DIR / "fetch_drive_distances.py")],
@@ -161,12 +173,12 @@ print('coords done')
     all_ids = set(r["id"] for r in rows)
     new_rows = [r for r in rows if r["id"] not in seen]
     print(f"Новых объявлений: {len(new_rows)}")
+    tg_safe(f"🏠 <b>Новых объявлений: {len(new_rows)}</b> (всего в базе: {len(rows)})", "new")
 
     # 5. Шлём в Telegram
     if not new_rows:
-        tg_send(f"📋 {today}: новых объявлений нет (всего {len(rows)})")
+        pass  # уже сообщили выше
     else:
-        tg_send(f"🏠 <b>{today}: {len(new_rows)} новых объявлений</b>")
         for r in new_rows[:30]:  # не больше 30 за раз
             price = f"{int(float(r['price_zl'])):,}".replace(",", " ") + " zł" if r.get("price_zl") else "цена не указана"
             area = f"{r['area_m2']} м²" if r.get("area_m2") else ""
@@ -208,10 +220,7 @@ print('coords done')
     # 6. Обновляем seen
     save_seen(all_ids)
     print("Готово")
-    try:
-        tg_send(f"✅ <b>Квартиры</b>: готово. Всего {len(rows)}, новых {len(new_rows)}")
-    except Exception as e:
-        print(f"TG finish error: {e}")
+    tg_safe(f"✅ <b>Квартиры</b>: готово. Всего {len(rows)}, новых {len(new_rows)}", "finish")
 
 
 if __name__ == "__main__":
