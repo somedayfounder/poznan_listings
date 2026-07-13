@@ -35,6 +35,13 @@ def tg_send(text):
     urlopen(Request(url, data=data), timeout=10)
 
 
+def tg_send_photo(photo_url, caption):
+    url = f"https://api.telegram.org/bot{TOKEN}/sendPhoto"
+    data = urlencode({"chat_id": CHAT_ID, "photo": photo_url,
+                      "caption": caption, "parse_mode": "HTML"}).encode()
+    urlopen(Request(url, data=data), timeout=15)
+
+
 def load_seen():
     if SEEN_FILE.exists():
         return set(json.loads(SEEN_FILE.read_text()))
@@ -98,10 +105,13 @@ for r in rows:
         if coords.get('latitude'):
             r['lat'] = round(coords['latitude'], 5)
             r['lon'] = round(coords['longitude'], 5)
+        images = ad.get('images') or []
+        if images:
+            r['photo_url'] = images[0].get('large') or images[0].get('medium') or ''
     except: pass
     time.sleep(0.3)
 fields = list(rows[0].keys())
-for extra in ['drive_ratusz_km','drive_tram_km','drive_tram_name','drive_rail_km','drive_rail_name']:
+for extra in ['photo_url','drive_ratusz_km','drive_tram_km','drive_tram_name','drive_rail_km','drive_rail_name']:
     if extra not in fields: fields.append(extra)
 import csv as c2
 with open('listings_latest.csv','w',newline='',encoding='utf-8-sig') as f:
@@ -130,23 +140,34 @@ print('coords done')
             price = f"{int(float(r['price_zl'])):,}".replace(",", " ") + " zł" if r.get("price_zl") else "цена не указана"
             area = f"{r['area_m2']} м²" if r.get("area_m2") else ""
             tp = "кв." if r["type"] == "mieszkanie" else "дом"
+            # Для Познани показываем район, для пригородов — город
             city = r.get("city", "")
+            district = r.get("district", "")
+            location = district if (city == "Poznań" and district) else city
             dist_r = fmt_dist(r.get("drive_ratusz_km") or r.get("dist_km"))
             dist_t = fmt_dist(r.get("drive_tram_km") or r.get("dist_tram"))
             tram = r.get("drive_tram_name") or r.get("tram_name") or ""
-            text = (
+            photo = r.get("photo_url", "")
+            caption = (
                 f"<b>{r['title']}</b>\n"
                 f"{tp} · {area} · {price}\n"
-                f"📍 {city}\n"
+                f"📍 {location}\n"
                 f"🏛 до ратуши {dist_r} · 🚊 до трамвая {dist_t}"
                 + (f" ({tram})" if tram else "") + "\n"
                 f"<a href=\"{r['url']}\">Открыть →</a>"
             )
             try:
-                tg_send(text)
+                if photo:
+                    tg_send_photo(photo, caption)
+                else:
+                    tg_send(caption)
                 time.sleep(0.3)
             except Exception as e:
                 print(f"TG error: {e}")
+                try:
+                    tg_send(caption)
+                except Exception as e2:
+                    print(f"TG fallback error: {e2}")
 
         if len(new_rows) > 30:
             tg_send(f"... и ещё {len(new_rows)-30} объявлений")
