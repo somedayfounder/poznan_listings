@@ -203,6 +203,25 @@ def _nuisance_penalty(lat, lon):
             total += penalty * (1 - dist / radius)
     return round(min(2.5, total), 2)
 
+def _noise_penalty(noise):
+    """
+    noise: dict {source: max_ldwn_dba} from noise_cache.json
+    Returns penalty 0–2.0 based on max LDWN across all sources.
+    EU residential limit: 55 dBA Lden. Each 5 dB above = +0.5 penalty.
+    """
+    if not noise:
+        return 0.0
+    max_ldwn = max(noise.values())
+    if max_ldwn <= 55:
+        return 0.0
+    if max_ldwn <= 60:
+        return 0.5
+    if max_ldwn <= 65:
+        return 1.0
+    if max_ldwn <= 70:
+        return 1.5
+    return 2.0
+
 def _score_district(district, city):
     """Check district first, then city name."""
     if district and district in DISTRICT_SCORES:
@@ -280,7 +299,7 @@ _BASE_W = {
 }
 
 
-def compute_score(price, area, rooms, tp, dist_tram, dist_center, district=None, city=None, lat=None, lon=None):
+def compute_score(price, area, rooms, tp, dist_tram, dist_center, district=None, city=None, lat=None, lon=None, noise=None):
     factors = [
         (_score_transport(tp, dist_tram, dist_center), _BASE_W["transport"]),
         (_score_district(district, city),               _BASE_W["district"]),
@@ -291,7 +310,7 @@ def compute_score(price, area, rooms, tp, dist_tram, dist_center, district=None,
     ]
     total_w = sum(w for _, w in factors)
     base = sum(sc * w for sc, w in factors) / total_w
-    penalty = _nuisance_penalty(lat, lon)
+    penalty = _nuisance_penalty(lat, lon) + _noise_penalty(noise)
     return round(max(0.0, base - penalty), 1)
 
 
@@ -338,4 +357,5 @@ def score_from_jsrow(r):
         city=r.get("city", ""),
         lat=r.get("lat"),
         lon=r.get("lon"),
+        noise=r.get("noise"),
     )

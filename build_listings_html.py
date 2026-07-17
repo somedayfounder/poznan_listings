@@ -1,10 +1,12 @@
 import csv, json
 from math import radians, sin, cos, sqrt, atan2
 from pathlib import Path
-from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE, DISTRICT_DESCRIPTIONS, _nuisance_penalty, _NUISANCE_SITES, _haversine
+from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE, DISTRICT_DESCRIPTIONS, _nuisance_penalty, _NUISANCE_SITES, _haversine, _noise_penalty
 from extract_features import feature_bonus, CACHE_FILE as FEAT_CACHE
 import json as _json
 _feat_cache = _json.loads(FEAT_CACHE.read_text()) if FEAT_CACHE.exists() else {}
+_NOISE_CACHE_FILE = Path("noise_cache.json")
+_noise_cache = _json.loads(_NOISE_CACHE_FILE.read_text()) if _NOISE_CACHE_FILE.exists() else {}
 
 trams = json.loads(Path("tram_stops.json").read_text())
 stop_lines = json.loads(Path("stop_lines.json").read_text())
@@ -79,7 +81,6 @@ for r in rows:
         "dist_rail": dist_rail, "rail_tip": rail_tip, "url": r["url"],
         "lat": lat, "lon": lon,
     }
-    base_score = score_from_jsrow(row)
     feat = _feat_cache.get(r["id"], {})
     bonus = feat.get("_bonus", 0.0)
     # nuisance: list of nearby problem sites for tooltip
@@ -91,6 +92,9 @@ for r in rows:
                 pen = round(penalty * (1 - dist_n / radius), 2)
                 nuisance.append({"name": name, "dist_km": round(dist_n, 1), "penalty": pen})
     row["nuisance"] = nuisance
+    noise = _noise_cache.get(f"{r.get('lat')},{r.get('lon')}", {}) if r.get("lat") and r.get("lon") else {}
+    row["noise"] = noise
+    base_score = score_from_jsrow(row)
     row["score"] = round(base_score, 1)
     row["base_score"] = round(base_score, 1)
     row["bonus"] = round(bonus, 2)
