@@ -13,9 +13,6 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
 
-EXCLUDED_CITIES = {"Komorniki", "Plewiska", "Robakowo", "Nowinki", "Wierzyce",
-                   "Dachowa", "Rokietnica", "Murowana Goślina", "Bolechowo",
-                   "Swarzędz", "Mosina", "Luboń", "Czerwonak"}
 POZNAN_SUBURBS = {"Smochowice", "Naramowice", "Strzeszyn", "Morasko",
                   "Szczepankowo", "Spławie", "Głuszyna", "Fabianowo"}
 
@@ -182,7 +179,6 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
     # 4. Читаем результат
     rows = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
     # Страховочный фильтр: исключаем НП не из нашей зоны
-    rows = [r for r in rows if r.get("city") not in EXCLUDED_CITIES]
     # Фильтр по расстоянию от центра (≤20 км) и от трамвая (≤10 км)
     def _f(v): return float(v) if v else None
     rows = [r for r in rows if (_f(r.get("dist_km")) or 0) <= 20]
