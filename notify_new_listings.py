@@ -181,8 +181,8 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
     # Страховочный фильтр: исключаем НП не из нашей зоны
     # Фильтр по расстоянию от центра (≤20 км) и от трамвая (≤10 км)
     def _f(v): return float(v) if v else None
-    rows = [r for r in rows if _f(r.get("dist_km")) is not None and _f(r.get("dist_km")) <= 20]
-    rows = [r for r in rows if _f(r.get("dist_tram")) is not None and _f(r.get("dist_tram")) <= 10]
+    rows = [r for r in rows if _f(r.get("dist_km")) is not None and _f(r.get("dist_km")) <= 15]
+    rows = [r for r in rows if _f(r.get("dist_tram")) is not None and _f(r.get("dist_tram")) <= 8]
     # Маппинг НП внутри Познани
     for r in rows:
         if r.get("city") in POZNAN_SUBURBS:
