@@ -214,11 +214,14 @@ function renderDistricts(){
   tb.innerHTML=DISTRICTS.map(d=>{
     const [tc,bg,lbl]=tier(d.score);
     const sc_c=d.score>=8?'#166534':d.score>=7?'#1e40af':d.score>=5?'#854d0e':'#991b1b';
+    const ntag=d.noise_tag?`<span class="dist-tg" style="color:${d.noise_tag[2]};background:#fef2f2" title="${d.noise_tag[1]}">${d.noise_tag[0]} ${d.noise_tag[1]}</span>`:'';
+    const nuis_tags=(d.nuisance_tags||[]).map(t=>`<span class="dist-tg" style="color:#7c3aed;background:#f3e8ff" title="${t}">${t}</span>`).join('');
+    const tags=(ntag||nuis_tags)?`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:4px">${ntag}${nuis_tags}</div>`:'';
     return`<tr>
 <td class="dist-sc" style="color:${sc_c}">${d.score}<span style="color:#bbb;font-size:10px;font-weight:400">/10</span></td>
 <td style="font-weight:500;font-size:13px">${d.name}</td>
 <td><span class="dist-tg" style="color:${tc};background:${bg}">${lbl}</span></td>
-<td class="dist-rs">${d.desc||'—'}</td>
+<td class="dist-rs">${tags}${d.desc||'—'}</td>
 </tr>`;
   }).join('');
 }

@@ -107,12 +107,55 @@ mx_dist = max((r["dist"] for r in js_rows if r["dist"]), default=60)
 total = len(js_rows)
 data_json = json.dumps(js_rows, ensure_ascii=False)
 
+# Aggregate noise and nuisance per district from listing data
+from collections import defaultdict
+_dist_noise = defaultdict(list)   # district -> [max_ldwn, ...]
+_dist_nuisance = defaultdict(set) # district -> {nuisance_name, ...}
+for row in js_rows:
+    d = row.get("district") or row.get("city") or ""
+    if not d:
+        continue
+    if row.get("noise"):
+        _dist_noise[d].append(max(row["noise"].values()))
+    for n in (row.get("nuisance") or []):
+        _dist_nuisance[d].add(n["name"])
+
+# Noise label thresholds (Lden dBA)
+def _noise_tag(vals):
+    if not vals:
+        return None
+    mx = max(vals)
+    if mx >= 70: return ("🔊", f"Шум ≥70 дБА (GEOPOZ 2017)", "#991b1b")
+    if mx >= 65: return ("🔊", f"Шум 65–70 дБА (GEOPOZ 2017)", "#c2410c")
+    if mx >= 60: return ("🔊", f"Шум 60–65 дБА (GEOPOZ 2017)", "#854d0e")
+    return None
+
+# Nuisance short labels
+_NUISANCE_SHORT = {
+    "ITPOK Spalarnia": "🔥 Мусоросжигание",
+    "EC Karolin (Veolia)": "🏭 Теплоэлектроцентраль",
+    "Oczyszczalnia LOŚ Serbska (Aquanet)": "💧 Очистные сооружения",
+    "Oczyszczalnia COŚ Koziegłowy (Aquanet)": "💧 Очистные сооружения",
+    "Składowisko ZZO Suchy Las": "🗑 Полигон ТБО",
+    "VW Antoninek (fabryka)": "🏭 Завод VW",
+    "VW Odlewnia Wilda": "🏭 Литейный VW",
+    "Luvena SA Luboń (zakład chemiczny)": "⚗️ Хим. завод",
+}
+
 # Build districts list sorted by score descending
-districts_list = sorted(
-    [{"name": k, "score": v, "desc": DISTRICT_DESCRIPTIONS.get(k, "")}
-     for k, v in DISTRICT_SCORES.items()],
-    key=lambda x: (-x["score"], x["name"])
-)
+districts_list = []
+for k, v in DISTRICT_SCORES.items():
+    noise_tag = _noise_tag(_dist_noise.get(k, []))
+    nuisance_names = _dist_nuisance.get(k, set())
+    nuisance_tags = [_NUISANCE_SHORT.get(n, n) for n in sorted(nuisance_names)]
+    districts_list.append({
+        "name": k,
+        "score": v,
+        "desc": DISTRICT_DESCRIPTIONS.get(k, ""),
+        "noise_tag": noise_tag,        # [emoji, label, color] or None
+        "nuisance_tags": nuisance_tags, # list of short strings
+    })
+districts_list.sort(key=lambda x: (-x["score"], x["name"]))
 districts_json = json.dumps(districts_list, ensure_ascii=False)
 
 html = open("listings_template.html").read()
