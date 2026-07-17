@@ -30,28 +30,61 @@ PROMPT = """Проанализируй описание объявления о 
   "needs_renovation": true/false,
   "quiet_street": true/false,
   "near_highway": true/false,
+  "near_railway": true/false,
   "elevator": true/false,
   "storage_room": true/false,
   "electric_car_charger": true/false,
+  "floor_heating": true/false,
+  "high_ceiling": true/false,
+  "panoramic_view": true/false,
+  "water_view": true/false,
+  "school_nearby": true/false,
+  "kindergarten_nearby": true/false,
+  "park_nearby": true/false,
+  "forest_nearby": true/false,
+  "supermarket_nearby": true/false,
+  "concierge": true/false,
+  "gated_community": true/false,
   "red_flags": ["список проблем если есть, иначе пустой массив"],
   "bonus_features": ["список значимых плюсов если есть, иначе пустой массив"]
 }}
 """
 
 FEATURE_SCORES = {
+    # Парковка и хранение
     "garage":              +0.5,
     "parking":             +0.3,
-    "garden_m2":           +0.4,   # если > 0
-    "terrace":             +0.3,
-    "smart_home":          +0.2,
-    "gym_on_site":         +0.2,
-    "new_condition":       +0.4,
-    "elevator":            +0.2,
     "storage_room":        +0.1,
     "electric_car_charger":+0.1,
+    # Outdoor
+    "garden_m2":           +0.4,   # если > 0
+    "terrace":             +0.3,
+    "balcony":             +0.1,
+    # Инфраструктура ЖК
+    "gym_on_site":         +0.2,
+    "concierge":           +0.2,
+    "gated_community":     +0.1,
+    # Состояние и технологии
+    "new_condition":       +0.4,
+    "smart_home":          +0.2,
+    "floor_heating":       +0.2,
+    "high_ceiling":        +0.1,
+    # Вид и природа
+    "panoramic_view":      +0.2,
+    "water_view":          +0.3,
+    "forest_nearby":       +0.2,
+    "park_nearby":         +0.1,
+    # Тихость
+    "quiet_street":        +0.2,
+    # Инфраструктура рядом
+    "school_nearby":       +0.1,
+    "kindergarten_nearby": +0.1,
+    "supermarket_nearby":  +0.1,
+    "elevator":            +0.2,
+    # Штрафы
     "needs_renovation":    -0.5,
     "near_highway":        -0.4,
-    "quiet_street":        +0.2,
+    "near_railway":        -0.3,
 }
 
 
@@ -74,7 +107,7 @@ def _call_gpt(description):
         "model": "gpt-4o-mini",
         "messages": [{"role": "user", "content": PROMPT.format(description=description)}],
         "temperature": 0,
-        "max_tokens": 400,
+        "max_tokens": 600,
     }).encode()
     req = Request(
         "https://api.openai.com/v1/chat/completions",

@@ -148,24 +148,37 @@ a:hover{text-decoration:underline}
 
 <div id="tab-bonuses" class="tab-panel">
 <div class="tbl-wrap"><table class="dist-tbl">
-  <thead><tr><th style="width:80px">Балл</th><th style="width:180px">Фича</th><th style="width:120px">Тип</th><th>Что означает</th></tr></thead>
+  <thead><tr><th style="width:80px">Балл</th><th style="width:200px">Фича</th><th style="width:110px">Категория</th><th>Что означает</th></tr></thead>
   <tbody>
-    <tr><td style="color:#166534;font-weight:700">+0.5</td><td>Гараж</td><td><span class="dist-tg" style="color:#166534;background:#dcfce7">бонус</span></td><td class="dist-rs">Закрытый гараж в паркинге или на участке. Редкость в новостройках, высокий спрос</td></tr>
-    <tr><td style="color:#166534;font-weight:700">+0.4</td><td>Новое состояние</td><td><span class="dist-tg" style="color:#166534;background:#dcfce7">бонус</span></td><td class="dist-rs">Квартира сдаётся с чистовой отделкой — можно въезжать без ремонта</td></tr>
-    <tr><td style="color:#166534;font-weight:700">+0.4</td><td>Сад / участок</td><td><span class="dist-tg" style="color:#166534;background:#dcfce7">бонус</span></td><td class="dist-rs">Приватный сад или земельный участок при доме. GPT извлекает площадь в м²</td></tr>
-    <tr><td style="color:#166534;font-weight:700">+0.3</td><td>Парковка</td><td><span class="dist-tg" style="color:#166534;background:#dcfce7">бонус</span></td><td class="dist-rs">Место на охраняемой парковке (не гараж). Снижает ежедневный стресс</td></tr>
-    <tr><td style="color:#166534;font-weight:700">+0.3</td><td>Терраса</td><td><span class="dist-tg" style="color:#166534;background:#dcfce7">бонус</span></td><td class="dist-rs">Собственная терраса на крыше или при квартире — ценный плюс на польском рынке</td></tr>
-    <tr><td style="color:#1e40af;font-weight:700">+0.2</td><td>Тихая улица</td><td><span class="dist-tg" style="color:#1e40af;background:#dbeafe">бонус</span></td><td class="dist-rs">В описании указано, что дом находится на тихой улице без трафика</td></tr>
-    <tr><td style="color:#1e40af;font-weight:700">+0.2</td><td>Умный дом</td><td><span class="dist-tg" style="color:#1e40af;background:#dbeafe">бонус</span></td><td class="dist-rs">Smart home система: управление светом, климатом, безопасностью с приложения</td></tr>
-    <tr><td style="color:#1e40af;font-weight:700">+0.2</td><td>Фитнес в доме</td><td><span class="dist-tg" style="color:#1e40af;background:#dbeafe">бонус</span></td><td class="dist-rs">Тренажёрный зал или фитнес-зона в жилом комплексе</td></tr>
-    <tr><td style="color:#1e40af;font-weight:700">+0.2</td><td>Лифт</td><td><span class="dist-tg" style="color:#1e40af;background:#dbeafe">бонус</span></td><td class="dist-rs">Наличие лифта — важно для этажей выше 3-го и семей с детьми</td></tr>
-    <tr><td style="color:#666;font-weight:700">+0.1</td><td>Кладовая</td><td><span class="dist-tg" style="color:#666;background:#f3f4f6">бонус</span></td><td class="dist-rs">Отдельная кладовая комната или шкаф-кладовая при квартире</td></tr>
-    <tr><td style="color:#666;font-weight:700">+0.1</td><td>Зарядка для EV</td><td><span class="dist-tg" style="color:#666;background:#f3f4f6">бонус</span></td><td class="dist-rs">Зарядная станция для электромобилей в паркинге</td></tr>
-    <tr><td style="color:#991b1b;font-weight:700">−0.5</td><td>Нужен ремонт</td><td><span class="dist-tg" style="color:#991b1b;background:#fee2e2">штраф</span></td><td class="dist-rs">В описании указано, что требуется ремонт или отделка — дополнительные затраты 50–150k zł</td></tr>
-    <tr><td style="color:#991b1b;font-weight:700">−0.4</td><td>Рядом шоссе</td><td><span class="dist-tg" style="color:#991b1b;background:#fee2e2">штраф</span></td><td class="dist-rs">Дом находится вблизи оживлённой трассы — шум, выхлопы, снижение качества жизни</td></tr>
+    <tr><td style="color:#166534;font-weight:700">+0.5</td><td>Гараж</td><td><span class="dist-tg" style="color:#854d0e;background:#fef9c3">парковка</span></td><td class="dist-rs">Закрытый гараж в паркинге или на участке — редкость в новостройках</td></tr>
+    <tr><td style="color:#166534;font-weight:700">+0.4</td><td>Новое состояние</td><td><span class="dist-tg" style="color:#5b21b6;background:#ede9fe">состояние</span></td><td class="dist-rs">Чистовая отделка — можно въезжать без ремонта, экономия 50–120k zł</td></tr>
+    <tr><td style="color:#166534;font-weight:700">+0.4</td><td>Сад / участок</td><td><span class="dist-tg" style="color:#166534;background:#dcfce7">outdoor</span></td><td class="dist-rs">Приватный сад или земельный участок при доме</td></tr>
+    <tr><td style="color:#166534;font-weight:700">+0.3</td><td>Вид на воду</td><td><span class="dist-tg" style="color:#166534;background:#dcfce7">природа</span></td><td class="dist-rs">Озеро, река, пруд в прямой видимости из окна или с балкона</td></tr>
+    <tr><td style="color:#166534;font-weight:700">+0.3</td><td>Парковка</td><td><span class="dist-tg" style="color:#854d0e;background:#fef9c3">парковка</span></td><td class="dist-rs">Место на охраняемой парковке (не гараж)</td></tr>
+    <tr><td style="color:#166534;font-weight:700">+0.3</td><td>Терраса</td><td><span class="dist-tg" style="color:#166534;background:#dcfce7">outdoor</span></td><td class="dist-rs">Собственная терраса на крыше или при квартире</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.2</td><td>Тихая улица</td><td><span class="dist-tg" style="color:#1e40af;background:#dbeafe">среда</span></td><td class="dist-rs">Явно указано в описании: без трафика и шума</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.2</td><td>Панорамный вид</td><td><span class="dist-tg" style="color:#1e40af;background:#dbeafe">вид</span></td><td class="dist-rs">Высокий этаж с открытым панорамным видом на город или природу</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.2</td><td>Умный дом</td><td><span class="dist-tg" style="color:#5b21b6;background:#ede9fe">состояние</span></td><td class="dist-rs">Smart home: управление климатом, светом, безопасностью</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.2</td><td>Тёплый пол</td><td><span class="dist-tg" style="color:#5b21b6;background:#ede9fe">состояние</span></td><td class="dist-rs">Система тёплого пола — повышает комфорт и снижает отопление</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.2</td><td>Фитнес в ЖК</td><td><span class="dist-tg" style="color:#0e7490;background:#cffafe">ЖК</span></td><td class="dist-rs">Тренажёрный зал или фитнес-зона на территории комплекса</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.2</td><td>Консьерж</td><td><span class="dist-tg" style="color:#0e7490;background:#cffafe">ЖК</span></td><td class="dist-rs">Охрана/консьерж — безопасность, приём посылок, контроль доступа</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.2</td><td>Лифт</td><td><span class="dist-tg" style="color:#0e7490;background:#cffafe">ЖК</span></td><td class="dist-rs">Важно от 3 этажа и выше, особенно для семей с детьми</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.2</td><td>Лес рядом</td><td><span class="dist-tg" style="color:#166534;background:#dcfce7">природа</span></td><td class="dist-rs">Лесной массив в пешей доступности — экология, прогулки</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.1</td><td>Балкон</td><td><span class="dist-tg" style="color:#166534;background:#dcfce7">outdoor</span></td><td class="dist-rs">Любой балкон (бонус меньше терраса/сада — стандартно для новостроек)</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.1</td><td>Высокие потолки</td><td><span class="dist-tg" style="color:#5b21b6;background:#ede9fe">состояние</span></td><td class="dist-rs">Потолки ≥ 2.8 м — ощущение простора, лучше освещение</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.1</td><td>Закрытый ЖК</td><td><span class="dist-tg" style="color:#0e7490;background:#cffafe">ЖК</span></td><td class="dist-rs">Огороженная территория с КПП — повышенная безопасность</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.1</td><td>Парк рядом</td><td><span class="dist-tg" style="color:#166534;background:#dcfce7">природа</span></td><td class="dist-rs">Парк или сквер в пешей доступности</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.1</td><td>Школа рядом</td><td><span class="dist-tg" style="color:#1e40af;background:#dbeafe">среда</span></td><td class="dist-rs">Школа в шаговой доступности — важно для семей с детьми</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.1</td><td>Детский сад рядом</td><td><span class="dist-tg" style="color:#1e40af;background:#dbeafe">среда</span></td><td class="dist-rs">Детский сад поблизости</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.1</td><td>Магазин рядом</td><td><span class="dist-tg" style="color:#1e40af;background:#dbeafe">среда</span></td><td class="dist-rs">Супермаркет или торговый центр в пешей доступности</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.1</td><td>Кладовая</td><td><span class="dist-tg" style="color:#854d0e;background:#fef9c3">парковка</span></td><td class="dist-rs">Отдельная кладовая — хранение велосипедов, лыж и пр.</td></tr>
+    <tr><td style="color:#1e40af;font-weight:700">+0.1</td><td>Зарядка EV</td><td><span class="dist-tg" style="color:#854d0e;background:#fef9c3">парковка</span></td><td class="dist-rs">Зарядная станция для электромобилей</td></tr>
+    <tr><td style="color:#991b1b;font-weight:700">−0.5</td><td>Нужен ремонт</td><td><span class="dist-tg" style="color:#991b1b;background:#fee2e2">штраф</span></td><td class="dist-rs">Требуется отделка — дополнительные затраты и время</td></tr>
+    <tr><td style="color:#991b1b;font-weight:700">−0.4</td><td>Рядом шоссе</td><td><span class="dist-tg" style="color:#991b1b;background:#fee2e2">штраф</span></td><td class="dist-rs">Оживлённая трасса рядом — шум, выхлопы, снижение качества жизни</td></tr>
+    <tr><td style="color:#991b1b;font-weight:700">−0.3</td><td>Рядом ж/д пути</td><td><span class="dist-tg" style="color:#991b1b;background:#fee2e2">штраф</span></td><td class="dist-rs">Железнодорожные пути или товарная станция рядом — шум поездов</td></tr>
   </tbody>
 </table></div>
-<p style="margin-top:12px;color:#888;font-size:12px;padding:0 2px">Сумма бонусов ограничена диапазоном −1.5 … +1.5. GPT-4o-mini анализирует текст объявления и выставляет true/false по каждой фиче. Итоговая оценка = база + бонус, не выше 10.0.</p>
+<p style="margin-top:12px;color:#888;font-size:12px;padding:0 2px">Сумма бонусов ограничена диапазоном −1.5 … +1.5. GPT-4o-mini анализирует текст описания и выставляет true/false по каждой фиче. Итоговая оценка = база + бонус, не выше 10.0. Новые фичи применятся к объявлениям при следующем запуске GitHub Actions.</p>
 </div>
 
 <div id="tab-districts" class="tab-panel">
@@ -281,8 +294,8 @@ const tip=`База: ${r.base_score??sc}${bonus_line}`;
 const sc_cell=`<span style="font-weight:600;color:${sc_c};cursor:default" title="${tip}">${sc}</span><span style="color:#999;font-size:11px">/10</span>`;
 const ds=r.district_score!=null?r.district_score:6;
 const ds_c=ds>=8?'#166534':ds>=7?'#1e40af':ds>=5?'#854d0e':'#991b1b';
-const ds_label=r.district||(r.city!=='Poznań'?r.city:'')||'—';
-const ds_name_style=r.city==='Poznań'?'font-weight:600;color:#1a1a19':'color:#555';
+const ds_label=r.district||r.city||'—';
+const ds_name_style=r.city==='Poznań'?'color:#166534':'color:#c2410c';
 const ds_cell=`<span style="color:${ds_c};font-weight:500">${ds}/10</span> <span style="${ds_name_style};font-size:11px">${ds_label}</span>`;
 const proj_cell=r.project?`<span style="max-width:130px;overflow:hidden;text-overflow:ellipsis;color:#666;display:inline-block" title="${r.project}">${r.project}</span>`:'—';
 const tram_cell=dt_v!=null?`<span style="color:${dt_c};font-weight:500" title="${r.tram_tip||''}">🚊 ${dt_s}</span>`:'—';
