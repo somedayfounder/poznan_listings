@@ -183,6 +183,10 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
     rows = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
     # Страховочный фильтр: исключаем НП не из нашей зоны
     rows = [r for r in rows if r.get("city") not in EXCLUDED_CITIES]
+    # Фильтр по расстоянию от центра (≤20 км) и от трамвая (≤10 км)
+    def _f(v): return float(v) if v else None
+    rows = [r for r in rows if (_f(r.get("dist_km")) or 0) <= 20]
+    rows = [r for r in rows if (_f(r.get("dist_tram")) or 0) <= 10]
     # Маппинг НП внутри Познани
     for r in rows:
         if r.get("city") in POZNAN_SUBURBS:

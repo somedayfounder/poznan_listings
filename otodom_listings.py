@@ -34,7 +34,7 @@ def _tg_safe(text):
 
 BASE = "https://www.otodom.pl"
 DATA_DIR = Path(__file__).parent
-FILTERS = "areaMin=80&priceMax=1400000"
+FILTERS = "areaMin=70&priceMin=500000&priceMax=1200000"
 
 SEARCH_URLS = [
     f"{BASE}/pl/wyniki/sprzedaz/mieszkanie,rynek-pierwotny/wielkopolskie/poznan/poznan/poznan?{FILTERS}",
