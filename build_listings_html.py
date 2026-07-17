@@ -69,6 +69,7 @@ for r in rows:
         "price": int(price) if price else None,
         "price_m2": int(price_m2) if price_m2 else None,
         "street": r["street"], "city": r["city"], "project": r["project"],
+        "district": r.get("district", ""),
         "dist": dist, "dist_tram": dist_tram, "tram_tip": tram_tip,
         "dist_rail": dist_rail, "rail_tip": rail_tip, "url": r["url"],
     }
