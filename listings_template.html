@@ -107,6 +107,7 @@ a:hover{text-decoration:underline}
   <th onclick="sort('score')" class="desc" style="min-width:60px">Оценка</th>
   <th onclick="sort('title')" style="min-width:220px">Объявление</th>
   <th onclick="sort('type')">Тип</th>
+  <th onclick="sort('district_score')" style="min-width:80px">Район ★</th>
   <th onclick="sort('area')">м²</th>
   <th onclick="sort('rooms')">Ком.</th>
   <th onclick="sort('floor')">Этаж</th>
@@ -128,7 +129,7 @@ let sk='score',sd_=-1;
 function sort(k){if(sk===k)sd_*=-1;else{sk=k;sd_=k==='score'?-1:1;}
 document.querySelectorAll('thead th').forEach(t=>t.className='');
 const ths=document.querySelectorAll('thead th');
-const ki=['score','title','type','area','rooms','floor','price','price_m2','city','project','dist','dist_tram'];
+const ki=['score','title','type','district_score','area','rooms','floor','price','price_m2','city','project','dist','dist_tram'];
 const idx=ki.indexOf(k);if(idx>=0)ths[idx].className=sd_===1?'asc':'desc';render();}
 function render(){
 const q=(document.getElementById('sq').value||'').toLowerCase();
@@ -178,10 +179,15 @@ const tl=r.type==='mieszkanie'?'кв.':'дом';
 const sc=r.score!=null?r.score:0;
 const sc_c=sc>=8?'#166534':sc>=6?'#1e40af':sc>=4?'#854d0e':'#991b1b';
 const sc_cell=`<span style="font-weight:600;color:${sc_c}">${sc}</span><span style="color:#999;font-size:11px">/10</span>`;
+const ds=r.district_score!=null?r.district_score:6;
+const ds_c=ds>=8?'#166534':ds>=7?'#1e40af':ds>=5?'#854d0e':'#991b1b';
+const ds_label=r.district||r.city||'—';
+const ds_cell=`<span style="color:${ds_c};font-weight:500">${ds}/10</span> <span style="color:#999;font-size:11px">${ds_label}</span>`;
 return`<tr>
 <td style="text-align:center;white-space:nowrap">${sc_cell}</td>
 <td><a href="${r.url}" target="_blank" title="${r.title}">${r.title}</a></td>
 <td><span class="tp ${tc}">${tl}</span></td>
+<td style="white-space:nowrap">${ds_cell}</td>
 <td>${r.area!=null?r.area:'—'}</td>
 <td>${r.rooms||'—'}</td>
 <td>${r.floor!=null?r.floor:'—'}</td>

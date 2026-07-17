@@ -17,8 +17,8 @@ listing isn't penalised for lack of data.
 # Sources: beesafe.pl, naszpoznan.com, gloswielkopolski.pl, wielkopolskaes.pl
 DISTRICT_SCORES = {
     # === Внутренние районы Познани ===
-    "Łacina":            9,  # лучший по безопасности, шопинг, спорт
-    "Sołacz":            9,  # семейный, зелёный, ухоженный
+    "Łacina":            8,  # лучший по безопасности, шопинг, спорт — но не исключительный
+    "Sołacz":            8,  # семейный, зелёный, ухоженный
     "Umultowo":          8,  # экология 4.04/5, спорт 4.17/5
     "Strzeszyn":         8,  # самый ухоженный (4.2/5), тихий
     "Smochowice":        8,  # тихий, зелёный

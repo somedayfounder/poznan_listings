@@ -1,7 +1,7 @@
 import csv, json
 from math import radians, sin, cos, sqrt, atan2
 from pathlib import Path
-from score import score_from_jsrow
+from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE
 
 trams = json.loads(Path("tram_stops.json").read_text())
 stop_lines = json.loads(Path("stop_lines.json").read_text())
@@ -74,6 +74,8 @@ for r in rows:
         "dist_rail": dist_rail, "rail_tip": rail_tip, "url": r["url"],
     }
     row["score"] = score_from_jsrow(row)
+    d = row.get("district", "") or row.get("city", "")
+    row["district_score"] = DISTRICT_SCORES.get(d, DISTRICT_SCORES.get(row.get("city",""), _DEFAULT_DISTRICT_SCORE))
     js_rows.append(row)
 
 mx_dist = max((r["dist"] for r in js_rows if r["dist"]), default=60)
