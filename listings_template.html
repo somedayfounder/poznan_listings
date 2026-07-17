@@ -8,6 +8,11 @@
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;font-size:13px;background:#f5f5f3;color:#1a1a19}
 .wrap{padding:20px;max-width:1600px;margin:0 auto}
 h1{font-size:17px;font-weight:500;margin-bottom:14px}
+.tabs{display:flex;gap:4px;margin-bottom:16px;border-bottom:2px solid #e0dfd8}
+.tab-btn{padding:8px 18px;border:none;border-bottom:3px solid transparent;background:none;cursor:pointer;font-size:13px;font-weight:500;color:#888;margin-bottom:-2px;border-radius:4px 4px 0 0;transition:color .15s}
+.tab-btn:hover{color:#1a1a19;background:#f0f0ee}
+.tab-btn.active{color:#1d4ed8;border-bottom-color:#1d4ed8}
+.tab-panel{display:none}.tab-panel.active{display:block}
 .controls{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center}
 .controls input,.controls select{font-size:12px;padding:5px 10px;border:1px solid #ccc;border-radius:6px;background:#fff;color:#1a1a19;height:30px}
 .controls input{flex:1;min-width:180px}
@@ -26,11 +31,24 @@ tr:hover td{background:#fafaf8}
 a{color:#1d4ed8;text-decoration:none;max-width:240px;display:inline-block;overflow:hidden;text-overflow:ellipsis;vertical-align:bottom}
 a:hover{text-decoration:underline}
 .bar{display:inline-block;height:5px;background:#bfdbfe;border-radius:2px;vertical-align:middle;margin-right:5px}
+.dist-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.dist-card{background:#fff;border-radius:10px;border:1px solid #d3d1c7;padding:13px 16px;display:flex;gap:14px;align-items:flex-start}
+.dist-score-badge{font-size:18px;font-weight:700;min-width:36px;text-align:center;line-height:1.2}
+.dist-score-sub{font-size:10px;color:#999;display:block;text-align:center}
+.dist-info{}
+.dist-name{font-weight:600;font-size:14px;margin-bottom:3px}
+.dist-reason{color:#555;font-size:12px;line-height:1.45}
+.dist-tier{font-size:10px;font-weight:500;padding:2px 7px;border-radius:10px;display:inline-block;margin-bottom:6px}
 </style>
 </head>
 <body>
 <div class="wrap">
 <h1>Новостройки Познань — квартиры и дома, от 80 м², до 1 400 000 zł &nbsp;<span id="cnt" style="color:#888;font-weight:400"></span></h1>
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab('listings')">📋 Объявления</button>
+  <button class="tab-btn" onclick="switchTab('districts')">🏙 Районы</button>
+</div>
+<div id="tab-listings" class="tab-panel active">
 <div class="controls">
   <input id="sq" placeholder="Поиск по названию, улице, городу, проекту..." oninput="render()">
   <select id="st" onchange="render()">
@@ -121,10 +139,41 @@ a:hover{text-decoration:underline}
 <tbody id="tb"></tbody>
 </table>
 </div>
+</div><!-- /tab-listings -->
+
+<div id="tab-districts" class="tab-panel">
+<div class="dist-grid" id="dg"></div>
 </div>
+
 <script>
 const D=__DATA__;
 const MX=__MX__;
+const DISTRICTS=__DISTRICTS__;
+
+function switchTab(name){
+  document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',['listings','districts'][i]===name));
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  if(name==='districts') renderDistricts();
+}
+
+function renderDistricts(){
+  const dg=document.getElementById('dg');
+  if(dg.children.length) return;
+  const tierLabel=s=>s>=8?['#166534','#dcfce7','Отличный']:s>=7?['#1e40af','#dbeafe','Хороший']:s>=6?['#854d0e','#fef9c3','Средний']:s>=5?['#7c3aed','#f3e8ff','Ниже среднего']:['#991b1b','#fee2e2','Проблемный'];
+  dg.innerHTML=DISTRICTS.map(d=>{
+    const [tc,bg,lbl]=tierLabel(d.score);
+    const sc_c=d.score>=8?'#166534':d.score>=7?'#1e40af':d.score>=5?'#854d0e':'#991b1b';
+    return`<div class="dist-card">
+  <div><div class="dist-score-badge" style="color:${sc_c}">${d.score}</div><span class="dist-score-sub">/10</span></div>
+  <div class="dist-info">
+    <span class="dist-tier" style="color:${tc};background:${bg}">${lbl}</span>
+    <div class="dist-name">${d.name}</div>
+    <div class="dist-reason">${d.desc||'—'}</div>
+  </div>
+</div>`;
+  }).join('');
+}
 let sk='score',sd_=-1;
 function sort(k){if(sk===k)sd_*=-1;else{sk=k;sd_=k==='score'?-1:1;}
 document.querySelectorAll('thead th').forEach(t=>t.className='');

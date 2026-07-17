@@ -1,7 +1,7 @@
 import csv, json
 from math import radians, sin, cos, sqrt, atan2
 from pathlib import Path
-from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE
+from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE, DISTRICT_DESCRIPTIONS
 from extract_features import feature_bonus, CACHE_FILE as FEAT_CACHE
 import json as _json
 _feat_cache = _json.loads(FEAT_CACHE.read_text()) if FEAT_CACHE.exists() else {}
@@ -89,8 +89,21 @@ mx_dist = max((r["dist"] for r in js_rows if r["dist"]), default=60)
 total = len(js_rows)
 data_json = json.dumps(js_rows, ensure_ascii=False)
 
+# Build districts list sorted by score descending
+districts_list = sorted(
+    [{"name": k, "score": v, "desc": DISTRICT_DESCRIPTIONS.get(k, "")}
+     for k, v in DISTRICT_SCORES.items()],
+    key=lambda x: (-x["score"], x["name"])
+)
+districts_json = json.dumps(districts_list, ensure_ascii=False)
+
 html = open("listings_template.html").read()
-html = html.replace("__DATA__", data_json).replace("__MX__", str(mx_dist)).replace("__TOTAL__", str(total))
+html = (html
+    .replace("__DATA__", data_json)
+    .replace("__MX__", str(mx_dist))
+    .replace("__TOTAL__", str(total))
+    .replace("__DISTRICTS__", districts_json)
+)
 
 with open("listings_poznan.html", "w", encoding="utf-8") as f:
     f.write(html)
