@@ -52,6 +52,7 @@ a:hover{text-decoration:underline}
   <button class="tab-btn active" onclick="switchTab('listings')">📋 Объявления</button>
   <button class="tab-btn" onclick="switchTab('districts')">🏙 Районы</button>
   <button class="tab-btn" onclick="switchTab('bonuses')">⭐ Бонусы ГПТ</button>
+  <button class="tab-btn" onclick="switchTab('method')">⚙️ Методология</button>
 </div>
 <div id="tab-listings" class="tab-panel active">
 <div class="controls">
@@ -165,13 +166,143 @@ a:hover{text-decoration:underline}
 </table></div>
 </div>
 
+<div id="tab-method" class="tab-panel">
+<style>
+.m-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;margin-top:4px}
+.m-card{background:#fff;border:1px solid #d3d1c7;border-radius:10px;padding:18px 20px}
+.m-card h3{font-size:12px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px}
+.m-row{display:flex;align-items:center;gap:10px;padding:5px 0;border-bottom:.5px solid #f0efe9}
+.m-row:last-child{border-bottom:none}
+.m-label{font-size:12px;color:#444;flex:1}
+.m-val{font-size:12px;font-weight:600;color:#1a1a19;white-space:nowrap}
+.m-bar-wrap{flex:1;height:5px;background:#eee;border-radius:3px;overflow:hidden}
+.m-bar{height:5px;border-radius:3px;background:#bfdbfe}
+.m-bar.hi{background:#93c5fd}
+.m-note{font-size:11px;color:#888;margin-top:10px;line-height:1.5}
+.m-badge{display:inline-block;font-size:10px;font-weight:500;padding:1px 7px;border-radius:8px}
+.m-section-label{font-size:11px;font-weight:500;color:#999;margin:10px 0 4px;text-transform:uppercase;letter-spacing:.05em}
+.m-pen{color:#991b1b;font-weight:600}
+.m-pos{color:#166534;font-weight:600}
+</style>
+<div class="m-grid">
+
+  <!-- Фильтры сбора -->
+  <div class="m-card">
+    <h3>Фильтры сбора данных</h3>
+    <div class="m-section-label">Otodom.pl — параметры поиска</div>
+    <div class="m-row"><span class="m-label">Цена</span><span class="m-val">700 000 — 1 200 000 zł</span></div>
+    <div class="m-row"><span class="m-label">Площадь</span><span class="m-val">70 — 120 м²</span></div>
+    <div class="m-section-label">Пост-фильтрация по расстоянию до трамвая</div>
+    <div class="m-row"><span class="m-label">Квартиры</span><span class="m-val">≤ 3 км</span></div>
+    <div class="m-row"><span class="m-label">Дома</span><span class="m-val">≤ 8 км</span></div>
+    <p class="m-note">Данные обновляются ежедневно в 06:00. Расстояния — маршрутные (Google Maps), не по прямой.</p>
+  </div>
+
+  <!-- Веса -->
+  <div class="m-card">
+    <h3>Веса факторов оценки</h3>
+    <div class="m-row"><span class="m-label">🏙 Район</span><div class="m-bar-wrap"><div class="m-bar hi" style="width:76%"></div></div><span class="m-val">38%</span></div>
+    <div class="m-row"><span class="m-label">🚊 Транспорт до трамвая</span><div class="m-bar-wrap"><div class="m-bar hi" style="width:56%"></div></div><span class="m-val">28%</span></div>
+    <div class="m-row"><span class="m-label">💰 Цена</span><div class="m-bar-wrap"><div class="m-bar" style="width:24%"></div></div><span class="m-val">12%</span></div>
+    <div class="m-row"><span class="m-label">📐 Площадь</span><div class="m-bar-wrap"><div class="m-bar" style="width:24%"></div></div><span class="m-val">12%</span></div>
+    <div class="m-row"><span class="m-label">🛏 Комнаты</span><div class="m-bar-wrap"><div class="m-bar" style="width:14%"></div></div><span class="m-val">7%</span></div>
+    <div class="m-row"><span class="m-label">🏠 Тип (дом/квартира)</span><div class="m-bar-wrap"><div class="m-bar" style="width:6%"></div></div><span class="m-val">3%</span></div>
+    <p class="m-note">Взвешенная сумма = базовая оценка 0–10. Затем вычитаются штрафы за шум и вредные объекты.</p>
+  </div>
+
+  <!-- Транспорт -->
+  <div class="m-card">
+    <h3>Транспорт — кривая оценки</h3>
+    <div class="m-section-label">Квартиры (расстояние до трамвая)</div>
+    <div class="m-row"><span class="m-label">до 500 м</span><span class="m-val m-pos">10</span></div>
+    <div class="m-row"><span class="m-label">500 м — 1.5 км</span><span class="m-val">10 → 8</span></div>
+    <div class="m-row"><span class="m-label">1.5 — 3 км</span><span class="m-val">8 → 6</span></div>
+    <div class="m-row"><span class="m-label">3 — 5 км</span><span class="m-val">6 → 0</span></div>
+    <div class="m-section-label">Дома (расстояние до трамвая)</div>
+    <div class="m-row"><span class="m-label">до 2 км</span><span class="m-val m-pos">10</span></div>
+    <div class="m-row"><span class="m-label">2 — 5 км</span><span class="m-val">10 → 9</span></div>
+    <div class="m-row"><span class="m-label">5 — 10 км</span><span class="m-val">9 → 6</span></div>
+    <div class="m-row"><span class="m-label">10 — 15 км</span><span class="m-val">6 → 0</span></div>
+  </div>
+
+  <!-- Цена -->
+  <div class="m-card">
+    <h3>Цена — кривая оценки</h3>
+    <div class="m-row"><span class="m-label">до 700 000 zł</span><span class="m-val m-pos">10</span></div>
+    <div class="m-row"><span class="m-label">700 000 — 900 000 zł</span><span class="m-val">10 → 7</span></div>
+    <div class="m-row"><span class="m-label">900 000 — 1 200 000 zł</span><span class="m-val">7 → 0</span></div>
+    <div class="m-row"><span class="m-label">свыше 1 200 000 zł</span><span class="m-val m-pen">0</span></div>
+    <p class="m-note">Калиброван под сегмент 700k+. Цена занимает только 12% веса — выбор района и транспорта важнее.</p>
+  </div>
+
+  <!-- Площадь и комнаты -->
+  <div class="m-card">
+    <h3>Площадь и комнаты</h3>
+    <div class="m-section-label">Площадь</div>
+    <div class="m-row"><span class="m-label">85 — 105 м² (идеал)</span><span class="m-val m-pos">10</span></div>
+    <div class="m-row"><span class="m-label">70 — 85 м²</span><span class="m-val">4 → 10</span></div>
+    <div class="m-row"><span class="m-label">105 — 120 м²</span><span class="m-val">10 → 7</span></div>
+    <div class="m-row"><span class="m-label">меньше 70 или больше 120</span><span class="m-val m-pen">0</span></div>
+    <div class="m-section-label">Комнаты</div>
+    <div class="m-row"><span class="m-label">4 комнаты</span><span class="m-val m-pos">10</span></div>
+    <div class="m-row"><span class="m-label">5 комнат</span><span class="m-val">8</span></div>
+    <div class="m-row"><span class="m-label">3 или 6 комнат</span><span class="m-val">7</span></div>
+    <div class="m-row"><span class="m-label">2, 7+ или не указано</span><span class="m-val">3 / нейтр.</span></div>
+  </div>
+
+  <!-- Штрафы -->
+  <div class="m-card">
+    <h3>Штрафы (вычитаются из базовой)</h3>
+    <div class="m-section-label">Шум — карта GEOPOZ 2017 (Lden, фасад)</div>
+    <div class="m-row"><span class="m-label">≤ 60 дБА</span><span class="m-val">0</span></div>
+    <div class="m-row"><span class="m-label">61 — 65 дБА</span><span class="m-val m-pen">− 0.3</span></div>
+    <div class="m-row"><span class="m-label">66 — 70 дБА</span><span class="m-val m-pen">− 0.6</span></div>
+    <div class="m-row"><span class="m-label">> 70 дБА</span><span class="m-val m-pen">− 1.0</span></div>
+    <div class="m-section-label">Вредные объекты (линейно в радиусе)</div>
+    <div class="m-row"><span class="m-label">🔥 Спаларня ITPOK</span><span class="m-val m-pen">до − 1.5 &nbsp;<span style="color:#999;font-weight:400">в 4 км</span></span></div>
+    <div class="m-row"><span class="m-label">💧 Очистные Козеглувы</span><span class="m-val m-pen">до − 1.5 &nbsp;<span style="color:#999;font-weight:400">в 3 км</span></span></div>
+    <div class="m-row"><span class="m-label">💧 Очистные Сербска</span><span class="m-val m-pen">до − 1.2 &nbsp;<span style="color:#999;font-weight:400">в 2.5 км</span></span></div>
+    <div class="m-row"><span class="m-label">🏭 ТЭЦ Karolин</span><span class="m-val m-pen">до − 1.0 &nbsp;<span style="color:#999;font-weight:400">в 5 км</span></span></div>
+    <div class="m-row"><span class="m-label">🗑 Полигон ТБО Суры Ляс</span><span class="m-val m-pen">до − 1.2 &nbsp;<span style="color:#999;font-weight:400">в 3 км</span></span></div>
+    <div class="m-row"><span class="m-label">⚗️ Luvena SA Луконь</span><span class="m-val m-pen">до − 1.2 &nbsp;<span style="color:#999;font-weight:400">в 3 км</span></span></div>
+    <div class="m-row"><span class="m-label">🏭 VW Антонинек / Литейный</span><span class="m-val m-pen">до − 0.8 &nbsp;<span style="color:#999;font-weight:400">в 1.5 км</span></span></div>
+    <p class="m-note">Штрафы суммируются, максимум −2.5. Итоговая оценка не ниже 0.</p>
+  </div>
+
+  <!-- Оценки районов -->
+  <div class="m-card">
+    <h3>Оценки районов (38% веса)</h3>
+    <div class="m-row"><span class="m-label"><span class="m-badge" style="background:#dcfce7;color:#166534">9–10</span> Отличный</span><span class="m-val" style="color:#888;font-size:11px">Sołacz</span></div>
+    <div class="m-row"><span class="m-label"><span class="m-badge" style="background:#dbeafe;color:#1e40af">7–8</span> Хороший</span><span class="m-val" style="color:#888;font-size:11px">Piątkowo, Winogrady, Strzeszyn…</span></div>
+    <div class="m-row"><span class="m-label"><span class="m-badge" style="background:#fef9c3;color:#854d0e">6</span> Средний</span><span class="m-val" style="color:#888;font-size:11px">Morasko, Żegrze, Smochowice…</span></div>
+    <div class="m-row"><span class="m-label"><span class="m-badge" style="background:#f3e8ff;color:#7c3aed">5</span> Ниже среднего</span><span class="m-val" style="color:#888;font-size:11px">Jeżyce, Wilda, Górczyn…</span></div>
+    <div class="m-row"><span class="m-label"><span class="m-badge" style="background:#fee2e2;color:#991b1b">2–4</span> Проблемный</span><span class="m-val" style="color:#888;font-size:11px">Łazarz, Główna…</span></div>
+    <p class="m-note">Источники: опрос Otodom/IQS (4500+ жителей, NPS), форумы naszpoznan.com, polska-org.pl. Подробнее — таб «Районы».</p>
+  </div>
+
+  <!-- Источники -->
+  <div class="m-card">
+    <h3>Источники данных</h3>
+    <div class="m-row"><span class="m-label">Объявления</span><span class="m-val">Otodom.pl</span></div>
+    <div class="m-row"><span class="m-label">Маршруты до трамвая</span><span class="m-val">Google Maps Routes API</span></div>
+    <div class="m-row"><span class="m-label">Карта шума</span><span class="m-val">GEOPOZ WFS 2017</span></div>
+    <div class="m-row"><span class="m-label">Вредные объекты</span><span class="m-val">Aquanet, Veolia, ZZO, OSM</span></div>
+    <div class="m-row"><span class="m-label">Оценки районов</span><span class="m-val">Otodom/IQS NPS-опрос</span></div>
+    <div class="m-row"><span class="m-label">Описания районов</span><span class="m-val">Форумы, локальные СМИ, жители</span></div>
+    <div class="m-row"><span class="m-label">GPT-фичи объявлений</span><span class="m-val">OpenAI GPT-4o-mini</span></div>
+    <p class="m-note">Обновление ежедневно 06:00 UTC via GitHub Actions. GPT-анализ — только для новых объявлений, бонусы в оценку не включены.</p>
+  </div>
+
+</div>
+</div>
+
 <script>
 const D=__DATA__;
 const MX=__MX__;
 const DISTRICTS=__DISTRICTS__;
 
 function switchTab(name){
-  document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',['listings','districts','bonuses'][i]===name));
+  document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',['listings','districts','bonuses','method'][i]===name));
   document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
   if(name==='districts') renderDistricts();
