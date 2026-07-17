@@ -80,6 +80,8 @@ for r in rows:
     feat = _feat_cache.get(r["id"], {})
     bonus = feat.get("_bonus", 0.0)
     row["score"] = round(min(10.0, max(0.0, base_score + bonus)), 1)
+    row["base_score"] = round(base_score, 1)
+    row["bonus"] = round(bonus, 2)
     row["features"] = {k: v for k, v in feat.items() if k != "_bonus"}
     d = row.get("district", "") or row.get("city", "")
     row["district_score"] = DISTRICT_SCORES.get(d, DISTRICT_SCORES.get(row.get("city",""), _DEFAULT_DISTRICT_SCORE))

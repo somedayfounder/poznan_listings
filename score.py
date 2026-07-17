@@ -179,15 +179,13 @@ def _score_district(district, city):
 
 def _score_price(price):
     if price is None:
-        return None  # signals "missing"
-    if price <= 700_000:
+        return 5.0  # neutral, not redistributed
+    if price <= 600_000:
         return 10.0
-    if price <= 900_000:
-        # 700k→10, 900k→8
-        return 10.0 - 2.0 * (price - 700_000) / 200_000
-    if price <= 1_200_000:
-        # 900k→8, 1200k→0
-        return max(0.0, 8.0 - 8.0 * (price - 900_000) / 300_000)
+    if price <= 800_000:
+        return 10.0 - 2.0 * (price - 600_000) / 200_000   # 600k→10, 800k→8
+    if price <= 1_100_000:
+        return max(2.0, 8.0 - 6.0 * (price - 800_000) / 300_000)  # 800k→8, 1100k→2
     return 0.0
 
 
@@ -205,7 +203,7 @@ def _score_area(area):
 
 def _score_rooms(rooms):
     if rooms is None:
-        return None  # signals "missing"
+        return 5.0  # neutral, not redistributed
     if rooms == 4:
         return 10.0
     if rooms == 5:
@@ -225,9 +223,10 @@ def _score_transport(tp, dist_tram, dist_center):
         if d <= 10:  return max(6.0, 9.0 - 3.0 * (d - 5) / 5)  # 5→9, 10→6
         return max(0.0, 6.0 - 6.0 * (d - 10) / 5)      # 10→6, 15→0
     else:
-        if d <= 1:   return 10.0
-        if d <= 3:   return 10.0 - 3.0 * (d - 1) / 2   # 1→10, 3→7
-        if d <= 5:   return max(0.0, 7.0 - 7.0 * (d - 3) / 2)  # 3→7, 5→0
+        if d <= 0.5: return 10.0
+        if d <= 1.5: return 10.0 - 2.0 * (d - 0.5)     # 0.5→10, 1.5→8
+        if d <= 3:   return 8.0 - 2.0 * (d - 1.5) / 1.5  # 1.5→8, 3→6
+        if d <= 5:   return max(0.0, 6.0 - 6.0 * (d - 3) / 2)  # 3→6, 5→0
         return 0.0
 
 
@@ -246,20 +245,14 @@ _BASE_W = {
 
 
 def compute_score(price, area, rooms, tp, dist_tram, dist_center, district=None, city=None):
-    p_score = _score_price(price)
-    r_score = _score_rooms(rooms)
-
     factors = [
         (_score_transport(tp, dist_tram, dist_center), _BASE_W["transport"]),
         (_score_district(district, city),               _BASE_W["district"]),
+        (_score_price(price),                           _BASE_W["price"]),
         (_score_area(area),                             _BASE_W["area"]),
+        (_score_rooms(rooms),                           _BASE_W["rooms"]),
         (_score_type(tp),                               _BASE_W["type"]),
     ]
-    if p_score is not None:
-        factors.append((p_score, _BASE_W["price"]))
-    if r_score is not None:
-        factors.append((r_score, _BASE_W["rooms"]))
-
     total_w = sum(w for _, w in factors)
     return round(sum(sc * w for sc, w in factors) / total_w, 1)
 
