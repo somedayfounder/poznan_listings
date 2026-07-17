@@ -169,6 +169,40 @@ DISTRICT_DESCRIPTIONS = {
 }
 
 
+# Неудобные промышленные объекты: (lat, lon, radius_km, penalty, name)
+# penalty — сколько вычитается из итоговой оценки при попадании в радиус
+# Sources: Aquanet, Veolia, ZZO, Wikipedia PL, OSM
+_NUISANCE_SITES = [
+    (52.430,  16.990,  4.0, 1.5, "ITPOK Spalarnia"),
+    (52.436,  16.988,  5.0, 1.0, "EC Karolin (Veolia)"),
+    (52.431,  16.959,  2.5, 1.2, "Oczyszczalnia LOŚ Serbska (Aquanet)"),
+    (52.449,  16.981,  3.0, 1.5, "Oczyszczalnia COŚ Koziegłowy (Aquanet)"),
+    (52.497,  16.888,  3.0, 1.2, "Składowisko ZZO Suchy Las"),
+    (52.412,  17.031,  1.5, 0.8, "VW Antoninek (fabryka)"),
+    (52.389,  16.887,  1.5, 0.8, "VW Odlewnia Wilda"),
+    (52.328,  16.900,  3.0, 1.2, "Luvena SA Luboń (zakład chemiczny)"),
+]
+
+from math import radians, sin, cos, sqrt, atan2 as _atan2
+
+def _haversine(lat1, lon1, lat2, lon2):
+    R = 6371
+    dl = radians(lat2 - lat1); do = radians(lon2 - lon1)
+    a = sin(dl/2)**2 + cos(radians(lat1))*cos(radians(lat2))*sin(do/2)**2
+    return R * 2 * _atan2(sqrt(a), sqrt(1 - a))
+
+def _nuisance_penalty(lat, lon):
+    """Total penalty for proximity to industrial/polluting sites (capped at 2.5)."""
+    if lat is None or lon is None:
+        return 0.0
+    total = 0.0
+    for slat, slon, radius, penalty, _ in _NUISANCE_SITES:
+        dist = _haversine(lat, lon, slat, slon)
+        if dist < radius:
+            # linear: full penalty at 0, zero at radius boundary
+            total += penalty * (1 - dist / radius)
+    return round(min(2.5, total), 2)
+
 def _score_district(district, city):
     """Check district first, then city name."""
     if district and district in DISTRICT_SCORES:
@@ -246,7 +280,7 @@ _BASE_W = {
 }
 
 
-def compute_score(price, area, rooms, tp, dist_tram, dist_center, district=None, city=None):
+def compute_score(price, area, rooms, tp, dist_tram, dist_center, district=None, city=None, lat=None, lon=None):
     factors = [
         (_score_transport(tp, dist_tram, dist_center), _BASE_W["transport"]),
         (_score_district(district, city),               _BASE_W["district"]),
@@ -256,7 +290,9 @@ def compute_score(price, area, rooms, tp, dist_tram, dist_center, district=None,
         (_score_type(tp),                               _BASE_W["type"]),
     ]
     total_w = sum(w for _, w in factors)
-    return round(sum(sc * w for sc, w in factors) / total_w, 1)
+    base = sum(sc * w for sc, w in factors) / total_w
+    penalty = _nuisance_penalty(lat, lon)
+    return round(max(0.0, base - penalty), 1)
 
 
 def _f(v):
@@ -300,4 +336,6 @@ def score_from_jsrow(r):
         dist_center=r.get("dist"),
         district=r.get("district", ""),
         city=r.get("city", ""),
+        lat=r.get("lat"),
+        lon=r.get("lon"),
     )

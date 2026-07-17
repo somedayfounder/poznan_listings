@@ -1,7 +1,7 @@
 import csv, json
 from math import radians, sin, cos, sqrt, atan2
 from pathlib import Path
-from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE, DISTRICT_DESCRIPTIONS
+from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE, DISTRICT_DESCRIPTIONS, _nuisance_penalty, _NUISANCE_SITES, _haversine
 from extract_features import feature_bonus, CACHE_FILE as FEAT_CACHE
 import json as _json
 _feat_cache = _json.loads(FEAT_CACHE.read_text()) if FEAT_CACHE.exists() else {}
@@ -66,6 +66,8 @@ for r in rows:
         if rail_name:
             rail_tip = f"{rail_name} — {fmt_d(dist_rail)} по дороге"
 
+    lat = v(r, "lat", float)
+    lon = v(r, "lon", float)
     row = {
         "id": r["id"], "type": r["type"], "title": r["title"],
         "area": area, "rooms": rooms_num, "floor": v(r, "floor"),
@@ -75,10 +77,20 @@ for r in rows:
         "district": r.get("district", ""),
         "dist": dist, "dist_tram": dist_tram, "tram_tip": tram_tip,
         "dist_rail": dist_rail, "rail_tip": rail_tip, "url": r["url"],
+        "lat": lat, "lon": lon,
     }
     base_score = score_from_jsrow(row)
     feat = _feat_cache.get(r["id"], {})
     bonus = feat.get("_bonus", 0.0)
+    # nuisance: list of nearby problem sites for tooltip
+    nuisance = []
+    if lat and lon:
+        for slat, slon, radius, penalty, name in _NUISANCE_SITES:
+            dist_n = _haversine(lat, lon, slat, slon)
+            if dist_n < radius:
+                pen = round(penalty * (1 - dist_n / radius), 2)
+                nuisance.append({"name": name, "dist_km": round(dist_n, 1), "penalty": pen})
+    row["nuisance"] = nuisance
     row["score"] = round(base_score, 1)
     row["base_score"] = round(base_score, 1)
     row["bonus"] = round(bonus, 2)
