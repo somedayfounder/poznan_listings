@@ -14,6 +14,7 @@ jobs:
     env:
       TG_TOKEN: ${{ secrets.TG_TOKEN }}
       TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+      GPT_TOKEN: ${{ secrets.GPT_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -25,6 +26,9 @@ jobs:
       - name: Run notifier
         run: python3 notify_new_listings.py
 
+      - name: Extract features via GPT
+        run: python3 extract_features.py
+
       - name: Build HTML
         run: python3 build_listings_html.py
 
@@ -32,7 +36,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add listings_latest.csv seen_ids.json listings_poznan.html coords_cache.json routes_cache.json || true
+          git add listings_latest.csv seen_ids.json listings_poznan.html coords_cache.json routes_cache.json features_cache.json || true
           git diff --staged --quiet && echo "nothing to commit" && exit 0
           git commit -m "update listings $(date +%Y-%m-%d)"
           git pull --rebase origin main

@@ -2,6 +2,9 @@ import csv, json
 from math import radians, sin, cos, sqrt, atan2
 from pathlib import Path
 from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE
+from extract_features import feature_bonus, CACHE_FILE as FEAT_CACHE
+import json as _json
+_feat_cache = _json.loads(FEAT_CACHE.read_text()) if FEAT_CACHE.exists() else {}
 
 trams = json.loads(Path("tram_stops.json").read_text())
 stop_lines = json.loads(Path("stop_lines.json").read_text())
@@ -73,7 +76,11 @@ for r in rows:
         "dist": dist, "dist_tram": dist_tram, "tram_tip": tram_tip,
         "dist_rail": dist_rail, "rail_tip": rail_tip, "url": r["url"],
     }
-    row["score"] = score_from_jsrow(row)
+    base_score = score_from_jsrow(row)
+    feat = _feat_cache.get(r["id"], {})
+    bonus = feat.get("_bonus", 0.0)
+    row["score"] = round(min(10.0, max(0.0, base_score + bonus)), 1)
+    row["features"] = {k: v for k, v in feat.items() if k != "_bonus"}
     d = row.get("district", "") or row.get("city", "")
     row["district_score"] = DISTRICT_SCORES.get(d, DISTRICT_SCORES.get(row.get("city",""), _DEFAULT_DISTRICT_SCORE))
     js_rows.append(row)
