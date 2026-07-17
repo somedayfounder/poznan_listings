@@ -56,7 +56,7 @@ a:hover{text-decoration:underline}
 <div id="tab-listings" class="tab-panel active">
 <div class="controls">
   <input id="sq" placeholder="Поиск по названию, улице, городу, проекту..." oninput="render()">
-  <select id="st" onchange="render()">
+  <select id="st" onchange="onTypeChange()">
     <option value="">Все типы</option>
     <option value="mieszkanie">Квартиры</option>
     <option value="dom">Дома</option>
@@ -89,46 +89,16 @@ a:hover{text-decoration:underline}
     <option value="1200000">до 1 200 000 zł</option>
     <option value="1500000">до 1 500 000 zł</option>
   </select>
-  <select id="sd_min" onchange="render()">
-    <option value="">От ратуши от</option>
-    <option value="3">от 3 км</option>
-    <option value="6">от 6 км</option>
-    <option value="9">от 9 км</option>
-    <option value="12">от 12 км</option>
-    <option value="15">от 15 км</option>
-    <option value="18">от 18 км</option>
-  </select>
-  <select id="sd" onchange="render()">
-    <option value="">до</option>
-    <option value="3">до 3 км</option>
-    <option value="6">до 6 км</option>
-    <option value="9">до 9 км</option>
-    <option value="12">до 12 км</option>
-    <option value="15">до 15 км</option>
-    <option value="18">до 18 км</option>
-    <option value="21">до 21 км</option>
-    <option value="30">до 30 км</option>
-  </select>
-  <select id="stram_min" onchange="render()">
-    <option value="">До трамвая от</option>
-    <option value="0.5">от 500 м</option>
-    <option value="1">от 1 км</option>
-    <option value="2">от 2 км</option>
-    <option value="3">от 3 км</option>
-    <option value="5">от 5 км</option>
-    <option value="8">от 8 км</option>
-    <option value="12">от 12 км</option>
-  </select>
   <select id="stram" onchange="render()">
-    <option value="">до</option>
+    <option value="">До трамвая — любое</option>
     <option value="0.5">до 500 м</option>
     <option value="1">до 1 км</option>
+    <option value="1.5">до 1.5 км</option>
     <option value="2">до 2 км</option>
-    <option value="3">до 3 км</option>
+    <option value="3" id="stram_3">до 3 км</option>
     <option value="5">до 5 км</option>
-    <option value="8">до 8 км</option>
-    <option value="12">до 12 км</option>
-    <option value="20">до 20 км</option>
+    <option value="8" id="stram_8">до 8 км</option>
+    <option value="15">до 15 км</option>
   </select>
 </div>
 <div class="tbl-wrap">
@@ -237,6 +207,20 @@ document.querySelectorAll('thead th').forEach(t=>t.className='');
 const ths=document.querySelectorAll('thead th');
 const ki=['score','title','type','district_score','area','rooms','floor','price','price_m2','project','dist','dist_tram','dist_rail'];
 const idx=ki.indexOf(k);if(idx>=0)ths[idx].className=sd_===1?'asc':'desc';render();}
+function onTypeChange(){
+  const st=document.getElementById('st').value;
+  const sel=document.getElementById('stram');
+  if(st==='mieszkanie') sel.value='3';
+  else if(st==='dom') sel.value='8';
+  else sel.value='';
+  render();
+}
+// set default tram filter on load
+(function(){
+  const sel=document.getElementById('stram');
+  const st=document.getElementById('st').value;
+  if(!sel.value) sel.value=st==='dom'?'8':'3';
+})();
 function render(){
 const q=(document.getElementById('sq').value||'').toLowerCase();
 const st=document.getElementById('st').value;
@@ -244,20 +228,14 @@ const sr=parseInt(document.getElementById('sr').value)||0;
 const sa=parseFloat(document.getElementById('sa').value)||0;
 const sp_min=parseFloat(document.getElementById('sp_min').value)||0;
 const sp=parseFloat(document.getElementById('sp').value)||0;
-const md=parseFloat(document.getElementById('sd').value)||Infinity;
-const md_min=parseFloat(document.getElementById('sd_min').value)||0;
 const mtram=parseFloat(document.getElementById('stram').value)||Infinity;
-const mtram_min=parseFloat(document.getElementById('stram_min').value)||0;
 let rs=D.filter(r=>{
   if(st&&r.type!==st)return false;
   if(sr&&(r.rooms==null||r.rooms<sr))return false;
   if(sa&&(r.area==null||r.area<sa))return false;
   if(sp_min&&r.price&&r.price<sp_min)return false;
   if(sp&&r.price&&r.price>sp)return false;
-  if(md<Infinity&&(r.dist==null||r.dist>md))return false;
-  if(md_min&&(r.dist==null||r.dist<md_min))return false;
   if(mtram<Infinity&&(r.dist_tram==null||r.dist_tram>mtram))return false;
-  if(mtram_min&&(r.dist_tram==null||r.dist_tram<mtram_min))return false;
   if(q&&![r.title,r.city,r.street||'',r.project||''].join(' ').toLowerCase().includes(q))return false;
   return true;
 });
