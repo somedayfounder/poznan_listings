@@ -190,7 +190,10 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
             r["city"] = "Poznań"
     all_ids = set(r["id"] for r in rows)
     new_rows = [r for r in rows if r["id"] not in seen]
-    new_rows.sort(key=lambda r: float(r["dist_tram"]) if r.get("dist_tram") else 999)
+    new_rows.sort(key=lambda r: (
+        0 if r.get("type") == "dom" else 1,
+        float(r["dist_tram"]) if r.get("dist_tram") else 999,
+    ))
     print(f"Новых объявлений: {len(new_rows)}")
     tg_safe(f"🏠 <b>Новых объявлений: {len(new_rows)}</b> (всего в базе: {len(rows)})", "new")
 
