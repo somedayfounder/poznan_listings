@@ -1,6 +1,7 @@
 import csv, json
 from math import radians, sin, cos, sqrt, atan2
 from pathlib import Path
+from score import score_from_jsrow
 
 trams = json.loads(Path("tram_stops.json").read_text())
 stop_lines = json.loads(Path("stop_lines.json").read_text())
@@ -62,7 +63,7 @@ for r in rows:
         if rail_name:
             rail_tip = f"{rail_name} — {fmt_d(dist_rail)} по дороге"
 
-    js_rows.append({
+    row = {
         "id": r["id"], "type": r["type"], "title": r["title"],
         "area": area, "rooms": rooms_num, "floor": v(r, "floor"),
         "price": int(price) if price else None,
@@ -70,7 +71,9 @@ for r in rows:
         "street": r["street"], "city": r["city"], "project": r["project"],
         "dist": dist, "dist_tram": dist_tram, "tram_tip": tram_tip,
         "dist_rail": dist_rail, "rail_tip": rail_tip, "url": r["url"],
-    })
+    }
+    row["score"] = score_from_jsrow(row)
+    js_rows.append(row)
 
 mx_dist = max((r["dist"] for r in js_rows if r["dist"]), default=60)
 total = len(js_rows)

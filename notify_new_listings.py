@@ -12,6 +12,7 @@ from datetime import date
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
+from score import score_from_csv
 
 POZNAN_SUBURBS = {"Smochowice", "Naramowice", "Strzeszyn", "Morasko",
                   "Szczepankowo", "Spławie", "Głuszyna", "Fabianowo"}
@@ -190,10 +191,9 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
             r["city"] = "Poznań"
     all_ids = set(r["id"] for r in rows)
     new_rows = [r for r in rows if r["id"] not in seen]
-    new_rows.sort(key=lambda r: (
-        0 if r.get("type") == "dom" else 1,
-        float(r["dist_tram"]) if r.get("dist_tram") else 999,
-    ))
+    for r in new_rows:
+        r["_score"] = score_from_csv(r)
+    new_rows.sort(key=lambda r: r["_score"], reverse=True)
     print(f"Новых объявлений: {len(new_rows)}")
     tg_safe(f"🏠 <b>Новых объявлений: {len(new_rows)}</b> (всего в базе: {len(rows)})", "new")
 
@@ -213,8 +213,10 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
             dist_t = fmt_dist(r.get("drive_tram_km") or r.get("dist_tram"))
             tram = r.get("drive_tram_name") or r.get("tram_name") or ""
             photos = [u for u in (r.get("photo_url") or "").split(",") if u]
+            score = r.get("_score", 0)
+            stars = "⭐" * round(score / 2)  # 0–5 звёзд (каждые 2 балла = 1 звезда)
             caption = (
-                f"<b>{_escape(r['title'])}</b>\n"
+                f"{stars} <b>{score}/10</b>  {_escape(r['title'])}\n"
                 f"{tp} · {area} · {price}\n"
                 f"📍 {location}\n"
                 f"🏛 до ратуши {dist_r} · 🚊 до трамвая {dist_t}"
