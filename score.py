@@ -165,12 +165,12 @@ def _score_type(tp):
 
 
 _BASE_W = {
-    "transport": 0.30,
-    "district":  0.20,
-    "price":     0.20,
-    "area":      0.15,
-    "rooms":     0.10,
-    "type":      0.05,
+    "transport": 0.25,
+    "district":  0.35,
+    "price":     0.18,
+    "area":      0.12,
+    "rooms":     0.07,
+    "type":      0.03,
 }
 
 
