@@ -272,22 +272,21 @@ return`<tr>
 </tr>`;}
 
 function subRowHtml(r,gid){
-// Only show fields that can differ within a project: score, title, area, rooms, floor, price, price_m2
 const sc=r.score!=null?r.score:0;
 const sc_c=sc>=8?'#166534':sc>=6?'#1e40af':sc>=4?'#854d0e':'#991b1b';
 const sc_cell=`<span style="font-weight:600;color:${sc_c}">${sc}</span><span style="color:#999;font-size:11px">/10</span>`;
 const pr=r.price?r.price.toLocaleString('pl')+' zł':'—';
 const pm=r.price_m2?r.price_m2.toLocaleString('pl'):'—';
+const parts=[
+  r.area!=null?`${r.area} м²`:'',
+  r.rooms?`${r.rooms} комн.`:'',
+  r.floor!=null?`эт. ${r.floor}`:'',
+  r.price?pr:'',
+  r.price_m2?`${pm}/м²`:'',
+].filter(Boolean).join(' · ');
 return`<tr class="tr-sub" data-g="${gid}">
-<td style="text-align:center;white-space:nowrap">${sc_cell}</td>
-<td><a href="${r.url}" target="_blank" title="${r.title}" style="color:#888">${r.title}</a></td>
-<td></td><td></td>
-<td>${r.area!=null?r.area:'—'}</td>
-<td>${r.rooms||'—'}</td>
-<td>${r.floor!=null?r.floor:'—'}</td>
-<td style="font-variant-numeric:tabular-nums">${pr}</td>
-<td style="font-variant-numeric:tabular-nums">${pm}</td>
-<td></td><td></td><td></td><td></td>
+<td style="text-align:center;white-space:nowrap;padding-left:24px">${sc_cell}</td>
+<td colspan="12" style="color:#777"><a href="${r.url}" target="_blank" style="color:#666;margin-right:8px">${r.title}</a><span style="color:#aaa;font-size:11px">${parts}</span></td>
 </tr>`;}
 
 let uid=0;
