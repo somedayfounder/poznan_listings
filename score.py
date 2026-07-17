@@ -205,22 +205,20 @@ def _nuisance_penalty(lat, lon):
 
 def _noise_penalty(noise):
     """
-    noise: dict {source: max_ldwn_dba} from noise_cache.json
-    Returns penalty 0–2.0 based on max LDWN across all sources.
-    EU residential limit: 55 dBA Lden. Each 5 dB above = +0.5 penalty.
+    noise: dict {source: max_ldwn_dba} from noise_cache.json (GEOPOZ 2017, facade level).
+    Returns penalty 0–1.0. Data is worst-case facade exposure; actual indoor levels
+    depend on floor, glazing, orientation — so scale is intentionally soft.
     """
     if not noise:
         return 0.0
     max_ldwn = max(noise.values())
-    if max_ldwn <= 55:
-        return 0.0
     if max_ldwn <= 60:
-        return 0.5
+        return 0.0
     if max_ldwn <= 65:
-        return 1.0
+        return 0.3
     if max_ldwn <= 70:
-        return 1.5
-    return 2.0
+        return 0.6
+    return 1.0
 
 def _score_district(district, city):
     """Check district first, then city name."""
