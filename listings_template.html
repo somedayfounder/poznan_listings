@@ -215,11 +215,13 @@ function onTypeChange(){
   else sel.value='';
   render();
 }
-// set default tram filter on load
+// set defaults on load
 (function(){
-  const sel=document.getElementById('stram');
+  const stram=document.getElementById('stram');
   const st=document.getElementById('st').value;
-  if(!sel.value) sel.value=st==='dom'?'8':'3';
+  if(!stram.value) stram.value=st==='dom'?'8':'3';
+  const sp_min=document.getElementById('sp_min');
+  if(!sp_min.value) sp_min.value='700000';
 })();
 function render(){
 const q=(document.getElementById('sq').value||'').toLowerCase();
