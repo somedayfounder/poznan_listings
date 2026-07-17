@@ -75,12 +75,19 @@ a:hover{text-decoration:underline}
     <option value="120">от 120 м²</option>
     <option value="150">от 150 м²</option>
   </select>
+  <select id="sp_min" onchange="render()">
+    <option value="">от любой</option>
+    <option value="500000">от 500 000 zł</option>
+    <option value="700000" selected>от 700 000 zł</option>
+    <option value="900000">от 900 000 zł</option>
+    <option value="1100000">от 1 100 000 zł</option>
+  </select>
   <select id="sp" onchange="render()">
-    <option value="">Любая цена</option>
-    <option value="600000">до 600 000 zł</option>
+    <option value="">до любой</option>
     <option value="800000">до 800 000 zł</option>
     <option value="1000000">до 1 000 000 zł</option>
     <option value="1200000">до 1 200 000 zł</option>
+    <option value="1500000">до 1 500 000 zł</option>
   </select>
   <select id="sd_min" onchange="render()">
     <option value="">От ратуши от</option>
@@ -232,6 +239,7 @@ const q=(document.getElementById('sq').value||'').toLowerCase();
 const st=document.getElementById('st').value;
 const sr=parseInt(document.getElementById('sr').value)||0;
 const sa=parseFloat(document.getElementById('sa').value)||0;
+const sp_min=parseFloat(document.getElementById('sp_min').value)||0;
 const sp=parseFloat(document.getElementById('sp').value)||0;
 const md=parseFloat(document.getElementById('sd').value)||Infinity;
 const md_min=parseFloat(document.getElementById('sd_min').value)||0;
@@ -241,6 +249,7 @@ let rs=D.filter(r=>{
   if(st&&r.type!==st)return false;
   if(sr&&(r.rooms==null||r.rooms<sr))return false;
   if(sa&&(r.area==null||r.area<sa))return false;
+  if(sp_min&&r.price&&r.price<sp_min)return false;
   if(sp&&r.price&&r.price>sp)return false;
   if(md<Infinity&&(r.dist==null||r.dist>md))return false;
   if(md_min&&(r.dist==null||r.dist<md_min))return false;

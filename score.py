@@ -2,12 +2,12 @@
 Scoring system for Poznań listings (0–10 scale).
 
 Weights:
-  transport  30%  — dist to tram (apt: ≤3km; house: ≤10km)
-  district   20%  — neighborhood quality (known issues/reputation)
-  price      20%  — ≤700k=10, 700–900k=10→8, 900k–1200k=8→0, >1200k=0
-  area       15%  — 90–100m² ideal; <70 or >120 = 0
-  rooms      10%  — 4=10, 5=8, 3=7, 6=7, others=3
-  type        5%  — house=10, apt=8
+  transport  28%  — dist to tram (apt: ≤3km; house: ≤10km)
+  district   38%  — neighborhood quality (NPS + resident surveys)
+  price      12%  — ≤700k=10, 700–900k=10→7, 900k–1200k=7→0, >1200k=0
+  area       12%  — 90–100m² ideal; <70 or >120 = 0
+  rooms       7%  — 4=10, 5=8, 3=7, 6=7, others=3
+  type        3%  — house=10, apt=8
 
 Missing price or rooms: weight redistributed proportionally so the
 listing isn't penalised for lack of data.
@@ -179,14 +179,15 @@ def _score_district(district, city):
 
 
 def _score_price(price):
+    # Calibrated for 700k+ segment (filter default = 700k)
     if price is None:
         return 5.0  # neutral, not redistributed
-    if price <= 600_000:
+    if price <= 700_000:
         return 10.0
-    if price <= 800_000:
-        return 10.0 - 2.0 * (price - 600_000) / 200_000   # 600k→10, 800k→8
-    if price <= 1_100_000:
-        return max(2.0, 8.0 - 6.0 * (price - 800_000) / 300_000)  # 800k→8, 1100k→2
+    if price <= 900_000:
+        return 10.0 - 3.0 * (price - 700_000) / 200_000   # 700k→10, 900k→7
+    if price <= 1_200_000:
+        return max(0.0, 7.0 - 7.0 * (price - 900_000) / 300_000)  # 900k→7, 1200k→0
     return 0.0
 
 
@@ -236,9 +237,9 @@ def _score_type(tp):
 
 
 _BASE_W = {
-    "transport": 0.25,
-    "district":  0.35,
-    "price":     0.18,
+    "transport": 0.28,
+    "district":  0.38,
+    "price":     0.12,
     "area":      0.12,
     "rooms":     0.07,
     "type":      0.03,
