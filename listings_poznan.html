@@ -31,18 +31,18 @@ tr:hover td{background:#fafaf8}
 a{color:#1d4ed8;text-decoration:none;max-width:240px;display:inline-block;overflow:hidden;text-overflow:ellipsis;vertical-align:bottom}
 a:hover{text-decoration:underline}
 .bar{display:inline-block;height:5px;background:#bfdbfe;border-radius:2px;vertical-align:middle;margin-right:5px}
-.dist-list{background:#fff;border-radius:10px;border:1px solid #d3d1c7;overflow:hidden}
-.dist-row{display:grid;grid-template-columns:44px 130px 1fr;align-items:center;padding:9px 14px;border-bottom:0.5px solid #eee;gap:10px}
-.dist-row:last-child{border-bottom:none}
-.dist-row:hover{background:#fafaf8}
-.dist-sc{font-size:15px;font-weight:700;text-align:center}
-.dist-nm{font-weight:500;font-size:13px}
-.dist-tg{font-size:10px;font-weight:500;padding:1px 6px;border-radius:8px;display:inline-block;margin-left:6px;vertical-align:middle}
-.dist-rs{color:#666;font-size:12px}
+.dist-tbl{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;border:1px solid #d3d1c7;overflow:hidden}
+.dist-tbl th{background:#f8f8f6;font-size:11px;font-weight:500;color:#888;padding:8px 14px;text-align:left;border-bottom:1px solid #e0dfd8;white-space:nowrap}
+.dist-tbl td{padding:8px 14px;border-bottom:0.5px solid #eee;vertical-align:top}
+.dist-tbl tr:last-child td{border-bottom:none}
+.dist-tbl tr:hover td{background:#fafaf8}
+.dist-sc{font-size:14px;font-weight:700;white-space:nowrap}
+.dist-tg{font-size:10px;font-weight:500;padding:1px 7px;border-radius:8px;display:inline-block;white-space:nowrap}
+.dist-rs{color:#555;font-size:12px;line-height:1.5;white-space:normal;min-width:260px}
 .tr-sub{display:none;background:#fafaf8}
 .tr-sub.open{display:table-row}
-.tr-sub td{padding:0 11px 8px 11px;color:#888;font-size:12px}
-.proj-toggle{cursor:pointer;color:#1d4ed8;font-size:11px;padding:0 6px;border:1px solid #bfdbfe;border-radius:4px;background:#eff6ff;white-space:nowrap;display:inline-block}
+.tr-sub td{color:#888;font-size:12px;border-left:2px solid #e0dfd8}
+.proj-toggle{cursor:pointer;color:#1d4ed8;font-size:11px;padding:0 5px;border:1px solid #bfdbfe;border-radius:4px;background:#eff6ff;white-space:nowrap;display:inline-block;margin-left:6px}
 </style>
 </head>
 <body>
@@ -146,7 +146,10 @@ a:hover{text-decoration:underline}
 </div><!-- /tab-listings -->
 
 <div id="tab-districts" class="tab-panel">
-<div class="dist-list" id="dg"></div>
+<div class="tbl-wrap"><table class="dist-tbl" id="dg">
+  <thead><tr><th style="width:60px">Оценка</th><th style="width:160px">Район</th><th style="width:110px">Уровень</th><th>Почему</th></tr></thead>
+  <tbody id="dg-body"></tbody>
+</table></div>
 </div>
 
 <script>
@@ -162,17 +165,18 @@ function switchTab(name){
 }
 
 function renderDistricts(){
-  const dg=document.getElementById('dg');
-  if(dg.children.length) return;
+  const tb=document.getElementById('dg-body');
+  if(tb.children.length) return;
   const tier=s=>s>=8?['#166534','#dcfce7','Отличный']:s>=7?['#1e40af','#dbeafe','Хороший']:s>=6?['#854d0e','#fef9c3','Средний']:s>=5?['#7c3aed','#f3e8ff','Ниже среднего']:['#991b1b','#fee2e2','Проблемный'];
-  dg.innerHTML=DISTRICTS.map(d=>{
+  tb.innerHTML=DISTRICTS.map(d=>{
     const [tc,bg,lbl]=tier(d.score);
     const sc_c=d.score>=8?'#166534':d.score>=7?'#1e40af':d.score>=5?'#854d0e':'#991b1b';
-    return`<div class="dist-row">
-  <div class="dist-sc" style="color:${sc_c}">${d.score}<span style="color:#bbb;font-size:10px;font-weight:400">/10</span></div>
-  <div><span class="dist-nm">${d.name}</span><span class="dist-tg" style="color:${tc};background:${bg}">${lbl}</span></div>
-  <div class="dist-rs">${d.desc||'—'}</div>
-</div>`;
+    return`<tr>
+<td class="dist-sc" style="color:${sc_c}">${d.score}<span style="color:#bbb;font-size:10px;font-weight:400">/10</span></td>
+<td style="font-weight:500;font-size:13px">${d.name}</td>
+<td><span class="dist-tg" style="color:${tc};background:${bg}">${lbl}</span></td>
+<td class="dist-rs">${d.desc||'—'}</td>
+</tr>`;
   }).join('');
 }
 function toggleGroup(gid,btn){
@@ -267,13 +271,32 @@ return`<tr>
 <td style="white-space:nowrap">${transport}</td>
 </tr>`;}
 
+function subRowHtml(r,gid){
+// Only show fields that can differ within a project: score, title, area, rooms, floor, price, price_m2
+const sc=r.score!=null?r.score:0;
+const sc_c=sc>=8?'#166534':sc>=6?'#1e40af':sc>=4?'#854d0e':'#991b1b';
+const sc_cell=`<span style="font-weight:600;color:${sc_c}">${sc}</span><span style="color:#999;font-size:11px">/10</span>`;
+const pr=r.price?r.price.toLocaleString('pl')+' zł':'—';
+const pm=r.price_m2?r.price_m2.toLocaleString('pl'):'—';
+return`<tr class="tr-sub" data-g="${gid}">
+<td style="text-align:center;white-space:nowrap">${sc_cell}</td>
+<td><a href="${r.url}" target="_blank" title="${r.title}" style="color:#888">${r.title}</a></td>
+<td></td><td></td>
+<td>${r.area!=null?r.area:'—'}</td>
+<td>${r.rooms||'—'}</td>
+<td>${r.floor!=null?r.floor:'—'}</td>
+<td style="font-variant-numeric:tabular-nums">${pr}</td>
+<td style="font-variant-numeric:tabular-nums">${pm}</td>
+<td></td><td></td><td></td><td></td>
+</tr>`;}
+
 let uid=0;
 const html_rows=groups.map(g=>{
   if(g.length===1) return rowHtml(g[0],'');
   const gid='g'+(uid++);
   const toggle=` <span class="proj-toggle" onclick="toggleGroup('${gid}',this)">+${g.length-1}</span>`;
   const main=rowHtml(g[0],toggle);
-  const subs=g.slice(1).map(r=>`<tr class="tr-sub" data-g="${gid}"><td colspan="13" style="padding:0"><table style="width:100%"><tbody>${rowHtml(r,'')}</tbody></table></td></tr>`).join('');
+  const subs=g.slice(1).map(r=>subRowHtml(r,gid)).join('');
   return main+subs;
 }).join('');
 
