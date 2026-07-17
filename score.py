@@ -84,7 +84,7 @@ def _score_type(tp):
     return 10.0 if tp == "dom" else 8.0
 
 
-_BASE_W = {"price": 0.25, "area": 0.25, "transport": 0.25, "rooms": 0.15, "type": 0.10}
+_BASE_W = {"price": 0.20, "area": 0.20, "transport": 0.35, "rooms": 0.15, "type": 0.10}
 
 
 def compute_score(price, area, rooms, tp, dist_tram, dist_center):
