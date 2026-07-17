@@ -57,6 +57,16 @@ def osrm_single(lat1, lon1, lat2, lon2):
 
 rows = list(csv.DictReader(open("listings_latest.csv", encoding="utf-8-sig")))
 
+# Пересчитываем dist_km/dist_tram из lat/lon если они пустые
+for r in rows:
+    if r.get("lat") and r.get("lon") and not r.get("dist_km"):
+        lat, lon = float(r["lat"]), float(r["lon"])
+        r["dist_km"] = round(hav(lat, lon, *RATUSZ), 1)
+        if trams:
+            nearest = min(trams, key=lambda t: hav(lat, lon, t["lat"], t["lon"]))
+            r["dist_tram"] = round(hav(lat, lon, nearest["lat"], nearest["lon"]), 2)
+            r["tram_name"] = nearest["name"]
+
 # Разделяем на те, что уже в кэше, и новые
 new_rows = [r for r in rows if r.get("lat") and r.get("lon") and r["id"] not in cache]
 print(f"Всего: {len(rows)}, новых для маршрутов: {len(new_rows)}")
