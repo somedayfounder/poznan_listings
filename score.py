@@ -125,11 +125,11 @@ def _score_area(area):
         return 5.0
     if area < 70 or area > 120:
         return 0.0
-    if 85 <= area <= 110:
+    if 85 <= area <= 105:
         return 10.0
     if area < 85:
         return 4.0 + 6.0 * (area - 70) / 15   # 70→4, 85→10
-    return 10.0 - 3.0 * (area - 110) / 10      # 110→10, 120→7
+    return 10.0 - 3.0 * (area - 105) / 15      # 105→10, 120→7
 
 
 def _score_rooms(rooms):
