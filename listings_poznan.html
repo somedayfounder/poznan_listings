@@ -255,14 +255,16 @@ rs.sort((a,b)=>{
   if(bv==null)bv=sd_>0?1e9:-1e9;
   return(av<bv?-1:av>bv?1:0)*sd_;
 });
-// group by project; singles and no-project rows stay as-is
+// group by project; if no project — group by exact area+district+rooms (duplicates)
 const groups=[];
 const seen_proj={};
 for(const r of rs){
   const pk=r.project&&r.project.trim()?r.project.trim():null;
-  if(!pk){groups.push([r]);continue;}
-  if(pk in seen_proj){seen_proj[pk].push(r);}
-  else{const g=[r];seen_proj[pk]=g;groups.push(g);}
+  const dk=(r.area!=null&&r.district&&r.rooms!=null)?`__dup__${r.area}|${r.district}|${r.rooms}`:null;
+  const key=pk||dk;
+  if(!key){groups.push([r]);continue;}
+  if(key in seen_proj){seen_proj[key].push(r);}
+  else{const g=[r];seen_proj[key]=g;groups.push(g);}
 }
 // sort within each group by score desc
 groups.forEach(g=>g.sort((a,b)=>(b.score||0)-(a.score||0)));
