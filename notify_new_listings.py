@@ -180,10 +180,14 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
     # 4. Читаем результат
     rows = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
     # Страховочный фильтр: исключаем НП не из нашей зоны
-    # Фильтр по расстоянию от центра (≤20 км) и от трамвая (≤10 км)
+    # Фильтр по расстоянию до трамвая: квартиры ≤3 км, дома ≤8 км
     def _f(v): return float(v) if v else None
-    rows = [r for r in rows if _f(r.get("dist_km")) is not None and _f(r.get("dist_km")) <= 15]
-    rows = [r for r in rows if _f(r.get("dist_tram")) is not None and _f(r.get("dist_tram")) <= 8]
+    def _tram_ok(r):
+        d = _f(r.get("drive_tram_km")) or _f(r.get("dist_tram"))
+        if d is None: return False
+        limit = 8.0 if r.get("type") == "dom" else 3.0
+        return d <= limit
+    rows = [r for r in rows if _tram_ok(r)]
     # Маппинг НП внутри Познани
     for r in rows:
         if r.get("city") in POZNAN_SUBURBS:
