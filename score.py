@@ -28,7 +28,7 @@ DISTRICT_SCORES = {
     "Naramowice":        7,  # новый трамвай 2022, развивается
     "Morasko":           7,  # тихий, природный резерват рядом
     "Jeżyce":            7,  # атмосферный, но экология слабая (2.68/5)
-    "Podolany":          7,  # нет ярких минусов
+    "Podolany":          8,  # тихий, зелёный, озёра рядом, поезд до центра 9 мин — недооценён
     "Spławie":           7,  # тихий пригород в черте города
     "Junikowo":          6,  # средний
     "Rataje":            6,  # Malta рядом, но бетонно
@@ -125,11 +125,11 @@ def _score_area(area):
         return 5.0
     if area < 70 or area > 120:
         return 0.0
-    if 90 <= area <= 100:
+    if 85 <= area <= 110:
         return 10.0
-    if area < 90:
-        return 4.0 + 6.0 * (area - 70) / 20   # 70→4, 90→10
-    return 10.0 - 3.0 * (area - 100) / 20      # 100→10, 120→7
+    if area < 85:
+        return 4.0 + 6.0 * (area - 70) / 15   # 70→4, 85→10
+    return 10.0 - 3.0 * (area - 110) / 10      # 110→10, 120→7
 
 
 def _score_rooms(rooms):
