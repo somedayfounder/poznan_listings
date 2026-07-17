@@ -31,14 +31,18 @@ tr:hover td{background:#fafaf8}
 a{color:#1d4ed8;text-decoration:none;max-width:240px;display:inline-block;overflow:hidden;text-overflow:ellipsis;vertical-align:bottom}
 a:hover{text-decoration:underline}
 .bar{display:inline-block;height:5px;background:#bfdbfe;border-radius:2px;vertical-align:middle;margin-right:5px}
-.dist-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
-.dist-card{background:#fff;border-radius:10px;border:1px solid #d3d1c7;padding:13px 16px;display:flex;gap:14px;align-items:flex-start}
-.dist-score-badge{font-size:18px;font-weight:700;min-width:36px;text-align:center;line-height:1.2}
-.dist-score-sub{font-size:10px;color:#999;display:block;text-align:center}
-.dist-info{}
-.dist-name{font-weight:600;font-size:14px;margin-bottom:3px}
-.dist-reason{color:#555;font-size:12px;line-height:1.45}
-.dist-tier{font-size:10px;font-weight:500;padding:2px 7px;border-radius:10px;display:inline-block;margin-bottom:6px}
+.dist-list{background:#fff;border-radius:10px;border:1px solid #d3d1c7;overflow:hidden}
+.dist-row{display:grid;grid-template-columns:44px 130px 1fr;align-items:center;padding:9px 14px;border-bottom:0.5px solid #eee;gap:10px}
+.dist-row:last-child{border-bottom:none}
+.dist-row:hover{background:#fafaf8}
+.dist-sc{font-size:15px;font-weight:700;text-align:center}
+.dist-nm{font-weight:500;font-size:13px}
+.dist-tg{font-size:10px;font-weight:500;padding:1px 6px;border-radius:8px;display:inline-block;margin-left:6px;vertical-align:middle}
+.dist-rs{color:#666;font-size:12px}
+.tr-sub{display:none;background:#fafaf8}
+.tr-sub.open{display:table-row}
+.tr-sub td{padding:0 11px 8px 11px;color:#888;font-size:12px}
+.proj-toggle{cursor:pointer;color:#1d4ed8;font-size:11px;padding:0 6px;border:1px solid #bfdbfe;border-radius:4px;background:#eff6ff;white-space:nowrap;display:inline-block}
 </style>
 </head>
 <body>
@@ -142,7 +146,7 @@ a:hover{text-decoration:underline}
 </div><!-- /tab-listings -->
 
 <div id="tab-districts" class="tab-panel">
-<div class="dist-grid" id="dg"></div>
+<div class="dist-list" id="dg"></div>
 </div>
 
 <script>
@@ -160,19 +164,22 @@ function switchTab(name){
 function renderDistricts(){
   const dg=document.getElementById('dg');
   if(dg.children.length) return;
-  const tierLabel=s=>s>=8?['#166534','#dcfce7','Отличный']:s>=7?['#1e40af','#dbeafe','Хороший']:s>=6?['#854d0e','#fef9c3','Средний']:s>=5?['#7c3aed','#f3e8ff','Ниже среднего']:['#991b1b','#fee2e2','Проблемный'];
+  const tier=s=>s>=8?['#166534','#dcfce7','Отличный']:s>=7?['#1e40af','#dbeafe','Хороший']:s>=6?['#854d0e','#fef9c3','Средний']:s>=5?['#7c3aed','#f3e8ff','Ниже среднего']:['#991b1b','#fee2e2','Проблемный'];
   dg.innerHTML=DISTRICTS.map(d=>{
-    const [tc,bg,lbl]=tierLabel(d.score);
+    const [tc,bg,lbl]=tier(d.score);
     const sc_c=d.score>=8?'#166534':d.score>=7?'#1e40af':d.score>=5?'#854d0e':'#991b1b';
-    return`<div class="dist-card">
-  <div><div class="dist-score-badge" style="color:${sc_c}">${d.score}</div><span class="dist-score-sub">/10</span></div>
-  <div class="dist-info">
-    <span class="dist-tier" style="color:${tc};background:${bg}">${lbl}</span>
-    <div class="dist-name">${d.name}</div>
-    <div class="dist-reason">${d.desc||'—'}</div>
-  </div>
+    return`<div class="dist-row">
+  <div class="dist-sc" style="color:${sc_c}">${d.score}<span style="color:#bbb;font-size:10px;font-weight:400">/10</span></div>
+  <div><span class="dist-nm">${d.name}</span><span class="dist-tg" style="color:${tc};background:${bg}">${lbl}</span></div>
+  <div class="dist-rs">${d.desc||'—'}</div>
 </div>`;
   }).join('');
+}
+function toggleGroup(gid,btn){
+  const rows=document.querySelectorAll(`tr[data-g="${gid}"]`);
+  const open=rows[0].classList.toggle('open');
+  rows.forEach(r=>r.classList.toggle('open',open));
+  btn.textContent=open?'−'+(rows.length):('+'+rows.length);
 }
 let sk='score',sd_=-1;
 function sort(k){if(sk===k)sd_*=-1;else{sk=k;sd_=k==='score'?-1:1;}
@@ -208,8 +215,19 @@ rs.sort((a,b)=>{
   if(bv==null)bv=sd_>0?1e9:-1e9;
   return(av<bv?-1:av>bv?1:0)*sd_;
 });
-document.getElementById('cnt').textContent=rs.length+' из __TOTAL__';
-document.getElementById('tb').innerHTML=rs.map(r=>{
+// group by project; singles and no-project rows stay as-is
+const groups=[];
+const seen_proj={};
+for(const r of rs){
+  const pk=r.project&&r.project.trim()?r.project.trim():null;
+  if(!pk){groups.push([r]);continue;}
+  if(pk in seen_proj){seen_proj[pk].push(r);}
+  else{const g=[r];seen_proj[pk]=g;groups.push(g);}
+}
+// sort within each group by score desc
+groups.forEach(g=>g.sort((a,b)=>(b.score||0)-(a.score||0)));
+
+function rowHtml(r,toggle){
 const bw=r.dist?Math.round(r.dist/MX*55):0;
 const dc=r.dist!=null?`<span class="bar" style="width:${bw}px"></span>${r.dist.toFixed(1)} км`:'—';
 const dt_v=r.dist_tram;
@@ -232,9 +250,10 @@ const ds=r.district_score!=null?r.district_score:6;
 const ds_c=ds>=8?'#166534':ds>=7?'#1e40af':ds>=5?'#854d0e':'#991b1b';
 const ds_label=r.district||r.city||'—';
 const ds_cell=`<span style="color:${ds_c};font-weight:500">${ds}/10</span> <span style="color:#999;font-size:11px">${ds_label}</span>`;
+const proj_cell=r.project?`<span style="max-width:130px;overflow:hidden;text-overflow:ellipsis;color:#666;display:inline-block" title="${r.project}">${r.project}</span>`:'—';
 return`<tr>
 <td style="text-align:center;white-space:nowrap">${sc_cell}</td>
-<td><a href="${r.url}" target="_blank" title="${r.title}">${r.title}</a></td>
+<td><a href="${r.url}" target="_blank" title="${r.title}">${r.title}</a>${toggle||''}</td>
 <td><span class="tp ${tc}">${tl}</span></td>
 <td style="white-space:nowrap">${ds_cell}</td>
 <td>${r.area!=null?r.area:'—'}</td>
@@ -243,11 +262,24 @@ return`<tr>
 <td style="font-variant-numeric:tabular-nums">${pr}</td>
 <td style="font-variant-numeric:tabular-nums">${pm}</td>
 <td>${r.city}</td>
-<td style="max-width:150px;overflow:hidden;text-overflow:ellipsis;color:#666" title="${r.project||''}">${r.project||'—'}</td>
+<td>${proj_cell}</td>
 <td style="white-space:nowrap">${dc}</td>
 <td style="white-space:nowrap">${transport}</td>
-</tr>`;
+</tr>`;}
+
+let uid=0;
+const html_rows=groups.map(g=>{
+  if(g.length===1) return rowHtml(g[0],'');
+  const gid='g'+(uid++);
+  const toggle=` <span class="proj-toggle" onclick="toggleGroup('${gid}',this)">+${g.length-1}</span>`;
+  const main=rowHtml(g[0],toggle);
+  const subs=g.slice(1).map(r=>`<tr class="tr-sub" data-g="${gid}"><td colspan="13" style="padding:0"><table style="width:100%"><tbody>${rowHtml(r,'')}</tbody></table></td></tr>`).join('');
+  return main+subs;
 }).join('');
+
+const visible=groups.length;
+document.getElementById('cnt').textContent=visible+' из __TOTAL__';
+document.getElementById('tb').innerHTML=html_rows;
 }
 render();
 </script>
