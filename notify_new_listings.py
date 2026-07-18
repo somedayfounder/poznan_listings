@@ -180,22 +180,6 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
     # 4. Читаем результат
     rows = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
 
-    # Проверяем новые районы, которых нет в score.py
-    from score import DISTRICT_SCORES
-    known = set(DISTRICT_SCORES.keys())
-    poznan_suburbs = POZNAN_SUBURBS
-    found_districts = set()
-    for r in rows:
-        city = r.get("city", "")
-        district = r.get("district", "")
-        if city == "Poznań" and district:
-            found_districts.add(district)
-        elif city in poznan_suburbs:
-            found_districts.add(city)
-    new_districts = found_districts - known
-    if new_districts:
-        names = ", ".join(sorted(new_districts))
-        tg_safe(f"⚠️ <b>Новые районы в листинге:</b> {names}\nНе найдены в score.py — нужно добавить оценку и описание вручную.", "new_districts")
     # Страховочный фильтр: исключаем НП не из нашей зоны
     # Фильтр по расстоянию до трамвая: квартиры ≤3 км, дома ≤8 км
     def _f(v): return float(v) if v else None
@@ -210,6 +194,22 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
         if r.get("city") in POZNAN_SUBURBS:
             r["district"] = r["city"]
             r["city"] = "Poznań"
+
+    # Проверяем новые районы среди уже отфильтрованных объявлений
+    from score import DISTRICT_SCORES
+    known = set(DISTRICT_SCORES.keys())
+    found_districts = set()
+    for r in rows:
+        city = r.get("city", "")
+        district = r.get("district", "")
+        if city == "Poznań" and district:
+            found_districts.add(district)
+        else:
+            found_districts.add(city)
+    new_districts = found_districts - known
+    if new_districts:
+        names = ", ".join(sorted(new_districts))
+        tg_safe(f"⚠️ <b>Новые районы в листинге:</b> {names}\nНе найдены в score.py — нужно добавить оценку и описание вручную.", "new_districts")
     all_ids = set(r["id"] for r in rows)
     new_rows = [r for r in rows if r["id"] not in seen]
     for r in new_rows:
