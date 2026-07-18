@@ -42,7 +42,20 @@ a:hover{text-decoration:underline}
 .tr-sub{display:none;background:#fafaf8}
 .tr-sub.open{display:table-row}
 .tr-sub td{color:#888;font-size:12px;border-left:2px solid #e0dfd8}
-.proj-toggle{cursor:pointer;color:#1d4ed8;font-size:11px;padding:0 5px;border:1px solid #bfdbfe;border-radius:4px;background:#eff6ff;white-space:nowrap;display:inline-block;margin-left:6px}
+.proj-toggle{cursor:pointer;color:#1d4ed8;font-size:11px;padding:2px 6px;border:1px solid #bfdbfe;border-radius:4px;background:#eff6ff;white-space:nowrap;display:inline-block}
+.info-btn{cursor:pointer;background:none;border:1px solid #d1d5db;border-radius:4px;color:#6b7280;font-size:12px;padding:1px 5px;line-height:1.4}
+.info-btn:hover{background:#f3f4f6;color:#1d4ed8;border-color:#93c5fd}
+#score-modal-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:1000;align-items:center;justify-content:center}
+#score-modal-backdrop.open{display:flex}
+#score-modal{background:#fff;border-radius:12px;padding:22px 26px;min-width:340px;max-width:480px;box-shadow:0 8px 40px rgba(0,0,0,.25);position:relative}
+#score-modal h3{font-size:14px;font-weight:600;margin-bottom:14px;padding-right:24px;line-height:1.4}
+#score-modal table{width:100%;border-collapse:collapse;font-size:12.5px}
+#score-modal th{text-align:left;font-weight:500;color:#888;padding:3px 6px;border-bottom:1px solid #eee}
+#score-modal td{padding:4px 6px;border-bottom:0.5px solid #f0f0ee;vertical-align:middle}
+#score-modal tr:last-child td{border:none}
+#score-modal .total-row td{font-weight:700;font-size:14px;padding-top:8px;border-top:1px solid #ddd}
+#score-modal .close-btn{position:absolute;top:14px;right:16px;background:none;border:none;font-size:18px;cursor:pointer;color:#888;line-height:1}
+#score-modal .close-btn:hover{color:#111}
 </style>
 </head>
 <body>
@@ -110,6 +123,8 @@ a:hover{text-decoration:underline}
 <table>
 <thead><tr>
   <th onclick="sort('score')" class="desc" style="min-width:60px">Оценка</th>
+  <th style="width:28px;padding:0"></th>
+  <th style="width:28px;padding:0"></th>
   <th onclick="sort('title')" style="min-width:220px">Объявление</th>
   <th onclick="sort('type')">Тип</th>
   <th onclick="sort('district_score')" style="min-width:100px">Район ★</th>
@@ -665,9 +680,12 @@ const proj_cell=r.project?`<span style="max-width:130px;overflow:hidden;text-ove
 const tram_cell=dt_v!=null?`<span style="color:${dt_c};font-weight:500" title="${r.tram_tip||''}">🚊 ${dt_s}</span>`:'—';
 const rail_cell=dr_v!=null?`<span style="color:${dr_c};font-weight:500" title="${r.rail_tip||''}">🚆 ${dr_s}</span>`:'—';
 
+const exp_cell=toggle?`<td style="text-align:center;padding:0">${toggle}</td>`:'<td></td>';
 return`<tr>
 <td style="text-align:center;white-space:nowrap">${sc_cell}</td>
-<td><a href="${r.url}" target="_blank" title="${r.title}">${r.title}</a>${toggle||''}</td>
+${exp_cell}
+<td style="text-align:center;padding:0"><button class="info-btn" onclick="showScoreInfo(${JSON.stringify(r).replace(/'/g,'&#39;')})">ℹ</button></td>
+<td><a href="${r.url}" target="_blank" title="${r.title}">${r.title}</a></td>
 <td><span class="tp ${tc}">${tl}</span></td>
 <td style="white-space:nowrap">${ds_cell}</td>
 <td>${r.area!=null?r.area:'—'}</td>
@@ -696,8 +714,107 @@ const parts=[
 ].filter(Boolean).join(' · ');
 return`<tr class="tr-sub" data-g="${gid}">
 <td style="text-align:center;white-space:nowrap;padding-left:24px">${sc_cell}</td>
-<td colspan="12" style="color:#777"><a href="${r.url}" target="_blank" style="color:#666;margin-right:8px">${r.title}</a><span style="color:#aaa;font-size:11px">${parts}</span></td>
+<td colspan="14" style="color:#777"><a href="${r.url}" target="_blank" style="color:#666;margin-right:8px">${r.title}</a><span style="color:#aaa;font-size:11px">${parts}</span></td>
 </tr>`;}
+
+// ── Scoring functions (mirrors score.py) ──────────────────────────────────
+function _sTransport(tram_min){
+  const m=tram_min;
+  if(m==null)return 5;
+  if(m<=3)return 10;
+  if(m<=7)return 10-1.5*(m-3)/4;
+  if(m<=12)return 8.5-2.5*(m-7)/5;
+  if(m<=20)return Math.max(0,6-6*(m-12)/8);
+  return 0;
+}
+function _sPrice(p){
+  if(p==null)return 5;
+  if(p<=700000)return 10;
+  if(p<=900000)return 10-3*(p-700000)/200000;
+  if(p<=1200000)return Math.max(0,7-7*(p-900000)/300000);
+  return 0;
+}
+function _sArea(a){
+  if(a==null)return 5;
+  if(a<70||a>120)return 0;
+  if(a>=85&&a<=105)return 10;
+  if(a<85)return 4+6*(a-70)/15;
+  return 10-3*(a-105)/15;
+}
+function _sRooms(r){
+  if(r==null)return 5;
+  if(r===4)return 10;
+  if(r===5)return 8;
+  if(r===3||r===6)return 7;
+  return 3;
+}
+
+function showScoreInfo(r){
+  const d_sc   = r.district_score!=null?r.district_score:6;
+  const tr_sc  = Math.round(_sTransport(r.tram_min)*10)/10;
+  const pr_sc  = Math.round(_sPrice(r.price)*10)/10;
+  const ar_sc  = Math.round(_sArea(r.area)*10)/10;
+  const ro_sc  = _sRooms(r.rooms);
+
+  const W = {district:0.25,transport:0.15,price:0.20,area:0.20,rooms:0.20};
+  const base = d_sc*W.district + tr_sc*W.transport + pr_sc*W.price + ar_sc*W.area + ro_sc*W.rooms;
+
+  const nuis_pen = (r.nuisance||[]).reduce((s,n)=>s+n.penalty,0);
+  const noise_vals = r.noise?Object.values(r.noise):[];
+  const max_noise = noise_vals.length?Math.max(...noise_vals):0;
+  const noise_pen = max_noise>=70?1.5:max_noise>=65?1.0:max_noise>=60?0.5:0;
+  const final_sc = Math.round(Math.max(0,base-nuis_pen-noise_pen)*10)/10;
+
+  function bar(v){
+    const w=Math.round(v/10*60);
+    const c=v>=8?'#16a34a':v>=6?'#2563eb':v>=4?'#d97706':'#dc2626';
+    return`<div style="display:inline-block;width:${w}px;height:5px;background:${c};border-radius:2px;vertical-align:middle;margin-right:4px"></div>`;
+  }
+  function fmtLabel(key,r){
+    if(key==='district')return `${r.district||r.city||'—'}`;
+    if(key==='transport')return r.tram_min!=null?`${r.tram_min} мин до трамвая`:'нет данных';
+    if(key==='price')return r.price?r.price.toLocaleString('pl')+' zł':'нет данных';
+    if(key==='area')return r.area!=null?`${r.area} м²`:'нет данных';
+    if(key==='rooms')return r.rooms!=null?`${r.rooms} комн.`:'нет данных';
+    return '';
+  }
+  const factors=[
+    {key:'district',  label:'Район',     sc:d_sc,  w:25},
+    {key:'transport', label:'Транспорт', sc:tr_sc, w:15},
+    {key:'price',     label:'Цена',      sc:pr_sc, w:20},
+    {key:'area',      label:'Площадь',   sc:ar_sc, w:20},
+    {key:'rooms',     label:'Комнаты',   sc:ro_sc, w:20},
+  ];
+  const rows=factors.map(f=>`<tr>
+    <td><b>${f.label}</b> <span style="color:#888;font-size:11px">${fmtLabel(f.key,r)}</span></td>
+    <td style="text-align:right">${bar(f.sc)}${f.sc}/10</td>
+    <td style="text-align:right;color:#888">${f.w}%</td>
+    <td style="text-align:right;font-weight:500">${(f.sc*f.w/100).toFixed(2)}</td>
+  </tr>`).join('');
+
+  let penRows='';
+  if(nuis_pen>0){
+    const names=(r.nuisance||[]).map(n=>n.name).join(', ');
+    penRows+=`<tr><td colspan="3" style="color:#c2410c">⚠️ Штраф (вредные объекты): ${names}</td><td style="text-align:right;color:#c2410c">−${nuis_pen.toFixed(2)}</td></tr>`;
+  }
+  if(noise_pen>0){
+    penRows+=`<tr><td colspan="3" style="color:#c2410c">🔊 Штраф за шум (${max_noise} дБА)</td><td style="text-align:right;color:#c2410c">−${noise_pen.toFixed(1)}</td></tr>`;
+  }
+
+  const sc_c=final_sc>=8?'#166534':final_sc>=6?'#1e40af':final_sc>=4?'#854d0e':'#991b1b';
+  document.getElementById('score-modal-body').innerHTML=`
+    <table>
+      <thead><tr><th>Фактор</th><th style="text-align:right">Оценка</th><th style="text-align:right">Вес</th><th style="text-align:right">Вклад</th></tr></thead>
+      <tbody>
+        ${rows}
+        <tr style="color:#888"><td colspan="3">База</td><td style="text-align:right;font-weight:600">${base.toFixed(2)}</td></tr>
+        ${penRows}
+        <tr class="total-row"><td colspan="3">Итог</td><td style="text-align:right;color:${sc_c}">${final_sc}</td></tr>
+      </tbody>
+    </table>`;
+  document.getElementById('score-modal-title').textContent=r.title;
+  document.getElementById('score-modal-backdrop').classList.add('open');
+}
 
 let uid=0;
 const html_rows=groups.map(g=>{
@@ -716,5 +833,13 @@ document.getElementById('tb').innerHTML=html_rows;
 }
 render();
 </script>
+
+<div id="score-modal-backdrop" onclick="if(event.target===this)this.classList.remove('open')">
+  <div id="score-modal">
+    <button class="close-btn" onclick="document.getElementById('score-modal-backdrop').classList.remove('open')">✕</button>
+    <h3 id="score-modal-title"></h3>
+    <div id="score-modal-body"></div>
+  </div>
+</div>
 </body>
 </html>
