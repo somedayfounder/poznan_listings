@@ -30,6 +30,8 @@ def _best_store_name(sup_entry, tier):
     return (sup_entry.get(tier) or {}).get("name", "")
 _NOISE_CACHE_FILE = Path("noise_cache.json")
 _noise_cache = _json.loads(_NOISE_CACHE_FILE.read_text()) if _NOISE_CACHE_FILE.exists() else {}
+_DRIVE_CACHE_FILE = Path("drive_cache.json")
+_drive_cache = _json.loads(_DRIVE_CACHE_FILE.read_text()) if _DRIVE_CACHE_FILE.exists() else {}
 
 trams = json.loads(Path("tram_stops.json").read_text())
 stop_lines = json.loads(Path("stop_lines.json").read_text())
@@ -55,7 +57,6 @@ js_rows = []
 for r in rows:
     price = v(r, "price_zl", float)
     price_m2 = v(r, "price_per_m2", float)
-    dist = v(r, "drive_ratusz_km", float) or v(r, "dist_km", float)
     area = v(r, "area_m2", float)
     rooms_raw = v(r, "rooms")
     rooms_num = None
@@ -63,8 +64,12 @@ for r in rows:
         if rooms_raw and rooms_raw != "7+": rooms_num = int(rooms_raw)
         elif rooms_raw == "7+": rooms_num = 7
     except: pass
-    dist_tram = v(r, "drive_tram_km", float)
-    tram_name = r.get("drive_tram_name", "")
+    # prefer Google Maps drive distances over haversine
+    _dk = f"{r.get('lat')},{r.get('lon')}"
+    _drive = _drive_cache.get(_dk, {})
+    dist     = _drive.get("ratusz_km") or v(r, "drive_ratusz_km", float) or v(r, "dist_km", float)
+    dist_tram = _drive.get("tram_km") or v(r, "drive_tram_km", float)
+    tram_name = _drive.get("tram_name") or r.get("drive_tram_name", "")
     dist_rail = v(r, "drive_rail_km", float)
     rail_name = r.get("drive_rail_name", "")
 
