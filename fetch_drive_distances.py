@@ -16,7 +16,7 @@ API_KEY = os.environ.get("GOOGLE_API_KEY", "")
 if not API_KEY:
     raise SystemExit("ERROR: GOOGLE_API_KEY не задан")
 RATUSZ = (52.4082, 16.9335)
-K = 8  # tram candidates by haversine
+K = 15  # tram candidates by haversine
 
 CACHE_FILE  = Path("drive_cache.json")
 TRAM_FILE   = Path("tram_stops.json")
