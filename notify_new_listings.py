@@ -245,7 +245,8 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
                 f"{_escape(r['title'])}\n"
                 f"📍 {location_str}\n"
                 f"<b>{price}</b>  ·  {area}  ·  {tp_full}\n"
-                f"{tram_line}  ·  🏛 Центр: {dist_r}\n"
+                f"{tram_line}\n"
+                f"🏛 Центр: {dist_r}\n"
                 f"<a href=\"{r['url']}\">На Otodom →</a>"
             )
             try:
