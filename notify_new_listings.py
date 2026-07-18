@@ -238,6 +238,10 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
     print(f"Новых объявлений к отправке: {len(new_rows)}")
     tg_safe(f"🏠 <b>Отправляю {len(new_rows)} объявлений</b>…", "sending")
 
+    # Загружаем drive_cache для актуальных расстояний (fetch_drive_distances пишет туда, не в CSV)
+    _drive_cache_path = DATA_DIR / "drive_cache.json"
+    _drive_cache = json.loads(_drive_cache_path.read_text()) if _drive_cache_path.exists() else {}
+
     # 5. Шлём в Telegram
     if not new_rows:
         pass  # уже сообщили выше
@@ -245,7 +249,6 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
         for r in new_rows:
             price = f"{int(float(r['price_zl'])):,}".replace(",", " ") + " zł" if r.get("price_zl") else "цена не указана"
             area = f"{r['area_m2']} м²" if r.get("area_m2") else ""
-            tp = "кв." if r["type"] == "mieszkanie" else "дом"
             # Для Познани показываем район, для пригородов — город
             city = r.get("city", "")
             district = r.get("district", "")
@@ -253,13 +256,15 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
             loc_key = district if district else city
             dist_sc = DISTRICT_SCORES.get(loc_key, _DEFAULT_DISTRICT_SCORE)
             location_str = f"{location} ({dist_sc}/10)"
-            dist_r = fmt_dist(r.get("drive_ratusz_km") or r.get("dist_km"))
-            dist_t = fmt_dist(r.get("drive_tram_km") or r.get("dist_tram"))
-            tram = r.get("drive_tram_name") or r.get("tram_name") or ""
+            # Расстояния из drive_cache (актуальнее, чем CSV-колонки)
+            _dk = f"{r.get('lat')},{r.get('lon')}"
+            _drv = _drive_cache.get(_dk, {})
+            tram_min  = round(_drv["tram_dur_s"] / 60)  if _drv.get("tram_dur_s")   else None
+            dist_r_km = _drv.get("ratusz_km") or r.get("drive_ratusz_km") or r.get("dist_km")
+            tram      = _drv.get("tram_name") or r.get("drive_tram_name") or r.get("tram_name") or ""
             photos = [u for u in (r.get("photo_url") or "").split(",") if u]
             score = r.get("_score", 0)
-            tram_min = round(int(float(r["drive_tram_dur_s"])) / 60) if r.get("drive_tram_dur_s") else None
-            tram_line = f"🚊 Трамвай: {tram_min} мин ({tram})" if tram_min and tram else (f"🚊 Трамвай: {dist_t}" + (f" ({tram})" if tram else ""))
+            tram_line = f"🚊 Трамвай: {tram_min} мин ({tram})" if tram_min and tram else (f"🚊 Трамвай: {tram_min} мин" if tram_min else "🚊 Трамвай: нет данных")
             tp_full = "Квартира" if r["type"] == "mieszkanie" else "Дом"
             caption = (
                 f"<b>{score}/10</b>\n"
@@ -267,7 +272,7 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
                 f"📍 {location_str}\n"
                 f"<b>{price}</b>  ·  {area}  ·  {tp_full}\n"
                 f"{tram_line}\n"
-                f"🏛 Центр: {dist_r}\n"
+                f"🏛 Центр: {fmt_dist(dist_r_km)}\n"
                 f"<a href=\"{r['url']}\">На Otodom →</a>"
             )
             try:
