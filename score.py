@@ -502,14 +502,15 @@ def _score_rooms(rooms):
     return 3.0  # ≤2 or 7+
 
 
-def _score_transport(tp, dist_tram, dist_center):
-    d = dist_tram if dist_tram is not None else dist_center
-    if d is None:
+def _score_transport(tp, tram_min, dist_center_min):
+    # score by drive time in minutes to nearest tram stop
+    m = tram_min if tram_min is not None else dist_center_min
+    if m is None:
         return 5.0
-    if d <= 0.5: return 10.0
-    if d <= 1.5: return 10.0 - 2.0 * (d - 0.5)      # 0.5→10, 1.5→8
-    if d <= 3:   return 8.0 - 2.0 * (d - 1.5) / 1.5  # 1.5→8, 3→6
-    if d <= 5:   return max(0.0, 6.0 - 6.0 * (d - 3) / 2)  # 3→6, 5→0
+    if m <= 3:  return 10.0
+    if m <= 7:  return 10.0 - 1.5 * (m - 3) / 4   # 3→10, 7→8.5
+    if m <= 12: return 8.5 - 2.5 * (m - 7) / 5    # 7→8.5, 12→6
+    if m <= 20: return max(0.0, 6.0 - 6.0 * (m - 12) / 8)  # 12→6, 20→0
     return 0.0
 
 
@@ -527,9 +528,9 @@ _BASE_W = {
 }
 
 
-def compute_score(price, area, rooms, tp, dist_tram, dist_center, district=None, city=None, lat=None, lon=None, noise=None):
+def compute_score(price, area, rooms, tp, dist_tram, dist_center, tram_min=None, dist_center_min=None, district=None, city=None, lat=None, lon=None, noise=None):
     factors = [
-        (_score_transport(tp, dist_tram, dist_center), _BASE_W["transport"]),
+        (_score_transport(tp, tram_min, dist_center_min), _BASE_W["transport"]),
         (_score_district(district, city),               _BASE_W["district"]),
         (_score_price(price),                           _BASE_W["price"]),
         (_score_area(area),                             _BASE_W["area"]),
@@ -581,6 +582,8 @@ def score_from_jsrow(r):
         tp=r.get("type", ""),
         dist_tram=r.get("dist_tram"),
         dist_center=r.get("dist"),
+        tram_min=r.get("tram_min"),
+        dist_center_min=r.get("dist_min"),
         district=r.get("district", ""),
         city=r.get("city", ""),
         lat=r.get("lat"),

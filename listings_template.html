@@ -96,14 +96,13 @@ a:hover{text-decoration:underline}
   </select>
   <select id="stram" onchange="render()">
     <option value="">До трамвая — любое</option>
-    <option value="0.5">до 500 м</option>
-    <option value="1">до 1 км</option>
-    <option value="1.5">до 1.5 км</option>
-    <option value="2">до 2 км</option>
-    <option value="3" id="stram_3">до 3 км</option>
-    <option value="5">до 5 км</option>
-    <option value="8" id="stram_8">до 8 км</option>
-    <option value="15">до 15 км</option>
+    <option value="3">до 3 мин</option>
+    <option value="5">до 5 мин</option>
+    <option value="7">до 7 мин</option>
+    <option value="10">до 10 мин</option>
+    <option value="15">до 15 мин</option>
+    <option value="20">до 20 мин</option>
+    <option value="30">до 30 мин</option>
   </select>
 </div>
 <div class="tbl-wrap">
@@ -119,8 +118,8 @@ a:hover{text-decoration:underline}
   <th onclick="sort('price')">Цена zł</th>
   <th onclick="sort('price_m2')">zł/м²</th>
   <th onclick="sort('project')" style="min-width:140px">Проект</th>
-  <th onclick="sort('dist')">До ратуши</th>
-  <th onclick="sort('dist_tram')">Трамвай</th>
+  <th onclick="sort('dist_min')">До ратуши</th>
+  <th onclick="sort('tram_min')">Трамвай</th>
   <th onclick="sort('dist_rail')">Ж/д</th>
 </tr></thead>
 <tbody id="tb"></tbody>
@@ -382,7 +381,7 @@ let rs=D.filter(r=>{
   if(sa&&(r.area==null||r.area<sa))return false;
   if(sp_min&&r.price&&r.price<sp_min)return false;
   if(sp&&r.price&&r.price>sp)return false;
-  if(mtram<Infinity&&(r.dist_tram==null||r.dist_tram>mtram))return false;
+  if(mtram<Infinity&&(r.tram_min==null||r.tram_min>mtram))return false;
   if(q&&![r.title,r.city,r.street||'',r.project||''].join(' ').toLowerCase().includes(q))return false;
   return true;
 });
@@ -407,11 +406,11 @@ for(const r of rs){
 groups.forEach(g=>g.sort((a,b)=>(b.score||0)-(a.score||0)));
 
 function rowHtml(r,toggle){
-const bw=r.dist?Math.round(r.dist/MX*55):0;
-const dc=r.dist!=null?`<span class="bar" style="width:${bw}px"></span>${r.dist.toFixed(1)} км`:'—';
-const dt_v=r.dist_tram;
-const dt_c=dt_v==null?'#999':dt_v<=0.5?'#166534':dt_v<=2?'#1e40af':dt_v<=8?'#854d0e':'#991b1b';
-const dt_s=dt_v==null?'—':dt_v<1?(dt_v*1000|0)+' м':dt_v.toFixed(1)+' км';
+const bw=r.dist_min?Math.round(r.dist_min/60*55):0;
+const dc=r.dist_min!=null?`<span class="bar" style="width:${bw}px"></span>${r.dist_min} мин`:(r.dist!=null?r.dist.toFixed(1)+' км':'—');
+const dt_v=r.tram_min;
+const dt_c=dt_v==null?'#999':dt_v<=3?'#166534':dt_v<=7?'#1e40af':dt_v<=15?'#854d0e':'#991b1b';
+const dt_s=dt_v!=null?dt_v+' мин':'—';
 const dt=dt_v!=null?`<span style="color:${dt_c};font-weight:500" title="${r.tram_tip||''}">🚊 ${dt_s}</span>`:'';
 const dr_v=r.dist_rail;
 const dr_c=dr_v==null?'#999':dr_v<=2?'#166534':dr_v<=8?'#1e40af':dr_v<=20?'#854d0e':'#991b1b';

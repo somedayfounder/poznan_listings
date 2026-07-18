@@ -67,8 +67,10 @@ for r in rows:
     # prefer Google Maps drive distances over haversine
     _dk = f"{r.get('lat')},{r.get('lon')}"
     _drive = _drive_cache.get(_dk, {})
-    dist     = _drive.get("ratusz_km") or v(r, "drive_ratusz_km", float) or v(r, "dist_km", float)
+    dist      = _drive.get("ratusz_km") or v(r, "drive_ratusz_km", float) or v(r, "dist_km", float)
+    dist_min  = round(_drive["ratusz_dur_s"] / 60) if _drive.get("ratusz_dur_s") else None
     dist_tram = _drive.get("tram_km") or v(r, "drive_tram_km", float)
+    tram_min  = round(_drive["tram_dur_s"] / 60) if _drive.get("tram_dur_s") else None
     tram_name = _drive.get("tram_name") or r.get("drive_tram_name", "")
     dist_rail = v(r, "drive_rail_km", float)
     rail_name = r.get("drive_rail_name", "")
@@ -105,7 +107,8 @@ for r in rows:
         "price_m2": int(price_m2) if price_m2 else None,
         "street": r["street"], "city": r["city"], "project": r["project"],
         "district": r.get("district", ""),
-        "dist": dist, "dist_tram": dist_tram, "tram_tip": tram_tip,
+        "dist": dist, "dist_min": dist_min,
+        "dist_tram": dist_tram, "tram_min": tram_min, "tram_tip": tram_tip,
         "dist_rail": dist_rail, "rail_tip": rail_tip, "url": r["url"],
         "lat": lat, "lon": lon,
     }
