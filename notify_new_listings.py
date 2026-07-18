@@ -12,7 +12,7 @@ from datetime import date
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
-from score import score_from_csv
+from score import score_from_csv, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE
 
 POZNAN_SUBURBS = {"Smochowice", "Naramowice", "Strzeszyn", "Morasko",
                   "Szczepankowo", "Spławie", "Głuszyna", "Fabianowo"}
@@ -196,7 +196,6 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
             r["city"] = "Poznań"
 
     # Проверяем новые районы среди уже отфильтрованных объявлений
-    from score import DISTRICT_SCORES
     known = set(DISTRICT_SCORES.keys())
     found_districts = set()
     for r in rows:
@@ -230,6 +229,9 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
             city = r.get("city", "")
             district = r.get("district", "")
             location = district if (city == "Poznań" and district) else city
+            loc_key = district if district else city
+            dist_sc = DISTRICT_SCORES.get(loc_key, _DEFAULT_DISTRICT_SCORE)
+            location_str = f"{location} ({dist_sc}/10)"
             dist_r = fmt_dist(r.get("drive_ratusz_km") or r.get("dist_km"))
             dist_t = fmt_dist(r.get("drive_tram_km") or r.get("dist_tram"))
             tram = r.get("drive_tram_name") or r.get("tram_name") or ""
@@ -241,7 +243,7 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
             caption = (
                 f"<b>{score}/10</b>\n"
                 f"{_escape(r['title'])}\n"
-                f"📍 {location}\n"
+                f"📍 {location_str}\n"
                 f"<b>{price}</b>  ·  {area}  ·  {tp_full}\n"
                 f"{tram_line}  ·  🏛 Центр: {dist_r}\n"
                 f"<a href=\"{r['url']}\">На Otodom →</a>"
