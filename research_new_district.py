@@ -136,44 +136,84 @@ def gpt_research(district, super_entry, nuisances):
         f"- {n['name']} ({n['dist_km']} km)" for n in nuisances
     ) or "нет"
 
-    prompt = f"""Исследуй жилой район **{district}** города Познань (Польша).
+    # Шаг 1: веб-поиск отзывов жителей через GPT-4o с web search
+    search_prompt = f"""Найди актуальные отзывы и мнения жителей о районе/посёлке **{district}** (Познань или окрестности, Польша).
 
-Известные данные:
-Ближайшие магазины (из OSM):
-{store_lines}
+Ищи на этих источниках:
+- naszpoznan.pl — форум и обсуждения
+- forum.gazeta.pl — раздел Познань
+- reddit.com/r/Poznan
+- wykop.pl
+- otodom.pl — отзывы о районах
+- Google: site:naszpoznan.pl "{district}" OR site:forum.gazeta.pl "{district} Poznań"
 
-Потенциальные негативные объекты поблизости:
-{nuis_lines}
+Также найди:
+- NPS (Net Promoter Score) района из опроса Otodom/IQS если есть
+- Реальные маршруты ZTM (автобусы/трамваи) до центра Познани и время в пути
+- Школы и детсады в районе
 
-Задача: на основе своих знаний об этом районе дай полную оценку для покупателя жилья.
-Учитывай: транспорт (трамваи, автобусы, PKM), школы, детсады, парки, магазины, шум, безопасность, репутацию среди жителей, перспективы застройки.
+Дай подробный отчёт на русском: что пишут жители (цитаты), плюсы, минусы, транспорт, инфраструктура."""
+
+    search_payload = json.dumps({
+        "model": "gpt-4o-search-preview",
+        "messages": [{"role": "user", "content": search_prompt}],
+        "web_search_options": {},
+    }).encode()
+
+    search_req = Request("https://api.openai.com/v1/chat/completions",
+                         data=search_payload, method="POST")
+    search_req.add_header("Authorization", f"Bearer {token}")
+    search_req.add_header("Content-Type", "application/json")
+
+    research_text = ""
+    try:
+        resp = json.loads(urlopen(search_req, timeout=90).read())
+        research_text = resp["choices"][0]["message"]["content"].strip()
+        print(f"  Web research: {len(research_text)} chars")
+    except Exception as e:
+        print(f"  GPT web search error: {e} — falling back to knowledge only")
+
+    # Шаг 2: синтез в структурированный JSON
+    synth_prompt = f"""На основе исследования района **{district}** (Польша) сформируй итоговую оценку для покупателя жилья.
+
+Данные из веб-поиска:
+{research_text or "(веб-поиск недоступен — используй свои знания)"}
+
+Дополнительные данные:
+Ближайшие магазины (OSM): {store_lines}
+Негативные объекты рядом: {nuis_lines}
 
 Ответь строго в JSON (без markdown-блоков):
 {{
   "score": 7.0,
+  "nps": null,
   "summary": "2-3 предложения — суть района для покупателя",
   "pros": ["плюс1", "плюс2", "плюс3"],
   "cons": ["минус1", "минус2"],
-  "description": "Детальное описание 5-8 предложений с конкретными фактами: маршруты трамваев/автобусов, названия парков, школ, время до центра"
-}}"""
+  "description": "Детальное описание 5-8 предложений с конкретными фактами из найденных отзывов: маршруты автобусов/трамваев, время до центра, названия школ, парков, цитаты жителей если есть"
+}}
 
-    payload = json.dumps({
+score — от 1 до 10 с шагом 0.5, учитывая реальные отзывы жителей, NPS если найден, транспорт, инфраструктуру.
+nps — число из опроса Otodom/IQS или null если не найдено."""
+
+    synth_payload = json.dumps({
         "model": "gpt-4o",
-        "messages": [{"role": "user", "content": prompt}],
-        "temperature": 0.3,
+        "messages": [{"role": "user", "content": synth_prompt}],
+        "temperature": 0.2,
     }).encode()
-    req = Request("https://api.openai.com/v1/chat/completions",
-                  data=payload, method="POST")
-    req.add_header("Authorization", f"Bearer {token}")
-    req.add_header("Content-Type", "application/json")
+
+    synth_req = Request("https://api.openai.com/v1/chat/completions",
+                        data=synth_payload, method="POST")
+    synth_req.add_header("Authorization", f"Bearer {token}")
+    synth_req.add_header("Content-Type", "application/json")
+
     try:
-        resp = json.loads(urlopen(req, timeout=60).read())
+        resp = json.loads(urlopen(synth_req, timeout=60).read())
         content = resp["choices"][0]["message"]["content"].strip()
-        # strip markdown code fences if present
         content = re.sub(r"^```json\s*|```\s*$", "", content, flags=re.MULTILINE).strip()
         return json.loads(content)
     except Exception as e:
-        print(f"  GPT error: {e}")
+        print(f"  GPT synthesis error: {e}")
         return None
 
 
