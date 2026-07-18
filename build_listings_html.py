@@ -1,7 +1,7 @@
 import csv, json
 from math import radians, sin, cos, sqrt, atan2
 from pathlib import Path
-from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE, DISTRICT_DESCRIPTIONS, _nuisance_penalty, _NUISANCE_SITES, _haversine, _noise_penalty
+from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE, DISTRICT_DESCRIPTIONS, DISTRICT_SUMMARIES, DISTRICT_PROS, DISTRICT_CONS, _nuisance_penalty, _NUISANCE_SITES, _haversine, _noise_penalty
 from extract_features import feature_bonus, CACHE_FILE as FEAT_CACHE
 import json as _json
 _feat_cache = _json.loads(FEAT_CACHE.read_text()) if FEAT_CACHE.exists() else {}
@@ -151,9 +151,12 @@ for k, v in DISTRICT_SCORES.items():
     districts_list.append({
         "name": k,
         "score": v,
+        "summary": DISTRICT_SUMMARIES.get(k, ""),
+        "pros": DISTRICT_PROS.get(k, []),
+        "cons": DISTRICT_CONS.get(k, []),
         "desc": DISTRICT_DESCRIPTIONS.get(k, ""),
-        "noise_tag": noise_tag,        # [emoji, label, color] or None
-        "nuisance_tags": nuisance_tags, # list of short strings
+        "noise_tag": noise_tag,
+        "nuisance_tags": nuisance_tags,
     })
 districts_list.sort(key=lambda x: (-x["score"], x["name"]))
 districts_json = json.dumps(districts_list, ensure_ascii=False)

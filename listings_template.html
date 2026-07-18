@@ -315,14 +315,19 @@ function renderDistricts(){
   tb.innerHTML=DISTRICTS.map(d=>{
     const [tc,bg,lbl]=tier(d.score);
     const sc_c=d.score>=8?'#166534':d.score>=7?'#1e40af':d.score>=5?'#854d0e':'#991b1b';
-    const ntag=d.noise_tag?`<span class="dist-tg" style="color:${d.noise_tag[2]};background:#fef2f2" title="${d.noise_tag[1]}">${d.noise_tag[0]} ${d.noise_tag[1]}</span>`:'';
-    const nuis_tags=(d.nuisance_tags||[]).map(t=>`<span class="dist-tg" style="color:#7c3aed;background:#f3e8ff" title="${t}">${t}</span>`).join('');
-    const tags=(ntag||nuis_tags)?`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:4px">${ntag}${nuis_tags}</div>`:'';
+    const ntag=d.noise_tag?`<span class="dist-tg" style="color:${d.noise_tag[2]};background:#fef2f2">${d.noise_tag[0]} ${d.noise_tag[1]}</span>`:'';
+    const nuis_tags=(d.nuisance_tags||[]).map(t=>`<span class="dist-tg" style="color:#7c3aed;background:#f3e8ff">${t}</span>`).join('');
+    const pro_tags=(d.pros||[]).map(t=>`<span class="dist-tg" style="color:#166534;background:#dcfce7">✅ ${t}</span>`).join('');
+    const con_tags=(d.cons||[]).map(t=>`<span class="dist-tg" style="color:#991b1b;background:#fee2e2">❌ ${t}</span>`).join('');
+    const extra_tags=(ntag||nuis_tags)?`${ntag}${nuis_tags}`:'';
+    const all_tags=pro_tags||con_tags||extra_tags?`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px">${pro_tags}${con_tags}${extra_tags}</div>`:'';
+    const did=`dd_${d.name.replace(/\W/g,'_')}`;
+    const full_desc=d.desc?`<details style="margin-top:6px"><summary style="cursor:pointer;font-size:11px;color:#6b7280;user-select:none">Подробнее ▸</summary><div style="margin-top:6px;font-size:12px;color:#555;line-height:1.6">${d.desc}</div></details>`:'';
     return`<tr>
 <td class="dist-sc" style="color:${sc_c}">${d.score}<span style="color:#bbb;font-size:10px;font-weight:400">/10</span></td>
 <td style="font-weight:500;font-size:13px">${d.name}</td>
 <td><span class="dist-tg" style="color:${tc};background:${bg}">${lbl}</span></td>
-<td class="dist-rs">${tags}${d.desc||'—'}</td>
+<td class="dist-rs"><div style="font-size:12px;line-height:1.6;color:#374151">${d.summary||d.desc||'—'}</div>${all_tags}${full_desc}</td>
 </tr>`;
   }).join('');
 }
