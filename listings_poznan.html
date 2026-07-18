@@ -489,7 +489,8 @@ const html_rows=groups.map(g=>{
 }).join('');
 
 const visible=groups.length;
-document.getElementById('cnt').textContent=visible+' из 423';
+const total_shown=rs.length;
+document.getElementById('cnt').textContent=visible+(visible!==total_shown?' групп / '+total_shown+' объявлений':' объявлений')+' из 423';
 document.getElementById('tb').innerHTML=html_rows;
 }
 render();
