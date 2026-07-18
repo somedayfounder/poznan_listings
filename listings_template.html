@@ -53,6 +53,7 @@ a:hover{text-decoration:underline}
   <button class="tab-btn" onclick="switchTab('districts')">🏙 Районы</button>
   <button class="tab-btn" onclick="switchTab('bonuses')">⭐ Бонусы ГПТ</button>
   <button class="tab-btn" onclick="switchTab('method')">⚙️ Методология</button>
+  <button class="tab-btn" onclick="switchTab('reasoning')">🧠 Ход рассуждений</button>
 </div>
 <div id="tab-listings" class="tab-panel active">
 <div class="controls">
@@ -193,12 +194,10 @@ a:hover{text-decoration:underline}
   <div class="m-card">
     <h3>Фильтры сбора данных</h3>
     <div class="m-section-label">Otodom.pl — параметры поиска</div>
-    <div class="m-row"><span class="m-label">Цена</span><span class="m-val">600 000 — 1 200 000 zł</span></div>
-    <div class="m-row"><span class="m-label">Площадь</span><span class="m-val">70 — 120 м²</span></div>
-    <div class="m-section-label">Пост-фильтрация по расстоянию до трамвая</div>
-    <div class="m-row"><span class="m-label">Квартиры</span><span class="m-val">≤ 3 км</span></div>
-    <div class="m-row"><span class="m-label">Дома</span><span class="m-val">≤ 8 км</span></div>
-    <p class="m-note">Данные обновляются ежедневно в 06:00. Расстояния — маршрутные (Google Maps), не по прямой.</p>
+    <div class="m-row"><span class="m-label">Цена</span><span class="m-val">600 000 — 1 400 000 zł</span></div>
+    <div class="m-row"><span class="m-label">Площадь</span><span class="m-val">от 80 м²</span></div>
+    <div class="m-row"><span class="m-label">Тип</span><span class="m-val">квартиры и дома</span></div>
+    <p class="m-note">Данные обновляются ежедневно в 06:00 UTC. Маршрутные расстояния — Google Maps Distance Matrix API (режим driving). Никакой пост-фильтрации по типу объекта нет.</p>
   </div>
 
   <!-- Веса -->
@@ -209,23 +208,20 @@ a:hover{text-decoration:underline}
     <div class="m-row"><span class="m-label">💰 Цена</span><div class="m-bar-wrap"><div class="m-bar" style="width:24%"></div></div><span class="m-val">12%</span></div>
     <div class="m-row"><span class="m-label">📐 Площадь</span><div class="m-bar-wrap"><div class="m-bar" style="width:24%"></div></div><span class="m-val">12%</span></div>
     <div class="m-row"><span class="m-label">🛏 Комнаты</span><div class="m-bar-wrap"><div class="m-bar" style="width:14%"></div></div><span class="m-val">7%</span></div>
-    <div class="m-row"><span class="m-label">🏠 Тип (дом/квартира)</span><div class="m-bar-wrap"><div class="m-bar" style="width:6%"></div></div><span class="m-val">3%</span></div>
-    <p class="m-note">Взвешенная сумма = базовая оценка 0–10. Затем вычитаются штрафы за шум и вредные объекты.</p>
+    <div class="m-row"><span class="m-label">🏠 Тип (дом/квартира)</span><div class="m-bar-wrap"><div class="m-bar" style="width:6%"></div></div><span class="m-val">3% — нейтр.</span></div>
+    <p class="m-note">Тип объекта всегда даёт нейтральные 9/10 — дома и квартиры оцениваются одинаково. Взвешенная сумма = базовая оценка 0–10. Затем вычитаются штрафы за шум и вредные объекты.</p>
   </div>
 
   <!-- Транспорт -->
   <div class="m-card">
-    <h3>Транспорт — кривая оценки</h3>
-    <div class="m-section-label">Квартиры (расстояние до трамвая)</div>
-    <div class="m-row"><span class="m-label">до 500 м</span><span class="m-val m-pos">10</span></div>
-    <div class="m-row"><span class="m-label">500 м — 1.5 км</span><span class="m-val">10 → 8</span></div>
-    <div class="m-row"><span class="m-label">1.5 — 3 км</span><span class="m-val">8 → 6</span></div>
-    <div class="m-row"><span class="m-label">3 — 5 км</span><span class="m-val">6 → 0</span></div>
-    <div class="m-section-label">Дома (расстояние до трамвая)</div>
-    <div class="m-row"><span class="m-label">до 2 км</span><span class="m-val m-pos">10</span></div>
-    <div class="m-row"><span class="m-label">2 — 5 км</span><span class="m-val">10 → 9</span></div>
-    <div class="m-row"><span class="m-label">5 — 10 км</span><span class="m-val">9 → 6</span></div>
-    <div class="m-row"><span class="m-label">10 — 15 км</span><span class="m-val">6 → 0</span></div>
+    <h3>Транспорт — кривая оценки (минуты езды)</h3>
+    <p style="font-size:11px;color:#888;margin-bottom:8px">Единая кривая для квартир и домов. Время езды на машине до ближайшей трамвайной остановки (Google Maps). Нет данных — нейтральные 5 баллов.</p>
+    <div class="m-row"><span class="m-label">до 3 мин</span><span class="m-val m-pos">10</span></div>
+    <div class="m-row"><span class="m-label">3 — 7 мин</span><span class="m-val">10 → 8.5</span></div>
+    <div class="m-row"><span class="m-label">7 — 12 мин</span><span class="m-val">8.5 → 6</span></div>
+    <div class="m-row"><span class="m-label">12 — 20 мин</span><span class="m-val">6 → 0</span></div>
+    <div class="m-row"><span class="m-label">более 20 мин</span><span class="m-val m-pen">0</span></div>
+    <p class="m-note">Ближайшая остановка — минимальное время из 15 кандидатов по haversine. Колонки «Трамвай», «Ратуша» и «Ж/д» в таблице тоже в минутах.</p>
   </div>
 
   <!-- Цена -->
@@ -275,27 +271,154 @@ a:hover{text-decoration:underline}
   <!-- Оценки районов -->
   <div class="m-card">
     <h3>Оценки районов (38% веса)</h3>
+    <div class="m-section-label">Формула итоговой оценки района</div>
+    <div class="m-row"><span class="m-label">База</span><span class="m-val">среднее(ручная, GPT, жители)</span></div>
+    <div class="m-row"><span class="m-label">+ Бонус гипермаркета</span><span class="m-val m-pos">до +0.3 &nbsp;<span style="color:#999;font-weight:400">≤10 км</span></span></div>
+    <div class="m-row"><span class="m-label">+ Бонус супермаркета</span><span class="m-val m-pos">до +0.2 &nbsp;<span style="color:#999;font-weight:400">≤5 км</span></span></div>
+    <div class="m-row"><span class="m-label">+ Бонус дискаунтера</span><span class="m-val m-pos">до +0.1 &nbsp;<span style="color:#999;font-weight:400">≤2 км</span></span></div>
+    <div class="m-section-label">Уровни районов</div>
     <div class="m-row"><span class="m-label"><span class="m-badge" style="background:#dcfce7;color:#166534">9–10</span> Отличный</span><span class="m-val" style="color:#888;font-size:11px">Sołacz</span></div>
     <div class="m-row"><span class="m-label"><span class="m-badge" style="background:#dbeafe;color:#1e40af">7–8</span> Хороший</span><span class="m-val" style="color:#888;font-size:11px">Piątkowo, Winogrady, Strzeszyn…</span></div>
-    <div class="m-row"><span class="m-label"><span class="m-badge" style="background:#fef9c3;color:#854d0e">6</span> Средний</span><span class="m-val" style="color:#888;font-size:11px">Morasko, Żegrze, Smochowice…</span></div>
+    <div class="m-row"><span class="m-label"><span class="m-badge" style="background:#fef9c3;color:#854d0e">6</span> Средний</span><span class="m-val" style="color:#888;font-size:11px">Morasko, Żegrze…</span></div>
     <div class="m-row"><span class="m-label"><span class="m-badge" style="background:#f3e8ff;color:#7c3aed">5</span> Ниже среднего</span><span class="m-val" style="color:#888;font-size:11px">Jeżyce, Wilda, Górczyn…</span></div>
     <div class="m-row"><span class="m-label"><span class="m-badge" style="background:#fee2e2;color:#991b1b">2–4</span> Проблемный</span><span class="m-val" style="color:#888;font-size:11px">Łazarz, Główna…</span></div>
-    <p class="m-note">Источники: опрос Otodom/IQS (4500+ жителей, NPS), форумы naszpoznan.com, polska-org.pl. Подробнее — таб «Районы».</p>
+    <p class="m-note">Три компонента базы берутся с равным весом. Бонус — линейное затухание с расстоянием. Источники: Otodom/IQS NPS-опрос (4500+ жителей), форумы, ручная проверка, GPT-анализ. Подробнее — таб «Районы».</p>
   </div>
 
   <!-- Источники -->
   <div class="m-card">
     <h3>Источники данных</h3>
     <div class="m-row"><span class="m-label">Объявления</span><span class="m-val">Otodom.pl</span></div>
-    <div class="m-row"><span class="m-label">Маршруты до трамвая</span><span class="m-val">Google Maps Routes API</span></div>
+    <div class="m-row"><span class="m-label">Маршруты (трамвай, ратуша, ж/д)</span><span class="m-val">Google Maps Distance Matrix API</span></div>
     <div class="m-row"><span class="m-label">Карта шума</span><span class="m-val">GEOPOZ WFS 2017</span></div>
     <div class="m-row"><span class="m-label">Вредные объекты</span><span class="m-val">Aquanet, Veolia, ZZO, OSM</span></div>
-    <div class="m-row"><span class="m-label">Оценки районов</span><span class="m-val">Otodom/IQS NPS-опрос</span></div>
+    <div class="m-row"><span class="m-label">Оценки районов</span><span class="m-val">Ручные + GPT + Otodom/IQS NPS</span></div>
     <div class="m-row"><span class="m-label">Описания районов</span><span class="m-val">Форумы, локальные СМИ, жители</span></div>
+    <div class="m-row"><span class="m-label">Супермаркеты</span><span class="m-val">OSM (Auchan, Carrefour, Biedronka…)</span></div>
     <div class="m-row"><span class="m-label">GPT-фичи объявлений</span><span class="m-val">OpenAI GPT-4o-mini</span></div>
     <p class="m-note">Обновление ежедневно 06:00 UTC via GitHub Actions. GPT-анализ — только для новых объявлений, бонусы в оценку не включены.</p>
   </div>
 
+</div>
+</div>
+
+<div id="tab-reasoning" class="tab-panel">
+<style>
+.rlog{max-width:820px;margin:0 auto;padding:8px 0}
+.rlog-step{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid #f0efe9}
+.rlog-step:last-child{border-bottom:none}
+.rlog-num{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:#dbeafe;color:#1e40af;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.rlog-body{flex:1}
+.rlog-title{font-size:13px;font-weight:600;color:#1a1a19;margin-bottom:3px}
+.rlog-desc{font-size:12px;color:#555;line-height:1.6}
+.rlog-why{font-size:11px;color:#888;margin-top:5px;font-style:italic;border-left:2px solid #e5e7eb;padding-left:8px}
+</style>
+<div class="rlog">
+  <div class="rlog-step">
+    <div class="rlog-num">1</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Запуск проекта — скрапер Otodom.pl</div>
+      <div class="rlog-desc">Написан <code>otodom_listings.py</code>: сбор объявлений о продаже квартир и домов в Познани с полями цена, площадь, комнаты, адрес, координаты. Результат — <code>listings_latest.csv</code>. Настроен ежедневный GitHub Actions воркфлоу в 06:00 UTC с уведомлениями в Telegram.</div>
+      <div class="rlog-why">Цель: автоматический мониторинг рынка без ручного обхода сайта — новые объявления появляются быстро.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">2</div>
+    <div class="rlog-body">
+      <div class="rlog-title">HTML-отчёт и система оценок 0–10</div>
+      <div class="rlog-desc">Созданы <code>build_listings_html.py</code> и шаблон <code>listings_template.html</code>. Введена взвешенная оценка: транспорт, цена, площадь, количество комнат, тип объекта. Добавлены расстояния до ближайшего трамвая и до Ратуши (по haversine).</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">3</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Фильтры цены и площади</div>
+      <div class="rlog-desc">Минимальная цена несколько раз пересматривалась: 500k → 700k → 600k zł. Площадь — от 80 м². Максимум цены — 1.4M zł. Параметры скрапера и кривые оценки подгонялись под нужный сегмент.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">4</div>
+    <div class="rlog-body">
+      <div class="rlog-title">GPT-анализ текста объявлений</div>
+      <div class="rlog-desc">Добавлен <code>extract_features.py</code>: GPT-4o-mini разбирает описание каждого объявления и выставляет true/false по 27 фичам (гараж, сад, терраса, нужен ремонт, рядом шоссе и т.д.). Изначально бонусы включались в итоговую оценку, затем убраны из оценки и отображаются только как справочная информация.</div>
+      <div class="rlog-why">Описания на польском языке разной длины и качества — GPT справляется лучше поиска по ключевым словам.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">5</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Оценки районов — первая версия</div>
+      <div class="rlog-desc">Добавлен фактор «район». Вес рос: 20% → 35% → 38% — район признан самым важным критерием. Вручную оценено 55+ районов Познани на основе форумов (naszpoznan.com, polska-org.pl), NPS-опроса Otodom/IQS (4500+ жителей), локальных СМИ. Добавлена вкладка «Районы» с описаниями, плюсами и минусами.</div>
+      <div class="rlog-why">Район в Познани — определяющий фактор качества жизни. Хороший район компенсирует многие недостатки объекта.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">6</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Карта шума GEOPOZ и штрафы за вредные объекты</div>
+      <div class="rlog-desc">Интегрированы данные акустической карты GEOPOZ WFS 2017 (уровень Lden). Штрафы за шум: −0.3 / −0.6 / −1.0 при 61–65 / 66–70 / >70 дБА. Добавлены штрафы за близость к ITPOK (мусоросжигание), очистным Aquanet, ТЭЦ Karolin, полигону ТБО Suchy Las, заводам VW и Luvena. Суммарный максимум штрафа — 2.5 балла.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">7</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Группировка дублей объявлений</div>
+      <div class="rlog-desc">Объявления на один объект (одинаковые площадь + район + комнаты + ЖК) группируются в одну строку с возможностью развернуть. Счётчик показывает раздельно: «299 групп / 423 объявления из 423».</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">8</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Оценки районов v2 — три независимых источника</div>
+      <div class="rlog-desc">Добавлены колонки «Ручная», «GPT» и «Жители» в таблицу районов. Итоговая оценка района = среднее этих трёх компонентов с равным весом. Округление до 0.5 убрано — показывается один знак после запятой. Заполнены GPT-оценки для всех 79 районов.</div>
+      <div class="rlog-why">Один источник оценок субъективен — агрегирование трёх независимых снижает погрешность.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">9</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Супермаркеты — бонус к оценке района</div>
+      <div class="rlog-desc">Эволюция: сначала фиксированный бонус за «магазин ближе 500 м» → бонус по классу (гипер/супер/дискаунтер) → линейное затухание с расстоянием (decay). Итоговая формула: <code>бонус = max_b × (1 − dist/max_d)</code>. Бонус применяется к <em>району</em>, а не к объявлению. Тег супермаркета отображается в строке «Плюсы» карточки района.</div>
+      <div class="rlog-why">Auchan в 7 км важнее для района, чем Biedronka в 0.3 км — класс магазина важнее близости.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">10</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Google Maps Distance Matrix — реальные маршруты</div>
+      <div class="rlog-desc">Расстояния по прямой (haversine) заменены реальными дорожными маршрутами через Google Distance Matrix API. Скрипт <code>fetch_drive_distances.py</code> сохраняет результаты в <code>drive_cache.json</code>. Среднее расхождение: +1.8 км до трамвая, +3.6 км до Ратуши. API-ключ хранится в переменной окружения и GitHub Secrets — никогда не коммитится в репозиторий.</div>
+      <div class="rlog-why">По прямой нельзя доехать — haversine систематически занижал расстояния, особенно для объектов за рекой или ж/д путями.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">11</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Выбор остановки по времени, K=15 кандидатов</div>
+      <div class="rlog-desc">Алгоритм выбора «ближайшей» трамвайной остановки переключён с минимального расстояния на минимальное <em>время</em> езды. Число кандидатов увеличено с 8 до 15 — это исправило проблему для объектов в Коморниках (SW Познани), где все 8 ближайших по прямой остановок находились на восточной стороне города.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">12</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Все транспортные метрики — в минутах</div>
+      <div class="rlog-desc">Вместо километров — время езды на машине. Трамвай: <code>tram_min</code>. Ратуша: <code>dist_min</code>. Кривая оценки транспорта пересчитана: ≤3 мин→10, 3–7→8.5, 7–12→6, 12–20→0, >20→0. Единая кривая для домов и квартир — различие по типу упразднено.</div>
+      <div class="rlog-why">Минуты езды практичнее километров: один и тот же путь в 3 км может занять 5 или 20 минут.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">13</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Ж/д станции тоже в минутах</div>
+      <div class="rlog-desc">Добавлен расчёт времени езды до ближайшей железнодорожной станции (5 кандидатов по haversine, затем argmin по времени через Distance Matrix API). Данные сохраняются в <code>drive_cache.json</code> как <code>rail_dur_s</code>. Колонка «Ж/д» в таблице теперь показывает минуты вместо км. Цветовые пороги: ≤5 зелёный, ≤15 синий, ≤30 оранжевый.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">14</div>
+    <div class="rlog-body">
+      <div class="rlog-title">UX-улучшения интерфейса</div>
+      <div class="rlog-desc">Убраны значения фильтров по умолчанию при загрузке страницы. Убрана авто-установка фильтра трамвая при выборе типа объекта. Счётчик показывает количество групп и объявлений раздельно. Тег супермаркета перенесён в строку «Плюсы» карточки района.</div>
+    </div>
+  </div>
 </div>
 </div>
 
@@ -305,7 +428,7 @@ const MX=__MX__;
 const DISTRICTS=__DISTRICTS__;
 
 function switchTab(name){
-  document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',['listings','districts','bonuses','method'][i]===name));
+  document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',['listings','districts','bonuses','method','reasoning'][i]===name));
   document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
   if(name==='districts') renderDistricts();
