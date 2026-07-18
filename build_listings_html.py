@@ -2,6 +2,9 @@ import csv, json
 from math import radians, sin, cos, sqrt, atan2
 from pathlib import Path
 from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE, DISTRICT_DESCRIPTIONS, DISTRICT_SUMMARIES, DISTRICT_PROS, DISTRICT_CONS, _nuisance_penalty, _NUISANCE_SITES, _haversine, _noise_penalty
+
+_RESCORE_FILE = Path(__file__).parent.parent / "scratchpad" / "rescore_results.json"
+_rescore = json.loads(_RESCORE_FILE.read_text()) if _RESCORE_FILE.exists() else {}
 from extract_features import feature_bonus, CACHE_FILE as FEAT_CACHE
 import json as _json
 _feat_cache = _json.loads(FEAT_CACHE.read_text()) if FEAT_CACHE.exists() else {}
@@ -148,9 +151,12 @@ for k, v in DISTRICT_SCORES.items():
     noise_tag = _noise_tag(_dist_noise.get(k, []))
     nuisance_names = _dist_nuisance.get(k, set())
     nuisance_tags = [_NUISANCE_SHORT.get(n, n) for n in sorted(nuisance_names)]
+    rs = _rescore.get(k, {})
     districts_list.append({
         "name": k,
         "score": v,
+        "score_manual": rs.get("manual"),
+        "score_gpt": rs.get("gpt"),
         "summary": DISTRICT_SUMMARIES.get(k, ""),
         "pros": DISTRICT_PROS.get(k, []),
         "cons": DISTRICT_CONS.get(k, []),
