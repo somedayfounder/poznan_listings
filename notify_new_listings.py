@@ -170,52 +170,73 @@ with open('listings_latest.csv','w',newline='',encoding='utf-8-sig') as f:
 print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
 """], cwd=DATA_DIR, capture_output=True, text=True)
 
-    tg_safe("🗺 Считаем маршруты…", "osrm")
+    # 3. Находим новые объявления (до обогащения расстояниями)
+    rows_raw = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
+    all_ids = set(r["id"] for r in rows_raw)
+    new_ids = all_ids - seen
+    if not new_ids:
+        tg_safe("✅ Новых объявлений нет", "nonew")
+        save_seen(all_ids)
+        return
+    tg_safe(f"🔍 Найдено <b>{len(new_ids)} новых</b> объявлений, считаем расстояния…", "found")
 
-    # 3. Маршруты OSRM
+    # 4. Считаем расстояния (Google Maps) только для новых
     print("Считаем маршруты...")
     subprocess.run([sys.executable, str(DATA_DIR / "fetch_drive_distances.py")],
                    capture_output=True, text=True, cwd=DATA_DIR)
 
-    # 4. Читаем результат
+    # 5. Перечитываем CSV с обогащёнными данными, фильтруем по расстоянию до трамвая
     rows = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
-
-    # Страховочный фильтр: исключаем НП не из нашей зоны
-    # Фильтр по расстоянию до трамвая: квартиры ≤3 км, дома ≤8 км
-    def _f(v): return float(v) if v else None
-    def _tram_ok(r):
-        d = _f(r.get("drive_tram_km")) or _f(r.get("dist_tram"))
-        if d is None: return True  # нет данных — пропускаем, не блокируем
-        limit = 8.0 if r.get("type") == "dom" else 3.0
-        return d <= limit
-    rows = [r for r in rows if _tram_ok(r)]
-    # Маппинг НП внутри Познани
     for r in rows:
         if r.get("city") in POZNAN_SUBURBS:
             r["district"] = r["city"]
             r["city"] = "Poznań"
 
-    # Проверяем новые районы среди уже отфильтрованных объявлений
-    known = set(DISTRICT_SCORES.keys())
-    found_districts = set()
-    for r in rows:
-        city = r.get("city", "")
-        district = r.get("district", "")
-        if city == "Poznań" and district:
-            found_districts.add(district)
-        else:
-            found_districts.add(city)
-    new_districts = found_districts - known
-    if new_districts:
-        names = ", ".join(sorted(new_districts))
-        tg_safe(f"⚠️ <b>Новые районы в листинге:</b> {names}\nНе найдены в score.py — нужно добавить оценку и описание вручную.", "new_districts")
-    all_ids = set(r["id"] for r in rows)
-    new_rows = [r for r in rows if r["id"] not in seen]
+    def _f(v): return float(v) if v else None
+    def _tram_ok(r):
+        d = _f(r.get("drive_tram_km")) or _f(r.get("dist_tram"))
+        if d is None: return True
+        limit = 8.0 if r.get("type") == "dom" else 3.0
+        return d <= limit
+
+    new_rows = [r for r in rows if r["id"] in new_ids and _tram_ok(r)]
+    if not new_rows:
+        tg_safe("✅ Новые объявления не прошли фильтр по расстоянию до трамвая", "filtered")
+        save_seen(all_ids)
+        return
+    tg_safe(f"✅ <b>{len(new_rows)}</b> новых прошли фильтр, проверяем районы…", "filtered_ok")
+
+    # 6. Проверяем новые районы и запускаем агентное исследование
+    from score import DISTRICT_SCORES as _DS
+    known = set(_DS.keys())
+    new_district_set = set()
     for r in new_rows:
-        r["_score"] = score_from_csv(r)
+        loc = r.get("district") if r.get("city") == "Poznań" and r.get("district") else r.get("city", "")
+        if loc and loc not in known:
+            new_district_set.add(loc)
+
+    if new_district_set:
+        names = ", ".join(sorted(new_district_set))
+        tg_safe(f"🔎 Новые районы: <b>{names}</b> — запускаю исследование…", "new_districts")
+        from research_new_district import research
+        for d in sorted(new_district_set):
+            try:
+                research(d)
+            except Exception as e:
+                print(f"  research({d}) failed: {e}")
+        # Перезагружаем score после патча
+        import importlib, score as _score_mod
+        importlib.reload(_score_mod)
+        from score import score_from_csv as _sfc
+    else:
+        from score import score_from_csv as _sfc
+
+    # 7. Пересчитываем оценки и строим итоговый список
+    for r in new_rows:
+        r["_score"] = _sfc(r)
     new_rows.sort(key=lambda r: r["_score"], reverse=True)
-    print(f"Новых объявлений: {len(new_rows)}")
-    tg_safe(f"🏠 <b>Новых объявлений: {len(new_rows)}</b> (всего в базе: {len(rows)})", "new")
+    print(f"Новых объявлений к отправке: {len(new_rows)}")
+    tg_safe(f"🏠 <b>Отправляю {len(new_rows)} объявлений</b>…", "sending")
 
     # 5. Шлём в Telegram
     if not new_rows:
