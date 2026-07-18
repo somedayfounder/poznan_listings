@@ -120,7 +120,7 @@ a:hover{text-decoration:underline}
   <th onclick="sort('project')" style="min-width:140px">Проект</th>
   <th onclick="sort('dist_min')">До ратуши</th>
   <th onclick="sort('tram_min')">Трамвай</th>
-  <th onclick="sort('dist_rail')">Ж/д</th>
+  <th onclick="sort('rail_min')">Ж/д</th>
 </tr></thead>
 <tbody id="tb"></tbody>
 </table>
@@ -350,7 +350,7 @@ let sk='score',sd_=-1;
 function sort(k){if(sk===k)sd_*=-1;else{sk=k;sd_=k==='score'?-1:1;}
 document.querySelectorAll('thead th').forEach(t=>t.className='');
 const ths=document.querySelectorAll('thead th');
-const ki=['score','title','type','district_score','area','rooms','floor','price','price_m2','project','dist','dist_tram','dist_rail'];
+const ki=['score','title','type','district_score','area','rooms','floor','price','price_m2','project','dist','dist_tram','rail_min'];
 const idx=ki.indexOf(k);if(idx>=0)ths[idx].className=sd_===1?'asc':'desc';render();}
 function onTypeChange(){
   const st=document.getElementById('st').value;
@@ -412,9 +412,9 @@ const dt_v=r.tram_min;
 const dt_c=dt_v==null?'#999':dt_v<=3?'#166534':dt_v<=7?'#1e40af':dt_v<=15?'#854d0e':'#991b1b';
 const dt_s=dt_v!=null?dt_v+' мин':'—';
 const dt=dt_v!=null?`<span style="color:${dt_c};font-weight:500" title="${r.tram_tip||''}">🚊 ${dt_s}</span>`:'';
-const dr_v=r.dist_rail;
-const dr_c=dr_v==null?'#999':dr_v<=2?'#166534':dr_v<=8?'#1e40af':dr_v<=20?'#854d0e':'#991b1b';
-const dr_s=dr_v==null?'—':dr_v<1?(dr_v*1000|0)+' м':dr_v.toFixed(1)+' км';
+const dr_v=r.rail_min;
+const dr_c=dr_v==null?'#999':dr_v<=5?'#166534':dr_v<=15?'#1e40af':dr_v<=30?'#854d0e':'#991b1b';
+const dr_s=dr_v!=null?dr_v+' мин':'—';
 const dr=dr_v!=null?`<span style="color:${dr_c};font-weight:500" title="${r.rail_tip||''}">🚆 ${dr_s}</span>`:'';
 const transport=dt||dr?[dt,dr].filter(Boolean).join(' &nbsp;'):'—';
 const pr=r.price?r.price.toLocaleString('pl')+' zł':'—';
@@ -443,6 +443,7 @@ const ds_cell=`<span style="color:${ds_c};font-weight:500">${ds}/10</span> <span
 const proj_cell=r.project?`<span style="max-width:130px;overflow:hidden;text-overflow:ellipsis;color:#666;display:inline-block" title="${r.project}">${r.project}</span>`:'—';
 const tram_cell=dt_v!=null?`<span style="color:${dt_c};font-weight:500" title="${r.tram_tip||''}">🚊 ${dt_s}</span>`:'—';
 const rail_cell=dr_v!=null?`<span style="color:${dr_c};font-weight:500" title="${r.rail_tip||''}">🚆 ${dr_s}</span>`:'—';
+
 return`<tr>
 <td style="text-align:center;white-space:nowrap">${sc_cell}</td>
 <td><a href="${r.url}" target="_blank" title="${r.title}">${r.title}</a>${toggle||''}</td>

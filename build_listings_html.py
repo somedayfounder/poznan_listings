@@ -72,8 +72,9 @@ for r in rows:
     dist_tram = _drive.get("tram_km") or v(r, "drive_tram_km", float)
     tram_min  = round(_drive["tram_dur_s"] / 60) if _drive.get("tram_dur_s") else None
     tram_name = _drive.get("tram_name") or r.get("drive_tram_name", "")
-    dist_rail = v(r, "drive_rail_km", float)
-    rail_name = r.get("drive_rail_name", "")
+    dist_rail = _drive.get("rail_km") or v(r, "drive_rail_km", float)
+    rail_min  = round(_drive["rail_dur_s"] / 60) if _drive.get("rail_dur_s") else None
+    rail_name = _drive.get("rail_name") or r.get("drive_rail_name", "")
 
     tram_tip = rail_tip = None
 
@@ -96,7 +97,7 @@ for r in rows:
             tram_tip = "\n".join(tip_parts)
 
         if rail_name:
-            rail_tip = f"{rail_name} — {fmt_d(dist_rail)} по дороге"
+            rail_tip = f"{rail_name} — {fmt_d(dist_rail)} по дороге ({rail_min} мин)" if rail_min else f"{rail_name} — {fmt_d(dist_rail)} по дороге"
 
     lat = v(r, "lat", float)
     lon = v(r, "lon", float)
@@ -109,7 +110,7 @@ for r in rows:
         "district": r.get("district", ""),
         "dist": dist, "dist_min": dist_min,
         "dist_tram": dist_tram, "tram_min": tram_min, "tram_tip": tram_tip,
-        "dist_rail": dist_rail, "rail_tip": rail_tip, "url": r["url"],
+        "dist_rail": dist_rail, "rail_min": rail_min, "rail_tip": rail_tip, "url": r["url"],
         "lat": lat, "lon": lon,
     }
     feat = _feat_cache.get(r["id"], {})

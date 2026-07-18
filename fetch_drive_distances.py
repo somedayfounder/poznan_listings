@@ -3,10 +3,12 @@
 Fetches real driving distances from each listing to:
   1. Nearest tram stop (from tram_stops.json)
   2. City hall (Ratusz) at 52.4082, 16.9335
+  3. Nearest rail station (from rail_stations.json)
 
 Uses Google Distance Matrix API in batches (max 25 destinations per request).
 Saves to drive_cache.json: { "lat,lon": { "tram_km": ..., "tram_name": ..., "tram_dur_s": ...,
-                                           "ratusz_km": ..., "ratusz_dur_s": ... } }
+                                           "ratusz_km": ..., "ratusz_dur_s": ...,
+                                           "rail_name": ..., "rail_km": ..., "rail_dur_s": ... } }
 """
 import json, csv, math, time, urllib.request, urllib.parse
 from pathlib import Path
@@ -16,10 +18,12 @@ API_KEY = os.environ.get("GOOGLE_API_KEY", "")
 if not API_KEY:
     raise SystemExit("ERROR: GOOGLE_API_KEY не задан")
 RATUSZ = (52.4082, 16.9335)
-K = 15  # tram candidates by haversine
+K = 15       # tram candidates by haversine
+K_RAIL = 5   # rail candidates by haversine
 
 CACHE_FILE  = Path("drive_cache.json")
 TRAM_FILE   = Path("tram_stops.json")
+RAIL_FILE   = Path("rail_stations.json")
 CSV_FILE    = Path("listings_latest.csv")
 
 def haversine(lat1, lon1, lat2, lon2):
@@ -56,6 +60,7 @@ def distance_matrix(origins, destinations):
 
 def main():
     trams = json.loads(TRAM_FILE.read_text())
+    rails = json.loads(RAIL_FILE.read_text()) if RAIL_FILE.exists() else []
 
     # validate coords (Poznań: lon 16-18, lat 52-53)
     for t in trams:
@@ -72,7 +77,10 @@ def main():
                 continue
 
     cache = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
-    todo = [l for l in listings if f"{l['lat']},{l['lon']}" not in cache]
+    # re-process entries that are missing rail data
+    todo = [l for l in listings if
+            f"{l['lat']},{l['lon']}" not in cache or
+            "rail_dur_s" not in cache.get(f"{l['lat']},{l['lon']}", {})]
     print(f"Объявлений: {len(listings)}, в кеше: {len(cache)}, осталось: {len(todo)}")
 
     errors = 0
@@ -82,13 +90,16 @@ def main():
 
         # k nearest tram stops by haversine
         ranked = sorted(trams, key=lambda t: haversine(lat, lon, t["lat"], t["lon"]))[:K]
+        # k nearest rail stations by haversine
+        ranked_rail = sorted(rails, key=lambda r: haversine(lat, lon, r["lat"], r["lon"]))[:K_RAIL] if rails else []
 
         origin = f"{lat},{lon}"
         tram_dests = [f"{t['lat']},{t['lon']}" for t in ranked]
         ratusz_dest = f"{RATUSZ[0]},{RATUSZ[1]}"
+        rail_dests  = [f"{r['lat']},{r['lon']}" for r in ranked_rail]
 
-        # all destinations in one request: k trams + ratusz
-        all_dests = tram_dests + [ratusz_dest]
+        # all destinations in one request: K trams + ratusz + K_RAIL rail
+        all_dests = tram_dests + [ratusz_dest] + rail_dests
         try:
             dists, durs = distance_matrix([origin], all_dests)
             d_row = dists[0]; t_row = durs[0]
@@ -113,13 +124,25 @@ def main():
         ratusz_d = d_row[K]
         ratusz_t = t_row[K]
 
-        cache[key] = {
-            "tram_name":   ranked[best_idx]["name"] if best_idx is not None else None,
-            "tram_km":     round(best_d / 1000, 2) if best_d is not None else None,
-            "tram_dur_s":  best_t,
-            "ratusz_km":   round(ratusz_d / 1000, 2) if ratusz_d is not None else None,
+        # find best rail station by min drive time
+        rail_start = K + 1
+        best_rail_idx, best_rail_d, best_rail_t = None, None, None
+        for j, (d, t) in enumerate(zip(d_row[rail_start:rail_start+K_RAIL], t_row[rail_start:rail_start+K_RAIL])):
+            if t is not None and (best_rail_t is None or t < best_rail_t):
+                best_rail_d = d; best_rail_t = t; best_rail_idx = j
+
+        entry = cache.get(key, {})
+        entry.update({
+            "tram_name":    ranked[best_idx]["name"] if best_idx is not None else None,
+            "tram_km":      round(best_d / 1000, 2) if best_d is not None else None,
+            "tram_dur_s":   best_t,
+            "ratusz_km":    round(ratusz_d / 1000, 2) if ratusz_d is not None else None,
             "ratusz_dur_s": ratusz_t,
-        }
+            "rail_name":    ranked_rail[best_rail_idx]["name"] if best_rail_idx is not None else None,
+            "rail_km":      round(best_rail_d / 1000, 2) if best_rail_d is not None else None,
+            "rail_dur_s":   best_rail_t,
+        })
+        cache[key] = entry
 
         if (i + 1) % 10 == 0 or i == len(todo) - 1:
             CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
