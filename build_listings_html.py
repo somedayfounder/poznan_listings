@@ -13,15 +13,20 @@ _feat_cache = _json.loads(FEAT_CACHE.read_text()) if FEAT_CACHE.exists() else {}
 _SUPER_CACHE_FILE = Path("supermarkets_cache.json")
 _super_cache = _json.loads(_SUPER_CACHE_FILE.read_text()) if _SUPER_CACHE_FILE.exists() else {}
 
-_HYPER_BRANDS = {'auchan','carrefour','e.leclerc','leclerc','kaufland','makro','real','selgros'}
-_SUPER_BRANDS = {'lidl','netto','intermarché','intermarche','spar','piotr i paweł','alma','stokrotka','mój market'}
+# distance thresholds by store class (people drive to hypermarkets)
+_THRESHOLDS = {"hyper": 5.0, "super": 2.0, "discount": 1.0}
 
-def _store_tier(sup):
-    if not sup or not sup.get('name'): return 0
-    brand = (sup.get('brand') or sup.get('name') or '').lower()
-    if sup.get('type') == 'hypermarket' or any(b in brand for b in _HYPER_BRANDS): return 3
-    if any(b in brand for b in _SUPER_BRANDS): return 2
-    return 1  # дискаунтер: Biedronka, Dino, etc.
+def _store_tier(sup_entry):
+    # sup_entry: {hyper: {name, dist_km}, super: ..., discount: ...}
+    if not sup_entry: return 0
+    for tier, max_km in _THRESHOLDS.items():
+        info = sup_entry.get(tier, {})
+        if info.get("dist_km") is not None and info["dist_km"] <= max_km:
+            return tier
+    return None
+
+def _best_store_name(sup_entry, tier):
+    return (sup_entry.get(tier) or {}).get("name", "")
 _NOISE_CACHE_FILE = Path("noise_cache.json")
 _noise_cache = _json.loads(_NOISE_CACHE_FILE.read_text()) if _NOISE_CACHE_FILE.exists() else {}
 
@@ -131,7 +136,7 @@ data_json = json.dumps(js_rows, ensure_ascii=False)
 from collections import defaultdict
 _dist_noise = defaultdict(list)   # district -> [max_ldwn, ...]
 _dist_nuisance = defaultdict(set) # district -> {nuisance_name, ...}
-_dist_super = defaultdict(int)    # district -> best store tier (0-3)
+_dist_super = {}  # district -> best tier ("hyper"/"super"/"discount"/None)
 for row in js_rows:
     d = row.get("district") or row.get("city") or ""
     if not d:
@@ -141,13 +146,15 @@ for row in js_rows:
     for n in (row.get("nuisance") or []):
         _dist_nuisance[d].add(n["name"])
     tier = _store_tier(row.get("supermarket"))
-    if tier > _dist_super[d]:
+    priority = {"hyper": 3, "super": 2, "discount": 1, None: 0}
+    if priority.get(tier, 0) > priority.get(_dist_super.get(d), 0):
         _dist_super[d] = tier
 
-def _super_bonus(tier):
-    if tier >= 3: return 0.3, "🏪 Гипермаркет (Ашан/Карреффур/Леклерк)"
-    if tier >= 2: return 0.2, "🛒 Супермаркет (Лидл/Нетто/Интермарше)"
-    if tier >= 1: return 0.1, "🛒 Дискаунтер (Бедронка/Дино)"
+def _super_bonus(tier, sup_entry):
+    name = _best_store_name(sup_entry or {}, tier) if sup_entry else ""
+    if tier == "hyper":    return 0.3, f"🏪 Гипермаркет {('('+name+')') if name else ''}"
+    if tier == "super":    return 0.2, f"🛒 Супермаркет {('('+name+')') if name else ''}"
+    if tier == "discount": return 0.1, f"🛒 Дискаунтер {('('+name+')') if name else ''}"
     return 0.0, None
 
 # Noise label thresholds (Lden dBA)
@@ -184,7 +191,11 @@ for k, v in DISTRICT_SCORES.items():
     r_rating = res.get("rating")
     r_scale  = res.get("scale") or 5
     r_norm   = round(r_rating / r_scale * 10, 1) if r_rating else None
-    s_bonus, s_tag = _super_bonus(_dist_super.get(k, 0))
+    best_tier = _dist_super.get(k)
+    # find a representative listing's supermarket entry for the name
+    _rep = next((r for r in js_rows if (r.get("district") or r.get("city")) == k
+                 and _store_tier(r.get("supermarket")) == best_tier), None)
+    s_bonus, s_tag = _super_bonus(best_tier, _rep.get("supermarket") if _rep else None)
     m = rs.get("manual"); g = rs.get("gpt")
     components = [x for x in [m, g, r_norm] if x is not None]
     base = round((sum(components) / len(components)), 1) if components else v

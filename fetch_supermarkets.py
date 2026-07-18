@@ -59,6 +59,15 @@ def fetch_stores():
     print(f"Найдено магазинов: {len(stores)}")
     return stores
 
+HYPER_BRANDS = {'auchan','carrefour','e.leclerc','leclerc','kaufland','makro','real','selgros'}
+SUPER_BRANDS  = {'lidl','netto','intermarché','intermarche','spar','piotr i paweł','alma','stokrotka'}
+
+def store_tier(s):
+    brand = (s.get("brand") or s.get("name") or "").lower()
+    if s.get("type") == "hypermarket" or any(b in brand for b in HYPER_BRANDS): return "hyper"
+    if any(b in brand for b in SUPER_BRANDS): return "super"
+    return "discount"
+
 def main():
     # Load or fetch stores
     if RAW_FILE.exists():
@@ -68,52 +77,37 @@ def main():
         stores = fetch_stores()
         RAW_FILE.write_text(json.dumps(stores, ensure_ascii=False, indent=2))
 
-    # Load existing cache
-    cache = {}
-    if CACHE_FILE.exists():
-        cache = json.loads(CACHE_FILE.read_text())
+    # Pre-bucket stores by tier
+    by_tier = {"hyper": [], "super": [], "discount": []}
+    for s in stores:
+        by_tier[store_tier(s)].append(s)
+    for t, lst in by_tier.items():
+        print(f"  {t}: {len(lst)}")
 
     # Load listings
     listings = []
     with open(CSV_FILE, encoding="utf-8") as f:
         for row in csv.DictReader(f):
             try:
-                lat = float(row["lat"])
-                lon = float(row["lon"])
+                lat = float(row["lat"]); lon = float(row["lon"])
                 listings.append((lat, lon))
             except (ValueError, KeyError):
                 continue
 
-    print(f"Объявлений: {len(listings)}, уже в кеше: {len(cache)}")
-
-    new_count = 0
+    print(f"Пересчитываю кеш для {len(listings)} объявлений...")
+    cache = {}
     for lat, lon in listings:
         key = f"{lat},{lon}"
-        if key in cache:
-            continue
-
-        # Find nearest store
-        best = None
-        best_dist = float("inf")
-        for s in stores:
-            d = haversine(lat, lon, s["lat"], s["lon"])
-            if d < best_dist:
-                best_dist = d
-                best = s
-
-        if best:
-            cache[key] = {
-                "name": best["name"],
-                "brand": best["brand"],
-                "type": best["type"],
-                "dist_km": round(best_dist, 3),
-            }
-        else:
-            cache[key] = {"name": None, "dist_km": None}
-        new_count += 1
+        entry = {}
+        for tier, lst in by_tier.items():
+            best = min(lst, key=lambda s: haversine(lat, lon, s["lat"], s["lon"]), default=None)
+            if best:
+                entry[tier] = {"name": best["name"], "brand": best.get("brand",""),
+                               "dist_km": round(haversine(lat, lon, best["lat"], best["lon"]), 3)}
+        cache[key] = entry
 
     CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
-    print(f"Обновлено записей: {new_count}, всего в кеше: {len(cache)}")
+    print(f"Всего в кеше: {len(cache)}")
 
     # Stats
     dists = [v["dist_km"] for v in cache.values() if v.get("dist_km") is not None]
