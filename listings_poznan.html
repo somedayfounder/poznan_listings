@@ -78,8 +78,8 @@ a:hover{text-decoration:underline}
   </select>
   <select id="sp_min" onchange="render()">
     <option value="">от любой</option>
-    <option value="500000" selected>от 500 000 zł</option>
-    <option value="700000">от 700 000 zł</option>
+    <option value="500000">от 500 000 zł</option>
+    <option value="700000" selected>от 700 000 zł</option>
     <option value="900000">от 900 000 zł</option>
     <option value="1100000">от 1 100 000 zł</option>
   </select>
@@ -190,7 +190,7 @@ a:hover{text-decoration:underline}
   <div class="m-card">
     <h3>Фильтры сбора данных</h3>
     <div class="m-section-label">Otodom.pl — параметры поиска</div>
-    <div class="m-row"><span class="m-label">Цена</span><span class="m-val">500 000 — 1 200 000 zł</span></div>
+    <div class="m-row"><span class="m-label">Цена</span><span class="m-val">700 000 — 1 200 000 zł</span></div>
     <div class="m-row"><span class="m-label">Площадь</span><span class="m-val">70 — 120 м²</span></div>
     <div class="m-section-label">Пост-фильтрация по расстоянию до трамвая</div>
     <div class="m-row"><span class="m-label">Квартиры</span><span class="m-val">≤ 3 км</span></div>
@@ -232,7 +232,7 @@ a:hover{text-decoration:underline}
     <div class="m-row"><span class="m-label">700 000 — 900 000 zł</span><span class="m-val">10 → 7</span></div>
     <div class="m-row"><span class="m-label">900 000 — 1 200 000 zł</span><span class="m-val">7 → 0</span></div>
     <div class="m-row"><span class="m-label">свыше 1 200 000 zł</span><span class="m-val m-pen">0</span></div>
-    <p class="m-note">Калиброван под сегмент 500k–1.2M. Цена занимает только 12% веса — выбор района и транспорта важнее.</p>
+    <p class="m-note">Калиброван под сегмент 700k–1.2M. Цена занимает только 12% веса — выбор района и транспорта важнее.</p>
   </div>
 
   <!-- Площадь и комнаты -->
@@ -357,7 +357,7 @@ function onTypeChange(){
   const st=document.getElementById('st').value;
   if(!stram.value) stram.value=st==='dom'?'8':'3';
   const sp_min=document.getElementById('sp_min');
-  if(!sp_min.value) sp_min.value='500000';
+  if(!sp_min.value) sp_min.value='700000';
 })();
 function render(){
 const q=(document.getElementById('sq').value||'').toLowerCase();
