@@ -3,8 +3,8 @@ from math import radians, sin, cos, sqrt, atan2
 from pathlib import Path
 from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE, DISTRICT_DESCRIPTIONS, DISTRICT_SUMMARIES, DISTRICT_PROS, DISTRICT_CONS, _nuisance_penalty, _NUISANCE_SITES, _haversine, _noise_penalty
 
-_RESCORE_FILE   = Path(__file__).parent.parent / "rescore_results.json"
-_RESIDENT_FILE  = Path(__file__).parent.parent / "resident_scores.json"
+_RESCORE_FILE   = Path(__file__).parent / "rescore_results.json"
+_RESIDENT_FILE  = Path(__file__).parent / "resident_scores.json"
 _rescore   = json.loads(_RESCORE_FILE.read_text())  if _RESCORE_FILE.exists()  else {}
 _residents = json.loads(_RESIDENT_FILE.read_text()) if _RESIDENT_FILE.exists() else {}
 from extract_features import feature_bonus, CACHE_FILE as FEAT_CACHE

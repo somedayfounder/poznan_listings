@@ -47,7 +47,7 @@ a:hover{text-decoration:underline}
 </head>
 <body>
 <div class="wrap">
-<h1>Новостройки Познань — квартиры и дома, от 80 м², до 1 400 000 zł &nbsp;<span id="cnt" style="color:#888;font-weight:400"></span></h1>
+<h1>Новостройки Познань — квартиры и дома, от 80 м², до 1 200 000 zł &nbsp;<span id="cnt" style="color:#888;font-weight:400"></span></h1>
 <div class="tabs">
   <button class="tab-btn active" onclick="switchTab('listings')">📋 Объявления</button>
   <button class="tab-btn" onclick="switchTab('districts')">🏙 Районы</button>
@@ -194,7 +194,7 @@ a:hover{text-decoration:underline}
   <div class="m-card">
     <h3>Фильтры сбора данных</h3>
     <div class="m-section-label">Otodom.pl — параметры поиска</div>
-    <div class="m-row"><span class="m-label">Цена</span><span class="m-val">600 000 — 1 400 000 zł</span></div>
+    <div class="m-row"><span class="m-label">Цена</span><span class="m-val">600 000 — 1 200 000 zł</span></div>
     <div class="m-row"><span class="m-label">Площадь</span><span class="m-val">от 80 м²</span></div>
     <div class="m-row"><span class="m-label">Тип</span><span class="m-val">квартиры и дома</span></div>
     <p class="m-note">Данные обновляются ежедневно в 06:00 UTC. Маршрутные расстояния — Google Maps Distance Matrix API (режим driving). Никакой пост-фильтрации по типу объекта нет.</p>
@@ -203,13 +203,13 @@ a:hover{text-decoration:underline}
   <!-- Веса -->
   <div class="m-card">
     <h3>Веса факторов оценки</h3>
-    <div class="m-row"><span class="m-label">🏙 Район</span><div class="m-bar-wrap"><div class="m-bar hi" style="width:76%"></div></div><span class="m-val">38%</span></div>
-    <div class="m-row"><span class="m-label">🚊 Транспорт до трамвая</span><div class="m-bar-wrap"><div class="m-bar hi" style="width:56%"></div></div><span class="m-val">28%</span></div>
-    <div class="m-row"><span class="m-label">💰 Цена</span><div class="m-bar-wrap"><div class="m-bar" style="width:24%"></div></div><span class="m-val">12%</span></div>
-    <div class="m-row"><span class="m-label">📐 Площадь</span><div class="m-bar-wrap"><div class="m-bar" style="width:24%"></div></div><span class="m-val">12%</span></div>
-    <div class="m-row"><span class="m-label">🛏 Комнаты</span><div class="m-bar-wrap"><div class="m-bar" style="width:14%"></div></div><span class="m-val">7%</span></div>
-    <div class="m-row"><span class="m-label">🏠 Тип (дом/квартира)</span><div class="m-bar-wrap"><div class="m-bar" style="width:6%"></div></div><span class="m-val">3% — нейтр.</span></div>
-    <p class="m-note">Тип объекта всегда даёт нейтральные 9/10 — дома и квартиры оцениваются одинаково. Взвешенная сумма = базовая оценка 0–10. Затем вычитаются штрафы за шум и вредные объекты.</p>
+    <div class="m-row"><span class="m-label">🏙 Район</span><div class="m-bar-wrap"><div class="m-bar hi" style="width:50%"></div></div><span class="m-val">25%</span></div>
+    <div class="m-row"><span class="m-label">💰 Цена</span><div class="m-bar-wrap"><div class="m-bar hi" style="width:40%"></div></div><span class="m-val">20%</span></div>
+    <div class="m-row"><span class="m-label">📐 Площадь</span><div class="m-bar-wrap"><div class="m-bar hi" style="width:40%"></div></div><span class="m-val">20%</span></div>
+    <div class="m-row"><span class="m-label">🛏 Комнаты</span><div class="m-bar-wrap"><div class="m-bar hi" style="width:40%"></div></div><span class="m-val">20%</span></div>
+    <div class="m-row"><span class="m-label">🚊 Транспорт до трамвая</span><div class="m-bar-wrap"><div class="m-bar" style="width:30%"></div></div><span class="m-val">15%</span></div>
+    <div class="m-row"><span class="m-label">🏠 Тип (дом/квартира)</span><div class="m-bar-wrap"><div class="m-bar" style="width:0%"></div></div><span class="m-val">0% — нейтр.</span></div>
+    <p class="m-note">Тип объекта не влияет на оценку (вес 0%). Взвешенная сумма = базовая оценка 0–10. Затем вычитаются штрафы за шум и вредные объекты.</p>
   </div>
 
   <!-- Транспорт -->
@@ -270,7 +270,7 @@ a:hover{text-decoration:underline}
 
   <!-- Оценки районов -->
   <div class="m-card">
-    <h3>Оценки районов (38% веса)</h3>
+    <h3>Оценки районов (25% веса)</h3>
     <div class="m-section-label">Формула итоговой оценки района</div>
     <div class="m-row"><span class="m-label">База</span><span class="m-val">среднее(ручная, GPT, жители)</span></div>
     <div class="m-row"><span class="m-label">+ Бонус гипермаркета</span><span class="m-val m-pos">до +0.3 &nbsp;<span style="color:#999;font-weight:400">≤10 км</span></span></div>
