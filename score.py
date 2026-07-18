@@ -4,7 +4,7 @@ Scoring system for Poznań listings (0–10 scale).
 Weights:
   transport  28%  — dist to tram (apt: ≤3km; house: ≤10km)
   district   38%  — neighborhood quality (NPS + resident surveys)
-  price      12%  — ≤700k=10, 700–900k=10→7, 900k–1200k=7→0, >1200k=0
+  price      12%  — ≤700k=10, 700–900k=10→7, 900k–1200k=7→0, >1200k=0  (фильтр от 500k)
   area       12%  — 90–100m² ideal; <70 or >120 = 0
   rooms       7%  — 4=10, 5=8, 3=7, 6=7, others=3
   type        3%  — house=10, apt=8
@@ -466,7 +466,7 @@ def _score_district(district, city):
 
 
 def _score_price(price):
-    # Calibrated for 700k+ segment (filter default = 700k)
+    # Filter from 500k; ≤700k scores 10 (ideal), above — decreasing
     if price is None:
         return 5.0  # neutral, not redistributed
     if price <= 700_000:
