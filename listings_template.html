@@ -324,7 +324,7 @@ function renderDistricts(){
     const stag=d.super_tag?`<span class="dist-tg" style="color:#166534;background:#dcfce7">✅ ${d.super_tag}</span>`:'';
     const pro_tags=(d.pros||[]).map(t=>`<span class="dist-tg" style="color:#166534;background:#dcfce7">✅ ${t}</span>`).join('');
     const con_tags=(d.cons||[]).map(t=>`<span class="dist-tg" style="color:#991b1b;background:#fee2e2">❌ ${t}</span>`).join('');
-    const extra_tags=ntag||nuis_tags?`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:5px">${ntag}${nuis_tags}</div>':'';
+    const extra_tags=ntag||nuis_tags?`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:5px">${ntag}${nuis_tags}</div>`:'';
     const pros_row=stag||pro_tags?`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px">${stag}${pro_tags}</div>`:'';
     const cons_row=con_tags?`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:4px">${con_tags}</div>`:'';
     const full_desc=d.desc?`<details style="margin-top:8px"><summary style="cursor:pointer;font-size:12px;color:#6b7280;user-select:none">Подробнее ▸</summary><div style="margin-top:6px;font-size:13px;color:#555;line-height:1.7">${d.desc}</div></details>`:'';
