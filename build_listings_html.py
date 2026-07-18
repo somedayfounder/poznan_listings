@@ -180,8 +180,7 @@ for k, v in DISTRICT_SCORES.items():
     s_bonus, s_tag = _super_bonus(_dist_super.get(k, []))
     m = rs.get("manual"); g = rs.get("gpt")
     components = [x for x in [m, g, r_norm] if x is not None]
-    base = (sum(components) / len(components)) if components else v
-    base = round(base * 2) / 2  # round to 0.5
+    base = round((sum(components) / len(components)), 1) if components else v
     districts_list.append({
         "name": k,
         "score": round(min(10.0, base + s_bonus), 1),
