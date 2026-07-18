@@ -90,17 +90,8 @@ for r in rows:
     }
     feat = _feat_cache.get(r["id"], {})
     bonus = feat.get("_bonus", 0.0)
-    # supermarket bonus
     super_key = f"{lat},{lon}" if lat and lon else None
     super_info = _super_cache.get(super_key, {}) if super_key else {}
-    super_dist = super_info.get("dist_km")
-    if super_dist is not None:
-        if super_dist <= 0.5:
-            bonus += 0.3
-        elif super_dist <= 1.0:
-            bonus += 0.2
-        elif super_dist <= 2.0:
-            bonus += 0.1
     row["supermarket"] = super_info
     # nuisance: list of nearby problem sites for tooltip
     nuisance = []
@@ -126,10 +117,11 @@ mx_dist = max((r["dist"] for r in js_rows if r["dist"]), default=60)
 total = len(js_rows)
 data_json = json.dumps(js_rows, ensure_ascii=False)
 
-# Aggregate noise and nuisance per district from listing data
+# Aggregate noise, nuisance and supermarket distances per district
 from collections import defaultdict
 _dist_noise = defaultdict(list)   # district -> [max_ldwn, ...]
 _dist_nuisance = defaultdict(set) # district -> {nuisance_name, ...}
+_dist_super = defaultdict(list)   # district -> [dist_km, ...]
 for row in js_rows:
     d = row.get("district") or row.get("city") or ""
     if not d:
@@ -138,6 +130,18 @@ for row in js_rows:
         _dist_noise[d].append(max(row["noise"].values()))
     for n in (row.get("nuisance") or []):
         _dist_nuisance[d].add(n["name"])
+    sup_dist = (row.get("supermarket") or {}).get("dist_km")
+    if sup_dist is not None:
+        _dist_super[d].append(sup_dist)
+
+def _super_bonus(dists):
+    if not dists:
+        return 0.0, None
+    mn = min(dists)
+    if mn <= 0.5:   return 0.3, f"🛒 Супермаркет ≤500м (+0.3)"
+    if mn <= 1.0:   return 0.2, f"🛒 Супермаркет ≤1км (+0.2)"
+    if mn <= 2.0:   return 0.1, f"🛒 Супермаркет ≤2км (+0.1)"
+    return 0.0, None
 
 # Noise label thresholds (Lden dBA)
 def _noise_tag(vals):
@@ -173,9 +177,13 @@ for k, v in DISTRICT_SCORES.items():
     r_rating = res.get("rating")
     r_scale  = res.get("scale") or 5
     r_norm   = round(r_rating / r_scale * 10, 1) if r_rating else None
+    s_bonus, s_tag = _super_bonus(_dist_super.get(k, []))
     districts_list.append({
         "name": k,
-        "score": v,
+        "score": round(min(10.0, v + s_bonus), 1),
+        "score_base": v,
+        "super_bonus": s_bonus,
+        "super_tag": s_tag,
         "score_manual": rs.get("manual"),
         "score_gpt": rs.get("gpt"),
         "score_residents": r_norm,
