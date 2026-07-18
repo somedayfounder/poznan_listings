@@ -79,10 +79,16 @@ out center;"""
     req = Request("https://overpass-api.de/api/interpreter",
                   data=query.encode(), method="POST")
     req.add_header("User-Agent", "poznan_listings_bot/1.0")
-    try:
-        data = json.loads(urlopen(req, timeout=35).read())
-    except Exception as e:
-        print(f"  Overpass error: {e}")
+    for attempt in range(3):
+        try:
+            time.sleep(2 + attempt * 3)  # 2s, 5s, 8s между попытками
+            data = json.loads(urlopen(req, timeout=35).read())
+            break
+        except Exception as e:
+            print(f"  Overpass error (attempt {attempt+1}): {e}")
+            if attempt == 2:
+                return {}
+    else:
         return {}
 
     best = {}
@@ -294,6 +300,8 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python3 research_new_district.py <district> [district2 ...]")
         sys.exit(1)
-    for name in sys.argv[1:]:
+    for i, name in enumerate(sys.argv[1:]):
+        if i > 0:
+            time.sleep(3)
         research(name)
     print("\nDone.")

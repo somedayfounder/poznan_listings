@@ -219,7 +219,9 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
         names = ", ".join(sorted(new_district_set))
         tg_safe(f"🔎 Новые районы: <b>{names}</b> — запускаю исследование…", "new_districts")
         from research_new_district import research
-        for d in sorted(new_district_set):
+        for i, d in enumerate(sorted(new_district_set)):
+            if i > 0:
+                time.sleep(3)
             try:
                 research(d)
             except Exception as e:
