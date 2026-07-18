@@ -12,6 +12,16 @@ import json as _json
 _feat_cache = _json.loads(FEAT_CACHE.read_text()) if FEAT_CACHE.exists() else {}
 _SUPER_CACHE_FILE = Path("supermarkets_cache.json")
 _super_cache = _json.loads(_SUPER_CACHE_FILE.read_text()) if _SUPER_CACHE_FILE.exists() else {}
+
+_HYPER_BRANDS = {'auchan','carrefour','e.leclerc','leclerc','kaufland','makro','real','selgros'}
+_SUPER_BRANDS = {'lidl','netto','intermarché','intermarche','spar','piotr i paweł','alma','stokrotka','mój market'}
+
+def _store_tier(sup):
+    if not sup or not sup.get('name'): return 0
+    brand = (sup.get('brand') or sup.get('name') or '').lower()
+    if sup.get('type') == 'hypermarket' or any(b in brand for b in _HYPER_BRANDS): return 3
+    if any(b in brand for b in _SUPER_BRANDS): return 2
+    return 1  # дискаунтер: Biedronka, Dino, etc.
 _NOISE_CACHE_FILE = Path("noise_cache.json")
 _noise_cache = _json.loads(_NOISE_CACHE_FILE.read_text()) if _NOISE_CACHE_FILE.exists() else {}
 
@@ -121,7 +131,7 @@ data_json = json.dumps(js_rows, ensure_ascii=False)
 from collections import defaultdict
 _dist_noise = defaultdict(list)   # district -> [max_ldwn, ...]
 _dist_nuisance = defaultdict(set) # district -> {nuisance_name, ...}
-_dist_super = defaultdict(list)   # district -> [dist_km, ...]
+_dist_super = defaultdict(int)    # district -> best store tier (0-3)
 for row in js_rows:
     d = row.get("district") or row.get("city") or ""
     if not d:
@@ -130,17 +140,14 @@ for row in js_rows:
         _dist_noise[d].append(max(row["noise"].values()))
     for n in (row.get("nuisance") or []):
         _dist_nuisance[d].add(n["name"])
-    sup_dist = (row.get("supermarket") or {}).get("dist_km")
-    if sup_dist is not None:
-        _dist_super[d].append(sup_dist)
+    tier = _store_tier(row.get("supermarket"))
+    if tier > _dist_super[d]:
+        _dist_super[d] = tier
 
-def _super_bonus(dists):
-    if not dists:
-        return 0.0, None
-    mn = min(dists)
-    if mn <= 0.5:   return 0.3, f"🛒 Супермаркет ≤500м (+0.3)"
-    if mn <= 1.0:   return 0.2, f"🛒 Супермаркет ≤1км (+0.2)"
-    if mn <= 2.0:   return 0.1, f"🛒 Супермаркет ≤2км (+0.1)"
+def _super_bonus(tier):
+    if tier >= 3: return 0.3, "🏪 Гипермаркет (Ашан/Карреффур/Леклерк)"
+    if tier >= 2: return 0.2, "🛒 Супермаркет (Лидл/Нетто/Интермарше)"
+    if tier >= 1: return 0.1, "🛒 Дискаунтер (Бедронка/Дино)"
     return 0.0, None
 
 # Noise label thresholds (Lden dBA)
@@ -177,7 +184,7 @@ for k, v in DISTRICT_SCORES.items():
     r_rating = res.get("rating")
     r_scale  = res.get("scale") or 5
     r_norm   = round(r_rating / r_scale * 10, 1) if r_rating else None
-    s_bonus, s_tag = _super_bonus(_dist_super.get(k, []))
+    s_bonus, s_tag = _super_bonus(_dist_super.get(k, 0))
     m = rs.get("manual"); g = rs.get("gpt")
     components = [x for x in [m, g, r_norm] if x is not None]
     base = round((sum(components) / len(components)), 1) if components else v
