@@ -178,10 +178,14 @@ for k, v in DISTRICT_SCORES.items():
     r_scale  = res.get("scale") or 5
     r_norm   = round(r_rating / r_scale * 10, 1) if r_rating else None
     s_bonus, s_tag = _super_bonus(_dist_super.get(k, []))
+    m = rs.get("manual"); g = rs.get("gpt")
+    components = [x for x in [m, g, r_norm] if x is not None]
+    base = (sum(components) / len(components)) if components else v
+    base = round(base * 2) / 2  # round to 0.5
     districts_list.append({
         "name": k,
-        "score": round(min(10.0, v + s_bonus), 1),
-        "score_base": v,
+        "score": round(min(10.0, base + s_bonus), 1),
+        "score_base": base,
         "super_bonus": s_bonus,
         "super_tag": s_tag,
         "score_manual": rs.get("manual"),
