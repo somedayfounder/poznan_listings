@@ -532,6 +532,20 @@ a:hover{text-decoration:underline}
       <div class="rlog-desc">Расстояние до ж/д переведено в минуты. В <code>fetch_drive_distances.py</code> добавлен запрос K_RAIL=5 ближайших станций из <code>rail_stations.json</code>, выбирается минимальное время. Поле <code>rail_dur_s</code> добавлено в <code>drive_cache.json</code>. При повторном проходе обрабатываются только записи без <code>rail_dur_s</code> — не пересчитывается всё с нуля. Цвета: ≤5 зелёный, ≤15 синий, ≤30 оранжевый.</div>
     </div>
   </div>
+  <div class="rlog-item">
+    <div class="rlog-num">29</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Кнопка ℹ с попапом скоринга + отдельная колонка для +N</div>
+      <div class="rlog-desc">Кнопка расхлопа группы (+N) вынесена из ячейки названия в собственную узкую колонку. Добавлена колонка ℹ: клик открывает модальное окно с полным разбором оценки — каждый фактор отдельной строкой: оценка /10, вес, вклад в итог. JS-функции скоринга (<code>_sTransport</code>, <code>_sPrice</code>, <code>_sArea</code>, <code>_sRooms</code>) повторяют кривые из <code>score.py</code>. Штрафы за шум и вредные объекты показываются отдельно.</div>
+    </div>
+  </div>
+  <div class="rlog-item">
+    <div class="rlog-num">30</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Пересмотр весов: Район 30%, Транспорт 20%, Площадь 20%, Цена 15%, Комнаты 15%</div>
+      <div class="rlog-desc">Скорректированы веса факторов в <code>score.py</code> (<code>_BASE_W</code>), в JS-попапе скоринга и в методологии. Район вырос с 25% до 30% — он наиболее устойчиво определяет качество жизни. Транспорт вырос с 15% до 20% — доступность трамвая критична при покупке без расчёта на постоянную машину. Цена и комнаты снижены до 15% каждый.</div>
+    </div>
+  </div>
 </div>
 </div>
 
