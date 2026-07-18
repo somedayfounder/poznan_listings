@@ -98,10 +98,10 @@ def main():
             time.sleep(2)
             continue
 
-        # find best tram
+        # find best tram by min drive time
         best_idx, best_d, best_t = None, None, None
         for j, (d, t) in enumerate(zip(d_row[:K], t_row[:K])):
-            if d is not None and (best_d is None or d < best_d):
+            if t is not None and (best_t is None or t < best_t):
                 best_d = d; best_t = t; best_idx = j
 
         # sanity check: road dist >= haversine
