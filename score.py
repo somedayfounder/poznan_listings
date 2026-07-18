@@ -506,21 +506,15 @@ def _score_transport(tp, dist_tram, dist_center):
     d = dist_tram if dist_tram is not None else dist_center
     if d is None:
         return 5.0
-    if tp == "dom":
-        if d <= 2:   return 10.0
-        if d <= 5:   return 10.0 - 1.0 * (d - 2) / 3   # 2→10, 5→9
-        if d <= 10:  return max(6.0, 9.0 - 3.0 * (d - 5) / 5)  # 5→9, 10→6
-        return max(0.0, 6.0 - 6.0 * (d - 10) / 5)      # 10→6, 15→0
-    else:
-        if d <= 0.5: return 10.0
-        if d <= 1.5: return 10.0 - 2.0 * (d - 0.5)     # 0.5→10, 1.5→8
-        if d <= 3:   return 8.0 - 2.0 * (d - 1.5) / 1.5  # 1.5→8, 3→6
-        if d <= 5:   return max(0.0, 6.0 - 6.0 * (d - 3) / 2)  # 3→6, 5→0
-        return 0.0
+    if d <= 0.5: return 10.0
+    if d <= 1.5: return 10.0 - 2.0 * (d - 0.5)      # 0.5→10, 1.5→8
+    if d <= 3:   return 8.0 - 2.0 * (d - 1.5) / 1.5  # 1.5→8, 3→6
+    if d <= 5:   return max(0.0, 6.0 - 6.0 * (d - 3) / 2)  # 3→6, 5→0
+    return 0.0
 
 
 def _score_type(tp):
-    return 10.0 if tp == "dom" else 8.0
+    return 9.0
 
 
 _BASE_W = {
