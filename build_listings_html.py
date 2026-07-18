@@ -13,17 +13,18 @@ _feat_cache = _json.loads(FEAT_CACHE.read_text()) if FEAT_CACHE.exists() else {}
 _SUPER_CACHE_FILE = Path("supermarkets_cache.json")
 _super_cache = _json.loads(_SUPER_CACHE_FILE.read_text()) if _SUPER_CACHE_FILE.exists() else {}
 
-# distance thresholds by store class (people drive to hypermarkets)
-_THRESHOLDS = {"hyper": 5.0, "super": 2.0, "discount": 1.0}
+_DECAY = {"hyper": (0.3, 10.0), "super": (0.2, 5.0), "discount": (0.1, 2.0)}
 
 def _store_tier(sup_entry):
-    # sup_entry: {hyper: {name, dist_km}, super: ..., discount: ...}
-    if not sup_entry: return 0
-    for tier, max_km in _THRESHOLDS.items():
-        info = sup_entry.get(tier, {})
-        if info.get("dist_km") is not None and info["dist_km"] <= max_km:
-            return tier
-    return None
+    if not sup_entry: return None
+    best_tier, best_val = None, 0.0
+    for tier, (max_b, max_d) in _DECAY.items():
+        d = (sup_entry.get(tier) or {}).get("dist_km")
+        if d is not None and d < max_d:
+            val = max_b * (1 - d / max_d)
+            if val > best_val:
+                best_val, best_tier = val, tier
+    return best_tier
 
 def _best_store_name(sup_entry, tier):
     return (sup_entry.get(tier) or {}).get("name", "")
@@ -151,11 +152,14 @@ for row in js_rows:
         _dist_super[d] = tier
 
 def _super_bonus(tier, sup_entry):
-    name = _best_store_name(sup_entry or {}, tier) if sup_entry else ""
-    if tier == "hyper":    return 0.3, f"🏪 Гипермаркет {('('+name+')') if name else ''}"
-    if tier == "super":    return 0.2, f"🛒 Супермаркет {('('+name+')') if name else ''}"
-    if tier == "discount": return 0.1, f"🛒 Дискаунтер {('('+name+')') if name else ''}"
-    return 0.0, None
+    if not tier or not sup_entry: return 0.0, None
+    max_b, max_d = _DECAY[tier]
+    d = (sup_entry.get(tier) or {}).get("dist_km")
+    if d is None: return 0.0, None
+    bonus = round(max_b * (1 - d / max_d), 2)
+    name = _best_store_name(sup_entry, tier)
+    label = {"hyper": "🏪 Гипермаркет", "super": "🛒 Супермаркет", "discount": "🛒 Дискаунтер"}[tier]
+    return bonus, f"{label}{(' ('+name+')') if name else ''}"
 
 # Noise label thresholds (Lden dBA)
 def _noise_tag(vals):
