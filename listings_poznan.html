@@ -78,7 +78,7 @@ a:hover{text-decoration:underline}
   </select>
   <select id="sp_min" onchange="render()">
     <option value="">от любой</option>
-    <option value="600000" selected>от 600 000 zł</option>
+    <option value="600000">от 600 000 zł</option>
     <option value="700000">от 700 000 zł</option>
     <option value="800000">от 800 000 zł</option>
     <option value="900000">от 900 000 zł</option>
@@ -92,7 +92,7 @@ a:hover{text-decoration:underline}
     <option value="900000">до 900 000 zł</option>
     <option value="1000000">до 1 000 000 zł</option>
     <option value="1100000">до 1 100 000 zł</option>
-    <option value="1200000" selected>до 1 200 000 zł</option>
+    <option value="1200000">до 1 200 000 zł</option>
   </select>
   <select id="stram" onchange="render()">
     <option value="">До трамвая — любое</option>
@@ -366,7 +366,7 @@ function onTypeChange(){
   const stram=document.getElementById('stram');
   const st=document.getElementById('st').value;
   const sp_min=document.getElementById('sp_min');
-  if(!sp_min.value) sp_min.value='600000';
+  
 })();
 function render(){
 const q=(document.getElementById('sq').value||'').toLowerCase();
