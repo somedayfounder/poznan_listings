@@ -553,6 +553,7 @@ a:hover{text-decoration:underline}
 const D=__DATA__;
 const MX=__MX__;
 const DISTRICTS=__DISTRICTS__;
+const _rowMap=new Map(D.map(r=>[r.id,r]));
 
 function switchTab(name){
   document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',['listings','districts','bonuses','method','reasoning'][i]===name));
@@ -698,7 +699,7 @@ const exp_cell=toggle?`<td style="text-align:center;padding:0">${toggle}</td>`:'
 return`<tr>
 <td style="text-align:center;white-space:nowrap">${sc_cell}</td>
 ${exp_cell}
-<td style="text-align:center;padding:0"><button class="info-btn" onclick="showScoreInfo(${JSON.stringify(r).replace(/'/g,'&#39;')})">ℹ</button></td>
+<td style="text-align:center;padding:0"><button class="info-btn" onclick="showScoreInfo(_rowMap.get('${r.id}'))">ℹ</button></td>
 <td><a href="${r.url}" target="_blank" title="${r.title}">${r.title}</a></td>
 <td><span class="tp ${tc}">${tl}</span></td>
 <td style="white-space:nowrap">${ds_cell}</td>
