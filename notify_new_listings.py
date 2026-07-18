@@ -235,14 +235,16 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
             tram = r.get("drive_tram_name") or r.get("tram_name") or ""
             photos = [u for u in (r.get("photo_url") or "").split(",") if u]
             score = r.get("_score", 0)
-            stars = "⭐" * round(score / 2)  # 0–5 звёзд (каждые 2 балла = 1 звезда)
+            tram_min = round(int(float(r["drive_tram_dur_s"])) / 60) if r.get("drive_tram_dur_s") else None
+            tram_line = f"🚊 Трамвай: {tram_min} мин ({tram})" if tram_min and tram else (f"🚊 Трамвай: {dist_t}" + (f" ({tram})" if tram else ""))
+            tp_full = "Квартира" if r["type"] == "mieszkanie" else "Дом"
             caption = (
-                f"{stars} <b>{score}/10</b>  {_escape(r['title'])}\n"
-                f"{tp} · {area} · {price}\n"
+                f"<b>{score}/10</b>\n"
+                f"{_escape(r['title'])}\n"
                 f"📍 {location}\n"
-                f"🏛 до ратуши {dist_r} · 🚊 до трамвая {dist_t}"
-                + (f" ({tram})" if tram else "") + "\n"
-                f"<a href=\"{r['url']}\">Открыть →</a>"
+                f"<b>{price}</b>  ·  {area}  ·  {tp_full}\n"
+                f"{tram_line}  ·  🏛 Центр: {dist_r}\n"
+                f"<a href=\"{r['url']}\">На Otodom →</a>"
             )
             try:
                 if len(photos) >= 2:
