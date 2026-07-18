@@ -218,11 +218,11 @@ a:hover{text-decoration:underline}
   <!-- Веса -->
   <div class="m-card">
     <h3>Веса факторов оценки</h3>
-    <div class="m-row"><span class="m-label">🏙 Район</span><div class="m-bar-wrap"><div class="m-bar hi" style="width:50%"></div></div><span class="m-val">25%</span></div>
-    <div class="m-row"><span class="m-label">💰 Цена</span><div class="m-bar-wrap"><div class="m-bar hi" style="width:40%"></div></div><span class="m-val">20%</span></div>
+    <div class="m-row"><span class="m-label">🏙 Район</span><div class="m-bar-wrap"><div class="m-bar hi" style="width:60%"></div></div><span class="m-val">30%</span></div>
+    <div class="m-row"><span class="m-label">🚊 Транспорт до трамвая</span><div class="m-bar-wrap"><div class="m-bar hi" style="width:40%"></div></div><span class="m-val">20%</span></div>
     <div class="m-row"><span class="m-label">📐 Площадь</span><div class="m-bar-wrap"><div class="m-bar hi" style="width:40%"></div></div><span class="m-val">20%</span></div>
-    <div class="m-row"><span class="m-label">🛏 Комнаты</span><div class="m-bar-wrap"><div class="m-bar hi" style="width:40%"></div></div><span class="m-val">20%</span></div>
-    <div class="m-row"><span class="m-label">🚊 Транспорт до трамвая</span><div class="m-bar-wrap"><div class="m-bar" style="width:30%"></div></div><span class="m-val">15%</span></div>
+    <div class="m-row"><span class="m-label">💰 Цена</span><div class="m-bar-wrap"><div class="m-bar" style="width:30%"></div></div><span class="m-val">15%</span></div>
+    <div class="m-row"><span class="m-label">🛏 Комнаты</span><div class="m-bar-wrap"><div class="m-bar" style="width:30%"></div></div><span class="m-val">15%</span></div>
     <div class="m-row"><span class="m-label">🏠 Тип (дом/квартира)</span><div class="m-bar-wrap"><div class="m-bar" style="width:0%"></div></div><span class="m-val">0% — нейтр.</span></div>
     <p class="m-note">Тип объекта не влияет на оценку (вес 0%). Взвешенная сумма = базовая оценка 0–10. Затем вычитаются штрафы за шум и вредные объекты.</p>
   </div>
@@ -246,7 +246,7 @@ a:hover{text-decoration:underline}
     <div class="m-row"><span class="m-label">700 000 — 900 000 zł</span><span class="m-val">10 → 7</span></div>
     <div class="m-row"><span class="m-label">900 000 — 1 200 000 zł</span><span class="m-val">7 → 0</span></div>
     <div class="m-row"><span class="m-label">свыше 1 200 000 zł</span><span class="m-val m-pen">0</span></div>
-    <p class="m-note">Калиброван под сегмент 600k–1.2M. Цена занимает только 12% веса — выбор района и транспорта важнее.</p>
+    <p class="m-note">Калиброван под сегмент 600k–1.2M. Цена занимает 15% веса — выбор района и транспорта важнее.</p>
   </div>
 
   <!-- Площадь и комнаты -->
@@ -756,7 +756,7 @@ function showScoreInfo(r){
   const ar_sc  = Math.round(_sArea(r.area)*10)/10;
   const ro_sc  = _sRooms(r.rooms);
 
-  const W = {district:0.25,transport:0.15,price:0.20,area:0.20,rooms:0.20};
+  const W = {district:0.30,transport:0.20,price:0.15,area:0.20,rooms:0.15};
   const base = d_sc*W.district + tr_sc*W.transport + pr_sc*W.price + ar_sc*W.area + ro_sc*W.rooms;
 
   const nuis_pen = (r.nuisance||[]).reduce((s,n)=>s+n.penalty,0);
@@ -779,11 +779,11 @@ function showScoreInfo(r){
     return '';
   }
   const factors=[
-    {key:'district',  label:'Район',     sc:d_sc,  w:25},
-    {key:'transport', label:'Транспорт', sc:tr_sc, w:15},
-    {key:'price',     label:'Цена',      sc:pr_sc, w:20},
+    {key:'district',  label:'Район',     sc:d_sc,  w:30},
+    {key:'transport', label:'Транспорт', sc:tr_sc, w:20},
+    {key:'price',     label:'Цена',      sc:pr_sc, w:15},
     {key:'area',      label:'Площадь',   sc:ar_sc, w:20},
-    {key:'rooms',     label:'Комнаты',   sc:ro_sc, w:20},
+    {key:'rooms',     label:'Комнаты',   sc:ro_sc, w:15},
   ];
   const rows=factors.map(f=>`<tr>
     <td><b>${f.label}</b> <span style="color:#888;font-size:11px">${fmtLabel(f.key,r)}</span></td>
