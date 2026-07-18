@@ -39,9 +39,12 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add listings_latest.csv seen_ids.json listings_poznan.html coords_cache.json routes_cache.json features_cache.json noise_cache.json || true
+          git add listings_latest.csv seen_ids.json listings_poznan.html \
+                  coords_cache.json routes_cache.json features_cache.json \
+                  noise_cache.json drive_cache.json \
+                  score.py rescore_results.json supermarkets_cache.json resident_scores.json || true
           git diff --staged --quiet && echo "nothing to commit" && exit 0
           git commit -m "update listings $(date +%Y-%m-%d)"
-          git pull --rebase origin main
+          git pull --rebase --autostash origin main
           git push origin main
 
