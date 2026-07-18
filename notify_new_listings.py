@@ -185,7 +185,7 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
     def _f(v): return float(v) if v else None
     def _tram_ok(r):
         d = _f(r.get("drive_tram_km")) or _f(r.get("dist_tram"))
-        if d is None: return False
+        if d is None: return True  # нет данных — пропускаем, не блокируем
         limit = 8.0 if r.get("type") == "dom" else 3.0
         return d <= limit
     rows = [r for r in rows if _tram_ok(r)]
