@@ -165,7 +165,7 @@ a:hover{text-decoration:underline}
 
 <div id="tab-districts" class="tab-panel">
 <div class="tbl-wrap"><table class="dist-tbl" id="dg">
-  <thead><tr><th style="width:70px">Итог</th><th style="width:60px">Ручная</th><th style="width:60px">GPT</th><th style="width:160px">Район</th><th style="width:110px">Уровень</th><th>Описание</th></tr></thead>
+  <thead><tr><th style="width:70px">Итог</th><th style="width:55px" title="Ручная оценка">Ручная</th><th style="width:55px" title="Оценка GPT">GPT</th><th style="width:65px" title="Оценка жителей (опросы Otodom/beesafe, приведена к шкале 1–10)">Жители</th><th style="width:160px">Район</th><th style="width:110px">Уровень</th><th>Описание</th></tr></thead>
   <tbody id="dg-body"></tbody>
 </table></div>
 </div>
@@ -327,12 +327,13 @@ function renderDistricts(){
     const pros_row=pro_tags?`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px">${pro_tags}</div>`:'';
     const cons_row=con_tags?`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:4px">${con_tags}</div>`:'';
     const full_desc=d.desc?`<details style="margin-top:8px"><summary style="cursor:pointer;font-size:12px;color:#6b7280;user-select:none">Подробнее ▸</summary><div style="margin-top:6px;font-size:13px;color:#555;line-height:1.7">${d.desc}</div></details>`:'';
-    const manual_c=d.score_manual>=8?'#166534':d.score_manual>=7?'#1e40af':d.score_manual>=5?'#854d0e':'#991b1b';
-    const gpt_c=d.score_gpt>=8?'#166534':d.score_gpt>=7?'#1e40af':d.score_gpt>=5?'#854d0e':'#991b1b';
+    const sc_col=s=>s==null?'#bbb':s>=8?'#166534':s>=7?'#1e40af':s>=5?'#854d0e':'#991b1b';
+    const sc_td=(v,title)=>v!=null?`<td style="font-size:13px;color:${sc_col(v)};font-weight:600;text-align:center" title="${title||''}">${v}</td>`:`<td style="text-align:center;color:#bbb">—</td>`;
     return`<tr>
 <td class="dist-sc" style="color:${sc_c}">${d.score}<span style="color:#bbb;font-size:11px;font-weight:400">/10</span></td>
-<td style="font-size:13px;color:${manual_c};font-weight:600;text-align:center">${d.score_manual??'—'}</td>
-<td style="font-size:13px;color:${gpt_c};font-weight:600;text-align:center">${d.score_gpt??'—'}</td>
+${sc_td(d.score_manual,'Ручная оценка')}
+${sc_td(d.score_gpt,'Оценка GPT')}
+${sc_td(d.score_residents,d.residents_source?'Жители: '+d.residents_source:'Оценка жителей')}
 <td style="font-weight:600;font-size:14px">${d.name}</td>
 <td><span class="dist-tg" style="color:${tc};background:${bg}">${lbl}</span></td>
 <td class="dist-rs"><div style="font-size:14px;line-height:1.7;color:#1f2937">${d.summary||d.desc||'—'}</div>${pros_row}${cons_row}${extra_tags}${full_desc}</td>

@@ -3,8 +3,10 @@ from math import radians, sin, cos, sqrt, atan2
 from pathlib import Path
 from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE, DISTRICT_DESCRIPTIONS, DISTRICT_SUMMARIES, DISTRICT_PROS, DISTRICT_CONS, _nuisance_penalty, _NUISANCE_SITES, _haversine, _noise_penalty
 
-_RESCORE_FILE = Path(__file__).parent.parent / "scratchpad" / "rescore_results.json"
-_rescore = json.loads(_RESCORE_FILE.read_text()) if _RESCORE_FILE.exists() else {}
+_RESCORE_FILE   = Path(__file__).parent.parent / "rescore_results.json"
+_RESIDENT_FILE  = Path(__file__).parent.parent / "resident_scores.json"
+_rescore   = json.loads(_RESCORE_FILE.read_text())  if _RESCORE_FILE.exists()  else {}
+_residents = json.loads(_RESIDENT_FILE.read_text()) if _RESIDENT_FILE.exists() else {}
 from extract_features import feature_bonus, CACHE_FILE as FEAT_CACHE
 import json as _json
 _feat_cache = _json.loads(FEAT_CACHE.read_text()) if FEAT_CACHE.exists() else {}
@@ -151,12 +153,19 @@ for k, v in DISTRICT_SCORES.items():
     noise_tag = _noise_tag(_dist_noise.get(k, []))
     nuisance_names = _dist_nuisance.get(k, set())
     nuisance_tags = [_NUISANCE_SHORT.get(n, n) for n in sorted(nuisance_names)]
-    rs = _rescore.get(k, {})
+    rs  = _rescore.get(k, {})
+    res = _residents.get(k, {})
+    # normalize resident rating to 1-10 scale
+    r_rating = res.get("rating")
+    r_scale  = res.get("scale") or 5
+    r_norm   = round(r_rating / r_scale * 10, 1) if r_rating else None
     districts_list.append({
         "name": k,
         "score": v,
         "score_manual": rs.get("manual"),
         "score_gpt": rs.get("gpt"),
+        "score_residents": r_norm,
+        "residents_source": res.get("source"),
         "summary": DISTRICT_SUMMARIES.get(k, ""),
         "pros": DISTRICT_PROS.get(k, []),
         "cons": DISTRICT_CONS.get(k, []),
