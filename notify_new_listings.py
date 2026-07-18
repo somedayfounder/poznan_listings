@@ -192,10 +192,16 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
             r["district"] = r["city"]
             r["city"] = "Poznań"
 
+    # Загружаем drive_cache сразу после обогащения — фильтр и форматирование используют его
+    _drive_cache_path = DATA_DIR / "drive_cache.json"
+    _drive_cache = json.loads(_drive_cache_path.read_text()) if _drive_cache_path.exists() else {}
+
     def _f(v): return float(v) if v else None
     def _tram_ok(r):
-        d = _f(r.get("drive_tram_km")) or _f(r.get("dist_tram"))
-        if d is None: return True
+        dk = f"{r.get('lat')},{r.get('lon')}"
+        drv = _drive_cache.get(dk, {})
+        d = drv.get("tram_km") or _f(r.get("drive_tram_km")) or _f(r.get("dist_tram"))
+        if d is None: return True  # нет данных — пропускаем
         limit = 8.0 if r.get("type") == "dom" else 3.0
         return d <= limit
 
@@ -239,10 +245,6 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
     new_rows.sort(key=lambda r: r["_score"], reverse=True)
     print(f"Новых объявлений к отправке: {len(new_rows)}")
     tg_safe(f"🏠 <b>Отправляю {len(new_rows)} объявлений</b>…", "sending")
-
-    # Загружаем drive_cache для актуальных расстояний (fetch_drive_distances пишет туда, не в CSV)
-    _drive_cache_path = DATA_DIR / "drive_cache.json"
-    _drive_cache = json.loads(_drive_cache_path.read_text()) if _drive_cache_path.exists() else {}
 
     # 5. Шлём в Telegram
     if not new_rows:
