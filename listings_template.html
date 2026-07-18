@@ -428,13 +428,15 @@ const FEAT_LABELS={'garage':'Гараж','parking':'Парковка','garden_m2
 const feats=r.features||{};
 const pos=Object.entries(feats).filter(([k,v])=>v===true||(k==='garden_m2'&&v>0)).map(([k])=>FEAT_LABELS[k]||k).join(', ');
 const neg=Object.entries(feats).filter(([k,v])=>v===true&&['needs_renovation','near_highway'].includes(k)).map(([k])=>FEAT_LABELS[k]||k).join(', ');
+const sup=r.supermarket;
+const sup_line=sup&&sup.dist_km!=null?`\n🛒 ${sup.name||'Магазин'}: ${sup.dist_km<1?(sup.dist_km*1000|0)+' м':sup.dist_km.toFixed(1)+' км'} (+${sup.dist_km<=0.5?'0.3':sup.dist_km<=1?'0.2':sup.dist_km<=2?'0.1':'0'})`:'\n🛒 Магазин: нет данных';
 const bonus_line=r.bonus?`\nГПТ (не в оценке): ${pos||'—'}${neg?' · ⚠️ '+neg:''}`:'\nГПТ: нет данных';
 const nuis=(r.nuisance&&r.nuisance.length)?'\n⚠️ Штраф за объекты: '+r.nuisance.map(n=>`${n.name} (${n.dist_km}км, -${n.penalty})`).join(', '):'';
 const NOISE_SRC={'dr':'дороги','tr':'трамвай','ko':'ж/д','prz':'пром.'};
 const noise_parts=r.noise&&Object.keys(r.noise).length?Object.entries(r.noise).map(([k,v])=>`${NOISE_SRC[k]||k}: ${v}дБА`).join(', '):null;
 const noise_line=noise_parts?`\n🔊 Шум (LDWN): ${noise_parts}`:'';
 
-const tip=`Оценка: ${r.base_score??sc}${bonus_line}${nuis}${noise_line}`;
+const tip=`Оценка: ${r.base_score??sc}${bonus_line}${sup_line}${nuis}${noise_line}`;
 const sc_cell=`<span style="font-weight:600;color:${sc_c};cursor:default" title="${tip}">${sc}</span><span style="color:#999;font-size:11px">/10</span>`;
 const ds=r.district_score!=null?r.district_score:6;
 const ds_c=ds>=8?'#166534':ds>=7?'#1e40af':ds>=5?'#854d0e':'#991b1b';

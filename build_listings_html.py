@@ -10,6 +10,8 @@ _residents = json.loads(_RESIDENT_FILE.read_text()) if _RESIDENT_FILE.exists() e
 from extract_features import feature_bonus, CACHE_FILE as FEAT_CACHE
 import json as _json
 _feat_cache = _json.loads(FEAT_CACHE.read_text()) if FEAT_CACHE.exists() else {}
+_SUPER_CACHE_FILE = Path("supermarkets_cache.json")
+_super_cache = _json.loads(_SUPER_CACHE_FILE.read_text()) if _SUPER_CACHE_FILE.exists() else {}
 _NOISE_CACHE_FILE = Path("noise_cache.json")
 _noise_cache = _json.loads(_NOISE_CACHE_FILE.read_text()) if _NOISE_CACHE_FILE.exists() else {}
 
@@ -88,6 +90,18 @@ for r in rows:
     }
     feat = _feat_cache.get(r["id"], {})
     bonus = feat.get("_bonus", 0.0)
+    # supermarket bonus
+    super_key = f"{lat},{lon}" if lat and lon else None
+    super_info = _super_cache.get(super_key, {}) if super_key else {}
+    super_dist = super_info.get("dist_km")
+    if super_dist is not None:
+        if super_dist <= 0.5:
+            bonus += 0.3
+        elif super_dist <= 1.0:
+            bonus += 0.2
+        elif super_dist <= 2.0:
+            bonus += 0.1
+    row["supermarket"] = super_info
     # nuisance: list of nearby problem sites for tooltip
     nuisance = []
     if lat and lon:
