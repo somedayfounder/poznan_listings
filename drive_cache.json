@@ -68234,5 +68234,108 @@
     "rail_name": "Maltanka",
     "rail_km": 3.22,
     "rail_dur_s": 537
+  },
+  "52.29446,17.077865": {
+    "tram_name": "Os. Czecha",
+    "tram_km": 14.72,
+    "tram_dur_s": 900,
+    "tram_walk_s": 12381,
+    "tram_candidates": [
+      {
+        "name": "Franowo",
+        "km": 15.24,
+        "dur_s": 1024,
+        "walk_s": 12388
+      },
+      {
+        "name": "Szwajcarska",
+        "km": 15.3,
+        "dur_s": 1030,
+        "walk_s": 12432
+      },
+      {
+        "name": "Szwedzka",
+        "km": 15.0,
+        "dur_s": 958,
+        "walk_s": 11833
+      },
+      {
+        "name": "Piaśnicka/Kurlandzka",
+        "km": 15.58,
+        "dur_s": 950,
+        "walk_s": 12111
+      },
+      {
+        "name": "Piaśnicka Rynek",
+        "km": 15.34,
+        "dur_s": 1002,
+        "walk_s": 12398
+      },
+      {
+        "name": "Os. Czecha",
+        "km": 14.72,
+        "dur_s": 900,
+        "walk_s": 12381
+      },
+      {
+        "name": "Żegrze II",
+        "km": 15.29,
+        "dur_s": 973,
+        "walk_s": 12320
+      },
+      {
+        "name": "Żegrze III",
+        "km": 14.93,
+        "dur_s": 938,
+        "walk_s": 12073
+      },
+      {
+        "name": "Żegrze I",
+        "km": 15.66,
+        "dur_s": 1002,
+        "walk_s": 12635
+      },
+      {
+        "name": "Os. Lecha",
+        "km": 15.25,
+        "dur_s": 989,
+        "walk_s": 12730
+      },
+      {
+        "name": "Tadeuszak",
+        "km": 16.54,
+        "dur_s": 1137,
+        "walk_s": 13035
+      },
+      {
+        "name": "Unii Lubelskiej",
+        "km": 17.67,
+        "dur_s": 1150,
+        "walk_s": 12843
+      },
+      {
+        "name": "Rondo Żegrze",
+        "km": 16.14,
+        "dur_s": 1083,
+        "walk_s": 12710
+      },
+      {
+        "name": "Os. Tysiąclecia",
+        "km": 15.66,
+        "dur_s": 1018,
+        "walk_s": 12975
+      },
+      {
+        "name": "Starołęka PKM",
+        "km": 18.56,
+        "dur_s": 1244,
+        "walk_s": 12770
+      }
+    ],
+    "ratusz_km": 19.45,
+    "ratusz_dur_s": 1667,
+    "rail_name": "Pierzchno",
+    "rail_km": 6.44,
+    "rail_dur_s": 509
   }
 }

@@ -12154,5 +12154,677 @@
     "geo_city": "Poznań",
     "geo_district": null,
     "corrected": true
+  },
+  "67641051": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Pobiedziska",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67859055": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "spokojnej okolicy",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "65662391": {
+    "orig_lat": 52.51811,
+    "orig_lon": 16.66318,
+    "new_lat": 52.518099,
+    "new_lon": 16.663183,
+    "dist_m": 1,
+    "query": "ul. Kolejowej, Przybroda, Polska",
+    "formatted": "Kolejowa, 62-090 Przybroda, Polska",
+    "addr": {
+      "street": "ul. Kolejowej",
+      "osiedle": null,
+      "city": "Przybroda",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przybroda",
+    "geo_district": null,
+    "corrected": false
+  },
+  "64874220": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "61146014": {
+    "orig_lat": 52.5713,
+    "orig_lon": 17.02807,
+    "new_lat": 52.570949,
+    "new_lon": 17.028179,
+    "dist_m": 40,
+    "query": "ul. Gnieźnieńskiej 47, Murowana Goślina, Polska",
+    "formatted": "Gnieźnieńska 47, 62-095 Murowana Goślina, Polska",
+    "addr": {
+      "street": "ul. Gnieźnieńskiej 47",
+      "osiedle": null,
+      "city": "Murowana Goślina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Murowana Goślina",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67641005": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67640213": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Strykowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67048471": {
+    "skipped": "geocode_too_vague",
+    "query": "Kórnik, Dachowa, Polska",
+    "formatted": "Dachowa, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": "Kórnik",
+      "confidence": "high"
+    }
+  },
+  "66477734": {
+    "orig_lat": 52.43413,
+    "orig_lon": 16.59335,
+    "new_lat": 52.43439,
+    "new_lon": 16.593358,
+    "dist_m": 29,
+    "query": "ul. Sokoła, Ceradz Kościelny, Polska",
+    "formatted": "Sokoła, 62-080 Ceradz Kościelny, Polska",
+    "addr": {
+      "street": "ul. Sokoła",
+      "osiedle": null,
+      "city": "Ceradz Kościelny",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Ceradz Kościelny",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67875979": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "65002723": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Puszcza Zielonka",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67858986": {
+    "skipped": "geocode_too_vague",
+    "query": "Kostrzyn, Gwiazdowo, Polska",
+    "formatted": "Gwiazdowo, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Gwiazdowo",
+      "district": "Kostrzyn",
+      "confidence": "high"
+    }
+  },
+  "67883130": {
+    "skipped": "geocode_too_vague",
+    "query": "ul. Ryżowa, Więckowice, Polska",
+    "formatted": "62-070 Więckowice, Polska",
+    "addr": {
+      "street": "ul. Ryżowa",
+      "osiedle": null,
+      "city": "Więckowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67673500": {
+    "orig_lat": 52.36743,
+    "orig_lon": 16.70528,
+    "new_lat": 52.370113,
+    "new_lon": 16.703121,
+    "dist_m": 332,
+    "query": "ul. Wierzbowej, Dopiewiec, Polska",
+    "formatted": "Wierzbowa, 62-070 Dopiewiec, Polska",
+    "addr": {
+      "street": "ul. Wierzbowej",
+      "osiedle": null,
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "66443419": {
+    "orig_lat": 52.50568,
+    "orig_lon": 16.75804,
+    "new_lat": 52.505428,
+    "new_lon": 16.758725,
+    "dist_m": 54,
+    "query": "Golęcińska, Rokietnica, Polska",
+    "formatted": "Golęcińska, 62-090 Rokietnica, Polska",
+    "addr": {
+      "street": "Golęcińska",
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67718448": {
+    "orig_lat": 52.40229,
+    "orig_lon": 17.213,
+    "new_lat": 52.40383,
+    "new_lon": 17.211475,
+    "dist_m": 200,
+    "query": "ul. Rolna, Kostrzyn, Polska",
+    "formatted": "Rolna, 62-025 Kostrzyn, Polska",
+    "addr": {
+      "street": "ul. Rolna",
+      "osiedle": null,
+      "city": "Kostrzyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Kostrzyn",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67419942": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Koninko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66945484": {
+    "orig_lat": 52.37452,
+    "orig_lon": 17.15866,
+    "new_lat": 52.373892,
+    "new_lon": 17.157495,
+    "dist_m": 106,
+    "query": "ul. Tulecka, Siekierki Wielkie, Polska",
+    "formatted": "Tulecka, 62-025, Polska",
+    "addr": {
+      "street": "ul. Tulecka",
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Powiat poznański",
+    "geo_district": null,
+    "corrected": false
+  },
+  "66484265": {
+    "orig_lat": 52.44947,
+    "orig_lon": 16.67143,
+    "new_lat": 52.482964,
+    "new_lon": 16.657197,
+    "dist_m": 3847,
+    "query": "ul. Ustronnej 10/1, Góra, Polska",
+    "formatted": "Ustronna 10/1, 62-080 Góra, Polska",
+    "addr": {
+      "street": "ul. Ustronnej 10/1",
+      "osiedle": "Osiedle Góra",
+      "city": "Góra",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Góra",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65085707": {
+    "skipped": "geocode_too_vague",
+    "query": "ul. Tuleckiej, Siekierkach Wielkich, Polska",
+    "formatted": "62-025 Siekierki Wielkie, Polska",
+    "addr": {
+      "street": "ul. Tuleckiej",
+      "osiedle": null,
+      "city": "Siekierkach Wielkich",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67673947": {
+    "orig_lat": 52.3706,
+    "orig_lon": 16.70265,
+    "new_lat": 52.370113,
+    "new_lon": 16.703121,
+    "dist_m": 63,
+    "query": "ul. Wierzbowej, Dopiewiec, Polska",
+    "formatted": "Wierzbowa, 62-070 Dopiewiec, Polska",
+    "addr": {
+      "street": "ul. Wierzbowej",
+      "osiedle": null,
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewiec",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67781528": {
+    "skipped": "geocode_too_vague",
+    "query": "ul. Jachtowa, Pamiątkowo, Polska",
+    "formatted": "Pamiątkowo, Polska",
+    "addr": {
+      "street": "ul. Jachtowa",
+      "osiedle": null,
+      "city": "Pamiątkowo",
+      "district": "gmina Szamotuły",
+      "confidence": "high"
+    }
+  },
+  "66484285": {
+    "orig_lat": 52.43631,
+    "orig_lon": 16.64045,
+    "new_lat": 52.436469,
+    "new_lon": 16.640371,
+    "dist_m": 18,
+    "query": "ul. Bosmańska, Lusówko, Polska",
+    "formatted": "Bosmańska, 62-080 Lusówko, Polska",
+    "addr": {
+      "street": "ul. Bosmańska",
+      "osiedle": null,
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67673616": {
+    "orig_lat": 52.36729,
+    "orig_lon": 16.70517,
+    "new_lat": 52.370113,
+    "new_lon": 16.703121,
+    "dist_m": 343,
+    "query": "ul. Wierzbowej, Dopiewiec, Polska",
+    "formatted": "Wierzbowa, 62-070 Dopiewiec, Polska",
+    "addr": {
+      "street": "ul. Wierzbowej",
+      "osiedle": null,
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67793506": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66053520": {
+    "orig_lat": 52.30419,
+    "orig_lon": 17.10051,
+    "new_lat": 52.29446,
+    "new_lon": 17.077865,
+    "dist_m": 1882,
+    "query": "ul. Nagietkowej, Dachowo, Polska",
+    "formatted": "Nagietkowa, 62-023 Dachowa, Polska",
+    "addr": {
+      "street": "ul. Nagietkowej",
+      "osiedle": "Nowina II",
+      "city": "Dachowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "66346521": {
+    "skipped": "geocode_too_vague",
+    "query": "ul. Poznańska, Robakowo, Polska",
+    "formatted": "Poznańska, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "osiedle": null,
+      "city": "Robakowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66463426": {
+    "orig_lat": 52.36781,
+    "orig_lon": 16.70354,
+    "new_lat": 52.366532,
+    "new_lon": 16.701314,
+    "dist_m": 207,
+    "query": "ul. Skrytej, Dopiewiec, Polska",
+    "formatted": "Skryta, 62-070 Dopiewiec, Polska",
+    "addr": {
+      "street": "ul. Skrytej",
+      "osiedle": "Osiedle Nowy Dopiewiec",
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "66686232": {
+    "orig_lat": 52.46981,
+    "orig_lon": 16.64626,
+    "new_lat": 52.464785,
+    "new_lon": 16.640824,
+    "dist_m": 669,
+    "query": "Aleje Solidarności, Tarnowo Podgórne, Polska",
+    "formatted": "aleja Solidarności, 62-080 Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "Aleje Solidarności",
+      "osiedle": null,
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67913629": {
+    "orig_lat": 52.30099,
+    "orig_lon": 17.07859,
+    "new_lat": 52.301737,
+    "new_lon": 17.071469,
+    "dist_m": 491,
+    "query": "ul. Osiedle Życzliwe 29, Dachowa, Polska",
+    "formatted": "Osiedle Życzliwe 29, 62-023 Dachowa, Polska",
+    "addr": {
+      "street": "ul. Osiedle Życzliwe 29",
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67661963": {
+    "orig_lat": 52.39032,
+    "orig_lon": 17.2157,
+    "new_lat": 52.388075,
+    "new_lon": 17.217135,
+    "dist_m": 268,
+    "query": "Osiedle Kórnickie, Kostrzyn, Polska",
+    "formatted": "Kórnicka, 62-025 Kostrzyn, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Osiedle Kórnickie",
+      "city": "Kostrzyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Kostrzyn",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96791362900067": {
+    "orig_lat": 52.30099,
+    "orig_lon": 17.07859,
+    "new_lat": 52.301737,
+    "new_lon": 17.071469,
+    "dist_m": 491,
+    "query": "ul. Osiedle Życzliwe 29, Dachowa, Polska",
+    "formatted": "Osiedle Życzliwe 29, 62-023 Dachowa, Polska",
+    "addr": {
+      "street": "ul. Osiedle Życzliwe 29",
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65662100": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Czmoniec",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67668651": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Kostrzyn Wielkopolski",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67833290": {
+    "skipped": "geocode_too_far",
+    "dist_m": 148009,
+    "query": "ul. Życzliwa, null, Polska",
+    "formatted": "Życzliwa, 53-030 Wrocław, Polska",
+    "addr": {
+      "street": "ul. Życzliwa",
+      "osiedle": "Osiedle Życzliwe",
+      "city": "null",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "67526456": {
+    "orig_lat": 52.38035,
+    "orig_lon": 16.60985,
+    "new_lat": 52.387286,
+    "new_lon": 16.585437,
+    "dist_m": 1828,
+    "query": "Leśna, Niepruszewo, Polska",
+    "formatted": "Leśna, Niepruszewo, Polska",
+    "addr": {
+      "street": "Leśna",
+      "osiedle": "Leśna 26",
+      "city": "Niepruszewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Niepruszewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65566232": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Bnińskie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67848387": {
+    "skipped": "geocode_too_vague",
+    "query": "Kleszczewo, Komorniki, Polska",
+    "formatted": "63-004 Komorniki, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": "Kleszczewo",
+      "confidence": "high"
+    }
+  },
+  "67639699": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67907361": {
+    "skipped": "geocode_too_vague",
+    "query": "ul. Życzliwa, Poznań, Polska",
+    "formatted": "Poznań, Polska",
+    "addr": {
+      "street": "ul. Życzliwa",
+      "osiedle": "Osiedle Życzliwe",
+      "city": null,
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67872191": {
+    "skipped": "geocode_too_vague",
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67872189": {
+    "skipped": "geocode_too_vague",
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67872190": {
+    "skipped": "geocode_too_vague",
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67869758": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Gortatów",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67301253": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "podmiejski dom",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "66533710": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67078753": {
+    "skipped": "geocode_too_far",
+    "dist_m": 80477,
+    "query": "Olchowe Zacisze, Janikowo, Polska",
+    "formatted": "Zacisze, 88-160 Janikowo, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Olchowe Zacisze",
+      "city": "Janikowo",
+      "district": "Swarzędz",
+      "confidence": "high"
+    }
+  },
+  "67820099": {
+    "skipped": "geocode_too_vague",
+    "query": "Czerwonak, Kliny, Polska",
+    "formatted": "62-004 Kliny, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Kliny",
+      "district": "Czerwonak",
+      "confidence": "high"
+    }
   }
 }
