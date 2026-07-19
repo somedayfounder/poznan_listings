@@ -634,11 +634,11 @@ def _nuisance_penalty(lat, lon):
             total += penalty * (1 - dist / radius)
     return round(min(2.5, total), 2)
 
-def _noise_penalty(noise):
+def _noise_penalty(noise, floor=None):
     """
     noise: dict {source: max_ldwn_dba} from noise_cache.json (GEOPOZ 2017, facade level).
-    Returns penalty 0–1.0. Data is worst-case facade exposure; actual indoor levels
-    depend on floor, glazing, orientation — so scale is intentionally soft.
+    Data is worst-case facade exposure; upper floors receive reduced penalty
+    because noise attenuates with height.
     """
     if not noise:
         return 0.0
@@ -646,10 +646,17 @@ def _noise_penalty(noise):
     if max_ldwn <= 60:
         return 0.0
     if max_ldwn <= 65:
-        return 0.3
-    if max_ldwn <= 70:
-        return 0.6
-    return 1.0
+        base = 0.1
+    elif max_ldwn <= 70:
+        base = 0.2
+    else:
+        base = 0.4
+    try:
+        fl = int(floor) if floor not in (None, "") else None
+    except (ValueError, TypeError):
+        fl = None
+    mult = max(0.3, 1.0 - 0.1 * max(0, (fl or 1) - 2)) if fl else 1.0
+    return round(base * mult, 3)
 
 def _score_district(district, city):
     """Check district first, then city name."""
@@ -723,7 +730,7 @@ _BASE_W = {
 }
 
 
-def compute_score(price, area, rooms, tp, dist_tram, dist_center, tram_min=None, dist_center_min=None, district=None, city=None, lat=None, lon=None, noise=None):
+def compute_score(price, area, rooms, tp, dist_tram, dist_center, tram_min=None, dist_center_min=None, district=None, city=None, lat=None, lon=None, noise=None, floor=None):
     factors = [
         (_score_transport(tp, tram_min, dist_center_min), _BASE_W["transport"]),
         (_score_district(district, city),               _BASE_W["district"]),
@@ -734,7 +741,7 @@ def compute_score(price, area, rooms, tp, dist_tram, dist_center, tram_min=None,
     ]
     total_w = sum(w for _, w in factors)
     base = sum(sc * w for sc, w in factors) / total_w
-    penalty = _nuisance_penalty(lat, lon) + _noise_penalty(noise)
+    penalty = _nuisance_penalty(lat, lon) + _noise_penalty(noise, floor)
     return round(max(0.0, base - penalty), 1)
 
 
@@ -784,4 +791,5 @@ def score_from_jsrow(r):
         lat=r.get("lat"),
         lon=r.get("lon"),
         noise=r.get("noise"),
+        floor=r.get("floor"),
     )

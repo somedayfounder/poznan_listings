@@ -688,7 +688,10 @@ function showScoreInfo(r){
   const nuis_pen = (r.nuisance||[]).reduce((s,n)=>s+n.penalty,0);
   const noise_vals = r.noise?Object.values(r.noise):[];
   const max_noise = noise_vals.length?Math.max(...noise_vals):0;
-  const noise_pen = max_noise>=70?1.5:max_noise>=65?1.0:max_noise>=60?0.5:0;
+  const noise_base = max_noise>=70?0.4:max_noise>=65?0.2:max_noise>=60?0.1:0;
+  const noise_fl = r.floor!=null?parseInt(r.floor)||1:1;
+  const noise_mult = Math.max(0.3, 1.0 - 0.1*Math.max(0, noise_fl-2));
+  const noise_pen = Math.round(noise_base * noise_mult * 1000) / 1000;
   const final_sc = Math.round(Math.max(0,base-nuis_pen-noise_pen)*10)/10;
 
   function bar(v){
