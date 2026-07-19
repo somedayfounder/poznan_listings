@@ -43,11 +43,31 @@ SEARCH_URLS = [
     f"{BASE}/pl/wyniki/sprzedaz/dom,rynek-pierwotny/wielkopolskie/poznanski?{FILTERS}",
 ]
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-    "Accept-Language": "pl-PL,pl;q=0.9",
-    "Accept": "text/html,application/xhtml+xml",
-}
+_USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0",
+]
+_ua_idx = 0
+
+def _headers():
+    global _ua_idx
+    ua = _USER_AGENTS[_ua_idx % len(_USER_AGENTS)]
+    _ua_idx += 1
+    return {
+        "User-Agent": ua,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Referer": "https://www.otodom.pl/pl/wyniki/sprzedaz/mieszkanie/wielkopolskie/poznan",
+        "sec-fetch-dest": "document",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-user": "?1",
+        "upgrade-insecure-requests": "1",
+        "Cache-Control": "max-age=0",
+    }
 
 ROOMS_MAP = {
     "ONE": 1, "TWO": 2, "THREE": 3, "FOUR": 4,
@@ -60,11 +80,6 @@ FLOOR_MAP = {
     "TENTH": 10, "ABOVE_TENTH": "10+", "GARRET": "poddasze",
     "BASEMENT": "piwnica",
 }
-
-# Населённые пункты за пределами интереса (слишком далеко / не тот район)
-EXCLUDED_CITIES = {"Komorniki", "Plewiska", "Robakowo", "Nowinki", "Wierzyce",
-                   "Dachowa", "Rokietnica", "Murowana Goślina", "Bolechowo",
-                   "Swarzędz", "Mosina", "Luboń", "Czerwonak"}
 
 # Отдельные НП, которые на самом деле внутри Познани
 POZNAN_SUBURBS = {"Smochowice", "Naramowice", "Strzeszyn", "Morasko",
@@ -84,7 +99,7 @@ def haversine(lat1, lon1, lat2, lon2):
 
 
 def fetch_page(url):
-    req = Request(url, headers=HEADERS)
+    req = Request(url, headers=_headers())
     with urlopen(req, timeout=15) as r:
         html = r.read().decode("utf-8", errors="replace")
     m = re.search(r'id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.DOTALL)
@@ -194,8 +209,6 @@ def get_all_listings():
                 if item.get("estate") == "INVESTMENT":
                     continue
                 parsed = parse_item(item, estate_type, TRAMS)
-                if parsed["city"] in EXCLUDED_CITIES:
-                    continue
                 seen_ids.add(item["id"])
                 results.append(parsed)
                 new_on_page += 1
