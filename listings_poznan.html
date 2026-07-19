@@ -580,7 +580,7 @@ function renderDistricts(){
     const full_desc=d.desc?`<details style="margin-top:8px"><summary style="cursor:pointer;font-size:12px;color:#6b7280;user-select:none">Подробнее ▸</summary><div style="margin-top:6px;font-size:13px;color:#555;line-height:1.7">${d.desc}</div></details>`:'';
     const sc_col=s=>s==null?'#bbb':s>=8?'#166534':s>=7?'#1e40af':s>=5?'#854d0e':'#991b1b';
     const sc_td=(v,title)=>v!=null?`<td style="font-size:13px;color:${sc_col(v)};font-weight:600;text-align:center" title="${title||''}">${v}</td>`:`<td style="text-align:center;color:#bbb">—</td>`;
-    return`<tr>
+    return`<tr id="district-${d.name.replace(/\s+/g,'-')}">
 <td class="dist-sc" style="color:${sc_c}">${d.score}<span style="color:#bbb;font-size:11px;font-weight:400">/10</span></td>
 ${sc_td(d.score_manual,'Ручная оценка')}
 ${sc_td(d.score_gpt,'Оценка GPT')}
@@ -789,7 +789,8 @@ const ds=r.district_score!=null?r.district_score:6;
 const ds_c=ds>=8?'#166534':ds>=7?'#1e40af':ds>=5?'#854d0e':'#991b1b';
 const ds_label=r.district||r.city||'—';
 const ds_name_style=r.city==='Poznań'?'color:#166534':'color:#c2410c';
-const ds_cell=`<span style="color:${ds_c};font-weight:500">${ds}/10</span> <span style="${ds_name_style};font-size:11px">${ds_label}</span>`;
+const ds_anchor=`district-${ds_label.replace(/\s+/g,'-')}`;
+const ds_cell=`<a href="#${ds_anchor}" onclick="event.preventDefault();switchTab('districts');renderDistricts();setTimeout(()=>{const el=document.getElementById('${ds_anchor}');if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.style.background='#fef9c3';setTimeout(()=>el.style.background='',1500);}},50)" style="text-decoration:none"><span style="color:${ds_c};font-weight:500">${ds}/10</span> <span style="${ds_name_style};font-size:11px">${ds_label}</span></a>`;
 const proj_cell=r.project?`<span style="max-width:130px;overflow:hidden;text-overflow:ellipsis;color:#666;display:inline-block" title="${r.project}">${r.project}</span>`:'—';
 const tram_cell=dt_v!=null?`<span style="color:${dt_c};font-weight:500" title="${r.tram_tip||''}">🚊 ${dt_s}</span>`:'—';
 const rail_cell=dr_v!=null?`<span style="color:${dr_c};font-weight:500" title="${r.rail_tip||''}">🚆 ${dr_s}</span>`:'—';
