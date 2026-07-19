@@ -739,12 +739,12 @@ function showScoreInfo(r){
   </tr>`).join('');
 
   let penRows='';
-  if(nuis_pen>0){
-    const names=(r.nuisance||[]).map(n=>n.name).join(', ');
-    penRows+=`<tr><td colspan="3" style="color:#c2410c">⚠️ Штраф (вредные объекты): ${names}</td><td style="text-align:right;color:#c2410c">−${nuis_pen.toFixed(2)}</td></tr>`;
-  }
-  if(noise_pen>0){
-    penRows+=`<tr><td colspan="3" style="color:#c2410c">🔊 Штраф за шум (${max_noise} дБА)</td><td style="text-align:right;color:#c2410c">−${noise_pen.toFixed(1)}</td></tr>`;
+  if(nuis_pen>0 || noise_pen>0){
+    const parts=[];
+    if(nuis_pen>0){ const names=(r.nuisance||[]).map(n=>n.name).join(', '); parts.push(`⚠️ ${names}`); }
+    if(noise_pen>0){ parts.push(`🔊 шум ${max_noise} дБА`); }
+    const totalPen=nuis_pen+noise_pen;
+    penRows+=`<tr><td colspan="3" style="color:#c2410c">Штрафы: ${parts.join(' · ')}</td><td style="text-align:right;color:#c2410c">−${totalPen.toFixed(2)}</td></tr>`;
   }
 
   const sc_c=final_sc>=8?'#166534':final_sc>=6?'#1e40af':final_sc>=4?'#854d0e':'#991b1b';
