@@ -113,8 +113,8 @@ for r in rows:
                 "alts": alts,
             }
             tip_parts = [f"{tram_name} — {fmt_d(dist_tram)} по дороге (линии: {', '.join(sorted(lines1)) if lines1 else '?'})"]
-            if alt:
-                tip_parts.append(f"{alt['name']} — {fmt_d(alt['km'])} {'прямая' if alt.get('km_hav') else 'по дороге'} (линии: {', '.join(alt['lines'])})")
+            for a in alts:
+                tip_parts.append(f"{a['name']} — {fmt_d(a['km'])} {'прямая' if a.get('km_hav') else 'по дороге'} (линии: {', '.join(a['lines'])})")
             tram_tip = "\n".join(tip_parts)
 
         if rail_name:
