@@ -27,6 +27,9 @@ jobs:
       - name: Run notifier
         run: python3 notify_new_listings.py
 
+      - name: Fetch drive distances
+        run: python3 fetch_drive_distances.py
+
       - name: Enrich noise data from Poznań GIS
         run: python3 enrich_noise.py
 
