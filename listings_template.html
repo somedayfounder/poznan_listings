@@ -704,6 +704,28 @@ function showScoreInfo(r){
   }
 
   const sc_c=final_sc>=8?'#166534':final_sc>=6?'#1e40af':final_sc>=4?'#854d0e':'#991b1b';
+
+  // блок особенностей объекта
+  const FEAT_LABELS_M={garage:'Гараж',parking:'Парковка',garden_m2:'Сад',terrace:'Терраса',balcony:'Балкон',smart_home:'Умный дом',gym_on_site:'Фитнес на сайте',new_condition:'Новое состояние',needs_renovation:'Нужен ремонт',quiet_street:'Тихая улица',near_highway:'Рядом шоссе',near_railway:'Рядом ж/д',elevator:'Лифт',storage_room:'Кладовая',electric_car_charger:'Зарядка EV',floor_heating:'Тёплые полы',high_ceiling:'Высокий потолок',panoramic_view:'Панорамный вид',water_view:'Вид на воду',school_nearby:'Школа рядом',kindergarten_nearby:'Детсад рядом',park_nearby:'Парк рядом',forest_nearby:'Лес рядом',supermarket_nearby:'Магазин рядом',concierge:'Консьерж',gated_community:'Охраняемый двор'};
+  const feats_m=r.features||{};
+  const pos_tags=(Object.entries(feats_m).filter(([k,v])=>v===true&&!['needs_renovation','near_highway','near_railway'].includes(k)||(k==='garden_m2'&&v>0)).map(([k,v])=>`<span style="display:inline-block;background:#dcfce7;color:#166534;border-radius:4px;padding:1px 7px;font-size:11px;margin:2px">${FEAT_LABELS_M[k]||k}${k==='garden_m2'?' '+v+'м²':''}</span>`)).join('');
+  const neg_tags=(Object.entries(feats_m).filter(([k,v])=>v===true&&['needs_renovation','near_highway','near_railway'].includes(k)).map(([k])=>`<span style="display:inline-block;background:#fee2e2;color:#991b1b;border-radius:4px;padding:1px 7px;font-size:11px;margin:2px">${FEAT_LABELS_M[k]||k}</span>`)).join('');
+  const bonus_feat=(feats_m.bonus_features||[]).map(f=>`<span style="display:inline-block;background:#dbeafe;color:#1e40af;border-radius:4px;padding:1px 7px;font-size:11px;margin:2px">${f}</span>`).join('');
+  const red_flags=(feats_m.red_flags||[]).map(f=>`<span style="display:inline-block;background:#fee2e2;color:#991b1b;border-radius:4px;padding:1px 7px;font-size:11px;margin:2px">🚩 ${f}</span>`).join('');
+  const NOISE_SRC_M={dr:'дороги',tr:'трамвай',ko:'ж/д',prz:'пром.'};
+  const noise_parts_m=r.noise&&Object.keys(r.noise).length?Object.entries(r.noise).map(([k,v])=>`${NOISE_SRC_M[k]||k}: ${v} дБА`).join(', '):null;
+  const nuis_names=(r.nuisance||[]).map(n=>`${n.name} (${n.dist_km} км)`).join(', ');
+  const featsBlock=(pos_tags||neg_tags||bonus_feat||red_flags||noise_parts_m||nuis_names)?`
+    <div style="margin-top:14px;border-top:1px solid #eee;padding-top:10px">
+      <div style="font-size:11px;font-weight:600;color:#888;margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px">Особенности объекта</div>
+      ${pos_tags?`<div style="margin-bottom:4px">${pos_tags}</div>`:''}
+      ${bonus_feat?`<div style="margin-bottom:4px">${bonus_feat}</div>`:''}
+      ${neg_tags?`<div style="margin-bottom:4px">${neg_tags}</div>`:''}
+      ${red_flags?`<div style="margin-bottom:4px">${red_flags}</div>`:''}
+      ${noise_parts_m?`<div style="margin-top:5px;font-size:11px;color:#b45309">🔊 Шум (LDWN): ${noise_parts_m}</div>`:''}
+      ${nuis_names?`<div style="margin-top:4px;font-size:11px;color:#b45309">⚠️ Вредные объекты: ${nuis_names}</div>`:''}
+    </div>`:'';
+
   document.getElementById('score-modal-body').innerHTML=`
     <table>
       <thead><tr><th>Фактор</th><th style="text-align:right">Оценка</th><th style="text-align:right">Вес</th><th style="text-align:right">Вклад</th></tr></thead>
@@ -713,7 +735,7 @@ function showScoreInfo(r){
         ${penRows}
         <tr class="total-row"><td colspan="3">Итог</td><td style="text-align:right;color:${sc_c}">${final_sc}</td></tr>
       </tbody>
-    </table>`;
+    </table>${featsBlock}`;
   document.getElementById('score-modal-title').textContent=r.title;
   document.getElementById('score-modal-backdrop').classList.add('open');
 }
@@ -777,14 +799,7 @@ const FEAT_LABELS={'garage':'Гараж','parking':'Парковка','garden_m2
 const feats=r.features||{};
 const pos=Object.entries(feats).filter(([k,v])=>v===true||(k==='garden_m2'&&v>0)).map(([k])=>FEAT_LABELS[k]||k).join(', ');
 const neg=Object.entries(feats).filter(([k,v])=>v===true&&['needs_renovation','near_highway'].includes(k)).map(([k])=>FEAT_LABELS[k]||k).join(', ');
-const bonus_line=r.bonus?`\nГПТ (не в оценке): ${pos||'—'}${neg?' · ⚠️ '+neg:''}`:'\nГПТ: нет данных';
-const nuis=(r.nuisance&&r.nuisance.length)?'\n⚠️ Штраф за объекты: '+r.nuisance.map(n=>`${n.name} (${n.dist_km}км, -${n.penalty})`).join(', '):'';
-const NOISE_SRC={'dr':'дороги','tr':'трамвай','ko':'ж/д','prz':'пром.'};
-const noise_parts=r.noise&&Object.keys(r.noise).length?Object.entries(r.noise).map(([k,v])=>`${NOISE_SRC[k]||k}: ${v}дБА`).join(', '):null;
-const noise_line=noise_parts?`\n🔊 Шум (LDWN): ${noise_parts}`:'';
-
-const tip=`Оценка: ${r.base_score??sc}${bonus_line}${nuis}${noise_line}`;
-const sc_cell=`<span style="font-weight:600;color:${sc_c};cursor:default" title="${tip}">${sc}</span><span style="color:#999;font-size:11px">/10</span>`;
+const sc_cell=`<span style="font-weight:600;color:${sc_c}">${sc}</span><span style="color:#999;font-size:11px">/10</span>`;
 const ds=r.district_score!=null?r.district_score:6;
 const ds_c=ds>=8?'#166534':ds>=7?'#1e40af':ds>=5?'#854d0e':'#991b1b';
 const ds_label=r.district||r.city||'—';
