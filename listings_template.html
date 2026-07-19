@@ -755,23 +755,16 @@ function showScoreInfo(r){
   const td=r.tram_details;
   const rd=r.rail_details;
   function fmtTransportKm(km){return km!=null?`${km} км`:'?';}
-  function fmtTramMain(td){
-    const walkPart=td.walk_min!=null?`<span style="color:#1e40af;font-weight:600"> ${td.walk_min} мин пешком</span>`:'';
-    const drivePart=td.drive_min!=null?`<span style="color:#555;font-size:12px"> · ${td.drive_min} мин на авто</span>`:'';
-    const kmPart=`<span style="color:#888;font-size:11px"> (${fmtTransportKm(td.km)})</span>`;
-    const linesPart=td.lines&&td.lines.length?`<span style="color:#888;font-size:11px"> · линии: ${td.lines.join(', ')}</span>`:'';
-    return `<span style="font-weight:600">🚊 ${td.name}</span>${walkPart}${drivePart}${kmPart}${linesPart}`;
+  function fmtTramStop(name,min,km,lines){
+    const timePart=min!=null?`<span style="color:#1e40af;font-weight:600"> ${min} мин</span>`:'';
+    const kmPart=`<span style="color:#888;font-size:11px"> (${fmtTransportKm(km)})</span>`;
+    const linesPart=lines&&lines.length?`<span style="color:#888;font-size:11px"> · линии: ${lines.join(', ')}</span>`:'';
+    return `<span style="font-weight:600">🚊 ${name}</span>${timePart}${kmPart}${linesPart}`;
   }
-  function fmtTramAlt(a){
-    const timePart=a.min!=null?`<span style="color:#1e40af;font-weight:600"> ${a.min} мин</span>`:'';
-    const kmPart=`<span style="color:#888;font-size:11px"> (${fmtTransportKm(a.km)})</span>`;
-    const linesPart=a.lines&&a.lines.length?`<span style="color:#888;font-size:11px"> · линии: ${a.lines.join(', ')}</span>`:'';
-    return `<span style="font-weight:600">🚊 ${a.name}</span>${timePart}${kmPart}${linesPart}`;
-  }
-  const tramLine=td?`<div style="margin-bottom:5px">
-    ${fmtTramMain(td)}
-    ${(td.alts||[]).map(a=>`<div style="margin-top:3px">${fmtTramAlt(a)}</div>`).join('')}
-  </div>`:'';
+  const ws=td&&td.walk_stop;
+  const walkLine=ws?`<div style="margin-bottom:6px"><span style="font-weight:600">🚶 ${ws.name}</span><span style="color:#1e40af;font-weight:600"> ${ws.walk_min} мин пешком</span><span style="color:#888;font-size:11px"> (${fmtTransportKm(ws.km)})</span></div>`:'';
+  const driveLines=td?(td.drive_stops||[]).map((s,i)=>`<div${i>0?' style="margin-top:3px"':''} >${fmtTramStop(s.name,s.min,s.km,s.lines)}</div>`).join(''):'';
+  const tramLine=(walkLine||driveLines)?`<div style="margin-bottom:5px">${walkLine}${driveLines}</div>`:'';
   const railLine=rd?`<div style="padding-top:8px;margin-top:8px;border-top:1px solid #f0f0f0">
     <span style="font-weight:600">🚆 ${rd.name}</span>
     <span style="color:#1e40af;font-weight:600"> ${rd.min!=null?rd.min+' мин':''}</span>

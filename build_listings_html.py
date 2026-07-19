@@ -86,38 +86,30 @@ for r in rows:
         if tram_name:
             candidates = _drive.get("tram_candidates", [])
 
-            # главная остановка = ближайшая ПЕШКОМ (min walk_s)
+            # ближайшая пешком
             cands_with_walk = [c for c in candidates if c.get("walk_s") is not None]
+            walk_stop = None
             if cands_with_walk:
-                walk_best = min(cands_with_walk, key=lambda c: c["walk_s"])
-                display_name = walk_best["name"]
-                display_walk_min = round(walk_best["walk_s"] / 60)
-                display_drive_min = round(walk_best["dur_s"] / 60)
-                display_km = walk_best["km"]
-            else:
-                display_name = tram_name
-                display_walk_min = tram_walk_min
-                display_drive_min = tram_min
-                display_km = dist_tram
+                wb = min(cands_with_walk, key=lambda c: c["walk_s"])
+                walk_stop = {"name": wb["name"], "walk_min": round(wb["walk_s"] / 60), "km": wb["km"]}
+            elif tram_walk_min is not None:
+                walk_stop = {"name": tram_name, "walk_min": tram_walk_min, "km": dist_tram}
 
-            display_lines = set(stop_lines.get(display_name, []))
-
-            # альтернативы = уникальные линии, сортировка по drive_s
-            seen_lines = display_lines.copy()
-            alts = []
+            # остановки на авто: уникальные линии, сортировка по drive_s, макс 3
+            drive_stops = []
+            seen_lines = set()
             for cand in sorted(candidates, key=lambda c: c["dur_s"]):
-                if cand["name"] == display_name:
-                    continue
                 lines2 = set(stop_lines.get(cand["name"], []))
                 if lines2 and not lines2.intersection(seen_lines):
-                    alts.append({"name": cand["name"], "min": round(cand["dur_s"] / 60), "km": cand["km"], "lines": sorted(lines2)})
+                    drive_stops.append({"name": cand["name"], "min": round(cand["dur_s"] / 60), "km": cand["km"], "lines": sorted(lines2)})
                     seen_lines |= lines2
-                if len(alts) >= 3:
+                if len(drive_stops) >= 3:
                     break
 
             # fallback: haversine если кандидатов нет
-            if not candidates:
+            if not candidates and tram_name:
                 lines1 = set(stop_lines.get(tram_name, []))
+                drive_stops = [{"name": tram_name, "min": tram_min, "km": dist_tram, "lines": sorted(lines1)}]
                 ranked_hav = sorted(trams, key=lambda t: hav(lat, lon, t["lat"], t["lon"]))
                 for t in ranked_hav:
                     if t["name"] == tram_name:
@@ -125,21 +117,11 @@ for r in rows:
                     lines2 = set(stop_lines.get(t["name"], []))
                     if lines2 and lines1 and not lines1.intersection(lines2):
                         d2 = round(hav(lat, lon, t["lat"], t["lon"]), 2)
-                        alts.append({"name": t["name"], "min": None, "km": d2, "km_hav": True, "lines": sorted(lines2)})
+                        drive_stops.append({"name": t["name"], "min": None, "km": d2, "lines": sorted(lines2)})
                         break
 
-            tram_details = {
-                "name": display_name,
-                "walk_min": display_walk_min,
-                "drive_min": display_drive_min,
-                "km": display_km,
-                "lines": sorted(display_lines) if display_lines else [],
-                "alts": alts,
-            }
-            tip_parts = [f"{tram_name} — {fmt_d(dist_tram)} по дороге (линии: {', '.join(sorted(lines1)) if lines1 else '?'})"]
-            for a in alts:
-                tip_parts.append(f"{a['name']} — {fmt_d(a['km'])} {'прямая' if a.get('km_hav') else 'по дороге'} (линии: {', '.join(a['lines'])})")
-            tram_tip = "\n".join(tip_parts)
+            tram_details = {"walk_stop": walk_stop, "drive_stops": drive_stops}
+            tram_tip = " | ".join(f"{s['name']} {s['min']} мин" for s in drive_stops if s.get("min"))
 
         if rail_name:
             rail_details = {"name": rail_name, "min": rail_min, "km": dist_rail}
