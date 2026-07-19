@@ -85,15 +85,31 @@ for r in rows:
         if tram_name:
             lines1 = set(stop_lines.get(tram_name, []))
             alt = None
-            ranked = sorted(trams, key=lambda t: hav(lat, lon, t["lat"], t["lon"]))
-            for t in ranked:
-                if t["name"] == tram_name:
+            # ищем alt среди кандидатов из drive_cache (с реальными минутами)
+            candidates = _drive.get("tram_candidates", [])
+            for cand in candidates:
+                if cand["name"] == tram_name:
                     continue
-                lines2 = set(stop_lines.get(t["name"], []))
+                lines2 = set(stop_lines.get(cand["name"], []))
                 if lines2 and lines1 and not lines1.intersection(lines2):
-                    d2 = round(hav(lat, lon, t["lat"], t["lon"]), 2)
-                    alt = {"name": t["name"], "km_hav": d2, "lines": sorted(lines2)}
+                    alt = {
+                        "name": cand["name"],
+                        "min": round(cand["dur_s"] / 60),
+                        "km": cand["km"],
+                        "lines": sorted(lines2),
+                    }
                     break
+            # fallback: haversine если кандидатов нет
+            if alt is None:
+                ranked_hav = sorted(trams, key=lambda t: hav(lat, lon, t["lat"], t["lon"]))
+                for t in ranked_hav:
+                    if t["name"] == tram_name:
+                        continue
+                    lines2 = set(stop_lines.get(t["name"], []))
+                    if lines2 and lines1 and not lines1.intersection(lines2):
+                        d2 = round(hav(lat, lon, t["lat"], t["lon"]), 2)
+                        alt = {"name": t["name"], "min": None, "km": d2, "km_hav": True, "lines": sorted(lines2)}
+                        break
             tram_details = {
                 "name": tram_name,
                 "min": tram_min,
@@ -101,10 +117,9 @@ for r in rows:
                 "lines": sorted(lines1) if lines1 else [],
                 "alt": alt,
             }
-            # оставляем tram_tip для обратной совместимости
             tip_parts = [f"{tram_name} — {fmt_d(dist_tram)} по дороге (линии: {', '.join(sorted(lines1)) if lines1 else '?'})"]
             if alt:
-                tip_parts.append(f"{alt['name']} — ~{fmt_d(alt['km_hav'])} прямая (линии: {', '.join(alt['lines'])})")
+                tip_parts.append(f"{alt['name']} — {fmt_d(alt['km'])} {'прямая' if alt.get('km_hav') else 'по дороге'} (линии: {', '.join(alt['lines'])})")
             tram_tip = "\n".join(tip_parts)
 
         if rail_name:

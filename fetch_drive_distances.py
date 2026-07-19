@@ -131,16 +131,27 @@ def main():
             if t is not None and (best_rail_t is None or t < best_rail_t):
                 best_rail_d = d; best_rail_t = t; best_rail_idx = j
 
+        # сохраняем все кандидаты трамваев для alt-остановки в build_listings_html
+        tram_candidates = []
+        for j, (d, t) in enumerate(zip(d_row[:K], t_row[:K])):
+            if d is not None and t is not None:
+                tram_candidates.append({
+                    "name": ranked[j]["name"],
+                    "km": round(d / 1000, 2),
+                    "dur_s": t,
+                })
+
         entry = cache.get(key, {})
         entry.update({
-            "tram_name":    ranked[best_idx]["name"] if best_idx is not None else None,
-            "tram_km":      round(best_d / 1000, 2) if best_d is not None else None,
-            "tram_dur_s":   best_t,
-            "ratusz_km":    round(ratusz_d / 1000, 2) if ratusz_d is not None else None,
-            "ratusz_dur_s": ratusz_t,
-            "rail_name":    ranked_rail[best_rail_idx]["name"] if best_rail_idx is not None else None,
-            "rail_km":      round(best_rail_d / 1000, 2) if best_rail_d is not None else None,
-            "rail_dur_s":   best_rail_t,
+            "tram_name":       ranked[best_idx]["name"] if best_idx is not None else None,
+            "tram_km":         round(best_d / 1000, 2) if best_d is not None else None,
+            "tram_dur_s":      best_t,
+            "tram_candidates": tram_candidates,
+            "ratusz_km":       round(ratusz_d / 1000, 2) if ratusz_d is not None else None,
+            "ratusz_dur_s":    ratusz_t,
+            "rail_name":       ranked_rail[best_rail_idx]["name"] if best_rail_idx is not None else None,
+            "rail_km":         round(best_rail_d / 1000, 2) if best_rail_d is not None else None,
+            "rail_dur_s":      best_rail_t,
         })
         cache[key] = entry
 

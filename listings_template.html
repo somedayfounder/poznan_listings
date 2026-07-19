@@ -735,7 +735,11 @@ function showScoreInfo(r){
     <span style="color:#1e40af;font-weight:600"> ${td.min!=null?td.min+' мин':''}</span>
     <span style="color:#888;font-size:11px"> (${fmtTransportKm(td.km)} по дороге)</span>
     ${td.lines&&td.lines.length?`<span style="color:#888;font-size:11px"> · линии: ${td.lines.join(', ')}</span>`:''}
-    ${td.alt?`<div style="margin-top:3px;margin-left:12px;font-size:11px;color:#555">также: ${td.alt.name} <span style="color:#888">(~${fmtTransportKm(td.alt.km_hav)} прямая · линии: ${td.alt.lines.join(', ')})</span></div>`:''}
+    ${td.alt?`<div style="margin-top:3px;margin-left:12px">
+      <span style="font-weight:600">🚊 ${td.alt.name}</span>
+      ${td.alt.min!=null?`<span style="color:#1e40af;font-weight:600"> ${td.alt.min} мин</span><span style="color:#888;font-size:11px"> (${fmtTransportKm(td.alt.km)} по дороге)</span>`:`<span style="color:#888;font-size:11px"> ~${fmtTransportKm(td.alt.km)} прямая</span>`}
+      ${td.alt.lines&&td.alt.lines.length?`<span style="color:#888;font-size:11px"> · линии: ${td.alt.lines.join(', ')}</span>`:''}
+    </div>`:''}
   </div>`:'';
   const railLine=rd?`<div>
     <span style="font-weight:600">🚆 ${rd.name}</span>
