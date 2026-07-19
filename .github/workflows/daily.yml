@@ -27,6 +27,16 @@ jobs:
       - name: Scrape listings
         run: python3 scrape_listings.py
 
+      - name: Save seen IDs early
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add seen_ids.json listings_latest.csv coords_cache.json || true
+          git diff --staged --quiet && echo "nothing to commit" && exit 0
+          git commit -m "seen_ids checkpoint $(date +%Y-%m-%d)"
+          git pull --rebase --autostash origin main
+          git push origin main
+
       - name: Geocode coordinates from descriptions
         run: python3 geocode_coords.py
 
