@@ -705,15 +705,11 @@ def _score_rooms(rooms):
 
 
 def _score_transport(tp, tram_min, dist_center_min):
-    # score by drive time in minutes to nearest tram stop
+    # ≤5 мин → 10; каждая доп. минута −1 балл; <0 → 0
     m = tram_min if tram_min is not None else dist_center_min
     if m is None:
         return 5.0
-    if m <= 3:  return 10.0
-    if m <= 7:  return 10.0 - 1.5 * (m - 3) / 4   # 3→10, 7→8.5
-    if m <= 12: return 8.5 - 2.5 * (m - 7) / 5    # 7→8.5, 12→6
-    if m <= 20: return max(0.0, 6.0 - 6.0 * (m - 12) / 8)  # 12→6, 20→0
-    return 0.0
+    return max(0.0, 10.0 - max(0, m - 5))
 
 
 def _score_type(tp):

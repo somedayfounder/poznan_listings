@@ -232,13 +232,13 @@ a:hover{text-decoration:underline}
   <!-- Транспорт -->
   <div class="m-card">
     <h3>Транспорт — кривая оценки (минуты езды)</h3>
-    <p style="font-size:11px;color:#888;margin-bottom:8px">Единая кривая для квартир и домов. Время езды на машине до ближайшей трамвайной остановки (Google Maps). Нет данных — нейтральные 5 баллов.</p>
-    <div class="m-row"><span class="m-label">до 3 мин</span><span class="m-val m-pos">10</span></div>
-    <div class="m-row"><span class="m-label">3 — 7 мин</span><span class="m-val">10 → 8.5</span></div>
-    <div class="m-row"><span class="m-label">7 — 12 мин</span><span class="m-val">8.5 → 6</span></div>
-    <div class="m-row"><span class="m-label">12 — 20 мин</span><span class="m-val">6 → 0</span></div>
-    <div class="m-row"><span class="m-label">более 20 мин</span><span class="m-val m-pen">0</span></div>
-    <p class="m-note">Ближайшая остановка — минимальное время из 15 кандидатов по haversine. Колонки «Трамвай», «Ратуша» и «Ж/д» в таблице тоже в минутах.</p>
+    <p style="font-size:11px;color:#888;margin-bottom:8px">Время езды на машине до ближайшей трамвайной остановки (Google Maps). Нет данных — нейтральные 5 баллов.</p>
+    <div class="m-row"><span class="m-label">до 5 мин</span><span class="m-val m-pos">10</span></div>
+    <div class="m-row"><span class="m-label">6 мин</span><span class="m-val">9</span></div>
+    <div class="m-row"><span class="m-label">10 мин</span><span class="m-val">5</span></div>
+    <div class="m-row"><span class="m-label">15 мин</span><span class="m-val m-pen">0</span></div>
+    <div class="m-row"><span class="m-label">более 15 мин</span><span class="m-val m-pen">0</span></div>
+    <p class="m-note">Линейно: −1 балл за каждую минуту сверх 5. Ближайшая остановка выбирается из 15 кандидатов по времени езды.</p>
   </div>
 
   <!-- Цена -->
@@ -568,6 +568,13 @@ a:hover{text-decoration:underline}
     <div class="rlog-body">
       <div class="rlog-title">UX попапа: транспорт, особенности, линк на район; альтернативные остановки</div>
       <div class="rlog-desc">Попап ℹ расширен: блок «Транспорт» со всеми остановками (основная + до 3 альтернативных с разными маршрутными линиями, время в минутах, ж/д отделена разделителем); блок «Особенности объекта» с цветными тегами (зелёные — плюсы, красные — минусы, red flags). Рекламный текст из <code>bonus_features</code> убран. Тултипы с ячеек трамвая и ж/д перенесены в попап. Рейтинг района в таблице стал якорной ссылкой — клик переключает вкладку «Районы» и подсвечивает строку. Сортировка по «Район ★» получила вторичную сортировку по имени района. Не влияет на оценки объектов.</div>
+    </div>
+  </div>
+  <div class="rlog-item">
+    <div class="rlog-num">34</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Транспортный блок попапа: пешком отдельно, авто отдельно; новая кривая оценки</div>
+      <div class="rlog-desc">Попап разделён на два блока: 🚶 ближайший трамвай пешком (минимальное время ходьбы среди 15 кандидатов Google Walking API) и 🚊 до 3 остановок на авто с уникальными линиями, отсортированных по времени езды. Кривая транспортной оценки упрощена: ≤5 мин → 10 баллов, далее −1 балл за каждую минуту (линейно до 0 при 15 мин). Ранее была ступенчатая кривая 3→10, 7→8.5, 12→6, 20→0.</div>
     </div>
   </div>
 </div>
