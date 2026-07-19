@@ -69,9 +69,10 @@ for r in rows:
     _drive = _drive_cache.get(_dk, {})
     dist      = _drive.get("ratusz_km") or v(r, "drive_ratusz_km", float) or v(r, "dist_km", float)
     dist_min  = round(_drive["ratusz_dur_s"] / 60) if _drive.get("ratusz_dur_s") else None
-    dist_tram = _drive.get("tram_km") or v(r, "drive_tram_km", float)
-    tram_min  = round(_drive["tram_dur_s"] / 60) if _drive.get("tram_dur_s") else None
-    tram_name = _drive.get("tram_name") or r.get("drive_tram_name", "")
+    dist_tram  = _drive.get("tram_km") or v(r, "drive_tram_km", float)
+    tram_min   = round(_drive["tram_dur_s"] / 60) if _drive.get("tram_dur_s") else None
+    tram_walk_min = round(_drive["tram_walk_s"] / 60) if _drive.get("tram_walk_s") else None
+    tram_name  = _drive.get("tram_name") or r.get("drive_tram_name", "")
     dist_rail = _drive.get("rail_km") or v(r, "drive_rail_km", float)
     rail_min  = round(_drive["rail_dur_s"] / 60) if _drive.get("rail_dur_s") else None
     rail_name = _drive.get("rail_name") or r.get("drive_rail_name", "")
@@ -88,12 +89,17 @@ for r in rows:
             seen_lines = lines1.copy()
             candidates = _drive.get("tram_candidates", [])
             for cand in candidates:
-                if cand["name"] == tram_name or len(alts) >= 3:
+                if cand["name"] == tram_name:
                     continue
                 lines2 = set(stop_lines.get(cand["name"], []))
                 if lines2 and not lines2.intersection(seen_lines):
-                    alts.append({"name": cand["name"], "min": round(cand["dur_s"] / 60), "km": cand["km"], "lines": sorted(lines2)})
+                    alt = {"name": cand["name"], "min": round(cand["dur_s"] / 60), "km": cand["km"], "lines": sorted(lines2)}
+                    if cand.get("walk_s") is not None:
+                        alt["walk_min"] = round(cand["walk_s"] / 60)
+                    alts.append(alt)
                     seen_lines |= lines2
+            alts.sort(key=lambda a: a.get("walk_min") if a.get("walk_min") is not None else 9999)
+            alts = alts[:3]
             # fallback: haversine если кандидатов нет
             if not alts:
                 ranked_hav = sorted(trams, key=lambda t: hav(lat, lon, t["lat"], t["lon"]))
@@ -108,6 +114,7 @@ for r in rows:
             tram_details = {
                 "name": tram_name,
                 "min": tram_min,
+                "walk_min": tram_walk_min,
                 "km": dist_tram,
                 "lines": sorted(lines1) if lines1 else [],
                 "alts": alts,

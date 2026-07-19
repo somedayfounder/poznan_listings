@@ -32,12 +32,12 @@ def haversine(lat1, lon1, lat2, lon2):
     a = math.sin(dl/2)**2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(do/2)**2
     return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
 
-def distance_matrix(origins, destinations):
+def distance_matrix(origins, destinations, mode="driving"):
     """origins/destinations: list of "lat,lon" strings. Returns (distances_m, durations_s) matrices."""
     url = "https://maps.googleapis.com/maps/api/distancematrix/json?" + urllib.parse.urlencode({
         "origins":      "|".join(origins),
         "destinations": "|".join(destinations),
-        "mode":         "driving",
+        "mode":         mode,
         "key":          API_KEY,
     })
     with urllib.request.urlopen(url, timeout=30) as r:
@@ -78,10 +78,15 @@ def main():
 
     cache = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
     # re-process entries that are missing rail data
+    def _needs_walk(entry):
+        cands = entry.get("tram_candidates") or []
+        return not cands or "walk_s" not in cands[0]
+
     todo = [l for l in listings if
             f"{l['lat']},{l['lon']}" not in cache or
             "rail_dur_s" not in cache.get(f"{l['lat']},{l['lon']}", {}) or
-            "tram_candidates" not in cache.get(f"{l['lat']},{l['lon']}", {})]
+            "tram_candidates" not in cache.get(f"{l['lat']},{l['lon']}", {}) or
+            _needs_walk(cache.get(f"{l['lat']},{l['lon']}", {}))]
     print(f"Объявлений: {len(listings)}, в кеше: {len(cache)}, осталось: {len(todo)}")
 
     errors = 0
@@ -99,16 +104,24 @@ def main():
         ratusz_dest = f"{RATUSZ[0]},{RATUSZ[1]}"
         rail_dests  = [f"{r['lat']},{r['lon']}" for r in ranked_rail]
 
-        # all destinations in one request: K trams + ratusz + K_RAIL rail
+        # all destinations in one request: K trams + ratusz + K_RAIL rail (driving)
         all_dests = tram_dests + [ratusz_dest] + rail_dests
         try:
             dists, durs = distance_matrix([origin], all_dests)
             d_row = dists[0]; t_row = durs[0]
         except Exception as e:
-            print(f"  [{i+1}/{len(todo)}] ERROR {key}: {e}")
+            print(f"  [{i+1}/{len(todo)}] ERROR driving {key}: {e}")
             errors += 1
             time.sleep(2)
             continue
+
+        # walking distances to tram stops
+        try:
+            _, walk_durs = distance_matrix([origin], tram_dests, mode="walking")
+            walk_row = walk_durs[0]
+        except Exception as e:
+            print(f"  [{i+1}/{len(todo)}] WARN walking {key}: {e}")
+            walk_row = [None] * K
 
         # find best tram by min drive time
         best_idx, best_d, best_t = None, None, None
@@ -132,21 +145,28 @@ def main():
             if t is not None and (best_rail_t is None or t < best_rail_t):
                 best_rail_d = d; best_rail_t = t; best_rail_idx = j
 
-        # сохраняем все кандидаты трамваев для alt-остановки в build_listings_html
+        # сохраняем все кандидаты трамваев с пешеходным временем
         tram_candidates = []
         for j, (d, t) in enumerate(zip(d_row[:K], t_row[:K])):
             if d is not None and t is not None:
-                tram_candidates.append({
+                cand = {
                     "name": ranked[j]["name"],
                     "km": round(d / 1000, 2),
                     "dur_s": t,
-                })
+                }
+                wt = walk_row[j] if j < len(walk_row) else None
+                if wt is not None:
+                    cand["walk_s"] = wt
+                tram_candidates.append(cand)
+
+        tram_walk_s = walk_row[best_idx] if best_idx is not None and best_idx < len(walk_row) else None
 
         entry = cache.get(key, {})
         entry.update({
             "tram_name":       ranked[best_idx]["name"] if best_idx is not None else None,
             "tram_km":         round(best_d / 1000, 2) if best_d is not None else None,
             "tram_dur_s":      best_t,
+            "tram_walk_s":     tram_walk_s,
             "tram_candidates": tram_candidates,
             "ratusz_km":       round(ratusz_d / 1000, 2) if ratusz_d is not None else None,
             "ratusz_dur_s":    ratusz_t,
