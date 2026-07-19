@@ -182,8 +182,13 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
 
     # 4. Считаем расстояния (Google Maps) только для новых
     print("Считаем маршруты...")
-    subprocess.run([sys.executable, str(DATA_DIR / "fetch_drive_distances.py")],
-                   capture_output=True, text=True, cwd=DATA_DIR)
+    dr = subprocess.run([sys.executable, str(DATA_DIR / "fetch_drive_distances.py")],
+                        capture_output=True, text=True, cwd=DATA_DIR)
+    if dr.returncode != 0:
+        print(f"fetch_drive_distances ERROR:\n{dr.stderr[-500:]}")
+        tg_safe(f"⚠️ Маршруты не посчитались: {dr.stderr[-200:]}", "drive_err")
+    else:
+        print(dr.stdout[-200:])
 
     # 5. Перечитываем CSV с обогащёнными данными, фильтруем по расстоянию до трамвая
     rows = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
@@ -263,12 +268,17 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
             # Расстояния из drive_cache (актуальнее, чем CSV-колонки)
             _dk = f"{r.get('lat')},{r.get('lon')}"
             _drv = _drive_cache.get(_dk, {})
-            tram_min  = round(_drv["tram_dur_s"] / 60)  if _drv.get("tram_dur_s")   else None
-            dist_r_km = _drv.get("ratusz_km") or r.get("drive_ratusz_km") or r.get("dist_km")
-            tram      = _drv.get("tram_name") or r.get("drive_tram_name") or r.get("tram_name") or ""
+            tram_min    = round(_drv["tram_dur_s"] / 60)    if _drv.get("tram_dur_s")    else None
+            ratusz_min  = round(_drv["ratusz_dur_s"] / 60)  if _drv.get("ratusz_dur_s")  else None
+            dist_r_km   = _drv.get("ratusz_km") or r.get("drive_ratusz_km") or r.get("dist_km")
+            tram        = _drv.get("tram_name") or r.get("drive_tram_name") or r.get("tram_name") or ""
             photos = [u for u in (r.get("photo_url") or "").split(",") if u]
             score = r.get("_score", 0)
             tram_line = f"🚊 Трамвай: {tram_min} мин ({tram})" if tram_min and tram else (f"🚊 Трамвай: {tram_min} мин" if tram_min else "🚊 Трамвай: нет данных")
+            if ratusz_min:
+                center_str = f"{ratusz_min} мин ({fmt_dist(dist_r_km)})"
+            else:
+                center_str = fmt_dist(dist_r_km)
             tp_full = "Квартира" if r["type"] == "mieszkanie" else "Дом"
             caption = (
                 f"<b>{score}/10</b>\n"
@@ -276,7 +286,7 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
                 f"📍 {location_str}\n"
                 f"<b>{price}</b>  ·  {area}  ·  {tp_full}\n"
                 f"{tram_line}\n"
-                f"🏛 Центр: {fmt_dist(dist_r_km)}\n"
+                f"🏛 Центр: {center_str}\n"
                 f"<a href=\"{r['url']}\">На Otodom →</a>"
             )
             try:
