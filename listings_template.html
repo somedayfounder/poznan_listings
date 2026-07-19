@@ -48,8 +48,8 @@ a:hover{text-decoration:underline}
 #score-modal-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:1000;align-items:center;justify-content:center}
 #score-modal-backdrop.open{display:flex}
 #score-modal{background:#fff;border-radius:12px;padding:22px 26px;width:min(480px,calc(100vw - 32px));box-sizing:border-box;box-shadow:0 8px 40px rgba(0,0,0,.25);position:relative}
-#score-modal table{table-layout:fixed}
 #score-modal td,#score-modal th{overflow-wrap:break-word;word-break:break-word}
+#score-modal td:first-child{max-width:200px}
 #score-modal h3{font-size:14px;font-weight:600;margin-bottom:14px;padding-right:24px;line-height:1.4}
 #score-modal table{width:100%;border-collapse:collapse;font-size:12.5px}
 #score-modal th{text-align:left;font-weight:500;color:#888;padding:3px 6px;border-bottom:1px solid #eee}
@@ -712,16 +712,14 @@ function showScoreInfo(r){
   const feats_m=r.features||{};
   const pos_tags=(Object.entries(feats_m).filter(([k,v])=>v===true&&!['needs_renovation','near_highway','near_railway'].includes(k)||(k==='garden_m2'&&v>0)).map(([k,v])=>`<span style="display:inline-block;background:#dcfce7;color:#166534;border-radius:4px;padding:1px 7px;font-size:11px;margin:2px">${FEAT_LABELS_M[k]||k}${k==='garden_m2'?' '+v+'м²':''}</span>`)).join('');
   const neg_tags=(Object.entries(feats_m).filter(([k,v])=>v===true&&['needs_renovation','near_highway','near_railway'].includes(k)).map(([k])=>`<span style="display:inline-block;background:#fee2e2;color:#991b1b;border-radius:4px;padding:1px 7px;font-size:11px;margin:2px">${FEAT_LABELS_M[k]||k}</span>`)).join('');
-  const bonus_feat=(feats_m.bonus_features||[]).map(f=>`<span style="display:inline-block;background:#dbeafe;color:#1e40af;border-radius:4px;padding:1px 7px;font-size:11px;margin:2px">${f}</span>`).join('');
   const red_flags=(feats_m.red_flags||[]).map(f=>`<span style="display:inline-block;background:#fee2e2;color:#991b1b;border-radius:4px;padding:1px 7px;font-size:11px;margin:2px">🚩 ${f}</span>`).join('');
   const NOISE_SRC_M={dr:'дороги',tr:'трамвай',ko:'ж/д',prz:'пром.'};
   const noise_parts_m=r.noise&&Object.keys(r.noise).length?Object.entries(r.noise).map(([k,v])=>`${NOISE_SRC_M[k]||k}: ${v} дБА`).join(', '):null;
   const nuis_names=(r.nuisance||[]).map(n=>`${n.name} (${n.dist_km} км)`).join(', ');
-  const featsBlock=(pos_tags||neg_tags||bonus_feat||red_flags||noise_parts_m||nuis_names)?`
+  const featsBlock=(pos_tags||neg_tags||red_flags||noise_parts_m||nuis_names)?`
     <div style="margin-top:14px;border-top:1px solid #eee;padding-top:10px">
       <div style="font-size:11px;font-weight:600;color:#888;margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px">Особенности объекта</div>
       ${pos_tags?`<div style="margin-bottom:4px">${pos_tags}</div>`:''}
-      ${bonus_feat?`<div style="margin-bottom:4px">${bonus_feat}</div>`:''}
       ${neg_tags?`<div style="margin-bottom:4px">${neg_tags}</div>`:''}
       ${red_flags?`<div style="margin-bottom:4px">${red_flags}</div>`:''}
       ${noise_parts_m?`<div style="margin-top:5px;font-size:11px;color:#b45309">🔊 Шум (LDWN): ${noise_parts_m}</div>`:''}
