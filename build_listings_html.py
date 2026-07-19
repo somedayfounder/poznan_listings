@@ -1,5 +1,14 @@
 import csv, json
-from math import radians, sin, cos, sqrt, atan2
+from math import radians, sin, cos, sqrt, atan2, degrees
+
+def _bearing_label(lat1, lon1, lat2, lon2):
+    dlon = radians(lon2 - lon1)
+    rlat1, rlat2 = radians(lat1), radians(lat2)
+    x = sin(dlon) * cos(rlat2)
+    y = cos(rlat1) * sin(rlat2) - sin(rlat1) * cos(rlat2) * cos(dlon)
+    b = (degrees(atan2(x, y)) + 360) % 360
+    dirs = ["С","СВ","В","ЮВ","Ю","ЮЗ","З","СЗ"]
+    return dirs[round(b / 45) % 8]
 from pathlib import Path
 from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE, DISTRICT_DESCRIPTIONS, DISTRICT_SUMMARIES, DISTRICT_PROS, DISTRICT_CONS, _nuisance_penalty, _NUISANCE_SITES, _haversine, _noise_penalty
 
@@ -36,6 +45,8 @@ _drive_cache = _json.loads(_DRIVE_CACHE_FILE.read_text()) if _DRIVE_CACHE_FILE.e
 trams = json.loads(Path("tram_stops.json").read_text())
 stop_lines = json.loads(Path("stop_lines.json").read_text())
 rails = json.loads(Path("rail_stations.json").read_text())
+_stop_coords = {t["name"]: (t["lat"], t["lon"]) for t in trams}
+_stop_coords.update({r["name"]: (r["lat"], r["lon"]) for r in rails})
 
 def hav(a1,o1,a2,o2):
     R=6371;dl=radians(a2-a1);do=radians(o2-o1)
@@ -101,7 +112,10 @@ for r in rows:
             for cand in sorted(candidates, key=lambda c: c["dur_s"]):
                 lines2 = set(stop_lines.get(cand["name"], []))
                 if lines2 and not lines2.intersection(seen_lines):
-                    drive_stops.append({"name": cand["name"], "min": round(cand["dur_s"] / 60), "km": cand["km"], "lines": sorted(lines2)})
+                    sc = _stop_coords.get(cand["name"])
+                    d = {"name": cand["name"], "min": round(cand["dur_s"] / 60), "km": cand["km"], "lines": sorted(lines2)}
+                    if sc: d["dir"] = _bearing_label(lat, lon, sc[0], sc[1])
+                    drive_stops.append(d)
                     seen_lines |= lines2
                 if len(drive_stops) >= 3:
                     break
