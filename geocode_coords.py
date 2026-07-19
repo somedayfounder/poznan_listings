@@ -185,18 +185,32 @@ def main():
 
         time.sleep(0.3)
 
-    # Применяем корректировки к CSV
+    # Применяем корректировки к CSV + копируем drive_cache на новые ключи
     if updated > 0:
+        drive_cache_file = DATA_DIR / "drive_cache.json"
+        drive_cache = json.loads(drive_cache_file.read_text()) if drive_cache_file.exists() else {}
+        drive_copied = 0
+
         fieldnames = rows[0].keys()
         for r in rows:
             ov = overrides.get(r["id"])
             if ov and ov.get("corrected"):
+                old_key = f"{ov['orig_lat']},{ov['orig_lon']}"
+                new_key = f"{ov['new_lat']},{ov['new_lon']}"
+                # Копируем кэш дистанций со старых координат на новые — не пересчитываем
+                if old_key in drive_cache and new_key not in drive_cache:
+                    drive_cache[new_key] = drive_cache[old_key]
+                    drive_copied += 1
                 r["lat"] = ov["new_lat"]
                 r["lon"] = ov["new_lon"]
                 if ov.get("geo_district"):
                     r["district"] = ov["geo_district"]
                 if ov.get("geo_city"):
                     r["city"] = ov["geo_city"]
+
+        if drive_copied:
+            drive_cache_file.write_text(json.dumps(drive_cache, ensure_ascii=False, indent=2))
+            print(f"Скопировано кэшей дистанций: {drive_copied}")
 
         with open(CSV_FILE, "w", encoding="utf-8-sig", newline="") as f:
             w = csv.DictWriter(f, fieldnames=fieldnames)
