@@ -68337,5 +68337,623 @@
     "rail_name": "Pierzchno",
     "rail_km": 6.44,
     "rail_dur_s": 509
+  },
+  "52.212519,21.073033": {
+    "tram_name": "Miłostowo",
+    "tram_km": 14.64,
+    "tram_dur_s": 1060,
+    "ratusz_km": 18.4,
+    "ratusz_dur_s": 1637,
+    "rail_name": "Swarzędz",
+    "rail_km": 8.68,
+    "rail_dur_s": 780,
+    "tram_candidates": [
+      {
+        "name": "Franowo",
+        "km": 16.74,
+        "dur_s": 1338,
+        "walk_s": 11219
+      },
+      {
+        "name": "Szwajcarska",
+        "km": 16.81,
+        "dur_s": 1344,
+        "walk_s": 11272
+      },
+      {
+        "name": "Miłostowo",
+        "km": 14.64,
+        "dur_s": 1060,
+        "walk_s": 10114
+      },
+      {
+        "name": "Szwedzka",
+        "km": 23.02,
+        "dur_s": 1130,
+        "walk_s": 11724
+      },
+      {
+        "name": "Piaśnicka/Kurlandzka",
+        "km": 23.61,
+        "dur_s": 1121,
+        "walk_s": 11477
+      },
+      {
+        "name": "Mogileńska",
+        "km": 15.1,
+        "dur_s": 1154,
+        "walk_s": 10701
+      },
+      {
+        "name": "Piaśnicka Rynek",
+        "km": 23.37,
+        "dur_s": 1174,
+        "walk_s": 11621
+      },
+      {
+        "name": "Łomżyńska",
+        "km": 14.97,
+        "dur_s": 1141,
+        "walk_s": 11024
+      },
+      {
+        "name": "Os. Lecha",
+        "km": 23.28,
+        "dur_s": 1160,
+        "walk_s": 11822
+      },
+      {
+        "name": "Os. Czecha",
+        "km": 22.74,
+        "dur_s": 1071,
+        "walk_s": 12080
+      },
+      {
+        "name": "Krańcowa",
+        "km": 14.69,
+        "dur_s": 1120,
+        "walk_s": 11244
+      },
+      {
+        "name": "Os. Tysiąclecia",
+        "km": 23.68,
+        "dur_s": 1189,
+        "walk_s": 12040
+      },
+      {
+        "name": "Żegrze III",
+        "km": 22.96,
+        "dur_s": 1109,
+        "walk_s": 12554
+      },
+      {
+        "name": "Termalna",
+        "km": 16.58,
+        "dur_s": 1230,
+        "walk_s": 11704
+      },
+      {
+        "name": "Żegrze II",
+        "km": 23.31,
+        "dur_s": 1144,
+        "walk_s": 12847
+      }
+    ],
+    "tram_walk_s": 10114
+  },
+  "52.334042,16.778975": {
+    "tram_name": "Dębiec PKM",
+    "tram_km": 18.67,
+    "tram_dur_s": 1668,
+    "ratusz_km": 24.05,
+    "ratusz_dur_s": 2415,
+    "rail_name": "Mosina",
+    "rail_km": 3.77,
+    "rail_dur_s": 372,
+    "tram_candidates": [
+      {
+        "name": "Dębiec PKM",
+        "km": 18.67,
+        "dur_s": 1668,
+        "walk_s": 14909
+      },
+      {
+        "name": "Junikowo",
+        "km": 24.77,
+        "dur_s": 2175,
+        "walk_s": 16534
+      },
+      {
+        "name": "Cmentarna",
+        "km": 24.44,
+        "dur_s": 2139,
+        "walk_s": 16824
+      },
+      {
+        "name": "Starołęka PKM",
+        "km": 21.36,
+        "dur_s": 1708,
+        "walk_s": 15551
+      },
+      {
+        "name": "Górczyn PKM",
+        "km": 20.53,
+        "dur_s": 1841,
+        "walk_s": 16073
+      },
+      {
+        "name": "Grotkowska",
+        "km": 24.65,
+        "dur_s": 2132,
+        "walk_s": 16768
+      },
+      {
+        "name": "Wspólna",
+        "km": 18.98,
+        "dur_s": 1706,
+        "walk_s": 15352
+      },
+      {
+        "name": "Bystra",
+        "km": 21.72,
+        "dur_s": 1767,
+        "walk_s": 15853
+      },
+      {
+        "name": "Budziszyńska",
+        "km": 22.24,
+        "dur_s": 2109,
+        "walk_s": 17288
+      },
+      {
+        "name": "Sielska",
+        "km": 21.2,
+        "dur_s": 2000,
+        "walk_s": 16460
+      },
+      {
+        "name": "Rondo Skubiszewskiego",
+        "km": 21.85,
+        "dur_s": 2062,
+        "walk_s": 17220
+      },
+      {
+        "name": "HCP",
+        "km": 19.55,
+        "dur_s": 1783,
+        "walk_s": 15811
+      },
+      {
+        "name": "Krauthofera",
+        "km": 20.86,
+        "dur_s": 1848,
+        "walk_s": 16730
+      },
+      {
+        "name": "Węgorka",
+        "km": 22.07,
+        "dur_s": 2067,
+        "walk_s": 17431
+      },
+      {
+        "name": "Unii Lubelskiej",
+        "km": 22.7,
+        "dur_s": 1937,
+        "walk_s": 17099
+      }
+    ],
+    "tram_walk_s": 14909
+  },
+  "50.306902,19.003601": {
+    "tram_name": "Ogrody",
+    "tram_km": 20.15,
+    "tram_dur_s": 1186,
+    "tram_walk_s": 12364,
+    "tram_candidates": [
+      {
+        "name": "Os. Sobieskiego",
+        "km": 16.27,
+        "dur_s": 1480,
+        "walk_s": 12509
+      },
+      {
+        "name": "Szymanowskiego",
+        "km": 16.05,
+        "dur_s": 1491,
+        "walk_s": 12872
+      },
+      {
+        "name": "Kurpińskiego",
+        "km": 16.34,
+        "dur_s": 1498,
+        "walk_s": 13533
+      },
+      {
+        "name": "Piątkowska",
+        "km": 23.62,
+        "dur_s": 1306,
+        "walk_s": 13215
+      },
+      {
+        "name": "Lutycka Szpital",
+        "km": 22.16,
+        "dur_s": 1344,
+        "walk_s": 12953
+      },
+      {
+        "name": "Os. Winiary",
+        "km": 22.8,
+        "dur_s": 1477,
+        "walk_s": 13290
+      },
+      {
+        "name": "Lechicka Poznań Plaza",
+        "km": 22.73,
+        "dur_s": 1440,
+        "walk_s": 13435
+      },
+      {
+        "name": "Ogrody",
+        "km": 20.15,
+        "dur_s": 1186,
+        "walk_s": 12364
+      },
+      {
+        "name": "Św. Leonarda",
+        "km": 23.55,
+        "dur_s": 1398,
+        "walk_s": 13444
+      },
+      {
+        "name": "Bonin",
+        "km": 23.3,
+        "dur_s": 1512,
+        "walk_s": 13275
+      },
+      {
+        "name": "Uniwersytet Przyrodniczy",
+        "km": 22.39,
+        "dur_s": 1331,
+        "walk_s": 12863
+      },
+      {
+        "name": "Aleje Solidarności",
+        "km": 23.61,
+        "dur_s": 1369,
+        "walk_s": 13751
+      },
+      {
+        "name": "Żeromskiego",
+        "km": 21.37,
+        "dur_s": 1217,
+        "walk_s": 12788
+      },
+      {
+        "name": "Sołacz",
+        "km": 22.59,
+        "dur_s": 1349,
+        "walk_s": 13032
+      },
+      {
+        "name": "Błażeja",
+        "km": 18.63,
+        "dur_s": 1855,
+        "walk_s": 14414
+      }
+    ],
+    "ratusz_km": 25.44,
+    "ratusz_dur_s": 2052,
+    "rail_name": "Rokietnica",
+    "rail_km": 0.84,
+    "rail_dur_s": 142
+  },
+  "51.067655,16.989307": {
+    "tram_name": "Grotkowska",
+    "tram_km": 6.57,
+    "tram_dur_s": 766,
+    "ratusz_km": 14.37,
+    "ratusz_dur_s": 2071,
+    "rail_name": "Palędzie",
+    "rail_km": 4.5,
+    "rail_dur_s": 508,
+    "tram_candidates": [
+      {
+        "name": "Junikowo",
+        "km": 6.69,
+        "dur_s": 808,
+        "walk_s": 4574
+      },
+      {
+        "name": "Cmentarna",
+        "km": 6.36,
+        "dur_s": 773,
+        "walk_s": 4839
+      },
+      {
+        "name": "Grotkowska",
+        "km": 6.57,
+        "dur_s": 766,
+        "walk_s": 5174
+      },
+      {
+        "name": "Budziszyńska",
+        "km": 7.27,
+        "dur_s": 869,
+        "walk_s": 5670
+      },
+      {
+        "name": "Rondo Skubiszewskiego",
+        "km": 7.45,
+        "dur_s": 890,
+        "walk_s": 5808
+      },
+      {
+        "name": "Węgorka",
+        "km": 7.7,
+        "dur_s": 899,
+        "walk_s": 6112
+      },
+      {
+        "name": "Bułgarska Enea Stadion",
+        "km": 8.21,
+        "dur_s": 967,
+        "walk_s": 6518
+      },
+      {
+        "name": "Drzewieckiego",
+        "km": 8.53,
+        "dur_s": 1014,
+        "walk_s": 6784
+      },
+      {
+        "name": "Grochowska",
+        "km": 9.17,
+        "dur_s": 1099,
+        "walk_s": 7304
+      },
+      {
+        "name": "Górczyn PKM",
+        "km": 19.84,
+        "dur_s": 1149,
+        "walk_s": 7654
+      },
+      {
+        "name": "Ostroroga",
+        "km": 9.61,
+        "dur_s": 1162,
+        "walk_s": 7693
+      },
+      {
+        "name": "Arciszewskiego",
+        "km": 10.19,
+        "dur_s": 1266,
+        "walk_s": 8197
+      },
+      {
+        "name": "Sielska",
+        "km": 20.52,
+        "dur_s": 1308,
+        "walk_s": 8089
+      },
+      {
+        "name": "Arena",
+        "km": 10.85,
+        "dur_s": 1267,
+        "walk_s": 8414
+      },
+      {
+        "name": "Ogrody",
+        "km": 9.46,
+        "dur_s": 1113,
+        "walk_s": 7804
+      }
+    ],
+    "tram_walk_s": 5174
+  },
+  "52.442498,16.895546": {
+    "tram_name": "Dębiec PKM",
+    "tram_km": 0.82,
+    "tram_dur_s": 196,
+    "ratusz_km": 7.41,
+    "ratusz_dur_s": 1248,
+    "rail_name": "Poznań Górczyn",
+    "rail_km": 2.18,
+    "rail_dur_s": 285,
+    "tram_candidates": [
+      {
+        "name": "Dębiec PKM",
+        "km": 0.82,
+        "dur_s": 196,
+        "walk_s": 436
+      },
+      {
+        "name": "Wspólna",
+        "km": 1.39,
+        "dur_s": 280,
+        "walk_s": 757
+      },
+      {
+        "name": "HCP",
+        "km": 1.96,
+        "dur_s": 357,
+        "walk_s": 1216
+      },
+      {
+        "name": "Sielska",
+        "km": 2.55,
+        "dur_s": 458,
+        "walk_s": 1703
+      },
+      {
+        "name": "Kolejowa",
+        "km": 2.34,
+        "dur_s": 339,
+        "walk_s": 1756
+      },
+      {
+        "name": "Górczyn PKM",
+        "km": 2.87,
+        "dur_s": 404,
+        "walk_s": 1729
+      },
+      {
+        "name": "Traugutta",
+        "km": 3.05,
+        "dur_s": 392,
+        "walk_s": 1522
+      },
+      {
+        "name": "Rolna",
+        "km": 3.33,
+        "dur_s": 432,
+        "walk_s": 1753
+      },
+      {
+        "name": "Krauthofera",
+        "km": 2.53,
+        "dur_s": 391,
+        "walk_s": 1973
+      },
+      {
+        "name": "Pamiątkowa",
+        "km": 2.62,
+        "dur_s": 503,
+        "walk_s": 1788
+      },
+      {
+        "name": "Głogowska/Hetmańska",
+        "km": 3.01,
+        "dur_s": 447,
+        "walk_s": 2287
+      },
+      {
+        "name": "Kosińskiego",
+        "km": 2.9,
+        "dur_s": 557,
+        "walk_s": 2016
+      },
+      {
+        "name": "Starołęka PKM",
+        "km": 6.51,
+        "dur_s": 733,
+        "walk_s": 2275
+      },
+      {
+        "name": "Hetmańska Wiadukt",
+        "km": 4.1,
+        "dur_s": 481,
+        "walk_s": 2503
+      },
+      {
+        "name": "Bystra",
+        "km": 6.16,
+        "dur_s": 671,
+        "walk_s": 2576
+      }
+    ],
+    "tram_walk_s": 436
+  },
+  "52.756055,18.101491": {
+    "tram_name": "Miłostowo",
+    "tram_km": 8.07,
+    "tram_dur_s": 592,
+    "ratusz_km": 9.03,
+    "ratusz_dur_s": 1076,
+    "rail_name": "Kobylnica",
+    "rail_km": 4.56,
+    "rail_dur_s": 374,
+    "tram_candidates": [
+      {
+        "name": "Miłostowo",
+        "km": 8.07,
+        "dur_s": 592,
+        "walk_s": 5524
+      },
+      {
+        "name": "Mogileńska",
+        "km": 8.53,
+        "dur_s": 686,
+        "walk_s": 5501
+      },
+      {
+        "name": "Łomżyńska",
+        "km": 8.4,
+        "dur_s": 673,
+        "walk_s": 5093
+      },
+      {
+        "name": "Krańcowa",
+        "km": 8.12,
+        "dur_s": 652,
+        "walk_s": 4860
+      },
+      {
+        "name": "Termalna",
+        "km": 8.08,
+        "dur_s": 777,
+        "walk_s": 5264
+      },
+      {
+        "name": "Włodarska",
+        "km": 6.8,
+        "dur_s": 744,
+        "walk_s": 5396
+      },
+      {
+        "name": "Lechicka/Naramowicka",
+        "km": 7.3,
+        "dur_s": 697,
+        "walk_s": 5647
+      },
+      {
+        "name": "Zawady",
+        "km": 7.46,
+        "dur_s": 751,
+        "walk_s": 4909
+      },
+      {
+        "name": "Serbska",
+        "km": 7.73,
+        "dur_s": 911,
+        "walk_s": 5249
+      },
+      {
+        "name": "Naramowice",
+        "km": 7.9,
+        "dur_s": 839,
+        "walk_s": 6120
+      },
+      {
+        "name": "Os. Łokietka",
+        "km": 8.75,
+        "dur_s": 932,
+        "walk_s": 6309
+      },
+      {
+        "name": "Św. Michała",
+        "km": 9.3,
+        "dur_s": 682,
+        "walk_s": 5099
+      },
+      {
+        "name": "Wilczak",
+        "km": 7.57,
+        "dur_s": 903,
+        "walk_s": 5385
+      },
+      {
+        "name": "Jasna Rola",
+        "km": 8.36,
+        "dur_s": 871,
+        "walk_s": 6630
+      },
+      {
+        "name": "Błażeja",
+        "km": 8.51,
+        "dur_s": 871,
+        "walk_s": 6987
+      }
+    ],
+    "tram_walk_s": 5524
   }
 }

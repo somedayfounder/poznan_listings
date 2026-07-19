@@ -12656,5 +12656,276 @@
     "geo_city": "Poznań",
     "geo_district": "Podolany",
     "corrected": true
+  },
+  "68059571": {
+    "orig_lat": 52.3807,
+    "orig_lon": 17.16348,
+    "new_lat": 52.212519,
+    "new_lon": 21.073033,
+    "dist_m": 266489,
+    "query": "ul. Szafirowa, Siekierek Wielkich, Polska",
+    "formatted": "Siekierki, Warszawa, Polska",
+    "addr": {
+      "street": "ul. Szafirowa",
+      "osiedle": null,
+      "city": "Siekierek Wielkich",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Warszawa",
+    "geo_district": "Siekierki",
+    "corrected": true
+  },
+  "68126091": {
+    "orig_lat": 52.23229,
+    "orig_lon": 16.81521,
+    "new_lat": 52.334042,
+    "new_lon": 16.778975,
+    "dist_m": 11580,
+    "query": "ul. Czereśniowa, Krosinko, Polska",
+    "formatted": "Czereśniowa, 62-052 Rosnowo, Polska",
+    "addr": {
+      "street": "ul. Czereśniowa",
+      "osiedle": null,
+      "city": "Krosinko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rosnowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "60462790": {
+    "orig_lat": 52.51359,
+    "orig_lon": 16.74704,
+    "new_lat": 50.306902,
+    "new_lon": 19.003601,
+    "dist_m": 291004,
+    "query": "ul. Porzeczkowej, Bytków, Polska",
+    "formatted": "Bytków, Siemianowice Śląskie, Polska",
+    "addr": {
+      "street": "ul. Porzeczkowej",
+      "osiedle": null,
+      "city": "Bytków",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Siemianowice Śląskie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68218498": {
+    "orig_lat": 52.40827,
+    "orig_lon": 16.93352,
+    "new_lat": 52.491766,
+    "new_lon": 16.939534,
+    "dist_m": 9293,
+    "query": "Lubczykowa Góra 3, Poznań, Polska",
+    "formatted": "Arnikowa 9, 60-101 Poznań, Polska",
+    "addr": {
+      "street": "Lubczykowa Góra 3",
+      "osiedle": "Lubczykowa Góra",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67630535": {
+    "orig_lat": 52.32499,
+    "orig_lon": 16.6891,
+    "new_lat": 52.408612,
+    "new_lon": 16.907163,
+    "dist_m": 17483,
+    "query": "ul. Zwierzyniecka, Konarzewo, Polska",
+    "formatted": "Zwierzyniecka, 61-001 Poznań, Polska",
+    "addr": {
+      "street": "ul. Zwierzyniecka",
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67833290": {
+    "skipped": "geocode_too_vague",
+    "query": "ul. Życzliwa 10/1, null, Polska",
+    "formatted": "Polska",
+    "addr": {
+      "street": "ul. Życzliwa 10/1",
+      "osiedle": "Osiedle Życzliwe",
+      "city": "null",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "67907953": {
+    "orig_lat": 52.39155,
+    "orig_lon": 16.76976,
+    "new_lat": 51.067655,
+    "new_lon": 16.989307,
+    "dist_m": 147985,
+    "query": "ul. Życzliwa, null, Polska",
+    "formatted": "Życzliwa, 53-030 Wrocław, Polska",
+    "addr": {
+      "street": "ul. Życzliwa",
+      "osiedle": "Osiedle Życzliwe",
+      "city": "null",
+      "district": "null",
+      "confidence": "high"
+    },
+    "geo_city": "Wrocław",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68220112": {
+    "orig_lat": 52.40827,
+    "orig_lon": 16.93352,
+    "new_lat": 52.491766,
+    "new_lon": 16.939534,
+    "dist_m": 9293,
+    "query": "Lubczykowa Góra 3, Radojewo, Polska",
+    "formatted": "Arnikowa 9, 60-101 Poznań, Polska",
+    "addr": {
+      "street": "Lubczykowa Góra 3",
+      "osiedle": "Lubczykowa Góra",
+      "city": "Radojewo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96822011200067": {
+    "orig_lat": 52.40827,
+    "orig_lon": 16.93352,
+    "new_lat": 52.491766,
+    "new_lon": 16.939534,
+    "dist_m": 9293,
+    "query": "Lubczykowa Góra 3, Radojewo, Polska",
+    "formatted": "Arnikowa 9, 60-101 Poznań, Polska",
+    "addr": {
+      "street": "Lubczykowa Góra 3",
+      "osiedle": "Lubczykowa Góra",
+      "city": "Radojewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67868354": {
+    "orig_lat": 52.37305,
+    "orig_lon": 16.90062,
+    "new_lat": 52.442498,
+    "new_lon": 16.895546,
+    "dist_m": 7730,
+    "query": "ul. Jasielska 14e/8, Poznań, Polska",
+    "formatted": "Jasielska 14E/8, 60-476 Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska 14e/8",
+      "osiedle": "EKO Grabowa",
+      "city": "Poznań",
+      "district": "Dębiec",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65978560": {
+    "skipped": "geocode_too_vague",
+    "query": "ul. Gerberowej, Jasin, Polska",
+    "formatted": "62-020 Jasin, Polska",
+    "addr": {
+      "street": "ul. Gerberowej",
+      "osiedle": "Gerberowa Park",
+      "city": "Jasin",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68152440": {
+    "orig_lat": 52.40827,
+    "orig_lon": 16.93352,
+    "new_lat": 52.360241,
+    "new_lon": 16.982132,
+    "dist_m": 6277,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Sanocka 15, 61-315 Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej 15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96815244000067": {
+    "orig_lat": 52.40827,
+    "orig_lon": 16.93352,
+    "new_lat": 52.360241,
+    "new_lon": 16.982132,
+    "dist_m": 6277,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Sanocka 15, 61-315 Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej 15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67078753": {
+    "orig_lat": 52.44089,
+    "orig_lon": 17.02883,
+    "new_lat": 52.756055,
+    "new_lon": 18.101491,
+    "dist_m": 80477,
+    "query": "Olchowe Zacisze, Janikowo, Polska",
+    "formatted": "Zacisze, 88-160 Janikowo, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Olchowe Zacisze",
+      "city": "Janikowo",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Janikowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67842192": {
+    "orig_lat": 52.40827,
+    "orig_lon": 16.93352,
+    "new_lat": 52.463369,
+    "new_lon": 16.944594,
+    "dist_m": 6173,
+    "query": "ul. Maków Polnych 9, Naramowice, Polska",
+    "formatted": "Maków Polnych 9, 61-606 Poznań, Polska",
+    "addr": {
+      "street": "ul. Maków Polnych 9",
+      "osiedle": "FUELDA",
+      "city": "Naramowice",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
   }
 }
