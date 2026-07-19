@@ -92,10 +92,12 @@ for r in rows:
                 walk_best = min(cands_with_walk, key=lambda c: c["walk_s"])
                 display_name = walk_best["name"]
                 display_walk_min = round(walk_best["walk_s"] / 60)
+                display_drive_min = round(walk_best["dur_s"] / 60)
                 display_km = walk_best["km"]
             else:
                 display_name = tram_name
                 display_walk_min = tram_walk_min
+                display_drive_min = tram_min
                 display_km = dist_tram
 
             display_lines = set(stop_lines.get(display_name, []))
@@ -129,6 +131,7 @@ for r in rows:
             tram_details = {
                 "name": display_name,
                 "walk_min": display_walk_min,
+                "drive_min": display_drive_min,
                 "km": display_km,
                 "lines": sorted(display_lines) if display_lines else [],
                 "alts": alts,
