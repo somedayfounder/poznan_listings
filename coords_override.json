@@ -11399,5 +11399,760 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "67951922": {
+    "orig_lat": 52.4457,
+    "orig_lon": 16.9119,
+    "new_lat": 52.445014,
+    "new_lon": 16.911521,
+    "dist_m": 80,
+    "query": "ul. Wojciechowskiego 7/17, Poznań, Polska",
+    "formatted": "Wojciechowskiego 7/17, 60-685 Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego 7/17",
+      "osiedle": "Piątkowo Residence",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96795238600067": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.447952,
+    "new_lon": 16.913516,
+    "dist_m": 318,
+    "query": "ul. Wojciechowskiego, Piątkowo, Polska",
+    "formatted": "Wojciechowskiego, 61-001 Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "osiedle": "Początek Piątkowo",
+      "city": "Piątkowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67819086": {
+    "orig_lat": 52.3993,
+    "orig_lon": 16.92926,
+    "new_lat": 52.399142,
+    "new_lon": 16.92925,
+    "dist_m": 18,
+    "query": "ul. Królowej Jadwigi 51, Poznań, Polska",
+    "formatted": "Królowej Jadwigi 51, 61-872 Poznań, Polska",
+    "addr": {
+      "street": "ul. Królowej Jadwigi 51",
+      "osiedle": "Inwestycja Królowej Jadwigi 51",
+      "city": "Poznań",
+      "district": "Stare Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67232744": {
+    "orig_lat": 52.39885,
+    "orig_lon": 16.91957,
+    "new_lat": 52.398908,
+    "new_lon": 16.919254,
+    "dist_m": 22,
+    "query": "Vilda Arte, Poznań, Polska",
+    "formatted": "Mieczysława Niedziałkowskiego 11, 61-579 Poznań, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Vilda Arte",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67893171": {
+    "orig_lat": 52.41763,
+    "orig_lon": 17.21036,
+    "new_lat": 52.407872,
+    "new_lon": 17.212982,
+    "dist_m": 1100,
+    "query": "ul. św. Jana, Gwiazdowo, Polska",
+    "formatted": "Św Wojciecha, 62-025, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Powiat poznański",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96789317100067": {
+    "orig_lat": 52.41763,
+    "orig_lon": 17.21036,
+    "new_lat": 52.407872,
+    "new_lon": 17.212982,
+    "dist_m": 1100,
+    "query": "ul. św. Jana, Gwiazdowo, Polska",
+    "formatted": "Św Wojciecha, 62-025, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Powiat poznański",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96819576300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96781015000067": {
+    "orig_lat": 52.35454,
+    "orig_lon": 17.01192,
+    "new_lat": 52.348787,
+    "new_lon": 17.021301,
+    "dist_m": 903,
+    "query": "ul. Biesiadnej 12/1, Poznań, Polska",
+    "formatted": "Biesiadna 12/1, 61-324 Poznań, Polska",
+    "addr": {
+      "street": "ul. Biesiadnej 12/1",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96810357200067": {
+    "orig_lat": 52.48793,
+    "orig_lon": 16.91606,
+    "new_lat": 52.488932,
+    "new_lon": 16.925726,
+    "dist_m": 664,
+    "query": "ul. Jaśkowiaka, Poznań, Polska",
+    "formatted": "Franciszka Jaśkowiaka, 61-680 Poznań, Polska",
+    "addr": {
+      "street": "ul. Jaśkowiaka",
+      "osiedle": "PARK MORASKO",
+      "city": "Poznań",
+      "district": "Morasko",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67725702": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67893168": {
+    "orig_lat": 52.41763,
+    "orig_lon": 17.21036,
+    "new_lat": 52.407872,
+    "new_lon": 17.212982,
+    "dist_m": 1100,
+    "query": "ul. św. Jana, Gwiazdowo, Polska",
+    "formatted": "Św Wojciecha, 62-025, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Powiat poznański",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68141807": {
+    "skipped": "geocode_too_vague",
+    "query": "ul. Ignacego Krasickiego, Dopiewiec, Polska",
+    "formatted": "62-070 Dopiewiec, Polska",
+    "addr": {
+      "street": "ul. Ignacego Krasickiego",
+      "osiedle": "Bajkowy Dopiewiec",
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96797710800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67220158": {
+    "orig_lat": 52.46978,
+    "orig_lon": 16.9417,
+    "new_lat": 52.470319,
+    "new_lon": 16.946624,
+    "dist_m": 339,
+    "query": "Osiedle Zagajnik, Umultowo, Polska",
+    "formatted": "Żywokostowa, 61-602 Poznań, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65204658": {
+    "skipped": "geocode_too_vague",
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96520464600067": {
+    "skipped": "geocode_too_vague",
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96822008000067": {
+    "orig_lat": 52.4918,
+    "orig_lon": 16.93791,
+    "new_lat": 52.491766,
+    "new_lon": 16.939534,
+    "dist_m": 110,
+    "query": "Lubczykowa Góra 3, Poznań, Polska",
+    "formatted": "Arnikowa 9, 60-101 Poznań, Polska",
+    "addr": {
+      "street": "Lubczykowa Góra 3",
+      "osiedle": "Lubczykowa Góra",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96566140300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Czmoniec",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96522944800067": {
+    "orig_lat": 52.42961,
+    "orig_lon": 16.9519,
+    "new_lat": 52.429582,
+    "new_lon": 16.951131,
+    "dist_m": 52,
+    "query": "ul. Wilczak 16 A, Poznań, Polska",
+    "formatted": "Wilczak 16A, 61-623 Poznań, Polska",
+    "addr": {
+      "street": "ul. Wilczak 16 A",
+      "osiedle": "Tarasy Wilczak",
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96820949100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96744555600067": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.448794,
+    "new_lon": 16.891269,
+    "dist_m": 10,
+    "query": "Strzeszyńska 77, Poznań, Polska",
+    "formatted": "Strzeszyńska 77, 60-479 Poznań, Polska",
+    "addr": {
+      "street": "Strzeszyńska 77",
+      "osiedle": "Osiedle Strzeszyńska 77",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96813800300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "спокойная и cicha okolica",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96586635700067": {
+    "orig_lat": 52.4076,
+    "orig_lon": 17.07351,
+    "new_lat": 52.378324,
+    "new_lon": 17.093286,
+    "dist_m": 3521,
+    "query": "PARK Kruszewnia, Kruszewnia, Polska",
+    "formatted": "Białowieska, 62-020 Swarzędz, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "PARK Kruszewnia",
+      "city": "Kruszewnia",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Swarzędz",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67761641": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443503,
+    "new_lon": 16.918006,
+    "dist_m": 84,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka 65, 61-619 Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka 65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96776164100067": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443503,
+    "new_lon": 16.918006,
+    "dist_m": 84,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka 65, 61-619 Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka 65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96802180300067": {
+    "orig_lat": 52.45718,
+    "orig_lon": 16.88339,
+    "new_lat": 52.442968,
+    "new_lon": 16.890666,
+    "dist_m": 1655,
+    "query": "Jasielska 8C, Poznań, Polska",
+    "formatted": "Jasielska 8C, 60-476 Poznań, Polska",
+    "addr": {
+      "street": "Jasielska 8C",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "66416733": {
+    "orig_lat": 52.43822,
+    "orig_lon": 16.90979,
+    "new_lat": 52.438543,
+    "new_lon": 16.9114,
+    "dist_m": 115,
+    "query": "ul. Piątkowska 165 A-B, Poznań, Polska",
+    "formatted": "Piątkowska 165, 60-650 Poznań, Polska",
+    "addr": {
+      "street": "ul. Piątkowska 165 A-B",
+      "osiedle": "Witosa Park",
+      "city": "Poznań",
+      "district": "Winiary",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68109320": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332422,
+    "new_lon": 16.910331,
+    "dist_m": 2985,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska 4A, 61-160 Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska 4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96810932000067": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332422,
+    "new_lon": 16.910331,
+    "dist_m": 2985,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska 4A, 61-160 Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska 4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96628865300067": {
+    "orig_lat": 52.43822,
+    "orig_lon": 16.90979,
+    "new_lat": 52.438543,
+    "new_lon": 16.9114,
+    "dist_m": 115,
+    "query": "ul. Piątkowska 165 A-B, Poznań, Polska",
+    "formatted": "Piątkowska 165, 60-650 Poznań, Polska",
+    "addr": {
+      "street": "ul. Piątkowska 165 A-B",
+      "osiedle": "Witosa Park",
+      "city": "Poznań",
+      "district": "Winiary",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67842834": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.41028,
+    "new_lon": 16.991442,
+    "dist_m": 284,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96815244000067": {
+    "skipped": "geocode_too_far",
+    "dist_m": 6277,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Sanocka 15, 61-315 Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej 15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "67709604": {
+    "orig_lat": 52.40159,
+    "orig_lon": 16.85593,
+    "new_lat": 52.400321,
+    "new_lon": 16.858324,
+    "dist_m": 215,
+    "query": "ul. Ptasia, Grunwald, Polska",
+    "formatted": "Ptasia, 61-001 Poznań, Polska",
+    "addr": {
+      "street": "ul. Ptasia",
+      "osiedle": "Symfonia Ptasia",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "66649955": {
+    "orig_lat": 52.41873,
+    "orig_lon": 16.90318,
+    "new_lat": 52.417226,
+    "new_lon": 16.902361,
+    "dist_m": 176,
+    "query": "Goplana, Jeżyce, Polska",
+    "formatted": "Świętego Wawrzyńca 15, 60-539 Poznań, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Goplana",
+      "city": "Jeżyce",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "65120179": {
+    "orig_lat": 52.39811,
+    "orig_lon": 16.90758,
+    "new_lat": 52.392015,
+    "new_lon": 16.905044,
+    "dist_m": 699,
+    "query": "Kolejowa, Poznań, Polska",
+    "formatted": "Kolejowa, 61-001 Poznań, Polska",
+    "addr": {
+      "street": "Kolejowa",
+      "osiedle": "Kolejova 1",
+      "city": "Poznań",
+      "district": "Łazarz",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68073282": {
+    "orig_lat": 52.39769,
+    "orig_lon": 16.92545,
+    "new_lat": 52.397083,
+    "new_lon": 16.926268,
+    "dist_m": 87,
+    "query": "ul. Dolna Wilda 12, Poznań, Polska",
+    "formatted": "Dolna Wilda 12, 61-552 Poznań, Polska",
+    "addr": {
+      "street": "ul. Dolna Wilda 12",
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67761657": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443503,
+    "new_lon": 16.918006,
+    "dist_m": 84,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka 65, 61-619 Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka 65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67469320": {
+    "orig_lat": 52.41035,
+    "orig_lon": 16.84739,
+    "new_lat": 52.409852,
+    "new_lon": 16.848132,
+    "dist_m": 75,
+    "query": "ul. Leśnych Skrzatów, Marcelin, Polska",
+    "formatted": "Leśnych Skrzatów, 61-001 Poznań, Polska",
+    "addr": {
+      "street": "ul. Leśnych Skrzatów",
+      "osiedle": "Zacisze Marcelin",
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67968545": {
+    "orig_lat": 52.39563,
+    "orig_lon": 16.8425,
+    "new_lat": 52.392626,
+    "new_lon": 16.846137,
+    "dist_m": 415,
+    "query": "ul. Jeleniogórska, Grunwald, Polska",
+    "formatted": "Jeleniogórska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67469315": {
+    "orig_lat": 52.41035,
+    "orig_lon": 16.84739,
+    "new_lat": 52.409852,
+    "new_lon": 16.848132,
+    "dist_m": 75,
+    "query": "ul. Leśnych Skrzatów, Marcelin, Polska",
+    "formatted": "Leśnych Skrzatów, 61-001 Poznań, Polska",
+    "addr": {
+      "street": "ul. Leśnych Skrzatów",
+      "osiedle": "Zacisze Marcelin",
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67280940": {
+    "orig_lat": 52.41353,
+    "orig_lon": 16.93944,
+    "new_lat": 52.408289,
+    "new_lon": 16.938055,
+    "dist_m": 590,
+    "query": "ul. Garbary, Poznań, Polska",
+    "formatted": "Garbary, 61-001 Poznań, Polska",
+    "addr": {
+      "street": "ul. Garbary",
+      "osiedle": "Apartamenty Esencja II",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96728094000067": {
+    "orig_lat": 52.41353,
+    "orig_lon": 16.93944,
+    "new_lat": 52.408289,
+    "new_lon": 16.938055,
+    "dist_m": 590,
+    "query": "ul. Garbary, Poznań, Polska",
+    "formatted": "Garbary, 61-001 Poznań, Polska",
+    "addr": {
+      "street": "ul. Garbary",
+      "osiedle": "Apartamenty Esencja II",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65120240": {
+    "orig_lat": 52.39811,
+    "orig_lon": 16.90758,
+    "new_lat": 52.392015,
+    "new_lon": 16.905044,
+    "dist_m": 699,
+    "query": "Kolejowa, Poznań, Polska",
+    "formatted": "Kolejowa, 61-001 Poznań, Polska",
+    "addr": {
+      "street": "Kolejowa",
+      "osiedle": "Kolejova 1",
+      "city": "Poznań",
+      "district": "Łazarz",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96512024000067": {
+    "orig_lat": 52.39811,
+    "orig_lon": 16.90758,
+    "new_lat": 52.392015,
+    "new_lon": 16.905044,
+    "dist_m": 699,
+    "query": "Kolejowa, Poznań, Polska",
+    "formatted": "Kolejowa, 61-001 Poznań, Polska",
+    "addr": {
+      "street": "Kolejowa",
+      "osiedle": "Kolejova 1",
+      "city": "Poznań",
+      "district": "Łazarz",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
   }
 }
