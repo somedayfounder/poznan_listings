@@ -69,6 +69,7 @@ a:hover{text-decoration:underline}
   <button class="tab-btn" onclick="switchTab('bonuses')">⭐ Бонусы ГПТ</button>
   <button class="tab-btn" onclick="switchTab('method')">⚙️ Методология</button>
   <button class="tab-btn" onclick="switchTab('reasoning')">🧠 Ход рассуждений</button>
+  <button class="tab-btn" onclick="switchTab('howworks')">🔧 Как работает</button>
 </div>
 <div id="tab-listings" class="tab-panel active">
 <div class="controls">
@@ -544,21 +545,21 @@ a:hover{text-decoration:underline}
       <div class="rlog-desc">Расстояние до ж/д переведено в минуты. В <code>fetch_drive_distances.py</code> добавлен запрос K_RAIL=5 ближайших станций из <code>rail_stations.json</code>, выбирается минимальное время. Поле <code>rail_dur_s</code> добавлено в <code>drive_cache.json</code>. При повторном проходе обрабатываются только записи без <code>rail_dur_s</code> — не пересчитывается всё с нуля. Цвета: ≤5 зелёный, ≤15 синий, ≤30 оранжевый.</div>
     </div>
   </div>
-  <div class="rlog-item">
+  <div class="rlog-step">
     <div class="rlog-num">29</div>
     <div class="rlog-body">
       <div class="rlog-title">Кнопка ℹ с попапом скоринга + отдельная колонка для +N</div>
       <div class="rlog-desc">Кнопка расхлопа группы (+N) вынесена из ячейки названия в собственную узкую колонку. Добавлена колонка ℹ: клик открывает модальное окно с полным разбором оценки — каждый фактор отдельной строкой: оценка /10, вес, вклад в итог. JS-функции скоринга (<code>_sTransport</code>, <code>_sPrice</code>, <code>_sArea</code>, <code>_sRooms</code>) повторяют кривые из <code>score.py</code>. Штрафы за шум и вредные объекты показываются отдельно.</div>
     </div>
   </div>
-  <div class="rlog-item">
+  <div class="rlog-step">
     <div class="rlog-num">30</div>
     <div class="rlog-body">
       <div class="rlog-title">Пересмотр весов: Район 30%, Транспорт 20%, Площадь 20%, Цена 15%, Комнаты 15%</div>
       <div class="rlog-desc">Скорректированы веса факторов в <code>score.py</code> (<code>_BASE_W</code>), в JS-попапе скоринга и в методологии. Район вырос с 25% до 30% — он наиболее устойчиво определяет качество жизни. Транспорт вырос с 15% до 20% — доступность трамвая критична при покупке без расчёта на постоянную машину. Цена и комнаты снижены до 15% каждый.</div>
     </div>
   </div>
-  <div class="rlog-item">
+  <div class="rlog-step">
     <div class="rlog-num">31</div>
     <div class="rlog-body">
       <div class="rlog-title">Критический баг: GOOGLE_API_KEY не передавался в CI — транспортный фактор был сломан</div>
@@ -566,25 +567,152 @@ a:hover{text-decoration:underline}
       <div class="rlog-why">Баг не был виден визуально — таблица отображалась нормально, но колонка «Трамвай» показывала данные из предыдущих запусков, а новые объявления теряли транспортную оценку.</div>
     </div>
   </div>
-  <div class="rlog-item">
+  <div class="rlog-step">
     <div class="rlog-num">32</div>
     <div class="rlog-body">
       <div class="rlog-title">Агентный поиск по новым районам: реальные веб-отзывы вместо памяти GPT</div>
       <div class="rlog-desc"><code>research_new_district.py</code> обновлён: двухэтапный pipeline. Шаг 1 — <code>gpt-4o-search-preview</code> ищет отзывы жителей на naszpoznan.pl, forum.gazeta.pl, reddit.com/r/Poznan, wykop.pl, otodom.pl, а также данные NPS из опроса Otodom/IQS и реальные маршруты ZTM. Шаг 2 — <code>gpt-4o</code> синтезирует найденное в структурированный JSON с оценкой, плюсами, минусами, описанием. Если веб-поиск недоступен — fallback на внутренние знания модели. Влияет на <code>district_score</code> новых районов.</div>
     </div>
   </div>
-  <div class="rlog-item">
+  <div class="rlog-step">
     <div class="rlog-num">33</div>
     <div class="rlog-body">
       <div class="rlog-title">UX попапа: транспорт, особенности, линк на район; альтернативные остановки</div>
       <div class="rlog-desc">Попап ℹ расширен: блок «Транспорт» со всеми остановками (основная + до 3 альтернативных с разными маршрутными линиями, время в минутах, ж/д отделена разделителем); блок «Особенности объекта» с цветными тегами (зелёные — плюсы, красные — минусы, red flags). Рекламный текст из <code>bonus_features</code> убран. Тултипы с ячеек трамвая и ж/д перенесены в попап. Рейтинг района в таблице стал якорной ссылкой — клик переключает вкладку «Районы» и подсвечивает строку. Сортировка по «Район ★» получила вторичную сортировку по имени района. Не влияет на оценки объектов.</div>
     </div>
   </div>
-  <div class="rlog-item">
+  <div class="rlog-step">
     <div class="rlog-num">34</div>
     <div class="rlog-body">
       <div class="rlog-title">Транспортный блок попапа: пешком отдельно, авто отдельно; новая кривая оценки</div>
       <div class="rlog-desc">Попап разделён на два блока: 🚶 ближайший трамвай пешком (минимальное время ходьбы среди 15 кандидатов Google Walking API) и 🚊 до 3 остановок на авто с уникальными линиями, отсортированных по времени езды. Кривая транспортной оценки упрощена: ≤5 мин → 10 баллов, далее −1 балл за каждую минуту (линейно до 0 при 15 мин). Ранее была ступенчатая кривая 3→10, 7→8.5, 12→6, 20→0.</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="tab-howworks" class="tab-panel">
+<style>
+.hw{max-width:860px;margin:0 auto;padding:8px 0}
+.hw-section{margin-bottom:28px}
+.hw-section h2{font-size:14px;font-weight:700;color:#1a1a19;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid #e5e7eb}
+.hw-step{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid #f4f4f0}
+.hw-step:last-child{border-bottom:none}
+.hw-icon{flex-shrink:0;width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px}
+.hw-body{flex:1}
+.hw-label{font-size:12px;font-weight:600;color:#1a1a19;margin-bottom:2px}
+.hw-desc{font-size:12px;color:#555;line-height:1.6}
+.hw-code{font-size:11px;font-family:monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;color:#374151}
+.hw-badge{display:inline-block;font-size:10px;font-weight:600;padding:1px 7px;border-radius:10px;white-space:nowrap}
+.hw-arrow{color:#bbb;font-size:11px;margin:0 3px}
+.hw-flow{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin-bottom:14px;font-size:12px}
+.hw-flow-step{background:#dbeafe;color:#1e40af;font-weight:600;padding:4px 12px;border-radius:6px;white-space:nowrap}
+.hw-flow-arrow{color:#94a3b8;font-size:16px}
+.hw-score-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.hw-sc{background:#f8f8f6;border:1px solid #e5e7eb;border-radius:8px;padding:8px 12px;font-size:12px;min-width:130px}
+.hw-sc-name{font-weight:600;color:#1a1a19;margin-bottom:2px}
+.hw-sc-val{color:#1e40af;font-weight:700;font-size:13px}
+.hw-sc-desc{color:#888;font-size:11px;margin-top:2px}
+</style>
+<div class="hw">
+  <div class="hw-section">
+    <h2>Воркфлоу — что происходит каждый день в 06:00 UTC</h2>
+    <div class="hw-flow">
+      <div class="hw-flow-step">1 Парсинг</div><div class="hw-flow-arrow">→</div>
+      <div class="hw-flow-step">2 Геокодинг</div><div class="hw-flow-arrow">→</div>
+      <div class="hw-flow-step">3 Маршруты</div><div class="hw-flow-arrow">→</div>
+      <div class="hw-flow-step">4 Шум</div><div class="hw-flow-arrow">→</div>
+      <div class="hw-flow-step">5 GPT-фичи</div><div class="hw-flow-arrow">→</div>
+      <div class="hw-flow-step">6 Telegram</div><div class="hw-flow-arrow">→</div>
+      <div class="hw-flow-step">7 HTML</div><div class="hw-flow-arrow">→</div>
+      <div class="hw-flow-step">8 Коммит</div>
+    </div>
+    <div class="hw-step">
+      <div class="hw-icon" style="background:#dbeafe">🕷</div>
+      <div class="hw-body">
+        <div class="hw-label">1. Парсинг Otodom — <span class="hw-code">otodom_listings.py</span></div>
+        <div class="hw-desc">Скрапит 4 URL: квартиры и дома в Познани + познаньском повяте. Фильтры: первичный рынок, 70–120 м², 600k–1 200k zł. Из <code>__NEXT_DATA__</code> берёт цену, площадь, координаты, номер этажа, ЖК. Результат — <span class="hw-code">listings_latest.csv</span> (~600 строк).</div>
+      </div>
+    </div>
+    <div class="hw-step">
+      <div class="hw-icon" style="background:#dcfce7">📍</div>
+      <div class="hw-body">
+        <div class="hw-label">2. Геокодинг — <span class="hw-code">geocode_coords.py</span></div>
+        <div class="hw-desc">Для каждого нового объявления: (а) GPT-4o-mini читает описание и определяет <em>фактическое</em> местонахождение объекта (деревня/пригород, если упомянуты — не просто улица); (б) Google Geocoding API переводит адрес в координаты; (в) если геокодер вернул не тот город — откат к геокодингу только города, чтобы поставить маркер хотя бы в центре правильного населённого пункта. Аудит в <span class="hw-code">coords_override.json</span>.</div>
+      </div>
+    </div>
+    <div class="hw-step">
+      <div class="hw-icon" style="background:#fef9c3">🚗</div>
+      <div class="hw-body">
+        <div class="hw-label">3. Маршруты — <span class="hw-code">fetch_drive_distances.py</span></div>
+        <div class="hw-desc">Google Distance Matrix API: для каждого объявления считает время <em>на машине</em> до 15 ближайших трамвайных остановок и 5 ж/д станций, выбирает лучшие. Отдельно — время <em>пешком</em> до ближайшей остановки (Walking API). Результаты кешируются в <span class="hw-code">drive_cache.json</span> по ключу <code>lat,lon</code> — не пересчитываются при каждом прогоне.</div>
+      </div>
+    </div>
+    <div class="hw-step">
+      <div class="hw-icon" style="background:#fce7f3">🔊</div>
+      <div class="hw-body">
+        <div class="hw-label">4. Данные о шуме — <span class="hw-code">enrich_noise.py</span></div>
+        <div class="hw-desc">Запрос к WFS GEOPOZ с акустической картой Познани 2017 года (уровень Lden, дБА). Для каждого объявления ищет ближайший полигон и берёт уровень шума на фасаде. Кеш в <span class="hw-code">noise_cache.json</span>.</div>
+      </div>
+    </div>
+    <div class="hw-step">
+      <div class="hw-icon" style="background:#ede9fe">🤖</div>
+      <div class="hw-body">
+        <div class="hw-label">5. GPT-анализ описаний — <span class="hw-code">extract_features.py</span></div>
+        <div class="hw-desc">GPT-4o-mini читает польский текст объявления и выставляет true/false по 27 фичам: гараж, сад, терраса, умный дом, тихая улица, нужен ремонт, EV-зарядка, близость к шоссе и т.д. Кеш в <span class="hw-code">features_cache.json</span>. Результаты отображаются в табе «Бонусы ГПТ» и в попапе скоринга.</div>
+      </div>
+    </div>
+    <div class="hw-step">
+      <div class="hw-icon" style="background:#dbeafe">✈️</div>
+      <div class="hw-body">
+        <div class="hw-label">6. Telegram-уведомления — <span class="hw-code">notify_new_listings.py</span></div>
+        <div class="hw-desc">Сравнивает текущие ID с <span class="hw-code">seen_ids.json</span>. Новые объявления с транспортными данными отправляются в Telegram: фото (3 шт.), оценка, площадь, цена, район, время до трамвая и Ратуши. Объявления без данных дистанций не отправляются. После отправки ID сохраняются — повторов нет.</div>
+      </div>
+    </div>
+    <div class="hw-step">
+      <div class="hw-icon" style="background:#dcfce7">📊</div>
+      <div class="hw-body">
+        <div class="hw-label">7. Сборка HTML — <span class="hw-code">build_listings_html.py</span></div>
+        <div class="hw-desc">Читает CSV + все кеши, считает оценки через <span class="hw-code">score.py</span>, группирует дубли, вычисляет компасные направления остановок от Ратуша. Вставляет данные в шаблон <span class="hw-code">listings_template.html</span> как JSON → <span class="hw-code">listings_poznan.html</span>. GitHub Pages раздаёт файл по публичному URL.</div>
+      </div>
+    </div>
+    <div class="hw-step">
+      <div class="hw-icon" style="background:#f0fdf4">💾</div>
+      <div class="hw-body">
+        <div class="hw-label">8. Коммит — <span class="hw-code">daily.yml</span></div>
+        <div class="hw-desc">Коммитит CSV, HTML, все кеши и <span class="hw-code">seen_ids.json</span>. Retry-цикл (3 попытки с rebase) защищает от конфликтов при ручных пушах. Без этого шага <span class="hw-code">seen_ids.json</span> не сохраняется и следующий прогон присылает дубли.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hw-section">
+    <h2>Система оценок 0–10</h2>
+    <div class="hw-desc" style="margin-bottom:12px">Итоговая оценка = сумма базовых факторов × веса + штрафы за шум и вредные объекты (потолок −2.5). Максимум без штрафов — 10.</div>
+    <div class="hw-score-row">
+      <div class="hw-sc"><div class="hw-sc-name">🏙 Район</div><div class="hw-sc-val">30%</div><div class="hw-sc-desc">Средняя из ручной, GPT и оценки жителей (NPS-опрос 4500+ чел.)</div></div>
+      <div class="hw-sc"><div class="hw-sc-name">🚊 Транспорт</div><div class="hw-sc-val">20%</div><div class="hw-sc-desc">≤5 мин → 10, −1 балл за каждую минуту, 0 при ≥15 мин</div></div>
+      <div class="hw-sc"><div class="hw-sc-name">📐 Площадь</div><div class="hw-sc-val">20%</div><div class="hw-sc-desc">Пик 85–105 м², плавный спад в обе стороны</div></div>
+      <div class="hw-sc"><div class="hw-sc-name">💰 Цена</div><div class="hw-sc-val">15%</div><div class="hw-sc-desc">Ниже — лучше. Нелинейная кривая от 600k до 1.2M zł</div></div>
+      <div class="hw-sc"><div class="hw-sc-name">🚪 Комнаты</div><div class="hw-sc-val">15%</div><div class="hw-sc-desc">Пик при 4 комнатах, спад вниз и вверх</div></div>
+    </div>
+    <div class="hw-desc" style="margin-top:10px">Штрафы: шум GEOPOZ −0.3…−1.0 при >60 дБА; вредные объекты (спаллярня, ТЭЦ, очистные и др.) −0.5…−1.5 в зависимости от дистанции; сумма штрафов ограничена −2.5.</div>
+  </div>
+
+  <div class="hw-section">
+    <h2>Инфраструктура</h2>
+    <div class="hw-step">
+      <div class="hw-icon" style="background:#f1f5f9">⚙️</div>
+      <div class="hw-body">
+        <div class="hw-label">GitHub Actions + GitHub Pages</div>
+        <div class="hw-desc">Воркфлоу запускается по cron каждый день в 06:00 UTC (08:00 по Варшаве). Результаты коммитятся обратно в репозиторий, GitHub Pages автоматически публикует обновлённый HTML. Секреты (<span class="hw-code">GPT_TOKEN</span>, <span class="hw-code">GOOGLE_API_KEY</span>, <span class="hw-code">TG_TOKEN</span>) — только в GitHub Secrets, не в коде.</div>
+      </div>
+    </div>
+    <div class="hw-step">
+      <div class="hw-icon" style="background:#f1f5f9">💰</div>
+      <div class="hw-body">
+        <div class="hw-label">Стоимость одного прогона</div>
+        <div class="hw-desc">GPT-4o-mini (геокодинг + фичи): ~$0.01–0.03 за прогон при ~100 новых объявлениях. Google Maps API: геокодинг + Distance Matrix + Walking ≈ $0.05–0.15. Итого: &lt;$0.20/день при нормальном потоке новых объявлений.</div>
+      </div>
     </div>
   </div>
 </div>
@@ -597,7 +725,7 @@ const DISTRICTS=__DISTRICTS__;
 const _rowMap=new Map(D.map(r=>[r.id,r]));
 
 function switchTab(name){
-  document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',['listings','districts','bonuses','method','reasoning'][i]===name));
+  document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',['listings','districts','bonuses','method','reasoning','howworks'][i]===name));
   document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
   if(name==='districts') renderDistricts();
