@@ -182,8 +182,12 @@ def main():
         orig_lon = float(r["lon"])
         dist_m = haversine(orig_lat, orig_lon, new_lat, new_lon) * 1000
 
-        # Если сдвиг > 5 км — скорее всего улица нашлась в другом городе, не применяем
-        if dist_m > 5000:
+        # Если оригинальные координаты — дефолтный пин Otodom (центр Познани, ~Ратуша),
+        # фильтр >5 км не применяем: геокодер заведомо улучшает ситуацию
+        RATUSZ = (52.4082, 16.9335)
+        orig_is_default = haversine(orig_lat, orig_lon, *RATUSZ) * 1000 < 200
+
+        if dist_m > 5000 and not orig_is_default:
             overrides[lid] = {"skipped": "geocode_too_far", "dist_m": round(dist_m), "query": query, "formatted": formatted, "addr": addr}
             print(f"    → слишком большой сдвиг ({dist_m:.0f}м), вероятно другой город: {formatted}")
             time.sleep(0.3)
