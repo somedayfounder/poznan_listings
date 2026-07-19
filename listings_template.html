@@ -728,6 +728,28 @@ function showScoreInfo(r){
       ${nuis_names?`<div style="margin-top:4px;font-size:11px;color:#b45309">⚠️ Вредные объекты: ${nuis_names}</div>`:''}
     </div>`:'';
 
+  // блок транспорта
+  const td=r.tram_details;
+  const rd=r.rail_details;
+  function fmtTransportKm(km){return km!=null?`${km} км`:'?';}
+  const tramLine=td?`<div style="margin-bottom:5px">
+    <span style="font-weight:600">🚊 ${td.name}</span>
+    <span style="color:#1e40af;font-weight:600"> ${td.min!=null?td.min+' мин':''}</span>
+    <span style="color:#888;font-size:11px"> (${fmtTransportKm(td.km)} по дороге)</span>
+    ${td.lines&&td.lines.length?`<span style="color:#888;font-size:11px"> · линии: ${td.lines.join(', ')}</span>`:''}
+    ${td.alt?`<div style="margin-top:3px;margin-left:12px;font-size:11px;color:#555">также: ${td.alt.name} <span style="color:#888">(~${fmtTransportKm(td.alt.km_hav)} прямая · линии: ${td.alt.lines.join(', ')})</span></div>`:''}
+  </div>`:'';
+  const railLine=rd?`<div>
+    <span style="font-weight:600">🚆 ${rd.name}</span>
+    <span style="color:#1e40af;font-weight:600"> ${rd.min!=null?rd.min+' мин':''}</span>
+    <span style="color:#888;font-size:11px"> (${fmtTransportKm(rd.km)} по дороге)</span>
+  </div>`:'';
+  const transportBlock=(tramLine||railLine)?`
+    <div style="margin-top:14px;border-top:1px solid #eee;padding-top:10px">
+      <div style="font-size:11px;font-weight:600;color:#888;margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px">Транспорт</div>
+      ${tramLine}${railLine}
+    </div>`:'';
+
   document.getElementById('score-modal-body').innerHTML=`
     <table>
       <thead><tr><th>Фактор</th><th style="text-align:right">Оценка</th><th style="text-align:right">Вес</th><th style="text-align:right">Вклад</th></tr></thead>
@@ -737,7 +759,7 @@ function showScoreInfo(r){
         ${penRows}
         <tr class="total-row"><td colspan="3">Итог</td><td style="text-align:right;color:${sc_c}">${final_sc}</td></tr>
       </tbody>
-    </table>${featsBlock}`;
+    </table>${transportBlock}${featsBlock}`;
   document.getElementById('score-modal-title').textContent=r.title;
   document.getElementById('score-modal-backdrop').classList.add('open');
 }
@@ -809,8 +831,8 @@ const ds_name_style=r.city==='Poznań'?'color:#166534':'color:#c2410c';
 const ds_anchor=`district-${ds_label.replace(/\s+/g,'-')}`;
 const ds_cell=`<a href="#${ds_anchor}" onclick="event.preventDefault();switchTab('districts');renderDistricts();setTimeout(()=>{const el=document.getElementById('${ds_anchor}');if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.style.background='#fef9c3';setTimeout(()=>el.style.background='',1500);}},50)" style="text-decoration:none"><span style="color:${ds_c};font-weight:500">${ds}/10</span> <span style="${ds_name_style};font-size:11px">${ds_label}</span></a>`;
 const proj_cell=r.project?`<span style="max-width:130px;overflow:hidden;text-overflow:ellipsis;color:#666;display:inline-block" title="${r.project}">${r.project}</span>`:'—';
-const tram_cell=dt_v!=null?`<span style="color:${dt_c};font-weight:500" title="${r.tram_tip||''}">🚊 ${dt_s}</span>`:'—';
-const rail_cell=dr_v!=null?`<span style="color:${dr_c};font-weight:500" title="${r.rail_tip||''}">🚆 ${dr_s}</span>`:'—';
+const tram_cell=dt_v!=null?`<span style="color:${dt_c};font-weight:500">🚊 ${dt_s}</span>`:'—';
+const rail_cell=dr_v!=null?`<span style="color:${dr_c};font-weight:500">🚆 ${dr_s}</span>`:'—';
 
 const exp_cell=toggle?`<td style="text-align:center;padding:0">${toggle}</td>`:'<td></td>';
 return`<tr>

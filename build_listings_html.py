@@ -77,14 +77,14 @@ for r in rows:
     rail_name = _drive.get("rail_name") or r.get("drive_rail_name", "")
 
     tram_tip = rail_tip = None
+    tram_details = rail_details = None
 
     if r.get("lat") and r.get("lon"):
         lat, lon = float(r["lat"]), float(r["lon"])
 
-        # тултип трамвая: ближайший по маршруту + ближайший на другой ветке
         if tram_name:
             lines1 = set(stop_lines.get(tram_name, []))
-            tip_parts = [f"{tram_name} — {fmt_d(dist_tram)} по дороге (линии: {', '.join(sorted(lines1)) if lines1 else '?'})"]
+            alt = None
             ranked = sorted(trams, key=lambda t: hav(lat, lon, t["lat"], t["lon"]))
             for t in ranked:
                 if t["name"] == tram_name:
@@ -92,11 +92,23 @@ for r in rows:
                 lines2 = set(stop_lines.get(t["name"], []))
                 if lines2 and lines1 and not lines1.intersection(lines2):
                     d2 = round(hav(lat, lon, t["lat"], t["lon"]), 2)
-                    tip_parts.append(f"{t['name']} — ~{fmt_d(d2)} прямая (линии: {', '.join(sorted(lines2))})")
+                    alt = {"name": t["name"], "km_hav": d2, "lines": sorted(lines2)}
                     break
+            tram_details = {
+                "name": tram_name,
+                "min": tram_min,
+                "km": dist_tram,
+                "lines": sorted(lines1) if lines1 else [],
+                "alt": alt,
+            }
+            # оставляем tram_tip для обратной совместимости
+            tip_parts = [f"{tram_name} — {fmt_d(dist_tram)} по дороге (линии: {', '.join(sorted(lines1)) if lines1 else '?'})"]
+            if alt:
+                tip_parts.append(f"{alt['name']} — ~{fmt_d(alt['km_hav'])} прямая (линии: {', '.join(alt['lines'])})")
             tram_tip = "\n".join(tip_parts)
 
         if rail_name:
+            rail_details = {"name": rail_name, "min": rail_min, "km": dist_rail}
             rail_tip = f"{rail_name} — {fmt_d(dist_rail)} по дороге ({rail_min} мин)" if rail_min else f"{rail_name} — {fmt_d(dist_rail)} по дороге"
 
     lat = v(r, "lat", float)
@@ -109,8 +121,8 @@ for r in rows:
         "street": r["street"], "city": r["city"], "project": r["project"],
         "district": r.get("district", ""),
         "dist": dist, "dist_min": dist_min,
-        "dist_tram": dist_tram, "tram_min": tram_min, "tram_tip": tram_tip,
-        "dist_rail": dist_rail, "rail_min": rail_min, "rail_tip": rail_tip, "url": r["url"],
+        "dist_tram": dist_tram, "tram_min": tram_min, "tram_tip": tram_tip, "tram_details": tram_details,
+        "dist_rail": dist_rail, "rail_min": rail_min, "rail_tip": rail_tip, "rail_details": rail_details, "url": r["url"],
         "lat": lat, "lon": lon,
     }
     feat = _feat_cache.get(r["id"], {})
