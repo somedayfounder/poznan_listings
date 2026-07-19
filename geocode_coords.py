@@ -86,7 +86,7 @@ def gpt_extract_address(description):
 
 def geocode(query):
     if not GOOGLE_API_KEY:
-        return None, None, None
+        return None, None, None, None, None
     url = "https://maps.googleapis.com/maps/api/geocode/json?" + urlencode({
         "address": query,
         "key": GOOGLE_API_KEY,
@@ -99,10 +99,14 @@ def geocode(query):
         if resp.get("status") == "OK" and resp["results"]:
             r = resp["results"][0]
             loc = r["geometry"]["location"]
-            return round(loc["lat"], 6), round(loc["lng"], 6), r["formatted_address"]
+            comps = {c["types"][0]: c["long_name"] for c in r["address_components"] if c["types"]}
+            city = comps.get("locality") or comps.get("administrative_area_level_2")
+            district = (comps.get("sublocality_level_1") or comps.get("sublocality") or
+                        comps.get("neighborhood") or comps.get("sublocality_level_2"))
+            return round(loc["lat"], 6), round(loc["lng"], 6), r["formatted_address"], city, district
     except Exception as e:
         print(f"    geocode error: {e}")
-    return None, None, None
+    return None, None, None, None, None
 
 
 def build_query(addr):
@@ -153,7 +157,7 @@ def main():
             time.sleep(0.3)
             continue
 
-        new_lat, new_lon, formatted = geocode(query)
+        new_lat, new_lon, formatted, geo_city, geo_district = geocode(query)
         if new_lat is None:
             overrides[lid] = {"skipped": "geocode_failed", "query": query, "addr": addr}
             print(f"    → геокодинг не дал результата: {query}")
@@ -169,11 +173,12 @@ def main():
             "new_lat": new_lat, "new_lon": new_lon,
             "dist_m": round(dist_m),
             "query": query, "formatted": formatted, "addr": addr,
+            "geo_city": geo_city, "geo_district": geo_district,
             "corrected": dist_m > 200,
         }
 
         if dist_m > 200:
-            print(f"    ✓ Скорректировано на {dist_m:.0f}м: {query} → {formatted}")
+            print(f"    ✓ Скорректировано на {dist_m:.0f}м: {query} → {formatted} (район: {geo_district}, город: {geo_city})")
             updated += 1
         else:
             print(f"    ≈ Совпадает (Δ{dist_m:.0f}м): {formatted}")
@@ -188,6 +193,10 @@ def main():
             if ov and ov.get("corrected"):
                 r["lat"] = ov["new_lat"]
                 r["lon"] = ov["new_lon"]
+                if ov.get("geo_district"):
+                    r["district"] = ov["geo_district"]
+                if ov.get("geo_city"):
+                    r["city"] = ov["geo_city"]
 
         with open(CSV_FILE, "w", encoding="utf-8-sig", newline="") as f:
             w = csv.DictWriter(f, fieldnames=fieldnames)
