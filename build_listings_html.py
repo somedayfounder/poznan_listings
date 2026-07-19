@@ -1,7 +1,10 @@
 import csv, json
 from math import radians, sin, cos, sqrt, atan2, degrees
 
-def _bearing_label(lat1, lon1, lat2, lon2):
+_RATUSZ = (52.4082, 16.9335)
+
+def _bearing_label(lat2, lon2):
+    lat1, lon1 = _RATUSZ
     dlon = radians(lon2 - lon1)
     rlat1, rlat2 = radians(lat1), radians(lat2)
     x = sin(dlon) * cos(rlat2)
@@ -114,7 +117,7 @@ for r in rows:
                 if lines2 and not lines2.intersection(seen_lines):
                     sc = _stop_coords.get(cand["name"])
                     d = {"name": cand["name"], "min": round(cand["dur_s"] / 60), "km": cand["km"], "lines": sorted(lines2)}
-                    if sc: d["dir"] = _bearing_label(lat, lon, sc[0], sc[1])
+                    if sc: d["dir"] = _bearing_label(sc[0], sc[1])
                     drive_stops.append(d)
                     seen_lines |= lines2
                 if len(drive_stops) >= 3:
