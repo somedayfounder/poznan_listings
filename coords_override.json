@@ -1649,11 +1649,7 @@
     "corrected": true
   },
   "68061345": {
-    "orig_lat": 52.61476,
-    "orig_lon": 17.09083,
-    "new_lat": 52.405679,
-    "new_lon": 16.931277,
-    "dist_m": 25634,
+    "skipped": "geocode_too_vague",
     "query": "Łopuchowo, Poznań, Polska",
     "formatted": "Poznań, Polska",
     "addr": {
@@ -1663,9 +1659,7 @@
       "district": null,
       "confidence": "medium"
     },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": true
+    "note": "manual rollback: geocoder returned city-only result"
   },
   "68203851": {
     "skipped": "low_confidence",

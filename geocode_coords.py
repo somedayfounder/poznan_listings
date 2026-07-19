@@ -164,6 +164,15 @@ def main():
             time.sleep(0.3)
             continue
 
+        # Отклоняем если geocoder вернул только город (без улицы/района в адресе)
+        # Признак: formatted содержит только название города + страну
+        formatted_parts = [p.strip() for p in (formatted or "").split(",")]
+        if len(formatted_parts) <= 2:
+            overrides[lid] = {"skipped": "geocode_too_vague", "query": query, "formatted": formatted, "addr": addr}
+            print(f"    → слишком общий результат (только город): {formatted}")
+            time.sleep(0.3)
+            continue
+
         orig_lat = float(r["lat"])
         orig_lon = float(r["lon"])
         dist_m = haversine(orig_lat, orig_lon, new_lat, new_lon) * 1000
