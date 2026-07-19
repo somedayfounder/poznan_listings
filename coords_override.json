@@ -12826,5 +12826,56 @@
       "district": "Czerwonak",
       "confidence": "high"
     }
+  },
+  "67528732": {
+    "orig_lat": 52.35411,
+    "orig_lon": 16.92671,
+    "new_lat": 52.370663,
+    "new_lon": 16.945331,
+    "dist_m": 2233,
+    "query": "ul. Masztowej, Starołęka Wielka, Polska",
+    "formatted": "Starołęka, 61-369 Poznań, Polska",
+    "addr": {
+      "street": "ul. Masztowej",
+      "osiedle": "Nowy Folwark",
+      "city": "Starołęka Wielka",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka",
+    "corrected": true
+  },
+  "96822011200067": {
+    "skipped": "geocode_too_far",
+    "dist_m": 9293,
+    "query": "Lubczykowa Góra 3, Radojewo, Polska",
+    "formatted": "Arnikowa 9, 60-101 Poznań, Polska",
+    "addr": {
+      "street": "Lubczykowa Góra 3",
+      "osiedle": "Lubczykowa Góra",
+      "city": "Radojewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96820868000067": {
+    "orig_lat": 52.44377,
+    "orig_lon": 16.89437,
+    "new_lat": 52.456319,
+    "new_lon": 16.886212,
+    "dist_m": 1501,
+    "query": "Podolany, Poznań, Polska",
+    "formatted": "Podolany, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
   }
 }
