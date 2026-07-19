@@ -21770,7 +21770,100 @@
     "ratusz_dur_s": 567,
     "rail_name": "Poznań Wschód",
     "rail_km": 0.98,
-    "rail_dur_s": 201
+    "rail_dur_s": 201,
+    "tram_walk_s": 322,
+    "tram_candidates": [
+      {
+        "name": "Św. Michała",
+        "km": 0.38,
+        "dur_s": 80,
+        "walk_s": 322
+      },
+      {
+        "name": "Zawady",
+        "km": 1.09,
+        "dur_s": 182,
+        "walk_s": 515
+      },
+      {
+        "name": "Termalna",
+        "km": 0.94,
+        "dur_s": 117,
+        "walk_s": 884
+      },
+      {
+        "name": "Rondo Śródka",
+        "km": 0.92,
+        "dur_s": 182,
+        "walk_s": 735
+      },
+      {
+        "name": "Krańcowa",
+        "km": 1.55,
+        "dur_s": 162,
+        "walk_s": 1309
+      },
+      {
+        "name": "Baraniaka",
+        "km": 1.55,
+        "dur_s": 236,
+        "walk_s": 1179
+      },
+      {
+        "name": "Łomżyńska",
+        "km": 1.83,
+        "dur_s": 183,
+        "walk_s": 1542
+      },
+      {
+        "name": "Kórnicka",
+        "km": 3.13,
+        "dur_s": 544,
+        "walk_s": 1662
+      },
+      {
+        "name": "Politechnika",
+        "km": 2.34,
+        "dur_s": 396,
+        "walk_s": 1744
+      },
+      {
+        "name": "Polanka",
+        "km": 2.79,
+        "dur_s": 429,
+        "walk_s": 2184
+      },
+      {
+        "name": "Most Św. Rocha",
+        "km": 3.69,
+        "dur_s": 688,
+        "walk_s": 2071
+      },
+      {
+        "name": "Mogileńska",
+        "km": 3.46,
+        "dur_s": 358,
+        "walk_s": 1950
+      },
+      {
+        "name": "Małe Garbary",
+        "km": 3.51,
+        "dur_s": 636,
+        "walk_s": 1818
+      },
+      {
+        "name": "Łacina",
+        "km": 5.74,
+        "dur_s": 810,
+        "walk_s": 2473
+      },
+      {
+        "name": "Rondo Rataje",
+        "km": 2.52,
+        "dur_s": 424,
+        "walk_s": 2034
+      }
+    ]
   },
   "52.36027,16.98188": {
     "tram_name": "Os. Czecha",
