@@ -663,7 +663,7 @@ function onTypeChange(){
 // ── Scoring functions (mirrors score.py) ──────────────────────────────────
 function _sTransport(tram_min){
   const m=tram_min;
-  if(m==null)return 5;
+  if(m==null)return 0;
   if(m<=3)return 10;
   if(m<=7)return 10-1.5*(m-3)/4;
   if(m<=12)return 8.5-2.5*(m-7)/5;

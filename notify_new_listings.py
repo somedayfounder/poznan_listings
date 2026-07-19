@@ -113,7 +113,7 @@ def run():
         dk = f"{r.get('lat')},{r.get('lon')}"
         drv = _drive_cache.get(dk, {})
         d = drv.get("tram_km") or _f(r.get("drive_tram_km")) or _f(r.get("dist_tram"))
-        if d is None: return True
+        if d is None: return False
         limit = 8.0 if r.get("type") == "dom" else 3.0
         return d <= limit
 
