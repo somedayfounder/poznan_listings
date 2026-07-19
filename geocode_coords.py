@@ -170,11 +170,26 @@ def main():
             time.sleep(0.3)
             continue
 
-        # Отклоняем если geocoder вернул только город (без улицы/района в адресе)
+        # Если геокодер вернул не тот город что GPT определил — откатываемся к геокодингу города
+        # Но не откатываемся если geo_district совпадает с gpt_city (Naramowice, Grunwald — районы Познани)
+        gpt_city = (addr.get("city") or "").lower().strip()
+        geo_city_norm = (geo_city or "").lower().strip()
+        geo_dist_norm = (geo_district or "").lower().strip()
+        city_in_district = gpt_city and geo_dist_norm and (gpt_city in geo_dist_norm or geo_dist_norm in gpt_city)
+        if gpt_city and geo_city_norm and gpt_city not in geo_city_norm and geo_city_norm not in gpt_city and not city_in_district:
+            city_query = f"{addr['city']}, Polska"
+            print(f"    → геокодер вернул {geo_city!r} вместо {addr['city']!r}, пробуем только город: {city_query}")
+            new_lat, new_lon, formatted, geo_city, geo_district = geocode(city_query)
+            if new_lat is None:
+                overrides[lid] = {"skipped": "geocode_failed", "query": city_query, "addr": addr}
+                time.sleep(0.3)
+                continue
+
+        # Отклоняем если geocoder вернул только страну (совсем нет детализации)
         formatted_parts = [p.strip() for p in (formatted or "").split(",")]
-        if len(formatted_parts) <= 2:
+        if len(formatted_parts) <= 1:
             overrides[lid] = {"skipped": "geocode_too_vague", "query": query, "formatted": formatted, "addr": addr}
-            print(f"    → слишком общий результат (только город): {formatted}")
+            print(f"    → слишком общий результат: {formatted}")
             time.sleep(0.3)
             continue
 
