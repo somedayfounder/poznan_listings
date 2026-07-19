@@ -84,24 +84,38 @@ for r in rows:
         lat, lon = float(r["lat"]), float(r["lon"])
 
         if tram_name:
-            lines1 = set(stop_lines.get(tram_name, []))
-            alts = []
-            seen_lines = lines1.copy()
             candidates = _drive.get("tram_candidates", [])
-            for cand in candidates:
-                if cand["name"] == tram_name:
+
+            # главная остановка = ближайшая ПЕШКОМ (min walk_s)
+            cands_with_walk = [c for c in candidates if c.get("walk_s") is not None]
+            if cands_with_walk:
+                walk_best = min(cands_with_walk, key=lambda c: c["walk_s"])
+                display_name = walk_best["name"]
+                display_walk_min = round(walk_best["walk_s"] / 60)
+                display_km = walk_best["km"]
+            else:
+                display_name = tram_name
+                display_walk_min = tram_walk_min
+                display_km = dist_tram
+
+            display_lines = set(stop_lines.get(display_name, []))
+
+            # альтернативы = уникальные линии, сортировка по drive_s
+            seen_lines = display_lines.copy()
+            alts = []
+            for cand in sorted(candidates, key=lambda c: c["dur_s"]):
+                if cand["name"] == display_name:
                     continue
                 lines2 = set(stop_lines.get(cand["name"], []))
                 if lines2 and not lines2.intersection(seen_lines):
-                    alt = {"name": cand["name"], "min": round(cand["dur_s"] / 60), "km": cand["km"], "lines": sorted(lines2)}
-                    if cand.get("walk_s") is not None:
-                        alt["walk_min"] = round(cand["walk_s"] / 60)
-                    alts.append(alt)
+                    alts.append({"name": cand["name"], "min": round(cand["dur_s"] / 60), "km": cand["km"], "lines": sorted(lines2)})
                     seen_lines |= lines2
-            alts.sort(key=lambda a: a.get("walk_min") if a.get("walk_min") is not None else 9999)
-            alts = alts[:3]
+                if len(alts) >= 3:
+                    break
+
             # fallback: haversine если кандидатов нет
-            if not alts:
+            if not candidates:
+                lines1 = set(stop_lines.get(tram_name, []))
                 ranked_hav = sorted(trams, key=lambda t: hav(lat, lon, t["lat"], t["lon"]))
                 for t in ranked_hav:
                     if t["name"] == tram_name:
@@ -111,12 +125,12 @@ for r in rows:
                         d2 = round(hav(lat, lon, t["lat"], t["lon"]), 2)
                         alts.append({"name": t["name"], "min": None, "km": d2, "km_hav": True, "lines": sorted(lines2)})
                         break
+
             tram_details = {
-                "name": tram_name,
-                "min": tram_min,
-                "walk_min": tram_walk_min,
-                "km": dist_tram,
-                "lines": sorted(lines1) if lines1 else [],
+                "name": display_name,
+                "walk_min": display_walk_min,
+                "km": display_km,
+                "lines": sorted(display_lines) if display_lines else [],
                 "alts": alts,
             }
             tip_parts = [f"{tram_name} — {fmt_d(dist_tram)} по дороге (линии: {', '.join(sorted(lines1)) if lines1 else '?'})"]
