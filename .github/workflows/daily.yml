@@ -24,8 +24,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run notifier
-        run: python3 notify_new_listings.py
+      - name: Scrape listings
+        run: python3 scrape_listings.py
 
       - name: Geocode coordinates from descriptions
         run: python3 geocode_coords.py
@@ -38,6 +38,9 @@ jobs:
 
       - name: Extract features via GPT
         run: python3 extract_features.py
+
+      - name: Notify new listings via Telegram
+        run: python3 notify_new_listings.py
 
       - name: Build HTML
         run: python3 build_listings_html.py
@@ -54,4 +57,3 @@ jobs:
           git commit -m "update listings $(date +%Y-%m-%d)"
           git pull --rebase --autostash origin main
           git push origin main
-

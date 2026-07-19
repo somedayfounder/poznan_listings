@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
 """
-Ежедневный запуск:
-1. Парсит объявления (otodom_listings.py)
-2. Получает координаты с otodom (индивидуальные страницы)
-3. Считает маршруты через OSRM
-4. Сравнивает с предыдущим CSV — шлёт новые в Telegram
+Шаг 6 ежедневного пайплайна (после геокодинга, дистанций, GPT):
+- Читает pending_notify.json (список новых ID от scrape_listings.py)
+- Фильтрует по расстоянию до трамвая
+- Исследует новые районы
+- Отправляет новые объявления в Telegram
 """
-
-import csv, json, re, subprocess, sys, time
-from datetime import date
+import csv, json, os, re, time
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
@@ -17,7 +15,10 @@ from score import score_from_csv, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE
 POZNAN_SUBURBS = {"Smochowice", "Naramowice", "Strzeszyn", "Morasko",
                   "Szczepankowo", "Spławie", "Głuszyna", "Fabianowo"}
 
-DATA_DIR = Path(__file__).parent
+DATA_DIR     = Path(__file__).parent
+SEEN_FILE    = DATA_DIR / "seen_ids.json"
+PENDING_FILE = DATA_DIR / "pending_notify.json"
+
 
 def _cfg():
     token = os.environ.get("TG_TOKEN")
@@ -27,9 +28,7 @@ def _cfg():
     cfg = json.loads((DATA_DIR / "tg_config.json").read_text())
     return cfg["token"], cfg["chat_id"]
 
-import os
 TOKEN, CHAT_ID = _cfg()
-SEEN_FILE = DATA_DIR / "seen_ids.json"
 
 
 def _escape(s):
@@ -63,141 +62,49 @@ def tg_send_media_group(photo_urls, caption):
     urlopen(Request(url, data=data), timeout=15)
 
 
-def load_seen():
-    if SEEN_FILE.exists():
-        return set(json.loads(SEEN_FILE.read_text()))
-    # первый запуск — считаем все текущие объявления уже виденными
-    latest = DATA_DIR / "listings_latest.csv"
-    if latest.exists():
-        rows = list(csv.DictReader(open(latest, encoding="utf-8-sig")))
-        return set(r["id"] for r in rows)
-    return set()
+def fmt_dist(d):
+    if d is None: return "?"
+    try:
+        return f"{float(d):.1f} км"
+    except:
+        return "?"
 
 
 def save_seen(ids):
     SEEN_FILE.write_text(json.dumps(sorted(ids)))
 
 
-def fmt_dist(d):
-    if d is None: return "?"
-    try:
-        d = float(d)
-        return f"{d:.1f} км"
-    except:
-        return "?"
-
-
 def run():
-    today = date.today().isoformat()
-    print(f"=== {today} ===")
-
     def tg_safe(text, label=""):
         try:
             tg_send(text)
         except Exception as e:
             print(f"TG error {label}: {e}")
 
-    tg_safe(f"⏳ <b>Квартиры</b>: запуск {today}…", "start")
-
-    seen = load_seen()
-    print(f"Известно объявлений: {len(seen)}")
-
-    # 1. Парсим
-    print("Запуск парсера...")
-    r = subprocess.run([sys.executable, str(DATA_DIR / "otodom_listings.py")],
-                       capture_output=True, text=True, cwd=DATA_DIR)
-    if r.returncode != 0:
-        tg_safe(f"❌ Ошибка парсера:\n{r.stderr[-500:]}")
+    if not PENDING_FILE.exists():
+        print("pending_notify.json не найден — нечего отправлять")
         return
-    print(r.stdout[-300:])
 
-    # Считаем сколько объявлений спарсили
-    _rows_after_parse = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
-    _cache_file = DATA_DIR / "coords_cache.json"
-    _cache = json.loads(_cache_file.read_text()) if _cache_file.exists() else {}
-    _need_coords = sum(1 for row in _rows_after_parse if row["id"] not in _cache)
-    tg_safe(f"📋 <b>Спарсили:</b> {len(_rows_after_parse)} объявлений, нужно загрузить: {_need_coords}", "parse")
+    pending = json.loads(PENDING_FILE.read_text())
+    new_ids  = set(pending["new_ids"])
+    all_ids  = set(pending["all_ids"])
+    photo_map = pending.get("photo_map", {})
 
-    # 2. Координаты с otodom — только новые, кэшируем по id
-    print("Получаем координаты...")
-    if _need_coords:
-        tg_safe(f"🌐 Загружаем {_need_coords} страниц для координат и фото…", "coords")
-    subprocess.run([sys.executable, "-c", f"""
-import csv, re, json, time
-from pathlib import Path
-from urllib.request import Request, urlopen
-HEADERS = {{'User-Agent': 'Mozilla/5.0'}}
-cache_file = Path('coords_cache.json')
-cache = json.loads(cache_file.read_text()) if cache_file.exists() else {{}}
-rows = list(csv.DictReader(open('listings_latest.csv', encoding='utf-8-sig')))
-fetched = 0
-for r in rows:
-    rid = r['id']
-    if rid in cache:
-        r.update(cache[rid])
-        continue
-    entry = {{}}
-    try:
-        req = Request(r['url'], headers=HEADERS)
-        html = urlopen(req, timeout=15).read().decode('utf-8','replace')
-        m = re.search(r'id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.DOTALL)
-        ad = json.loads(m.group(1))['props']['pageProps'].get('ad') or {{}}
-        coords = (ad.get('location') or {{}}).get('coordinates') or {{}}
-        if coords.get('latitude'):
-            entry['lat'] = round(coords['latitude'], 5)
-            entry['lon'] = round(coords['longitude'], 5)
-        images = ad.get('images') or []
-        def _u(i): return i.get('large') or i.get('medium') or ''
-        urls = [_u(i) for i in images[1:4] if _u(i)] or [_u(i) for i in images[0:1] if _u(i)]
-        if urls:
-            entry['photo_url'] = ','.join(urls)
-    except: pass
-    cache[rid] = entry
-    r.update(entry)
-    fetched += 1
-    if fetched % 50 == 0:
-        cache_file.write_text(json.dumps(cache))
-        print(f'  coords: {{fetched}} fetched')
-    time.sleep(0.3)
-cache_file.write_text(json.dumps(cache))
-fields = list(rows[0].keys())
-for extra in ['photo_url','drive_ratusz_km','drive_tram_km','drive_tram_name','drive_rail_km','drive_rail_name']:
-    if extra not in fields: fields.append(extra)
-import csv as c2
-with open('listings_latest.csv','w',newline='',encoding='utf-8-sig') as f:
-    w = c2.DictWriter(f, fieldnames=fields, extrasaction='ignore')
-    w.writeheader(); w.writerows(rows)
-print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
-"""], cwd=DATA_DIR, capture_output=True, text=True)
-
-    # 3. Находим новые объявления (до обогащения расстояниями)
-    rows_raw = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
-    all_ids = set(r["id"] for r in rows_raw)
-    new_ids = all_ids - seen
     if not new_ids:
         tg_safe("✅ Новых объявлений нет", "nonew")
         save_seen(all_ids)
         return
-    tg_safe(f"🔍 Найдено <b>{len(new_ids)} новых</b> объявлений, считаем расстояния…", "found")
 
-    # 4. Считаем расстояния (Google Maps) только для новых
-    print("Считаем маршруты...")
-    dr = subprocess.run([sys.executable, str(DATA_DIR / "fetch_drive_distances.py")],
-                        capture_output=True, text=True, cwd=DATA_DIR)
-    if dr.returncode != 0:
-        print(f"fetch_drive_distances ERROR:\n{dr.stderr[-500:]}")
-        tg_safe(f"⚠️ Маршруты не посчитались: {dr.stderr[-200:]}", "drive_err")
-    else:
-        print(dr.stdout[-200:])
-
-    # 5. Перечитываем CSV с обогащёнными данными, фильтруем по расстоянию до трамвая
+    # Читаем обогащённый CSV (после geocode + drive + GPT)
     rows = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
     for r in rows:
         if r.get("city") in POZNAN_SUBURBS:
             r["district"] = r["city"]
             r["city"] = "Poznań"
+        # Подставляем фото из кэша scraper-а (если в CSV нет)
+        if not r.get("photo_url") and r["id"] in photo_map:
+            r["photo_url"] = photo_map[r["id"]]
 
-    # Загружаем drive_cache сразу после обогащения — фильтр и форматирование используют его
     _drive_cache_path = DATA_DIR / "drive_cache.json"
     _drive_cache = json.loads(_drive_cache_path.read_text()) if _drive_cache_path.exists() else {}
 
@@ -206,7 +113,7 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
         dk = f"{r.get('lat')},{r.get('lon')}"
         drv = _drive_cache.get(dk, {})
         d = drv.get("tram_km") or _f(r.get("drive_tram_km")) or _f(r.get("dist_tram"))
-        if d is None: return True  # нет данных — пропускаем
+        if d is None: return True
         limit = 8.0 if r.get("type") == "dom" else 3.0
         return d <= limit
 
@@ -215,9 +122,10 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
         tg_safe("✅ Новые объявления не прошли фильтр по расстоянию до трамвая", "filtered")
         save_seen(all_ids)
         return
+
     tg_safe(f"✅ <b>{len(new_rows)}</b> новых прошли фильтр, проверяем районы…", "filtered_ok")
 
-    # 6. Проверяем новые районы и запускаем агентное исследование
+    # Новые районы → исследование
     from score import DISTRICT_SCORES as _DS
     known = set(_DS.keys())
     new_district_set = set()
@@ -237,75 +145,65 @@ print(f'coords done, fetched={{fetched}}, cache size={{len(cache)}}')
                 research(d)
             except Exception as e:
                 print(f"  research({d}) failed: {e}")
-        # Перезагружаем score после патча
         import importlib, score as _score_mod
         importlib.reload(_score_mod)
         from score import score_from_csv as _sfc
     else:
         from score import score_from_csv as _sfc
 
-    # 7. Пересчитываем оценки и строим итоговый список
+    # Пересчитываем оценки
     for r in new_rows:
         r["_score"] = _sfc(r)
     new_rows.sort(key=lambda r: r["_score"], reverse=True)
+
     print(f"Новых объявлений к отправке: {len(new_rows)}")
     tg_safe(f"🏠 <b>Отправляю {len(new_rows)} объявлений</b>…", "sending")
 
-    # 5. Шлём в Telegram
-    if not new_rows:
-        pass  # уже сообщили выше
-    else:
-        for r in new_rows:
-            price = f"{int(float(r['price_zl'])):,}".replace(",", " ") + " zł" if r.get("price_zl") else "цена не указана"
-            area = f"{r['area_m2']} м²" if r.get("area_m2") else ""
-            # Для Познани показываем район, для пригородов — город
-            city = r.get("city", "")
-            district = r.get("district", "")
-            location = district if (city == "Poznań" and district) else city
-            loc_key = district if district else city
-            dist_sc = DISTRICT_SCORES.get(loc_key, _DEFAULT_DISTRICT_SCORE)
-            location_str = f"{location} ({dist_sc}/10)"
-            # Расстояния из drive_cache (актуальнее, чем CSV-колонки)
-            _dk = f"{r.get('lat')},{r.get('lon')}"
-            _drv = _drive_cache.get(_dk, {})
-            tram_min    = round(_drv["tram_dur_s"] / 60)    if _drv.get("tram_dur_s")    else None
-            ratusz_min  = round(_drv["ratusz_dur_s"] / 60)  if _drv.get("ratusz_dur_s")  else None
-            dist_r_km   = _drv.get("ratusz_km") or r.get("drive_ratusz_km") or r.get("dist_km")
-            tram        = _drv.get("tram_name") or r.get("drive_tram_name") or r.get("tram_name") or ""
-            photos = [u for u in (r.get("photo_url") or "").split(",") if u]
-            score = r.get("_score", 0)
-            tram_line = f"🚊 Трамвай: {tram_min} мин ({tram})" if tram_min and tram else (f"🚊 Трамвай: {tram_min} мин" if tram_min else "🚊 Трамвай: нет данных")
-            if ratusz_min:
-                center_str = f"{ratusz_min} мин ({fmt_dist(dist_r_km)})"
+    for r in new_rows:
+        price = f"{int(float(r['price_zl'])):,}".replace(",", " ") + " zł" if r.get("price_zl") else "цена не указана"
+        area = f"{r['area_m2']} м²" if r.get("area_m2") else ""
+        city = r.get("city", "")
+        district = r.get("district", "")
+        location = district if (city == "Poznań" and district) else city
+        loc_key = district if district else city
+        dist_sc = DISTRICT_SCORES.get(loc_key, _DEFAULT_DISTRICT_SCORE)
+        location_str = f"{location} ({dist_sc}/10)"
+        _dk = f"{r.get('lat')},{r.get('lon')}"
+        _drv = _drive_cache.get(_dk, {})
+        tram_min   = round(_drv["tram_dur_s"] / 60)   if _drv.get("tram_dur_s")   else None
+        ratusz_min = round(_drv["ratusz_dur_s"] / 60) if _drv.get("ratusz_dur_s") else None
+        dist_r_km  = _drv.get("ratusz_km") or r.get("drive_ratusz_km") or r.get("dist_km")
+        tram       = _drv.get("tram_name") or r.get("drive_tram_name") or r.get("tram_name") or ""
+        photos = [u for u in (r.get("photo_url") or "").split(",") if u]
+        score = r.get("_score", 0)
+        tram_line = (f"🚊 Трамвай: {tram_min} мин ({tram})" if tram_min and tram
+                     else (f"🚊 Трамвай: {tram_min} мин" if tram_min else "🚊 Трамвай: нет данных"))
+        center_str = f"{ratusz_min} мин ({fmt_dist(dist_r_km)})" if ratusz_min else fmt_dist(dist_r_km)
+        tp_full = "Квартира" if r["type"] == "mieszkanie" else "Дом"
+        caption = (
+            f"<b>{score}/10</b>\n"
+            f"{_escape(r['title'])}\n"
+            f"📍 {location_str}\n"
+            f"<b>{price}</b>  ·  {area}  ·  {tp_full}\n"
+            f"{tram_line}\n"
+            f"🏛 Центр: {center_str}\n"
+            f"<a href=\"{r['url']}\">На Otodom →</a>"
+        )
+        try:
+            if len(photos) >= 2:
+                tg_send_media_group(photos, caption)
+            elif photos:
+                tg_send_photo(photos[0], caption)
             else:
-                center_str = fmt_dist(dist_r_km)
-            tp_full = "Квартира" if r["type"] == "mieszkanie" else "Дом"
-            caption = (
-                f"<b>{score}/10</b>\n"
-                f"{_escape(r['title'])}\n"
-                f"📍 {location_str}\n"
-                f"<b>{price}</b>  ·  {area}  ·  {tp_full}\n"
-                f"{tram_line}\n"
-                f"🏛 Центр: {center_str}\n"
-                f"<a href=\"{r['url']}\">На Otodom →</a>"
-            )
+                tg_send(caption)
+            time.sleep(0.3)
+        except Exception as e:
+            print(f"TG error: {e}")
             try:
-                if len(photos) >= 2:
-                    tg_send_media_group(photos, caption)
-                elif photos:
-                    tg_send_photo(photos[0], caption)
-                else:
-                    tg_send(caption)
-                time.sleep(0.3)
-            except Exception as e:
-                print(f"TG error: {e}")
-                try:
-                    tg_send(caption)
-                except Exception as e2:
-                    print(f"TG fallback error: {e2}")
+                tg_send(caption)
+            except Exception as e2:
+                print(f"TG fallback error: {e2}")
 
-
-    # 6. Обновляем seen
     save_seen(all_ids)
     print("Готово")
     tg_safe(f"✅ <b>Квартиры</b>: готово. Всего {len(rows)}, новых {len(new_rows)}", "finish")
