@@ -19195,7 +19195,100 @@
     "ratusz_dur_s": 1074,
     "rail_name": "Złotniki",
     "rail_km": 8.44,
-    "rail_dur_s": 949
+    "rail_dur_s": 949,
+    "tram_walk_s": 1245,
+    "tram_candidates": [
+      {
+        "name": "Piątkowska",
+        "km": 3.2,
+        "dur_s": 355,
+        "walk_s": 1495
+      },
+      {
+        "name": "Lutycka Szpital",
+        "km": 1.44,
+        "dur_s": 203,
+        "walk_s": 1245
+      },
+      {
+        "name": "Os. Winiary",
+        "km": 2.09,
+        "dur_s": 335,
+        "walk_s": 1581
+      },
+      {
+        "name": "Lechicka Poznań Plaza",
+        "km": 2.02,
+        "dur_s": 302,
+        "walk_s": 1715
+      },
+      {
+        "name": "Św. Leonarda",
+        "km": 2.46,
+        "dur_s": 404,
+        "walk_s": 1879
+      },
+      {
+        "name": "Kurpińskiego",
+        "km": 3.0,
+        "dur_s": 451,
+        "walk_s": 2345
+      },
+      {
+        "name": "Bonin",
+        "km": 4.73,
+        "dur_s": 627,
+        "walk_s": 2138
+      },
+      {
+        "name": "Aleje Solidarności",
+        "km": 2.53,
+        "dur_s": 384,
+        "walk_s": 2043
+      },
+      {
+        "name": "Uniwersytet Przyrodniczy",
+        "km": 3.82,
+        "dur_s": 447,
+        "walk_s": 2547
+      },
+      {
+        "name": "Szymanowskiego",
+        "km": 3.76,
+        "dur_s": 543,
+        "walk_s": 3015
+      },
+      {
+        "name": "Sołacz",
+        "km": 4.02,
+        "dur_s": 465,
+        "walk_s": 2891
+      },
+      {
+        "name": "Słowiańska",
+        "km": 3.58,
+        "dur_s": 569,
+        "walk_s": 3014
+      },
+      {
+        "name": "Os. Sobieskiego",
+        "km": 4.07,
+        "dur_s": 590,
+        "walk_s": 3168
+      },
+      {
+        "name": "Nad Wierzbakiem",
+        "km": 4.34,
+        "dur_s": 528,
+        "walk_s": 3069
+      },
+      {
+        "name": "Żniwna",
+        "km": 5.11,
+        "dur_s": 698,
+        "walk_s": 3368
+      }
+    ]
   },
   "52.35785,16.92442": {
     "tram_name": "Starołęka PKM",
@@ -21265,7 +21358,100 @@
     "ratusz_dur_s": 1002,
     "rail_name": "Poznań Górczyn",
     "rail_km": 3.56,
-    "rail_dur_s": 508
+    "rail_dur_s": 508,
+    "tram_walk_s": 65,
+    "tram_candidates": [
+      {
+        "name": "HCP",
+        "km": 0.08,
+        "dur_s": 17,
+        "walk_s": 65
+      },
+      {
+        "name": "Traugutta",
+        "km": 0.31,
+        "dur_s": 77,
+        "walk_s": 263
+      },
+      {
+        "name": "Rolna",
+        "km": 0.61,
+        "dur_s": 128,
+        "walk_s": 494
+      },
+      {
+        "name": "Pamiątkowa",
+        "km": 0.61,
+        "dur_s": 152,
+        "walk_s": 529
+      },
+      {
+        "name": "Wspólna",
+        "km": 0.65,
+        "dur_s": 88,
+        "walk_s": 524
+      },
+      {
+        "name": "Kosińskiego",
+        "km": 0.89,
+        "dur_s": 205,
+        "walk_s": 758
+      },
+      {
+        "name": "Kolejowa",
+        "km": 1.66,
+        "dur_s": 254,
+        "walk_s": 996
+      },
+      {
+        "name": "Hetmańska Wiadukt",
+        "km": 1.38,
+        "dur_s": 178,
+        "walk_s": 1337
+      },
+      {
+        "name": "Dębiec PKM",
+        "km": 1.22,
+        "dur_s": 161,
+        "walk_s": 999
+      },
+      {
+        "name": "Rynek Wildecki",
+        "km": 1.44,
+        "dur_s": 312,
+        "walk_s": 1206
+      },
+      {
+        "name": "Głogowska/Hetmańska",
+        "km": 2.33,
+        "dur_s": 362,
+        "walk_s": 1566
+      },
+      {
+        "name": "Krauthofera",
+        "km": 2.67,
+        "dur_s": 471,
+        "walk_s": 1766
+      },
+      {
+        "name": "Rynek Łazarski",
+        "km": 2.87,
+        "dur_s": 462,
+        "walk_s": 1950
+      },
+      {
+        "name": "Św. Czesława",
+        "km": 1.83,
+        "dur_s": 377,
+        "walk_s": 1534
+      },
+      {
+        "name": "Sielska",
+        "km": 3.14,
+        "dur_s": 563,
+        "walk_s": 2144
+      }
+    ]
   },
   "52.49162,16.73722": {
     "tram_name": "Ogrody",
@@ -37889,5 +38075,3301 @@
       }
     ],
     "tram_walk_s": 506
+  },
+  "52.40903,16.9041": {
+    "tram_name": "Kraszewskiego",
+    "tram_km": 0.07,
+    "tram_dur_s": 12,
+    "tram_walk_s": 54,
+    "tram_candidates": [
+      {
+        "name": "Kraszewskiego",
+        "km": 0.07,
+        "dur_s": 12,
+        "walk_s": 54
+      },
+      {
+        "name": "Stare Zoo",
+        "km": 1.2,
+        "dur_s": 264,
+        "walk_s": 283
+      },
+      {
+        "name": "Rynek Jeżycki",
+        "km": 0.55,
+        "dur_s": 155,
+        "walk_s": 369
+      },
+      {
+        "name": "Matejki",
+        "km": 2.73,
+        "dur_s": 528,
+        "walk_s": 498
+      },
+      {
+        "name": "Bałtyk",
+        "km": 1.19,
+        "dur_s": 302,
+        "walk_s": 559
+      },
+      {
+        "name": "Rondo Kaponiera",
+        "km": 1.32,
+        "dur_s": 326,
+        "walk_s": 946
+      },
+      {
+        "name": "Most Teatralny",
+        "km": 1.47,
+        "dur_s": 358,
+        "walk_s": 742
+      },
+      {
+        "name": "Most Dworcowy",
+        "km": 1.42,
+        "dur_s": 337,
+        "walk_s": 852
+      },
+      {
+        "name": "Polna",
+        "km": 1.05,
+        "dur_s": 216,
+        "walk_s": 855
+      },
+      {
+        "name": "Dworzec Zachodni",
+        "km": 3.02,
+        "dur_s": 680,
+        "walk_s": 1143
+      },
+      {
+        "name": "Uniwersytet Ekonomiczny",
+        "km": 1.72,
+        "dur_s": 438,
+        "walk_s": 890
+      },
+      {
+        "name": "Poznańska",
+        "km": 2.26,
+        "dur_s": 530,
+        "walk_s": 992
+      },
+      {
+        "name": "Zamek",
+        "km": 1.47,
+        "dur_s": 368,
+        "walk_s": 876
+      },
+      {
+        "name": "Fredry",
+        "km": 1.65,
+        "dur_s": 412,
+        "walk_s": 1027
+      },
+      {
+        "name": "Wojskowa",
+        "km": 1.88,
+        "dur_s": 402,
+        "walk_s": 937
+      }
+    ],
+    "ratusz_km": 4.01,
+    "ratusz_dur_s": 905,
+    "rail_name": "Poznań Główny",
+    "rail_km": 1.71,
+    "rail_dur_s": 380
+  },
+  "52.41717,16.94397": {
+    "tram_name": "Rondo Śródka",
+    "tram_km": 2.63,
+    "tram_dur_s": 400,
+    "tram_walk_s": 1446,
+    "tram_candidates": [
+      {
+        "name": "Małe Garbary",
+        "km": 2.98,
+        "dur_s": 537,
+        "walk_s": 1359
+      },
+      {
+        "name": "Przełajowa",
+        "km": 3.49,
+        "dur_s": 498,
+        "walk_s": 2837
+      },
+      {
+        "name": "Zawady",
+        "km": 3.05,
+        "dur_s": 465,
+        "walk_s": 1600
+      },
+      {
+        "name": "Kmieca",
+        "km": 3.86,
+        "dur_s": 553,
+        "walk_s": 3045
+      },
+      {
+        "name": "Wilczak",
+        "km": 3.73,
+        "dur_s": 548,
+        "walk_s": 3029
+      },
+      {
+        "name": "Pl. Wielkopolski",
+        "km": 3.26,
+        "dur_s": 641,
+        "walk_s": 1824
+      },
+      {
+        "name": "Rondo Śródka",
+        "km": 2.63,
+        "dur_s": 400,
+        "walk_s": 1446
+      },
+      {
+        "name": "Pasieka",
+        "km": 4.32,
+        "dur_s": 640,
+        "walk_s": 3093
+      },
+      {
+        "name": "Żniwna",
+        "km": 3.93,
+        "dur_s": 577,
+        "walk_s": 3097
+      },
+      {
+        "name": "Armii Poznań",
+        "km": 3.51,
+        "dur_s": 512,
+        "walk_s": 2807
+      },
+      {
+        "name": "Pl. Bernardyński",
+        "km": 2.27,
+        "dur_s": 406,
+        "walk_s": 1764
+      },
+      {
+        "name": "Wrocławska",
+        "km": 2.88,
+        "dur_s": 549,
+        "walk_s": 1916
+      },
+      {
+        "name": "Św. Michała",
+        "km": 3.1,
+        "dur_s": 496,
+        "walk_s": 1735
+      },
+      {
+        "name": "Aleje Marcinkowskiego",
+        "km": 2.69,
+        "dur_s": 499,
+        "walk_s": 2083
+      },
+      {
+        "name": "Pl. Wiosny Ludów",
+        "km": 2.79,
+        "dur_s": 516,
+        "walk_s": 2033
+      }
+    ],
+    "ratusz_km": 2.37,
+    "ratusz_dur_s": 467,
+    "rail_name": "Maltanka",
+    "rail_km": 4.0,
+    "rail_dur_s": 575
+  },
+  "52.41133,16.96798": {
+    "tram_name": "Św. Michała",
+    "tram_km": 0.67,
+    "tram_dur_s": 106,
+    "tram_walk_s": 566,
+    "tram_candidates": [
+      {
+        "name": "Termalna",
+        "km": 1.38,
+        "dur_s": 186,
+        "walk_s": 577
+      },
+      {
+        "name": "Św. Michała",
+        "km": 0.67,
+        "dur_s": 106,
+        "walk_s": 566
+      },
+      {
+        "name": "Zawady",
+        "km": 1.38,
+        "dur_s": 208,
+        "walk_s": 1150
+      },
+      {
+        "name": "Rondo Śródka",
+        "km": 1.21,
+        "dur_s": 208,
+        "walk_s": 962
+      },
+      {
+        "name": "Krańcowa",
+        "km": 1.98,
+        "dur_s": 230,
+        "walk_s": 910
+      },
+      {
+        "name": "Łomżyńska",
+        "km": 2.27,
+        "dur_s": 252,
+        "walk_s": 1143
+      },
+      {
+        "name": "Baraniaka",
+        "km": 1.84,
+        "dur_s": 262,
+        "walk_s": 1405
+      },
+      {
+        "name": "Polanka",
+        "km": 3.08,
+        "dur_s": 455,
+        "walk_s": 2410
+      },
+      {
+        "name": "Mogileńska",
+        "km": 3.9,
+        "dur_s": 426,
+        "walk_s": 1551
+      },
+      {
+        "name": "Kórnicka",
+        "km": 3.42,
+        "dur_s": 570,
+        "walk_s": 1888
+      },
+      {
+        "name": "Politechnika",
+        "km": 2.63,
+        "dur_s": 422,
+        "walk_s": 1970
+      },
+      {
+        "name": "Łacina",
+        "km": 6.03,
+        "dur_s": 836,
+        "walk_s": 2699
+      },
+      {
+        "name": "Most Św. Rocha",
+        "km": 3.98,
+        "dur_s": 715,
+        "walk_s": 2297
+      },
+      {
+        "name": "Małe Garbary",
+        "km": 3.8,
+        "dur_s": 663,
+        "walk_s": 2092
+      },
+      {
+        "name": "Rondo Rataje",
+        "km": 2.81,
+        "dur_s": 450,
+        "walk_s": 2260
+      }
+    ],
+    "ratusz_km": 3.19,
+    "ratusz_dur_s": 593,
+    "rail_name": "Poznań Wschód",
+    "rail_km": 1.79,
+    "rail_dur_s": 328
+  },
+  "52.41536,16.89759": {
+    "tram_name": "Polna",
+    "tram_km": 0.83,
+    "tram_dur_s": 230,
+    "tram_walk_s": 100,
+    "tram_candidates": [
+      {
+        "name": "Polna",
+        "km": 0.83,
+        "dur_s": 230,
+        "walk_s": 100
+      },
+      {
+        "name": "Żeromskiego",
+        "km": 0.91,
+        "dur_s": 260,
+        "walk_s": 508
+      },
+      {
+        "name": "Rynek Jeżycki",
+        "km": 1.39,
+        "dur_s": 325,
+        "walk_s": 564
+      },
+      {
+        "name": "Kraszewskiego",
+        "km": 2.43,
+        "dur_s": 543,
+        "walk_s": 942
+      },
+      {
+        "name": "Bukowska",
+        "km": 1.98,
+        "dur_s": 380,
+        "walk_s": 937
+      },
+      {
+        "name": "Sołacz",
+        "km": 2.54,
+        "dur_s": 437,
+        "walk_s": 1614
+      },
+      {
+        "name": "Nad Wierzbakiem",
+        "km": 2.86,
+        "dur_s": 500,
+        "walk_s": 1330
+      },
+      {
+        "name": "Ogrody",
+        "km": 1.56,
+        "dur_s": 375,
+        "walk_s": 1005
+      },
+      {
+        "name": "Stare Zoo",
+        "km": 2.53,
+        "dur_s": 576,
+        "walk_s": 1245
+      },
+      {
+        "name": "Matejki",
+        "km": 3.71,
+        "dur_s": 621,
+        "walk_s": 1249
+      },
+      {
+        "name": "Klin",
+        "km": 3.03,
+        "dur_s": 650,
+        "walk_s": 1506
+      },
+      {
+        "name": "Most Teatralny",
+        "km": 2.79,
+        "dur_s": 669,
+        "walk_s": 1135
+      },
+      {
+        "name": "Poznańska",
+        "km": 3.01,
+        "dur_s": 661,
+        "walk_s": 1201
+      },
+      {
+        "name": "Rondo Kaponiera",
+        "km": 2.64,
+        "dur_s": 638,
+        "walk_s": 1703
+      },
+      {
+        "name": "Bałtyk",
+        "km": 2.52,
+        "dur_s": 614,
+        "walk_s": 1540
+      }
+    ],
+    "ratusz_km": 4.75,
+    "ratusz_dur_s": 1036,
+    "rail_name": "Poznań Główny",
+    "rail_km": 3.04,
+    "rail_dur_s": 691
+  },
+  "52.40911,16.9291": {
+    "tram_name": "Aleje Marcinkowskiego",
+    "tram_km": 0.28,
+    "tram_dur_s": 78,
+    "tram_walk_s": 245,
+    "tram_candidates": [
+      {
+        "name": "Pl. Wielkopolski",
+        "km": 1.02,
+        "dur_s": 266,
+        "walk_s": 210
+      },
+      {
+        "name": "Aleje Marcinkowskiego",
+        "km": 0.28,
+        "dur_s": 78,
+        "walk_s": 245
+      },
+      {
+        "name": "Pl. Ratajskiego",
+        "km": 0.68,
+        "dur_s": 158,
+        "walk_s": 406
+      },
+      {
+        "name": "27 Grudnia - Teatr Polski",
+        "km": 0.36,
+        "dur_s": 79,
+        "walk_s": 411
+      },
+      {
+        "name": "Biblioteka Uniwersytecka",
+        "km": 1.74,
+        "dur_s": 378,
+        "walk_s": 472
+      },
+      {
+        "name": "Święty Marcin",
+        "km": 1.7,
+        "dur_s": 369,
+        "walk_s": 542
+      },
+      {
+        "name": "Wrocławska",
+        "km": 2.29,
+        "dur_s": 547,
+        "walk_s": 422
+      },
+      {
+        "name": "Pl. Wiosny Ludów",
+        "km": 2.63,
+        "dur_s": 572,
+        "walk_s": 447
+      },
+      {
+        "name": "Gwarna",
+        "km": 1.46,
+        "dur_s": 319,
+        "walk_s": 635
+      },
+      {
+        "name": "Małe Garbary",
+        "km": 1.34,
+        "dur_s": 295,
+        "walk_s": 615
+      },
+      {
+        "name": "Fredry",
+        "km": 1.29,
+        "dur_s": 284,
+        "walk_s": 780
+      },
+      {
+        "name": "Zamek",
+        "km": 1.4,
+        "dur_s": 315,
+        "walk_s": 823
+      },
+      {
+        "name": "Pl. Bernardyński",
+        "km": 2.11,
+        "dur_s": 463,
+        "walk_s": 697
+      },
+      {
+        "name": "Łąkowa",
+        "km": 2.72,
+        "dur_s": 615,
+        "walk_s": 776
+      },
+      {
+        "name": "Uniwersytet Ekonomiczny",
+        "km": 1.9,
+        "dur_s": 443,
+        "walk_s": 1016
+      }
+    ],
+    "ratusz_km": 2.2,
+    "ratusz_dur_s": 524,
+    "rail_name": "Poznań Główny",
+    "rail_km": 2.63,
+    "rail_dur_s": 600
+  },
+  "52.4563,16.85897": {
+    "tram_name": "Lutycka Szpital",
+    "tram_km": 5.1,
+    "tram_dur_s": 550,
+    "tram_walk_s": 3944,
+    "tram_candidates": [
+      {
+        "name": "Piątkowska",
+        "km": 6.86,
+        "dur_s": 702,
+        "walk_s": 4195
+      },
+      {
+        "name": "Lutycka Szpital",
+        "km": 5.1,
+        "dur_s": 550,
+        "walk_s": 3944
+      },
+      {
+        "name": "Szymanowskiego",
+        "km": 5.71,
+        "dur_s": 702,
+        "walk_s": 4024
+      },
+      {
+        "name": "Os. Sobieskiego",
+        "km": 5.92,
+        "dur_s": 690,
+        "walk_s": 3812
+      },
+      {
+        "name": "Kurpińskiego",
+        "km": 6.0,
+        "dur_s": 708,
+        "walk_s": 4647
+      },
+      {
+        "name": "Os. Winiary",
+        "km": 5.75,
+        "dur_s": 683,
+        "walk_s": 4281
+      },
+      {
+        "name": "Św. Leonarda",
+        "km": 6.12,
+        "dur_s": 752,
+        "walk_s": 4579
+      },
+      {
+        "name": "Lechicka Poznań Plaza",
+        "km": 5.68,
+        "dur_s": 649,
+        "walk_s": 4415
+      },
+      {
+        "name": "Bonin",
+        "km": 6.74,
+        "dur_s": 930,
+        "walk_s": 4814
+      },
+      {
+        "name": "Uniwersytet Przyrodniczy",
+        "km": 5.83,
+        "dur_s": 750,
+        "walk_s": 4402
+      },
+      {
+        "name": "Ogrody",
+        "km": 7.33,
+        "dur_s": 920,
+        "walk_s": 4792
+      },
+      {
+        "name": "Aleje Solidarności",
+        "km": 6.19,
+        "dur_s": 731,
+        "walk_s": 4743
+      },
+      {
+        "name": "Sołacz",
+        "km": 6.03,
+        "dur_s": 768,
+        "walk_s": 4571
+      },
+      {
+        "name": "Żeromskiego",
+        "km": 6.67,
+        "dur_s": 806,
+        "walk_s": 4931
+      },
+      {
+        "name": "Nad Wierzbakiem",
+        "km": 6.35,
+        "dur_s": 830,
+        "walk_s": 4856
+      }
+    ],
+    "ratusz_km": 10.66,
+    "ratusz_dur_s": 1421,
+    "rail_name": "Złotniki",
+    "rail_km": 6.41,
+    "rail_dur_s": 707
+  },
+  "52.41444,16.89485": {
+    "tram_name": "Polna",
+    "tram_km": 0.5,
+    "tram_dur_s": 117,
+    "tram_walk_s": 157,
+    "tram_candidates": [
+      {
+        "name": "Polna",
+        "km": 0.5,
+        "dur_s": 117,
+        "walk_s": 157
+      },
+      {
+        "name": "Żeromskiego",
+        "km": 1.35,
+        "dur_s": 317,
+        "walk_s": 287
+      },
+      {
+        "name": "Bukowska",
+        "km": 0.98,
+        "dur_s": 223,
+        "walk_s": 716
+      },
+      {
+        "name": "Rynek Jeżycki",
+        "km": 1.06,
+        "dur_s": 212,
+        "walk_s": 636
+      },
+      {
+        "name": "Kraszewskiego",
+        "km": 1.78,
+        "dur_s": 416,
+        "walk_s": 1013
+      },
+      {
+        "name": "Ogrody",
+        "km": 1.75,
+        "dur_s": 354,
+        "walk_s": 784
+      },
+      {
+        "name": "Matejki",
+        "km": 2.71,
+        "dur_s": 464,
+        "walk_s": 1304
+      },
+      {
+        "name": "Sołacz",
+        "km": 3.31,
+        "dur_s": 495,
+        "walk_s": 1425
+      },
+      {
+        "name": "Stare Zoo",
+        "km": 2.19,
+        "dur_s": 463,
+        "walk_s": 1316
+      },
+      {
+        "name": "Nad Wierzbakiem",
+        "km": 3.64,
+        "dur_s": 558,
+        "walk_s": 1401
+      },
+      {
+        "name": "Wojskowa",
+        "km": 2.01,
+        "dur_s": 428,
+        "walk_s": 1251
+      },
+      {
+        "name": "Most Teatralny",
+        "km": 2.46,
+        "dur_s": 556,
+        "walk_s": 1206
+      },
+      {
+        "name": "Rondo Nowaka-Jeziorańskiego",
+        "km": 1.84,
+        "dur_s": 349,
+        "walk_s": 1421
+      },
+      {
+        "name": "Klin",
+        "km": 2.69,
+        "dur_s": 537,
+        "walk_s": 1577
+      },
+      {
+        "name": "Bałtyk",
+        "km": 2.19,
+        "dur_s": 501,
+        "walk_s": 1611
+      }
+    ],
+    "ratusz_km": 4.42,
+    "ratusz_dur_s": 923,
+    "rail_name": "Poznań Główny",
+    "rail_km": 2.7,
+    "rail_dur_s": 578
+  },
+  "52.43456,16.94687": {
+    "tram_name": "Włodarska",
+    "tram_km": 0.19,
+    "tram_dur_s": 37,
+    "tram_walk_s": 158,
+    "tram_candidates": [
+      {
+        "name": "Włodarska",
+        "km": 0.19,
+        "dur_s": 37,
+        "walk_s": 158
+      },
+      {
+        "name": "Serbska",
+        "km": 1.65,
+        "dur_s": 299,
+        "walk_s": 272
+      },
+      {
+        "name": "Lechicka/Naramowicka",
+        "km": 1.14,
+        "dur_s": 167,
+        "walk_s": 538
+      },
+      {
+        "name": "Wilczak",
+        "km": 1.91,
+        "dur_s": 306,
+        "walk_s": 764
+      },
+      {
+        "name": "Przełajowa",
+        "km": 1.67,
+        "dur_s": 256,
+        "walk_s": 957
+      },
+      {
+        "name": "Kmieca",
+        "km": 2.05,
+        "dur_s": 312,
+        "walk_s": 1210
+      },
+      {
+        "name": "Naramowice",
+        "km": 1.73,
+        "dur_s": 322,
+        "walk_s": 1074
+      },
+      {
+        "name": "Pasieka",
+        "km": 2.18,
+        "dur_s": 377,
+        "walk_s": 1641
+      },
+      {
+        "name": "Os. Łokietka",
+        "km": 2.59,
+        "dur_s": 415,
+        "walk_s": 1264
+      },
+      {
+        "name": "Żniwna",
+        "km": 3.88,
+        "dur_s": 490,
+        "walk_s": 1950
+      },
+      {
+        "name": "Aleje Solidarności",
+        "km": 3.2,
+        "dur_s": 465,
+        "walk_s": 1736
+      },
+      {
+        "name": "Jasna Rola",
+        "km": 2.19,
+        "dur_s": 353,
+        "walk_s": 1587
+      },
+      {
+        "name": "Lechicka Poznań Plaza",
+        "km": 3.08,
+        "dur_s": 508,
+        "walk_s": 2118
+      },
+      {
+        "name": "Słowiańska",
+        "km": 4.25,
+        "dur_s": 657,
+        "walk_s": 2156
+      },
+      {
+        "name": "Armii Poznań",
+        "km": 3.46,
+        "dur_s": 426,
+        "walk_s": 2237
+      }
+    ],
+    "ratusz_km": 3.74,
+    "ratusz_dur_s": 636,
+    "rail_name": "Poznań Wschód",
+    "rail_km": 4.04,
+    "rail_dur_s": 570
+  },
+  "52.3987,16.91978": {
+    "tram_name": "Św. Czesława",
+    "tram_km": 0.48,
+    "tram_dur_s": 107,
+    "tram_walk_s": 261,
+    "tram_candidates": [
+      {
+        "name": "Św. Czesława",
+        "km": 0.48,
+        "dur_s": 107,
+        "walk_s": 261
+      },
+      {
+        "name": "Wierzbięcice",
+        "km": 0.67,
+        "dur_s": 170,
+        "walk_s": 340
+      },
+      {
+        "name": "Różana",
+        "km": 0.97,
+        "dur_s": 220,
+        "walk_s": 508
+      },
+      {
+        "name": "Poznań Główny",
+        "km": 1.57,
+        "dur_s": 380,
+        "walk_s": 704
+      },
+      {
+        "name": "Półwiejska",
+        "km": 1.04,
+        "dur_s": 242,
+        "walk_s": 484
+      },
+      {
+        "name": "Rynek Wildecki",
+        "km": 0.85,
+        "dur_s": 177,
+        "walk_s": 573
+      },
+      {
+        "name": "Dworzec Zachodni",
+        "km": 4.01,
+        "dur_s": 590,
+        "walk_s": 1050
+      },
+      {
+        "name": "Most Dworcowy",
+        "km": 1.12,
+        "dur_s": 269,
+        "walk_s": 936
+      },
+      {
+        "name": "Uniwersytet Ekonomiczny",
+        "km": 1.08,
+        "dur_s": 279,
+        "walk_s": 993
+      },
+      {
+        "name": "Święty Marcin",
+        "km": 1.76,
+        "dur_s": 453,
+        "walk_s": 1248
+      },
+      {
+        "name": "Zamek",
+        "km": 1.35,
+        "dur_s": 364,
+        "walk_s": 1171
+      },
+      {
+        "name": "Biblioteka Uniwersytecka",
+        "km": 1.8,
+        "dur_s": 462,
+        "walk_s": 1240
+      },
+      {
+        "name": "Gwarna",
+        "km": 1.52,
+        "dur_s": 404,
+        "walk_s": 1381
+      },
+      {
+        "name": "Kosińskiego",
+        "km": 1.2,
+        "dur_s": 220,
+        "walk_s": 989
+      },
+      {
+        "name": "Łąkowa",
+        "km": 1.85,
+        "dur_s": 489,
+        "walk_s": 974
+      }
+    ],
+    "ratusz_km": 3.68,
+    "ratusz_dur_s": 862,
+    "rail_name": "Poznań Główny",
+    "rail_km": 2.15,
+    "rail_dur_s": 473
+  },
+  "52.4122,16.92186": {
+    "tram_name": "Pl. Ratajskiego",
+    "tram_km": 0.41,
+    "tram_dur_s": 90,
+    "tram_walk_s": 360,
+    "tram_candidates": [
+      {
+        "name": "Pl. Ratajskiego",
+        "km": 0.41,
+        "dur_s": 90,
+        "walk_s": 360
+      },
+      {
+        "name": "Fredry",
+        "km": 0.54,
+        "dur_s": 121,
+        "walk_s": 391
+      },
+      {
+        "name": "Wielkopolska",
+        "km": 0.81,
+        "dur_s": 191,
+        "walk_s": 506
+      },
+      {
+        "name": "Poznańska",
+        "km": 1.16,
+        "dur_s": 253,
+        "walk_s": 540
+      },
+      {
+        "name": "27 Grudnia - Teatr Polski",
+        "km": 1.33,
+        "dur_s": 279,
+        "walk_s": 603
+      },
+      {
+        "name": "Gwarna",
+        "km": 0.7,
+        "dur_s": 150,
+        "walk_s": 522
+      },
+      {
+        "name": "Most Teatralny",
+        "km": 1.36,
+        "dur_s": 330,
+        "walk_s": 748
+      },
+      {
+        "name": "Zamek",
+        "km": 0.65,
+        "dur_s": 146,
+        "walk_s": 556
+      },
+      {
+        "name": "Biblioteka Uniwersytecka",
+        "km": 0.98,
+        "dur_s": 209,
+        "walk_s": 647
+      },
+      {
+        "name": "Święty Marcin",
+        "km": 0.94,
+        "dur_s": 200,
+        "walk_s": 758
+      },
+      {
+        "name": "Pl. Wielkopolski",
+        "km": 1.28,
+        "dur_s": 270,
+        "walk_s": 692
+      },
+      {
+        "name": "Uniwersytet Ekonomiczny",
+        "km": 1.14,
+        "dur_s": 280,
+        "walk_s": 764
+      },
+      {
+        "name": "Aleje Marcinkowskiego",
+        "km": 1.25,
+        "dur_s": 278,
+        "walk_s": 812
+      },
+      {
+        "name": "Rondo Kaponiera",
+        "km": 1.02,
+        "dur_s": 247,
+        "walk_s": 895
+      },
+      {
+        "name": "Klin",
+        "km": 1.33,
+        "dur_s": 269,
+        "walk_s": 847
+      }
+    ],
+    "ratusz_km": 2.46,
+    "ratusz_dur_s": 528,
+    "rail_name": "Poznań Główny",
+    "rail_km": 1.82,
+    "rail_dur_s": 432
+  },
+  "52.41762,16.8909": {
+    "tram_name": "Żeromskiego",
+    "tram_km": 0.41,
+    "tram_dur_s": 100,
+    "tram_walk_s": 232,
+    "tram_candidates": [
+      {
+        "name": "Żeromskiego",
+        "km": 0.41,
+        "dur_s": 100,
+        "walk_s": 232
+      },
+      {
+        "name": "Polna",
+        "km": 0.8,
+        "dur_s": 196,
+        "walk_s": 572
+      },
+      {
+        "name": "Ogrody",
+        "km": 1.07,
+        "dur_s": 214,
+        "walk_s": 617
+      },
+      {
+        "name": "Bukowska",
+        "km": 1.01,
+        "dur_s": 168,
+        "walk_s": 766
+      },
+      {
+        "name": "Sołacz",
+        "km": 4.06,
+        "dur_s": 607,
+        "walk_s": 1380
+      },
+      {
+        "name": "Rynek Jeżycki",
+        "km": 1.36,
+        "dur_s": 291,
+        "walk_s": 1051
+      },
+      {
+        "name": "Nad Wierzbakiem",
+        "km": 3.12,
+        "dur_s": 634,
+        "walk_s": 1625
+      },
+      {
+        "name": "Kraszewskiego",
+        "km": 2.4,
+        "dur_s": 509,
+        "walk_s": 1428
+      },
+      {
+        "name": "Uniwersytet Przyrodniczy",
+        "km": 3.86,
+        "dur_s": 589,
+        "walk_s": 1778
+      },
+      {
+        "name": "Matejki",
+        "km": 2.75,
+        "dur_s": 409,
+        "walk_s": 1719
+      },
+      {
+        "name": "Klin",
+        "km": 3.0,
+        "dur_s": 615,
+        "walk_s": 1865
+      },
+      {
+        "name": "Wojskowa",
+        "km": 2.82,
+        "dur_s": 466,
+        "walk_s": 1626
+      },
+      {
+        "name": "Stare Zoo",
+        "km": 2.5,
+        "dur_s": 542,
+        "walk_s": 1731
+      },
+      {
+        "name": "Rondo Nowaka-Jeziorańskiego",
+        "km": 1.88,
+        "dur_s": 294,
+        "walk_s": 1488
+      },
+      {
+        "name": "Most Teatralny",
+        "km": 3.21,
+        "dur_s": 580,
+        "walk_s": 1621
+      }
+    ],
+    "ratusz_km": 4.72,
+    "ratusz_dur_s": 1002,
+    "rail_name": "Poznań Główny",
+    "rail_km": 3.46,
+    "rail_dur_s": 602
+  },
+  "52.41739,16.89612": {
+    "tram_name": "Polna",
+    "tram_km": 0.54,
+    "tram_dur_s": 147,
+    "tram_walk_s": 470,
+    "tram_candidates": [
+      {
+        "name": "Polna",
+        "km": 0.54,
+        "dur_s": 147,
+        "walk_s": 470
+      },
+      {
+        "name": "Żeromskiego",
+        "km": 0.61,
+        "dur_s": 178,
+        "walk_s": 533
+      },
+      {
+        "name": "Rynek Jeżycki",
+        "km": 1.09,
+        "dur_s": 242,
+        "walk_s": 948
+      },
+      {
+        "name": "Sołacz",
+        "km": 2.24,
+        "dur_s": 354,
+        "walk_s": 1186
+      },
+      {
+        "name": "Ogrody",
+        "km": 1.27,
+        "dur_s": 293,
+        "walk_s": 1048
+      },
+      {
+        "name": "Nad Wierzbakiem",
+        "km": 2.57,
+        "dur_s": 417,
+        "walk_s": 1187
+      },
+      {
+        "name": "Bukowska",
+        "km": 1.68,
+        "dur_s": 297,
+        "walk_s": 999
+      },
+      {
+        "name": "Kraszewskiego",
+        "km": 2.13,
+        "dur_s": 460,
+        "walk_s": 1325
+      },
+      {
+        "name": "Klin",
+        "km": 2.73,
+        "dur_s": 567,
+        "walk_s": 1363
+      },
+      {
+        "name": "Uniwersytet Przyrodniczy",
+        "km": 2.04,
+        "dur_s": 336,
+        "walk_s": 1584
+      },
+      {
+        "name": "Stare Zoo",
+        "km": 2.23,
+        "dur_s": 493,
+        "walk_s": 1629
+      },
+      {
+        "name": "Matejki",
+        "km": 3.41,
+        "dur_s": 538,
+        "walk_s": 1616
+      },
+      {
+        "name": "Poznańska",
+        "km": 2.71,
+        "dur_s": 578,
+        "walk_s": 1474
+      },
+      {
+        "name": "Most Teatralny",
+        "km": 2.5,
+        "dur_s": 587,
+        "walk_s": 1518
+      },
+      {
+        "name": "Wielkopolska",
+        "km": 2.21,
+        "dur_s": 489,
+        "walk_s": 1534
+      }
+    ],
+    "ratusz_km": 4.46,
+    "ratusz_dur_s": 954,
+    "rail_name": "Poznań Główny",
+    "rail_km": 2.74,
+    "rail_dur_s": 609
+  },
+  "52.45157,16.94872": {
+    "tram_name": "Jasna Rola",
+    "tram_km": 0.61,
+    "tram_dur_s": 159,
+    "tram_walk_s": 511,
+    "tram_candidates": [
+      {
+        "name": "Jasna Rola",
+        "km": 0.61,
+        "dur_s": 159,
+        "walk_s": 511
+      },
+      {
+        "name": "Os. Łokietka",
+        "km": 1.01,
+        "dur_s": 220,
+        "walk_s": 838
+      },
+      {
+        "name": "Błażeja",
+        "km": 0.81,
+        "dur_s": 172,
+        "walk_s": 631
+      },
+      {
+        "name": "Naramowice",
+        "km": 1.25,
+        "dur_s": 276,
+        "walk_s": 1053
+      },
+      {
+        "name": "Lechicka/Naramowicka",
+        "km": 1.88,
+        "dur_s": 374,
+        "walk_s": 1445
+      },
+      {
+        "name": "Włodarska",
+        "km": 2.38,
+        "dur_s": 438,
+        "walk_s": 1828
+      },
+      {
+        "name": "Kurpińskiego",
+        "km": 2.97,
+        "dur_s": 505,
+        "walk_s": 2075
+      },
+      {
+        "name": "Serbska",
+        "km": 3.59,
+        "dur_s": 703,
+        "walk_s": 2224
+      },
+      {
+        "name": "Lechicka Poznań Plaza",
+        "km": 4.91,
+        "dur_s": 762,
+        "walk_s": 2644
+      },
+      {
+        "name": "Szymanowskiego",
+        "km": 3.3,
+        "dur_s": 521,
+        "walk_s": 2436
+      },
+      {
+        "name": "Os. Sobieskiego",
+        "km": 3.82,
+        "dur_s": 597,
+        "walk_s": 2649
+      },
+      {
+        "name": "Aleje Solidarności",
+        "km": 5.67,
+        "dur_s": 818,
+        "walk_s": 3271
+      },
+      {
+        "name": "Wilczak",
+        "km": 4.45,
+        "dur_s": 759,
+        "walk_s": 2716
+      },
+      {
+        "name": "Piątkowska",
+        "km": 6.37,
+        "dur_s": 847,
+        "walk_s": 3239
+      },
+      {
+        "name": "Kmieca",
+        "km": 4.05,
+        "dur_s": 781,
+        "walk_s": 3095
+      }
+    ],
+    "ratusz_km": 6.27,
+    "ratusz_dur_s": 1088,
+    "rail_name": "Poznań Wschód",
+    "rail_km": 6.06,
+    "rail_dur_s": 890
+  },
+  "52.35466,17.03017": {
+    "tram_name": "Os. Czecha",
+    "tram_km": 5.75,
+    "tram_dur_s": 494,
+    "tram_walk_s": 5061,
+    "tram_candidates": [
+      {
+        "name": "Franowo",
+        "km": 6.27,
+        "dur_s": 618,
+        "walk_s": 5069
+      },
+      {
+        "name": "Szwajcarska",
+        "km": 6.34,
+        "dur_s": 624,
+        "walk_s": 5113
+      },
+      {
+        "name": "Szwedzka",
+        "km": 6.03,
+        "dur_s": 553,
+        "walk_s": 4513
+      },
+      {
+        "name": "Piaśnicka/Kurlandzka",
+        "km": 6.62,
+        "dur_s": 544,
+        "walk_s": 4804
+      },
+      {
+        "name": "Piaśnicka Rynek",
+        "km": 6.37,
+        "dur_s": 597,
+        "walk_s": 5091
+      },
+      {
+        "name": "Os. Czecha",
+        "km": 5.75,
+        "dur_s": 494,
+        "walk_s": 5061
+      },
+      {
+        "name": "Żegrze III",
+        "km": 5.96,
+        "dur_s": 533,
+        "walk_s": 4754
+      },
+      {
+        "name": "Żegrze II",
+        "km": 6.32,
+        "dur_s": 567,
+        "walk_s": 5001
+      },
+      {
+        "name": "Os. Lecha",
+        "km": 6.28,
+        "dur_s": 583,
+        "walk_s": 5423
+      },
+      {
+        "name": "Żegrze I",
+        "km": 6.7,
+        "dur_s": 596,
+        "walk_s": 5315
+      },
+      {
+        "name": "Rondo Żegrze",
+        "km": 7.17,
+        "dur_s": 678,
+        "walk_s": 5745
+      },
+      {
+        "name": "Tadeuszak",
+        "km": 7.57,
+        "dur_s": 732,
+        "walk_s": 6088
+      },
+      {
+        "name": "Os. Tysiąclecia",
+        "km": 6.69,
+        "dur_s": 612,
+        "walk_s": 5656
+      },
+      {
+        "name": "Unii Lubelskiej",
+        "km": 8.71,
+        "dur_s": 744,
+        "walk_s": 6252
+      },
+      {
+        "name": "Łacina",
+        "km": 6.87,
+        "dur_s": 697,
+        "walk_s": 5930
+      }
+    ],
+    "ratusz_km": 10.48,
+    "ratusz_dur_s": 1261,
+    "rail_name": "Poznań Krzesiny",
+    "rail_km": 6.34,
+    "rail_dur_s": 667
+  },
+  "52.40975,16.89997": {
+    "tram_name": "Polna",
+    "tram_km": 0.76,
+    "tram_dur_s": 179,
+    "tram_walk_s": 607,
+    "tram_candidates": [
+      {
+        "name": "Kraszewskiego",
+        "km": 1.22,
+        "dur_s": 281,
+        "walk_s": 240
+      },
+      {
+        "name": "Rynek Jeżycki",
+        "km": 0.76,
+        "dur_s": 187,
+        "walk_s": 440
+      },
+      {
+        "name": "Matejki",
+        "km": 2.39,
+        "dur_s": 456,
+        "walk_s": 568
+      },
+      {
+        "name": "Polna",
+        "km": 0.76,
+        "dur_s": 179,
+        "walk_s": 607
+      },
+      {
+        "name": "Stare Zoo",
+        "km": 1.65,
+        "dur_s": 381,
+        "walk_s": 560
+      },
+      {
+        "name": "Bukowska",
+        "km": 0.94,
+        "dur_s": 224,
+        "walk_s": 689
+      },
+      {
+        "name": "Bałtyk",
+        "km": 1.96,
+        "dur_s": 406,
+        "walk_s": 855
+      },
+      {
+        "name": "Wojskowa",
+        "km": 1.55,
+        "dur_s": 331,
+        "walk_s": 947
+      },
+      {
+        "name": "Rondo Kaponiera",
+        "km": 2.08,
+        "dur_s": 422,
+        "walk_s": 1223
+      },
+      {
+        "name": "Żeromskiego",
+        "km": 1.22,
+        "dur_s": 281,
+        "walk_s": 1014
+      },
+      {
+        "name": "Most Teatralny",
+        "km": 2.23,
+        "dur_s": 453,
+        "walk_s": 963
+      },
+      {
+        "name": "Most Dworcowy",
+        "km": 2.19,
+        "dur_s": 440,
+        "walk_s": 1138
+      },
+      {
+        "name": "Rondo Nowaka-Jeziorańskiego",
+        "km": 1.53,
+        "dur_s": 341,
+        "walk_s": 1140
+      },
+      {
+        "name": "Dworzec Zachodni",
+        "km": 2.69,
+        "dur_s": 609,
+        "walk_s": 1429
+      },
+      {
+        "name": "Poznańska",
+        "km": 2.37,
+        "dur_s": 523,
+        "walk_s": 1146
+      }
+    ],
+    "ratusz_km": 4.12,
+    "ratusz_dur_s": 898,
+    "rail_name": "Poznań Główny",
+    "rail_km": 2.48,
+    "rail_dur_s": 475
+  },
+  "52.40546,16.92233": {
+    "tram_name": "Poznań Główny",
+    "tram_km": 0.84,
+    "tram_dur_s": 215,
+    "tram_walk_s": 531,
+    "tram_candidates": [
+      {
+        "name": "Święty Marcin",
+        "km": 1.43,
+        "dur_s": 349,
+        "walk_s": 188
+      },
+      {
+        "name": "Biblioteka Uniwersytecka",
+        "km": 1.47,
+        "dur_s": 357,
+        "walk_s": 280
+      },
+      {
+        "name": "Gwarna",
+        "km": 1.19,
+        "dur_s": 299,
+        "walk_s": 353
+      },
+      {
+        "name": "27 Grudnia - Teatr Polski",
+        "km": 1.6,
+        "dur_s": 398,
+        "walk_s": 364
+      },
+      {
+        "name": "Zamek",
+        "km": 1.02,
+        "dur_s": 260,
+        "walk_s": 313
+      },
+      {
+        "name": "Uniwersytet Ekonomiczny",
+        "km": 1.11,
+        "dur_s": 275,
+        "walk_s": 349
+      },
+      {
+        "name": "Wierzbięcice",
+        "km": 2.25,
+        "dur_s": 537,
+        "walk_s": 948
+      },
+      {
+        "name": "Aleje Marcinkowskiego",
+        "km": 1.15,
+        "dur_s": 289,
+        "walk_s": 477
+      },
+      {
+        "name": "Pl. Ratajskiego",
+        "km": 1.96,
+        "dur_s": 471,
+        "walk_s": 573
+      },
+      {
+        "name": "Poznań Główny",
+        "km": 0.84,
+        "dur_s": 215,
+        "walk_s": 531
+      },
+      {
+        "name": "Fredry",
+        "km": 1.21,
+        "dur_s": 303,
+        "walk_s": 530
+      },
+      {
+        "name": "Pl. Wiosny Ludów",
+        "km": 1.73,
+        "dur_s": 401,
+        "walk_s": 530
+      },
+      {
+        "name": "Wrocławska",
+        "km": 1.37,
+        "dur_s": 376,
+        "walk_s": 613
+      },
+      {
+        "name": "Rondo Kaponiera",
+        "km": 1.3,
+        "dur_s": 327,
+        "walk_s": 673
+      },
+      {
+        "name": "Półwiejska",
+        "km": 1.01,
+        "dur_s": 272,
+        "walk_s": 762
+      }
+    ],
+    "ratusz_km": 3.76,
+    "ratusz_dur_s": 828,
+    "rail_name": "Poznań Główny",
+    "rail_km": 2.1,
+    "rail_dur_s": 512
+  },
+  "52.39343,17.01702": {
+    "tram_name": "Franowo",
+    "tram_km": 2.58,
+    "tram_dur_s": 281,
+    "tram_walk_s": 2025,
+    "tram_candidates": [
+      {
+        "name": "Franowo",
+        "km": 2.58,
+        "dur_s": 281,
+        "walk_s": 2025
+      },
+      {
+        "name": "Szwajcarska",
+        "km": 2.65,
+        "dur_s": 287,
+        "walk_s": 2078
+      },
+      {
+        "name": "Miłostowo",
+        "km": 4.18,
+        "dur_s": 456,
+        "walk_s": 2267
+      },
+      {
+        "name": "Szwedzka",
+        "km": 3.6,
+        "dur_s": 441,
+        "walk_s": 2530
+      },
+      {
+        "name": "Piaśnicka/Kurlandzka",
+        "km": 3.14,
+        "dur_s": 373,
+        "walk_s": 2283
+      },
+      {
+        "name": "Piaśnicka Rynek",
+        "km": 3.59,
+        "dur_s": 424,
+        "walk_s": 2428
+      },
+      {
+        "name": "Mogileńska",
+        "km": 3.36,
+        "dur_s": 388,
+        "walk_s": 2694
+      },
+      {
+        "name": "Os. Lecha",
+        "km": 3.48,
+        "dur_s": 436,
+        "walk_s": 2628
+      },
+      {
+        "name": "Łomżyńska",
+        "km": 5.68,
+        "dur_s": 530,
+        "walk_s": 2966
+      },
+      {
+        "name": "Os. Czecha",
+        "km": 3.69,
+        "dur_s": 461,
+        "walk_s": 2886
+      },
+      {
+        "name": "Krańcowa",
+        "km": 5.4,
+        "dur_s": 509,
+        "walk_s": 2972
+      },
+      {
+        "name": "Os. Tysiąclecia",
+        "km": 3.93,
+        "dur_s": 485,
+        "walk_s": 2846
+      },
+      {
+        "name": "Żegrze III",
+        "km": 4.24,
+        "dur_s": 552,
+        "walk_s": 3361
+      },
+      {
+        "name": "Łacina",
+        "km": 5.12,
+        "dur_s": 708,
+        "walk_s": 3223
+      },
+      {
+        "name": "Termalna",
+        "km": 6.37,
+        "dur_s": 646,
+        "walk_s": 3377
+      }
+    ],
+    "ratusz_km": 7.55,
+    "ratusz_dur_s": 997,
+    "rail_name": "Maltanka",
+    "rail_km": 5.22,
+    "rail_dur_s": 552
+  },
+  "52.45741,16.78133": {
+    "tram_name": "Ogrody",
+    "tram_km": 10.7,
+    "tram_dur_s": 818,
+    "tram_walk_s": 7788,
+    "tram_candidates": [
+      {
+        "name": "Ogrody",
+        "km": 10.7,
+        "dur_s": 818,
+        "walk_s": 7788
+      },
+      {
+        "name": "Żeromskiego",
+        "km": 11.92,
+        "dur_s": 848,
+        "walk_s": 8213
+      },
+      {
+        "name": "Bułgarska Enea Stadion",
+        "km": 12.59,
+        "dur_s": 1333,
+        "walk_s": 9236
+      },
+      {
+        "name": "Drzewieckiego",
+        "km": 13.22,
+        "dur_s": 1124,
+        "walk_s": 9490
+      },
+      {
+        "name": "Węgorka",
+        "km": 12.08,
+        "dur_s": 1264,
+        "walk_s": 9231
+      },
+      {
+        "name": "Budziszyńska",
+        "km": 11.65,
+        "dur_s": 1235,
+        "walk_s": 9055
+      },
+      {
+        "name": "Cmentarna",
+        "km": 10.74,
+        "dur_s": 1138,
+        "walk_s": 8716
+      },
+      {
+        "name": "Lutycka Szpital",
+        "km": 12.71,
+        "dur_s": 976,
+        "walk_s": 9372
+      },
+      {
+        "name": "Grotkowska",
+        "km": 10.95,
+        "dur_s": 1131,
+        "walk_s": 8836
+      },
+      {
+        "name": "Rondo Skubiszewskiego",
+        "km": 11.84,
+        "dur_s": 1255,
+        "walk_s": 9082
+      },
+      {
+        "name": "Piątkowska",
+        "km": 14.18,
+        "dur_s": 937,
+        "walk_s": 9633
+      },
+      {
+        "name": "Junikowo",
+        "km": 11.08,
+        "dur_s": 1174,
+        "walk_s": 8451
+      },
+      {
+        "name": "Bukowska",
+        "km": 12.52,
+        "dur_s": 917,
+        "walk_s": 8723
+      },
+      {
+        "name": "Sołacz",
+        "km": 13.14,
+        "dur_s": 981,
+        "walk_s": 9169
+      },
+      {
+        "name": "Uniwersytet Przyrodniczy",
+        "km": 12.94,
+        "dur_s": 963,
+        "walk_s": 9263
+      }
+    ],
+    "ratusz_km": 15.99,
+    "ratusz_dur_s": 1684,
+    "rail_name": "Kiekrz",
+    "rail_km": 6.33,
+    "rail_dur_s": 625
+  },
+  "52.40205,16.93846": {
+    "tram_name": "Most Św. Rocha",
+    "tram_km": 0.29,
+    "tram_dur_s": 80,
+    "tram_walk_s": 276,
+    "tram_candidates": [
+      {
+        "name": "Most Św. Rocha",
+        "km": 0.29,
+        "dur_s": 80,
+        "walk_s": 276
+      },
+      {
+        "name": "Pl. Bernardyński",
+        "km": 0.83,
+        "dur_s": 201,
+        "walk_s": 326
+      },
+      {
+        "name": "Łąkowa",
+        "km": 0.59,
+        "dur_s": 162,
+        "walk_s": 425
+      },
+      {
+        "name": "AWF",
+        "km": 0.55,
+        "dur_s": 152,
+        "walk_s": 396
+      },
+      {
+        "name": "Pl. Wiosny Ludów",
+        "km": 1.0,
+        "dur_s": 255,
+        "walk_s": 599
+      },
+      {
+        "name": "Wrocławska",
+        "km": 1.09,
+        "dur_s": 288,
+        "walk_s": 592
+      },
+      {
+        "name": "Politechnika",
+        "km": 0.79,
+        "dur_s": 152,
+        "walk_s": 657
+      },
+      {
+        "name": "Serafitek",
+        "km": 2.38,
+        "dur_s": 527,
+        "walk_s": 921
+      },
+      {
+        "name": "Półwiejska",
+        "km": 1.67,
+        "dur_s": 344,
+        "walk_s": 811
+      },
+      {
+        "name": "Aleje Marcinkowskiego",
+        "km": 1.59,
+        "dur_s": 403,
+        "walk_s": 863
+      },
+      {
+        "name": "Małe Garbary",
+        "km": 2.36,
+        "dur_s": 564,
+        "walk_s": 918
+      },
+      {
+        "name": "Kórnicka",
+        "km": 2.11,
+        "dur_s": 435,
+        "walk_s": 994
+      },
+      {
+        "name": "Biblioteka Uniwersytecka",
+        "km": 3.0,
+        "dur_s": 657,
+        "walk_s": 1095
+      },
+      {
+        "name": "Rondo Rataje",
+        "km": 1.49,
+        "dur_s": 315,
+        "walk_s": 1172
+      },
+      {
+        "name": "Pl. Wielkopolski",
+        "km": 2.04,
+        "dur_s": 535,
+        "walk_s": 1100
+      }
+    ],
+    "ratusz_km": 1.74,
+    "ratusz_dur_s": 447,
+    "rail_name": "Maltanka",
+    "rail_km": 2.04,
+    "rail_dur_s": 385
+  },
+  "52.41114,16.92382": {
+    "tram_name": "Pl. Ratajskiego",
+    "tram_km": 0.24,
+    "tram_dur_s": 61,
+    "tram_walk_s": 214,
+    "tram_candidates": [
+      {
+        "name": "Pl. Ratajskiego",
+        "km": 0.24,
+        "dur_s": 61,
+        "walk_s": 214
+      },
+      {
+        "name": "27 Grudnia - Teatr Polski",
+        "km": 1.15,
+        "dur_s": 250,
+        "walk_s": 425
+      },
+      {
+        "name": "Fredry",
+        "km": 0.66,
+        "dur_s": 146,
+        "walk_s": 486
+      },
+      {
+        "name": "Gwarna",
+        "km": 0.83,
+        "dur_s": 181,
+        "walk_s": 452
+      },
+      {
+        "name": "Biblioteka Uniwersytecka",
+        "km": 1.1,
+        "dur_s": 239,
+        "walk_s": 501
+      },
+      {
+        "name": "Pl. Wielkopolski",
+        "km": 1.05,
+        "dur_s": 246,
+        "walk_s": 512
+      },
+      {
+        "name": "Święty Marcin",
+        "km": 1.07,
+        "dur_s": 231,
+        "walk_s": 571
+      },
+      {
+        "name": "Zamek",
+        "km": 0.77,
+        "dur_s": 177,
+        "walk_s": 650
+      },
+      {
+        "name": "Aleje Marcinkowskiego",
+        "km": 1.08,
+        "dur_s": 249,
+        "walk_s": 665
+      },
+      {
+        "name": "Wielkopolska",
+        "km": 0.94,
+        "dur_s": 216,
+        "walk_s": 682
+      },
+      {
+        "name": "Poznańska",
+        "km": 1.28,
+        "dur_s": 278,
+        "walk_s": 645
+      },
+      {
+        "name": "Most Teatralny",
+        "km": 1.54,
+        "dur_s": 360,
+        "walk_s": 852
+      },
+      {
+        "name": "Uniwersytet Ekonomiczny",
+        "km": 1.27,
+        "dur_s": 305,
+        "walk_s": 858
+      },
+      {
+        "name": "Rondo Kaponiera",
+        "km": 1.2,
+        "dur_s": 277,
+        "walk_s": 990
+      },
+      {
+        "name": "Wrocławska",
+        "km": 1.66,
+        "dur_s": 408,
+        "walk_s": 854
+      }
+    ],
+    "ratusz_km": 2.23,
+    "ratusz_dur_s": 503,
+    "rail_name": "Poznań Główny",
+    "rail_km": 2.01,
+    "rail_dur_s": 462
+  },
+  "52.39979,16.93024": {
+    "tram_name": "Półwiejska",
+    "tram_km": 0.76,
+    "tram_dur_s": 142,
+    "tram_walk_s": 171,
+    "tram_candidates": [
+      {
+        "name": "Półwiejska",
+        "km": 0.76,
+        "dur_s": 142,
+        "walk_s": 171
+      },
+      {
+        "name": "AWF",
+        "km": 0.98,
+        "dur_s": 262,
+        "walk_s": 286
+      },
+      {
+        "name": "Łąkowa",
+        "km": 0.93,
+        "dur_s": 236,
+        "walk_s": 366
+      },
+      {
+        "name": "Różana",
+        "km": 1.1,
+        "dur_s": 217,
+        "walk_s": 538
+      },
+      {
+        "name": "Pl. Wiosny Ludów",
+        "km": 1.14,
+        "dur_s": 243,
+        "walk_s": 650
+      },
+      {
+        "name": "Wrocławska",
+        "km": 1.22,
+        "dur_s": 276,
+        "walk_s": 715
+      },
+      {
+        "name": "Wierzbięcice",
+        "km": 1.84,
+        "dur_s": 376,
+        "walk_s": 687
+      },
+      {
+        "name": "Św. Czesława",
+        "km": 1.36,
+        "dur_s": 268,
+        "walk_s": 736
+      },
+      {
+        "name": "Pl. Bernardyński",
+        "km": 1.84,
+        "dur_s": 423,
+        "walk_s": 714
+      },
+      {
+        "name": "Aleje Marcinkowskiego",
+        "km": 1.73,
+        "dur_s": 392,
+        "walk_s": 898
+      },
+      {
+        "name": "Biblioteka Uniwersytecka",
+        "km": 2.09,
+        "dur_s": 455,
+        "walk_s": 928
+      },
+      {
+        "name": "Święty Marcin",
+        "km": 2.05,
+        "dur_s": 446,
+        "walk_s": 936
+      },
+      {
+        "name": "Most Św. Rocha",
+        "km": 1.3,
+        "dur_s": 302,
+        "walk_s": 827
+      },
+      {
+        "name": "Rynek Wildecki",
+        "km": 1.55,
+        "dur_s": 310,
+        "walk_s": 925
+      },
+      {
+        "name": "27 Grudnia - Teatr Polski",
+        "km": 1.89,
+        "dur_s": 446,
+        "walk_s": 1097
+      }
+    ],
+    "ratusz_km": 2.75,
+    "ratusz_dur_s": 668,
+    "rail_name": "Poznań Główny",
+    "rail_km": 2.45,
+    "rail_dur_s": 466
+  },
+  "52.41416,16.94079": {
+    "tram_name": "Pl. Bernardyński",
+    "tram_km": 1.24,
+    "tram_dur_s": 309,
+    "tram_walk_s": 1071,
+    "tram_candidates": [
+      {
+        "name": "Małe Garbary",
+        "km": 1.95,
+        "dur_s": 439,
+        "walk_s": 510
+      },
+      {
+        "name": "Pl. Wielkopolski",
+        "km": 2.23,
+        "dur_s": 543,
+        "walk_s": 955
+      },
+      {
+        "name": "Wrocławska",
+        "km": 1.85,
+        "dur_s": 451,
+        "walk_s": 1194
+      },
+      {
+        "name": "Pl. Bernardyński",
+        "km": 1.24,
+        "dur_s": 309,
+        "walk_s": 1071
+      },
+      {
+        "name": "Aleje Marcinkowskiego",
+        "km": 1.66,
+        "dur_s": 402,
+        "walk_s": 1293
+      },
+      {
+        "name": "Zawady",
+        "km": 2.27,
+        "dur_s": 427,
+        "walk_s": 1598
+      },
+      {
+        "name": "Pl. Wiosny Ludów",
+        "km": 1.77,
+        "dur_s": 418,
+        "walk_s": 1256
+      },
+      {
+        "name": "Rondo Śródka",
+        "km": 1.86,
+        "dur_s": 362,
+        "walk_s": 1327
+      },
+      {
+        "name": "Pl. Ratajskiego",
+        "km": 1.72,
+        "dur_s": 383,
+        "walk_s": 1314
+      },
+      {
+        "name": "Przełajowa",
+        "km": 2.37,
+        "dur_s": 381,
+        "walk_s": 1609
+      },
+      {
+        "name": "Most Św. Rocha",
+        "km": 2.12,
+        "dur_s": 492,
+        "walk_s": 1266
+      },
+      {
+        "name": "27 Grudnia - Teatr Polski",
+        "km": 1.74,
+        "dur_s": 403,
+        "walk_s": 1466
+      },
+      {
+        "name": "Biblioteka Uniwersytecka",
+        "km": 2.78,
+        "dur_s": 602,
+        "walk_s": 1559
+      },
+      {
+        "name": "Kmieca",
+        "km": 2.75,
+        "dur_s": 436,
+        "walk_s": 1817
+      },
+      {
+        "name": "Święty Marcin",
+        "km": 2.74,
+        "dur_s": 594,
+        "walk_s": 1608
+      }
+    ],
+    "ratusz_km": 1.34,
+    "ratusz_dur_s": 370,
+    "rail_name": "Maltanka",
+    "rail_km": 3.22,
+    "rail_dur_s": 537
+  },
+  "52.41517,16.89481": {
+    "tram_name": "Polna",
+    "tram_km": 0.26,
+    "tram_dur_s": 71,
+    "tram_walk_s": 220,
+    "tram_candidates": [
+      {
+        "name": "Polna",
+        "km": 0.26,
+        "dur_s": 71,
+        "walk_s": 220
+      },
+      {
+        "name": "Żeromskiego",
+        "km": 0.34,
+        "dur_s": 102,
+        "walk_s": 300
+      },
+      {
+        "name": "Bukowska",
+        "km": 1.35,
+        "dur_s": 271,
+        "walk_s": 730
+      },
+      {
+        "name": "Rynek Jeżycki",
+        "km": 0.82,
+        "dur_s": 166,
+        "walk_s": 698
+      },
+      {
+        "name": "Ogrody",
+        "km": 0.99,
+        "dur_s": 217,
+        "walk_s": 798
+      },
+      {
+        "name": "Kraszewskiego",
+        "km": 1.86,
+        "dur_s": 384,
+        "walk_s": 1076
+      },
+      {
+        "name": "Sołacz",
+        "km": 2.55,
+        "dur_s": 362,
+        "walk_s": 1376
+      },
+      {
+        "name": "Nad Wierzbakiem",
+        "km": 2.87,
+        "dur_s": 425,
+        "walk_s": 1378
+      },
+      {
+        "name": "Matejki",
+        "km": 3.08,
+        "dur_s": 512,
+        "walk_s": 1366
+      },
+      {
+        "name": "Stare Zoo",
+        "km": 1.96,
+        "dur_s": 417,
+        "walk_s": 1379
+      },
+      {
+        "name": "Wojskowa",
+        "km": 2.11,
+        "dur_s": 420,
+        "walk_s": 1314
+      },
+      {
+        "name": "Klin",
+        "km": 2.46,
+        "dur_s": 491,
+        "walk_s": 1554
+      },
+      {
+        "name": "Most Teatralny",
+        "km": 2.22,
+        "dur_s": 511,
+        "walk_s": 1269
+      },
+      {
+        "name": "Poznańska",
+        "km": 2.44,
+        "dur_s": 502,
+        "walk_s": 1335
+      },
+      {
+        "name": "Rondo Nowaka-Jeziorańskiego",
+        "km": 2.21,
+        "dur_s": 397,
+        "walk_s": 1435
+      }
+    ],
+    "ratusz_km": 4.18,
+    "ratusz_dur_s": 878,
+    "rail_name": "Poznań Główny",
+    "rail_km": 2.46,
+    "rail_dur_s": 533
+  },
+  "52.41125,16.92399": {
+    "tram_name": "Pl. Ratajskiego",
+    "tram_km": 0.25,
+    "tram_dur_s": 65,
+    "tram_walk_s": 228,
+    "tram_candidates": [
+      {
+        "name": "Pl. Ratajskiego",
+        "km": 0.25,
+        "dur_s": 65,
+        "walk_s": 228
+      },
+      {
+        "name": "27 Grudnia - Teatr Polski",
+        "km": 1.17,
+        "dur_s": 255,
+        "walk_s": 439
+      },
+      {
+        "name": "Fredry",
+        "km": 0.68,
+        "dur_s": 151,
+        "walk_s": 500
+      },
+      {
+        "name": "Gwarna",
+        "km": 0.85,
+        "dur_s": 185,
+        "walk_s": 466
+      },
+      {
+        "name": "Pl. Wielkopolski",
+        "km": 1.07,
+        "dur_s": 250,
+        "walk_s": 499
+      },
+      {
+        "name": "Biblioteka Uniwersytecka",
+        "km": 1.12,
+        "dur_s": 244,
+        "walk_s": 515
+      },
+      {
+        "name": "Święty Marcin",
+        "km": 1.09,
+        "dur_s": 235,
+        "walk_s": 585
+      },
+      {
+        "name": "Zamek",
+        "km": 0.79,
+        "dur_s": 181,
+        "walk_s": 664
+      },
+      {
+        "name": "Aleje Marcinkowskiego",
+        "km": 1.09,
+        "dur_s": 254,
+        "walk_s": 733
+      },
+      {
+        "name": "Wielkopolska",
+        "km": 0.95,
+        "dur_s": 220,
+        "walk_s": 670
+      },
+      {
+        "name": "Poznańska",
+        "km": 1.3,
+        "dur_s": 282,
+        "walk_s": 659
+      },
+      {
+        "name": "Most Teatralny",
+        "km": 1.56,
+        "dur_s": 364,
+        "walk_s": 867
+      },
+      {
+        "name": "Uniwersytet Ekonomiczny",
+        "km": 1.28,
+        "dur_s": 309,
+        "walk_s": 873
+      },
+      {
+        "name": "Rondo Kaponiera",
+        "km": 1.22,
+        "dur_s": 281,
+        "walk_s": 1004
+      },
+      {
+        "name": "Wrocławska",
+        "km": 1.67,
+        "dur_s": 413,
+        "walk_s": 922
+      }
+    ],
+    "ratusz_km": 2.25,
+    "ratusz_dur_s": 507,
+    "rail_name": "Poznań Główny",
+    "rail_km": 2.02,
+    "rail_dur_s": 466
+  },
+  "52.41698,16.92027": {
+    "tram_name": "Wielkopolska",
+    "tram_km": 0.21,
+    "tram_dur_s": 49,
+    "tram_walk_s": 195,
+    "tram_candidates": [
+      {
+        "name": "Wielkopolska",
+        "km": 0.21,
+        "dur_s": 49,
+        "walk_s": 195
+      },
+      {
+        "name": "Klin",
+        "km": 0.62,
+        "dur_s": 98,
+        "walk_s": 500
+      },
+      {
+        "name": "Poznańska",
+        "km": 0.49,
+        "dur_s": 92,
+        "walk_s": 433
+      },
+      {
+        "name": "Armii Poznań",
+        "km": 0.55,
+        "dur_s": 106,
+        "walk_s": 497
+      },
+      {
+        "name": "Most Teatralny",
+        "km": 1.68,
+        "dur_s": 393,
+        "walk_s": 753
+      },
+      {
+        "name": "Fredry",
+        "km": 0.99,
+        "dur_s": 229,
+        "walk_s": 882
+      },
+      {
+        "name": "Pl. Ratajskiego",
+        "km": 1.14,
+        "dur_s": 272,
+        "walk_s": 953
+      },
+      {
+        "name": "Żniwna",
+        "km": 0.97,
+        "dur_s": 170,
+        "walk_s": 884
+      },
+      {
+        "name": "Nad Wierzbakiem",
+        "km": 1.88,
+        "dur_s": 325,
+        "walk_s": 934
+      },
+      {
+        "name": "27 Grudnia - Teatr Polski",
+        "km": 1.73,
+        "dur_s": 372,
+        "walk_s": 1196
+      },
+      {
+        "name": "Gwarna",
+        "km": 1.43,
+        "dur_s": 333,
+        "walk_s": 1115
+      },
+      {
+        "name": "Pl. Wielkopolski",
+        "km": 1.31,
+        "dur_s": 273,
+        "walk_s": 1125
+      },
+      {
+        "name": "Zamek",
+        "km": 1.34,
+        "dur_s": 327,
+        "walk_s": 1082
+      },
+      {
+        "name": "Rondo Kaponiera",
+        "km": 1.53,
+        "dur_s": 360,
+        "walk_s": 1211
+      },
+      {
+        "name": "Słowiańska",
+        "km": 2.35,
+        "dur_s": 375,
+        "walk_s": 1113
+      }
+    ],
+    "ratusz_km": 2.49,
+    "ratusz_dur_s": 530,
+    "rail_name": "Poznań Główny",
+    "rail_km": 1.92,
+    "rail_dur_s": 415
+  },
+  "52.40595,16.9311": {
+    "tram_name": "Aleje Marcinkowskiego",
+    "tram_km": 0.56,
+    "tram_dur_s": 157,
+    "tram_walk_s": 195,
+    "tram_candidates": [
+      {
+        "name": "Wrocławska",
+        "km": 2.61,
+        "dur_s": 574,
+        "walk_s": 66
+      },
+      {
+        "name": "Pl. Wiosny Ludów",
+        "km": 2.53,
+        "dur_s": 541,
+        "walk_s": 91
+      },
+      {
+        "name": "Aleje Marcinkowskiego",
+        "km": 0.56,
+        "dur_s": 157,
+        "walk_s": 195
+      },
+      {
+        "name": "Biblioteka Uniwersytecka",
+        "km": 2.1,
+        "dur_s": 448,
+        "walk_s": 425
+      },
+      {
+        "name": "Pl. Bernardyński",
+        "km": 2.0,
+        "dur_s": 431,
+        "walk_s": 341
+      },
+      {
+        "name": "Święty Marcin",
+        "km": 2.07,
+        "dur_s": 439,
+        "walk_s": 435
+      },
+      {
+        "name": "Pl. Wielkopolski",
+        "km": 0.92,
+        "dur_s": 235,
+        "walk_s": 556
+      },
+      {
+        "name": "Łąkowa",
+        "km": 2.62,
+        "dur_s": 584,
+        "walk_s": 420
+      },
+      {
+        "name": "27 Grudnia - Teatr Polski",
+        "km": 0.63,
+        "dur_s": 158,
+        "walk_s": 532
+      },
+      {
+        "name": "Pl. Ratajskiego",
+        "km": 1.04,
+        "dur_s": 228,
+        "walk_s": 649
+      },
+      {
+        "name": "Małe Garbary",
+        "km": 1.24,
+        "dur_s": 264,
+        "walk_s": 696
+      },
+      {
+        "name": "Gwarna",
+        "km": 1.83,
+        "dur_s": 389,
+        "walk_s": 692
+      },
+      {
+        "name": "Półwiejska",
+        "km": 2.73,
+        "dur_s": 615,
+        "walk_s": 627
+      },
+      {
+        "name": "AWF",
+        "km": 2.59,
+        "dur_s": 573,
+        "walk_s": 689
+      },
+      {
+        "name": "Wierzbięcice",
+        "km": 3.5,
+        "dur_s": 765,
+        "walk_s": 1110
+      }
+    ],
+    "ratusz_km": 2.1,
+    "ratusz_dur_s": 492,
+    "rail_name": "Maltanka",
+    "rail_km": 4.0,
+    "rail_dur_s": 647
+  },
+  "52.41161,16.92493": {
+    "tram_name": "Pl. Ratajskiego",
+    "tram_km": 0.33,
+    "tram_dur_s": 84,
+    "tram_walk_s": 291,
+    "tram_candidates": [
+      {
+        "name": "Pl. Ratajskiego",
+        "km": 0.33,
+        "dur_s": 84,
+        "walk_s": 291
+      },
+      {
+        "name": "27 Grudnia - Teatr Polski",
+        "km": 1.24,
+        "dur_s": 274,
+        "walk_s": 502
+      },
+      {
+        "name": "Pl. Wielkopolski",
+        "km": 1.14,
+        "dur_s": 269,
+        "walk_s": 443
+      },
+      {
+        "name": "Fredry",
+        "km": 0.76,
+        "dur_s": 170,
+        "walk_s": 562
+      },
+      {
+        "name": "Gwarna",
+        "km": 0.92,
+        "dur_s": 204,
+        "walk_s": 529
+      },
+      {
+        "name": "Biblioteka Uniwersytecka",
+        "km": 1.2,
+        "dur_s": 263,
+        "walk_s": 578
+      },
+      {
+        "name": "Święty Marcin",
+        "km": 1.16,
+        "dur_s": 254,
+        "walk_s": 648
+      },
+      {
+        "name": "Aleje Marcinkowskiego",
+        "km": 1.17,
+        "dur_s": 273,
+        "walk_s": 676
+      },
+      {
+        "name": "Wielkopolska",
+        "km": 1.03,
+        "dur_s": 239,
+        "walk_s": 613
+      },
+      {
+        "name": "Zamek",
+        "km": 0.86,
+        "dur_s": 200,
+        "walk_s": 727
+      },
+      {
+        "name": "Poznańska",
+        "km": 1.38,
+        "dur_s": 301,
+        "walk_s": 722
+      },
+      {
+        "name": "Most Teatralny",
+        "km": 1.64,
+        "dur_s": 383,
+        "walk_s": 929
+      },
+      {
+        "name": "Uniwersytet Ekonomiczny",
+        "km": 1.36,
+        "dur_s": 328,
+        "walk_s": 935
+      },
+      {
+        "name": "Wrocławska",
+        "km": 1.75,
+        "dur_s": 432,
+        "walk_s": 865
+      },
+      {
+        "name": "Małe Garbary",
+        "km": 1.46,
+        "dur_s": 298,
+        "walk_s": 847
+      }
+    ],
+    "ratusz_km": 2.32,
+    "ratusz_dur_s": 526,
+    "rail_name": "Poznań Główny",
+    "rail_km": 2.1,
+    "rail_dur_s": 485
+  },
+  "52.40047,16.85816": {
+    "tram_name": "Drzewieckiego",
+    "tram_km": 2.87,
+    "tram_dur_s": 417,
+    "tram_walk_s": 883,
+    "tram_candidates": [
+      {
+        "name": "Bułgarska Enea Stadion",
+        "km": 3.14,
+        "dur_s": 506,
+        "walk_s": 629
+      },
+      {
+        "name": "Drzewieckiego",
+        "km": 2.87,
+        "dur_s": 417,
+        "walk_s": 883
+      },
+      {
+        "name": "Węgorka",
+        "km": 3.79,
+        "dur_s": 511,
+        "walk_s": 1029
+      },
+      {
+        "name": "Rondo Skubiszewskiego",
+        "km": 3.37,
+        "dur_s": 454,
+        "walk_s": 1306
+      },
+      {
+        "name": "Grochowska",
+        "km": 2.63,
+        "dur_s": 432,
+        "walk_s": 1252
+      },
+      {
+        "name": "Budziszyńska",
+        "km": 3.76,
+        "dur_s": 500,
+        "walk_s": 1890
+      },
+      {
+        "name": "Ostroroga",
+        "km": 2.86,
+        "dur_s": 473,
+        "walk_s": 1641
+      },
+      {
+        "name": "Grotkowska",
+        "km": 4.13,
+        "dur_s": 533,
+        "walk_s": 1918
+      },
+      {
+        "name": "Arena",
+        "km": 3.74,
+        "dur_s": 604,
+        "walk_s": 2359
+      },
+      {
+        "name": "Rondo Nowaka-Jeziorańskiego",
+        "km": 3.19,
+        "dur_s": 549,
+        "walk_s": 2097
+      },
+      {
+        "name": "Arciszewskiego",
+        "km": 3.62,
+        "dur_s": 590,
+        "walk_s": 2157
+      },
+      {
+        "name": "Cmentarna",
+        "km": 4.52,
+        "dur_s": 584,
+        "walk_s": 2225
+      },
+      {
+        "name": "Bukowska",
+        "km": 3.49,
+        "dur_s": 593,
+        "walk_s": 2440
+      },
+      {
+        "name": "Wojskowa",
+        "km": 4.0,
+        "dur_s": 687,
+        "walk_s": 2300
+      },
+      {
+        "name": "Ogrody",
+        "km": 3.61,
+        "dur_s": 532,
+        "walk_s": 2490
+      }
+    ],
+    "ratusz_km": 8.53,
+    "ratusz_dur_s": 1500,
+    "rail_name": "Poznań Górczyn",
+    "rail_km": 6.59,
+    "rail_dur_s": 904
+  },
+  "52.40188,16.85465": {
+    "tram_name": "Drzewieckiego",
+    "tram_km": 1.36,
+    "tram_dur_s": 222,
+    "tram_walk_s": 1101,
+    "tram_candidates": [
+      {
+        "name": "Bułgarska Enea Stadion",
+        "km": 1.63,
+        "dur_s": 312,
+        "walk_s": 847
+      },
+      {
+        "name": "Drzewieckiego",
+        "km": 1.36,
+        "dur_s": 222,
+        "walk_s": 1101
+      },
+      {
+        "name": "Węgorka",
+        "km": 2.28,
+        "dur_s": 316,
+        "walk_s": 1246
+      },
+      {
+        "name": "Rondo Skubiszewskiego",
+        "km": 1.86,
+        "dur_s": 259,
+        "walk_s": 1523
+      },
+      {
+        "name": "Grochowska",
+        "km": 2.0,
+        "dur_s": 307,
+        "walk_s": 1469
+      },
+      {
+        "name": "Budziszyńska",
+        "km": 2.24,
+        "dur_s": 305,
+        "walk_s": 2134
+      },
+      {
+        "name": "Grotkowska",
+        "km": 2.62,
+        "dur_s": 339,
+        "walk_s": 2162
+      },
+      {
+        "name": "Ostroroga",
+        "km": 2.45,
+        "dur_s": 370,
+        "walk_s": 1859
+      },
+      {
+        "name": "Cmentarna",
+        "km": 3.0,
+        "dur_s": 389,
+        "walk_s": 2468
+      },
+      {
+        "name": "Rondo Nowaka-Jeziorańskiego",
+        "km": 3.0,
+        "dur_s": 456,
+        "walk_s": 2314
+      },
+      {
+        "name": "Arena",
+        "km": 3.49,
+        "dur_s": 510,
+        "walk_s": 2577
+      },
+      {
+        "name": "Arciszewskiego",
+        "km": 3.02,
+        "dur_s": 475,
+        "walk_s": 2360
+      },
+      {
+        "name": "Junikowo",
+        "km": 3.34,
+        "dur_s": 425,
+        "walk_s": 2651
+      },
+      {
+        "name": "Bukowska",
+        "km": 3.41,
+        "dur_s": 566,
+        "walk_s": 2588
+      },
+      {
+        "name": "Ogrody",
+        "km": 3.53,
+        "dur_s": 504,
+        "walk_s": 2637
+      }
+    ],
+    "ratusz_km": 7.9,
+    "ratusz_dur_s": 1423,
+    "rail_name": "Poznań Górczyn",
+    "rail_km": 5.07,
+    "rail_dur_s": 710
+  },
+  "52.40182,16.85543": {
+    "tram_name": "Drzewieckiego",
+    "tram_km": 2.63,
+    "tram_dur_s": 389,
+    "tram_walk_s": 1073,
+    "tram_candidates": [
+      {
+        "name": "Bułgarska Enea Stadion",
+        "km": 2.9,
+        "dur_s": 479,
+        "walk_s": 819
+      },
+      {
+        "name": "Drzewieckiego",
+        "km": 2.63,
+        "dur_s": 389,
+        "walk_s": 1073
+      },
+      {
+        "name": "Węgorka",
+        "km": 3.55,
+        "dur_s": 483,
+        "walk_s": 1219
+      },
+      {
+        "name": "Rondo Skubiszewskiego",
+        "km": 3.13,
+        "dur_s": 426,
+        "walk_s": 1496
+      },
+      {
+        "name": "Grochowska",
+        "km": 2.4,
+        "dur_s": 404,
+        "walk_s": 1442
+      },
+      {
+        "name": "Budziszyńska",
+        "km": 3.52,
+        "dur_s": 472,
+        "walk_s": 2080
+      },
+      {
+        "name": "Ostroroga",
+        "km": 2.62,
+        "dur_s": 445,
+        "walk_s": 1831
+      },
+      {
+        "name": "Grotkowska",
+        "km": 3.9,
+        "dur_s": 506,
+        "walk_s": 2108
+      },
+      {
+        "name": "Cmentarna",
+        "km": 4.28,
+        "dur_s": 556,
+        "walk_s": 2415
+      },
+      {
+        "name": "Rondo Nowaka-Jeziorańskiego",
+        "km": 2.95,
+        "dur_s": 521,
+        "walk_s": 2287
+      },
+      {
+        "name": "Arena",
+        "km": 3.5,
+        "dur_s": 576,
+        "walk_s": 2549
+      },
+      {
+        "name": "Arciszewskiego",
+        "km": 3.38,
+        "dur_s": 562,
+        "walk_s": 2332
+      },
+      {
+        "name": "Bukowska",
+        "km": 3.25,
+        "dur_s": 565,
+        "walk_s": 2615
+      },
+      {
+        "name": "Junikowo",
+        "km": 4.62,
+        "dur_s": 592,
+        "walk_s": 2704
+      },
+      {
+        "name": "Ogrody",
+        "km": 3.38,
+        "dur_s": 504,
+        "walk_s": 2665
+      }
+    ],
+    "ratusz_km": 8.29,
+    "ratusz_dur_s": 1472,
+    "rail_name": "Poznań Górczyn",
+    "rail_km": 6.35,
+    "rail_dur_s": 877
+  },
+  "52.43295,16.91772": {
+    "tram_name": "Św. Leonarda",
+    "tram_km": 0.46,
+    "tram_dur_s": 117,
+    "tram_walk_s": 449,
+    "tram_candidates": [
+      {
+        "name": "Aleje Solidarności",
+        "km": 1.04,
+        "dur_s": 208,
+        "walk_s": 399
+      },
+      {
+        "name": "Św. Leonarda",
+        "km": 0.46,
+        "dur_s": 117,
+        "walk_s": 449
+      },
+      {
+        "name": "Os. Winiary",
+        "km": 0.64,
+        "dur_s": 175,
+        "walk_s": 560
+      },
+      {
+        "name": "Bonin",
+        "km": 2.18,
+        "dur_s": 405,
+        "walk_s": 685
+      },
+      {
+        "name": "Słowiańska",
+        "km": 1.58,
+        "dur_s": 282,
+        "walk_s": 937
+      },
+      {
+        "name": "Lutycka Szpital",
+        "km": 1.09,
+        "dur_s": 245,
+        "walk_s": 888
+      },
+      {
+        "name": "Uniwersytet Przyrodniczy",
+        "km": 1.66,
+        "dur_s": 287,
+        "walk_s": 1026
+      },
+      {
+        "name": "Piątkowska",
+        "km": 1.77,
+        "dur_s": 261,
+        "walk_s": 1190
+      },
+      {
+        "name": "Lechicka Poznań Plaza",
+        "km": 1.88,
+        "dur_s": 347,
+        "walk_s": 1133
+      },
+      {
+        "name": "Żniwna",
+        "km": 3.62,
+        "dur_s": 522,
+        "walk_s": 1291
+      },
+      {
+        "name": "Pasieka",
+        "km": 3.11,
+        "dur_s": 505,
+        "walk_s": 1270
+      },
+      {
+        "name": "Armii Poznań",
+        "km": 3.2,
+        "dur_s": 457,
+        "walk_s": 1431
+      },
+      {
+        "name": "Nad Wierzbakiem",
+        "km": 2.46,
+        "dur_s": 415,
+        "walk_s": 1469
+      },
+      {
+        "name": "Sołacz",
+        "km": 2.09,
+        "dur_s": 360,
+        "walk_s": 1370
+      },
+      {
+        "name": "Kmieca",
+        "km": 3.4,
+        "dur_s": 585,
+        "walk_s": 1671
+      }
+    ],
+    "ratusz_km": 5.51,
+    "ratusz_dur_s": 898,
+    "rail_name": "Poznań Główny",
+    "rail_km": 5.21,
+    "rail_dur_s": 858
+  },
+  "52.4332,16.9145": {
+    "tram_name": "Św. Leonarda",
+    "tram_km": 0.24,
+    "tram_dur_s": 56,
+    "tram_walk_s": 269,
+    "tram_candidates": [
+      {
+        "name": "Św. Leonarda",
+        "km": 0.24,
+        "dur_s": 56,
+        "walk_s": 269
+      },
+      {
+        "name": "Os. Winiary",
+        "km": 0.42,
+        "dur_s": 114,
+        "walk_s": 380
+      },
+      {
+        "name": "Bonin",
+        "km": 1.96,
+        "dur_s": 344,
+        "walk_s": 505
+      },
+      {
+        "name": "Aleje Solidarności",
+        "km": 0.82,
+        "dur_s": 147,
+        "walk_s": 471
+      },
+      {
+        "name": "Słowiańska",
+        "km": 1.36,
+        "dur_s": 221,
+        "walk_s": 1121
+      },
+      {
+        "name": "Lutycka Szpital",
+        "km": 0.87,
+        "dur_s": 184,
+        "walk_s": 708
+      },
+      {
+        "name": "Uniwersytet Przyrodniczy",
+        "km": 1.44,
+        "dur_s": 226,
+        "walk_s": 846
+      },
+      {
+        "name": "Piątkowska",
+        "km": 1.55,
+        "dur_s": 200,
+        "walk_s": 1010
+      },
+      {
+        "name": "Lechicka Poznań Plaza",
+        "km": 1.67,
+        "dur_s": 286,
+        "walk_s": 1205
+      },
+      {
+        "name": "Żniwna",
+        "km": 3.4,
+        "dur_s": 461,
+        "walk_s": 1475
+      },
+      {
+        "name": "Sołacz",
+        "km": 1.87,
+        "dur_s": 298,
+        "walk_s": 1190
+      },
+      {
+        "name": "Nad Wierzbakiem",
+        "km": 2.24,
+        "dur_s": 354,
+        "walk_s": 1368
+      },
+      {
+        "name": "Pasieka",
+        "km": 2.89,
+        "dur_s": 444,
+        "walk_s": 1454
+      },
+      {
+        "name": "Armii Poznań",
+        "km": 2.98,
+        "dur_s": 396,
+        "walk_s": 1615
+      },
+      {
+        "name": "Klin",
+        "km": 3.69,
+        "dur_s": 480,
+        "walk_s": 1703
+      }
+    ],
+    "ratusz_km": 5.29,
+    "ratusz_dur_s": 837,
+    "rail_name": "Poznań Główny",
+    "rail_km": 4.99,
+    "rail_dur_s": 797
   }
 }

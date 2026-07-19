@@ -5066,5 +5066,39 @@
       "brand": "Biedronka",
       "dist_km": 0.254
     }
+  },
+  "52.39343,17.01702": {
+    "discount": {
+      "name": "Biedronka",
+      "brand": "Biedronka",
+      "dist_km": 1.426
+    },
+    "super": {
+      "name": "Stokrotka",
+      "brand": "",
+      "dist_km": 1.66
+    },
+    "hyper": {
+      "name": "ATAC Hiper Discount by Auchan",
+      "brand": "Auchan Polska Sp. z o.o.",
+      "dist_km": 1.899
+    }
+  },
+  "52.41717,16.94397": {
+    "discount": {
+      "name": "Lidl",
+      "brand": "Lidl",
+      "dist_km": 0.678
+    },
+    "hyper": {
+      "name": "Carrefour Market",
+      "brand": "Carrefour Market",
+      "dist_km": 2.078
+    },
+    "super": {
+      "name": "Chata Polska",
+      "brand": "Chata Polska",
+      "dist_km": 1.179
+    }
   }
 }
