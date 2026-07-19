@@ -61,7 +61,7 @@ DISTRICT_SCORES = {
     "Strzeszyn": 8,
     "Smochowice": 5,
     "Winogrady": 7.5,
-    "Piątkowo": 6.8,
+    "Piątkowo": 7.5,
     "Winiary": 7.5,
     "Naramowice": 6.5,
     "Morasko": 4.5,
