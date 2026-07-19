@@ -64,14 +64,19 @@ def run():
     print(r.stdout[-300:])
 
     rows_all = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
+    tg_send(f"📋 <b>Спарсили:</b> {len(rows_all)} объявлений")
+
+    # 2. Определяем новые ID
+    all_ids = set(r["id"] for r in rows_all)
+    new_ids = all_ids - seen
+
+    # 3. Докачиваем координаты и фото только для новых
     cache_file = DATA_DIR / "coords_cache.json"
     cache = json.loads(cache_file.read_text()) if cache_file.exists() else {}
-    need_coords = sum(1 for row in rows_all if row["id"] not in cache)
-    tg_send(f"📋 <b>Спарсили:</b> {len(rows_all)} объявлений, нужно загрузить: {need_coords}")
-
-    # 2. Докачиваем координаты и фото
+    need_coords = sum(1 for r in rows_all if r["id"] in new_ids and r["id"] not in cache)
     if need_coords:
         tg_send(f"🌐 Загружаем {need_coords} страниц для координат и фото…")
+    new_ids_json = json.dumps(sorted(new_ids))
     subprocess.run([sys.executable, "-c", f"""
 import csv, re, json, time
 from pathlib import Path
@@ -79,6 +84,7 @@ from urllib.request import Request, urlopen
 HEADERS = {{'User-Agent': 'Mozilla/5.0'}}
 cache_file = Path('coords_cache.json')
 cache = json.loads(cache_file.read_text()) if cache_file.exists() else {{}}
+new_ids = set({new_ids_json})
 rows = list(csv.DictReader(open('listings_latest.csv', encoding='utf-8-sig')))
 fetched = 0
 for r in rows:
@@ -86,6 +92,8 @@ for r in rows:
     if rid in cache:
         r.update(cache[rid])
         continue
+    if rid not in new_ids:
+        continue  # не новое — пропускаем
     entry = {{}}
     try:
         req = Request(r['url'], headers=HEADERS)
@@ -120,11 +128,7 @@ with open('listings_latest.csv','w',newline='',encoding='utf-8-sig') as f:
 print(f'coords done, fetched={{fetched}}')
 """], cwd=DATA_DIR, capture_output=True, text=True)
 
-    # 3. Определяем новые ID
     rows_all = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
-    all_ids = set(r["id"] for r in rows_all)
-    new_ids = all_ids - seen
-
     # Сохраняем фото для новых
     photo_map = {r["id"]: r.get("photo_url", "") for r in rows_all if r["id"] in new_ids}
 
