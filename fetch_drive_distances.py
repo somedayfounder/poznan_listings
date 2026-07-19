@@ -80,7 +80,8 @@ def main():
     # re-process entries that are missing rail data
     todo = [l for l in listings if
             f"{l['lat']},{l['lon']}" not in cache or
-            "rail_dur_s" not in cache.get(f"{l['lat']},{l['lon']}", {})]
+            "rail_dur_s" not in cache.get(f"{l['lat']},{l['lon']}", {}) or
+            "tram_candidates" not in cache.get(f"{l['lat']},{l['lon']}", {})]
     print(f"Объявлений: {len(listings)}, в кеше: {len(cache)}, осталось: {len(todo)}")
 
     errors = 0
