@@ -5556,10 +5556,7 @@
     "corrected": false
   },
   "67630535": {
-    "orig_lat": 52.32499,
-    "orig_lon": 16.6891,
-    "new_lat": 52.408612,
-    "new_lon": 16.907163,
+    "skipped": "geocode_too_far",
     "dist_m": 17483,
     "query": "ul. Zwierzyniecka, Poznań, Polska",
     "formatted": "Zwierzyniecka, 61-001 Poznań, Polska",
@@ -5570,9 +5567,7 @@
       "district": null,
       "confidence": "high"
     },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": true
+    "note": "manual rollback: ul. Zwierzyniecka found in Poznań but object is in Konarzewo"
   },
   "68196288": {
     "orig_lat": 52.33353,

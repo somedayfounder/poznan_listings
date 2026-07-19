@@ -165,7 +165,6 @@ def main():
             continue
 
         # Отклоняем если geocoder вернул только город (без улицы/района в адресе)
-        # Признак: formatted содержит только название города + страну
         formatted_parts = [p.strip() for p in (formatted or "").split(",")]
         if len(formatted_parts) <= 2:
             overrides[lid] = {"skipped": "geocode_too_vague", "query": query, "formatted": formatted, "addr": addr}
@@ -176,6 +175,13 @@ def main():
         orig_lat = float(r["lat"])
         orig_lon = float(r["lon"])
         dist_m = haversine(orig_lat, orig_lon, new_lat, new_lon) * 1000
+
+        # Если сдвиг > 5 км — скорее всего улица нашлась в другом городе, не применяем
+        if dist_m > 5000:
+            overrides[lid] = {"skipped": "geocode_too_far", "dist_m": round(dist_m), "query": query, "formatted": formatted, "addr": addr}
+            print(f"    → слишком большой сдвиг ({dist_m:.0f}м), вероятно другой город: {formatted}")
+            time.sleep(0.3)
+            continue
 
         overrides[lid] = {
             "orig_lat": orig_lat, "orig_lon": orig_lon,
