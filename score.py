@@ -674,18 +674,29 @@ def _nuisance_penalty(lat, lon):
             total += penalty * (1 - dist / radius)
     return round(min(2.5, total), 2)
 
+_AIRPORT_ZONE_PENALTY = {
+    "lawica_inner":   1.0,  # strefa I — zakaz budowy budynków mieszkalnych
+    "krzesiny_zone1": 1.0,
+    "lawica_outer":   0.5,  # strefa II — znaczące ograniczenia
+    "krzesiny_zone2": 0.5,
+    "krzesiny_zone3": 0.2,  # strefa III — łagodne ograniczenia
+}
+
 def _noise_penalty(noise, floor=None):
     """
-    noise: dict {source: max_ldwn_dba} from noise_cache.json (GEOPOZ 2017, facade level).
-    Data is worst-case facade exposure; upper floors receive reduced penalty
-    because noise attenuates with height.
+    noise: dict from noise_cache.json — numeric dBA values + optional airport_zone string.
+    Facade-level exposure; upper floors get reduced acoustic penalty (not airport penalty).
     """
     if not noise:
         return 0.0
-    max_ldwn = max(noise.values())
+    airport_pen = _AIRPORT_ZONE_PENALTY.get(noise.get("airport_zone"), 0.0)
+    numeric = {k: v for k, v in noise.items() if isinstance(v, (int, float))}
+    if not numeric:
+        return round(airport_pen, 3)
+    max_ldwn = max(numeric.values())
     if max_ldwn <= 60:
-        return 0.0
-    if max_ldwn <= 65:
+        base = 0.0
+    elif max_ldwn <= 65:
         base = 0.1
     elif max_ldwn <= 70:
         base = 0.2
@@ -696,14 +707,54 @@ def _noise_penalty(noise, floor=None):
     except (ValueError, TypeError):
         fl = None
     mult = max(0.3, 1.0 - 0.1 * max(0, (fl or 1) - 2)) if fl else 1.0
-    return round(base * mult, 3)
+    return round(base * mult + airport_pen, 3)
+
+# Sub-osiedle → parent district (from official Poznań wykaz jednostek obszarowych 2008)
+_DISTRICT_ALIASES = {
+    # Chartowo sub-osiedla
+    "os. Czecha": "Chartowo", "os. Lecha": "Chartowo", "os. Rusa": "Chartowo",
+    "os. Tysiąclecia": "Chartowo", "os. Zodiak": "Chartowo",
+    # Piątkowo sub-osiedla
+    "os. Bolesława Chrobrego": "Piątkowo", "os. Bolesława Śmiałego": "Piątkowo",
+    "os. Jana III Sobieskiego": "Piątkowo", "os. Marysieńki": "Piątkowo",
+    "os. Stefana Batorego": "Piątkowo", "os. Władysława Jagiełły": "Piątkowo",
+    "os. Zygmunta Starego": "Piątkowo",
+    # Rataje sub-osiedla
+    "os. Armii Krajowej": "Rataje", "os. Bohaterów II Wojny Światowej": "Rataje",
+    "os. Jagiellońskie": "Rataje", "os. Oświecenia": "Rataje",
+    "os. Piastowskie": "Rataje", "os. Powstań Narodowych": "Rataje",
+    "os. Rzeczypospolitej": "Rataje",
+    # Winiary sub-osiedla
+    "os. Powstańców Warszawy": "Winiary", "os. Słowiańskie": "Winiary",
+    "os. Winiary": "Winiary",
+    # Winogrady sub-osiedla
+    "os. Kosmonautów": "Winogrady", "os. Na Murawie": "Winogrady",
+    "os. Pod Lipami": "Winogrady", "os. Przyjaźni": "Winogrady",
+    "Wichrowe Wzgórze": "Winogrady", "os. Zwycięstwa": "Winogrady",
+    # Żegrze sub-osiedla
+    "os. Orła Białego": "Żegrze", "os. Polan": "Żegrze", "os. Stare Żegrze": "Żegrze",
+    # Górczyn / Górczynek
+    "Górczynek": "Górczyn",
+    # Starołęka
+    "Starołęka": "Starołęka Wielka",
+    # common Nominatim variants
+    "Nowe Miasto": "Rataje",
+    "Stare Żegrze": "Żegrze",
+}
+
+def _normalize_district(name):
+    if not name:
+        return name
+    return _DISTRICT_ALIASES.get(name, name)
 
 def _score_district(district, city):
-    """Check district first, then city name."""
-    if district and district in DISTRICT_SCORES:
-        return float(DISTRICT_SCORES[district])
-    if city and city in DISTRICT_SCORES:
-        return float(DISTRICT_SCORES[city])
+    """Check district first (with alias normalization), then city name."""
+    d = _normalize_district(district)
+    if d and d in DISTRICT_SCORES:
+        return float(DISTRICT_SCORES[d])
+    c = _normalize_district(city)
+    if c and c in DISTRICT_SCORES:
+        return float(DISTRICT_SCORES[c])
     return float(_DEFAULT_DISTRICT_SCORE)
 
 

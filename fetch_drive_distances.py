@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 """
 Fetches routing data:
-  - driving: OSRM (free, no key) — 10 tram + 3 rail + ratusz
-  - walking: OpenRouteService foot-walking (OPENROUTE_KEY) — 5 nearest tram + 1 rail
+  - driving: OSRM table API (1 request per listing, not N) — 10 tram + 3 rail + ratusz
+  - walking: ORS matrix API (1 request per listing, not N) — 5 nearest tram + 1 rail
 Saves to drive_cache.json.
 """
 import json, csv, math, time, urllib.request, urllib.parse, os
 from pathlib import Path
 
 ORS_KEY    = os.environ.get("OPENROUTE_KEY", "")
-HEADERS    = {"User-Agent": "poznan-listings-bot/1.0"}
+HEADERS    = {"User-Agent": "poznan-listings-bot/1.0", "Content-Type": "application/json"}
 RATUSZ     = (52.4082, 16.9335)
 K_DRIVE    = 10   # tram candidates for driving
 K_WALK     = 5    # tram candidates for walking
 K_RAIL     = 3    # rail candidates for driving
-MAX_WALK_KM    = 3.0  # не считаем пешком если дальше
-MAX_ORS_PER_RUN = 1800  # оставляем 200 запасных из 2000/день
+MAX_WALK_KM    = 3.0
+MAX_ORS_PER_RUN = 1800  # ORS counts matrix as sources×destinations
 
 CACHE_FILE = Path("drive_cache.json")
 TRAM_FILE  = Path("tram_stops.json")
@@ -28,37 +28,71 @@ def haversine(lat1, lon1, lat2, lon2):
     a = math.sin(dl/2)**2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(do/2)**2
     return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
 
-def osrm_route(lat1, lon1, lat2, lon2):
-    """OSRM driving. Returns (distance_m, duration_s) or (None, None)."""
-    url = f"http://router.project-osrm.org/route/v1/driving/{lon1},{lat1};{lon2},{lat2}?overview=false"
+def osrm_table(src_lat, src_lon, destinations):
+    """
+    OSRM table API: 1 HTTP request for all destinations at once.
+    destinations: list of (lat, lon)
+    Returns list of (distance_m, duration_s) or (None, None) per destination.
+    """
+    coords = f"{src_lon},{src_lat};" + ";".join(f"{lon},{lat}" for lat, lon in destinations)
+    url = f"http://router.project-osrm.org/table/v1/driving/{coords}?sources=0&annotations=duration,distance"
     for attempt in range(3):
         try:
-            req = urllib.request.Request(url, headers=HEADERS)
-            data = json.loads(urllib.request.urlopen(req, timeout=15).read())
+            req = urllib.request.Request(url, headers={"User-Agent": "poznan-listings-bot/1.0"})
+            data = json.loads(urllib.request.urlopen(req, timeout=20).read())
             if data.get("code") == "Ok":
-                r = data["routes"][0]
-                return round(r["distance"]), round(r["duration"])
+                durs = data["durations"][0][1:]   # skip self (index 0)
+                dists = data["distances"][0][1:]
+                return [(round(d) if d else None, round(t) if t else None)
+                        for d, t in zip(dists, durs)]
         except Exception:
-            if attempt < 2: time.sleep(1)
-    return None, None
+            if attempt < 2: time.sleep(2)
+    return [(None, None)] * len(destinations)
+
+def ors_matrix(src_lat, src_lon, destinations):
+    """
+    ORS matrix API: 1 HTTP request for all walk destinations.
+    destinations: list of (lat, lon)
+    Returns list of duration_s or None per destination.
+    Note: counts as len(destinations) ORS quota requests.
+    """
+    if not ORS_KEY or not destinations:
+        return [None] * len(destinations)
+    locations = [[src_lon, src_lat]] + [[lon, lat] for lat, lon in destinations]
+    payload = json.dumps({
+        "locations": locations,
+        "sources": [0],
+        "metrics": ["duration"],
+    }).encode()
+    url = "https://api.openrouteservice.org/v2/matrix/foot-walking"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(url, data=payload, headers={
+                "Authorization": ORS_KEY,
+                "Content-Type": "application/json",
+                "User-Agent": "poznan-listings-bot/1.0",
+            })
+            data = json.loads(urllib.request.urlopen(req, timeout=20).read())
+            row = data["durations"][0][1:]  # skip self
+            return [round(v) if v is not None else None for v in row]
+        except Exception:
+            if attempt < 2: time.sleep(2)
+    return [None] * len(destinations)
 
 def ors_walk(lat1, lon1, lat2, lon2):
-    """OpenRouteService foot-walking. Returns duration_s or None."""
+    """Single ORS walk call (for rail, which has different best-stop logic)."""
     if not ORS_KEY:
         return None
     url = "https://api.openrouteservice.org/v2/directions/foot-walking?" + urllib.parse.urlencode({
-        "api_key": ORS_KEY,
-        "start": f"{lon1},{lat1}",
-        "end":   f"{lon2},{lat2}",
+        "api_key": ORS_KEY, "start": f"{lon1},{lat1}", "end": f"{lon2},{lat2}",
     })
     for attempt in range(3):
         try:
-            req = urllib.request.Request(url, headers=HEADERS)
-            data = json.loads(urllib.request.urlopen(req, timeout=15).read())
-            seg = data["features"][0]["properties"]["segments"][0]
-            return round(seg["duration"])
+            req = urllib.request.Request(url, headers={"User-Agent": "poznan-listings-bot/1.0"})
+            data = json.loads(urllib.request.urlopen(req, timeout=20).read())
+            return round(data["features"][0]["properties"]["segments"][0]["duration"])
         except Exception:
-            if attempt < 2: time.sleep(1)
+            if attempt < 2: time.sleep(2)
     return None
 
 def main():
@@ -80,16 +114,14 @@ def main():
 
     cache = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
 
-    SCHEMA_V = 2  # bump to force recalculation of all entries
+    SCHEMA_V = 2
 
     def needs_update(e):
         if e.get("schema_v", 1) < SCHEMA_V:
             return True
         cands = e.get("tram_candidates") or []
-        return (not e.get("tram_dur_s") or
-                not cands or
-                "walk_s" not in cands[0] or
-                not e.get("rail_dur_s") or
+        return (not e.get("tram_dur_s") or not cands or
+                "walk_s" not in cands[0] or not e.get("rail_dur_s") or
                 e.get("rail_walk_s") is None)
 
     todo = [l for l in listings if needs_update(cache.get(f"{l['lat']},{l['lon']}", {}))]
@@ -111,41 +143,49 @@ def main():
         ranked_rails = sorted(rails, key=lambda r: haversine(lat, lon, r["lat"], r["lon"]))[:K_RAIL]
 
         try:
-            # driving до трамваев
+            # 1 OSRM request: 10 trams + ratusz + 3 rails
+            all_drive_dests = [(t["lat"], t["lon"]) for t in drive_trams] + \
+                              [RATUSZ] + \
+                              [(r["lat"], r["lon"]) for r in ranked_rails]
+            drive_results = osrm_table(lat, lon, all_drive_dests)
+            time.sleep(0.4)
+
+            tram_results  = drive_results[:K_DRIVE]
+            ratusz_result = drive_results[K_DRIVE]
+            rail_results  = drive_results[K_DRIVE + 1:]
+
             tram_candidates = []
-            for stop in drive_trams:
+            for stop, (d, t) in zip(drive_trams, tram_results):
                 hav_km = round(haversine(lat, lon, stop["lat"], stop["lon"]), 2)
-                d, t = osrm_route(lat, lon, stop["lat"], stop["lon"]); time.sleep(0.35)
                 tram_candidates.append({"name": stop["name"], "km": hav_km, "dur_s": t, "walk_s": None})
 
-            # walking до ближайших трамваев через ORS
-            for stop in walk_trams:
-                w = ors_walk(lat, lon, stop["lat"], stop["lon"]); time.sleep(1.1)
-                ors_used += 1
-                cand = next((c for c in tram_candidates if c["name"] == stop["name"]), None)
-                if cand:
-                    cand["walk_s"] = w
+            # 1 ORS matrix request for all walk trams
+            if walk_trams:
+                walk_dests = [(t["lat"], t["lon"]) for t in walk_trams]
+                walk_durs = ors_matrix(lat, lon, walk_dests)
+                ors_used += len(walk_trams)  # counts as N quota requests
+                time.sleep(1.1)
+                for stop, w in zip(walk_trams, walk_durs):
+                    cand = next((c for c in tram_candidates if c["name"] == stop["name"]), None)
+                    if cand:
+                        cand["walk_s"] = w
 
-            best_tram  = min((c for c in tram_candidates if c["dur_s"]), key=lambda c: c["dur_s"], default=None)
+            best_tram   = min((c for c in tram_candidates if c["dur_s"]), key=lambda c: c["dur_s"], default=None)
             tram_walk_s = min((c["walk_s"] for c in tram_candidates if c.get("walk_s")), default=None)
 
-            # ратуш
-            ratusz_d, ratusz_t = osrm_route(lat, lon, *RATUSZ); time.sleep(0.35)
+            ratusz_d, ratusz_t = ratusz_result
 
-            # driving до жд
             rail_cands = []
-            for stop in ranked_rails:
-                d, t = osrm_route(lat, lon, stop["lat"], stop["lon"]); time.sleep(0.35)
+            for stop, (d, t) in zip(ranked_rails, rail_results):
                 rail_cands.append({"stop": stop, "d": d, "t": t})
-
             best_rail = min((c for c in rail_cands if c["t"]), key=lambda c: c["t"], default=None)
 
-            # walking до лучшей жд
+            # 1 ORS call for best rail walk
             rail_walk_s = None
             if best_rail and haversine(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"]) <= MAX_WALK_KM:
                 rail_walk_s = ors_walk(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"])
-                time.sleep(1.1)
                 ors_used += 1
+                time.sleep(1.1)
 
             entry.update({
                 "schema_v":        SCHEMA_V,
@@ -170,7 +210,7 @@ def main():
 
         if (i + 1) % 10 == 0 or i == len(todo) - 1:
             CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
-            print(f"  [{i+1}/{len(todo)}] сохранено, ошибок: {errors}")
+            print(f"  [{i+1}/{len(todo)}] сохранено, ошибок: {errors}, ORS: {ors_used}")
 
     CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
     filled = sum(1 for v in cache.values() if v.get("tram_km") is not None)

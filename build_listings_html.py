@@ -211,7 +211,9 @@ for row in js_rows:
     if not d:
         continue
     if row.get("noise"):
-        _dist_noise[d].append(max(row["noise"].values()))
+        numeric_noise = [v for v in row["noise"].values() if isinstance(v, (int, float))]
+        if numeric_noise:
+            _dist_noise[d].append(max(numeric_noise))
     for n in (row.get("nuisance") or []):
         _dist_nuisance[d].add(n["name"])
     tier = _store_tier(row.get("supermarket"))

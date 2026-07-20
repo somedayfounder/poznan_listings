@@ -1,12 +1,15 @@
 """
 Downloads noise immission data from Poznań GIS (geopoz.poznan.pl) WFS
 and computes max noise level (LDWN dBA) for each listing by coordinates.
-Saves results to noise_cache.json: {"lat,lon": {"ldwn": 62, "sources": ["dr"]}}
+Also checks airport OOU zones from airport_noise_zones.geojson.
+Saves results to noise_cache.json: {"lat,lon": {"ldwn": 62, "sources": ["dr"], "airport_zone": "lawica_inner"}}
 """
 
 import csv, json
 from pathlib import Path
 from urllib.request import urlopen
+
+AIRPORT_ZONES_FILE = Path(__file__).parent / "airport_noise_zones.geojson"
 
 DATA_DIR = Path(__file__).parent
 CACHE_FILE = DATA_DIR / "noise_cache.json"
@@ -16,10 +19,11 @@ WFS_BASE = "https://wms2.geopoz.poznan.pl/geoserver/akustyka/wfs"
 # Noise immission layers (2017), polygons, field LDWN (dBA day+evening+night)
 # dr=road, tr=tram, ko=railway, prz=industrial
 LAYERS = {
-    "dr": "akustyka:v_v17_dr_imisja_ldwn_sql",
-    "tr": "akustyka:v_v17_tr_imisja_ldwn_sql",
-    "ko": "akustyka:v_v17_ko_imisja_ldwn_sql",
-    "prz": "akustyka:v_v17_prz_imisja_ldwn_sql",
+    "dr":  "akustyka:v_v17_dr_imisja_ldwn_sql",   # hałas samochodowy
+    "tr":  "akustyka:v_v17_tr_imisja_ldwn_sql",   # hałas tramwajowy
+    "ko":  "akustyka:v_v17_ko_imisja_ldwn_sql",   # hałas kolejowy
+    "prz": "akustyka:v_v17_prz_imisja_ldwn_sql",  # hałas przemysłowy
+    "lo":  "akustyka:v_v17_lo_imisja_ldwn_sql",   # hałas lotniczy (samoloty)
 }
 
 
@@ -82,6 +86,26 @@ def query_noise(lon, lat, all_features):
     return result
 
 
+def load_airport_zones():
+    if not AIRPORT_ZONES_FILE.exists():
+        return []
+    data = json.loads(AIRPORT_ZONES_FILE.read_text())
+    return data.get("features", [])
+
+
+def query_airport_zone(lon, lat, airport_features):
+    """Return the most restrictive airport OOU zone name the point falls in, or None."""
+    priority = ["lawica_inner", "krzesiny_zone1", "krzesiny_zone2", "lawica_outer", "krzesiny_zone3"]
+    found = []
+    for feat in airport_features:
+        if point_in_feature(lon, lat, feat):
+            found.append(feat["properties"].get("name", ""))
+    for name in priority:
+        if name in found:
+            return name
+    return found[0] if found else None
+
+
 def run():
     rows = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
     cache = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
@@ -91,6 +115,10 @@ def run():
     if not need:
         print("All cached.")
         return
+
+    print("Loading airport OOU zones...")
+    airport_features = load_airport_zones()
+    print(f"  {len(airport_features)} zones loaded")
 
     print("Downloading noise layers...")
     all_features = {}
@@ -109,10 +137,15 @@ def run():
             continue
         key = f"{r['lat']},{r['lon']}"
         noise = query_noise(lon, lat, all_features)
+        airport_zone = query_airport_zone(lon, lat, airport_features)
+        if airport_zone:
+            noise["airport_zone"] = airport_zone
         cache[key] = noise
+        zone_str = f", OOU:{airport_zone}" if airport_zone else ""
         if noise:
-            max_l = max(noise.values())
-            print(f"  [{i+1}] {r.get('district') or r.get('city')} — {noise} → max {max_l} dBA")
+            ldwn_vals = {k: v for k, v in noise.items() if k != "airport_zone"}
+            max_l = max(ldwn_vals.values()) if ldwn_vals else None
+            print(f"  [{i+1}] {r.get('district') or r.get('city')} — {ldwn_vals} → max {max_l} dBA{zone_str}")
 
     CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
     print(f"Done. noise_cache.json: {len(cache)} entries")

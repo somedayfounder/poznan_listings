@@ -850,8 +850,9 @@ function showScoreInfo(r){
   const base = d_sc*W.district + tr_sc*W.transport + pr_sc*W.price + ar_sc*W.area + ro_sc*W.rooms;
 
   const nuis_pen = (r.nuisance||[]).reduce((s,n)=>s+n.penalty,0);
-  const noise_vals = r.noise?Object.values(r.noise):[];
+  const noise_vals = r.noise?Object.values(r.noise).filter(v=>typeof v==='number'):[];
   const max_noise = noise_vals.length?Math.max(...noise_vals):0;
+  const airport_zone = r.noise&&r.noise.airport_zone||null;
   const noise_base = max_noise>=70?0.4:max_noise>=65?0.2:max_noise>=60?0.1:0;
   const noise_fl = r.floor!=null?parseInt(r.floor)||1:1;
   const noise_mult = Math.max(0.3, 1.0 - 0.1*Math.max(0, noise_fl-2));
@@ -902,15 +903,18 @@ function showScoreInfo(r){
   const pos_tags=(Object.entries(feats_m).filter(([k,v])=>v===true&&!['needs_renovation','near_highway','near_railway'].includes(k)||(k==='garden_m2'&&v>0)).map(([k,v])=>`<span style="display:inline-block;background:#dcfce7;color:#166534;border-radius:4px;padding:1px 7px;font-size:11px;margin:2px">${FEAT_LABELS_M[k]||k}${k==='garden_m2'?' '+v+'м²':''}</span>`)).join('');
   const neg_tags=(Object.entries(feats_m).filter(([k,v])=>v===true&&['needs_renovation','near_highway','near_railway'].includes(k)).map(([k])=>`<span style="display:inline-block;background:#fee2e2;color:#991b1b;border-radius:4px;padding:1px 7px;font-size:11px;margin:2px">${FEAT_LABELS_M[k]||k}</span>`)).join('');
   const red_flags=(feats_m.red_flags||[]).map(f=>`<span style="display:inline-block;background:#fee2e2;color:#991b1b;border-radius:4px;padding:1px 7px;font-size:11px;margin:2px">🚩 ${f}</span>`).join('');
-  const NOISE_SRC_M={dr:'дороги',tr:'трамвай',ko:'ж/д',prz:'пром.'};
-  const noise_parts_m=r.noise&&Object.keys(r.noise).length?Object.entries(r.noise).map(([k,v])=>`${NOISE_SRC_M[k]||k}: ${v} дБА`).join(', '):null;
+  const NOISE_SRC_M={dr:'дороги',tr:'трамвай',ko:'ж/д',prz:'пром.',lo:'авиа'};
+  const noise_parts_m=r.noise&&Object.keys(r.noise).filter(k=>k!=='airport_zone').length?Object.entries(r.noise).filter(([k])=>k!=='airport_zone').map(([k,v])=>`${NOISE_SRC_M[k]||k}: ${v} дБА`).join(', '):null;
+  const AIRPORT_ZONE_M={'lawica_inner':'✈️ ОУУ Лавица (стрефа I)','lawica_outer':'✈️ ОУУ Лавица (стрефа II)','krzesiny_zone1':'✈️ ОУУ Кшесины (стрефа I)','krzesiny_zone2':'✈️ ОУУ Кшесины (стрефа II)','krzesiny_zone3':'✈️ ОУУ Кшесины (стрефа III)'};
+  const airport_zone_tag=airport_zone?`<span style="display:inline-block;background:#fef3c7;color:#92400e;border-radius:4px;padding:1px 7px;font-size:11px;margin:2px">${AIRPORT_ZONE_M[airport_zone]||airport_zone}</span>`:'';
   const nuis_names=(r.nuisance||[]).map(n=>`${n.name} (${n.dist_km} км)`).join(', ');
-  const featsBlock=(pos_tags||neg_tags||red_flags||noise_parts_m||nuis_names)?`
+  const featsBlock=(pos_tags||neg_tags||red_flags||airport_zone_tag||noise_parts_m||nuis_names)?`
     <div style="margin-top:14px;border-top:1px solid #eee;padding-top:10px">
       <div style="font-size:11px;font-weight:600;color:#888;margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px">Особенности объекта</div>
       ${pos_tags?`<div style="margin-bottom:4px">${pos_tags}</div>`:''}
       ${neg_tags?`<div style="margin-bottom:4px">${neg_tags}</div>`:''}
       ${red_flags?`<div style="margin-bottom:4px">${red_flags}</div>`:''}
+      ${airport_zone_tag?`<div style="margin-bottom:4px">${airport_zone_tag}</div>`:''}
     </div>`:'';
 
   // блок транспорта
