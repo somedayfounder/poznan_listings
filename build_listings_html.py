@@ -142,7 +142,7 @@ for r in rows:
             tram_tip = " | ".join(f"{s['name']} {s['min']} мин" for s in drive_stops if s.get("min"))
 
         if rail_name:
-            rail_details = {"name": rail_name, "min": rail_min, "km": dist_rail}
+            rail_details = {"name": rail_name, "min": rail_min, "km": dist_rail, "walk_min": rail_walk_min}
             rail_tip = f"{rail_name} — {fmt_d(dist_rail)} по дороге ({rail_min} мин)" if rail_min else f"{rail_name} — {fmt_d(dist_rail)} по дороге"
 
     lat = v(r, "lat", float)
