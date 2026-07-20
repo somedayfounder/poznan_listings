@@ -67,7 +67,7 @@ for key, gdata in sample:
     # OSRM: лучший трамвай по drive
     best_tram_t, best_tram_w = None, None
     for stop in ranked_trams:
-        _, t = osrm_route(lat, lon, stop["lat"], stop["lon"], "driving"); time.sleep(SLEEP)
+        _, t = osrm_route(lat, lon, stop["lat"], stop["lon"]); time.sleep(SLEEP)
         if t and (best_tram_t is None or t < best_tram_t):
             best_tram_t = t
         if haversine(lat, lon, stop["lat"], stop["lon"]) <= MAX_WALK_KM:
@@ -81,7 +81,7 @@ for key, gdata in sample:
     # OSRM: лучшая жд
     best_rail_t = None
     for stop in ranked_rails:
-        _, t = osrm_route(lat, lon, stop["lat"], stop["lon"], "driving"); time.sleep(SLEEP)
+        _, t = osrm_route(lat, lon, stop["lat"], stop["lon"]); time.sleep(SLEEP)
         if t and (best_rail_t is None or t < best_rail_t):
             best_rail_t = t
 
