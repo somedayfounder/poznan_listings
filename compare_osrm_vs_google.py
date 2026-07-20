@@ -6,9 +6,10 @@
 import json, math, time, urllib.request, sys, random
 from pathlib import Path
 
-HEADERS = {"User-Agent": "poznan-listings-bot/1.0"}
-SLEEP   = 0.35
-N       = int(sys.argv[1]) if len(sys.argv) > 1 else 20
+HEADERS     = {"User-Agent": "poznan-listings-bot/1.0"}
+SLEEP       = 0.35
+MAX_WALK_KM = 3.0
+N           = int(sys.argv[1]) if len(sys.argv) > 1 else 20
 
 def haversine(lat1, lon1, lat2, lon2):
     R = 6371
@@ -54,9 +55,10 @@ for key, gdata in sample:
         _, t = osrm_route(lat, lon, stop["lat"], stop["lon"], "driving"); time.sleep(SLEEP)
         if t and (best_tram_t is None or t < best_tram_t):
             best_tram_t = t
-        _, w = osrm_route(lat, lon, stop["lat"], stop["lon"], "foot"); time.sleep(SLEEP)
-        if w and (best_tram_w is None or w < best_tram_w):
-            best_tram_w = w
+        if haversine(lat, lon, stop["lat"], stop["lon"]) <= MAX_WALK_KM:
+            _, w = osrm_route(lat, lon, stop["lat"], stop["lon"], "foot"); time.sleep(SLEEP)
+            if w and (best_tram_w is None or w < best_tram_w):
+                best_tram_w = w
 
     # OSRM: ратуш
     _, ratusz_t = osrm_route(lat, lon, 52.4082, 16.9335); time.sleep(SLEEP)

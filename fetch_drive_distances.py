@@ -13,6 +13,7 @@ RATUSZ     = (52.4082, 16.9335)
 K          = 5    # tram candidates
 K_RAIL     = 3    # rail candidates
 SLEEP      = 0.35 # между запросами к публичному OSRM
+MAX_WALK_KM = 3.0 # OSRM foot ненадёжен на дальних маршрутах
 
 CACHE_FILE = Path("drive_cache.json")
 TRAM_FILE  = Path("tram_stops.json")
@@ -80,11 +81,14 @@ def main():
             # трамваи: driving + walking для каждого кандидата
             tram_candidates = []
             for stop in ranked_trams:
+                hav_km = round(haversine(lat, lon, stop["lat"], stop["lon"]), 2)
                 d, t = osrm_route(lat, lon, stop["lat"], stop["lon"], "driving"); time.sleep(SLEEP)
-                _, w = osrm_route(lat, lon, stop["lat"], stop["lon"], "foot");    time.sleep(SLEEP)
+                w = None
+                if hav_km <= MAX_WALK_KM:
+                    _, w = osrm_route(lat, lon, stop["lat"], stop["lon"], "foot"); time.sleep(SLEEP)
                 tram_candidates.append({
                     "name": stop["name"],
-                    "km":   round(haversine(lat, lon, stop["lat"], stop["lon"]), 2),
+                    "km":   hav_km,
                     "dur_s": t,
                     "walk_s": w,
                 })
@@ -105,11 +109,13 @@ def main():
 
             best_rail = min((c for c in rail_cands if c["t"] is not None), key=lambda c: c["t"], default=None)
 
-            # пешком до лучшей жд
+            # пешком до лучшей жд (только если близко)
             rail_walk_s = None
             if best_rail:
-                _, rail_walk_s = osrm_route(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"], "foot")
-                time.sleep(SLEEP)
+                rail_hav_km = haversine(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"])
+                if rail_hav_km <= MAX_WALK_KM:
+                    _, rail_walk_s = osrm_route(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"], "foot")
+                    time.sleep(SLEEP)
 
             entry.update({
                 "tram_name":       best_tram["name"] if best_tram else None,
