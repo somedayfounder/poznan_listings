@@ -70397,5 +70397,211 @@
       }
     ],
     "tram_walk_s": 2956
+  },
+  "52.518559,16.777697": {
+    "tram_name": "Ogrody",
+    "tram_km": 20.61,
+    "tram_dur_s": 1159,
+    "ratusz_km": 20.86,
+    "ratusz_dur_s": 2191,
+    "rail_name": "Rokietnica",
+    "rail_km": 2.66,
+    "rail_dur_s": 303,
+    "tram_candidates": [
+      {
+        "name": "Os. Sobieskiego",
+        "km": 14.5,
+        "dur_s": 1323,
+        "walk_s": 11052
+      },
+      {
+        "name": "Szymanowskiego",
+        "km": 14.28,
+        "dur_s": 1335,
+        "walk_s": 11415
+      },
+      {
+        "name": "Kurpińskiego",
+        "km": 14.57,
+        "dur_s": 1341,
+        "walk_s": 12076
+      },
+      {
+        "name": "Piątkowska",
+        "km": 24.08,
+        "dur_s": 1278,
+        "walk_s": 12258
+      },
+      {
+        "name": "Lutycka Szpital",
+        "km": 15.26,
+        "dur_s": 1393,
+        "walk_s": 12467
+      },
+      {
+        "name": "Lechicka Poznań Plaza",
+        "km": 15.2,
+        "dur_s": 1395,
+        "walk_s": 12450
+      },
+      {
+        "name": "Os. Winiary",
+        "km": 15.63,
+        "dur_s": 1507,
+        "walk_s": 12702
+      },
+      {
+        "name": "Św. Leonarda",
+        "km": 16.32,
+        "dur_s": 1530,
+        "walk_s": 13000
+      },
+      {
+        "name": "Ogrody",
+        "km": 20.61,
+        "dur_s": 1159,
+        "walk_s": 12137
+      },
+      {
+        "name": "Bonin",
+        "km": 23.75,
+        "dur_s": 1485,
+        "walk_s": 13048
+      },
+      {
+        "name": "Aleje Solidarności",
+        "km": 16.39,
+        "dur_s": 1501,
+        "walk_s": 13075
+      },
+      {
+        "name": "Błażeja",
+        "km": 16.87,
+        "dur_s": 1698,
+        "walk_s": 12957
+      },
+      {
+        "name": "Uniwersytet Przyrodniczy",
+        "km": 22.84,
+        "dur_s": 1304,
+        "walk_s": 12636
+      },
+      {
+        "name": "Sołacz",
+        "km": 23.05,
+        "dur_s": 1322,
+        "walk_s": 12805
+      },
+      {
+        "name": "Jasna Rola",
+        "km": 17.29,
+        "dur_s": 1760,
+        "walk_s": 13147
+      }
+    ],
+    "tram_walk_s": 12137
+  },
+  "51.935621,15.506186": {
+    "tram_name": "Cmentarna",
+    "tram_km": 0.55,
+    "tram_dur_s": 108,
+    "ratusz_km": 9.29,
+    "ratusz_dur_s": 1586,
+    "rail_name": "Poznań Górczyn",
+    "rail_km": 4.11,
+    "rail_dur_s": 540,
+    "tram_candidates": [
+      {
+        "name": "Cmentarna",
+        "km": 0.55,
+        "dur_s": 108,
+        "walk_s": 467
+      },
+      {
+        "name": "Junikowo",
+        "km": 0.89,
+        "dur_s": 144,
+        "walk_s": 753
+      },
+      {
+        "name": "Grotkowska",
+        "km": 0.79,
+        "dur_s": 137,
+        "walk_s": 660
+      },
+      {
+        "name": "Budziszyńska",
+        "km": 1.49,
+        "dur_s": 241,
+        "walk_s": 1187
+      },
+      {
+        "name": "Rondo Skubiszewskiego",
+        "km": 1.67,
+        "dur_s": 261,
+        "walk_s": 1297
+      },
+      {
+        "name": "Węgorka",
+        "km": 1.92,
+        "dur_s": 270,
+        "walk_s": 1578
+      },
+      {
+        "name": "Bułgarska Enea Stadion",
+        "km": 2.43,
+        "dur_s": 339,
+        "walk_s": 1999
+      },
+      {
+        "name": "Drzewieckiego",
+        "km": 2.74,
+        "dur_s": 385,
+        "walk_s": 2272
+      },
+      {
+        "name": "Górczyn PKM",
+        "km": 4.21,
+        "dur_s": 625,
+        "walk_s": 2580
+      },
+      {
+        "name": "Grochowska",
+        "km": 3.39,
+        "dur_s": 470,
+        "walk_s": 2796
+      },
+      {
+        "name": "Sielska",
+        "km": 4.43,
+        "dur_s": 740,
+        "walk_s": 3015
+      },
+      {
+        "name": "Arciszewskiego",
+        "km": 4.41,
+        "dur_s": 638,
+        "walk_s": 3291
+      },
+      {
+        "name": "Krauthofera",
+        "km": 4.71,
+        "dur_s": 749,
+        "walk_s": 3413
+      },
+      {
+        "name": "Ostroroga",
+        "km": 3.83,
+        "dur_s": 534,
+        "walk_s": 3188
+      },
+      {
+        "name": "Arena",
+        "km": 4.87,
+        "dur_s": 673,
+        "walk_s": 3600
+      }
+    ],
+    "tram_walk_s": 467
   }
 }

@@ -12616,5 +12616,354 @@
     "geo_city": "Poznań",
     "geo_district": "Naramowice",
     "corrected": true
+  },
+  "96813063800067": {
+    "orig_lat": 52.4136,
+    "orig_lon": 16.68605,
+    "new_lat": 52.402403,
+    "new_lon": 16.668516,
+    "dist_m": 1722,
+    "query": "ul. Agatowej, Sierosław, Polska",
+    "formatted": "Sierosław, Polska",
+    "addr": {
+      "street": "ul. Agatowej",
+      "osiedle": null,
+      "city": "Sierosław",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sierosław",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96821715500067": {
+    "orig_lat": 52.23283,
+    "orig_lon": 16.82917,
+    "new_lat": 52.236342,
+    "new_lon": 16.836703,
+    "dist_m": 645,
+    "query": "ul. Strzelecka, Mosina, Polska",
+    "formatted": "Strzelecka, 62-050 Mosina, Polska",
+    "addr": {
+      "street": "ul. Strzelecka",
+      "osiedle": null,
+      "city": "Mosina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Mosina",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67220153": {
+    "orig_lat": 52.46978,
+    "orig_lon": 16.9417,
+    "new_lat": 52.465623,
+    "new_lon": 16.95356,
+    "dist_m": 927,
+    "query": "Osiedle Zagajnik, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Umultowo",
+    "corrected": true
+  },
+  "96822125400067": {
+    "orig_lat": 52.51425,
+    "orig_lon": 16.77852,
+    "new_lat": 52.518559,
+    "new_lon": 16.777697,
+    "dist_m": 482,
+    "query": "ul. Golfowa, Bytkowo, Polska",
+    "formatted": "62-090 Bytkowo, Polska",
+    "addr": {
+      "street": "ul. Golfowa",
+      "osiedle": null,
+      "city": "Bytkowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Bytkowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65204727": {
+    "orig_lat": 52.38208,
+    "orig_lon": 16.84141,
+    "new_lat": 51.935621,
+    "new_lon": 15.506186,
+    "dist_m": 103731,
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Zielona Góra",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65204743": {
+    "orig_lat": 52.38208,
+    "orig_lon": 16.84141,
+    "new_lat": 53.486119,
+    "new_lon": 20.093608,
+    "dist_m": 250125,
+    "query": "ul. Wieruszowska, Grunwald, Polska",
+    "formatted": "Grunwald, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "osiedle": "Grunwald Park",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Grunwald",
+    "geo_district": null,
+    "corrected": true
+  },
+  "66053520": {
+    "orig_lat": 52.30419,
+    "orig_lon": 17.10051,
+    "new_lat": 52.301515,
+    "new_lon": 17.086911,
+    "dist_m": 971,
+    "query": "ul. Nagietkowej, Dachowo, Polska",
+    "formatted": "Dachowa, Polska",
+    "addr": {
+      "street": "ul. Nagietkowej",
+      "osiedle": "Nowina II",
+      "city": "Dachowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65406990": {
+    "skipped": "geocode_too_vague",
+    "query": "Jeleniogórska 5, null, Polska",
+    "formatted": "Polska",
+    "addr": {
+      "street": "Jeleniogórska 5",
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67445414": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.448794,
+    "new_lon": 16.891269,
+    "dist_m": 10,
+    "query": "Strzeszyńska 77, Poznań, Polska",
+    "formatted": "Strzeszyńska 77, 60-479 Poznań, Polska",
+    "addr": {
+      "street": "Strzeszyńska 77",
+      "osiedle": "Osiedle Strzeszyńska 77",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96819576000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96495355400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96746518000067": {
+    "orig_lat": 52.44608,
+    "orig_lon": 16.89413,
+    "new_lat": 52.456319,
+    "new_lon": 16.886212,
+    "dist_m": 1259,
+    "query": "ul. Jasielska, Podolany, Polska",
+    "formatted": "Podolany, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "osiedle": "Sielskie Podolany",
+      "city": "Podolany",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "96700314000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Błażejewko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96792781900067": {
+    "orig_lat": 52.42847,
+    "orig_lon": 16.82155,
+    "new_lat": 52.428953,
+    "new_lon": 16.821754,
+    "dist_m": 55,
+    "query": "ul. Skarszewska, Poznań, Polska",
+    "formatted": "Skarszewska, 60-446 Poznań, Polska",
+    "addr": {
+      "street": "ul. Skarszewska",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96816355000067": {
+    "orig_lat": 52.42003,
+    "orig_lon": 16.89398,
+    "new_lat": 52.415672,
+    "new_lon": 16.901612,
+    "dist_m": 709,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96790736100067": {
+    "skipped": "geocode_too_vague",
+    "query": "ul. Życzliwa, null, Polska",
+    "formatted": "Polska",
+    "addr": {
+      "street": "ul. Życzliwa",
+      "osiedle": "Osiedle Życzliwe",
+      "city": "null",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96818778300067": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.415672,
+    "new_lon": 16.901612,
+    "dist_m": 444,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96802188100067": {
+    "orig_lat": 52.44406,
+    "orig_lon": 16.89346,
+    "new_lat": 52.442968,
+    "new_lon": 16.890666,
+    "dist_m": 225,
+    "query": "Jasielska 8C, Poznań, Polska",
+    "formatted": "Jasielska 8C, 60-476 Poznań, Polska",
+    "addr": {
+      "street": "Jasielska 8C",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96569875100067": {
+    "orig_lat": 52.38324,
+    "orig_lon": 16.84562,
+    "new_lat": 52.382812,
+    "new_lon": 16.846029,
+    "dist_m": 55,
+    "query": "Ziębicka 30, Poznań, Polska",
+    "formatted": "Ziębicka 30, 60-164 Poznań, Polska",
+    "addr": {
+      "street": "Ziębicka 30",
+      "osiedle": "Osiedle Ziębicka 30",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96502065400067": {
+    "orig_lat": 52.38893,
+    "orig_lon": 16.9174,
+    "new_lat": 52.387726,
+    "new_lon": 16.916694,
+    "dist_m": 142,
+    "query": "ul. 28 czerwca 1956 r. nr 156, Poznań, Polska",
+    "formatted": "28 Czerwca 1956 r. 156, 61-507 Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 czerwca 1956 r. nr 156",
+      "osiedle": "Wilda Story",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96815336800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
