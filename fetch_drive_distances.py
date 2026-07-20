@@ -13,7 +13,7 @@ HEADERS    = {"User-Agent": "poznan-listings-bot/1.0", "Content-Type": "applicat
 RATUSZ     = (52.4082, 16.9335)
 K_DRIVE    = 10   # tram candidates for driving
 K_WALK     = 5    # tram candidates for walking
-K_RAIL     = 3    # rail candidates for driving
+K_RAIL     = 5    # rail candidates for driving
 MAX_WALK_KM    = 3.0
 MAX_ORS_PER_RUN = 1800  # ORS counts matrix as sources×destinations
 
@@ -114,10 +114,10 @@ def main():
 
     cache = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
 
-    SCHEMA_V = 2
+    SCHEMA_V = 3  # bump: K_RAIL 3→5, adds Górczyn PKM for Komorniki/Luboń
 
     def needs_update(e):
-        if e.get("schema_v", 1) < SCHEMA_V:
+        if e.get("schema_v", 0) < SCHEMA_V:
             return True
         cands = e.get("tram_candidates") or []
         return (not e.get("tram_dur_s") or not cands or
