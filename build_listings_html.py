@@ -136,7 +136,7 @@ for r in rows:
                     if sc: d["dir"] = _bearing_label(sc[0], sc[1])
                     drive_stops.append(d)
                     seen_lines |= lines2
-                if len(drive_stops) >= 3:
+                if len(drive_stops) >= 5:
                     break
             # display order: fastest first (PKM priority was for selection only)
             drive_stops.sort(key=lambda d: d.get("min") or 999)

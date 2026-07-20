@@ -933,7 +933,7 @@ function showScoreInfo(r){
   const rail_wm=rd&&rd.walk_min!=null?rd.walk_min:null;
   const use_rail_walk=rail_wm!=null&&(tram_wm==null||rail_wm<tram_wm);
   const bw=use_rail_walk?{icon:'🚆',name:rd.name,min:rail_wm,walk_km:rd.walk_km}:(ws?{icon:'🚋',name:ws.name,min:ws.walk_min,walk_km:ws.walk_km}:null);
-  const walkLine=bw?`<div style="margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid #f0f0f0"><span style="font-weight:600">🚶 ${bw.icon} ${bw.name}</span><span style="color:#1e40af;font-weight:600"> ${bw.min} мин пешком</span>${bw.walk_km!=null?`<span style="color:#888;font-size:11px"> (${fmtTransportKm(bw.walk_km)})</span>`:''}</div>`:'';
+  const walkLine=bw?`<div style="margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid #f0f0f0"><span style="font-weight:600">🚶 ${bw.name} ${bw.icon}</span><span style="color:#1e40af;font-weight:600"> ${bw.min} мин пешком</span>${bw.walk_km!=null?`<span style="color:#888;font-size:11px"> (${fmtTransportKm(bw.walk_km)})</span>`:''}</div>`:'';
   const driveLines=td?(td.drive_stops||[]).map((s,i)=>`<div${i>0?' style="margin-top:3px"':''} >${fmtTramStop(s.name,s.min,s.km,s.lines,s.dir)}</div>`).join(''):'';
   const tramLine=(walkLine||driveLines)?`<div style="margin-bottom:5px">${walkLine}${driveLines}</div>`:'';
   const railLine=rd?`<div style="padding-top:8px;margin-top:8px;border-top:1px solid #f0f0f0">
