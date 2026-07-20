@@ -157,8 +157,8 @@ for r in rows:
         "dist": dist, "dist_min": dist_min,
         "dist_tram": dist_tram, "tram_min": tram_min, "tram_tip": tram_tip, "tram_details": tram_details,
         "dist_rail": dist_rail, "rail_min": rail_min, "rail_tip": rail_tip, "rail_details": rail_details,
-        "walk": min(filter(None, [tram_walk_min, rail_walk_min]), default=None),
-        "walk_type": ("rail" if rail_walk_min and (tram_walk_min is None or rail_walk_min < tram_walk_min) else "tram") if (tram_walk_min or rail_walk_min) else None,
+        "walk": min(filter(None, [(tram_details["walk_stop"]["walk_min"] if tram_details and tram_details.get("walk_stop") else tram_walk_min), rail_walk_min]), default=None),
+        "walk_type": ("rail" if rail_walk_min and rail_walk_min < (tram_details["walk_stop"]["walk_min"] if tram_details and tram_details.get("walk_stop") else tram_walk_min or 9999) else "tram") if (tram_walk_min or rail_walk_min or (tram_details and tram_details.get("walk_stop"))) else None,
         "url": r["url"],
         "lat": lat, "lon": lon,
     }
