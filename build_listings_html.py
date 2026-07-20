@@ -89,6 +89,7 @@ for r in rows:
     tram_name  = _drive.get("tram_name") or r.get("drive_tram_name", "")
     dist_rail = _drive.get("rail_km") or v(r, "drive_rail_km", float)
     rail_min  = round(_drive["rail_dur_s"] / 60) if _drive.get("rail_dur_s") else None
+    rail_walk_min = round(_drive["rail_walk_s"] / 60) if _drive.get("rail_walk_s") else None
     rail_name = _drive.get("rail_name") or r.get("drive_rail_name", "")
 
     tram_tip = rail_tip = None
@@ -155,7 +156,10 @@ for r in rows:
         "district": r.get("district", ""),
         "dist": dist, "dist_min": dist_min,
         "dist_tram": dist_tram, "tram_min": tram_min, "tram_tip": tram_tip, "tram_details": tram_details,
-        "dist_rail": dist_rail, "rail_min": rail_min, "rail_tip": rail_tip, "rail_details": rail_details, "url": r["url"],
+        "dist_rail": dist_rail, "rail_min": rail_min, "rail_tip": rail_tip, "rail_details": rail_details,
+        "walk": min(filter(None, [tram_walk_min, rail_walk_min]), default=None),
+        "walk_type": ("rail" if rail_walk_min and (tram_walk_min is None or rail_walk_min < tram_walk_min) else "tram") if (tram_walk_min or rail_walk_min) else None,
+        "url": r["url"],
         "lat": lat, "lon": lon,
     }
     feat = _feat_cache.get(r["id"], {})

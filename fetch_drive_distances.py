@@ -86,7 +86,8 @@ def main():
             f"{l['lat']},{l['lon']}" not in cache or
             "rail_dur_s" not in cache.get(f"{l['lat']},{l['lon']}", {}) or
             "tram_candidates" not in cache.get(f"{l['lat']},{l['lon']}", {}) or
-            _needs_walk(cache.get(f"{l['lat']},{l['lon']}", {}))]
+            _needs_walk(cache.get(f"{l['lat']},{l['lon']}", {})) or
+            "rail_walk_s" not in cache.get(f"{l['lat']},{l['lon']}", {})]
     print(f"Объявлений: {len(listings)}, в кеше: {len(cache)}, осталось: {len(todo)}")
 
     errors = 0
@@ -120,8 +121,17 @@ def main():
             _, walk_durs = distance_matrix([origin], tram_dests, mode="walking")
             walk_row = walk_durs[0]
         except Exception as e:
-            print(f"  [{i+1}/{len(todo)}] WARN walking {key}: {e}")
+            print(f"  [{i+1}/{len(todo)}] WARN walking tram {key}: {e}")
             walk_row = [None] * K
+
+        # walking distances to rail stations
+        rail_walk_row = [None] * K_RAIL
+        if rail_dests:
+            try:
+                _, rail_walk_durs = distance_matrix([origin], rail_dests, mode="walking")
+                rail_walk_row = rail_walk_durs[0]
+            except Exception as e:
+                print(f"  [{i+1}/{len(todo)}] WARN walking rail {key}: {e}")
 
         # find best tram by min drive time
         best_idx, best_d, best_t = None, None, None
@@ -161,6 +171,11 @@ def main():
 
         tram_walk_s = walk_row[best_idx] if best_idx is not None and best_idx < len(walk_row) else None
 
+        # best rail walk time
+        rail_walk_s = None
+        if best_rail_idx is not None and best_rail_idx < len(rail_walk_row):
+            rail_walk_s = rail_walk_row[best_rail_idx]
+
         entry = cache.get(key, {})
         entry.update({
             "tram_name":       ranked[best_idx]["name"] if best_idx is not None else None,
@@ -173,6 +188,7 @@ def main():
             "rail_name":       ranked_rail[best_rail_idx]["name"] if best_rail_idx is not None else None,
             "rail_km":         round(best_rail_d / 1000, 2) if best_rail_d is not None else None,
             "rail_dur_s":      best_rail_t,
+            "rail_walk_s":     rail_walk_s,
         })
         cache[key] = entry
 

@@ -143,6 +143,7 @@ a:hover{text-decoration:underline}
   <th onclick="sort('dist_min')">До ратуши</th>
   <th onclick="sort('tram_min')">Трамвай</th>
   <th onclick="sort('rail_min')">Ж/д</th>
+  <th onclick="sort('walk')">Пешком</th>
 </tr></thead>
 <tbody id="tb"></tbody>
 </table>
@@ -815,7 +816,7 @@ let sk='score',sd_=-1;
 function sort(k){if(sk===k)sd_*=-1;else{sk=k;sd_=k==='score'?-1:1;}
 document.querySelectorAll('thead th').forEach(t=>t.className='');
 const ths=document.querySelectorAll('thead th');
-const ki=['score','title','type','district_score','area','rooms','floor','price','price_m2','project','dist','dist_tram','rail_min'];
+const ki=['score','title','type','district_score','area','rooms','floor','price','price_m2','project','dist','dist_tram','rail_min','walk'];
 const idx=ki.indexOf(k);if(idx>=0)ths[idx].className=sd_===1?'asc':'desc';render();}
 function onTypeChange(){
   const st=document.getElementById('st').value;
@@ -1055,6 +1056,10 @@ const ds_cell=`<a href="#${ds_anchor}" onclick="event.preventDefault();switchTab
 const proj_cell=r.project?`<span style="max-width:130px;overflow:hidden;text-overflow:ellipsis;color:#666;display:inline-block" title="${r.project}">${r.project}</span>`:'—';
 const tram_cell=dt_v!=null?`<span style="color:${dt_c};font-weight:500">🚊 ${dt_s}</span>`:'—';
 const rail_cell=dr_v!=null?`<span style="color:${dr_c};font-weight:500">🚆 ${dr_s}</span>`:'—';
+const wk_v=r.walk;
+const wk_c=wk_v==null?'#999':wk_v<=7?'#166534':wk_v<=15?'#1e40af':wk_v<=25?'#854d0e':'#991b1b';
+const wk_icon=r.walk_type==='rail'?'🚆':'🚊';
+const walk_cell=wk_v!=null?`<span style="color:${wk_c};font-weight:500">${wk_icon} ${Math.round(wk_v)} мин</span>`:'—';
 
 const exp_cell=toggle?`<td style="text-align:center;padding:0">${toggle}</td>`:'<td></td>';
 return`<tr>
@@ -1073,6 +1078,7 @@ ${exp_cell}
 <td style="white-space:nowrap">${dc}</td>
 <td style="white-space:nowrap">${tram_cell}</td>
 <td style="white-space:nowrap">${rail_cell}</td>
+<td style="white-space:nowrap">${walk_cell}</td>
 </tr>`;}
 
 function subRowHtml(r,gid){
