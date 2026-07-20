@@ -67,8 +67,18 @@ def v(r, k, t=str):
     try: return t(val)
     except: return None
 
+# bbox Познани + ближайший повят
+_LAT_MIN, _LAT_MAX = 52.15, 52.65
+_LON_MIN, _LON_MAX = 16.55, 17.15
+
 js_rows = []
 for r in rows:
+    try:
+        _lat, _lon = float(r["lat"]), float(r["lon"])
+        if not (_LAT_MIN <= _lat <= _LAT_MAX and _LON_MIN <= _lon <= _LON_MAX):
+            continue
+    except (ValueError, KeyError, TypeError):
+        pass
     price = v(r, "price_zl", float)
     price_m2 = v(r, "price_per_m2", float)
     area = v(r, "area_m2", float)

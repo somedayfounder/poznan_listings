@@ -79,41 +79,6 @@ a:hover{text-decoration:underline}
     <option value="mieszkanie">Квартиры</option>
     <option value="dom">Дома</option>
   </select>
-  <select id="sr" onchange="render()">
-    <option value="">Любые комнаты</option>
-    <option value="2">от 2 комнат</option>
-    <option value="3">от 3 комнат</option>
-    <option value="4">от 4 комнат</option>
-    <option value="5">от 5 комнат</option>
-  </select>
-  <select id="sa" onchange="render()">
-    <option value="">Любая площадь</option>
-    <option value="90">от 90 м²</option>
-    <option value="100">от 100 м²</option>
-    <option value="120">от 120 м²</option>
-    <option value="150">от 150 м²</option>
-  </select>
-  <select id="sp_min" onchange="render()">
-    <option value="">от любой</option>
-    <option value="600000">от 600 000 zł</option>
-    <option value="700000">от 700 000 zł</option>
-    <option value="800000">от 800 000 zł</option>
-    <option value="900000">от 900 000 zł</option>
-    <option value="1000000">от 1 000 000 zł</option>
-    <option value="1100000">от 1 100 000 zł</option>
-  </select>
-  <select id="sp" onchange="render()">
-    <option value="">до любой</option>
-    <option value="700000">до 700 000 zł</option>
-    <option value="800000">до 800 000 zł</option>
-    <option value="900000">до 900 000 zł</option>
-    <option value="1000000">до 1 000 000 zł</option>
-    <option value="1100000">до 1 100 000 zł</option>
-    <option value="1200000">до 1 200 000 zł</option>
-    <option value="1300000">до 1 300 000 zł</option>
-    <option value="1400000">до 1 400 000 zł</option>
-    <option value="1500000">до 1 500 000 zł</option>
-  </select>
   <select id="stram" onchange="render()">
     <option value="">До трамвая — любое</option>
     <option value="3">до 3 мин</option>
@@ -123,6 +88,14 @@ a:hover{text-decoration:underline}
     <option value="15">до 15 мин</option>
     <option value="20">до 20 мин</option>
     <option value="30">до 30 мин</option>
+  </select>
+  <select id="swalk" onchange="render()">
+    <option value="">Пешком — любое</option>
+    <option value="5">до 5 мин</option>
+    <option value="7">до 7 мин</option>
+    <option value="10">до 10 мин</option>
+    <option value="15">до 15 мин</option>
+    <option value="20">до 20 мин</option>
   </select>
 </div>
 <div class="tbl-wrap">
@@ -986,18 +959,12 @@ function showScoreInfo(r){
 function render(){
 const q=(document.getElementById('sq').value||'').toLowerCase();
 const st=document.getElementById('st').value;
-const sr=parseInt(document.getElementById('sr').value)||0;
-const sa=parseFloat(document.getElementById('sa').value)||0;
-const sp_min=parseFloat(document.getElementById('sp_min').value)||0;
-const sp=parseFloat(document.getElementById('sp').value)||0;
 const mtram=parseFloat(document.getElementById('stram').value)||Infinity;
+const mwalk=parseFloat(document.getElementById('swalk').value)||Infinity;
 let rs=D.filter(r=>{
   if(st&&r.type!==st)return false;
-  if(sr&&(r.rooms==null||r.rooms<sr))return false;
-  if(sa&&(r.area==null||r.area<sa))return false;
-  if(sp_min&&r.price&&r.price<sp_min)return false;
-  if(sp&&r.price&&r.price>sp)return false;
   if(mtram<Infinity&&(r.tram_min==null||r.tram_min>mtram))return false;
+  if(mwalk<Infinity&&(r.walk==null||r.walk>mwalk))return false;
   if(q&&![r.title,r.city,r.street||'',r.project||''].join(' ').toLowerCase().includes(q))return false;
   return true;
 });
