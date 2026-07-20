@@ -13677,5 +13677,62 @@
     "geo_city": "Grunwald",
     "geo_district": null,
     "corrected": true
+  },
+  "96795194400067": {
+    "orig_lat": 52.4457,
+    "orig_lon": 16.9119,
+    "new_lat": 52.445014,
+    "new_lon": 16.911521,
+    "dist_m": 80,
+    "query": "ul. Wojciechowskiego 7/17, Poznań, Polska",
+    "formatted": "Wojciechowskiego 7/17, 60-685 Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego 7/17",
+      "osiedle": "Piątkowo Residence",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96820804400067": {
+    "orig_lat": 52.44369,
+    "orig_lon": 16.89482,
+    "new_lat": 52.456319,
+    "new_lon": 16.886212,
+    "dist_m": 1521,
+    "query": "Poznań, Strzeszyn/Podolany, Polska",
+    "formatted": "Podolany, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Strzeszyn/Podolany",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "96547172500067": {
+    "orig_lat": 52.39955,
+    "orig_lon": 16.90333,
+    "new_lat": 52.402846,
+    "new_lon": 16.903411,
+    "dist_m": 367,
+    "query": "ul. Śniadeckich, Poznań, Polska",
+    "formatted": "Śniadeckich, 61-001 Poznań, Polska",
+    "addr": {
+      "street": "ul. Śniadeckich",
+      "osiedle": "Perfumiarnia 2",
+      "city": "Poznań",
+      "district": "Łazarz",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
   }
 }
