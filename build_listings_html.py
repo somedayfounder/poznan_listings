@@ -121,9 +121,13 @@ for r in rows:
                 walk_stop = {"name": tram_name, "walk_min": tram_walk_min, "km": dist_tram}
 
             # остановки на авто: уникальные линии, сортировка по drive_s, макс 3
+            # PKM stops get priority on equal drive time (better P+R visibility)
             drive_stops = []
             seen_lines = set()
-            for cand in sorted(candidates, key=lambda c: c["dur_s"]):
+            def _drive_key(c):
+                dur = c.get("dur_s") or 999999
+                return ((dur // 60) * 60, 0 if "PKM" in c["name"] else 1, dur)
+            for cand in sorted(candidates, key=_drive_key):
                 lines2 = set(stop_lines.get(cand["name"], []))
                 if lines2 and not lines2.intersection(seen_lines):
                     sc = _stop_coords.get(cand["name"])
@@ -133,6 +137,8 @@ for r in rows:
                     seen_lines |= lines2
                 if len(drive_stops) >= 3:
                     break
+            # display order: fastest first (PKM priority was for selection only)
+            drive_stops.sort(key=lambda d: d.get("min") or 999)
 
             # fallback: haversine если кандидатов нет
             if not candidates and tram_name:
