@@ -116,9 +116,10 @@ for r in rows:
             walk_stop = None
             if cands_with_walk:
                 wb = min(cands_with_walk, key=lambda c: c["walk_s"])
-                walk_stop = {"name": wb["name"], "walk_min": round(wb["walk_s"] / 60), "km": wb["km"]}
+                walk_dist_km = round(wb["walk_dist_m"] / 1000, 2) if wb.get("walk_dist_m") else None
+                walk_stop = {"name": wb["name"], "walk_min": round(wb["walk_s"] / 60), "walk_km": walk_dist_km}
             elif tram_walk_min is not None:
-                walk_stop = {"name": tram_name, "walk_min": tram_walk_min, "km": dist_tram}
+                walk_stop = {"name": tram_name, "walk_min": tram_walk_min, "walk_km": None}
 
             # остановки на авто: уникальные линии, сортировка по drive_s, макс 3
             # PKM stops get priority on equal drive time (better P+R visibility)
@@ -158,9 +159,9 @@ for r in rows:
             tram_tip = " | ".join(f"{s['name']} {s['min']} мин" for s in drive_stops if s.get("min"))
 
         if rail_name:
-            rail_sc = _stop_coords.get(rail_name)
-            rail_hav_km = round(hav(lat, lon, rail_sc[0], rail_sc[1]), 2) if rail_sc else None
-            rail_details = {"name": rail_name, "min": rail_min, "km": dist_rail, "hav_km": rail_hav_km, "walk_min": rail_walk_min}
+            rail_walk_dist_m = _drive.get("rail_walk_dist_m")
+            rail_walk_km = round(rail_walk_dist_m / 1000, 2) if rail_walk_dist_m else None
+            rail_details = {"name": rail_name, "min": rail_min, "km": dist_rail, "walk_min": rail_walk_min, "walk_km": rail_walk_km}
             rail_tip = f"{rail_name} — {fmt_d(dist_rail)} по дороге ({rail_min} мин)" if rail_min else f"{rail_name} — {fmt_d(dist_rail)} по дороге"
 
     lat = v(r, "lat", float)

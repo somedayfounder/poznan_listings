@@ -53,16 +53,16 @@ def ors_matrix(src_lat, src_lon, destinations):
     """
     ORS matrix API: 1 HTTP request for all walk destinations.
     destinations: list of (lat, lon)
-    Returns list of duration_s or None per destination.
+    Returns list of (duration_s, distance_m) or (None, None) per destination.
     Note: counts as len(destinations) ORS quota requests.
     """
     if not ORS_KEY or not destinations:
-        return [None] * len(destinations)
+        return [(None, None)] * len(destinations)
     locations = [[src_lon, src_lat]] + [[lon, lat] for lat, lon in destinations]
     payload = json.dumps({
         "locations": locations,
         "sources": [0],
-        "metrics": ["duration"],
+        "metrics": ["duration", "distance"],
     }).encode()
     url = "https://api.openrouteservice.org/v2/matrix/foot-walking"
     for attempt in range(3):
@@ -73,16 +73,19 @@ def ors_matrix(src_lat, src_lon, destinations):
                 "User-Agent": "poznan-listings-bot/1.0",
             })
             data = json.loads(urllib.request.urlopen(req, timeout=20).read())
-            row = data["durations"][0][1:]  # skip self
-            return [round(v) if v is not None else None for v in row]
+            durs  = data["durations"][0][1:]   # skip self
+            dists = data["distances"][0][1:]
+            return [(round(t) if t is not None else None,
+                     round(d) if d is not None else None)
+                    for t, d in zip(durs, dists)]
         except Exception:
             if attempt < 2: time.sleep(2)
-    return [None] * len(destinations)
+    return [(None, None)] * len(destinations)
 
 def ors_walk(lat1, lon1, lat2, lon2):
-    """Single ORS walk call (for rail, which has different best-stop logic)."""
+    """Single ORS walk call (for rail). Returns (duration_s, distance_m) or (None, None)."""
     if not ORS_KEY:
-        return None
+        return None, None
     url = "https://api.openrouteservice.org/v2/directions/foot-walking?" + urllib.parse.urlencode({
         "api_key": ORS_KEY, "start": f"{lon1},{lat1}", "end": f"{lon2},{lat2}",
     })
@@ -90,10 +93,11 @@ def ors_walk(lat1, lon1, lat2, lon2):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "poznan-listings-bot/1.0"})
             data = json.loads(urllib.request.urlopen(req, timeout=20).read())
-            return round(data["features"][0]["properties"]["segments"][0]["duration"])
+            seg = data["features"][0]["properties"]["segments"][0]
+            return round(seg["duration"]), round(seg["distance"])
         except Exception:
             if attempt < 2: time.sleep(2)
-    return None
+    return None, None
 
 def main():
     if not ORS_KEY:
@@ -114,7 +118,7 @@ def main():
 
     cache = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
 
-    SCHEMA_V = 3  # bump: K_RAIL 3→5, adds Górczyn PKM for Komorniki/Luboń
+    SCHEMA_V = 4  # bump: ORS walk distance (walk_dist_m) stored in tram_candidates and rail_walk_dist_m
 
     def needs_update(e):
         if e.get("schema_v", 0) < SCHEMA_V:
@@ -162,13 +166,14 @@ def main():
             # 1 ORS matrix request for all walk trams
             if walk_trams:
                 walk_dests = [(t["lat"], t["lon"]) for t in walk_trams]
-                walk_durs = ors_matrix(lat, lon, walk_dests)
+                walk_results = ors_matrix(lat, lon, walk_dests)
                 ors_used += len(walk_trams)  # counts as N quota requests
                 time.sleep(1.1)
-                for stop, w in zip(walk_trams, walk_durs):
+                for stop, (w_dur, w_dist) in zip(walk_trams, walk_results):
                     cand = next((c for c in tram_candidates if c["name"] == stop["name"]), None)
                     if cand:
-                        cand["walk_s"] = w
+                        cand["walk_s"] = w_dur
+                        cand["walk_dist_m"] = w_dist
 
             best_tram   = min((c for c in tram_candidates if c["dur_s"]), key=lambda c: c["dur_s"], default=None)
             tram_walk_s = min((c["walk_s"] for c in tram_candidates if c.get("walk_s")), default=None)
@@ -181,25 +186,26 @@ def main():
             best_rail = min((c for c in rail_cands if c["t"]), key=lambda c: c["t"], default=None)
 
             # 1 ORS call for best rail walk
-            rail_walk_s = None
+            rail_walk_s = rail_walk_dist_m = None
             if best_rail and haversine(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"]) <= MAX_WALK_KM:
-                rail_walk_s = ors_walk(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"])
+                rail_walk_s, rail_walk_dist_m = ors_walk(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"])
                 ors_used += 1
                 time.sleep(1.1)
 
             entry.update({
-                "schema_v":        SCHEMA_V,
-                "tram_name":       best_tram["name"] if best_tram else None,
-                "tram_km":         best_tram["km"] if best_tram else None,
-                "tram_dur_s":      best_tram["dur_s"] if best_tram else None,
-                "tram_walk_s":     tram_walk_s,
-                "tram_candidates": tram_candidates,
-                "ratusz_km":       round(ratusz_d / 1000, 2) if ratusz_d else None,
-                "ratusz_dur_s":    ratusz_t,
-                "rail_name":       best_rail["stop"]["name"] if best_rail else None,
-                "rail_km":         round(best_rail["d"] / 1000, 2) if best_rail and best_rail["d"] else None,
-                "rail_dur_s":      best_rail["t"] if best_rail else None,
-                "rail_walk_s":     rail_walk_s,
+                "schema_v":           SCHEMA_V,
+                "tram_name":          best_tram["name"] if best_tram else None,
+                "tram_km":            best_tram["km"] if best_tram else None,
+                "tram_dur_s":         best_tram["dur_s"] if best_tram else None,
+                "tram_walk_s":        tram_walk_s,
+                "tram_candidates":    tram_candidates,
+                "ratusz_km":          round(ratusz_d / 1000, 2) if ratusz_d else None,
+                "ratusz_dur_s":       ratusz_t,
+                "rail_name":          best_rail["stop"]["name"] if best_rail else None,
+                "rail_km":            round(best_rail["d"] / 1000, 2) if best_rail and best_rail["d"] else None,
+                "rail_dur_s":         best_rail["t"] if best_rail else None,
+                "rail_walk_s":        rail_walk_s,
+                "rail_walk_dist_m":   rail_walk_dist_m,
             })
             cache[key] = entry
 
