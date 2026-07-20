@@ -13734,5 +13734,518 @@
     "geo_city": "Poznań",
     "geo_district": null,
     "corrected": true
+  },
+  "67952394": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wojciechowskiego, Piątkowo, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "osiedle": "Początek Piątkowo",
+      "city": "Piątkowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96629336100067": {
+    "skipped": "geocode_failed",
+    "query": "ul. 28 czerwca 1956 r., Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 czerwca 1956 r.",
+      "osiedle": "Osiedle 28 Czerwca 1956 r.",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    }
+  },
+  "67952378": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wojciechowskiego, Piątkowo, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "osiedle": "Początek Piątkowo",
+      "city": "Piątkowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68026872": {
+    "skipped": "geocode_failed",
+    "query": "ul. Borówkowa, Gowarzewo, Polska",
+    "addr": {
+      "street": "ul. Borówkowa",
+      "osiedle": null,
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96661454000067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Gnieźnieńska, Murowana Goślina, Polska",
+    "addr": {
+      "street": "ul. Gnieźnieńska",
+      "osiedle": "Osiedle Makowe",
+      "city": "Murowana Goślina",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96748006000067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Śnieżnej, Gowarzewo, Polska",
+    "addr": {
+      "street": "ul. Śnieżnej",
+      "osiedle": null,
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68220424": {
+    "skipped": "geocode_failed",
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96815204200067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Jaśkowiaka 104/106, Radajewo, Polska",
+    "addr": {
+      "street": "ul. Jaśkowiaka 104/106",
+      "osiedle": "Park Morasko",
+      "city": "Radajewo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "96816274200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67456939": {
+    "orig_lat": 52.47224,
+    "orig_lon": 17.21312,
+    "new_lat": 52.450839,
+    "new_lon": 17.245258,
+    "dist_m": 3225,
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Promno",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96816457100067": {
+    "skipped": "geocode_failed",
+    "query": "Osiedle Mateckiego, Morasko, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Osiedle Mateckiego",
+      "city": "Morasko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67220159": {
+    "skipped": "geocode_failed",
+    "query": "Osiedle Zagajnik, Umultowo, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "96818314100067": {
+    "skipped": "geocode_failed",
+    "query": "gmina Mosina, Daszewice, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    }
+  },
+  "68228399": {
+    "skipped": "geocode_failed",
+    "query": "Osiedle Wzgórze Zawilcowa, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Osiedle Wzgórze Zawilcowa",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "65204647": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96788025900067": {
+    "skipped": "geocode_failed",
+    "query": "Zielone Wzgórze, Napachanie, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68228463": {
+    "skipped": "geocode_failed",
+    "query": "Osiedle Wzgórze Zawilcowa, Puszczykowo, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Osiedle Wzgórze Zawilcowa",
+      "city": "Puszczykowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96789554300067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Magnoliowej, Czmoniec, Polska",
+    "addr": {
+      "street": "ul. Magnoliowej",
+      "osiedle": null,
+      "city": "Czmoniec",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68004119": {
+    "orig_lat": 52.37622,
+    "orig_lon": 16.95347,
+    "new_lat": 52.376396,
+    "new_lon": 16.952555,
+    "dist_m": 65,
+    "query": "Panoramiqa 2, Poznań, Polska",
+    "formatted": "Panoramiqa, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Panoramiqa 2",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "68227231": {
+    "orig_lat": 52.37585,
+    "orig_lon": 16.95188,
+    "new_lat": 52.368462,
+    "new_lon": 16.93264,
+    "dist_m": 1543,
+    "query": "Poznań, Starołęka, Polska",
+    "formatted": "Modertrans Poznań, 2, Forteczna, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, 61-362, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Starołęka",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "96551547900067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Truskawkowa, Sapowice, Polska",
+    "addr": {
+      "street": "ul. Truskawkowa",
+      "osiedle": "Osiedle Nad Jeziorem",
+      "city": "Sapowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96820420500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96625696800067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Truskawkowa, Sapowice, Polska",
+    "addr": {
+      "street": "ul. Truskawkowa",
+      "osiedle": "Osiedle Nad Jeziorem",
+      "city": "Sapowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96814154000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96802963700067": {
+    "orig_lat": 52.45718,
+    "orig_lon": 16.88339,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 1674,
+    "query": "Jasielska 8C, Poznań, Polska",
+    "formatted": "8c, Jasielska, Podolany, Poznań, województwo wielkopolskie, 60-476, Polska",
+    "addr": {
+      "street": "Jasielska 8C",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "96811083500067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Bursztynowa, Plewiska, Polska",
+    "addr": {
+      "street": "ul. Bursztynowa",
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": "gmina Komorniki",
+      "confidence": "high"
+    }
+  },
+  "96402124000067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Surfiniowej, Palędzie, Polska",
+    "addr": {
+      "street": "ul. Surfiniowej",
+      "osiedle": null,
+      "city": "Palędzie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96819628700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "X",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67827547": {
+    "skipped": "geocode_failed",
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska 4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96782754700067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska 4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96822358500067": {
+    "orig_lat": 52.41445,
+    "orig_lon": 16.89577,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 488,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68022661": {
+    "skipped": "geocode_failed",
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96817688800067": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96821899700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68123986": {
+    "skipped": "geocode_failed",
+    "query": "ul. Jeleniogórska, Grunwald, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68073278": {
+    "skipped": "geocode_failed",
+    "query": "ul. Dolna Wilda 12, Poznań, Polska",
+    "addr": {
+      "street": "ul. Dolna Wilda 12",
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    }
+  },
+  "96807327800067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Dolna Wilda 12, Poznań, Polska",
+    "addr": {
+      "street": "ul. Dolna Wilda 12",
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    }
+  },
+  "67951897": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wojciechowskiego 7/17, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego 7/17",
+      "osiedle": "Piątkowo Residence",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96795189700067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wojciechowskiego 7/17, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego 7/17",
+      "osiedle": "Piątkowo Residence",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96718335500067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Smardzewska, Grunwald, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "osiedle": "Grunwald Między Drzewami",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96821154400067": {
+    "orig_lat": 52.4149,
+    "orig_lon": 16.89089,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 823,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68226745": {
+    "skipped": "geocode_failed",
+    "query": "Nowe Spławie, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Nowe Spławie",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
