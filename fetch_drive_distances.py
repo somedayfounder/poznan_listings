@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 """
-Fetches routing data via free OSRM (router.project-osrm.org) — no API key needed.
-Saves to drive_cache.json: { "lat,lon": { tram_name, tram_km, tram_dur_s, tram_walk_s,
-                                           tram_candidates, ratusz_km, ratusz_dur_s,
-                                           rail_name, rail_km, rail_dur_s, rail_walk_s } }
+Fetches routing data:
+  - driving: OSRM (free, no key) — 10 tram + 3 rail + ratusz
+  - walking: OpenRouteService foot-walking (OPENROUTE_KEY) — 5 nearest tram + 1 rail
+Saves to drive_cache.json.
 """
-import json, csv, math, time, urllib.request
+import json, csv, math, time, urllib.request, urllib.parse, os
 from pathlib import Path
 
+ORS_KEY    = os.environ.get("OPENROUTE_KEY", "")
 HEADERS    = {"User-Agent": "poznan-listings-bot/1.0"}
 RATUSZ     = (52.4082, 16.9335)
-K          = 5    # tram candidates
-K_RAIL     = 3    # rail candidates
-SLEEP      = 0.35 # между запросами к публичному OSRM
-MAX_WALK_KM = 3.0 # OSRM foot ненадёжен на дальних маршрутах
+K_DRIVE    = 10   # tram candidates for driving
+K_WALK     = 5    # tram candidates for walking
+K_RAIL     = 3    # rail candidates for driving
+MAX_WALK_KM = 3.0 # не считаем пешком если дальше
 
 CACHE_FILE = Path("drive_cache.json")
 TRAM_FILE  = Path("tram_stops.json")
@@ -26,9 +27,9 @@ def haversine(lat1, lon1, lat2, lon2):
     a = math.sin(dl/2)**2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(do/2)**2
     return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
 
-def osrm_route(lat1, lon1, lat2, lon2, profile="driving"):
-    """Returns (distance_m, duration_s) or (None, None)."""
-    url = f"http://router.project-osrm.org/route/v1/{profile}/{lon1},{lat1};{lon2},{lat2}?overview=false"
+def osrm_route(lat1, lon1, lat2, lon2):
+    """OSRM driving. Returns (distance_m, duration_s) or (None, None)."""
+    url = f"http://router.project-osrm.org/route/v1/driving/{lon1},{lat1};{lon2},{lat2}?overview=false"
     for attempt in range(3):
         try:
             req = urllib.request.Request(url, headers=HEADERS)
@@ -37,11 +38,32 @@ def osrm_route(lat1, lon1, lat2, lon2, profile="driving"):
                 r = data["routes"][0]
                 return round(r["distance"]), round(r["duration"])
         except Exception:
-            if attempt < 2:
-                time.sleep(1)
+            if attempt < 2: time.sleep(1)
     return None, None
 
+def ors_walk(lat1, lon1, lat2, lon2):
+    """OpenRouteService foot-walking. Returns duration_s or None."""
+    if not ORS_KEY:
+        return None
+    url = "https://api.openrouteservice.org/v2/directions/foot-walking?" + urllib.parse.urlencode({
+        "api_key": ORS_KEY,
+        "start": f"{lon1},{lat1}",
+        "end":   f"{lon2},{lat2}",
+    })
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(url, headers=HEADERS)
+            data = json.loads(urllib.request.urlopen(req, timeout=15).read())
+            seg = data["features"][0]["properties"]["segments"][0]
+            return round(seg["duration"])
+        except Exception:
+            if attempt < 2: time.sleep(1)
+    return None
+
 def main():
+    if not ORS_KEY:
+        raise SystemExit("ERROR: OPENROUTE_KEY не задан")
+
     trams = json.loads(TRAM_FILE.read_text())
     rails = json.loads(RAIL_FILE.read_text()) if RAIL_FILE.exists() else []
 
@@ -74,48 +96,45 @@ def main():
         key = f"{lat},{lon}"
         entry = cache.get(key, {})
 
-        ranked_trams = sorted(trams, key=lambda t: haversine(lat, lon, t["lat"], t["lon"]))[:K]
+        ranked_trams = sorted(trams, key=lambda t: haversine(lat, lon, t["lat"], t["lon"]))
+        drive_trams  = ranked_trams[:K_DRIVE]
+        walk_trams   = [t for t in ranked_trams[:K_WALK] if haversine(lat, lon, t["lat"], t["lon"]) <= MAX_WALK_KM]
         ranked_rails = sorted(rails, key=lambda r: haversine(lat, lon, r["lat"], r["lon"]))[:K_RAIL]
 
         try:
-            # трамваи: driving + walking для каждого кандидата
+            # driving до трамваев
             tram_candidates = []
-            for stop in ranked_trams:
+            for stop in drive_trams:
                 hav_km = round(haversine(lat, lon, stop["lat"], stop["lon"]), 2)
-                d, t = osrm_route(lat, lon, stop["lat"], stop["lon"], "driving"); time.sleep(SLEEP)
-                w = None
-                if hav_km <= MAX_WALK_KM:
-                    _, w = osrm_route(lat, lon, stop["lat"], stop["lon"], "foot"); time.sleep(SLEEP)
-                tram_candidates.append({
-                    "name": stop["name"],
-                    "km":   hav_km,
-                    "dur_s": t,
-                    "walk_s": w,
-                })
+                d, t = osrm_route(lat, lon, stop["lat"], stop["lon"]); time.sleep(0.35)
+                tram_candidates.append({"name": stop["name"], "km": hav_km, "dur_s": t, "walk_s": None})
 
-            # лучший трамвай по drive time
-            valid = [c for c in tram_candidates if c["dur_s"] is not None]
-            best_tram = min(valid, key=lambda c: c["dur_s"]) if valid else None
+            # walking до ближайших трамваев через ORS
+            for stop in walk_trams:
+                w = ors_walk(lat, lon, stop["lat"], stop["lon"]); time.sleep(1.1)
+                cand = next((c for c in tram_candidates if c["name"] == stop["name"]), None)
+                if cand:
+                    cand["walk_s"] = w
+
+            best_tram  = min((c for c in tram_candidates if c["dur_s"]), key=lambda c: c["dur_s"], default=None)
             tram_walk_s = min((c["walk_s"] for c in tram_candidates if c.get("walk_s")), default=None)
 
             # ратуш
-            ratusz_d, ratusz_t = osrm_route(lat, lon, *RATUSZ); time.sleep(SLEEP)
+            ratusz_d, ratusz_t = osrm_route(lat, lon, *RATUSZ); time.sleep(0.35)
 
-            # жд: driving для кандидатов
+            # driving до жд
             rail_cands = []
             for stop in ranked_rails:
-                d, t = osrm_route(lat, lon, stop["lat"], stop["lon"], "driving"); time.sleep(SLEEP)
+                d, t = osrm_route(lat, lon, stop["lat"], stop["lon"]); time.sleep(0.35)
                 rail_cands.append({"stop": stop, "d": d, "t": t})
 
-            best_rail = min((c for c in rail_cands if c["t"] is not None), key=lambda c: c["t"], default=None)
+            best_rail = min((c for c in rail_cands if c["t"]), key=lambda c: c["t"], default=None)
 
-            # пешком до лучшей жд (только если близко)
+            # walking до лучшей жд
             rail_walk_s = None
-            if best_rail:
-                rail_hav_km = haversine(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"])
-                if rail_hav_km <= MAX_WALK_KM:
-                    _, rail_walk_s = osrm_route(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"], "foot")
-                    time.sleep(SLEEP)
+            if best_rail and haversine(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"]) <= MAX_WALK_KM:
+                rail_walk_s = ors_walk(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"])
+                time.sleep(1.1)
 
             entry.update({
                 "tram_name":       best_tram["name"] if best_tram else None,
