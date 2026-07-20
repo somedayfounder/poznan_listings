@@ -3,20 +3,21 @@
 Уточняет координаты новых объявлений:
 1. Читает описание со страницы объявления
 2. GPT извлекает фактический адрес объекта
-3. Google Geocoding API возвращает точные координаты
+3. Nominatim (OpenStreetMap) возвращает точные координаты
 4. Обновляет listings_latest.csv; аудит сохраняется в coords_override.json
 """
 import csv, json, os, re, time
 from pathlib import Path
 from urllib.request import Request, urlopen
-from urllib.parse import urlencode, quote_plus
+from urllib.parse import urlencode
 from math import radians, sin, cos, sqrt, atan2
 
 DATA_DIR = Path(__file__).parent
 CSV_FILE = DATA_DIR / "listings_latest.csv"
 OVERRIDE_FILE = DATA_DIR / "coords_override.json"
 GPT_TOKEN = os.environ.get("GPT_TOKEN", "")
-GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", "")
+
+NOMINATIM_HEADERS = {"User-Agent": "poznan-listings-bot/1.0 (aliaksandrpaltaratski@gmail.com)"}
 
 GPT_PROMPT = """Прочитай описание польского объявления о недвижимости и определи, где физически находится объект.
 
@@ -91,25 +92,24 @@ def gpt_extract_address(description):
 
 
 def geocode(query):
-    if not GOOGLE_API_KEY:
-        return None, None, None, None, None
-    url = "https://maps.googleapis.com/maps/api/geocode/json?" + urlencode({
-        "address": query,
-        "key": GOOGLE_API_KEY,
-        "language": "pl",
-        "region": "pl",
-        "components": "country:PL",
+    url = "https://nominatim.openstreetmap.org/search?" + urlencode({
+        "q": query,
+        "format": "json",
+        "addressdetails": 1,
+        "limit": 1,
+        "countrycodes": "pl",
+        "accept-language": "pl",
     })
     try:
-        resp = json.loads(urlopen(url, timeout=10).read())
-        if resp.get("status") == "OK" and resp["results"]:
-            r = resp["results"][0]
-            loc = r["geometry"]["location"]
-            comps = {c["types"][0]: c["long_name"] for c in r["address_components"] if c["types"]}
-            city = comps.get("locality") or comps.get("administrative_area_level_2")
-            district = (comps.get("sublocality_level_1") or comps.get("sublocality") or
-                        comps.get("neighborhood") or comps.get("sublocality_level_2"))
-            return round(loc["lat"], 6), round(loc["lng"], 6), r["formatted_address"], city, district
+        req = Request(url, headers=NOMINATIM_HEADERS)
+        resp = json.loads(urlopen(req, timeout=10).read())
+        if resp:
+            r = resp[0]
+            addr = r.get("address", {})
+            city = addr.get("city") or addr.get("town") or addr.get("village") or addr.get("county")
+            district = addr.get("suburb") or addr.get("quarter") or addr.get("neighbourhood")
+            formatted = r.get("display_name", "")
+            return round(float(r["lat"]), 6), round(float(r["lon"]), 6), formatted, city, district
     except Exception as e:
         print(f"    geocode error: {e}")
     return None, None, None, None, None
@@ -134,9 +134,6 @@ def main():
     if not GPT_TOKEN:
         print("GPT_TOKEN не задан — пропускаем geocode_coords")
         return
-    if not GOOGLE_API_KEY:
-        print("GOOGLE_API_KEY не задан — пропускаем geocode_coords")
-        return
 
     rows = list(csv.DictReader(open(CSV_FILE, encoding="utf-8-sig")))
     overrides = json.loads(OVERRIDE_FILE.read_text()) if OVERRIDE_FILE.exists() else {}
@@ -160,7 +157,7 @@ def main():
         if not query or addr.get("confidence") == "low":
             overrides[lid] = {"skipped": "low_confidence", "addr": addr}
             print(f"    → нет адреса (confidence={addr.get('confidence')})")
-            time.sleep(0.3)
+            time.sleep(1.0)
             continue
 
         new_lat, new_lon, formatted, geo_city, geo_district = geocode(query)
@@ -212,7 +209,7 @@ def main():
         else:
             print(f"    ≈ Совпадает (Δ{dist_m:.0f}м): {formatted}")
 
-        time.sleep(0.3)
+        time.sleep(1.0)  # Nominatim требует не более 1 req/s
 
     # Применяем корректировки к CSV + копируем drive_cache на новые ключи
     if updated > 0:
