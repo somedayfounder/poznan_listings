@@ -118,7 +118,7 @@ def main():
 
     cache = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
 
-    SCHEMA_V = 4  # bump: ORS walk distance (walk_dist_m) stored in tram_candidates and rail_walk_dist_m
+    SCHEMA_V = 5  # bump: tram candidate km = OSRM drive distance (not haversine)
 
     def needs_update(e):
         if e.get("schema_v", 0) < SCHEMA_V:
@@ -160,8 +160,8 @@ def main():
 
             tram_candidates = []
             for stop, (d, t) in zip(drive_trams, tram_results):
-                hav_km = round(haversine(lat, lon, stop["lat"], stop["lon"]), 2)
-                tram_candidates.append({"name": stop["name"], "km": hav_km, "dur_s": t, "walk_s": None})
+                drive_km = round(d / 1000, 2) if d else round(haversine(lat, lon, stop["lat"], stop["lon"]), 2)
+                tram_candidates.append({"name": stop["name"], "km": drive_km, "dur_s": t, "walk_s": None})
 
             # 1 ORS matrix request for all walk trams
             if walk_trams:
