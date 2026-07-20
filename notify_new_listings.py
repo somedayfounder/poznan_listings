@@ -176,8 +176,8 @@ def run():
         tram       = _drv.get("tram_name") or r.get("drive_tram_name") or r.get("tram_name") or ""
         photos = [u for u in (r.get("photo_url") or "").split(",") if u]
         score = r.get("_score", 0)
-        tram_line = (f"🚊 Трамвай: {tram_min} мин ({tram})" if tram_min and tram
-                     else (f"🚊 Трамвай: {tram_min} мин" if tram_min else "🚊 Трамвай: нет данных"))
+        tram_line = (f"🚋 Трамвай: {tram_min} мин ({tram})" if tram_min and tram
+                     else (f"🚋 Трамвай: {tram_min} мин" if tram_min else "🚋 Трамвай: нет данных"))
         center_str = f"{ratusz_min} мин ({fmt_dist(dist_r_km)})" if ratusz_min else fmt_dist(dist_r_km)
         tp_full = "Квартира" if r["type"] == "mieszkanie" else "Дом"
         caption = (
