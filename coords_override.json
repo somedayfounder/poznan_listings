@@ -13099,5 +13099,507 @@
     "geo_city": "Marcelin",
     "geo_district": null,
     "corrected": true
+  },
+  "67422320": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.453237,
+    "new_lon": 16.911301,
+    "dist_m": 909,
+    "query": "ul. Wojciechowskiego, Piątkowo, Polska",
+    "formatted": "Piątkowo, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "osiedle": "Początek Piątkowo",
+      "city": "Piątkowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "67952397": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.453237,
+    "new_lon": 16.911301,
+    "dist_m": 909,
+    "query": "ul. Wojciechowskiego, Piątkowo, Polska",
+    "formatted": "Piątkowo, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "osiedle": "Początek Piątkowo",
+      "city": "Piątkowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "96803540000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96792085200067": {
+    "orig_lat": 52.39103,
+    "orig_lon": 16.59958,
+    "new_lat": 52.390895,
+    "new_lon": 16.599518,
+    "dist_m": 16,
+    "query": "ul. Malinowa 15, Niepruszewo, Polska",
+    "formatted": "Malinowa 15, 64-320 Niepruszewo, Polska",
+    "addr": {
+      "street": "ul. Malinowa 15",
+      "osiedle": null,
+      "city": "Niepruszewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Niepruszewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96586631400067": {
+    "orig_lat": 52.4076,
+    "orig_lon": 17.07351,
+    "new_lat": 52.375261,
+    "new_lon": 17.101816,
+    "dist_m": 4077,
+    "query": "PARK Kruszewnia, Kruszewnia, Polska",
+    "formatted": "Kruszewnia, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "PARK Kruszewnia",
+      "city": "Kruszewnia",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Kruszewnia",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96566361800067": {
+    "orig_lat": 52.32054,
+    "orig_lon": 16.92491,
+    "new_lat": 52.316896,
+    "new_lon": 16.91253,
+    "dist_m": 934,
+    "query": "ul. Zaciszna, Czapury, Polska",
+    "formatted": "61-160 Czapury, Polska",
+    "addr": {
+      "street": "ul. Zaciszna",
+      "osiedle": "Osiedle Zacisze",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96821732500067": {
+    "orig_lat": 52.39035,
+    "orig_lon": 17.16834,
+    "new_lat": 52.378236,
+    "new_lon": 17.166407,
+    "dist_m": 1353,
+    "query": "ul. Brzoskwiniowa, Siekierki Wielkie, Polska",
+    "formatted": "62-025 Siekierki Wielkie, Polska",
+    "addr": {
+      "street": "ul. Brzoskwiniowa",
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Siekierki Wielkie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96815614400067": {
+    "orig_lat": 52.41024,
+    "orig_lon": 17.07804,
+    "new_lat": 52.417004,
+    "new_lon": 17.116566,
+    "dist_m": 2719,
+    "query": "ul. Szkolna, Łowęcin, Polska",
+    "formatted": "Szkolna, 62-020 Łowęcin, Polska",
+    "addr": {
+      "street": "ul. Szkolna",
+      "osiedle": null,
+      "city": "Łowęcin",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łowęcin",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96813987500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67220149": {
+    "orig_lat": 52.46978,
+    "orig_lon": 16.9417,
+    "new_lat": 52.465623,
+    "new_lon": 16.95356,
+    "dist_m": 927,
+    "query": "Osiedle Zagajnik, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Umultowo",
+    "corrected": true
+  },
+  "67220156": {
+    "orig_lat": 52.46978,
+    "orig_lon": 16.9417,
+    "new_lat": 52.465623,
+    "new_lon": 16.95356,
+    "dist_m": 927,
+    "query": "Osiedle Zagajnik, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Umultowo",
+    "corrected": true
+  },
+  "67457304": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Rumianek",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96745730400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Rumianek",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "65204769": {
+    "orig_lat": 52.38208,
+    "orig_lon": 16.84141,
+    "new_lat": 51.935621,
+    "new_lon": 15.506186,
+    "dist_m": 103731,
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Zielona Góra",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96819576400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "65204644": {
+    "orig_lat": 52.38208,
+    "orig_lon": 16.84141,
+    "new_lat": 53.486119,
+    "new_lon": 20.093608,
+    "dist_m": 250125,
+    "query": "ul. Wieruszowska, Grunwald, Polska",
+    "formatted": "Grunwald, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "osiedle": "Grunwald Park",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Grunwald",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65204653": {
+    "orig_lat": 52.38208,
+    "orig_lon": 16.84141,
+    "new_lat": 51.935621,
+    "new_lon": 15.506186,
+    "dist_m": 103731,
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Zielona Góra",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67465223": {
+    "orig_lat": 52.44608,
+    "orig_lon": 16.89413,
+    "new_lat": 52.456319,
+    "new_lon": 16.886212,
+    "dist_m": 1259,
+    "query": "ul. Jasielska, Podolany, Polska",
+    "formatted": "Podolany, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "osiedle": "Sielskie Podolany",
+      "city": "Podolany",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "96806926600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68001577": {
+    "orig_lat": 52.38208,
+    "orig_lon": 16.84141,
+    "new_lat": 51.935621,
+    "new_lon": 15.506186,
+    "dist_m": 103731,
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Zielona Góra",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65204709": {
+    "orig_lat": 52.38208,
+    "orig_lon": 16.84141,
+    "new_lat": 51.935621,
+    "new_lon": 15.506186,
+    "dist_m": 103731,
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Zielona Góra",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67465195": {
+    "orig_lat": 52.44608,
+    "orig_lon": 16.89413,
+    "new_lat": 52.456319,
+    "new_lon": 16.886212,
+    "dist_m": 1259,
+    "query": "ul. Jasielska, Podolany, Polska",
+    "formatted": "Podolany, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "osiedle": "Sielskie Podolany",
+      "city": "Podolany",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "96787922900067": {
+    "orig_lat": 52.51359,
+    "orig_lon": 16.74704,
+    "new_lat": 52.515447,
+    "new_lon": 16.761137,
+    "dist_m": 976,
+    "query": "ul. Olszynowa, Rokietnica, Polska",
+    "formatted": "Olszynowa, 62-090 Rokietnica, Polska",
+    "addr": {
+      "street": "ul. Olszynowa",
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67842751": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.41028,
+    "new_lon": 16.991442,
+    "dist_m": 284,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67842779": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.41028,
+    "new_lon": 16.991442,
+    "dist_m": 284,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "66528932": {
+    "skipped": "geocode_too_vague",
+    "query": "Jeleniogórska 5, null, Polska",
+    "formatted": "Polska",
+    "addr": {
+      "street": "Jeleniogórska 5",
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68207181": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332422,
+    "new_lon": 16.910331,
+    "dist_m": 2985,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska 4A, 61-160 Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska 4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68207288": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332422,
+    "new_lon": 16.910331,
+    "dist_m": 2985,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska 4A, 61-160 Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska 4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "66970346": {
+    "skipped": "geocode_too_vague",
+    "query": "ul. Jeleniogórskiej 5, null, Polska",
+    "formatted": "Polska",
+    "addr": {
+      "street": "ul. Jeleniogórskiej 5",
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96776168300067": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443503,
+    "new_lon": 16.918006,
+    "dist_m": 84,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka 65, 61-619 Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka 65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
   }
 }

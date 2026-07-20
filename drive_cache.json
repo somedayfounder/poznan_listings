@@ -19426,7 +19426,8 @@
         "dur_s": 698,
         "walk_s": 3368
       }
-    ]
+    ],
+    "rail_walk_s": 6355
   },
   "52.35785,16.92442": {
     "tram_name": "Starołęka PKM",
@@ -50423,7 +50424,8 @@
     "ratusz_dur_s": 1718,
     "rail_name": "Poznań Starołęka",
     "rail_km": 6.3,
-    "rail_dur_s": 618
+    "rail_dur_s": 618,
+    "rail_walk_s": 5161
   },
   "52.402403,16.668516": {
     "tram_name": "Ogrody",
@@ -71108,5 +71110,109 @@
       }
     ],
     "tram_walk_s": 2318
+  },
+  "52.46124,16.6213": {
+    "tram_name": "Ogrody",
+    "tram_km": 19.4,
+    "tram_dur_s": 1153,
+    "tram_walk_s": 15937,
+    "tram_candidates": [
+      {
+        "name": "Junikowo",
+        "km": 20.32,
+        "dur_s": 1583,
+        "walk_s": 15910
+      },
+      {
+        "name": "Cmentarna",
+        "km": 19.98,
+        "dur_s": 1547,
+        "walk_s": 16175
+      },
+      {
+        "name": "Grotkowska",
+        "km": 20.2,
+        "dur_s": 1540,
+        "walk_s": 16295
+      },
+      {
+        "name": "Budziszyńska",
+        "km": 22.8,
+        "dur_s": 1543,
+        "walk_s": 16514
+      },
+      {
+        "name": "Rondo Skubiszewskiego",
+        "km": 22.42,
+        "dur_s": 1497,
+        "walk_s": 16541
+      },
+      {
+        "name": "Węgorka",
+        "km": 22.84,
+        "dur_s": 1554,
+        "walk_s": 16690
+      },
+      {
+        "name": "Bułgarska Enea Stadion",
+        "km": 22.19,
+        "dur_s": 1550,
+        "walk_s": 16695
+      },
+      {
+        "name": "Drzewieckiego",
+        "km": 21.92,
+        "dur_s": 1460,
+        "walk_s": 16949
+      },
+      {
+        "name": "Ogrody",
+        "km": 19.4,
+        "dur_s": 1153,
+        "walk_s": 15937
+      },
+      {
+        "name": "Grochowska",
+        "km": 21.51,
+        "dur_s": 1442,
+        "walk_s": 17232
+      },
+      {
+        "name": "Ostroroga",
+        "km": 22.56,
+        "dur_s": 1425,
+        "walk_s": 17342
+      },
+      {
+        "name": "Żeromskiego",
+        "km": 20.62,
+        "dur_s": 1184,
+        "walk_s": 16362
+      },
+      {
+        "name": "Bukowska",
+        "km": 21.22,
+        "dur_s": 1252,
+        "walk_s": 16872
+      },
+      {
+        "name": "Rondo Nowaka-Jeziorańskiego",
+        "km": 22.09,
+        "dur_s": 1378,
+        "walk_s": 17595
+      },
+      {
+        "name": "Polna",
+        "km": 21.01,
+        "dur_s": 1280,
+        "walk_s": 16702
+      }
+    ],
+    "ratusz_km": 24.69,
+    "ratusz_dur_s": 2019,
+    "rail_name": "Palędzie",
+    "rail_km": 17.97,
+    "rail_dur_s": 1071,
+    "rail_walk_s": 12815
   }
 }
