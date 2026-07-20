@@ -12965,5 +12965,139 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "96744545800067": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.448794,
+    "new_lon": 16.891269,
+    "dist_m": 10,
+    "query": "Strzeszyńska 77, Poznań, Polska",
+    "formatted": "Strzeszyńska 77, 60-479 Poznań, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Strzeszyńska 77",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67842901": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.41028,
+    "new_lon": 16.991442,
+    "dist_m": 284,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96784290100067": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.41028,
+    "new_lon": 16.991442,
+    "dist_m": 284,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96822164700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Strzeszynek",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96821154300067": {
+    "orig_lat": 52.41542,
+    "orig_lon": 16.89158,
+    "new_lat": 52.415672,
+    "new_lon": 16.901612,
+    "dist_m": 681,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68213799": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332422,
+    "new_lon": 16.910331,
+    "dist_m": 2985,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska 4A, 61-160 Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska 4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96813584400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96756948600067": {
+    "orig_lat": 52.41035,
+    "orig_lon": 16.84739,
+    "new_lat": 53.717833,
+    "new_lon": 16.743396,
+    "dist_m": 145551,
+    "query": "ul. Leśnych Skrzatów, Marcelin, Polska",
+    "formatted": "78-422 Marcelin, Polska",
+    "addr": {
+      "street": "ul. Leśnych Skrzatów",
+      "osiedle": "Zacisze Marcelin",
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Marcelin",
+    "geo_district": null,
+    "corrected": true
   }
 }
