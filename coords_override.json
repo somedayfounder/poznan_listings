@@ -13601,5 +13601,81 @@
     "geo_city": "Poznań",
     "geo_district": null,
     "corrected": false
+  },
+  "96633311900067": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.446395,
+    "new_lon": 16.953731,
+    "dist_m": 605,
+    "query": "ul. Bielicowa, Naramowice, Polska",
+    "formatted": "Naramowice, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": true
+  },
+  "68226632": {
+    "orig_lat": 52.4151,
+    "orig_lon": 16.89929,
+    "new_lat": 52.425677,
+    "new_lon": 16.860445,
+    "dist_m": 2885,
+    "query": "ul. Jana Henryka Dąbrowskiego, Poznań, Polska",
+    "formatted": "Jana Henryka Dąbrowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jana Henryka Dąbrowskiego",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96776731100067": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443503,
+    "new_lon": 16.918006,
+    "dist_m": 84,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka 65, 61-619 Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka 65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68000112": {
+    "orig_lat": 52.39563,
+    "orig_lon": 16.8425,
+    "new_lat": 53.486119,
+    "new_lon": 20.093608,
+    "dist_m": 249296,
+    "query": "ul. Jeleniogórska, Grunwald, Polska",
+    "formatted": "Grunwald, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Grunwald",
+    "geo_district": null,
+    "corrected": true
   }
 }
