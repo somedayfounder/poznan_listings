@@ -14,7 +14,8 @@ RATUSZ     = (52.4082, 16.9335)
 K_DRIVE    = 10   # tram candidates for driving
 K_WALK     = 5    # tram candidates for walking
 K_RAIL     = 3    # rail candidates for driving
-MAX_WALK_KM = 3.0 # не считаем пешком если дальше
+MAX_WALK_KM    = 3.0  # не считаем пешком если дальше
+MAX_ORS_PER_RUN = 1800  # оставляем 200 запасных из 2000/день
 
 CACHE_FILE = Path("drive_cache.json")
 TRAM_FILE  = Path("tram_stops.json")
@@ -79,7 +80,11 @@ def main():
 
     cache = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
 
+    SCHEMA_V = 2  # bump to force recalculation of all entries
+
     def needs_update(e):
+        if e.get("schema_v", 1) < SCHEMA_V:
+            return True
         cands = e.get("tram_candidates") or []
         return (not e.get("tram_dur_s") or
                 not cands or
@@ -91,7 +96,11 @@ def main():
     print(f"Объявлений: {len(listings)}, в кеше: {len(cache)}, осталось: {len(todo)}")
 
     errors = 0
+    ors_used = 0
     for i, listing in enumerate(todo):
+        if ors_used >= MAX_ORS_PER_RUN:
+            print(f"  Достигнут лимит ORS ({MAX_ORS_PER_RUN} запросов), остановка до следующего запуска")
+            break
         lat, lon = listing["lat"], listing["lon"]
         key = f"{lat},{lon}"
         entry = cache.get(key, {})
@@ -112,6 +121,7 @@ def main():
             # walking до ближайших трамваев через ORS
             for stop in walk_trams:
                 w = ors_walk(lat, lon, stop["lat"], stop["lon"]); time.sleep(1.1)
+                ors_used += 1
                 cand = next((c for c in tram_candidates if c["name"] == stop["name"]), None)
                 if cand:
                     cand["walk_s"] = w
@@ -135,8 +145,10 @@ def main():
             if best_rail and haversine(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"]) <= MAX_WALK_KM:
                 rail_walk_s = ors_walk(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"])
                 time.sleep(1.1)
+                ors_used += 1
 
             entry.update({
+                "schema_v":        SCHEMA_V,
                 "tram_name":       best_tram["name"] if best_tram else None,
                 "tram_km":         best_tram["km"] if best_tram else None,
                 "tram_dur_s":      best_tram["dur_s"] if best_tram else None,
