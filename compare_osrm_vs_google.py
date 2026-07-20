@@ -3,10 +3,11 @@
 Сравнивает данные из Google cache с результатами OSRM для выборки объявлений.
 Запуск: python3 compare_osrm_vs_google.py [N=20]
 """
-import json, math, time, urllib.request, sys, random
+import json, math, time, urllib.request, urllib.parse, os, sys, random
 from pathlib import Path
 
 HEADERS     = {"User-Agent": "poznan-listings-bot/1.0"}
+ORS_KEY     = os.environ.get("OPENROUTE_KEY", "")
 SLEEP       = 0.35
 MAX_WALK_KM = 3.0
 N           = int(sys.argv[1]) if len(sys.argv) > 1 else 20
@@ -17,8 +18,8 @@ def haversine(lat1, lon1, lat2, lon2):
     a = math.sin(dl/2)**2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(do/2)**2
     return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
 
-def osrm_route(lat1, lon1, lat2, lon2, profile="driving"):
-    url = f"http://router.project-osrm.org/route/v1/{profile}/{lon1},{lat1};{lon2},{lat2}?overview=false"
+def osrm_route(lat1, lon1, lat2, lon2):
+    url = f"http://router.project-osrm.org/route/v1/driving/{lon1},{lat1};{lon2},{lat2}?overview=false"
     for attempt in range(3):
         try:
             req = urllib.request.Request(url, headers=HEADERS)
@@ -29,6 +30,20 @@ def osrm_route(lat1, lon1, lat2, lon2, profile="driving"):
         except Exception:
             if attempt < 2: time.sleep(1)
     return None, None
+
+def ors_walk(lat1, lon1, lat2, lon2):
+    if not ORS_KEY: return None
+    url = "https://api.openrouteservice.org/v2/directions/foot-walking?" + urllib.parse.urlencode({
+        "api_key": ORS_KEY, "start": f"{lon1},{lat1}", "end": f"{lon2},{lat2}",
+    })
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(url, headers=HEADERS)
+            data = json.loads(urllib.request.urlopen(req, timeout=15).read())
+            return round(data["features"][0]["properties"]["segments"][0]["duration"])
+        except Exception:
+            if attempt < 2: time.sleep(1)
+    return None
 
 cache  = json.loads(Path("drive_cache.json").read_text())
 trams  = json.loads(Path("tram_stops.json").read_text())
@@ -46,7 +61,7 @@ print("-" * 70)
 diffs = []
 for key, gdata in sample:
     lat, lon = map(float, key.split(","))
-    ranked_trams = sorted(trams, key=lambda t: haversine(lat, lon, t["lat"], t["lon"]))[:5]
+    ranked_trams = sorted(trams, key=lambda t: haversine(lat, lon, t["lat"], t["lon"]))[:10]
     ranked_rails = sorted(rails, key=lambda r: haversine(lat, lon, r["lat"], r["lon"]))[:3]
 
     # OSRM: лучший трамвай по drive
@@ -56,7 +71,7 @@ for key, gdata in sample:
         if t and (best_tram_t is None or t < best_tram_t):
             best_tram_t = t
         if haversine(lat, lon, stop["lat"], stop["lon"]) <= MAX_WALK_KM:
-            _, w = osrm_route(lat, lon, stop["lat"], stop["lon"], "foot"); time.sleep(SLEEP)
+            w = ors_walk(lat, lon, stop["lat"], stop["lon"]); time.sleep(1.1)
             if w and (best_tram_w is None or w < best_tram_w):
                 best_tram_w = w
 
