@@ -683,66 +683,94 @@ a:hover{text-decoration:underline}
       <div class="hw-flow-step">7 HTML</div><div class="hw-flow-arrow">→</div>
       <div class="hw-flow-step">8 Коммит</div>
     </div>
+
     <div class="hw-step">
       <div class="hw-icon" style="background:#dbeafe">🕷</div>
       <div class="hw-body">
-        <div class="hw-label">1. Парсинг Otodom — <span class="hw-code">otodom_listings.py</span></div>
-        <div class="hw-desc">Скрапит 4 URL: квартиры и дома в Познани + познаньском повяте. Фильтры: первичный рынок, 70–120 м², 600k–1 200k zł. Из <code>__NEXT_DATA__</code> берёт цену, площадь, координаты, номер этажа, ЖК. Результат — <span class="hw-code">listings_latest.csv</span> (~600 строк).</div>
+        <div class="hw-label">1. Парсинг Otodom — <span class="hw-code">scrape_listings.py</span> + <span class="hw-code">otodom_listings.py</span></div>
+        <div class="hw-desc">
+          <b>otodom_listings.py</b> парсит 4 поисковых URL: квартиры на первичном рынке в Познани, квартиры в познаньском повяте, дома в Познани, дома в повяте. Фильтры: 70–120 м², 600k–1 200k zł. Из встроенного JSON (<code>__NEXT_DATA__</code>) извлекаются: цена, площадь, комнаты, этаж, ЖК, координаты Otodom, слаг URL. Итог — <span class="hw-code">listings_latest.csv</span> (~700 строк).<br><br>
+          <b>scrape_listings.py</b> — оркестратор шага: запускает парсер, затем для каждого <em>нового</em> ID докачивает страницу объявления напрямую, чтобы получить координаты и фотографии (3 шт., индексы 1–3). Результаты кешируются в <span class="hw-code">coords_cache.json</span>. Координаты Otodom неточны (часто ставят пин у Ратуша или усредняют квартал) — поэтому они перезаписываются геокодером на следующем шаге. По итогам формируется <span class="hw-code">pending_notify.json</span> со списком новых ID для Telegram.
+        </div>
       </div>
     </div>
+
     <div class="hw-step">
       <div class="hw-icon" style="background:#dcfce7">📍</div>
       <div class="hw-body">
         <div class="hw-label">2. Геокодинг — <span class="hw-code">geocode_coords.py</span></div>
-        <div class="hw-desc">Для каждого нового объявления — многоступенчатый пайплайн:<br>
-        <b>Шаг 1 — GPT-4o-mini</b> читает текст объявления и извлекает <code>street</code>, <code>number</code> (номер дома), <code>city</code> (фактическое место, не административный город), <code>district</code>, <code>confidence</code>.<br>
-        <b>Шаг 2 — Nominatim (OSM)</b>: структурированный запрос <code>street=&lt;number&gt; &lt;street&gt;&city=&lt;city&gt;</code>. Если результат не совпадает по городу — повтор без номера дома.<br>
-        <b>Шаг 3 — Photon (komoot)</b>: если Nominatim не нашёл, запрос к бесплатному Photon API с геобиасом Познани. Фильтрация: принимаются только объекты типа <code>place/highway/boundary/landuse</code> — чтобы не получить больницу или памятник вместо адреса.<br>
-        <b>Шаг 4 — OpenCage</b>: если Photon не помог, запрос к OpenCage (2500/день бесплатно) с <code>proximity=52.4,16.9</code>.<br>
-        <b>Шаг 5 — откат к центру населённого пункта</b>: если ни один геокодер не нашёл улицу, но GPT определил город/деревню — координаты ставятся в центр населённого пункта.<br>
-        Все результаты кешируются в <span class="hw-code">coords_override.json</span> — при следующем прогоне только новые объявления обрабатываются заново.</div>
+        <div class="hw-desc">
+          Для каждого объявления без точных координат запускается 5-ступенчатый пайплайн:<br><br>
+          <b>① GPT-4o-mini (адресный анализ)</b> — читает польский текст объявления и возвращает JSON: <code>street</code>, <code>number</code> (номер дома), <code>city</code> (<em>фактическое</em> место, а не административный город — если в тексте упомянута деревня, GPT ставит её, не Познань), <code>district</code>, <code>confidence</code>. При low confidence обработка прекращается — объект остаётся с координатами Otodom.<br><br>
+          <b>② Nominatim (OSM)</b> — структурированный запрос: <code>street=&lt;number&gt; &lt;street&gt;</code>, <code>city=&lt;city&gt;</code>, <code>country=pl</code>. Если геокодер вернул другой город — повтор без номера дома (улица + город).<br><br>
+          <b>③ Photon (komoot.de)</b> — бесплатный geocoder на OSM. Запрос с геобиасом <code>lat=52.4&lon=16.9</code>, limit=5. Из результатов принимаются только объекты с <code>osm_key</code> в {place, highway, boundary, landuse} или <code>osm_value</code> в {residential, house, apartments, …} — иначе возвращаются POI (больницы, памятники) вместо адресов.<br><br>
+          <b>④ OpenCage</b> — если Photon не дал результата, запрос к OpenCage API (бесплатно 2500 req/день) с <code>proximity=52.4,16.9</code> для приоритета Познаньского региона.<br><br>
+          <b>⑤ Откат к центру города</b> — если ни один геокодер не нашёл улицу, но GPT определил населённый пункт, делается запрос «&lt;city&gt;, Polska» и объект ставится в центр деревни/посёлка.<br><br>
+          Все результаты кешируются в <span class="hw-code">coords_override.json</span> по ID объявления. Статусы: <code>ok</code>, <code>low_confidence</code>, <code>geocode_failed</code>, <code>geocode_too_vague</code>, <code>no_description</code>. Скорректированные координаты вписываются в CSV, а если населённый пункт изменился — обновляются <code>city</code> и <code>district</code>.
+        </div>
       </div>
     </div>
+
     <div class="hw-step">
       <div class="hw-icon" style="background:#fef9c3">🚗</div>
       <div class="hw-body">
         <div class="hw-label">3. Маршруты — <span class="hw-code">fetch_drive_distances.py</span></div>
-        <div class="hw-desc">Google Distance Matrix API: для каждого объявления считает время <em>на машине</em> до 15 ближайших трамвайных остановок и 5 ж/д станций, выбирает лучшие. Отдельно — время <em>пешком</em> до ближайшей остановки (Walking API). Результаты кешируются в <span class="hw-code">drive_cache.json</span> по ключу <code>lat,lon</code> — не пересчитываются при каждом прогоне.</div>
+        <div class="hw-desc">
+          Два прохода, обе APIs бесплатны:<br><br>
+          <b>Проход 1 — OSRM (driving)</b>. Публичный OSRM API (<code>router.project-osrm.org</code>) — без ключа, без лимита. Для каждого объявления за один HTTP-запрос (table API) считает время и расстояние на машине до: 10 ближайших трамвайных остановок (по haversine-предфильтру) + Ратуш + 5 ближайших ж/д станций. Итого один запрос на объявление вместо 16. Выбирается лучшая трамвайная остановка (минимальное время езды), лучшая ж/д, время до центра. Все кандидаты (с временем езды) сохраняются в <span class="hw-code">tram_candidates</span> в кеше — нужны для попапа в интерфейсе.<br><br>
+          <b>Проход 2 — ORS foot-walking (OpenRouteService)</b>. Ключ <span class="hw-code">OPENROUTE_KEY</span>. Для объявлений в пешей досягаемости от трамвая (≤3 км) считает реальное время ходьбы через ORS Matrix API (один запрос на объявление, до 5 остановок). Для ближайших ж/д — ORS Directions API. Лимит: 1800 ORS-запросов за прогон, остаток дополняется в следующем запуске.<br><br>
+          Итоговые поля в <span class="hw-code">drive_cache.json</span>: <code>tram_dur_s</code>, <code>tram_km</code>, <code>tram_name</code>, <code>tram_walk_s</code>, <code>ratusz_dur_s</code>, <code>ratusz_km</code>, <code>rail_dur_s</code>, <code>rail_km</code>, <code>rail_name</code>, <code>rail_walk_s</code>, <code>tram_candidates[]</code>. Кеш по ключу <code>lat,lon</code> — не пересчитывается при каждом прогоне.
+        </div>
       </div>
     </div>
+
     <div class="hw-step">
       <div class="hw-icon" style="background:#fce7f3">🔊</div>
       <div class="hw-body">
         <div class="hw-label">4. Данные о шуме — <span class="hw-code">enrich_noise.py</span></div>
-        <div class="hw-desc">Запрос к WFS GEOPOZ с акустической картой Познани 2017 года (уровень Lden, дБА). Для каждого объявления ищет ближайший полигон и берёт уровень шума на фасаде. Кеш в <span class="hw-code">noise_cache.json</span>.</div>
+        <div class="hw-desc">
+          Запрашивает WFS-слои GEOPOZ (геоинформационный портал Познани) с акустической картой города 2017 года (уровень Lden — суточный эквивалентный уровень шума на фасаде, дБА). Для каждого объявления перебирает полигоны и методом ray-casting определяет, в каком из них находится точка. Штраф к оценке: −0.3 при 61–65 дБА, −0.6 при 66–70, −1.0 выше 70. Кеш в <span class="hw-code">noise_cache.json</span>.
+        </div>
       </div>
     </div>
+
     <div class="hw-step">
       <div class="hw-icon" style="background:#ede9fe">🤖</div>
       <div class="hw-body">
         <div class="hw-label">5. GPT-анализ описаний — <span class="hw-code">extract_features.py</span></div>
-        <div class="hw-desc">GPT-4o-mini читает польский текст объявления и выставляет true/false по 27 фичам: гараж, сад, терраса, умный дом, тихая улица, нужен ремонт, EV-зарядка, близость к шоссе и т.д. Кеш в <span class="hw-code">features_cache.json</span>. Результаты отображаются в табе «Бонусы ГПТ» и в попапе скоринга.</div>
+        <div class="hw-desc">
+          GPT-4o-mini читает польский текст объявления и выставляет true/false по 27 фичам: наличие гаража, паркинга, сада, террасы, балкона, кладовки, лифта, умного дома, EV-зарядки; признаки «тихая улица», «рядом шоссе», «нужен ремонт», «вид на воду» и т.д. Кеш в <span class="hw-code">features_cache.json</span>. Результаты отображаются в табе «Бонусы ГПТ» и в попапе скоринга (блок «Особенности объекта»). На итоговую оценку не влияют.
+        </div>
       </div>
     </div>
+
     <div class="hw-step">
-      <div class="hw-icon" style="background:#dbeafe">✈️</div>
+      <div class="hw-icon" style="background:#dbeafe">📨</div>
       <div class="hw-body">
         <div class="hw-label">6. Telegram-уведомления — <span class="hw-code">notify_new_listings.py</span></div>
-        <div class="hw-desc">Сравнивает текущие ID с <span class="hw-code">seen_ids.json</span>. Новые объявления с транспортными данными отправляются в Telegram: фото (3 шт.), оценка, площадь, цена, район, время до трамвая и Ратуши. Объявления без данных дистанций не отправляются. После отправки ID сохраняются — повторов нет.</div>
+        <div class="hw-desc">
+          Читает <span class="hw-code">pending_notify.json</span> (сформирован на шаге 1) и <span class="hw-code">seen_ids.json</span>. Объявления, уже отправленные ранее, пропускаются. Новые объявления <em>без транспортных данных</em> не отправляются — транспорт критичен для оценки. Для каждого нового объявления: отправляет <code>sendMediaGroup</code> с 3 фото + подписью (оценка, площадь, цена, район, минуты до трамвая и Ратуша). Если фото нет — текстовое сообщение. После успешной отправки ID добавляется в <span class="hw-code">seen_ids.json</span> — повторов нет даже при падении и перезапуске.
+        </div>
       </div>
     </div>
+
     <div class="hw-step">
       <div class="hw-icon" style="background:#dcfce7">📊</div>
       <div class="hw-body">
         <div class="hw-label">7. Сборка HTML — <span class="hw-code">build_listings_html.py</span></div>
-        <div class="hw-desc">Читает CSV + все кеши, считает оценки через <span class="hw-code">score.py</span>, группирует дубли, вычисляет компасные направления остановок от Ратуша. Вставляет данные в шаблон <span class="hw-code">listings_template.html</span> как JSON → <span class="hw-code">listings_poznan.html</span>. GitHub Pages раздаёт файл по публичному URL.</div>
+        <div class="hw-desc">
+          Читает CSV + все кеши (<span class="hw-code">drive_cache.json</span>, <span class="hw-code">noise_cache.json</span>, <span class="hw-code">features_cache.json</span>, <span class="hw-code">coords_override.json</span>), вычисляет оценки через <span class="hw-code">score.py</span>. Группирует дубли — объявления на один объект (совпадают площадь + район + комнаты + ЖК) схлопываются в одну строку с раскрывашкой. Для каждой трамвайной остановки вычисляет компасное направление от Ратуша (bearing). Вставляет все данные в шаблон как JSON-блок <code>const D=[...]</code> → <span class="hw-code">listings_poznan.html</span>. GitHub Pages раздаёт файл.
+        </div>
       </div>
     </div>
+
     <div class="hw-step">
       <div class="hw-icon" style="background:#f0fdf4">💾</div>
       <div class="hw-body">
         <div class="hw-label">8. Коммит — <span class="hw-code">daily.yml</span></div>
-        <div class="hw-desc">Коммитит CSV, HTML, все кеши и <span class="hw-code">seen_ids.json</span>. Retry-цикл (3 попытки с rebase) защищает от конфликтов при ручных пушах. Без этого шага <span class="hw-code">seen_ids.json</span> не сохраняется и следующий прогон присылает дубли.</div>
+        <div class="hw-desc">
+          Коммитит CSV, HTML, все JSON-кеши и <span class="hw-code">seen_ids.json</span>. Retry-цикл (3 попытки с <code>git pull --rebase --autostash</code>) защищает от конфликтов при ручных пушах — без него <span class="hw-code">seen_ids.json</span> не сохраняется и следующий прогон дублирует уведомления.
+        </div>
       </div>
     </div>
   </div>
@@ -751,29 +779,50 @@ a:hover{text-decoration:underline}
     <h2>Система оценок 0–10</h2>
     <div class="hw-desc" style="margin-bottom:12px">Итоговая оценка = сумма базовых факторов × веса + штрафы за шум и вредные объекты (потолок −2.5). Максимум без штрафов — 10.</div>
     <div class="hw-score-row">
-      <div class="hw-sc"><div class="hw-sc-name">🏙 Район</div><div class="hw-sc-val">30%</div><div class="hw-sc-desc">Средняя из ручной, GPT и оценки жителей (NPS-опрос 4500+ чел.)</div></div>
-      <div class="hw-sc"><div class="hw-sc-name">🚋 Транспорт</div><div class="hw-sc-val">20%</div><div class="hw-sc-desc">≤5 мин → 10, −1 балл за каждую минуту, 0 при ≥15 мин</div></div>
-      <div class="hw-sc"><div class="hw-sc-name">📐 Площадь</div><div class="hw-sc-val">20%</div><div class="hw-sc-desc">Пик 85–105 м², плавный спад в обе стороны</div></div>
-      <div class="hw-sc"><div class="hw-sc-name">💰 Цена</div><div class="hw-sc-val">15%</div><div class="hw-sc-desc">Ниже — лучше. Нелинейная кривая от 600k до 1.2M zł</div></div>
-      <div class="hw-sc"><div class="hw-sc-name">🚪 Комнаты</div><div class="hw-sc-val">15%</div><div class="hw-sc-desc">Пик при 4 комнатах, спад вниз и вверх</div></div>
+      <div class="hw-sc"><div class="hw-sc-name">🏙 Район</div><div class="hw-sc-val">30%</div><div class="hw-sc-desc">Средняя из ручной оценки, GPT и оценки жителей (NPS-опрос Otodom/IQS, 4500+ чел.). Если один из источников отсутствует — среднее оставшихся.</div></div>
+      <div class="hw-sc"><div class="hw-sc-name">🚋 Транспорт</div><div class="hw-sc-val">20%</div><div class="hw-sc-desc">Время езды на машине до ближайшей трамвайной остановки (OSRM). ≤5 мин → 10, −1 балл за каждую минуту, 0 при ≥15 мин.</div></div>
+      <div class="hw-sc"><div class="hw-sc-name">📐 Площадь</div><div class="hw-sc-val">20%</div><div class="hw-sc-desc">Пик при 85–105 м², плавный спад в обе стороны.</div></div>
+      <div class="hw-sc"><div class="hw-sc-name">💰 Цена</div><div class="hw-sc-val">15%</div><div class="hw-sc-desc">Ниже — лучше. Нелинейная кривая от 600k до 1.2M zł.</div></div>
+      <div class="hw-sc"><div class="hw-sc-name">🚪 Комнаты</div><div class="hw-sc-val">15%</div><div class="hw-sc-desc">Пик при 4 комнатах, спад вниз и вверх.</div></div>
     </div>
-    <div class="hw-desc" style="margin-top:10px">Штрафы: шум GEOPOZ −0.3…−1.0 при >60 дБА; вредные объекты (спаллярня, ТЭЦ, очистные и др.) −0.5…−1.5 в зависимости от дистанции; сумма штрафов ограничена −2.5.</div>
+    <div class="hw-desc" style="margin-top:10px">
+      <b>Штрафы (не входят в веса, прибавляются к итогу, потолок −2.5):</b><br>
+      • Шум GEOPOZ: −0.3 при 61–65 дБА, −0.6 при 66–70, −1.0 выше 70.<br>
+      • Вредные объекты: ITPOK (мусоросжигательный завод) −до 1.5 в радиусе 4 км; ТЭЦ Karolin/Veolia −до 1.0 в 5 км; очистные Koziegłowy −до 1.5 в 3 км; очистные Serbska −до 1.2 в 2.5 км; полигон ТБО Suchy Las −до 1.2 в 3 км; завод Luvena Luboń −до 1.2 в 3 км; VW Antoninek и Odlewnia Wilda −до 0.8 в 1.5 км. Штрафы линейно затухают с расстоянием и суммируются с потолком −2.5.
+    </div>
   </div>
 
   <div class="hw-section">
-    <h2>Инфраструктура</h2>
+    <h2>Оценки районов — три источника</h2>
+    <div class="hw-desc" style="margin-bottom:10px">Итоговая оценка района = среднее из доступных источников. Если хотя бы один есть — считается средняя, не 0.</div>
+    <div class="hw-score-row">
+      <div class="hw-sc"><div class="hw-sc-name">✏️ Ручная</div><div class="hw-sc-desc">Начальная оценка на основе форумов naszpoznan.pl, NPS-опроса Otodom/IQS 2024, реальных маршрутов ZTM и личного знания города.</div></div>
+      <div class="hw-sc"><div class="hw-sc-name">🤖 GPT</div><div class="hw-sc-desc">GPT-4o анализирует отзывы жителей с форумов, данные транспорта, инфраструктуру — выдаёт оценку 1–10 с обоснованием.</div></div>
+      <div class="hw-sc"><div class="hw-sc-name">👥 Жители</div><div class="hw-sc-desc">NPS-данные опроса Otodom/IQS (4500+ жителей Польши), нормализованные к шкале 1–10.</div></div>
+    </div>
+    <div class="hw-desc" style="margin-top:10px">Для новых районов, которые появляются в объявлениях впервые, запускается <span class="hw-code">research_new_district.py</span>: <code>gpt-4o-search-preview</code> ищет отзывы жителей и данные транспорта, затем <code>gpt-4o</code> синтезирует оценку, плюсы, минусы и описание. Результат патчится прямо в <span class="hw-code">score.py</span>.</div>
+  </div>
+
+  <div class="hw-section">
+    <h2>Инфраструктура и стоимость</h2>
     <div class="hw-step">
       <div class="hw-icon" style="background:#f1f5f9">⚙️</div>
       <div class="hw-body">
         <div class="hw-label">GitHub Actions + GitHub Pages</div>
-        <div class="hw-desc">Воркфлоу запускается по cron каждый день в 06:00 UTC (08:00 по Варшаве). Результаты коммитятся обратно в репозиторий, GitHub Pages автоматически публикует обновлённый HTML. Секреты (<span class="hw-code">GPT_TOKEN</span>, <span class="hw-code">OPENROUTE_KEY</span>, <span class="hw-code">OPENCAGE_KEY</span>, <span class="hw-code">TG_TOKEN</span>) — только в GitHub Secrets, не в коде.</div>
+        <div class="hw-desc">Ежедневный воркфлоу по cron в 06:00 UTC (08:00 Варшава). Результаты коммитятся обратно в репозиторий, GitHub Pages автоматически публикует обновлённый HTML. Секреты: <span class="hw-code">GPT_TOKEN</span> (OpenAI), <span class="hw-code">OPENROUTE_KEY</span> (ORS walking), <span class="hw-code">OPENCAGE_KEY</span> (резервный геокодер), <span class="hw-code">TG_TOKEN</span> + <span class="hw-code">TG_CHAT_ID</span> (Telegram). Никаких секретов в коде.</div>
       </div>
     </div>
     <div class="hw-step">
       <div class="hw-icon" style="background:#f1f5f9">💰</div>
       <div class="hw-body">
         <div class="hw-label">Стоимость одного прогона</div>
-        <div class="hw-desc">GPT-4o-mini (геокодинг + GPT-фичи): ~$0.01–0.03 за прогон при ~100 новых объявлениях. Nominatim, Photon — бесплатно. OpenCage — бесплатно до 2500 req/день. Google Distance Matrix (маршруты до трамвая/ж/д): ~$0.05–0.10. Итого: &lt;$0.15/день при нормальном потоке новых объявлений.</div>
+        <div class="hw-desc">
+          GPT-4o-mini (геокодинг + фичи): ~$0.01–0.03 при ~30 новых объявлениях в день.<br>
+          Nominatim, Photon, OSRM — <b>бесплатно, без ключей</b>.<br>
+          OpenCage — бесплатно до 2500 req/день (резервный геокодер, не каждый день тратится).<br>
+          OpenRouteService (пешая ходьба) — бесплатно до 2000 matrix-запросов/день.<br>
+          <b>Итого: ~$0.01–0.03/день.</b> Весь платный трафик — только GPT.
+        </div>
       </div>
     </div>
   </div>
