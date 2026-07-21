@@ -118,23 +118,31 @@ def geocode(query, street=None, housenumber=None, city=None):
 
 
 def geocode_photon(query):
-    """Photon (komoot) — fallback когда Nominatim не нашёл."""
+    """Photon (komoot) — fallback когда Nominatim не нашёл.
+    Принимаем только результаты типа street/place/building (не POI).
+    """
+    GOOD_KEYS = {"place", "highway", "boundary", "landuse"}
+    GOOD_VALUES = {"residential", "street", "road", "city", "town", "village",
+                   "suburb", "neighbourhood", "house", "apartments", "yes"}
     url = "https://photon.komoot.io/api?" + urlencode({
-        "q": query, "limit": 1,
-        "lat": "52.4", "lon": "16.9",  # bias к Познани
+        "q": query, "limit": 5,
+        "lat": "52.4", "lon": "16.9",
     })
     try:
         req = Request(url, headers={"User-Agent": "poznan-listings-bot/1.0"})
         data = json.loads(urlopen(req, timeout=10).read())
-        feats = data.get("features", [])
-        if feats:
-            f = feats[0]
+        for f in data.get("features", []):
             props = f.get("properties", {})
+            key = props.get("osm_key", "")
+            val = props.get("osm_value", "")
+            if key not in GOOD_KEYS and val not in GOOD_VALUES:
+                continue
             coords = f["geometry"]["coordinates"]
-            city = props.get("city") or props.get("name")
+            city = props.get("city") or props.get("town") or props.get("village") or props.get("name")
             district = props.get("district") or props.get("suburb")
             formatted = ", ".join(filter(None, [
-                props.get("name"), props.get("street"), props.get("city"), props.get("country")
+                props.get("name"), props.get("street"), props.get("housenumber"),
+                props.get("city"), props.get("country")
             ]))
             return round(coords[1], 6), round(coords[0], 6), formatted, city, district
     except Exception as e:
