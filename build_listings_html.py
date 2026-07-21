@@ -318,6 +318,15 @@ for k, v in DISTRICT_SCORES.items():
         "nuisance_tags": nuisance_tags,
     })
 districts_list.sort(key=lambda x: (-x["score"], x["name"]))
+
+# Backfill district_score in listing rows with the combined score
+_dist_combined = {d["name"]: d["score"] for d in districts_list}
+for row in js_rows:
+    dk = row.get("district") or row.get("city", "")
+    if dk in _dist_combined:
+        row["district_score"] = _dist_combined[dk]
+data_json = json.dumps(js_rows, ensure_ascii=False)
+
 districts_json = json.dumps(districts_list, ensure_ascii=False)
 
 html = open("listings_template.html").read()
