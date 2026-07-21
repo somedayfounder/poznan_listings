@@ -14595,5 +14595,67 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "96729895100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "osiedle": null,
+      "city": "nowoczesne osiedle",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96668081600067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Jabłonowa 12, Siekierki Wielkie, Polska",
+    "addr": {
+      "street": "ul. Jabłonowa 12",
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": "Kostrzyn",
+      "confidence": "high"
+    }
+  },
+  "96814182500067": {
+    "skipped": "geocode_failed",
+    "query": "Bajkowy Dopiewiec, Dopiewiec, Polska",
+    "addr": {
+      "street": null,
+      "osiedle": "Bajkowy Dopiewiec",
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96820476700067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Fiołkowa, Gołuski, Polska",
+    "addr": {
+      "street": "ul. Fiołkowa",
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96822663200067": {
+    "orig_lat": 52.4151,
+    "orig_lon": 16.89929,
+    "new_lat": 52.415905,
+    "new_lon": 16.890163,
+    "dist_m": 625,
+    "query": "ul. Jana Henryka Dąbrowskiego, Poznań, Polska",
+    "formatted": "Hop & go, Jana Henryka Dąbrowskiego, Ogrody, Poznań, województwo wielkopolskie, 60-543, Polska",
+    "addr": {
+      "street": "ul. Jana Henryka Dąbrowskiego",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Ogrody",
+    "corrected": true
   }
 }
