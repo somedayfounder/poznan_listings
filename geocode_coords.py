@@ -15,7 +15,8 @@ from math import radians, sin, cos, sqrt, atan2
 DATA_DIR = Path(__file__).parent
 CSV_FILE = DATA_DIR / "listings_latest.csv"
 OVERRIDE_FILE = DATA_DIR / "coords_override.json"
-GPT_TOKEN = os.environ.get("GPT_TOKEN", "")
+GPT_TOKEN     = os.environ.get("GPT_TOKEN", "")
+OPENCAGE_KEY  = os.environ.get("OPENCAGE_KEY", "")
 
 NOMINATIM_HEADERS = {"User-Agent": "poznan-listings-bot/1.0 (aliaksandrpaltaratski@gmail.com)"}
 
@@ -151,6 +152,34 @@ def geocode_photon(query):
 
 
 
+def geocode_opencage(query):
+    """OpenCage — fallback после Photon. 2500 запросов/день бесплатно."""
+    if not OPENCAGE_KEY:
+        return None, None, None, None, None
+    url = "https://api.opencagedata.com/geocode/v1/json?" + urlencode({
+        "q": query, "key": OPENCAGE_KEY, "limit": 1,
+        "countrycode": "pl", "language": "pl",
+        "proximity": "52.4,16.9",
+    })
+    try:
+        req = Request(url, headers={"User-Agent": "poznan-listings-bot/1.0"})
+        data = json.loads(urlopen(req, timeout=10).read())
+        results = data.get("results", [])
+        if not results:
+            return None, None, None, None, None
+        r = results[0]
+        comp = r.get("components", {})
+        lat = round(r["geometry"]["lat"], 6)
+        lon = round(r["geometry"]["lng"], 6)
+        formatted = r.get("formatted", "")
+        city = comp.get("city") or comp.get("town") or comp.get("village")
+        district = comp.get("suburb") or comp.get("neighbourhood")
+        return lat, lon, formatted, city, district
+    except Exception as e:
+        print(f"    opencage error: {e}")
+    return None, None, None, None, None
+
+
 def build_query(addr):
     """Строим поисковый запрос для геокодирования."""
     city = addr.get("city") or "Poznań"
@@ -216,6 +245,12 @@ def main():
             new_lat, new_lon, formatted, geo_city, geo_district = geocode_photon(query)
             if new_lat is not None:
                 print(f"    [photon] {formatted}")
+        # fallback 3: OpenCage
+        if new_lat is None:
+            time.sleep(0.3)
+            new_lat, new_lon, formatted, geo_city, geo_district = geocode_opencage(query)
+            if new_lat is not None:
+                print(f"    [opencage] {formatted}")
         if new_lat is None:
             overrides[lid] = {"skipped": "geocode_failed", "query": query, "addr": addr}
             print(f"    → геокодинг не дал результата: {query}")
