@@ -607,6 +607,43 @@ a:hover{text-decoration:underline}
       <div class="rlog-why">Геокодер не знает мелкие улицы в пригородах и находит похожие в большом городе. GPT знает <em>где</em> объект — лучше поставить в центре правильной деревни, чем на случайной улице в Познани.</div>
     </div>
   </div>
+  <div class="rlog-step">
+    <div class="rlog-num">41</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Геокодинг: замена Google на Nominatim + Photon + OpenCage</div>
+      <div class="rlog-desc">Google Geocoding API заменён бесплатным стеком: (1) Nominatim (OpenStreetMap) со структурированным запросом <code>street=&city=</code>; (2) Photon (komoot.de) с геобиасом в центр Познани; (3) OpenCage с proximity-параметром. Переход мотивирован стоимостью Google ($5/1000 запросов) и накопленным кешем из 700+ объявлений, большинство из которых не нужно пересчитывать. Photon возвращает объекты OSM — добавлена фильтрация: принимаются только <code>place/highway/boundary/landuse</code>, иначе геокодер возвращал больницы и памятники вместо адресов.</div>
+      <div class="rlog-why">Stack обошёлся в $0. OpenCage (2500 req/day free) закрывает хвост тех адресов, которые Nominatim и Photon не распознают.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">42</div>
+    <div class="rlog-body">
+      <div class="rlog-title">GPT извлекает номер дома — точность структурированного геокодинга</div>
+      <div class="rlog-desc">GPT-промпт расширен: теперь он извлекает не только <code>street/city</code>, но и <code>number</code> — номер дома из текста объявления. Если номер найден, Nominatim получает запрос <code>street=&lt;number&gt; &lt;street&gt;&city=&lt;city&gt;</code> (структурированный), что резко повышает точность — особенно для польских адресов с нумерацией типа «346» или «45a». Пример: «ul. 28 czerwca 1956 r. 346» из объявления Wilda → раньше геокодер угадывал улицу в центре Познани, теперь ставит точный пин.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">43</div>
+    <div class="rlog-body">
+      <div class="rlog-title">321 некорректный Photon-геокод обнаружен и откатан</div>
+      <div class="rlog-desc">После добавления Photon выяснилось, что без фильтрации типов OSM он возвращал нерелевантные объекты (POI, больницы, памятники) с расстоянием до 445 км от Познани. Идентифицировано сравнением текущего <code>coords_override.json</code> с состоянием до Photon (коммит <code>94669d9</code>). 321 запись откатана к pre-Photon значениям, после чего добавлена фильтрация GOOD_KEYS/GOOD_VALUES + limit=5 с перебором кандидатов.</div>
+      <div class="rlog-why">Photon может быть очень точным — или очень неточным. Без проверки типа OSM-объекта он отдавал первый совпавший по имени результат, независимо от типа.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">44</div>
+    <div class="rlog-body">
+      <div class="rlog-title">32 новых района добавлены через агентный поиск</div>
+      <div class="rlog-desc">В объявлениях появились 32 района, отсутствовавших в <code>DISTRICT_SCORES</code> (например, Aniołowo, Łęczyca, Dębina и др.). Для каждого запущен многоэтапный агент: сначала <code>gpt-4o-search-preview</code> ищет отзывы жителей, данные транспорта, инфраструктуру; затем <code>gpt-4o</code> синтезирует оценку 1–10 с плюсами, минусами, описанием. Вся информация внесена в <code>score.py</code>.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">45</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Плюсы/минусы районов — компактные теги вместо длинных описаний</div>
+      <div class="rlog-desc">Теги плюсов/минусов из агентного поиска содержали полные предложения (например, «Отличная автомобильная доступность: рядом A2 (выезд Познань Всхуд), S5…»), что растягивало таблицу. Скрипт <code>shorten_tags.py</code> укоротил теги до 1–3 слов (часть до двоеточия), а полный текст перенёс в <code>DISTRICT_DESCRIPTIONS</code> и отображается в раскрывашке карточки района. Колонка «Уровень» убрана из таблицы районов как избыточная (дублировала числовую оценку).</div>
+    </div>
+  </div>
 </div>
 </div>
 
@@ -657,7 +694,13 @@ a:hover{text-decoration:underline}
       <div class="hw-icon" style="background:#dcfce7">📍</div>
       <div class="hw-body">
         <div class="hw-label">2. Геокодинг — <span class="hw-code">geocode_coords.py</span></div>
-        <div class="hw-desc">Для каждого нового объявления: (а) GPT-4o-mini читает описание и определяет <em>фактическое</em> местонахождение объекта (деревня/пригород, если упомянуты — не просто улица); (б) Google Geocoding API переводит адрес в координаты; (в) если геокодер вернул не тот город — откат к геокодингу только города, чтобы поставить маркер хотя бы в центре правильного населённого пункта. Аудит в <span class="hw-code">coords_override.json</span>.</div>
+        <div class="hw-desc">Для каждого нового объявления — многоступенчатый пайплайн:<br>
+        <b>Шаг 1 — GPT-4o-mini</b> читает текст объявления и извлекает <code>street</code>, <code>number</code> (номер дома), <code>city</code> (фактическое место, не административный город), <code>district</code>, <code>confidence</code>.<br>
+        <b>Шаг 2 — Nominatim (OSM)</b>: структурированный запрос <code>street=&lt;number&gt; &lt;street&gt;&city=&lt;city&gt;</code>. Если результат не совпадает по городу — повтор без номера дома.<br>
+        <b>Шаг 3 — Photon (komoot)</b>: если Nominatim не нашёл, запрос к бесплатному Photon API с геобиасом Познани. Фильтрация: принимаются только объекты типа <code>place/highway/boundary/landuse</code> — чтобы не получить больницу или памятник вместо адреса.<br>
+        <b>Шаг 4 — OpenCage</b>: если Photon не помог, запрос к OpenCage (2500/день бесплатно) с <code>proximity=52.4,16.9</code>.<br>
+        <b>Шаг 5 — откат к центру населённого пункта</b>: если ни один геокодер не нашёл улицу, но GPT определил город/деревню — координаты ставятся в центр населённого пункта.<br>
+        Все результаты кешируются в <span class="hw-code">coords_override.json</span> — при следующем прогоне только новые объявления обрабатываются заново.</div>
       </div>
     </div>
     <div class="hw-step">
@@ -723,14 +766,14 @@ a:hover{text-decoration:underline}
       <div class="hw-icon" style="background:#f1f5f9">⚙️</div>
       <div class="hw-body">
         <div class="hw-label">GitHub Actions + GitHub Pages</div>
-        <div class="hw-desc">Воркфлоу запускается по cron каждый день в 06:00 UTC (08:00 по Варшаве). Результаты коммитятся обратно в репозиторий, GitHub Pages автоматически публикует обновлённый HTML. Секреты (<span class="hw-code">GPT_TOKEN</span>, <span class="hw-code">GOOGLE_API_KEY</span>, <span class="hw-code">TG_TOKEN</span>) — только в GitHub Secrets, не в коде.</div>
+        <div class="hw-desc">Воркфлоу запускается по cron каждый день в 06:00 UTC (08:00 по Варшаве). Результаты коммитятся обратно в репозиторий, GitHub Pages автоматически публикует обновлённый HTML. Секреты (<span class="hw-code">GPT_TOKEN</span>, <span class="hw-code">OPENROUTE_KEY</span>, <span class="hw-code">OPENCAGE_KEY</span>, <span class="hw-code">TG_TOKEN</span>) — только в GitHub Secrets, не в коде.</div>
       </div>
     </div>
     <div class="hw-step">
       <div class="hw-icon" style="background:#f1f5f9">💰</div>
       <div class="hw-body">
         <div class="hw-label">Стоимость одного прогона</div>
-        <div class="hw-desc">GPT-4o-mini (геокодинг + фичи): ~$0.01–0.03 за прогон при ~100 новых объявлениях. Google Maps API: геокодинг + Distance Matrix + Walking ≈ $0.05–0.15. Итого: &lt;$0.20/день при нормальном потоке новых объявлений.</div>
+        <div class="hw-desc">GPT-4o-mini (геокодинг + GPT-фичи): ~$0.01–0.03 за прогон при ~100 новых объявлениях. Nominatim, Photon — бесплатно. OpenCage — бесплатно до 2500 req/день. Google Distance Matrix (маршруты до трамвая/ж/д): ~$0.05–0.10. Итого: &lt;$0.15/день при нормальном потоке новых объявлений.</div>
       </div>
     </div>
   </div>
