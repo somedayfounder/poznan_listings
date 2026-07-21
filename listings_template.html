@@ -160,7 +160,7 @@ a:hover{text-decoration:underline}
 
 <div id="tab-districts" class="tab-panel">
 <div class="tbl-wrap"><table class="dist-tbl" id="dg">
-  <thead><tr><th style="width:70px">Итог</th><th style="width:55px" title="Ручная оценка">Ручная</th><th style="width:55px" title="Оценка GPT">GPT</th><th style="width:65px" title="Оценка жителей (опросы Otodom/beesafe, приведена к шкале 1–10)">Жители</th><th style="width:160px">Район</th><th>Описание</th></tr></thead>
+  <thead><tr><th style="width:70px">Итог</th><th style="width:55px" title="Оценка Claude">Claude</th><th style="width:55px" title="Оценка GPT">GPT</th><th style="width:65px" title="Оценка жителей (опросы Otodom/beesafe, приведена к шкале 1–10)">Жители</th><th style="width:160px">Район</th><th>Описание</th></tr></thead>
   <tbody id="dg-body"></tbody>
 </table></div>
 </div>
@@ -862,7 +862,7 @@ function renderDistricts(){
     const sc_td=(v,title)=>v!=null?`<td style="font-size:13px;color:${sc_col(v)};font-weight:600;text-align:center" title="${title||''}">${v}</td>`:`<td style="text-align:center;color:#bbb">—</td>`;
     return`<tr id="district-${d.name.replace(/\s+/g,'-')}">
 <td class="dist-sc" style="color:${sc_c}">${d.score}<span style="color:#bbb;font-size:11px;font-weight:400">/10</span></td>
-${sc_td(d.score_manual,'Ручная оценка')}
+${sc_td(d.score_manual,'Оценка Claude')}
 ${sc_td(d.score_gpt,'Оценка GPT')}
 ${sc_td(d.score_residents,d.residents_source?'Жители: '+d.residents_source:'Оценка жителей')}
 <td style="font-weight:600;font-size:14px">${d.name}</td>

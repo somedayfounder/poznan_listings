@@ -279,7 +279,7 @@ for k, v in DISTRICT_SCORES.items():
     _rep = next((r for r in js_rows if (r.get("district") or r.get("city")) == k
                  and _store_tier(r.get("supermarket")) == best_tier), None)
     s_bonus, s_tag = _super_bonus(best_tier, _rep.get("supermarket") if _rep else None)
-    m = rs.get("manual"); g = rs.get("gpt")
+    m = rs.get("claude"); g = rs.get("gpt")
     components = [x for x in [m, g, r_norm] if x is not None]
     base = round((sum(components) / len(components)), 1) if components else v
     districts_list.append({
@@ -288,7 +288,7 @@ for k, v in DISTRICT_SCORES.items():
         "score_base": base,
         "super_bonus": s_bonus,
         "super_tag": s_tag,
-        "score_manual": rs.get("manual"),
+        "score_manual": rs.get("claude"),
         "score_gpt": rs.get("gpt"),
         "score_residents": r_norm,
         "residents_source": res.get("source"),
