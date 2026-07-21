@@ -117,6 +117,31 @@ def geocode(query, street=None, housenumber=None, city=None):
     return None, None, None, None, None
 
 
+def geocode_photon(query):
+    """Photon (komoot) — fallback когда Nominatim не нашёл."""
+    url = "https://photon.komoot.io/api?" + urlencode({
+        "q": query, "limit": 1, "lang": "pl",
+        "bbox": "15.8,51.6,17.9,52.9",  # bbox Wielkopolska
+    })
+    try:
+        req = Request(url, headers={"User-Agent": "poznan-listings-bot/1.0"})
+        data = json.loads(urlopen(req, timeout=10).read())
+        feats = data.get("features", [])
+        if feats:
+            f = feats[0]
+            props = f.get("properties", {})
+            coords = f["geometry"]["coordinates"]
+            city = props.get("city") or props.get("name")
+            district = props.get("district") or props.get("suburb")
+            formatted = ", ".join(filter(None, [
+                props.get("name"), props.get("street"), props.get("city"), props.get("country")
+            ]))
+            return round(coords[1], 6), round(coords[0], 6), formatted, city, district
+    except Exception as e:
+        print(f"    photon error: {e}")
+    return None, None, None, None, None
+
+
 def build_query(addr):
     """Строим поисковый запрос для геокодирования."""
     city = addr.get("city") or "Poznań"
@@ -172,10 +197,16 @@ def main():
         new_lat, new_lon, formatted, geo_city, geo_district = geocode(
             query, street=gpt_street, housenumber=gpt_number, city=gpt_city_q
         )
-        # fallback: попробовать без номера если structured не нашёл
+        # fallback 1: Nominatim без номера дома
         if new_lat is None and gpt_number and gpt_street:
             fallback_query = f"{gpt_street}, {gpt_city_q}, Polska"
             new_lat, new_lon, formatted, geo_city, geo_district = geocode(fallback_query)
+        # fallback 2: Photon
+        if new_lat is None:
+            time.sleep(0.3)
+            new_lat, new_lon, formatted, geo_city, geo_district = geocode_photon(query)
+            if new_lat is not None:
+                print(f"    [photon] {formatted}")
         if new_lat is None:
             overrides[lid] = {"skipped": "geocode_failed", "query": query, "addr": addr}
             print(f"    → геокодинг не дал результата: {query}")
