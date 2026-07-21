@@ -334,71 +334,81 @@
     "rail_walk_dist_m": 3150
   },
   "52.37413,16.95236": {
-    "schema_v": 2,
+    "schema_v": 5,
     "tram_name": "Tadeuszak",
-    "tram_km": 0.03,
+    "tram_km": 0.09,
     "tram_dur_s": 13,
     "tram_walk_s": 41,
     "tram_candidates": [
       {
         "name": "Tadeuszak",
-        "km": 0.03,
+        "km": 0.09,
         "dur_s": 13,
-        "walk_s": 41
+        "walk_s": 41,
+        "walk_dist_m": null
       },
       {
         "name": "Unii Lubelskiej",
-        "km": 0.25,
+        "km": 0.33,
         "dur_s": 40,
-        "walk_s": 255
+        "walk_s": 255,
+        "walk_dist_m": null
       },
       {
         "name": "Rondo Żegrze",
-        "km": 0.36,
+        "km": 1.06,
         "dur_s": 162,
-        "walk_s": 286
+        "walk_s": 286,
+        "walk_dist_m": null
       },
       {
         "name": "Żegrze I",
-        "km": 0.81,
+        "km": 0.85,
         "dur_s": 90,
-        "walk_s": 661
+        "walk_s": 661,
+        "walk_dist_m": null
       },
       {
         "name": "Starołęka Mała",
-        "km": 0.87,
+        "km": 1.96,
         "dur_s": 174,
-        "walk_s": 1008
+        "walk_s": 1008,
+        "walk_dist_m": null
       },
       {
         "name": "Rondo Starołęka",
-        "km": 0.92,
+        "km": 1.61,
         "dur_s": 144,
-        "walk_s": null
+        "walk_s": null,
+        "walk_dist_m": null
       },
       {
         "name": "Żegrze II",
-        "km": 1.18,
+        "km": 2.66,
         "dur_s": 270,
-        "walk_s": null
+        "walk_s": null,
+        "walk_dist_m": null
       },
       {
         "name": "Bystra",
-        "km": 1.24,
+        "km": 2.63,
         "dur_s": 234,
-        "walk_s": null
+        "walk_s": null,
+        "walk_dist_m": null
       },
       {
         "name": "Os. Rzeczypospolitej",
-        "km": 1.35,
+        "km": 1.91,
         "dur_s": 168,
-        "walk_s": null
+        "walk_s": null,
+        "walk_dist_m": null
       },
       {
         "name": "Starołęka PKM",
-        "km": 1.52,
+        "km": 2.2,
         "dur_s": 270,
-        "walk_s": null
+        "walk_s": null,
+        "walk_dist_m": null
       }
     ],
     "ratusz_km": 6.01,
@@ -406,7 +416,8 @@
     "rail_name": "Maltanka",
     "rail_km": 4.72,
     "rail_dur_s": 457,
-    "rail_walk_s": null
+    "rail_walk_s": null,
+    "rail_walk_dist_m": null
   },
   "52.38921,16.85909": {
     "schema_v": 5,
@@ -48134,6 +48145,178 @@
     "rail_name": "Gądki",
     "rail_km": 4.61,
     "rail_dur_s": 624,
+    "rail_walk_s": null,
+    "rail_walk_dist_m": null
+  },
+  "51.756221,19.414774": {
+    "schema_v": 5,
+    "tram_name": "Mogileńska",
+    "tram_km": 18.73,
+    "tram_dur_s": 1344,
+    "tram_walk_s": null,
+    "tram_candidates": [
+      {
+        "name": "Miłostowo",
+        "km": 19.31,
+        "dur_s": 1354,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Franowo",
+        "km": 20.22,
+        "dur_s": 1552,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Mogileńska",
+        "km": 18.73,
+        "dur_s": 1344,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Szwajcarska",
+        "km": 20.39,
+        "dur_s": 1576,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Łomżyńska",
+        "km": 19.64,
+        "dur_s": 1374,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Szwedzka",
+        "km": 32.07,
+        "dur_s": 1639,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Piaśnicka/Kurlandzka",
+        "km": 32.66,
+        "dur_s": 1675,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Krańcowa",
+        "km": 19.73,
+        "dur_s": 1422,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Piaśnicka Rynek",
+        "km": 32.41,
+        "dur_s": 1658,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Os. Lecha",
+        "km": 32.32,
+        "dur_s": 1661,
+        "walk_s": null,
+        "walk_dist_m": null
+      }
+    ],
+    "ratusz_km": 23.46,
+    "ratusz_dur_s": 1776,
+    "rail_name": "Swarzędz",
+    "rail_km": 13.33,
+    "rail_dur_s": 1013,
+    "rail_walk_s": null,
+    "rail_walk_dist_m": null
+  },
+  "52.43506,17.06492": {
+    "schema_v": 5,
+    "tram_name": "Mogileńska",
+    "tram_km": 10.51,
+    "tram_dur_s": 921,
+    "tram_walk_s": null,
+    "tram_candidates": [
+      {
+        "name": "Miłostowo",
+        "km": 11.1,
+        "dur_s": 932,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Mogileńska",
+        "km": 10.51,
+        "dur_s": 921,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Łomżyńska",
+        "km": 11.43,
+        "dur_s": 952,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Krańcowa",
+        "km": 11.51,
+        "dur_s": 1000,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Termalna",
+        "km": 12.95,
+        "dur_s": 1077,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Franowo",
+        "km": 12.01,
+        "dur_s": 1130,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Szwajcarska",
+        "km": 12.17,
+        "dur_s": 1153,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Św. Michała",
+        "km": 12.34,
+        "dur_s": 1004,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Zawady",
+        "km": 13.04,
+        "dur_s": 1077,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Piaśnicka/Kurlandzka",
+        "km": 13.22,
+        "dur_s": 1257,
+        "walk_s": null,
+        "walk_dist_m": null
+      }
+    ],
+    "ratusz_km": 15.41,
+    "ratusz_dur_s": 1335,
+    "rail_name": "Kobylnica",
+    "rail_km": 2.6,
+    "rail_dur_s": 299,
     "rail_walk_s": null,
     "rail_walk_dist_m": null
   }
