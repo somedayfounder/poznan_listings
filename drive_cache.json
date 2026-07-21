@@ -58334,5 +58334,345 @@
     "rail_dur_s": 410,
     "rail_walk_s": 2656,
     "rail_walk_dist_m": 3689
+  },
+  "52.372803,16.946814": {
+    "schema_v": 5,
+    "tram_name": "Unii Lubelskiej",
+    "tram_km": 0.13,
+    "tram_dur_s": 21,
+    "tram_walk_s": 248,
+    "tram_candidates": [
+      {
+        "name": "Tadeuszak",
+        "km": 0.19,
+        "dur_s": 24,
+        "walk_s": 477,
+        "walk_dist_m": 662
+      },
+      {
+        "name": "Unii Lubelskiej",
+        "km": 0.13,
+        "dur_s": 21,
+        "walk_s": 248,
+        "walk_dist_m": 344
+      },
+      {
+        "name": "Rondo Żegrze",
+        "km": 1.26,
+        "dur_s": 181,
+        "walk_s": 722,
+        "walk_dist_m": 1003
+      },
+      {
+        "name": "Starołęka Mała",
+        "km": 2.16,
+        "dur_s": 192,
+        "walk_s": 574,
+        "walk_dist_m": 798
+      },
+      {
+        "name": "Żegrze I",
+        "km": 1.05,
+        "dur_s": 109,
+        "walk_s": 751,
+        "walk_dist_m": 1042
+      },
+      {
+        "name": "Rondo Starołęka",
+        "km": 1.81,
+        "dur_s": 162,
+        "walk_s": null
+      },
+      {
+        "name": "Bystra",
+        "km": 2.83,
+        "dur_s": 253,
+        "walk_s": 1083,
+        "walk_dist_m": 1504
+      },
+      {
+        "name": "Żegrze II",
+        "km": 2.86,
+        "dur_s": 289,
+        "walk_s": null
+      },
+      {
+        "name": "Starołęka PKM",
+        "km": 2.0,
+        "dur_s": 252,
+        "walk_s": null
+      },
+      {
+        "name": "Os. Rzeczypospolitej",
+        "km": 2.11,
+        "dur_s": 187,
+        "walk_s": null
+      }
+    ],
+    "ratusz_km": 6.21,
+    "ratusz_dur_s": 698,
+    "rail_name": "Poznań Starołęka",
+    "rail_km": 2.89,
+    "rail_dur_s": 458,
+    "rail_walk_s": 1701,
+    "rail_walk_dist_m": 2363
+  },
+  "52.513099,16.730991": {
+    "schema_v": 5,
+    "tram_name": "Ogrody",
+    "tram_km": 19.85,
+    "tram_dur_s": 1134,
+    "tram_walk_s": null,
+    "tram_candidates": [
+      {
+        "name": "Os. Sobieskiego",
+        "km": 19.44,
+        "dur_s": 1413,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Szymanowskiego",
+        "km": 19.99,
+        "dur_s": 1465,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Kurpińskiego",
+        "km": 20.07,
+        "dur_s": 1484,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Piątkowska",
+        "km": 22.54,
+        "dur_s": 1452,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Lutycka Szpital",
+        "km": 21.86,
+        "dur_s": 1336,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Ogrody",
+        "km": 19.85,
+        "dur_s": 1134,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Os. Winiary",
+        "km": 22.39,
+        "dur_s": 1399,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Lechicka Poznań Plaza",
+        "km": 22.44,
+        "dur_s": 1416,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Św. Leonarda",
+        "km": 23.26,
+        "dur_s": 1385,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Uniwersytet Przyrodniczy",
+        "km": 22.09,
+        "dur_s": 1298,
+        "walk_s": null,
+        "walk_dist_m": null
+      }
+    ],
+    "ratusz_km": 24.36,
+    "ratusz_dur_s": 1636,
+    "rail_name": "Rokietnica",
+    "rail_km": 3.34,
+    "rail_dur_s": 506,
+    "rail_walk_s": 1355,
+    "rail_walk_dist_m": 1882
+  },
+  "52.5065,16.74027": {
+    "schema_v": 5,
+    "tram_name": "Ogrody",
+    "tram_km": 18.86,
+    "tram_dur_s": 1008,
+    "tram_walk_s": null,
+    "tram_candidates": [
+      {
+        "name": "Os. Sobieskiego",
+        "km": 18.45,
+        "dur_s": 1287,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Szymanowskiego",
+        "km": 19.0,
+        "dur_s": 1338,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Kurpińskiego",
+        "km": 19.08,
+        "dur_s": 1357,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Piątkowska",
+        "km": 21.55,
+        "dur_s": 1325,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Lutycka Szpital",
+        "km": 20.87,
+        "dur_s": 1209,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Ogrody",
+        "km": 18.86,
+        "dur_s": 1008,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Os. Winiary",
+        "km": 21.4,
+        "dur_s": 1272,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Lechicka Poznań Plaza",
+        "km": 21.45,
+        "dur_s": 1289,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Św. Leonarda",
+        "km": 22.26,
+        "dur_s": 1259,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Uniwersytet Przyrodniczy",
+        "km": 21.1,
+        "dur_s": 1172,
+        "walk_s": null,
+        "walk_dist_m": null
+      }
+    ],
+    "ratusz_km": 23.37,
+    "ratusz_dur_s": 1509,
+    "rail_name": "Rokietnica",
+    "rail_km": 3.35,
+    "rail_dur_s": 513,
+    "rail_walk_s": 1337,
+    "rail_walk_dist_m": 1857
+  },
+  "52.3987,16.91978": {
+    "schema_v": 5,
+    "tram_name": "Św. Czesława",
+    "tram_km": 0.47,
+    "tram_dur_s": 79,
+    "tram_walk_s": 220,
+    "tram_candidates": [
+      {
+        "name": "Św. Czesława",
+        "km": 0.47,
+        "dur_s": 79,
+        "walk_s": 220,
+        "walk_dist_m": 305
+      },
+      {
+        "name": "Wierzbięcice",
+        "km": 0.93,
+        "dur_s": 121,
+        "walk_s": 325,
+        "walk_dist_m": 451
+      },
+      {
+        "name": "Różana",
+        "km": 0.97,
+        "dur_s": 150,
+        "walk_s": 455,
+        "walk_dist_m": 632
+      },
+      {
+        "name": "Poznań Główny",
+        "km": 1.06,
+        "dur_s": 141,
+        "walk_s": 582,
+        "walk_dist_m": 808
+      },
+      {
+        "name": "Półwiejska",
+        "km": 1.13,
+        "dur_s": 169,
+        "walk_s": 440,
+        "walk_dist_m": 611
+      },
+      {
+        "name": "Rynek Wildecki",
+        "km": 0.85,
+        "dur_s": 139,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Dworzec Zachodni",
+        "km": 3.03,
+        "dur_s": 356,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Most Dworcowy",
+        "km": 2.07,
+        "dur_s": 241,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Uniwersytet Ekonomiczny",
+        "km": 1.07,
+        "dur_s": 140,
+        "walk_s": null,
+        "walk_dist_m": null
+      },
+      {
+        "name": "Święty Marcin",
+        "km": 1.58,
+        "dur_s": 237,
+        "walk_s": null,
+        "walk_dist_m": null
+      }
+    ],
+    "ratusz_km": 2.48,
+    "ratusz_dur_s": 409,
+    "rail_name": "Poznań Główny",
+    "rail_km": 1.15,
+    "rail_dur_s": 252,
+    "rail_walk_s": 746,
+    "rail_walk_dist_m": 1035
   }
 }
