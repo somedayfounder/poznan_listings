@@ -160,7 +160,7 @@ a:hover{text-decoration:underline}
 
 <div id="tab-districts" class="tab-panel">
 <div class="tbl-wrap"><table class="dist-tbl" id="dg">
-  <thead><tr><th style="width:70px">Итог</th><th style="width:55px" title="Ручная оценка">Ручная</th><th style="width:55px" title="Оценка GPT">GPT</th><th style="width:65px" title="Оценка жителей (опросы Otodom/beesafe, приведена к шкале 1–10)">Жители</th><th style="width:160px">Район</th><th style="width:110px">Уровень</th><th>Описание</th></tr></thead>
+  <thead><tr><th style="width:70px">Итог</th><th style="width:55px" title="Ручная оценка">Ручная</th><th style="width:55px" title="Оценка GPT">GPT</th><th style="width:65px" title="Оценка жителей (опросы Otodom/beesafe, приведена к шкале 1–10)">Жители</th><th style="width:160px">Район</th><th>Описание</th></tr></thead>
   <tbody id="dg-body"></tbody>
 </table></div>
 </div>
@@ -765,7 +765,7 @@ function renderDistricts(){
     const extra_tags=ntag||nuis_tags?`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:5px">${ntag}${nuis_tags}</div>`:'';
     const pros_row=stag||pro_tags?`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px">${stag}${pro_tags}</div>`:'';
     const cons_row=con_tags?`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:4px">${con_tags}</div>`:'';
-    const details_inner=(pros_row||con_tags||d.desc)?`<details style="margin-top:8px"><summary style="cursor:pointer;font-size:12px;color:#6b7280;user-select:none">Подробнее ▸</summary><div style="margin-top:6px">${pros_row}${cons_row}${d.desc?`<div style="margin-top:8px;font-size:13px;color:#555;line-height:1.7">${d.desc}</div>`:''}</div></details>`:'';
+    const details_inner=d.desc?`<details style="margin-top:8px"><summary style="cursor:pointer;font-size:12px;color:#6b7280;user-select:none">Подробнее ▸</summary><div style="margin-top:6px;font-size:13px;color:#555;line-height:1.7">${d.desc}</div></details>`:'';
     const sc_col=s=>s==null?'#bbb':s>=8?'#166534':s>=7?'#1e40af':s>=5?'#854d0e':'#991b1b';
     const sc_td=(v,title)=>v!=null?`<td style="font-size:13px;color:${sc_col(v)};font-weight:600;text-align:center" title="${title||''}">${v}</td>`:`<td style="text-align:center;color:#bbb">—</td>`;
     return`<tr id="district-${d.name.replace(/\s+/g,'-')}">
@@ -774,8 +774,7 @@ ${sc_td(d.score_manual,'Ручная оценка')}
 ${sc_td(d.score_gpt,'Оценка GPT')}
 ${sc_td(d.score_residents,d.residents_source?'Жители: '+d.residents_source:'Оценка жителей')}
 <td style="font-weight:600;font-size:14px">${d.name}</td>
-<td><span class="dist-tg" style="color:${tc};background:${bg}">${lbl}</span></td>
-<td class="dist-rs"><div style="font-size:14px;line-height:1.7;color:#1f2937">${d.summary||'—'}</div>${extra_tags}${details_inner}</td>
+<td class="dist-rs"><div style="font-size:14px;line-height:1.7;color:#1f2937">${d.summary||'—'}</div>${pros_row}${cons_row}${extra_tags}${details_inner}</td>
 </tr>`;
   }).join('');
 }
