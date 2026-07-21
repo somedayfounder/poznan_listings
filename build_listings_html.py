@@ -206,6 +206,26 @@ for r in rows:
     row["district_score"] = DISTRICT_SCORES.get(d, DISTRICT_SCORES.get(row.get("city",""), _DEFAULT_DISTRICT_SCORE))
     js_rows.append(row)
 
+# Deduplicate listings with identical coordinates + similar title (same development, different units)
+# Keep the one with the lowest price; merge district variants into a note
+_dedup = {}
+for row in js_rows:
+    lat = row.get("lat"); lon = row.get("lon")
+    if not lat or not lon:
+        _dedup[row["id"]] = row
+        continue
+    key = (round(float(lat), 4), round(float(lon), 4), (row.get("title") or "")[:35])
+    if key not in _dedup:
+        _dedup[key] = row
+    else:
+        prev = _dedup[key]
+        # keep lower price
+        p_new = row.get("price") or 9e9
+        p_old = prev.get("price") or 9e9
+        if p_new < p_old:
+            _dedup[key] = row
+js_rows = list(_dedup.values())
+
 mx_dist = max((r["dist"] for r in js_rows if r["dist"]), default=60)
 total = len(js_rows)
 data_json = json.dumps(js_rows, ensure_ascii=False)
