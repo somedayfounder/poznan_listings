@@ -281,6 +281,15 @@ def main():
             time.sleep(0.3)
             continue
 
+        # Отклоняем если координаты вне bbox Познань + ближайший повят
+        _BBOX = (52.15, 52.65, 16.55, 17.15)
+        if not (_BBOX[0] <= new_lat <= _BBOX[1] and _BBOX[2] <= new_lon <= _BBOX[3]):
+            overrides[lid] = {"skipped": "outside_bbox", "query": query, "formatted": formatted, "addr": addr,
+                              "new_lat": new_lat, "new_lon": new_lon}
+            print(f"    → за пределами Познани ({new_lat:.3f},{new_lon:.3f}): {formatted}")
+            time.sleep(0.3)
+            continue
+
         orig_lat = float(r["lat"])
         orig_lon = float(r["lon"])
         dist_m = haversine(orig_lat, orig_lon, new_lat, new_lon) * 1000
