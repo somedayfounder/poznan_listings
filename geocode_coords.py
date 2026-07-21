@@ -16,6 +16,7 @@ DATA_DIR = Path(__file__).parent
 CSV_FILE = DATA_DIR / "listings_latest.csv"
 OVERRIDE_FILE = DATA_DIR / "coords_override.json"
 GPT_TOKEN = os.environ.get("GPT_TOKEN", "")
+YA_TOKEN  = os.environ.get("YA_TOKEN", "")
 
 NOMINATIM_HEADERS = {"User-Agent": "poznan-listings-bot/1.0 (aliaksandrpaltaratski@gmail.com)"}
 
@@ -150,6 +151,36 @@ def geocode_photon(query):
     return None, None, None, None, None
 
 
+def geocode_yandex(query):
+    """Yandex Geocoder — fallback после Photon. 1000 запросов/день бесплатно."""
+    if not YA_TOKEN:
+        return None, None, None, None, None
+    url = "https://geocode-maps.yandex.ru/1.x/?" + urlencode({
+        "apikey": YA_TOKEN, "geocode": query,
+        "format": "json", "lang": "pl_PL", "results": 1,
+        "ll": "16.9,52.4", "spn": "1.5,1.0",  # bias к Познани
+    })
+    try:
+        req = Request(url, headers={"User-Agent": "poznan-listings-bot/1.0"})
+        data = json.loads(urlopen(req, timeout=10).read())
+        members = data["response"]["GeoObjectCollection"]["featureMember"]
+        if not members:
+            return None, None, None, None, None
+        obj = members[0]["GeoObject"]
+        pos = obj["Point"]["pos"].split()
+        lon, lat = float(pos[0]), float(pos[1])
+        meta = obj.get("metaDataProperty", {}).get("GeocoderMetaData", {})
+        addr_obj = meta.get("Address", {})
+        formatted = addr_obj.get("formatted", obj.get("description", ""))
+        components = {c["kind"]: c["name"] for c in addr_obj.get("Components", [])}
+        city = components.get("locality") or components.get("area")
+        district = components.get("district")
+        return round(lat, 6), round(lon, 6), formatted, city, district
+    except Exception as e:
+        print(f"    yandex error: {e}")
+    return None, None, None, None, None
+
+
 def build_query(addr):
     """Строим поисковый запрос для геокодирования."""
     city = addr.get("city") or "Poznań"
@@ -215,6 +246,12 @@ def main():
             new_lat, new_lon, formatted, geo_city, geo_district = geocode_photon(query)
             if new_lat is not None:
                 print(f"    [photon] {formatted}")
+        # fallback 3: Yandex
+        if new_lat is None:
+            time.sleep(0.3)
+            new_lat, new_lon, formatted, geo_city, geo_district = geocode_yandex(query)
+            if new_lat is not None:
+                print(f"    [yandex] {formatted}")
         if new_lat is None:
             overrides[lid] = {"skipped": "geocode_failed", "query": query, "addr": addr}
             print(f"    → геокодинг не дал результата: {query}")

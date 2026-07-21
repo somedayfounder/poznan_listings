@@ -16,6 +16,7 @@ jobs:
       TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
       GPT_TOKEN: ${{ secrets.GPT_TOKEN }}
       OPENROUTE_KEY: ${{ secrets.OPENROUTE_KEY }}
+      YA_TOKEN: ${{ secrets.YA_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
