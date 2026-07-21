@@ -270,10 +270,16 @@ for k, v in DISTRICT_SCORES.items():
     nuisance_tags = [_NUISANCE_SHORT.get(n, n) for n in sorted(nuisance_names)]
     rs  = _rescore.get(k, {})
     res = _residents.get(k, {})
-    # normalize resident rating to 1-10 scale
+    # normalize resident score to 1-10 scale
+    r_nps    = res.get("nps")
     r_rating = res.get("rating")
     r_scale  = res.get("scale") or 5
-    r_norm   = round(r_rating / r_scale * 10, 1) if r_rating else None
+    if r_nps is not None:
+        r_norm = round((r_nps + 100) / 200 * 10, 1)
+    elif r_rating:
+        r_norm = round(r_rating / r_scale * 10, 1)
+    else:
+        r_norm = None
     best_tier = _dist_super.get(k)
     # find a representative listing's supermarket entry for the name
     _rep = next((r for r in js_rows if (r.get("district") or r.get("city")) == k
@@ -291,7 +297,9 @@ for k, v in DISTRICT_SCORES.items():
         "score_manual": rs.get("claude"),
         "score_gpt": rs.get("gpt"),
         "score_residents": r_norm,
+        "residents_nps": r_nps,
         "residents_source": res.get("source"),
+        "categories": res.get("categories"),
         "summary": DISTRICT_SUMMARIES.get(k, ""),
         "pros": DISTRICT_PROS.get(k, []),
         "cons": DISTRICT_CONS.get(k, []),
