@@ -160,7 +160,7 @@ a:hover{text-decoration:underline}
 
 <div id="tab-districts" class="tab-panel">
 <div class="tbl-wrap"><table class="dist-tbl" id="dg">
-  <thead><tr><th style="width:70px">Итог</th><th style="width:55px" title="Оценка Claude">Claude</th><th style="width:55px" title="Оценка GPT">GPT</th><th style="width:55px" title="NPS жителей → 0–10 (Otodom 2020, 4500+ человек)">NPS</th><th style="width:55px" title="Средний балл по 10 категориям Otodom 2020 → 0–10">Кат.</th><th style="width:160px">Район</th><th>Описание</th></tr></thead>
+  <thead><tr><th style="width:70px">Итог</th><th style="width:55px" title="Оценка Claude">Claude</th><th style="width:55px" title="Оценка GPT">GPT</th><th style="width:65px" title="Средний балл по 10 категориям Otodom 2020 (шкала 1–5 → 0–10)">Кат. Otodom</th><th style="width:160px">Район</th><th>Описание</th></tr></thead>
   <tbody id="dg-body"></tbody>
 </table></div>
 </div>
@@ -858,17 +858,15 @@ function renderDistricts(){
     const pros_row=stag||pro_tags?`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px">${stag}${pro_tags}</div>`:'';
     const cons_row=con_tags?`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:4px">${con_tags}</div>`:'';
     const CAT_RU={'Bezpieczeństwo':'Безопасность','Relacje sąsiedzkie':'Соседи','Okolica przyjazna dzieciom':'Для детей','Ekologia':'Экология','Zadbana okolica':'Ухоженность','Sport':'Спорт','Komunikacja':'Транспорт','Zakupy':'Магазины','Koszty życia':'Цены','Okolica przyjazna zwierzętom':'Питомцы','Służba zdrowia':'Медицина','Kultura':'Культура','Dzielnica dla imprezowiczów':'Досуг'};
-    const cats_html=d.categories?`<div style="padding:6px 0 4px"><div style="font-size:11px;color:#9ca3af;margin-bottom:5px">Рейтинг Otodom 2020 (шкала 1–5):</div>${Object.entries(d.categories).map(([k,v])=>{const pct=Math.round((v-1)/4*100);const c=pct>=75?'#166534':pct>=55?'#1e40af':pct>=35?'#854d0e':'#991b1b';return`<div style="display:flex;align-items:center;gap:5px;margin-bottom:3px"><span style="width:82px;font-size:11px;color:#6b7280;flex-shrink:0">${CAT_RU[k]||k}</span><div style="width:66px;background:#e5e7eb;border-radius:2px;height:5px;flex-shrink:0"><div style="width:${pct}%;background:${c};height:5px;border-radius:2px"></div></div><span style="font-size:11px;color:${c};font-weight:600">${v.toFixed(2)}</span></div>`;}).join('')}</div>`:'';
-    const details_inner=(cats_html||d.desc)?`<details style="margin-top:8px"><summary style="cursor:pointer;font-size:12px;color:#6b7280;user-select:none">Подробнее ▸</summary>${cats_html}${d.desc?`<div style="margin-top:6px;font-size:13px;color:#555;line-height:1.7">${d.desc}</div>`:''}</details>`:'';
+    const nps_html=d.residents_nps!=null?`<div style="margin-bottom:6px;font-size:12px;color:#374151">NPS жителей (Otodom 2020): <strong style="color:${d.residents_nps>=20?'#166534':d.residents_nps>=0?'#1e40af':'#991b1b'}">${d.residents_nps>0?'+':''}${d.residents_nps}</strong> <span style="color:#9ca3af;font-size:11px">из диапазона −100…+100</span></div>`:'';
+    const cats_html=d.categories?`<div style="padding:2px 0 4px"><div style="font-size:11px;color:#9ca3af;margin-bottom:5px">Рейтинг Otodom 2020 (шкала 1–5):</div>${Object.entries(d.categories).map(([k,v])=>{const pct=Math.round((v-1)/4*100);const c=pct>=75?'#166534':pct>=55?'#1e40af':pct>=35?'#854d0e':'#991b1b';return`<div style="display:flex;align-items:center;gap:5px;margin-bottom:3px"><span style="width:82px;font-size:11px;color:#6b7280;flex-shrink:0">${CAT_RU[k]||k}</span><div style="width:66px;background:#e5e7eb;border-radius:2px;height:5px;flex-shrink:0"><div style="width:${pct}%;background:${c};height:5px;border-radius:2px"></div></div><span style="font-size:11px;color:${c};font-weight:600">${v.toFixed(2)}</span></div>`;}).join('')}</div>`:'';
+    const details_inner=(nps_html||cats_html||d.desc)?`<details style="margin-top:8px"><summary style="cursor:pointer;font-size:12px;color:#6b7280;user-select:none">Подробнее ▸</summary>${nps_html}${cats_html}${d.desc?`<div style="margin-top:6px;font-size:13px;color:#555;line-height:1.7">${d.desc}</div>`:''}</details>`:'';
     const sc_col=s=>s==null?'#bbb':s>=8?'#166534':s>=7?'#1e40af':s>=5?'#854d0e':'#991b1b';
     const sc_td=(v,title)=>v!=null?`<td style="font-size:13px;color:${sc_col(v)};font-weight:600;text-align:center" title="${title||''}">${v}</td>`:`<td style="text-align:center;color:#bbb">—</td>`;
-    const nps_tip=d.residents_nps!=null?`NPS ${d.residents_nps>0?'+':''}${d.residents_nps} → ${d.score_residents}/10`:'Оценка жителей';
-    const nps_cell=sc_td(d.score_residents,nps_tip);
     return`<tr id="district-${d.name.replace(/\s+/g,'-')}">
 <td class="dist-sc" style="color:${sc_c}">${d.score}<span style="color:#bbb;font-size:11px;font-weight:400">/10</span></td>
 ${sc_td(d.score_manual,'Оценка Claude')}
 ${sc_td(d.score_gpt,'Оценка GPT')}
-${nps_cell}
 ${sc_td(d.score_categories,'Средний балл по 10 кат. Otodom 2020 (0–10)')}
 <td style="font-weight:600;font-size:14px">${d.name}</td>
 <td class="dist-rs"><div style="font-size:14px;line-height:1.7;color:#1f2937">${d.summary||'—'}</div>${pros_row}${cons_row}${extra_tags}${details_inner}</td>
