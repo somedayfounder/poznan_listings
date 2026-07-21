@@ -131,23 +131,19 @@ def main():
     todo = [l for l in listings if needs_update(cache.get(f"{l['lat']},{l['lon']}", {}))]
     print(f"Объявлений: {len(listings)}, в кеше: {len(cache)}, осталось: {len(todo)}")
 
+    # ── Pass 1: OSRM для всех (безлимитный) ──────────────────────────────────
+    print(f"Проход 1/2: OSRM drive для {len(todo)} объявлений...")
     errors = 0
-    ors_used = 0
     for i, listing in enumerate(todo):
-        if ors_used >= MAX_ORS_PER_RUN:
-            print(f"  Достигнут лимит ORS ({MAX_ORS_PER_RUN} запросов), остановка до следующего запуска")
-            break
         lat, lon = listing["lat"], listing["lon"]
         key = f"{lat},{lon}"
         entry = cache.get(key, {})
 
         ranked_trams = sorted(trams, key=lambda t: haversine(lat, lon, t["lat"], t["lon"]))
         drive_trams  = ranked_trams[:K_DRIVE]
-        walk_trams   = [t for t in ranked_trams[:K_WALK] if haversine(lat, lon, t["lat"], t["lon"]) <= MAX_WALK_KM]
         ranked_rails = sorted(rails, key=lambda r: haversine(lat, lon, r["lat"], r["lon"]))[:K_RAIL]
 
         try:
-            # 1 OSRM request: 10 trams + ratusz + 3 rails
             all_drive_dests = [(t["lat"], t["lon"]) for t in drive_trams] + \
                               [RATUSZ] + \
                               [(r["lat"], r["lon"]) for r in ranked_rails]
@@ -161,23 +157,15 @@ def main():
             tram_candidates = []
             for stop, (d, t) in zip(drive_trams, tram_results):
                 drive_km = round(d / 1000, 2) if d else round(haversine(lat, lon, stop["lat"], stop["lon"]), 2)
-                tram_candidates.append({"name": stop["name"], "km": drive_km, "dur_s": t, "walk_s": None})
+                # preserve existing walk_s/walk_dist_m if already computed
+                existing = next((c for c in entry.get("tram_candidates", []) if c["name"] == stop["name"]), {})
+                tram_candidates.append({
+                    "name": stop["name"], "km": drive_km, "dur_s": t,
+                    "walk_s": existing.get("walk_s"), "walk_dist_m": existing.get("walk_dist_m"),
+                })
 
-            # 1 ORS matrix request for all walk trams
-            if walk_trams:
-                walk_dests = [(t["lat"], t["lon"]) for t in walk_trams]
-                walk_results = ors_matrix(lat, lon, walk_dests)
-                ors_used += len(walk_trams)  # counts as N quota requests
-                time.sleep(1.1)
-                for stop, (w_dur, w_dist) in zip(walk_trams, walk_results):
-                    cand = next((c for c in tram_candidates if c["name"] == stop["name"]), None)
-                    if cand:
-                        cand["walk_s"] = w_dur
-                        cand["walk_dist_m"] = w_dist
-
-            best_tram   = min((c for c in tram_candidates if c["dur_s"]), key=lambda c: c["dur_s"], default=None)
+            best_tram  = min((c for c in tram_candidates if c["dur_s"]), key=lambda c: c["dur_s"], default=None)
             tram_walk_s = min((c["walk_s"] for c in tram_candidates if c.get("walk_s")), default=None)
-
             ratusz_d, ratusz_t = ratusz_result
 
             rail_cands = []
@@ -185,27 +173,20 @@ def main():
                 rail_cands.append({"stop": stop, "d": d, "t": t})
             best_rail = min((c for c in rail_cands if c["t"]), key=lambda c: c["t"], default=None)
 
-            # 1 ORS call for best rail walk
-            rail_walk_s = rail_walk_dist_m = None
-            if best_rail and haversine(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"]) <= MAX_WALK_KM:
-                rail_walk_s, rail_walk_dist_m = ors_walk(lat, lon, best_rail["stop"]["lat"], best_rail["stop"]["lon"])
-                ors_used += 1
-                time.sleep(1.1)
-
             entry.update({
-                "schema_v":           SCHEMA_V,
-                "tram_name":          best_tram["name"] if best_tram else None,
-                "tram_km":            best_tram["km"] if best_tram else None,
-                "tram_dur_s":         best_tram["dur_s"] if best_tram else None,
-                "tram_walk_s":        tram_walk_s,
-                "tram_candidates":    tram_candidates,
-                "ratusz_km":          round(ratusz_d / 1000, 2) if ratusz_d else None,
-                "ratusz_dur_s":       ratusz_t,
-                "rail_name":          best_rail["stop"]["name"] if best_rail else None,
-                "rail_km":            round(best_rail["d"] / 1000, 2) if best_rail and best_rail["d"] else None,
-                "rail_dur_s":         best_rail["t"] if best_rail else None,
-                "rail_walk_s":        rail_walk_s,
-                "rail_walk_dist_m":   rail_walk_dist_m,
+                "schema_v":        SCHEMA_V,
+                "tram_name":       best_tram["name"] if best_tram else None,
+                "tram_km":         best_tram["km"] if best_tram else None,
+                "tram_dur_s":      best_tram["dur_s"] if best_tram else None,
+                "tram_walk_s":     tram_walk_s,
+                "tram_candidates": tram_candidates,
+                "ratusz_km":       round(ratusz_d / 1000, 2) if ratusz_d else None,
+                "ratusz_dur_s":    ratusz_t,
+                "rail_name":       best_rail["stop"]["name"] if best_rail else None,
+                "rail_km":         round(best_rail["d"] / 1000, 2) if best_rail and best_rail["d"] else None,
+                "rail_dur_s":      best_rail["t"] if best_rail else None,
+                "rail_walk_s":     entry.get("rail_walk_s"),
+                "rail_walk_dist_m": entry.get("rail_walk_dist_m"),
             })
             cache[key] = entry
 
@@ -214,9 +195,80 @@ def main():
             errors += 1
             continue
 
-        if (i + 1) % 10 == 0 or i == len(todo) - 1:
+        if (i + 1) % 50 == 0 or i == len(todo) - 1:
             CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
-            print(f"  [{i+1}/{len(todo)}] сохранено, ошибок: {errors}, ORS: {ors_used}")
+            print(f"  [{i+1}/{len(todo)}] OSRM сохранено, ошибок: {errors}")
+
+    CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
+    print(f"Проход 1 готов: {len(todo) - errors}/{len(todo)}, ошибок: {errors}")
+
+    # ── Pass 2: ORS walk (лимитированный) ────────────────────────────────────
+    # Все записи у которых есть walk_trams в зоне пешей досягаемости но нет walk_s
+    needs_walk = []
+    for listing in listings:
+        lat, lon = listing["lat"], listing["lon"]
+        key = f"{lat},{lon}"
+        entry = cache.get(key, {})
+        if not entry.get("tram_candidates"):
+            continue
+        ranked_trams = sorted(trams, key=lambda t: haversine(lat, lon, t["lat"], t["lon"]))
+        walk_trams = [t for t in ranked_trams[:K_WALK] if haversine(lat, lon, t["lat"], t["lon"]) <= MAX_WALK_KM]
+        cands_missing_walk = [
+            c for c in entry["tram_candidates"]
+            if c.get("walk_s") is None and any(t["name"] == c["name"] for t in walk_trams)
+        ]
+        rail_needs_walk = (
+            entry.get("rail_name") and entry.get("rail_walk_s") is None and
+            any(haversine(lat, lon, r["lat"], r["lon"]) <= MAX_WALK_KM
+                for r in rails if r["name"] == entry["rail_name"])
+        )
+        if cands_missing_walk or rail_needs_walk:
+            needs_walk.append({"listing": listing, "walk_trams": walk_trams,
+                               "cands_missing": cands_missing_walk, "rail": rail_needs_walk})
+
+    print(f"\nПроход 2/2: ORS walk для {len(needs_walk)} объявлений (лимит {MAX_ORS_PER_RUN})...")
+    ors_used = 0
+    for i, item in enumerate(needs_walk):
+        if ors_used >= MAX_ORS_PER_RUN:
+            print(f"  Достигнут лимит ORS ({MAX_ORS_PER_RUN}), walk будет дополнен в следующем запуске")
+            break
+        listing = item["listing"]
+        lat, lon = listing["lat"], listing["lon"]
+        key = f"{lat},{lon}"
+        entry = cache[key]
+        walk_trams = item["walk_trams"]
+
+        try:
+            if item["cands_missing"] and walk_trams:
+                walk_dests = [(t["lat"], t["lon"]) for t in walk_trams]
+                walk_results = ors_matrix(lat, lon, walk_dests)
+                ors_used += len(walk_trams)
+                time.sleep(1.1)
+                for stop, (w_dur, w_dist) in zip(walk_trams, walk_results):
+                    cand = next((c for c in entry["tram_candidates"] if c["name"] == stop["name"]), None)
+                    if cand:
+                        cand["walk_s"] = w_dur
+                        cand["walk_dist_m"] = w_dist
+                entry["tram_walk_s"] = min((c["walk_s"] for c in entry["tram_candidates"] if c.get("walk_s")), default=None)
+
+            if item["rail"] and ors_used < MAX_ORS_PER_RUN:
+                rail_stop = next((r for r in rails if r["name"] == entry["rail_name"]), None)
+                if rail_stop:
+                    rail_walk_s, rail_walk_dist_m = ors_walk(lat, lon, rail_stop["lat"], rail_stop["lon"])
+                    entry["rail_walk_s"] = rail_walk_s
+                    entry["rail_walk_dist_m"] = rail_walk_dist_m
+                    ors_used += 1
+                    time.sleep(1.1)
+
+            cache[key] = entry
+
+        except Exception as e:
+            print(f"  [{i+1}] ERROR {key}: {e}")
+            continue
+
+        if (i + 1) % 50 == 0 or i == len(needs_walk) - 1:
+            CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
+            print(f"  [{i+1}/{len(needs_walk)}] ORS сохранено, использовано: {ors_used}")
 
     CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
     filled = sum(1 for v in cache.values() if v.get("tram_km") is not None)
