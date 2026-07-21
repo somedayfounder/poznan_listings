@@ -208,25 +208,6 @@
     "geo_district": null,
     "corrected": false
   },
-  "66293561": {
-    "orig_lat": 52.36733,
-    "orig_lon": 16.90355,
-    "new_lat": 52.376392,
-    "new_lon": 16.906422,
-    "dist_m": 1026,
-    "query": "ul. 28 czerwca 1956 r., Poznań, Polska",
-    "formatted": "28 Czerwca 1956 r., 61-001 Poznań, Polska",
-    "addr": {
-      "street": "ul. 28 czerwca 1956 r.",
-      "osiedle": "Osiedle 28 Czerwca 1956 r.",
-      "city": "Poznań",
-      "district": "Wilda",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": true
-  },
   "66707030": {
     "orig_lat": 52.38921,
     "orig_lon": 16.85909,
@@ -435,25 +416,6 @@
     "geo_city": "Poznań",
     "geo_district": null,
     "corrected": false
-  },
-  "66293361": {
-    "orig_lat": 52.36733,
-    "orig_lon": 16.90355,
-    "new_lat": 52.376392,
-    "new_lon": 16.906422,
-    "dist_m": 1026,
-    "query": "ul. 28 czerwca 1956 r., Poznań, Polska",
-    "formatted": "28 Czerwca 1956 r., 61-001 Poznań, Polska",
-    "addr": {
-      "street": "ul. 28 czerwca 1956 r.",
-      "osiedle": "Osiedle 28 Czerwca 1956 r.",
-      "city": "Poznań",
-      "district": "Wilda",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": true
   },
   "66325058": {
     "orig_lat": 52.37413,
@@ -7172,25 +7134,6 @@
     "geo_district": null,
     "corrected": false
   },
-  "68017146": {
-    "orig_lat": 52.38217,
-    "orig_lon": 16.91298,
-    "new_lat": 52.376392,
-    "new_lon": 16.906422,
-    "dist_m": 782,
-    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
-    "formatted": "28 Czerwca 1956 r., 61-001 Poznań, Polska",
-    "addr": {
-      "street": "ul. 28 Czerwca 1956 r.",
-      "osiedle": "Nowy Cegielski",
-      "city": "Poznań",
-      "district": "null",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": true
-  },
   "68073263": {
     "orig_lat": 52.39769,
     "orig_lon": 16.92545,
@@ -9564,25 +9507,6 @@
     "geo_city": "Poznań",
     "geo_district": null,
     "corrected": false
-  },
-  "68022688": {
-    "orig_lat": 52.38217,
-    "orig_lon": 16.91298,
-    "new_lat": 52.376392,
-    "new_lon": 16.906422,
-    "dist_m": 782,
-    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
-    "formatted": "28 Czerwca 1956 r., 61-001 Poznań, Polska",
-    "addr": {
-      "street": "ul. 28 Czerwca 1956 r.",
-      "osiedle": "Nowy Cegielski",
-      "city": "Poznań",
-      "district": "null",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": true
   },
   "68159585": {
     "skipped": "low_confidence",
@@ -13746,17 +13670,6 @@
       "confidence": "high"
     }
   },
-  "96629336100067": {
-    "skipped": "geocode_failed",
-    "query": "ul. 28 czerwca 1956 r., Poznań, Polska",
-    "addr": {
-      "street": "ul. 28 czerwca 1956 r.",
-      "osiedle": "Osiedle 28 Czerwca 1956 r.",
-      "city": "Poznań",
-      "district": "Wilda",
-      "confidence": "high"
-    }
-  },
   "67952378": {
     "skipped": "geocode_failed",
     "query": "ul. Wojciechowskiego, Piątkowo, Polska",
@@ -14111,17 +14024,6 @@
     "geo_city": "Poznań",
     "geo_district": "Jeżyce",
     "corrected": true
-  },
-  "68022661": {
-    "skipped": "geocode_failed",
-    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
-    "addr": {
-      "street": "ul. 28 Czerwca 1956 r.",
-      "osiedle": "Nowy Cegielski",
-      "city": "Poznań",
-      "district": "null",
-      "confidence": "high"
-    }
   },
   "96817688800067": {
     "orig_lat": 52.41706,
