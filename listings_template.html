@@ -160,7 +160,7 @@ a:hover{text-decoration:underline}
 
 <div id="tab-districts" class="tab-panel">
 <div class="tbl-wrap"><table class="dist-tbl" id="dg">
-  <thead><tr><th style="width:70px">Итог</th><th style="width:55px" title="Оценка Claude">Claude</th><th style="width:55px" title="Оценка GPT">GPT</th><th style="width:65px" title="NPS жителей (Otodom 2020, опрос 4500+ человек)">NPS</th><th style="width:160px">Район</th><th>Описание</th></tr></thead>
+  <thead><tr><th style="width:70px">Итог</th><th style="width:55px" title="Оценка Claude">Claude</th><th style="width:55px" title="Оценка GPT">GPT</th><th style="width:55px" title="NPS жителей → 0–10 (Otodom 2020, 4500+ человек)">NPS</th><th style="width:55px" title="Средний балл по 10 категориям Otodom 2020 → 0–10">Кат.</th><th style="width:160px">Район</th><th>Описание</th></tr></thead>
   <tbody id="dg-body"></tbody>
 </table></div>
 </div>
@@ -862,12 +862,14 @@ function renderDistricts(){
     const details_inner=(cats_html||d.desc)?`<details style="margin-top:8px"><summary style="cursor:pointer;font-size:12px;color:#6b7280;user-select:none">Подробнее ▸</summary>${cats_html}${d.desc?`<div style="margin-top:6px;font-size:13px;color:#555;line-height:1.7">${d.desc}</div>`:''}</details>`:'';
     const sc_col=s=>s==null?'#bbb':s>=8?'#166534':s>=7?'#1e40af':s>=5?'#854d0e':'#991b1b';
     const sc_td=(v,title)=>v!=null?`<td style="font-size:13px;color:${sc_col(v)};font-weight:600;text-align:center" title="${title||''}">${v}</td>`:`<td style="text-align:center;color:#bbb">—</td>`;
-    const nps_cell=d.residents_nps!=null?`<td style="font-size:12px;font-weight:700;text-align:center;color:${sc_col(d.score_residents)}" title="NPS жителей (Otodom 2020)">${d.residents_nps>0?'+':''}${d.residents_nps}</td>`:sc_td(d.score_residents,d.residents_source?'Жители: '+d.residents_source:'Оценка жителей');
+    const nps_tip=d.residents_nps!=null?`NPS ${d.residents_nps>0?'+':''}${d.residents_nps} → ${d.score_residents}/10`:'Оценка жителей';
+    const nps_cell=sc_td(d.score_residents,nps_tip);
     return`<tr id="district-${d.name.replace(/\s+/g,'-')}">
 <td class="dist-sc" style="color:${sc_c}">${d.score}<span style="color:#bbb;font-size:11px;font-weight:400">/10</span></td>
 ${sc_td(d.score_manual,'Оценка Claude')}
 ${sc_td(d.score_gpt,'Оценка GPT')}
 ${nps_cell}
+${sc_td(d.score_categories,'Средний балл по 10 кат. Otodom 2020 (0–10)')}
 <td style="font-weight:600;font-size:14px">${d.name}</td>
 <td class="dist-rs"><div style="font-size:14px;line-height:1.7;color:#1f2937">${d.summary||'—'}</div>${pros_row}${cons_row}${extra_tags}${details_inner}</td>
 </tr>`;

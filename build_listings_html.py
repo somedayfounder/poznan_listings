@@ -280,13 +280,22 @@ for k, v in DISTRICT_SCORES.items():
         r_norm = round(r_rating / r_scale * 10, 1)
     else:
         r_norm = None
+    # category avg (10 selected: excl. dzieci/sport/zwierzęta)
+    _CAT_INCLUDE = {
+        "Bezpieczeństwo", "Relacje sąsiedzkie", "Ekologia", "Zadbana okolica",
+        "Komunikacja", "Zakupy", "Koszty życia", "Służba zdrowia",
+        "Kultura", "Dzielnica dla imprezowiczów",
+    }
+    _cats = res.get("categories", {})
+    _cat_vals = [v for ck, v in _cats.items() if ck in _CAT_INCLUDE]
+    cat_avg = round((sum(_cat_vals) / len(_cat_vals) - 1) / 4 * 10, 1) if _cat_vals else None
     best_tier = _dist_super.get(k)
     # find a representative listing's supermarket entry for the name
     _rep = next((r for r in js_rows if (r.get("district") or r.get("city")) == k
                  and _store_tier(r.get("supermarket")) == best_tier), None)
     s_bonus, s_tag = _super_bonus(best_tier, _rep.get("supermarket") if _rep else None)
     m = rs.get("claude"); g = rs.get("gpt")
-    components = [x for x in [m, g, r_norm] if x is not None]
+    components = [x for x in [m, g, r_norm, cat_avg] if x is not None]
     base = round((sum(components) / len(components)), 1) if components else v
     districts_list.append({
         "name": k,
@@ -299,6 +308,7 @@ for k, v in DISTRICT_SCORES.items():
         "score_residents": r_norm,
         "residents_nps": r_nps,
         "residents_source": res.get("source"),
+        "score_categories": cat_avg,
         "categories": res.get("categories"),
         "summary": DISTRICT_SUMMARIES.get(k, ""),
         "pros": DISTRICT_PROS.get(k, []),
