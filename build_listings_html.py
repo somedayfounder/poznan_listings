@@ -78,7 +78,7 @@ for r in rows:
         if not (_LAT_MIN <= _lat <= _LAT_MAX and _LON_MIN <= _lon <= _LON_MAX):
             continue
     except (ValueError, KeyError, TypeError):
-        pass
+        continue
     price = v(r, "price_zl", float)
     price_m2 = v(r, "price_per_m2", float)
     area = v(r, "area_m2", float)

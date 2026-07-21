@@ -262,7 +262,9 @@ def patch_score_py(district, score, summary, pros, cons, description):
         entry = f'    "{district}": {cons_repr},\n'
         src = insert_after_open(src, "DISTRICT_CONS", entry)
 
-    SCORE_PY.write_text(src, encoding="utf-8")
+    tmp = SCORE_PY.with_suffix(".tmp")
+    tmp.write_text(src, encoding="utf-8")
+    tmp.replace(SCORE_PY)
     print(f"  score.py patched for {district}")
 
 

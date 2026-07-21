@@ -160,7 +160,10 @@ def run():
     tg_safe(f"🏠 <b>Отправляю {len(new_rows)} объявлений</b>…", "sending")
 
     for r in new_rows:
-        price = f"{int(float(r['price_zl'])):,}".replace(",", " ") + " zł" if r.get("price_zl") else "цена не указана"
+        try:
+            price = f"{int(float(r['price_zl'])):,}".replace(",", " ") + " zł" if r.get("price_zl") else "цена не указана"
+        except (ValueError, TypeError):
+            price = "цена не указана"
         area = f"{r['area_m2']} м²" if r.get("area_m2") else ""
         city = r.get("city", "")
         district = r.get("district", "")

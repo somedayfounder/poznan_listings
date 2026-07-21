@@ -146,7 +146,7 @@ def run():
     rows = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
     cache = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
 
-    need = [r for r in rows if r["id"] not in cache]
+    need = [r for r in rows if r["id"] not in cache or cache[r["id"]].get("_error")]
     print(f"Нужно обработать: {len(need)} из {len(rows)}")
 
     for i, r in enumerate(need):
@@ -161,7 +161,7 @@ def run():
             print(f"  [{i+1}/{len(need)}] {r['id']} bonus={features['_bonus']:+.2f}")
         except Exception as e:
             print(f"  GPT error {r['id']}: {e}")
-            cache[r["id"]] = {}
+            cache[r["id"]] = {"_error": True}
         time.sleep(0.5)
 
         if (i + 1) % 50 == 0:

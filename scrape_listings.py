@@ -77,7 +77,7 @@ def run():
     if need_coords:
         tg_send(f"🌐 Загружаем {need_coords} страниц для координат и фото…")
     new_ids_json = json.dumps(sorted(new_ids))
-    subprocess.run([sys.executable, "-c", f"""
+    r2 = subprocess.run([sys.executable, "-c", f"""
 import csv, re, json, time
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -127,6 +127,10 @@ with open('listings_latest.csv','w',newline='',encoding='utf-8-sig') as f:
     w.writeheader(); w.writerows(rows)
 print(f'coords done, fetched={{fetched}}')
 """], cwd=DATA_DIR, capture_output=True, text=True)
+    if r2.returncode != 0:
+        tg_send(f"⚠️ Ошибка докачки координат:\n{r2.stderr[-500:]}")
+    else:
+        print(r2.stdout[-200:])
 
     rows_all = list(csv.DictReader(open(DATA_DIR / "listings_latest.csv", encoding="utf-8-sig")))
     # Сохраняем фото для новых

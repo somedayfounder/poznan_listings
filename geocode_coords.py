@@ -237,6 +237,7 @@ def main():
         )
         # fallback 1: Nominatim без номера дома
         if new_lat is None and gpt_number and gpt_street:
+            time.sleep(1.0)
             fallback_query = f"{gpt_street}, {gpt_city_q}, Polska"
             new_lat, new_lon, formatted, geo_city, geo_district = geocode(fallback_query)
         # fallback 2: Photon
@@ -328,13 +329,17 @@ def main():
             drive_cache_file.write_text(json.dumps(drive_cache, ensure_ascii=False, indent=2))
             print(f"Скопировано кэшей дистанций: {drive_copied}")
 
-        with open(CSV_FILE, "w", encoding="utf-8-sig", newline="") as f:
+        tmp_csv = CSV_FILE.with_suffix(".tmp")
+        with open(tmp_csv, "w", encoding="utf-8-sig", newline="") as f:
             w = csv.DictWriter(f, fieldnames=fieldnames)
             w.writeheader()
             w.writerows(rows)
+        tmp_csv.replace(CSV_FILE)
         print(f"\nОбновлено координат: {updated}")
 
-    OVERRIDE_FILE.write_text(json.dumps(overrides, ensure_ascii=False, indent=2))
+    tmp_ovr = OVERRIDE_FILE.with_suffix(".tmp")
+    tmp_ovr.write_text(json.dumps(overrides, ensure_ascii=False, indent=2))
+    tmp_ovr.replace(OVERRIDE_FILE)
     print(f"Аудит → {OVERRIDE_FILE}")
 
 
