@@ -9076,5 +9076,134 @@
       "district": "Poznań",
       "confidence": "high"
     }
+  },
+  "96797801300067": {
+    "skipped": "geocode_failed",
+    "query": "gm. Buk, Otusz, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Otusz",
+      "district": "gm. Buk",
+      "confidence": "high"
+    }
+  },
+  "62644174": {
+    "skipped": "geocode_failed",
+    "query": "Zielone Rabowice, Rabowice, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Zielone Rabowice",
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96819629100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96821242300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Słupia",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67089242": {
+    "skipped": "geocode_failed",
+    "query": "ul. Stajenna 1, Pawłowice, Polska",
+    "addr": {
+      "street": "ul. Stajenna",
+      "number": "1",
+      "osiedle": "Forall Osiedle Harmonia",
+      "city": "Pawłowice",
+      "district": "Rokietnica",
+      "confidence": "high"
+    }
+  },
+  "67089243": {
+    "skipped": "geocode_failed",
+    "query": "ul. Stajenna 1, Pawłowice, Polska",
+    "addr": {
+      "street": "ul. Stajenna",
+      "number": "1",
+      "osiedle": "Forall Osiedle Harmonia",
+      "city": "Pawłowice",
+      "district": "Rokietnica",
+      "confidence": "high"
+    }
+  },
+  "96708924300067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Stajenna 1, Pawłowice, Polska",
+    "addr": {
+      "street": "ul. Stajenna",
+      "number": "1",
+      "osiedle": "Forall Osiedle Harmonia",
+      "city": "Pawłowice",
+      "district": "Rokietnica",
+      "confidence": "high"
+    }
+  },
+  "96661393800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Czerniewice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67440345": {
+    "skipped": "geocode_failed",
+    "query": "Zielone Rabowice, Rabowice, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Zielone Rabowice",
+      "city": "Rabowice",
+      "district": "gmina Swarzędz",
+      "confidence": "high"
+    }
+  },
+  "67947257": {
+    "skipped": "geocode_failed",
+    "query": "ul. Rajskiej, Wysogotowo, Polska",
+    "addr": {
+      "street": "ul. Rajskiej",
+      "number": null,
+      "osiedle": "Rajska Inwestycja",
+      "city": "Wysogotowo",
+      "district": "Tarnowo Podgórne",
+      "confidence": "high"
+    }
+  },
+  "96794725700067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Rajskiej, Wysogotowo, Polska",
+    "addr": {
+      "street": "ul. Rajskiej",
+      "number": null,
+      "osiedle": "Rajska Inwestycja",
+      "city": "Wysogotowo",
+      "district": "Tarnowo Podgórne",
+      "confidence": "high"
+    }
   }
 }
