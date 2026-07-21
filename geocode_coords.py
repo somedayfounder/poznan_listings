@@ -120,7 +120,7 @@ def geocode(query, street=None, housenumber=None, city=None):
 def geocode_photon(query):
     """Photon (komoot) — fallback когда Nominatim не нашёл."""
     url = "https://photon.komoot.io/api?" + urlencode({
-        "q": query, "limit": 1, "lang": "pl",
+        "q": query, "limit": 1,
         "lat": "52.4", "lon": "16.9",  # bias к Познани
     })
     try:
