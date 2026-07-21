@@ -121,7 +121,7 @@ def geocode_photon(query):
     """Photon (komoot) — fallback когда Nominatim не нашёл."""
     url = "https://photon.komoot.io/api?" + urlencode({
         "q": query, "limit": 1, "lang": "pl",
-        "bbox": "15.8,51.6,17.9,52.9",  # bbox Wielkopolska
+        "lat": "52.4", "lon": "16.9",  # bias к Познани
     })
     try:
         req = Request(url, headers={"User-Agent": "poznan-listings-bot/1.0"})
