@@ -93,15 +93,15 @@ def gpt_extract_address(description):
         return {}
 
 
-def geocode(query):
-    url = "https://nominatim.openstreetmap.org/search?" + urlencode({
-        "q": query,
-        "format": "json",
-        "addressdetails": 1,
-        "limit": 1,
-        "countrycodes": "pl",
-        "accept-language": "pl",
-    })
+def geocode(query, street=None, housenumber=None, city=None):
+    params = {"format": "json", "addressdetails": 1, "limit": 1,
+              "countrycodes": "pl", "accept-language": "pl"}
+    if street and city:
+        params["street"] = f"{housenumber} {street}" if housenumber else street
+        params["city"] = city
+    else:
+        params["q"] = query
+    url = "https://nominatim.openstreetmap.org/search?" + urlencode(params)
     try:
         req = Request(url, headers=NOMINATIM_HEADERS)
         resp = json.loads(urlopen(req, timeout=10).read())
@@ -122,6 +122,8 @@ def build_query(addr):
     city = addr.get("city") or "Poznań"
     street = addr.get("street")
     number = addr.get("number")
+    if number in (None, "null", "none", ""):
+        number = None
     osiedle = addr.get("osiedle")
     district = addr.get("district")
     if street:
@@ -164,7 +166,16 @@ def main():
             time.sleep(1.0)
             continue
 
-        new_lat, new_lon, formatted, geo_city, geo_district = geocode(query)
+        gpt_street = addr.get("street")
+        gpt_number = addr.get("number") if addr.get("number") not in (None, "null", "none", "") else None
+        gpt_city_q = addr.get("city") or "Poznań"
+        new_lat, new_lon, formatted, geo_city, geo_district = geocode(
+            query, street=gpt_street, housenumber=gpt_number, city=gpt_city_q
+        )
+        # fallback: попробовать без номера если structured не нашёл
+        if new_lat is None and gpt_number and gpt_street:
+            fallback_query = f"{gpt_street}, {gpt_city_q}, Polska"
+            new_lat, new_lon, formatted, geo_city, geo_district = geocode(fallback_query)
         if new_lat is None:
             overrides[lid] = {"skipped": "geocode_failed", "query": query, "addr": addr}
             print(f"    → геокодинг не дал результата: {query}")
