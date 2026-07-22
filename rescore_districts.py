@@ -152,6 +152,15 @@ tmp = SCORE_PY.with_suffix(".tmp")
 tmp.write_text(new_src, encoding="utf-8")
 tmp.replace(SCORE_PY)
 
+# Также сохраняем GPT-оценки в rescore_results.json для отображения в HTML
+RESCORE_FILE = Path(__file__).parent / "rescore_results.json"
+rescore = json.loads(RESCORE_FILE.read_text()) if RESCORE_FILE.exists() else {}
+for name, gpt in gpt_scores.items():
+    if name not in rescore:
+        rescore[name] = {}
+    rescore[name]["gpt"] = gpt
+RESCORE_FILE.write_text(json.dumps(rescore, ensure_ascii=False, indent=2))
+
 print(f"Обновлено: {len(changes)} районов\n")
 print(f"{'Район':<35} {'Было':>5} {'GPT':>5} {'Новое':>6}  {'Δ':>5}")
 print("-" * 60)
