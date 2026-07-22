@@ -12913,5 +12913,776 @@
     "geo_city": "Poznań",
     "geo_district": "Łazarz",
     "corrected": false
+  },
+  "67951895": {
+    "orig_lat": 52.4457,
+    "orig_lon": 16.9119,
+    "new_lat": 52.444581,
+    "new_lon": 16.910307,
+    "dist_m": 165,
+    "query": "ul. Wojciechowskiego 7/17, Poznań, Polska",
+    "formatted": "Bricoman, Zygmunta Wojciechowskiego 7-17, 60-685 Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "7/17",
+      "osiedle": "Piątkowo Residence",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96629336100067": {
+    "orig_lat": 52.36733,
+    "orig_lon": 16.90355,
+    "new_lat": 52.367257,
+    "new_lon": 16.902715,
+    "dist_m": 57,
+    "query": "ul. 28 czerwca 1956 r. 346, Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, 346, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 czerwca 1956 r.",
+      "number": "346",
+      "osiedle": "Osiedle 28 Czerwca 1956 r.",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Zielony Dębiec",
+    "corrected": false
+  },
+  "66706994": {
+    "orig_lat": 52.38921,
+    "orig_lon": 16.85909,
+    "new_lat": 52.389515,
+    "new_lon": 16.859701,
+    "dist_m": 54,
+    "query": "ul. Smardzewska 8, Poznań, Polska",
+    "formatted": "Smardzewska, 60-159 Poznań, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": "8",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Stary Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Osiedle Mikołaja Kopernika",
+    "corrected": false
+  },
+  "96670699400067": {
+    "orig_lat": 52.38921,
+    "orig_lon": 16.85909,
+    "new_lat": 52.389515,
+    "new_lon": 16.859701,
+    "dist_m": 54,
+    "query": "ul. Smardzewska 8, Poznań, Polska",
+    "formatted": "Smardzewska, 60-159 Poznań, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": "8",
+      "osiedle": "Smardzewska 8",
+      "city": "Poznań",
+      "district": "Stary Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Osiedle Mikołaja Kopernika",
+    "corrected": false
+  },
+  "67908557": {
+    "skipped": "outside_bbox",
+    "query": "Kostrzyn, Trzek, Polska",
+    "formatted": "Trzek, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Trzek",
+      "district": "Kostrzyn",
+      "confidence": "high"
+    },
+    "new_lat": 52.35105,
+    "new_lon": 17.17238
+  },
+  "96802687200067": {
+    "orig_lat": 52.33382,
+    "orig_lon": 17.17116,
+    "new_lat": 52.369875,
+    "new_lon": 17.148063,
+    "dist_m": 4305,
+    "query": "ul. Borówkowa, Gowarzewo, Polska",
+    "formatted": "Gowarzewo Borówkowa n/ż, Siekierecka, Gowarzewo, Polska",
+    "addr": {
+      "street": "ul. Borówkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gowarzewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96806134500067": {
+    "orig_lat": 52.61476,
+    "orig_lon": 17.09083,
+    "new_lat": 52.613708,
+    "new_lon": 17.095353,
+    "dist_m": 327,
+    "query": "Łopuchowo, Łopuchowo, Polska",
+    "formatted": "Łopuchowo, 196, Łopuchowo, gmina Murowana Goślina, powiat poznański, województwo wielkopolskie, 62-093, Polska",
+    "addr": {
+      "street": null,
+      "number": "12/166a",
+      "osiedle": "Łopuchowo",
+      "city": "Łopuchowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łopuchowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67810021": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Biesiadnej 12/1, Poznań, Polska",
+    "formatted": "Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Biesiadnej",
+      "number": "12/1",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67810150": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Biesiadnej 12/1, Poznań, Polska",
+    "formatted": "Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Biesiadnej",
+      "number": "12/1",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96781015000067": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Biesiadnej 12/1, Poznań, Polska",
+    "formatted": "Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Biesiadnej",
+      "number": "12/1",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67809840": {
+    "skipped": "geocode_failed",
+    "query": "ul. Biesiadnej 12/2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Biesiadnej",
+      "number": "12/2",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67810112": {
+    "skipped": "geocode_failed",
+    "query": "ul. Biesiadnej 12/2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Biesiadnej",
+      "number": "12/2",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67858986": {
+    "skipped": "outside_bbox",
+    "query": "Kostrzyn, Gwiazdowo, Polska",
+    "formatted": "Gwiazdowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gwiazdowo",
+      "district": "Kostrzyn",
+      "confidence": "high"
+    },
+    "new_lat": 52.41643,
+    "new_lon": 17.2094
+  },
+  "68141825": {
+    "orig_lat": 52.35519,
+    "orig_lon": 16.71289,
+    "new_lat": 52.3621,
+    "new_lon": 16.70981,
+    "dist_m": 796,
+    "query": "Bajkowy Dopiewiec, Dopiewiec, Polska",
+    "formatted": "Dopiewiec, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Bajkowy Dopiewiec",
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96782835500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kruszewnia",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96819647900067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "96818744800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68182174": {
+    "orig_lat": 52.34617,
+    "orig_lon": 16.87738,
+    "new_lat": 52.34705,
+    "new_lon": 16.89267,
+    "dist_m": 1043,
+    "query": "Lokum Luboń, Luboń, Polska",
+    "formatted": "Luboń, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Lokum Luboń",
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68182125": {
+    "orig_lat": 52.34617,
+    "orig_lon": 16.87738,
+    "new_lat": 52.34705,
+    "new_lon": 16.89267,
+    "dist_m": 1043,
+    "query": "Lokum Luboń, Luboń, Polska",
+    "formatted": "Luboń, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Lokum Luboń",
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67220147": {
+    "orig_lat": 52.46978,
+    "orig_lon": 16.9417,
+    "new_lat": 52.467915,
+    "new_lon": 16.935683,
+    "dist_m": 457,
+    "query": "null 30/B, Umultowo, Polska",
+    "formatted": "Umultowska, 102b, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "30/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Umultowo",
+    "corrected": true
+  },
+  "67220148": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Zagajnik, Poznań, Polska",
+    "formatted": "Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": "21/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Poznań",
+      "district": "Umultowo",
+      "confidence": "high"
+    }
+  },
+  "67220151": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Zagajnik, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": "32/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "68183141": {
+    "orig_lat": 52.29129,
+    "orig_lon": 16.96902,
+    "new_lat": 52.30002,
+    "new_lon": 16.95723,
+    "dist_m": 1259,
+    "query": "gmina Mosina, Daszewice, Polska",
+    "formatted": "Daszewice, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Daszewice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65204646": {
+    "skipped": "outside_bbox",
+    "query": "ul. Wieruszowska 8L_2, Grunwald, Polska",
+    "formatted": "Grunwald, Powiat ostródzki, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8L_2",
+      "osiedle": "Grunwald Park",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.48422,
+    "new_lon": 20.09425
+  },
+  "68127817": {
+    "orig_lat": 52.22375,
+    "orig_lon": 16.82914,
+    "new_lat": 52.227186,
+    "new_lon": 16.824956,
+    "dist_m": 477,
+    "query": "Piaskowa, Krosno, Polska",
+    "formatted": "Piaskowa, Osiedle Miodowe, Krosno, gmina Mosina, powiat poznański, województwo wielkopolskie, 62-050, Polska",
+    "addr": {
+      "street": "Piaskowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosno",
+      "district": "Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Krosno",
+    "geo_district": "Osiedle Miodowe",
+    "corrected": true
+  },
+  "68195662": {
+    "skipped": "geocode_city_only",
+    "query": "małym, kameralnym osiedlu, Poznań, Polska",
+    "formatted": "Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "małym, kameralnym osiedlu",
+      "city": "Poznań",
+      "district": "Szczepankowo- Spławie- Krzesiny",
+      "confidence": "high"
+    }
+  },
+  "96822008000067": {
+    "orig_lat": 52.4918,
+    "orig_lon": 16.93791,
+    "new_lat": 52.48927,
+    "new_lon": 16.941774,
+    "dist_m": 384,
+    "query": "Lubczykowa Góra 3, Radojewo, Polska",
+    "formatted": "Rdestowa, Radojewo, Nowa Wieś Górna, Morasko-Radojewo, Poznań, województwo wielkopolskie, 61-680, Polska",
+    "addr": {
+      "street": "Lubczykowa Góra",
+      "number": "3",
+      "osiedle": "Lubczykowa Góra",
+      "city": "Radojewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Morasko-Radojewo",
+    "corrected": true
+  },
+  "68088281": {
+    "orig_lat": 52.49688,
+    "orig_lon": 16.73531,
+    "new_lat": 52.48518,
+    "new_lon": 16.72617,
+    "dist_m": 1441,
+    "query": "Rokietnica, Napachanie, Polska",
+    "formatted": "Napachanie, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Napachanie",
+      "district": "Rokietnica",
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65204707": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, województwo lubuskie, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": null,
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66857797": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Kamiennej 15, Krosno, Polska",
+    "formatted": "Krosno, województwo podkarpackie, Polska",
+    "addr": {
+      "street": "ul. Kamiennej",
+      "number": "15",
+      "osiedle": null,
+      "city": "Krosno",
+      "district": "gm. Mosina",
+      "confidence": "high"
+    }
+  },
+  "96794253100067": {
+    "orig_lat": 52.37571,
+    "orig_lon": 17.10255,
+    "new_lat": 52.378827,
+    "new_lon": 17.093522,
+    "dist_m": 704,
+    "query": "PARK Kruszewnia, Kruszewnia, Polska",
+    "formatted": "Park Kruszewnia, Kruszewnia, gmina Swarzędz, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "PARK Kruszewnia",
+      "city": "Kruszewnia",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Kruszewnia",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68234660": {
+    "orig_lat": 52.61476,
+    "orig_lon": 17.09083,
+    "new_lat": 52.61499,
+    "new_lon": 17.0905,
+    "dist_m": 34,
+    "query": "EKO-Łopuchowo, Łopuchowo, Polska",
+    "formatted": "Łopuchowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "EKO-Łopuchowo",
+      "city": "Łopuchowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łopuchowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67933813": {
+    "orig_lat": 52.35657,
+    "orig_lon": 16.57496,
+    "new_lat": 52.35579,
+    "new_lon": 16.57717,
+    "dist_m": 173,
+    "query": "Krętej, Otusz, Polska",
+    "formatted": "Otusz, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "Krętej",
+      "number": null,
+      "osiedle": null,
+      "city": "Otusz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Otusz",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67266059": {
+    "skipped": "geocode_failed",
+    "query": "Literacka Skwer – etap C, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Literacka Skwer – etap C",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68171392": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "68218327": {
+    "orig_lat": 52.34314,
+    "orig_lon": 17.07574,
+    "new_lat": 52.3387,
+    "new_lon": 16.81063,
+    "dist_m": 18017,
+    "query": "gm. Kleszczewo, Komorniki, Polska",
+    "formatted": "Komorniki, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": "gm. Kleszczewo",
+      "confidence": "high"
+    },
+    "geo_city": "Komorniki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68209491": {
+    "orig_lat": 52.33343,
+    "orig_lon": 17.17231,
+    "new_lat": 52.3387,
+    "new_lon": 16.81063,
+    "dist_m": 24581,
+    "query": "gm. Kleszczewo, Komorniki, Polska",
+    "formatted": "Komorniki, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": "gm. Kleszczewo",
+      "confidence": "high"
+    },
+    "geo_city": "Komorniki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68075454": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96812484200067": {
+    "orig_lat": 52.24811,
+    "orig_lon": 17.08378,
+    "new_lat": 52.224531,
+    "new_lon": 17.051636,
+    "dist_m": 3415,
+    "query": "ul. Huby, Konarskie, Polska",
+    "formatted": "Huby, Konarskie, Polska",
+    "addr": {
+      "street": "ul. Huby",
+      "number": null,
+      "osiedle": null,
+      "city": "Konarskie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Konarskie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68047747": {
+    "orig_lat": 52.40277,
+    "orig_lon": 16.67953,
+    "new_lat": 52.4039,
+    "new_lon": 16.67696,
+    "dist_m": 215,
+    "query": "gmina Tarnowo Podgórne, Sierosław, Polska",
+    "formatted": "Sierosław, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Sierosław",
+      "district": "gmina Tarnowo Podgórne",
+      "confidence": "high"
+    },
+    "geo_city": "Sierosław",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96814460700067": {
+    "orig_lat": 52.20227,
+    "orig_lon": 17.10221,
+    "new_lat": 52.205188,
+    "new_lon": 17.105683,
+    "dist_m": 402,
+    "query": "ul. Brzozowa, Błażejewko, Polska",
+    "formatted": "Błażejewko, gmina Kórnik, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Brzozowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Błażejewko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Błażejewko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68156755": {
+    "orig_lat": 52.24626,
+    "orig_lon": 17.08923,
+    "new_lat": 52.26752,
+    "new_lon": 17.06543,
+    "dist_m": 2866,
+    "query": "Gmina Kórnik, Skrzynki, Polska",
+    "formatted": "Skrzynki, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Skrzynki",
+      "district": "Gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Skrzynki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "64709718": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "Grunwald-Górczyn",
+      "confidence": "high"
+    }
+  },
+  "96597856000067": {
+    "orig_lat": 52.40689,
+    "orig_lon": 17.10572,
+    "new_lat": 52.410373,
+    "new_lon": 17.077104,
+    "dist_m": 1979,
+    "query": "ul. Gerberowa, Swarzędz, Polska",
+    "formatted": "Swarzędz, gmina Swarzędz, powiat poznański, województwo wielkopolskie, 62-020, Polska",
+    "addr": {
+      "street": "ul. Gerberowa",
+      "number": null,
+      "osiedle": "Gerberowa Park",
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Swarzędz",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67820099": {
+    "orig_lat": 52.48918,
+    "orig_lon": 17.06061,
+    "new_lat": 52.48654,
+    "new_lon": 17.05761,
+    "dist_m": 357,
+    "query": "Czerwonak, Kliny, Polska",
+    "formatted": "Kliny, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kliny",
+      "district": "Czerwonak",
+      "confidence": "high"
+    },
+    "geo_city": "Kliny",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68201478": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Limonkowa, Naramowice, Polska",
+    "formatted": "Naramowice, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Limonkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
