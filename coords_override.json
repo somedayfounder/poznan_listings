@@ -5910,7 +5910,8 @@
     },
     "geo_city": "Poznań",
     "geo_district": null,
-    "corrected": true
+    "corrected": false,
+    "reverted": "city_only_geocode"
   },
   "67479889": {
     "orig_lat": 52.36452,
@@ -7881,7 +7882,8 @@
     },
     "geo_city": "Poznań",
     "geo_district": null,
-    "corrected": true
+    "corrected": false,
+    "reverted": "city_only_geocode"
   },
   "68143821": {
     "orig_lat": 52.36086,
@@ -11751,7 +11753,8 @@
     },
     "geo_city": "Poznań",
     "geo_district": null,
-    "corrected": true
+    "corrected": false,
+    "reverted": "city_only_geocode"
   },
   "66528890": {
     "skipped": "geocode_failed",

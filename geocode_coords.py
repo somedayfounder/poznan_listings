@@ -273,11 +273,24 @@ def main():
                 time.sleep(0.3)
                 continue
 
-        # Отклоняем если geocoder вернул только страну (совсем нет детализации)
+        # Отклоняем если geocoder вернул только город/страну без улицы или района
         formatted_parts = [p.strip() for p in (formatted or "").split(",")]
         if len(formatted_parts) <= 1:
             overrides[lid] = {"skipped": "geocode_too_vague", "query": query, "formatted": formatted, "addr": addr}
             print(f"    → слишком общий результат: {formatted}")
+            time.sleep(0.3)
+            continue
+        # Если ответ содержит только "Город, воеводство, Польша" (≤3 части без улицы/района) —
+        # геокодер не нашёл адрес и вернул центр города; orig координаты точнее
+        _city_only_keywords = {"województwo", "powiat", "gmina", "Polska", "Poland"}
+        _has_street_or_district = any(
+            p not in _city_only_keywords and not any(kw in p for kw in _city_only_keywords)
+            and p not in ((geo_city or ""), (addr.get("city") or ""))
+            for p in formatted_parts[:2]
+        )
+        if not _has_street_or_district and len(formatted_parts) <= 4:
+            overrides[lid] = {"skipped": "geocode_city_only", "query": query, "formatted": formatted, "addr": addr}
+            print(f"    → геокодер вернул только город: {formatted}")
             time.sleep(0.3)
             continue
 
