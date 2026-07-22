@@ -13668,5 +13668,541 @@
   "67784689": {
     "skipped": "manual_keep_otodom",
     "note": "ul. Przyjazna exists in both Żegrze and Szczepankowo/Spławie; geocoder picks Żegrze; Otodom coords (Spławie) are correct per listing description"
+  },
+  "96632505800067": {
+    "orig_lat": 52.37413,
+    "orig_lon": 16.95236,
+    "new_lat": 52.374071,
+    "new_lon": 16.951708,
+    "dist_m": 45,
+    "query": "ul. Unii Lubelskiej 4, Starołęka, Polska",
+    "formatted": "Agrobex Unii Lubelskiej 4 (budowa), Unii Lubelskiej, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Unii Lubelskiej",
+      "number": "4",
+      "osiedle": "Inwestycja Unii Lubelskiej 4",
+      "city": "Starołęka",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "68112930": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96796271600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kórnik",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96647773400067": {
+    "orig_lat": 52.43413,
+    "orig_lon": 16.59335,
+    "new_lat": 52.434351,
+    "new_lon": 16.593362,
+    "dist_m": 25,
+    "query": "ul. Sokoła, Ceradz Kościelny, Polska",
+    "formatted": "Sokoła, Ceradz Kościelny, Polska",
+    "addr": {
+      "street": "ul. Sokoła",
+      "number": null,
+      "osiedle": null,
+      "city": "Ceradz Kościelny",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Ceradz Kościelny",
+    "geo_district": null,
+    "corrected": false
+  },
+  "60789500": {
+    "skipped": "outside_bbox",
+    "query": "Enklawa Nad Jeziorem, Tarnowo, Polska",
+    "formatted": "Tarnowo Pałuckie, gmina Wągrowiec, powiat wągrowiecki, województwo wielkopolskie, 62-105, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Enklawa Nad Jeziorem",
+      "city": "Tarnowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.831753,
+    "new_lon": 17.2767
+  },
+  "96078950000067": {
+    "skipped": "outside_bbox",
+    "query": "Enklawa Nad Jeziorem, Tarnowo, Polska",
+    "formatted": "Tarnowo Pałuckie, gmina Wągrowiec, powiat wągrowiecki, województwo wielkopolskie, 62-105, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Enklawa Nad Jeziorem",
+      "city": "Tarnowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.831753,
+    "new_lon": 17.2767
+  },
+  "68228436": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68217811": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96821781100067": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96803614800067": {
+    "orig_lat": 52.44804,
+    "orig_lon": 16.95869,
+    "new_lat": 52.448546,
+    "new_lon": 16.957817,
+    "dist_m": 82,
+    "query": "Osiedle WITAJ, Poznań, Polska",
+    "formatted": "Osiedle Witaj, Naramowice, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle WITAJ",
+      "city": "Poznań",
+      "district": "Naramowice",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "96806357800067": {
+    "orig_lat": 52.34396,
+    "orig_lon": 16.71128,
+    "new_lat": 52.340859,
+    "new_lon": 16.716871,
+    "dist_m": 513,
+    "query": "ul. Młyńska 33/2, Konarzewo, Polska",
+    "formatted": "Młyńska 33, 62-070 Konarzewo, Polska",
+    "addr": {
+      "street": "ul. Młyńska",
+      "number": "33/2",
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": "Dopiewo",
+      "confidence": "high"
+    },
+    "geo_city": "Konarzewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96500271600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Trzaskowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67836015": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449503,
+    "new_lon": 16.957893,
+    "dist_m": 301,
+    "query": "ul. Bielicowa, Naramowice, Polska",
+    "formatted": "Bielicowa, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": null,
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": true
+  },
+  "96783601500067": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449503,
+    "new_lon": 16.957893,
+    "dist_m": 301,
+    "query": "ul. Bielicowa, Naramowice, Polska",
+    "formatted": "Bielicowa, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": null,
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": true
+  },
+  "67220150": {
+    "orig_lat": 52.46978,
+    "orig_lon": 16.9417,
+    "new_lat": 52.391365,
+    "new_lon": 16.919671,
+    "dist_m": 8846,
+    "query": "null 28/B, Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, 124B, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "28/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Poznań",
+      "district": "Umultowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "96822839900067": {
+    "orig_lat": 52.48798,
+    "orig_lon": 16.98359,
+    "new_lat": 52.422309,
+    "new_lon": 16.874941,
+    "dist_m": 10369,
+    "query": "ul. Polska 114, Poznań, Polska",
+    "formatted": "Polska, 114, Poznań, Polska",
+    "addr": {
+      "street": "ul. Polska",
+      "number": "114",
+      "osiedle": "Osiedle Wzgórze Zawilcowa",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Ogrody",
+    "corrected": true
+  },
+  "66346521": {
+    "orig_lat": 52.30727,
+    "orig_lon": 17.07464,
+    "new_lat": 52.31048,
+    "new_lon": 17.07524,
+    "dist_m": 359,
+    "query": "Ul Poznańskiej, Robakowo, Polska",
+    "formatted": "Robakowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "Ul Poznańskiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Robakowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96633216700067": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449057,
+    "new_lon": 16.960241,
+    "dist_m": 136,
+    "query": "ul. Bielicowa 4, Naramowice, Polska",
+    "formatted": "Bielicowa, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "4",
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "67836027": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449057,
+    "new_lon": 16.960241,
+    "dist_m": 136,
+    "query": "ul. Bielicowa 4, Naramowice, Polska",
+    "formatted": "Bielicowa, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "4",
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "68238290": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68238292": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96823829000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96522944800067": {
+    "orig_lat": 52.42961,
+    "orig_lon": 16.9519,
+    "new_lat": 52.429872,
+    "new_lon": 16.951968,
+    "dist_m": 29,
+    "query": "Wilczak 16 A, Poznań, Polska",
+    "formatted": "16a, Wilczak, Szeląg, Stare Winogrady, Winogrady, Poznań, województwo wielkopolskie, 61-623, Polska",
+    "addr": {
+      "street": "Wilczak",
+      "number": "16 A",
+      "osiedle": "Tarasy Wilczak",
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": false
+  },
+  "96822214000067": {
+    "orig_lat": 52.39885,
+    "orig_lon": 17.11339,
+    "new_lat": 52.410373,
+    "new_lon": 17.077104,
+    "dist_m": 2775,
+    "query": "ul. Gerberowa, Swarzędz, Polska",
+    "formatted": "Swarzędz, gmina Swarzędz, powiat poznański, województwo wielkopolskie, 62-020, Polska",
+    "addr": {
+      "street": "ul. Gerberowa",
+      "number": null,
+      "osiedle": "Gerberowa Park",
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Swarzędz",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96820949100067": {
+    "orig_lat": 52.33343,
+    "orig_lon": 17.17231,
+    "new_lat": 52.3387,
+    "new_lon": 16.81063,
+    "dist_m": 24581,
+    "query": "gm. Kleszczewo, Komorniki, Polska",
+    "formatted": "Komorniki, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": "gm. Kleszczewo",
+      "confidence": "high"
+    },
+    "geo_city": "Komorniki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96819666200067": {
+    "orig_lat": 52.43958,
+    "orig_lon": 16.64046,
+    "new_lat": 52.43902,
+    "new_lon": 16.64032,
+    "dist_m": 63,
+    "query": "ul. Przystaniowej, Lusówko, Polska",
+    "formatted": "Przystaniowa, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Przystaniowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96800298900067": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96802580400067": {
+    "orig_lat": 52.45718,
+    "orig_lon": 16.88339,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 1674,
+    "query": "Jasielska 8C, Poznań, Polska",
+    "formatted": "8c, Jasielska, Podolany, Poznań, województwo wielkopolskie, 60-476, Polska",
+    "addr": {
+      "street": "Jasielska",
+      "number": "8C",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "67842929": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "96813517600067": {
+    "orig_lat": 52.41376,
+    "orig_lon": 16.94013,
+    "new_lat": 52.409761,
+    "new_lon": 16.939252,
+    "dist_m": 449,
+    "query": "ul. Szyperska, Poznań, Polska",
+    "formatted": "Szyperska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Szyperska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Stare Miasto",
+    "corrected": true
   }
 }
