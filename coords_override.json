@@ -1379,27 +1379,6 @@
       "confidence": "high"
     }
   },
-  "68127817": {
-    "orig_lat": 52.22375,
-    "orig_lon": 16.82914,
-    "new_lat": 49.688984,
-    "new_lon": 21.753479,
-    "dist_m": 445259,
-    "query": "Piaskowa, Krosno, Polska",
-    "formatted": "Krosno, województwo podkarpackie, Polska",
-    "addr": {
-      "street": "Piaskowa",
-      "number": null,
-      "osiedle": null,
-      "city": "Krosno",
-      "district": "Mosina",
-      "confidence": "high"
-    },
-    "geo_city": "Krosno",
-    "geo_district": null,
-    "corrected": false,
-    "reverted": true
-  },
   "67853846": {
     "skipped": "low_confidence",
     "addr": {
@@ -5346,26 +5325,6 @@
     "geo_district": null,
     "corrected": true
   },
-  "67908557": {
-    "orig_lat": 52.35799,
-    "orig_lon": 17.17172,
-    "new_lat": 52.356441,
-    "new_lon": 17.17262,
-    "dist_m": 183,
-    "query": "gmina Kostrzyn, Trzek, Polska",
-    "formatted": "Trzek, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": null,
-      "city": "Trzek",
-      "district": "gmina Kostrzyn",
-      "confidence": "high"
-    },
-    "geo_city": "Trzek",
-    "geo_district": null,
-    "corrected": false
-  },
   "68026872": {
     "orig_lat": 52.33382,
     "orig_lon": 17.17116,
@@ -5671,26 +5630,6 @@
     "geo_district": null,
     "corrected": false
   },
-  "62644174": {
-    "orig_lat": 52.38786,
-    "orig_lon": 17.11767,
-    "new_lat": 52.38629,
-    "new_lon": 17.11696,
-    "dist_m": 181,
-    "query": "Zielone Rabowice, Rabowice, Polska",
-    "formatted": "Rabowice, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": "Zielone Rabowice",
-      "city": "Rabowice",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Rabowice",
-    "geo_district": null,
-    "corrected": false
-  },
   "67364560": {
     "orig_lat": 52.49109,
     "orig_lon": 17.29391,
@@ -5832,26 +5771,6 @@
     "corrected": false,
     "reverted": true
   },
-  "67810021": {
-    "orig_lat": 52.35454,
-    "orig_lon": 17.01192,
-    "new_lat": 52.408266,
-    "new_lon": 16.93352,
-    "dist_m": 8000,
-    "query": "ul. Biesiadnej 12/1, Poznań, Polska",
-    "formatted": "Poznań, województwo wielkopolskie, Polska",
-    "addr": {
-      "street": "ul. Biesiadnej",
-      "number": "12/1",
-      "osiedle": null,
-      "city": "Poznań",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": true
-  },
   "67480060": {
     "orig_lat": 52.35456,
     "orig_lon": 17.10923,
@@ -5871,26 +5790,6 @@
     "geo_city": "Gowarzewo",
     "geo_district": null,
     "corrected": false
-  },
-  "67810150": {
-    "orig_lat": 52.35454,
-    "orig_lon": 17.01192,
-    "new_lat": 52.408266,
-    "new_lon": 16.93352,
-    "dist_m": 8000,
-    "query": "ul. Biesiadnej 12/1, Poznań, Polska",
-    "formatted": "Poznań, województwo wielkopolskie, Polska",
-    "addr": {
-      "street": "ul. Biesiadnej",
-      "number": "12/1",
-      "osiedle": null,
-      "city": "Poznań",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": true
   },
   "67479889": {
     "orig_lat": 52.36452,
@@ -6170,26 +6069,6 @@
     "corrected": false,
     "reverted": true
   },
-  "67858986": {
-    "orig_lat": 52.41773,
-    "orig_lon": 17.21119,
-    "new_lat": 52.416888,
-    "new_lon": 17.212314,
-    "dist_m": 121,
-    "query": "Kostrzyn, Gwiazdowo, Polska",
-    "formatted": "Gwiazdowo, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": null,
-      "city": "Gwiazdowo",
-      "district": "Kostrzyn",
-      "confidence": "high"
-    },
-    "geo_city": "Gwiazdowo",
-    "geo_district": null,
-    "corrected": false
-  },
   "68074991": {
     "orig_lat": 52.32035,
     "orig_lon": 16.92338,
@@ -6228,26 +6107,6 @@
     },
     "geo_city": "Więckowice",
     "geo_district": "Drwęsa",
-    "corrected": true
-  },
-  "68141825": {
-    "orig_lat": 52.35519,
-    "orig_lon": 16.71289,
-    "new_lat": 52.360333,
-    "new_lon": 16.71134,
-    "dist_m": 581,
-    "query": "Bajkowy Dopiewiec, Dopiewiec, Polska",
-    "formatted": "Dopiewiec, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": "Bajkowy Dopiewiec",
-      "city": "Dopiewiec",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Dopiewiec",
-    "geo_district": null,
     "corrected": true
   },
   "67920852": {
@@ -6934,46 +6793,6 @@
     "corrected": false,
     "reverted": true
   },
-  "68182174": {
-    "orig_lat": 52.34617,
-    "orig_lon": 16.87738,
-    "new_lat": 52.345817,
-    "new_lon": 16.878479,
-    "dist_m": 84,
-    "query": "Lokum Luboń, Luboń, Polska",
-    "formatted": "Luboń, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": "Lokum Luboń",
-      "city": "Luboń",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Luboń",
-    "geo_district": null,
-    "corrected": false
-  },
-  "68182125": {
-    "orig_lat": 52.34617,
-    "orig_lon": 16.87738,
-    "new_lat": 52.345817,
-    "new_lon": 16.878479,
-    "dist_m": 84,
-    "query": "Lokum Luboń, Luboń, Polska",
-    "formatted": "Luboń, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": "Lokum Luboń",
-      "city": "Luboń",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Luboń",
-    "geo_district": null,
-    "corrected": false
-  },
   "68126091": {
     "orig_lat": 52.23229,
     "orig_lon": 16.81521,
@@ -7095,66 +6914,6 @@
     "geo_district": null,
     "corrected": false
   },
-  "67220156": {
-    "orig_lat": 52.46978,
-    "orig_lon": 16.9417,
-    "new_lat": 52.469645,
-    "new_lon": 16.947922,
-    "dist_m": 422,
-    "query": "Osiedle Zagajnik, Umultowo, Polska",
-    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
-    "addr": {
-      "street": null,
-      "number": "27/B",
-      "osiedle": "Osiedle Zagajnik",
-      "city": "Umultowo",
-      "district": "Poznań",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": "Umultowo",
-    "corrected": true
-  },
-  "67220148": {
-    "orig_lat": 52.46978,
-    "orig_lon": 16.9417,
-    "new_lat": 52.408266,
-    "new_lon": 16.93352,
-    "dist_m": 6862,
-    "query": "Osiedle Zagajnik, Poznań, Polska",
-    "formatted": "Poznań, województwo wielkopolskie, Polska",
-    "addr": {
-      "street": null,
-      "number": "21/B",
-      "osiedle": "Osiedle Zagajnik",
-      "city": "Poznań",
-      "district": "Umultowo",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": true
-  },
-  "67220158": {
-    "orig_lat": 52.46978,
-    "orig_lon": 16.9417,
-    "new_lat": 52.469645,
-    "new_lon": 16.947922,
-    "dist_m": 422,
-    "query": "null 18/B, Umultowo, Polska",
-    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
-    "addr": {
-      "street": "null",
-      "number": "18/B",
-      "osiedle": "Osiedle Zagajnik",
-      "city": "Umultowo",
-      "district": "Poznań",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": "Umultowo",
-    "corrected": true
-  },
   "68050195": {
     "orig_lat": 52.42661,
     "orig_lon": 17.10624,
@@ -7192,26 +6951,6 @@
       "confidence": "high"
     },
     "geo_city": "Dopiewiec",
-    "geo_district": null,
-    "corrected": true
-  },
-  "68183141": {
-    "orig_lat": 52.29129,
-    "orig_lon": 16.96902,
-    "new_lat": 52.299957,
-    "new_lon": 16.958055,
-    "dist_m": 1219,
-    "query": "gmina Mosina, Daszewice, Polska",
-    "formatted": "Daszewice, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": null,
-      "city": "Daszewice",
-      "district": "gmina Mosina",
-      "confidence": "high"
-    },
-    "geo_city": "Daszewice",
     "geo_district": null,
     "corrected": true
   },
@@ -7332,27 +7071,6 @@
       "confidence": "high"
     },
     "geo_city": "Florentynów",
-    "geo_district": null,
-    "corrected": false,
-    "reverted": true
-  },
-  "65204727": {
-    "orig_lat": 52.38208,
-    "orig_lon": 16.84141,
-    "new_lat": 51.927574,
-    "new_lon": 15.549042,
-    "dist_m": 101623,
-    "query": "ul. Wieruszowska 8L_12, Zielona Góra, Polska",
-    "formatted": "Zielona Góra, województwo lubuskie, Polska",
-    "addr": {
-      "street": "ul. Wieruszowska",
-      "number": "8L_12",
-      "osiedle": "Grunwald Park",
-      "city": "Zielona Góra",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": null,
     "geo_district": null,
     "corrected": false,
     "reverted": true
@@ -7600,26 +7318,6 @@
       "confidence": "high"
     },
     "geo_city": "Rokietnica",
-    "geo_district": null,
-    "corrected": true
-  },
-  "66346521": {
-    "orig_lat": 52.30727,
-    "orig_lon": 17.07464,
-    "new_lat": 52.309897,
-    "new_lon": 17.07716,
-    "dist_m": 339,
-    "query": "Ul Poznańskiej, Robakowo, Polska",
-    "formatted": "Robakowo, Polska",
-    "addr": {
-      "street": "Ul Poznańskiej",
-      "number": null,
-      "osiedle": null,
-      "city": "Robakowo",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Robakowo",
     "geo_district": null,
     "corrected": true
   },
@@ -8003,26 +7701,6 @@
     "geo_district": null,
     "corrected": false
   },
-  "68088281": {
-    "orig_lat": 52.49688,
-    "orig_lon": 16.73531,
-    "new_lat": 52.485086,
-    "new_lon": 16.727616,
-    "dist_m": 1411,
-    "query": "Rokietnica, Napachanie, Polska",
-    "formatted": "Napachanie, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": null,
-      "city": "Napachanie",
-      "district": "Rokietnica",
-      "confidence": "high"
-    },
-    "geo_city": "Napachanie",
-    "geo_district": null,
-    "corrected": true
-  },
   "68044087": {
     "orig_lat": 52.4922,
     "orig_lon": 16.73335,
@@ -8163,27 +7841,6 @@
     "geo_district": "Zielone Wzgórza",
     "corrected": true
   },
-  "66857797": {
-    "orig_lat": 52.24321,
-    "orig_lon": 16.85196,
-    "new_lat": 49.688984,
-    "new_lon": 21.753479,
-    "dist_m": 445344,
-    "query": "ul. Kamiennej 15, Krosno, Polska",
-    "formatted": "Krosno, województwo podkarpackie, Polska",
-    "addr": {
-      "street": "ul. Kamiennej",
-      "number": "15",
-      "osiedle": null,
-      "city": "Krosno",
-      "district": "gm. Mosina",
-      "confidence": "high"
-    },
-    "geo_city": "Krosno",
-    "geo_district": null,
-    "corrected": false,
-    "reverted": true
-  },
   "67817810": {
     "orig_lat": 52.47088,
     "orig_lon": 16.98809,
@@ -8304,46 +7961,6 @@
     "geo_district": null,
     "corrected": true
   },
-  "67933813": {
-    "orig_lat": 52.35657,
-    "orig_lon": 16.57496,
-    "new_lat": 52.355222,
-    "new_lon": 16.571982,
-    "dist_m": 252,
-    "query": "Krętej, Otusz, Polska",
-    "formatted": "Otusz, Polska",
-    "addr": {
-      "street": "Krętej",
-      "number": null,
-      "osiedle": null,
-      "city": "Otusz",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Otusz",
-    "geo_district": null,
-    "corrected": true
-  },
-  "68171392": {
-    "orig_lat": 52.41066,
-    "orig_lon": 16.82059,
-    "new_lat": 52.400663,
-    "new_lon": 16.919733,
-    "dist_m": 6817,
-    "query": "null, Poznań, Polska",
-    "formatted": "Poznań, Polska",
-    "addr": {
-      "street": "null",
-      "number": "null",
-      "osiedle": "null",
-      "city": "Poznań",
-      "district": "null",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": true
-  },
   "68233148": {
     "orig_lat": 52.41678,
     "orig_lon": 17.10164,
@@ -8441,46 +8058,6 @@
       "confidence": "high"
     },
     "geo_city": "Swarzędz",
-    "geo_district": null,
-    "corrected": true
-  },
-  "68218327": {
-    "orig_lat": 52.34314,
-    "orig_lon": 17.07574,
-    "new_lat": 52.33215,
-    "new_lon": 17.11098,
-    "dist_m": 2688,
-    "query": "gm. Kleszczewo, Komorniki, Polska",
-    "formatted": "Komorniki, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": null,
-      "city": "Komorniki",
-      "district": "gm. Kleszczewo",
-      "confidence": "high"
-    },
-    "geo_city": "Komorniki",
-    "geo_district": null,
-    "corrected": true
-  },
-  "68209491": {
-    "orig_lat": 52.33343,
-    "orig_lon": 17.17231,
-    "new_lat": 52.33215,
-    "new_lon": 17.11098,
-    "dist_m": 4170,
-    "query": "gm. Kleszczewo, Komorniki, Polska",
-    "formatted": "Komorniki, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": null,
-      "city": "Komorniki",
-      "district": "gm. Kleszczewo",
-      "confidence": "high"
-    },
-    "geo_city": "Komorniki",
     "geo_district": null,
     "corrected": true
   },
@@ -8707,26 +8284,6 @@
     "geo_district": null,
     "corrected": true
   },
-  "68075454": {
-    "orig_lat": 52.35555,
-    "orig_lon": 16.75349,
-    "new_lat": 52.400663,
-    "new_lon": 16.919733,
-    "dist_m": 12349,
-    "query": "null, Poznań, Polska",
-    "formatted": "Poznań, Polska",
-    "addr": {
-      "street": "null",
-      "number": "null",
-      "osiedle": "null",
-      "city": "Poznań",
-      "district": "null",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": true
-  },
   "67015784": {
     "orig_lat": 52.42847,
     "orig_lon": 16.82155,
@@ -8926,26 +8483,6 @@
     "geo_city": "Poznań",
     "geo_district": "Naramowice",
     "corrected": false
-  },
-  "68047747": {
-    "orig_lat": 52.40277,
-    "orig_lon": 16.67953,
-    "new_lat": 52.403979,
-    "new_lon": 16.675285,
-    "dist_m": 318,
-    "query": "gmina Tarnowo Podgórne, Sierosław, Polska",
-    "formatted": "Sierosław, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": null,
-      "city": "Sierosław",
-      "district": "gmina Tarnowo Podgórne",
-      "confidence": "high"
-    },
-    "geo_city": "Sierosław",
-    "geo_district": null,
-    "corrected": true
   },
   "68145960": {
     "orig_lat": 52.36803,
@@ -9247,26 +8784,6 @@
     "geo_city": "Palędzie",
     "geo_district": null,
     "corrected": false
-  },
-  "68156755": {
-    "orig_lat": 52.24626,
-    "orig_lon": 17.08923,
-    "new_lat": 52.269034,
-    "new_lon": 17.062572,
-    "dist_m": 3115,
-    "query": "Gmina Kórnik, Skrzynki, Polska",
-    "formatted": "Skrzynki, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": null,
-      "city": "Skrzynki",
-      "district": "Gmina Kórnik",
-      "confidence": "high"
-    },
-    "geo_city": "Skrzynki",
-    "geo_district": null,
-    "corrected": true
   },
   "53216172": {
     "orig_lat": 52.31124,
@@ -9605,26 +9122,6 @@
       "confidence": "high"
     },
     "geo_city": "Plewiska",
-    "geo_district": null,
-    "corrected": true
-  },
-  "64709718": {
-    "orig_lat": 52.3722,
-    "orig_lon": 16.86155,
-    "new_lat": 52.400663,
-    "new_lon": 16.919733,
-    "dist_m": 5060,
-    "query": "null, Poznań, Polska",
-    "formatted": "Poznań, Polska",
-    "addr": {
-      "street": "null",
-      "number": "null",
-      "osiedle": "null",
-      "city": "Poznań",
-      "district": "Grunwald-Górczyn",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
     "geo_district": null,
     "corrected": true
   },
@@ -10495,26 +9992,6 @@
     "geo_district": "Jeżyce",
     "corrected": true
   },
-  "67820099": {
-    "orig_lat": 52.48918,
-    "orig_lon": 17.06061,
-    "new_lat": 52.48694,
-    "new_lon": 17.057492,
-    "dist_m": 327,
-    "query": "Czerwonak, Kliny, Polska",
-    "formatted": "Kliny, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": null,
-      "city": "Kliny",
-      "district": "Czerwonak",
-      "confidence": "high"
-    },
-    "geo_city": "Kliny",
-    "geo_district": null,
-    "corrected": true
-  },
   "65020683": {
     "orig_lat": 52.38893,
     "orig_lon": 16.9174,
@@ -10880,26 +10357,6 @@
     "geo_district": "Stare Miasto",
     "corrected": true
   },
-  "68201478": {
-    "orig_lat": 52.45695,
-    "orig_lon": 16.94658,
-    "new_lat": 52.449649,
-    "new_lon": 16.949408,
-    "dist_m": 834,
-    "query": "ul. Limonkowa, Naramowice, Polska",
-    "formatted": "Naramowice, Poznań, województwo wielkopolskie, Polska",
-    "addr": {
-      "street": "ul. Limonkowa",
-      "number": null,
-      "osiedle": null,
-      "city": "Naramowice",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": "Naramowice",
-    "corrected": true
-  },
   "66391409": {
     "orig_lat": 52.46367,
     "orig_lon": 16.94614,
@@ -10992,108 +10449,6 @@
     "geo_district": "Junikowo",
     "corrected": false
   },
-  "67220151": {
-    "orig_lat": 52.46978,
-    "orig_lon": 16.9417,
-    "new_lat": 52.469645,
-    "new_lon": 16.947922,
-    "dist_m": 422,
-    "query": "Osiedle Zagajnik, Umultowo, Polska",
-    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
-    "addr": {
-      "street": null,
-      "number": "32/B",
-      "osiedle": "Osiedle Zagajnik",
-      "city": "Umultowo",
-      "district": "Poznań",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": "Umultowo",
-    "corrected": true
-  },
-  "65204647": {
-    "orig_lat": 52.38208,
-    "orig_lon": 16.84141,
-    "new_lat": 51.927574,
-    "new_lon": 15.549042,
-    "dist_m": 101623,
-    "query": "ul. Wieruszowska, Zielona Góra, Polska",
-    "formatted": "Zielona Góra, województwo lubuskie, Polska",
-    "addr": {
-      "street": "ul. Wieruszowska",
-      "number": null,
-      "osiedle": "Grunwald Park",
-      "city": "Zielona Góra",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": null,
-    "geo_district": null,
-    "corrected": false,
-    "reverted": true
-  },
-  "65204707": {
-    "orig_lat": 52.38208,
-    "orig_lon": 16.84141,
-    "new_lat": 51.927574,
-    "new_lon": 15.549042,
-    "dist_m": 101623,
-    "query": "ul. Wieruszowska, Zielona Góra, Polska",
-    "formatted": "Zielona Góra, województwo lubuskie, Polska",
-    "addr": {
-      "street": "ul. Wieruszowska",
-      "number": null,
-      "osiedle": "Grunwald Park",
-      "city": "Zielona Góra",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": null,
-    "geo_district": null,
-    "corrected": false,
-    "reverted": true
-  },
-  "68234660": {
-    "orig_lat": 52.61476,
-    "orig_lon": 17.09083,
-    "new_lat": 52.613504,
-    "new_lon": 17.090793,
-    "dist_m": 140,
-    "query": "EKO-Łopuchowo, Łopuchowo, Polska",
-    "formatted": "Łopuchowo, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": "EKO-Łopuchowo",
-      "city": "Łopuchowo",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Łopuchowo",
-    "geo_district": null,
-    "corrected": false
-  },
-  "96823466000067": {
-    "orig_lat": 52.61476,
-    "orig_lon": 17.09083,
-    "new_lat": 52.613504,
-    "new_lon": 17.090793,
-    "dist_m": 140,
-    "query": "EKO-Łopuchowo, Łopuchowo, Polska",
-    "formatted": "Łopuchowo, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": "EKO-Łopuchowo",
-      "city": "Łopuchowo",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Łopuchowo",
-    "geo_district": null,
-    "corrected": false
-  },
   "96779277500067": {
     "orig_lat": 52.32811,
     "orig_lon": 17.12529,
@@ -11111,26 +10466,6 @@
       "confidence": "high"
     },
     "geo_city": "Komorniki",
-    "geo_district": null,
-    "corrected": true
-  },
-  "96804774700067": {
-    "orig_lat": 52.40277,
-    "orig_lon": 16.67953,
-    "new_lat": 52.403979,
-    "new_lon": 16.675285,
-    "dist_m": 318,
-    "query": "gmina Tarnowo Podgórne, Sierosław, Polska",
-    "formatted": "Sierosław, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": null,
-      "city": "Sierosław",
-      "district": "gmina Tarnowo Podgórne",
-      "confidence": "high"
-    },
-    "geo_city": "Sierosław",
     "geo_district": null,
     "corrected": true
   },
@@ -11673,26 +11008,6 @@
     "geo_district": null,
     "corrected": true
   },
-  "67809840": {
-    "orig_lat": 52.35454,
-    "orig_lon": 17.01192,
-    "new_lat": 52.40692,
-    "new_lon": 16.92993,
-    "dist_m": 8056,
-    "query": "ul. Biesiadnej 12/2, Poznań, Polska",
-    "formatted": "Poznań, Polska",
-    "addr": {
-      "street": "ul. Biesiadnej",
-      "number": "12/2",
-      "osiedle": null,
-      "city": "Poznań",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": true
-  },
   "66528890": {
     "skipped": "geocode_failed",
     "query": "null, Polska",
@@ -11787,27 +11102,6 @@
       "district": null,
       "confidence": "high"
     }
-  },
-  "65204646": {
-    "orig_lat": 52.38208,
-    "orig_lon": 16.84141,
-    "new_lat": 51.93548,
-    "new_lon": 15.50643,
-    "dist_m": 103724,
-    "query": "ul. Wieruszowska 8L_2, Zielona Góra, Polska",
-    "formatted": "Zielona Góra, Polska",
-    "addr": {
-      "street": "ul. Wieruszowska",
-      "number": "8L_2",
-      "osiedle": "Grunwald Park",
-      "city": "Zielona Góra",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Zielona Góra",
-    "geo_district": null,
-    "corrected": false,
-    "reverted": true
   },
   "68228399": {
     "orig_lat": 52.48798,
@@ -12014,46 +11308,6 @@
       "district": null,
       "confidence": "high"
     }
-  },
-  "96793381300067": {
-    "orig_lat": 52.35657,
-    "orig_lon": 16.57496,
-    "new_lat": 52.355222,
-    "new_lon": 16.571982,
-    "dist_m": 252,
-    "query": "Krętej, Otusz, Polska",
-    "formatted": "Otusz, Polska",
-    "addr": {
-      "street": "Krętej",
-      "number": null,
-      "osiedle": null,
-      "city": "Otusz",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Otusz",
-    "geo_district": null,
-    "corrected": true
-  },
-  "67266059": {
-    "orig_lat": 52.44306,
-    "orig_lon": 16.87358,
-    "new_lat": 52.40692,
-    "new_lon": 16.92993,
-    "dist_m": 5545,
-    "query": "Literacka Skwer – etap C, Poznań, Polska",
-    "formatted": "Poznań, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": "Literacka Skwer – etap C",
-      "city": "Poznań",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": true
   },
   "96800799300067": {
     "skipped": "low_confidence",
@@ -13208,26 +12462,6 @@
     "geo_city": "Poznań",
     "geo_district": "Starołęka Wielka",
     "corrected": false
-  },
-  "67220154": {
-    "orig_lat": 52.46978,
-    "orig_lon": 16.9417,
-    "new_lat": 52.469645,
-    "new_lon": 16.947922,
-    "dist_m": 422,
-    "query": "null 29/B, Umultowo, Polska",
-    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
-    "addr": {
-      "street": "null",
-      "number": "29/B",
-      "osiedle": "Osiedle Zagajnik",
-      "city": "Umultowo",
-      "district": "Poznań",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": "Umultowo",
-    "corrected": true
   },
   "68002917": {
     "orig_lat": 52.46281,
