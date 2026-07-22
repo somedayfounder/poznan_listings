@@ -6732,26 +6732,6 @@
     "geo_district": "Żabikowo",
     "corrected": false
   },
-  "67784689": {
-    "orig_lat": 52.35294,
-    "orig_lon": 17.02679,
-    "new_lat": 52.373811,
-    "new_lon": 16.975021,
-    "dist_m": 4212,
-    "query": "ul. Przyjaznej, Poznań, Polska",
-    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
-    "addr": {
-      "street": "ul. Przyjaznej",
-      "number": null,
-      "osiedle": null,
-      "city": "Poznań",
-      "district": "Szczepankowo",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": "Żegrze",
-    "corrected": true
-  },
   "67111618": {
     "orig_lat": 52.36452,
     "orig_lon": 17.12451,
@@ -13684,5 +13664,9 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "67784689": {
+    "skipped": "manual_keep_otodom",
+    "note": "ul. Przyjazna exists in both Żegrze and Szczepankowo/Spławie; geocoder picks Żegrze; Otodom coords (Spławie) are correct per listing description"
   }
 }
