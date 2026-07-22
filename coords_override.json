@@ -5892,27 +5892,6 @@
     "geo_district": null,
     "corrected": true
   },
-  "96781015000067": {
-    "orig_lat": 52.35454,
-    "orig_lon": 17.01192,
-    "new_lat": 52.408266,
-    "new_lon": 16.93352,
-    "dist_m": 8000,
-    "query": "ul. Biesiadnej 12/1, Poznań, Polska",
-    "formatted": "Poznań, województwo wielkopolskie, Polska",
-    "addr": {
-      "street": "ul. Biesiadnej",
-      "number": "12/1",
-      "osiedle": null,
-      "city": "Poznań",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": false,
-    "reverted": "city_only_geocode"
-  },
   "67479889": {
     "orig_lat": 52.36452,
     "orig_lon": 17.12451,
@@ -7863,27 +7842,6 @@
     "geo_city": "Poznań",
     "geo_district": "Naramowice",
     "corrected": false
-  },
-  "68195662": {
-    "orig_lat": 52.35975,
-    "orig_lon": 17.01966,
-    "new_lat": 52.408266,
-    "new_lon": 16.93352,
-    "dist_m": 7955,
-    "query": "małym, kameralnym osiedlu, Poznań, Polska",
-    "formatted": "Poznań, województwo wielkopolskie, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": "małym, kameralnym osiedlu",
-      "city": "Poznań",
-      "district": "Szczepankowo- Spławie- Krzesiny",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": false,
-    "reverted": "city_only_geocode"
   },
   "68143821": {
     "orig_lat": 52.36086,
@@ -11734,27 +11692,6 @@
     "geo_city": "Poznań",
     "geo_district": null,
     "corrected": true
-  },
-  "67810112": {
-    "orig_lat": 52.35454,
-    "orig_lon": 17.01192,
-    "new_lat": 52.40692,
-    "new_lon": 16.92993,
-    "dist_m": 8056,
-    "query": "ul. Biesiadnej 12/2, Poznań, Polska",
-    "formatted": "Poznań, Polska",
-    "addr": {
-      "street": "ul. Biesiadnej",
-      "number": "12/2",
-      "osiedle": null,
-      "city": "Poznań",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": null,
-    "corrected": false,
-    "reverted": "city_only_geocode"
   },
   "66528890": {
     "skipped": "geocode_failed",

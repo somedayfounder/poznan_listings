@@ -232,29 +232,55 @@ def main():
         gpt_street = addr.get("street")
         gpt_number = addr.get("number") if addr.get("number") not in (None, "null", "none", "") else None
         gpt_city_q = addr.get("city") or "Poznań"
+
+        def _is_city_only(fmt, gcity):
+            """True если геокодер вернул только город/регион без улицы или района."""
+            parts = [p.strip() for p in (fmt or "").split(",")]
+            if len(parts) <= 1:
+                return True
+            city_kw = {"województwo", "powiat", "gmina", "Polska", "Poland"}
+            has_detail = any(
+                p not in city_kw
+                and not any(kw in p for kw in city_kw)
+                and p not in ((gcity or ""), (addr.get("city") or ""))
+                for p in parts[:2]
+            )
+            return not has_detail and len(parts) <= 4
+
         new_lat, new_lon, formatted, geo_city, geo_district = geocode(
             query, street=gpt_street, housenumber=gpt_number, city=gpt_city_q
         )
         # fallback 1: Nominatim без номера дома
-        if new_lat is None and gpt_number and gpt_street:
+        if (new_lat is None or _is_city_only(formatted, geo_city)) and gpt_number and gpt_street:
             time.sleep(1.0)
             fallback_query = f"{gpt_street}, {gpt_city_q}, Polska"
-            new_lat, new_lon, formatted, geo_city, geo_district = geocode(fallback_query)
+            r2, r3, r4, r5, r6 = geocode(fallback_query)
+            if r2 is not None and not _is_city_only(r4, r5):
+                new_lat, new_lon, formatted, geo_city, geo_district = r2, r3, r4, r5, r6
+                print(f"    [nominatim-nonum] {formatted}")
         # fallback 2: Photon
-        if new_lat is None:
+        if new_lat is None or _is_city_only(formatted, geo_city):
             time.sleep(0.3)
-            new_lat, new_lon, formatted, geo_city, geo_district = geocode_photon(query)
-            if new_lat is not None:
+            r2, r3, r4, r5, r6 = geocode_photon(query)
+            if r2 is not None and not _is_city_only(r4, r5):
+                new_lat, new_lon, formatted, geo_city, geo_district = r2, r3, r4, r5, r6
                 print(f"    [photon] {formatted}")
         # fallback 3: OpenCage
-        if new_lat is None:
+        if new_lat is None or _is_city_only(formatted, geo_city):
             time.sleep(0.3)
-            new_lat, new_lon, formatted, geo_city, geo_district = geocode_opencage(query)
-            if new_lat is not None:
+            r2, r3, r4, r5, r6 = geocode_opencage(query)
+            if r2 is not None and not _is_city_only(r4, r5):
+                new_lat, new_lon, formatted, geo_city, geo_district = r2, r3, r4, r5, r6
                 print(f"    [opencage] {formatted}")
+        # Если все сервисы вернули только город — отклоняем (orig точнее)
         if new_lat is None:
             overrides[lid] = {"skipped": "geocode_failed", "query": query, "addr": addr}
             print(f"    → геокодинг не дал результата: {query}")
+            time.sleep(0.3)
+            continue
+        if _is_city_only(formatted, geo_city):
+            overrides[lid] = {"skipped": "geocode_city_only", "query": query, "formatted": formatted, "addr": addr}
+            print(f"    → все сервисы вернули только город: {formatted}")
             time.sleep(0.3)
             continue
 
