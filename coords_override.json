@@ -14020,5 +14020,496 @@
     "geo_city": "Poznań",
     "geo_district": "Stare Miasto",
     "corrected": true
+  },
+  "66707013": {
+    "orig_lat": 52.38921,
+    "orig_lon": 16.85909,
+    "new_lat": 52.389515,
+    "new_lon": 16.859701,
+    "dist_m": 54,
+    "query": "ul. Smardzewska 8, Poznań, Polska",
+    "formatted": "Smardzewska, 60-159 Poznań, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": "8",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "Stary Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Osiedle Mikołaja Kopernika",
+    "corrected": false
+  },
+  "67456647": {
+    "skipped": "geocode_failed",
+    "query": "ul. Ptasiej, Poznań, Polska",
+    "addr": {
+      "street": "ul. Ptasiej",
+      "number": null,
+      "osiedle": "Ptasia Vita",
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    }
+  },
+  "96632505600067": {
+    "orig_lat": 52.37413,
+    "orig_lon": 16.95236,
+    "new_lat": 52.366435,
+    "new_lon": 16.944098,
+    "dist_m": 1023,
+    "query": "ul. Unii Lubelskiej 4, Starołęka, Polska",
+    "formatted": "Starołęka, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, 61-357, Polska",
+    "addr": {
+      "street": "ul. Unii Lubelskiej",
+      "number": "4",
+      "osiedle": "Inwestycja Unii Lubelskiej 4",
+      "city": "Starołęka",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "67814415": {
+    "skipped": "geocode_failed",
+    "query": "ul. Ptasiej, Poznań, Polska",
+    "addr": {
+      "street": "ul. Ptasiej",
+      "number": null,
+      "osiedle": "Ptasia Vita",
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    }
+  },
+  "66707012": {
+    "orig_lat": 52.38921,
+    "orig_lon": 16.85909,
+    "new_lat": 52.389515,
+    "new_lon": 16.859701,
+    "dist_m": 54,
+    "query": "ul. Smardzewska 8, Poznań, Polska",
+    "formatted": "Smardzewska, 60-159 Poznań, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": "8",
+      "osiedle": "Smardzewska 8",
+      "city": "Poznań",
+      "district": "Stary Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Osiedle Mikołaja Kopernika",
+    "corrected": false
+  },
+  "66707067": {
+    "orig_lat": 52.38921,
+    "orig_lon": 16.85909,
+    "new_lat": 52.389515,
+    "new_lon": 16.859701,
+    "dist_m": 54,
+    "query": "ul. Smardzewska 8, Poznań, Polska",
+    "formatted": "Smardzewska, 60-159 Poznań, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": "8",
+      "osiedle": "Smardzewska 8",
+      "city": "Poznań",
+      "district": "Stary Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Osiedle Mikołaja Kopernika",
+    "corrected": false
+  },
+  "96670706700067": {
+    "orig_lat": 52.38921,
+    "orig_lon": 16.85909,
+    "new_lat": 52.389515,
+    "new_lon": 16.859701,
+    "dist_m": 54,
+    "query": "ul. Smardzewska 8, Poznań, Polska",
+    "formatted": "Smardzewska, 60-159 Poznań, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": "8",
+      "osiedle": "Smardzewska 8",
+      "city": "Poznań",
+      "district": "Stary Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Osiedle Mikołaja Kopernika",
+    "corrected": false
+  },
+  "96813063800067": {
+    "orig_lat": 52.4136,
+    "orig_lon": 16.68605,
+    "new_lat": 52.4039,
+    "new_lon": 16.67696,
+    "dist_m": 1242,
+    "query": "ul. Agatowej, Sierosław, Polska",
+    "formatted": "Sierosław, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Agatowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Sierosław",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sierosław",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67389058": {
+    "skipped": "geocode_failed",
+    "query": "ul. Agatowej, Poznań, Polska",
+    "addr": {
+      "street": "ul. Agatowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96794107100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gortatów",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68220424": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.31719,
+    "new_lon": 16.91268,
+    "dist_m": 808,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67784689": {
+    "skipped": "geocode_failed",
+    "query": "ul. Przyjaznej, Poznań, Polska",
+    "addr": {
+      "street": "ul. Przyjaznej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "65204684": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": null,
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68228399": {
+    "skipped": "outside_bbox",
+    "query": "Osiedle Wzgórze Zawilcowa, Puszczy Zielonka, Polska",
+    "formatted": "Zielonka, Województwo mazowieckie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Wzgórze Zawilcowa",
+      "city": "Puszczy Zielonka",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.30376,
+    "new_lon": 21.16018
+  },
+  "96822839900067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.48798,
+    "orig_lon": 16.98359,
+    "new_lat": 52.2857,
+    "new_lon": 16.84925,
+    "dist_m": 24270,
+    "orig_dist_to_center_m": 9496,
+    "query": "Osiedle Wzgórze Zawilcowa, Puszczykowo, Polska",
+    "formatted": "Puszczykowo, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Wzgórze Zawilcowa",
+      "city": "Puszczykowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68214000": {
+    "orig_lat": 52.38372,
+    "orig_lon": 16.83917,
+    "new_lat": 52.384027,
+    "new_lon": 16.840471,
+    "dist_m": 95,
+    "query": "ul. Wieruszowska 2, Junikowo, Polska",
+    "formatted": "Wieruszowska 2, 60-166 Poznań, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "2",
+      "osiedle": "Wieruszowska 2",
+      "city": "Junikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "96821400000067": {
+    "orig_lat": 52.38372,
+    "orig_lon": 16.83917,
+    "new_lat": 52.384027,
+    "new_lon": 16.840471,
+    "dist_m": 95,
+    "query": "ul. Wieruszowska 2, Junikowo, Polska",
+    "formatted": "Wieruszowska 2, 60-166 Poznań, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "2",
+      "osiedle": "Wieruszowska 2",
+      "city": "Junikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "67445458": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.448685,
+    "new_lon": 16.89088,
+    "dist_m": 33,
+    "query": "Strzeszyńska 77, Poznań, Polska",
+    "formatted": "77, Strzeszyńska, Podolany, Poznań, województwo wielkopolskie, 60-479, Polska",
+    "addr": {
+      "street": "Strzeszyńska",
+      "number": "77",
+      "osiedle": "Strzeszyńska 77",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "67445461": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.448685,
+    "new_lon": 16.89088,
+    "dist_m": 33,
+    "query": "Strzeszyńska 77, Poznań, Polska",
+    "formatted": "77, Strzeszyńska, Podolany, Poznań, województwo wielkopolskie, 60-479, Polska",
+    "addr": {
+      "street": "Strzeszyńska",
+      "number": "77",
+      "osiedle": "Strzeszyńska 77",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "96744546100067": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.448685,
+    "new_lon": 16.89088,
+    "dist_m": 33,
+    "query": "Strzeszyńska 77, Poznań, Polska",
+    "formatted": "77, Strzeszyńska, Podolany, Poznań, województwo wielkopolskie, 60-479, Polska",
+    "addr": {
+      "street": "Strzeszyńska",
+      "number": "77",
+      "osiedle": "Strzeszyńska 77",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "96520470700067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": null,
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68238765": {
+    "orig_lat": 52.37872,
+    "orig_lon": 16.94945,
+    "new_lat": 52.398522,
+    "new_lon": 16.960366,
+    "dist_m": 2323,
+    "query": "Nowe Miasto - Rataje, Poznań, Polska",
+    "formatted": "Komisariat Policji Poznań - Nowe Miasto, Sowia, Miasteczko, Łacina, Rataje, Poznań, województwo wielkopolskie, 61-131, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Nowe Miasto - Rataje",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łacina",
+    "corrected": true
+  },
+  "96823876500067": {
+    "orig_lat": 52.37872,
+    "orig_lon": 16.94945,
+    "new_lat": 52.398522,
+    "new_lon": 16.960366,
+    "dist_m": 2323,
+    "query": "Nowe Miasto - Rataje, Poznań, Polska",
+    "formatted": "Komisariat Policji Poznań - Nowe Miasto, Sowia, Miasteczko, Łacina, Rataje, Poznań, województwo wielkopolskie, 61-131, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Nowe Miasto - Rataje",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łacina",
+    "corrected": true
+  },
+  "64953554": {
+    "skipped": "geocode_failed",
+    "query": "ul. Kierskiej, Poznań, Polska",
+    "addr": {
+      "street": "ul. Kierskiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96822164700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Strzeszynek",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68121601": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska 4A, 61-160 Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "64236627": {
+    "skipped": "geocode_failed",
+    "query": "ul. Ziębickiej 30, Poznań, Polska",
+    "addr": {
+      "street": "ul. Ziębickiej",
+      "number": "30",
+      "osiedle": "Osiedle Ziębicka 30",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96746932000067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Leśnych Skrzatów, Marcelin, Polska",
+    "formatted": "Marcelin, Powiat miński, Polska",
+    "addr": {
+      "street": "ul. Leśnych Skrzatów",
+      "number": null,
+      "osiedle": "Zacisze Marcelin",
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.3463,
+    "new_lon": 21.79482
+  },
+  "65602304": {
+    "skipped": "geocode_failed",
+    "query": "ul. Bnińskiej, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bnińskiej",
+      "number": null,
+      "osiedle": "Rodzinna Malta",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96547172500067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Śniadeckich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Śniadeckich",
+      "number": null,
+      "osiedle": "Perfumiarnia 2",
+      "city": "Poznań",
+      "district": "Łazarz",
+      "confidence": "high"
+    }
   }
 }
