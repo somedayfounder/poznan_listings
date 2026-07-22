@@ -29,7 +29,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add score.py listings_poznan.html
+          git add score.py rescore_results.json listings_poznan.html
           git diff --staged --quiet && echo "nothing to commit" && exit 0
           git commit -m "rescore: update district scores based on GPT evaluation"
           git push origin main
