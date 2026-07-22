@@ -180,8 +180,10 @@ def geocode_opencage(query):
     return None, None, None, None, None
 
 
-def build_query(addr):
-    """Строим поисковый запрос для геокодирования."""
+def build_query(addr, with_district=False):
+    """Строим поисковый запрос для геокодирования.
+    with_district=True: включаем район в запрос для устранения неоднозначности улиц.
+    """
     city = addr.get("city") or "Poznań"
     street = addr.get("street")
     number = addr.get("number")
@@ -191,12 +193,23 @@ def build_query(addr):
     district = addr.get("district")
     if street:
         street_with_num = f"{street} {number}" if number else street
+        if with_district and district:
+            return f"{street_with_num}, {district}, {city}, Polska"
         return f"{street_with_num}, {city}, Polska"
     if osiedle:
         return f"{osiedle}, {city}, Polska"
     if district:
         return f"{district}, {city}, Polska"
     return None
+
+
+def _district_matches(geo_district, gpt_district):
+    """Проверяем совпадение района из геокодера и из GPT (нечёткое, без учёта регистра)."""
+    if not geo_district or not gpt_district:
+        return True  # нет данных — не блокируем
+    g = geo_district.lower().strip()
+    p = gpt_district.lower().strip()
+    return g in p or p in g or p.split("/")[0].strip() in g or g in p.split("/")[0].strip()
 
 
 def main():
@@ -232,6 +245,7 @@ def main():
         gpt_street = addr.get("street")
         gpt_number = addr.get("number") if addr.get("number") not in (None, "null", "none", "") else None
         gpt_city_q = addr.get("city") or "Poznań"
+        gpt_district = addr.get("district")
 
         def _is_city_only(fmt, gcity):
             """True если геокодер вернул только город/регион без улицы или района."""
@@ -272,6 +286,27 @@ def main():
             if r2 is not None and not _is_city_only(r4, r5):
                 new_lat, new_lon, formatted, geo_city, geo_district = r2, r3, r4, r5, r6
                 print(f"    [opencage] {formatted}")
+
+        # Если GPT указал район и геокодер вернул другой — повторяем с районом в запросе
+        # (одна улица может быть в нескольких районах, напр. ul. Przyjazna в Żegrze и Szczepankowo)
+        if (new_lat is not None and gpt_street and gpt_district
+                and not _is_city_only(formatted, geo_city)
+                and not _district_matches(geo_district, gpt_district)):
+            district_query = build_query(addr, with_district=True)
+            print(f"    ⚠ район геокодера {geo_district!r} ≠ GPT {gpt_district!r}, пробуем с районом: {district_query}")
+            time.sleep(1.0)
+            r2, r3, r4, r5, r6 = geocode(district_query)
+            if r2 is not None and not _is_city_only(r4, r5):
+                if _district_matches(r5 or r6, gpt_district) or not _district_matches(geo_district, gpt_district):
+                    new_lat, new_lon, formatted, geo_city, geo_district = r2, r3, r4, r5, r6
+                    print(f"    [nominatim+district] {formatted}")
+            elif new_lat is not None:
+                # Nominatim не нашёл с районом — пробуем Photon
+                time.sleep(0.3)
+                r2, r3, r4, r5, r6 = geocode_photon(district_query)
+                if r2 is not None and not _is_city_only(r4, r5) and _district_matches(r5 or r6, gpt_district):
+                    new_lat, new_lon, formatted, geo_city, geo_district = r2, r3, r4, r5, r6
+                    print(f"    [photon+district] {formatted}")
         # Если все сервисы вернули только город — отклоняем (orig точнее)
         if new_lat is None:
             overrides[lid] = {"skipped": "geocode_failed", "query": query, "addr": addr}
