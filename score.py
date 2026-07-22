@@ -909,7 +909,7 @@ _BASE_W = {
 }
 
 
-def compute_score(price, area, rooms, tp, dist_tram, dist_center, tram_min=None, dist_center_min=None, district=None, city=None, lat=None, lon=None, noise=None, floor=None):
+def compute_score(price, area, rooms, tp, dist_tram, dist_center, tram_min=None, dist_center_min=None, district=None, city=None, lat=None, lon=None, noise=None, floor=None, supermarket=None):
     factors = [
         (_score_transport(tp, tram_min, dist_center_min), _BASE_W["transport"]),
         (_score_district(district, city),               _BASE_W["district"]),
@@ -921,7 +921,21 @@ def compute_score(price, area, rooms, tp, dist_tram, dist_center, tram_min=None,
     total_w = sum(w for _, w in factors)
     base = sum(sc * w for sc, w in factors) / total_w
     penalty = _nuisance_penalty(lat, lon) + _noise_penalty(noise, floor)
-    return round(max(0.0, base - penalty), 1)
+    super_bonus = _supermarket_bonus(supermarket)
+    return round(max(0.0, base - penalty + super_bonus), 1)
+
+
+_SUPER_DECAY = {"hyper": (0.3, 10.0), "super": (0.2, 5.0), "discount": (0.1, 2.0)}
+
+def _supermarket_bonus(sup_entry):
+    if not sup_entry:
+        return 0.0
+    best = 0.0
+    for tier, (max_b, max_d) in _SUPER_DECAY.items():
+        d = (sup_entry.get(tier) or {}).get("dist_km")
+        if d is not None and d < max_d:
+            best = max(best, max_b * (1 - d / max_d))
+    return round(best, 2)
 
 
 def _f(v):
@@ -971,4 +985,5 @@ def score_from_jsrow(r):
         lon=r.get("lon"),
         noise=r.get("noise"),
         floor=r.get("floor"),
+        supermarket=r.get("supermarket"),
     )

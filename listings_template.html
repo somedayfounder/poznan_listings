@@ -952,7 +952,20 @@ function showScoreInfo(r){
   const noise_fl = r.floor!=null?parseInt(r.floor)||1:1;
   const noise_mult = Math.max(0.3, 1.0 - 0.1*Math.max(0, noise_fl-2));
   const noise_pen = Math.round(noise_base * noise_mult * 1000) / 1000;
-  const final_sc = Math.round(Math.max(0,base-nuis_pen-noise_pen)*10)/10;
+  // Бонус за супермаркет (считается на уровне объекта)
+  const _SDECAY = {hyper:[0.3,10.0], super:[0.2,5.0], discount:[0.1,2.0]};
+  const _SLABELS = {hyper:'🏪 Гипермаркет', super:'🛒 Супермаркет', discount:'🛒 Дискаунтер'};
+  let super_bonus=0, super_label=null, super_dist=null;
+  if(r.supermarket){
+    for(const [tier,[mb,md]] of Object.entries(_SDECAY)){
+      const ent=r.supermarket[tier];
+      if(ent&&ent.dist_km!=null&&ent.dist_km<md){
+        const b=Math.round(mb*(1-ent.dist_km/md)*100)/100;
+        if(b>super_bonus){super_bonus=b;super_label=`${_SLABELS[tier]}${ent.name?' ('+ent.name+')':''}`;super_dist=ent.dist_km;}
+      }
+    }
+  }
+  const final_sc = Math.round(Math.max(0,base-nuis_pen-noise_pen+super_bonus)*10)/10;
 
   function bar(v){
     const w=Math.round(v/10*60);
@@ -1049,6 +1062,7 @@ function showScoreInfo(r){
         ${rows}
         <tr style="color:#888"><td colspan="3">База</td><td style="text-align:right;font-weight:600">${base.toFixed(2)}</td></tr>
         ${penRows}
+        ${super_bonus>0?`<tr><td colspan="3" style="color:#166534">🏪 Бонус: ${super_label}${super_dist!=null?' · '+super_dist+' км':''}</td><td style="text-align:right;color:#166534">+${super_bonus.toFixed(2)}</td></tr>`:''}
         <tr class="total-row"><td colspan="3">Итог</td><td style="text-align:right;color:${sc_c}">${final_sc}</td></tr>
       </tbody>
     </table>${transportBlock}${featsBlock}`;
