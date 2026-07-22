@@ -4831,24 +4831,13 @@
     "corrected": true
   },
   "67456647": {
+    "skipped": "geocoder_moved_too_far",
     "orig_lat": 52.40216,
     "orig_lon": 16.85464,
     "new_lat": 52.373811,
     "new_lon": 16.975021,
     "dist_m": 8757,
-    "query": "ul. Ptasiej, Poznań, Polska",
-    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
-    "addr": {
-      "street": "ul. Ptasiej",
-      "number": null,
-      "osiedle": "Ptasia Vita",
-      "city": "Poznań",
-      "district": "Grunwald",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": "Żegrze",
-    "corrected": true
+    "note": "reverted manually: garbage Żegrze coords (orig 52.40216,16.85464)"
   },
   "66325058": {
     "orig_lat": 52.37413,
@@ -4911,24 +4900,13 @@
     "corrected": true
   },
   "96745664700067": {
+    "skipped": "geocoder_moved_too_far",
     "orig_lat": 52.40216,
     "orig_lon": 16.85464,
     "new_lat": 52.373811,
     "new_lon": 16.975021,
     "dist_m": 8757,
-    "query": "ul. Ptasiej, Poznań, Polska",
-    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
-    "addr": {
-      "street": "ul. Ptasiej",
-      "number": null,
-      "osiedle": "Ptasia Vita",
-      "city": "Poznań",
-      "district": "Grunwald",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": "Żegrze",
-    "corrected": true
+    "note": "reverted manually: garbage Żegrze coords (orig 52.40216,16.85464)"
   },
   "66293561": {
     "orig_lat": 52.36733,
@@ -5031,24 +5009,13 @@
     "corrected": true
   },
   "67814415": {
+    "skipped": "geocoder_moved_too_far",
     "orig_lat": 52.40216,
     "orig_lon": 16.85464,
     "new_lat": 52.373811,
     "new_lon": 16.975021,
     "dist_m": 8757,
-    "query": "ul. Ptasiej, Poznań, Polska",
-    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
-    "addr": {
-      "street": "ul. Ptasiej",
-      "number": null,
-      "osiedle": "Ptasia Vita",
-      "city": "Poznań",
-      "district": "Grunwald",
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": "Żegrze",
-    "corrected": true
+    "note": "reverted manually: garbage Żegrze coords (orig 52.40216,16.85464)"
   },
   "67422361": {
     "orig_lat": 52.44512,
@@ -7982,24 +7949,13 @@
     "corrected": true
   },
   "64953554": {
+    "skipped": "geocoder_moved_too_far",
     "orig_lat": 52.49843,
     "orig_lon": 16.77144,
     "new_lat": 52.373811,
     "new_lon": 16.975021,
     "dist_m": 19557,
-    "query": "ul. Kierskiej, Poznań, Polska",
-    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
-    "addr": {
-      "street": "ul. Kierskiej",
-      "number": null,
-      "osiedle": null,
-      "city": "Poznań",
-      "district": null,
-      "confidence": "medium"
-    },
-    "geo_city": "Poznań",
-    "geo_district": "Żegrze",
-    "corrected": true
+    "note": "reverted manually: Kiekrz/Rokietnica (ul. Kierskiej)"
   },
   "68222140": {
     "orig_lat": 52.39885,
@@ -9933,24 +9889,13 @@
     "corrected": false
   },
   "64236627": {
+    "skipped": "geocoder_moved_too_far",
     "orig_lat": 52.38265,
     "orig_lon": 16.84567,
     "new_lat": 52.373811,
     "new_lon": 16.975021,
     "dist_m": 8835,
-    "query": "ul. Ziębickiej 30, Poznań, Polska",
-    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
-    "addr": {
-      "street": "ul. Ziębickiej",
-      "number": "30",
-      "osiedle": "Osiedle Ziębicka 30",
-      "city": "Poznań",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": "Żegrze",
-    "corrected": true
+    "note": "reverted manually: garbage Żegrze coords (orig 52.38265,16.84567)"
   },
   "68194392": {
     "orig_lat": 52.41706,
@@ -10134,24 +10079,13 @@
     "corrected": true
   },
   "65602304": {
+    "skipped": "geocoder_moved_too_far",
     "orig_lat": 52.41133,
     "orig_lon": 16.96798,
     "new_lat": 52.373811,
     "new_lon": 16.975021,
     "dist_m": 4199,
-    "query": "ul. Bnińskiej, Poznań, Polska",
-    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
-    "addr": {
-      "street": "ul. Bnińskiej",
-      "number": null,
-      "osiedle": "Rodzinna Malta",
-      "city": "Poznań",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": "Żegrze",
-    "corrected": true
+    "note": "reverted manually: garbage Żegrze coords (orig 52.41133,16.96798)"
   },
   "67702871": {
     "orig_lat": 52.3894,
@@ -11084,24 +11018,13 @@
     }
   },
   "68228399": {
+    "skipped": "geocoder_moved_too_far",
     "orig_lat": 52.48798,
     "orig_lon": 16.98359,
     "new_lat": 52.2857,
     "new_lon": 16.84925,
     "dist_m": 24270,
-    "query": "Osiedle Wzgórze Zawilcowa, Puszczykowo, Polska",
-    "formatted": "Puszczykowo, Powiat poznański, Polska",
-    "addr": {
-      "street": null,
-      "number": null,
-      "osiedle": "Osiedle Wzgórze Zawilcowa",
-      "city": "Puszczykowo",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Puszczykowo",
-    "geo_district": null,
-    "corrected": true
+    "note": "reverted manually: Czerwonak (DOM Z OGRÓDKIEM)"
   },
   "66463426": {
     "orig_lat": 52.36781,
@@ -12255,24 +12178,13 @@
     "corrected": true
   },
   "67389058": {
+    "skipped": "geocoder_moved_too_far",
     "orig_lat": 52.41363,
     "orig_lon": 16.71411,
     "new_lat": 52.373811,
     "new_lon": 16.975021,
     "dist_m": 18249,
-    "query": "ul. Agatowej, Poznań, Polska",
-    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
-    "addr": {
-      "street": "ul. Agatowej",
-      "number": null,
-      "osiedle": null,
-      "city": "Poznań",
-      "district": null,
-      "confidence": "medium"
-    },
-    "geo_city": "Poznań",
-    "geo_district": "Żegrze",
-    "corrected": true
+    "note": "reverted manually: Tarnowo Podgórne (ul. Agatowej)"
   },
   "96567192600067": {
     "skipped": "low_confidence",
@@ -13933,24 +13845,13 @@
     "corrected": true
   },
   "96822839900067": {
+    "skipped": "geocoder_moved_too_far",
     "orig_lat": 52.48798,
     "orig_lon": 16.98359,
     "new_lat": 52.422309,
     "new_lon": 16.874941,
     "dist_m": 10369,
-    "query": "ul. Polska 114, Poznań, Polska",
-    "formatted": "Polska, 114, Poznań, Polska",
-    "addr": {
-      "street": "ul. Polska",
-      "number": "114",
-      "osiedle": "Osiedle Wzgórze Zawilcowa",
-      "city": "Poznań",
-      "district": null,
-      "confidence": "high"
-    },
-    "geo_city": "Poznań",
-    "geo_district": "Ogrody",
-    "corrected": true
+    "note": "reverted manually: Czerwonak (DOM Z OGRÓDKIEM #2)"
   },
   "66346521": {
     "orig_lat": 52.30727,

@@ -368,6 +368,33 @@ def main():
         orig_lon = float(r["lon"])
         dist_m = haversine(orig_lat, orig_lon, new_lat, new_lon) * 1000
 
+        # Если геокодер переместил слишком далеко — проверяем, были ли исходные координаты
+        # уже специфичными (не просто центр города). Центр Познани ≈ Ratusz.
+        _RATUSZ = (52.4082, 16.9336)
+        orig_dist_to_center = haversine(orig_lat, orig_lon, *_RATUSZ) * 1000
+        orig_is_center_placeholder = orig_dist_to_center < 800  # ≤800м от ратуши = placeholder
+
+        # Большое смещение допустимо только если исходные coords были центром города (placeholder Otodom)
+        # Иначе исходные coords специфичны и 5+ км сдвиг — скорее всего мусорный результат геокодера
+        MAX_MOVE_SPECIFIC = 5000   # 5 км — макс. коррекция если orig уже специфичны
+        MAX_MOVE_PLACEHOLDER = 50000  # 50 км — если orig был центром города
+
+        max_allowed = MAX_MOVE_PLACEHOLDER if orig_is_center_placeholder else MAX_MOVE_SPECIFIC
+
+        if dist_m > max_allowed:
+            overrides[lid] = {
+                "skipped": "geocoder_moved_too_far",
+                "orig_lat": orig_lat, "orig_lon": orig_lon,
+                "new_lat": new_lat, "new_lon": new_lon,
+                "dist_m": round(dist_m),
+                "orig_dist_to_center_m": round(orig_dist_to_center),
+                "query": query, "formatted": formatted, "addr": addr,
+            }
+            print(f"    → отклонено: геокодер переместил на {dist_m/1000:.1f}км, "
+                  f"исходные coords {'центр-placeholder' if orig_is_center_placeholder else f'специфичны ({orig_dist_to_center/1000:.1f}км от центра)'}: {formatted}")
+            time.sleep(0.3)
+            continue
+
         overrides[lid] = {
             "orig_lat": orig_lat, "orig_lon": orig_lon,
             "new_lat": new_lat, "new_lon": new_lon,
