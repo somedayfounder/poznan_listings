@@ -12887,5 +12887,857 @@
     "geo_city": "Naramowice",
     "geo_district": null,
     "corrected": true
+  },
+  "67952422": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.443076,
+    "new_lon": 16.912969,
+    "dist_m": 227,
+    "query": "ul. Wojciechowskiego, Piątkowo, Polska",
+    "formatted": "Zygmunta Wojciechowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": null,
+      "osiedle": "Początek Piątkowo",
+      "city": "Piątkowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "67951940": {
+    "orig_lat": 52.4457,
+    "orig_lon": 16.9119,
+    "new_lat": 52.444581,
+    "new_lon": 16.910307,
+    "dist_m": 165,
+    "query": "ul. Wojciechowskiego 7/17, Poznań, Polska",
+    "formatted": "Bricoman, Zygmunta Wojciechowskiego 7-17, 60-685 Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "7/17",
+      "osiedle": "Piątkowo Residence",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "66324918": {
+    "orig_lat": 52.37413,
+    "orig_lon": 16.95236,
+    "new_lat": 52.374071,
+    "new_lon": 16.951708,
+    "dist_m": 45,
+    "query": "ul. Unii Lubelskiej 4, Starołęka, Polska",
+    "formatted": "Agrobex Unii Lubelskiej 4 (budowa), Unii Lubelskiej, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Unii Lubelskiej",
+      "number": "4",
+      "osiedle": "Inwestycja Unii Lubelskiej 4",
+      "city": "Starołęka",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "66324963": {
+    "orig_lat": 52.37413,
+    "orig_lon": 16.95236,
+    "new_lat": 52.374071,
+    "new_lon": 16.951708,
+    "dist_m": 45,
+    "query": "ul. Unii Lubelskiej 4, Starołęka, Polska",
+    "formatted": "Agrobex Unii Lubelskiej 4 (budowa), Unii Lubelskiej, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Unii Lubelskiej",
+      "number": "4",
+      "osiedle": "Inwestycja Unii Lubelskiej 4",
+      "city": "Starołęka",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "96632496300067": {
+    "orig_lat": 52.37413,
+    "orig_lon": 16.95236,
+    "new_lat": 52.374071,
+    "new_lon": 16.951708,
+    "dist_m": 45,
+    "query": "ul. Unii Lubelskiej 4, Starołęka, Polska",
+    "formatted": "Agrobex Unii Lubelskiej 4 (budowa), Unii Lubelskiej, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Unii Lubelskiej",
+      "number": "4",
+      "osiedle": "Inwestycja Unii Lubelskiej 4",
+      "city": "Starołęka",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "67927696": {
+    "skipped": "outside_bbox",
+    "query": "ul. św. Jana 5, Gwiazdowo, Polska",
+    "formatted": "Świętego Jana, 5, Gwiazdowo, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "number": "5",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.407234,
+    "new_lon": 17.212851
+  },
+  "61146014": {
+    "orig_lat": 52.5713,
+    "orig_lon": 17.02807,
+    "new_lat": 52.57463,
+    "new_lon": 17.00933,
+    "dist_m": 1319,
+    "query": "ul. Gnieźnieńskiej 47, Murowana Goślina, Polska",
+    "formatted": "Murowana Goślina, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Gnieźnieńskiej",
+      "number": "47",
+      "osiedle": null,
+      "city": "Murowana Goślina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Murowana Goślina",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96787914300067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Zimowej, Paczkowo, Polska",
+    "formatted": "Zimowa, Paczkowo, Polska",
+    "addr": {
+      "street": "ul. Zimowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Paczkowo",
+      "district": "gmina Swarzędz",
+      "confidence": "high"
+    },
+    "new_lat": 52.40156,
+    "new_lon": 17.15394
+  },
+  "96496672200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Puszcza Zielonka",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96814475500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96773051300067": {
+    "orig_lat": 52.37571,
+    "orig_lon": 17.10255,
+    "new_lat": 52.378827,
+    "new_lon": 17.093522,
+    "dist_m": 704,
+    "query": "PARK Kruszewnia, Kruszewnia, Polska",
+    "formatted": "Park Kruszewnia, Kruszewnia, gmina Swarzędz, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "PARK Kruszewnia",
+      "city": "Kruszewnia",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Kruszewnia",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67389058": {
+    "orig_lat": 52.41363,
+    "orig_lon": 16.71411,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 18249,
+    "query": "ul. Agatowej, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Agatowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Żegrze",
+    "corrected": true
+  },
+  "96567192600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "67963910": {
+    "orig_lat": 52.37384,
+    "orig_lon": 16.68235,
+    "new_lat": 52.373842,
+    "new_lon": 16.682427,
+    "dist_m": 5,
+    "query": "Krasnoludków, Dopiewiec, Polska",
+    "formatted": "Krasnoludków, Dopiewiec, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-070, Polska",
+    "addr": {
+      "street": "Krasnoludków",
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewiec",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96813555800067": {
+    "orig_lat": 52.32058,
+    "orig_lon": 16.92453,
+    "new_lat": 52.32057,
+    "new_lon": 16.924495,
+    "dist_m": 3,
+    "query": "Zaciszna 7, Czapury, Polska",
+    "formatted": "7, Zaciszna, Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-160, Polska",
+    "addr": {
+      "street": "Zaciszna",
+      "number": "7",
+      "osiedle": "Osiedle Zacisze",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96821732500067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Brzoskwiniowa, Siekierki Wielkie, Polska",
+    "formatted": "Brzoskwiniowa, Siekierki Wielkie, Polska",
+    "addr": {
+      "street": "ul. Brzoskwiniowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.390348,
+    "new_lon": 17.168341
+  },
+  "96819647800067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "66945484": {
+    "skipped": "outside_bbox",
+    "query": "ul. Tulecka, Siekierki Wielkie, Polska",
+    "formatted": "Siekierki Wielkie Malinowa n/ż, Tulecka, Siekierki Wielkie, Polska",
+    "addr": {
+      "street": "ul. Tulecka",
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.375024,
+    "new_lon": 17.159737
+  },
+  "65085707": {
+    "skipped": "geocode_too_vague",
+    "query": "ul. Tuleckiej, Siekierkach Wielkich, Polska",
+    "formatted": "Polska",
+    "addr": {
+      "street": "ul. Tuleckiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierkach Wielkich",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96644341900067": {
+    "orig_lat": 52.50568,
+    "orig_lon": 16.75804,
+    "new_lat": 52.504866,
+    "new_lon": 16.760205,
+    "dist_m": 172,
+    "query": "Golęcińska, Rokietnica, Polska",
+    "formatted": "Golęcińska, Rokietnica, gmina Rokietnica, powiat poznański, województwo wielkopolskie, 62-090, Polska",
+    "addr": {
+      "street": "Golęcińska",
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96816457100067": {
+    "orig_lat": 52.46374,
+    "orig_lon": 16.90037,
+    "new_lat": 52.489231,
+    "new_lon": 16.909592,
+    "dist_m": 2902,
+    "query": "Osiedle Mateckiego, Morasko, Polska",
+    "formatted": "Morasko, Morasko-Radojewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Mateckiego",
+      "city": "Morasko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Morasko",
+    "corrected": true
+  },
+  "67528720": {
+    "orig_lat": 52.35411,
+    "orig_lon": 16.92671,
+    "new_lat": 52.354373,
+    "new_lon": 16.926773,
+    "dist_m": 30,
+    "query": "ul. Masztowej, Starołęka Wielka, Polska",
+    "formatted": "Masztowa, Poznań, Polska",
+    "addr": {
+      "street": "ul. Masztowej",
+      "number": null,
+      "osiedle": "Nowy Folwark",
+      "city": "Starołęka Wielka",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Wielka",
+    "corrected": false
+  },
+  "67220154": {
+    "orig_lat": 52.46978,
+    "orig_lon": 16.9417,
+    "new_lat": 52.469645,
+    "new_lon": 16.947922,
+    "dist_m": 422,
+    "query": "null 29/B, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "null",
+      "number": "29/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Umultowo",
+    "corrected": true
+  },
+  "68002917": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "65204658": {
+    "skipped": "outside_bbox",
+    "query": "ul. Wieruszowska 8G_1, Grunwald, Polska",
+    "formatted": "Grunwald, Powiat ostródzki, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8G_1",
+      "osiedle": "Grunwald Park",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.48422,
+    "new_lon": 20.09425
+  },
+  "68237290": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96823729000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "65204743": {
+    "skipped": "outside_bbox",
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, województwo lubuskie, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": null,
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 51.927574,
+    "new_lon": 15.549042
+  },
+  "68002954": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "67661963": {
+    "skipped": "outside_bbox",
+    "query": "Osiedle Kórnickie, Kostrzyn, Polska",
+    "formatted": "Kostrzyn, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Kórnickie",
+      "city": "Kostrzyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.39847,
+    "new_lon": 17.22811
+  },
+  "96822247600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96807979500067": {
+    "orig_lat": 52.34363,
+    "orig_lon": 16.69366,
+    "new_lat": 52.343634,
+    "new_lon": 16.693658,
+    "dist_m": 0,
+    "query": "ul. Lazurowa, Konarzewo, Polska",
+    "formatted": "Lazurowa, Konarzewo, Polska",
+    "addr": {
+      "street": "ul. Lazurowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Konarzewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96744555600067": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.448685,
+    "new_lon": 16.89088,
+    "dist_m": 33,
+    "query": "Strzeszyńska 77, Poznań, Polska",
+    "formatted": "77, Strzeszyńska, Podolany, Poznań, województwo wielkopolskie, 60-479, Polska",
+    "addr": {
+      "street": "Strzeszyńska",
+      "number": "77",
+      "osiedle": "Strzeszyńska 77",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "96801437500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Jelonek",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96792781900067": {
+    "orig_lat": 52.42847,
+    "orig_lon": 16.82155,
+    "new_lat": 52.428764,
+    "new_lon": 16.821752,
+    "dist_m": 35,
+    "query": "ul. Skarszewska, Poznań, Polska",
+    "formatted": "Skarszewska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Skarszewska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Smochowice",
+    "corrected": false
+  },
+  "67456971": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "68235874": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Janikowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96774807600067": {
+    "orig_lat": 52.36516,
+    "orig_lon": 16.82342,
+    "new_lat": 52.364078,
+    "new_lon": 16.801477,
+    "dist_m": 1495,
+    "query": "mikroosiedlu, Plewiska, Polska",
+    "formatted": "Parafia Świętej Faustyny w Plewiskach, Plewiska, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "mikroosiedlu",
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Plewiska",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96806105900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Łacina",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68026471": {
+    "orig_lat": 52.38217,
+    "orig_lon": 16.91298,
+    "new_lat": 52.392651,
+    "new_lon": 16.920178,
+    "dist_m": 1264,
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "number": null,
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "96802647100067": {
+    "orig_lat": 52.38217,
+    "orig_lon": 16.91298,
+    "new_lat": 52.392651,
+    "new_lon": 16.920178,
+    "dist_m": 1264,
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "number": null,
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "67767324": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 61,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka, 65, Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka",
+      "number": "65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "96776732400067": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 61,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka, 65, Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka",
+      "number": "65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "96502068300067": {
+    "orig_lat": 52.38893,
+    "orig_lon": 16.9174,
+    "new_lat": 52.387711,
+    "new_lon": 16.916725,
+    "dist_m": 143,
+    "query": "ul. 28 czerwca 1956 r. 156, Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, 156, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 czerwca 1956 r.",
+      "number": "156",
+      "osiedle": "Wilda Story",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "68113807": {
+    "orig_lat": 52.39769,
+    "orig_lon": 16.92545,
+    "new_lat": 52.397184,
+    "new_lon": 16.926392,
+    "dist_m": 85,
+    "query": "ul. Dolna Wilda 12, Poznań, Polska",
+    "formatted": "Dolna Wilda, 12, Poznań, Polska",
+    "addr": {
+      "street": "ul. Dolna Wilda",
+      "number": "12",
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "96756948600067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Leśnych Skrzatów 5, Marcelin, Polska",
+    "formatted": "Marcelin, Powiat miński, Polska",
+    "addr": {
+      "street": "ul. Leśnych Skrzatów",
+      "number": "5",
+      "osiedle": "Zacisze Marcelin",
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.3463,
+    "new_lon": 21.79482
+  },
+  "67968594": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28A, Grunwald, Polska",
+    "formatted": "Grunwald, Powiat ostródzki, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28A",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.48422,
+    "new_lon": 20.09425
+  },
+  "96796859400067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28A, Grunwald, Polska",
+    "formatted": "Grunwald, Powiat ostródzki, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28A",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.48422,
+    "new_lon": 20.09425
+  },
+  "65120240": {
+    "orig_lat": 52.39811,
+    "orig_lon": 16.90758,
+    "new_lat": 52.397549,
+    "new_lon": 16.907368,
+    "dist_m": 64,
+    "query": "Kolejova 1, Poznań, Polska",
+    "formatted": "Kolejova1, Poznań, Polska",
+    "addr": {
+      "street": "Kolejova",
+      "number": "1",
+      "osiedle": "Kolejova 1",
+      "city": "Poznań",
+      "district": "Łazarz",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łazarz",
+    "corrected": false
+  },
+  "96512024000067": {
+    "orig_lat": 52.39811,
+    "orig_lon": 16.90758,
+    "new_lat": 52.397549,
+    "new_lon": 16.907368,
+    "dist_m": 64,
+    "query": "Kolejova 1, Poznań, Polska",
+    "formatted": "Kolejova1, Poznań, Polska",
+    "addr": {
+      "street": "Kolejova",
+      "number": "1",
+      "osiedle": "Kolejova 1",
+      "city": "Poznań",
+      "district": "Łazarz",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łazarz",
+    "corrected": false
   }
 }
