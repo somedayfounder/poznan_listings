@@ -790,7 +790,7 @@ def _noise_penalty(noise, floor=None):
         base = 0.0
     elif max_ldwn <= 65:
         base = 0.1
-    elif max_ldwn <= 70:
+    elif max_ldwn < 70:
         base = 0.2
     else:
         base = 0.4
@@ -909,10 +909,11 @@ _BASE_W = {
 }
 
 
-def compute_score(price, area, rooms, tp, dist_tram, dist_center, tram_min=None, dist_center_min=None, district=None, city=None, lat=None, lon=None, noise=None, floor=None, supermarket=None):
+def compute_score(price, area, rooms, tp, dist_tram, dist_center, tram_min=None, dist_center_min=None, district=None, city=None, lat=None, lon=None, noise=None, floor=None, supermarket=None, district_score=None):
+    d_sc = district_score if district_score is not None else _score_district(district, city)
     factors = [
         (_score_transport(tp, tram_min, dist_center_min), _BASE_W["transport"]),
-        (_score_district(district, city),               _BASE_W["district"]),
+        (d_sc,                                           _BASE_W["district"]),
         (_score_price(price),                           _BASE_W["price"]),
         (_score_area(area),                             _BASE_W["area"]),
         (_score_rooms(rooms),                           _BASE_W["rooms"]),
@@ -986,4 +987,5 @@ def score_from_jsrow(r):
         noise=r.get("noise"),
         floor=r.get("floor"),
         supermarket=r.get("supermarket"),
+        district_score=r.get("district_score"),
     )

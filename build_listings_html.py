@@ -338,12 +338,15 @@ for k, v in DISTRICT_SCORES.items():
     })
 districts_list.sort(key=lambda x: (-x["score"], x["name"]))
 
-# Backfill district_score in listing rows with the combined score
+# Backfill district_score in listing rows with the combined score, then recompute listing scores
 _dist_combined = {d["name"]: d["score"] for d in districts_list}
 for row in js_rows:
     dk = row.get("district") or row.get("city", "")
     if dk in _dist_combined:
         row["district_score"] = _dist_combined[dk]
+    # Recompute score using the combined district score (not the raw DISTRICT_SCORES lookup)
+    row["score"] = score_from_jsrow(row)
+    row["base_score"] = row["score"]
 data_json = json.dumps(js_rows, ensure_ascii=False)
 
 districts_json = json.dumps(districts_list, ensure_ascii=False)
