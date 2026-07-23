@@ -14511,5 +14511,618 @@
       "district": "Łazarz",
       "confidence": "high"
     }
+  },
+  "66335920": {
+    "orig_lat": 52.30313,
+    "orig_lon": 17.02308,
+    "new_lat": 52.308644,
+    "new_lon": 17.017161,
+    "dist_m": 733,
+    "query": "ul. Radiowa, Koninko, Polska",
+    "formatted": "Radiowa, Koninko, Polska",
+    "addr": {
+      "street": "ul. Radiowa",
+      "number": null,
+      "osiedle": "Inwestycja Koninko",
+      "city": "Koninko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Koninko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67893169": {
+    "skipped": "outside_bbox",
+    "query": "ul. św. Jana 8, Gwiazdowo, Polska",
+    "formatted": "Gwiazdowo, Karwie, gmina Mrągowo, powiat mrągowski, województwo warmińsko-mazurskie, 11-700, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "number": "8",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.8243,
+    "new_lon": 21.286328
+  },
+  "67893165": {
+    "skipped": "outside_bbox",
+    "query": "ul. św. Jana 4, Gwiazdowo, Polska",
+    "formatted": "Gwiazdowo, Karwie, gmina Mrągowo, powiat mrągowski, województwo warmińsko-mazurskie, 11-700, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "number": "4",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.8243,
+    "new_lon": 21.286328
+  },
+  "96814184800067": {
+    "orig_lat": 52.35519,
+    "orig_lon": 16.71289,
+    "new_lat": 52.35789,
+    "new_lon": 16.707536,
+    "dist_m": 472,
+    "query": "ul. Ignacego Krasickiego, Dopiewiec, Polska",
+    "formatted": "Ignacego Krasickiego, Dopiewiec, Polska",
+    "addr": {
+      "street": "ul. Ignacego Krasickiego",
+      "number": null,
+      "osiedle": "Bajkowy Dopiewiec",
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96773482500067": {
+    "orig_lat": 52.4862,
+    "orig_lon": 16.72952,
+    "new_lat": 52.48518,
+    "new_lon": 16.72617,
+    "dist_m": 254,
+    "query": "ul. Rokietnickiej 14, Napachanie, Polska",
+    "formatted": "Napachanie, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Rokietnickiej",
+      "number": "14",
+      "osiedle": null,
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67329678": {
+    "orig_lat": 52.30313,
+    "orig_lon": 17.02308,
+    "new_lat": 52.307299,
+    "new_lon": 17.019376,
+    "dist_m": 528,
+    "query": "ul. Radiowa 35, Koninko, Polska",
+    "formatted": "Radiowa, 62-023 Koninko, Polska",
+    "addr": {
+      "street": "ul. Radiowa",
+      "number": "35",
+      "osiedle": "Inwestycja Koninko",
+      "city": "Koninko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Koninko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68241377": {
+    "orig_lat": 52.39435,
+    "orig_lon": 16.84386,
+    "new_lat": 52.390169,
+    "new_lon": 16.848049,
+    "dist_m": 545,
+    "query": "ul. Jeleniogórska, Poznań, Polska",
+    "formatted": "Jeleniogórska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": true
+  },
+  "96722718700067": {
+    "orig_lat": 52.26491,
+    "orig_lon": 17.07328,
+    "new_lat": 52.265122,
+    "new_lon": 17.074103,
+    "dist_m": 61,
+    "query": "ul. Truskawkowej, Skrzynki, Polska",
+    "formatted": "Truskawkowa, Skrzynki, Polska",
+    "addr": {
+      "street": "ul. Truskawkowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Skrzynki",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Skrzynki",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96812609100067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Czereśniowej, Krosinko, Polska",
+    "formatted": "Krosinko, gmina Tychowo, powiat białogardzki, województwo zachodniopomorskie, 78-220, Polska",
+    "addr": {
+      "street": "ul. Czereśniowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinko",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "new_lat": 53.90822,
+    "new_lon": 16.24497
+  },
+  "67220156": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Zagajnik, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": "27/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "96722015600067": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Zagajnik, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": "27/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "67220154": {
+    "skipped": "geocode_city_only",
+    "query": "null 29/B, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "null",
+      "number": "29/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "67220158": {
+    "skipped": "geocode_city_only",
+    "query": "null 18/B, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "null",
+      "number": "18/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "67456861": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "65204727": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, województwo lubuskie, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "null",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96812480600067": {
+    "skipped": "outside_bbox",
+    "query": "Leśny Zakątek, Koziegłowy, Polska",
+    "formatted": "Koziegłowy, gmina Koziegłowy, powiat myszkowski, województwo śląskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Leśny Zakątek",
+      "city": "Koziegłowy",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 50.597871,
+    "new_lon": 19.16152
+  },
+  "96813982800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96819575100067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Owocowa, Kleszczewo, Polska",
+    "formatted": "Owocowa, Kleszczewo, Polska",
+    "addr": {
+      "street": "ul. Owocowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Kleszczewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.334722,
+    "new_lon": 17.174809
+  },
+  "96807545400067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.35555,
+    "orig_lon": 16.75349,
+    "new_lat": 52.41186,
+    "new_lon": 16.872603,
+    "dist_m": 10225,
+    "orig_dist_to_center_m": 13554,
+    "query": "ul. Bukowska, Poznań, Polska",
+    "formatted": "Bukowska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bukowska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96814596000067": {
+    "orig_lat": 52.36803,
+    "orig_lon": 16.8325,
+    "new_lat": 52.366348,
+    "new_lon": 16.818122,
+    "dist_m": 994,
+    "query": "ul. Bursztynowa, Plewiska, Polska",
+    "formatted": "Bursztynowa, Plewiska, Polska",
+    "addr": {
+      "street": "ul. Bursztynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Plewiska",
+    "geo_district": "Aniołowo",
+    "corrected": true
+  },
+  "96814990300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96817475900067": {
+    "skipped": "outside_bbox",
+    "query": "Baśniowa, Biskupice, Polska",
+    "formatted": "Baśniowa, Biskupice Wielkopolskie, Biskupice, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, 62-007, Polska",
+    "addr": {
+      "street": "Baśniowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Biskupice",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.458684,
+    "new_lon": 17.171322
+  },
+  "68239783": {
+    "orig_lat": 52.41526,
+    "orig_lon": 16.89158,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 786,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "66416733": {
+    "orig_lat": 52.43822,
+    "orig_lon": 16.90979,
+    "new_lat": 52.438229,
+    "new_lon": 16.909791,
+    "dist_m": 1,
+    "query": "ul. Piątkowska 165 A-B, Poznań, Polska",
+    "formatted": "Piątkowska, 165A, Poznań, Polska",
+    "addr": {
+      "street": "ul. Piątkowska",
+      "number": "165 A-B",
+      "osiedle": "Witosa Park",
+      "city": "Poznań",
+      "district": "Winiary",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "96641673300067": {
+    "orig_lat": 52.43822,
+    "orig_lon": 16.90979,
+    "new_lat": 52.438229,
+    "new_lon": 16.909791,
+    "dist_m": 1,
+    "query": "ul. Piątkowska 165 A-B, Poznań, Polska",
+    "formatted": "Piątkowska, 165A, Poznań, Polska",
+    "addr": {
+      "street": "ul. Piątkowska",
+      "number": "165 A-B",
+      "osiedle": "Witosa Park",
+      "city": "Poznań",
+      "district": "Winiary",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "67798744": {
+    "orig_lat": 52.38786,
+    "orig_lon": 17.11767,
+    "new_lat": 52.387903,
+    "new_lon": 17.106933,
+    "dist_m": 729,
+    "query": "Osiedle Tercja, Rabowice, Polska",
+    "formatted": "Osiedle Świerkowe Tarasy, Rabowice, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Tercja",
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96639035800067": {
+    "orig_lat": 52.43506,
+    "orig_lon": 17.06492,
+    "new_lat": 52.43072,
+    "new_lon": 17.07297,
+    "dist_m": 729,
+    "query": "ul. Mechowskiej, Gruszczyn, Polska",
+    "formatted": "Gruszczyn, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Mechowskiej",
+      "number": null,
+      "osiedle": "OSIEDLE GRUSZCZYN",
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gruszczyn",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96797055400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Janikowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66528932": {
+    "orig_lat": 52.39177,
+    "orig_lon": 16.84631,
+    "new_lat": 52.39155,
+    "new_lon": 16.846851,
+    "dist_m": 44,
+    "query": "Jeleniogórska 5, Poznań, Polska",
+    "formatted": "5, Jeleniogórska, Junikowo, Poznań, województwo wielkopolskie, 60-179, Polska",
+    "addr": {
+      "street": "Jeleniogórska",
+      "number": "5",
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "96652893200067": {
+    "orig_lat": 52.39177,
+    "orig_lon": 16.84631,
+    "new_lat": 52.39155,
+    "new_lon": 16.846851,
+    "dist_m": 44,
+    "query": "Jeleniogórska 5, Poznań, Polska",
+    "formatted": "5, Jeleniogórska, Junikowo, Poznań, województwo wielkopolskie, 60-179, Polska",
+    "addr": {
+      "street": "Jeleniogórska",
+      "number": "5",
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "medium"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "66288653": {
+    "orig_lat": 52.43822,
+    "orig_lon": 16.90979,
+    "new_lat": 52.438229,
+    "new_lon": 16.909791,
+    "dist_m": 1,
+    "query": "ul. Piątkowska 165 A-B, Poznań, Polska",
+    "formatted": "Piątkowska, 165A, Poznań, Polska",
+    "addr": {
+      "street": "ul. Piątkowska",
+      "number": "165 A-B",
+      "osiedle": "Witosa Park",
+      "city": "Poznań",
+      "district": "Winiary",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "68073284": {
+    "orig_lat": 52.39769,
+    "orig_lon": 16.92545,
+    "new_lat": 52.397184,
+    "new_lon": 16.926392,
+    "dist_m": 85,
+    "query": "ul. Dolna Wilda 12, Poznań, Polska",
+    "formatted": "Dolna Wilda, 12, Poznań, Polska",
+    "addr": {
+      "street": "ul. Dolna Wilda",
+      "number": "12",
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "96782009900067": {
+    "orig_lat": 52.48918,
+    "orig_lon": 17.06061,
+    "new_lat": 52.48654,
+    "new_lon": 17.05761,
+    "dist_m": 357,
+    "query": "Czerwonak, Kliny, Polska",
+    "formatted": "Kliny, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kliny",
+      "district": "Czerwonak",
+      "confidence": "high"
+    },
+    "geo_city": "Kliny",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96820176600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "spokojne miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68239785": {
+    "orig_lat": 52.41505,
+    "orig_lon": 16.89167,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 774,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96784220500067": {
+    "orig_lat": 52.46767,
+    "orig_lon": 16.935,
+    "new_lat": 52.44728,
+    "new_lon": 16.94977,
+    "dist_m": 2478,
+    "query": "ul. Maków Polnych 9, Naramowice, Polska",
+    "formatted": "Naramowice, Poznań, Polska",
+    "addr": {
+      "street": "ul. Maków Polnych",
+      "number": "9",
+      "osiedle": "FUELDA",
+      "city": "Naramowice",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Naramowice",
+    "geo_district": null,
+    "corrected": true
   }
 }
