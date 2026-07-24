@@ -15124,5 +15124,709 @@
     "geo_city": "Naramowice",
     "geo_district": null,
     "corrected": true
+  },
+  "96771724400067": {
+    "skipped": "outside_bbox",
+    "query": "Junique II, Grunwald, Polska",
+    "formatted": "Grunwald, Powiat ostródzki, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Junique II",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.48422,
+    "new_lon": 20.09425
+  },
+  "96718089600067": {
+    "orig_lat": 52.207,
+    "orig_lon": 17.02705,
+    "new_lat": 52.210031,
+    "new_lon": 17.033205,
+    "dist_m": 538,
+    "query": "ul. Kowalska, Radzewo, Polska",
+    "formatted": "Kowalska, Radzewo, Polska",
+    "addr": {
+      "street": "ul. Kowalska",
+      "number": null,
+      "osiedle": "Nowe Młyny Radzewa",
+      "city": "Radzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Radzewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96822121600067": {
+    "orig_lat": 52.42999,
+    "orig_lon": 17.07322,
+    "new_lat": 52.427159,
+    "new_lon": 17.068801,
+    "dist_m": 435,
+    "query": "Ostoja Gruszczyn, Gruszczyn, Polska",
+    "formatted": "Ogrody Działkowe w Gruszczynie, Gruszczyn, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Ostoja Gruszczyn",
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gruszczyn",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96809149400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kórnik",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "62644174": {
+    "orig_lat": 52.38786,
+    "orig_lon": 17.11767,
+    "new_lat": 52.38891,
+    "new_lon": 17.12116,
+    "dist_m": 264,
+    "query": "ul. Dworcowa 4b/1, Rabowice, Polska",
+    "formatted": "Rabowice, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Dworcowa",
+      "number": "4b/1",
+      "osiedle": "Zielone Rabowice",
+      "city": "Rabowice",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67329681": {
+    "orig_lat": 52.30313,
+    "orig_lon": 17.02308,
+    "new_lat": 52.307299,
+    "new_lon": 17.019376,
+    "dist_m": 528,
+    "query": "ul. Radiowa 34, Koninko, Polska",
+    "formatted": "Radiowa, 62-023 Koninko, Polska",
+    "addr": {
+      "street": "ul. Radiowa",
+      "number": "34",
+      "osiedle": "Inwestycja Koninko",
+      "city": "Koninko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Koninko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68243435": {
+    "orig_lat": 52.48972,
+    "orig_lon": 16.83026,
+    "new_lat": 52.486842,
+    "new_lon": 16.853434,
+    "dist_m": 1601,
+    "query": "ul. Obornicka, Złotniki, Polska",
+    "formatted": "Złotniki/Złotnicka n/ż, Obornicka, Złotniki, Polska",
+    "addr": {
+      "street": "ul. Obornicka",
+      "number": null,
+      "osiedle": "Złotniki Park",
+      "city": "Złotniki",
+      "district": "gmina Suchy Las",
+      "confidence": "high"
+    },
+    "geo_city": "Złotniki",
+    "geo_district": "Grzybowe",
+    "corrected": true
+  },
+  "96477261400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "67440941": {
+    "orig_lat": 52.52362,
+    "orig_lon": 16.98328,
+    "new_lat": 52.51182,
+    "new_lon": 16.98077,
+    "dist_m": 1323,
+    "query": "Tarasy nad stawem, Owińska, Polska",
+    "formatted": "Owińska, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Tarasy nad stawem",
+      "city": "Owińska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Owińska",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96819576500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67220157": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Zagajnik, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": "19/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "96445457000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67562434": {
+    "orig_lat": 52.54306,
+    "orig_lon": 16.94337,
+    "new_lat": 52.545466,
+    "new_lon": 16.945774,
+    "dist_m": 313,
+    "query": "Osiedle Natura Biedrusko, Biedrusko, Polska",
+    "formatted": "Chata Polska, 12, Zjednoczenia, Osiedle Natura, Biedrusko, gmina Suchy Las, powiat poznański, województwo wielkopolskie, 62-003, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Natura Biedrusko",
+      "city": "Biedrusko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Biedrusko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67562447": {
+    "orig_lat": 52.54306,
+    "orig_lon": 16.94337,
+    "new_lat": 52.545466,
+    "new_lon": 16.945774,
+    "dist_m": 313,
+    "query": "Osiedle Natura Biedrusko, Biedrusko, Polska",
+    "formatted": "Chata Polska, 12, Zjednoczenia, Osiedle Natura, Biedrusko, gmina Suchy Las, powiat poznański, województwo wielkopolskie, 62-003, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Natura Biedrusko",
+      "city": "Biedrusko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Biedrusko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96821261000067": {
+    "orig_lat": 52.29333,
+    "orig_lon": 17.00515,
+    "new_lat": 52.296071,
+    "new_lon": 17.007659,
+    "dist_m": 349,
+    "query": "ul. Choinkowa, Szczytniki, Polska",
+    "formatted": "Choinkowa, Szczytniki, Polska",
+    "addr": {
+      "street": "ul. Choinkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96812781700067": {
+    "skipped": "geocode_city_only",
+    "query": "Piaskowa, Krosno, Polska",
+    "formatted": "Krosno, województwo podkarpackie, Polska",
+    "addr": {
+      "street": "Piaskowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosno",
+      "district": "Mosina",
+      "confidence": "high"
+    }
+  },
+  "68245500": {
+    "orig_lat": 52.4922,
+    "orig_lon": 16.73335,
+    "new_lat": 52.491967,
+    "new_lon": 16.734856,
+    "dist_m": 105,
+    "query": "ul. Teatralnej, Napachanie, Polska",
+    "formatted": "Teatralna, Napachanie, Polska",
+    "addr": {
+      "street": "ul. Teatralnej",
+      "number": null,
+      "osiedle": "Osiedle Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68245498": {
+    "orig_lat": 52.4922,
+    "orig_lon": 16.73335,
+    "new_lat": 52.491967,
+    "new_lon": 16.734856,
+    "dist_m": 105,
+    "query": "ul. Teatralnej, Napachanie, Polska",
+    "formatted": "Teatralna, Napachanie, Polska",
+    "addr": {
+      "street": "ul. Teatralnej",
+      "number": null,
+      "osiedle": "Osiedle Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96685779700067": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Kamiennej 15, Krosno, Polska",
+    "formatted": "Krosno, województwo podkarpackie, Polska",
+    "addr": {
+      "street": "ul. Kamiennej",
+      "number": "15",
+      "osiedle": null,
+      "city": "Krosno",
+      "district": "gm. Mosina",
+      "confidence": "high"
+    }
+  },
+  "67445420": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.448685,
+    "new_lon": 16.89088,
+    "dist_m": 33,
+    "query": "Strzeszyńska 77, Poznań, Polska",
+    "formatted": "77, Strzeszyńska, Podolany, Poznań, województwo wielkopolskie, 60-479, Polska",
+    "addr": {
+      "street": "Strzeszyńska",
+      "number": "77",
+      "osiedle": "Strzeszyńska 77",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "96744542000067": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.448685,
+    "new_lon": 16.89088,
+    "dist_m": 33,
+    "query": "Strzeszyńska 77, Poznań, Polska",
+    "formatted": "77, Strzeszyńska, Podolany, Poznań, województwo wielkopolskie, 60-479, Polska",
+    "addr": {
+      "street": "Strzeszyńska",
+      "number": "77",
+      "osiedle": "Strzeszyńska 77",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "66333064": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449057,
+    "new_lon": 16.960241,
+    "dist_m": 136,
+    "query": "ul. Bielicowa 4, Naramowice, Polska",
+    "formatted": "Bielicowa, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "4",
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "96803759800067": {
+    "orig_lat": 52.44377,
+    "orig_lon": 16.89437,
+    "new_lat": 52.456781,
+    "new_lon": 16.887939,
+    "dist_m": 1511,
+    "query": "Podolany, Poznań, Polska",
+    "formatted": "Podolany, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "67528708": {
+    "orig_lat": 52.35411,
+    "orig_lon": 16.92671,
+    "new_lat": 52.354373,
+    "new_lon": 16.926773,
+    "dist_m": 30,
+    "query": "ul. Masztowej, Starołęka Wielka, Polska",
+    "formatted": "Masztowa, Poznań, Polska",
+    "addr": {
+      "street": "ul. Masztowej",
+      "number": null,
+      "osiedle": "Nowy Folwark",
+      "city": "Starołęka Wielka",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Wielka",
+    "corrected": false
+  },
+  "68244486": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68246017": {
+    "orig_lat": 52.41895,
+    "orig_lon": 16.90096,
+    "new_lat": 52.415905,
+    "new_lon": 16.890163,
+    "dist_m": 807,
+    "query": "ul. Jana Henryka Dąbrowskiego, Poznań, Polska",
+    "formatted": "Hop & go, Jana Henryka Dąbrowskiego, 60-543 Poznań, Polska",
+    "addr": {
+      "street": "ul. Jana Henryka Dąbrowskiego",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Ogrody",
+    "corrected": true
+  },
+  "66931385": {
+    "orig_lat": 52.35454,
+    "orig_lon": 17.01192,
+    "new_lat": 52.348989,
+    "new_lon": 17.020898,
+    "dist_m": 868,
+    "query": "ul. Biesiadna, Poznań, Polska",
+    "formatted": "Biesiadna, Poznań, Polska",
+    "addr": {
+      "street": "ul. Biesiadna",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Spławie",
+    "corrected": true
+  },
+  "68245501": {
+    "orig_lat": 52.42794,
+    "orig_lon": 16.79522,
+    "new_lat": 52.42745,
+    "new_lon": 16.78375,
+    "dist_m": 780,
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96808000500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rogalinek",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96628865300067": {
+    "orig_lat": 52.43822,
+    "orig_lon": 16.90979,
+    "new_lat": 52.438229,
+    "new_lon": 16.909791,
+    "dist_m": 1,
+    "query": "ul. Piątkowska 165 A-B, Poznań, Polska",
+    "formatted": "Piątkowska, 165A, Poznań, Polska",
+    "addr": {
+      "street": "ul. Piątkowska",
+      "number": "165 A-B",
+      "osiedle": "Witosa Park",
+      "city": "Poznań",
+      "district": "Winiary",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "68245002": {
+    "orig_lat": 52.41024,
+    "orig_lon": 17.07804,
+    "new_lat": 52.416782,
+    "new_lon": 17.10164,
+    "dist_m": 1758,
+    "query": "ul. Gerberowej, Jasin, Polska",
+    "formatted": "Gerberowa, Jasin, Polska",
+    "addr": {
+      "street": "ul. Gerberowej",
+      "number": null,
+      "osiedle": "Gerberowa Park",
+      "city": "Jasin",
+      "district": "gmina Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Jasin",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96817922200067": {
+    "orig_lat": 52.33583,
+    "orig_lon": 16.80778,
+    "new_lat": 52.334806,
+    "new_lon": 16.831493,
+    "dist_m": 1615,
+    "query": "Cyprysowa 17, Komorniki, Polska",
+    "formatted": "Cyprysowa, Komorniki, gmina Komorniki, powiat poznański, województwo wielkopolskie, 60-004, Polska",
+    "addr": {
+      "street": "Cyprysowa",
+      "number": "17",
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Komorniki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67904972": {
+    "orig_lat": 52.40689,
+    "orig_lon": 17.10572,
+    "new_lat": 52.416782,
+    "new_lon": 17.10164,
+    "dist_m": 1134,
+    "query": "ul. Geberowa, Jasin, Polska",
+    "formatted": "Gerberowa, Jasin, Polska",
+    "addr": {
+      "street": "ul. Geberowa",
+      "number": null,
+      "osiedle": "Gerberowa Park",
+      "city": "Jasin",
+      "district": "gmina Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Jasin",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96818137400067": {
+    "orig_lat": 52.417,
+    "orig_lon": 16.89959,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 448,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "66970346": {
+    "skipped": "geocode_failed",
+    "query": "null, Polska",
+    "addr": {
+      "street": "Jeleniogórska",
+      "number": "5",
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96697034600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": "Jeleniogórska",
+      "number": "5",
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "66416786": {
+    "orig_lat": 52.43822,
+    "orig_lon": 16.90979,
+    "new_lat": 52.438229,
+    "new_lon": 16.909791,
+    "dist_m": 1,
+    "query": "ul. Piątkowska 165 A-B, Poznań, Polska",
+    "formatted": "Piątkowska, 165A, Poznań, Polska",
+    "addr": {
+      "street": "ul. Piątkowska",
+      "number": "165 A-B",
+      "osiedle": "Witosa Park",
+      "city": "Poznań",
+      "district": "Winiary",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "67761639": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 61,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka 65, 61-693 Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka",
+      "number": "65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96797066600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Janikowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96780013600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań Spławie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96784223400067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.48892,
+    "orig_lon": 16.91357,
+    "new_lat": 52.44728,
+    "new_lon": 16.94977,
+    "dist_m": 5239,
+    "orig_dist_to_center_m": 9078,
+    "query": "ul. Maków Polnych 9, Naramowice, Polska",
+    "formatted": "Naramowice, Poznań, Polska",
+    "addr": {
+      "street": "ul. Maków Polnych",
+      "number": "9",
+      "osiedle": "FUELDA",
+      "city": "Naramowice",
+      "district": "Poznań",
+      "confidence": "high"
+    }
   }
 }
