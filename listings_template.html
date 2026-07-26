@@ -649,6 +649,29 @@ a:hover{text-decoration:underline}
       <div class="rlog-desc">Теги плюсов/минусов из агентного поиска содержали полные предложения (например, «Отличная автомобильная доступность: рядом A2 (выезд Познань Всхуд), S5…»), что растягивало таблицу. Скрипт <code>shorten_tags.py</code> укоротил теги до 1–3 слов (часть до двоеточия), а полный текст перенёс в <code>DISTRICT_DESCRIPTIONS</code> и отображается в раскрывашке карточки района. Колонка «Уровень» убрана из таблицы районов как избыточная (дублировала числовую оценку).</div>
     </div>
   </div>
+  <div class="rlog-step">
+    <div class="rlog-num">46</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Геокодинг: retry с районом при расхождении GPT vs геокодер</div>
+      <div class="rlog-desc">Nominatim иногда возвращал правильную улицу, но в другом районе (например, <code>ul. Smardzewska</code> в «Osiedle Mikołaja Kopernika», тогда как GPT указывал «Stary Grunwald»). Добавлен районный retry: если <code>geo_district ≠ gpt_district</code> — повтор запроса в виде <code>«улица N, район, город, Polska»</code>. Если повтор даёт результат вне города — откат к первому варианту. Функция <code>_district_matches()</code> учитывает сокращения, подстроки и двойные названия через «/».</div>
+      <div class="rlog-why">Одна и та же улица может существовать в нескольких районах Познани. GPT читает контекст объявления — геокодер нет.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">47</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Геокодинг: лимит сдвига 5 км для объектов с известными координатами</div>
+      <div class="rlog-desc">Nominatim для части адресов возвращал правдоподобный, но неверный результат: 9 объявлений из разных районов получили одни и те же координаты (52.3738, 16.9750) в Жегже — потому что <code>ul. Drewnowskiego 10</code> есть в OSM, а нужных улиц там нет. Добавлена защита: если исходные координаты объявления дальше 800 м от Ратуша (т.е. не являются заглушкой Otodom), геокодер не может переместить объект более чем на 5 км. Для заглушек Otodom (≤800 м от центра) лимит не применяется.</div>
+      <div class="rlog-why">Геокодер не должен перекладывать объект из Дембца в Жегже только потому, что нашёл похожее название в OSM.</div>
+    </div>
+  </div>
+  <div class="rlog-step">
+    <div class="rlog-num">48</div>
+    <div class="rlog-body">
+      <div class="rlog-title">Бейдж NEW — пометка свежих объявлений в таблице</div>
+      <div class="rlog-desc">Добавлена пометка новых объявлений: <code>scrape_listings.py</code> вычисляет <code>new_ids = all_ids − seen_ids</code> (seen_ids.json —累积ный список всех когда-либо виденных ID) и сохраняет результат в <code>fresh_ids.json</code>. При сборке HTML <code>build_listings_html.py</code> читает этот файл и выставляет флаг <code>is_new</code> для каждой строки. В таблице добавлена отдельная узкая колонка между ℹ и заголовком объявления — для бейджа <span style="background:#dcfce7;color:#166534;font-size:10px;font-weight:700;padding:1px 5px;border-radius:3px">NEW</span>. Добавлен фильтр «Только новые» (чекбокс). На следующий день <code>seen_ids.json</code> обновляется и бейджи сбрасываются.</div>
+    </div>
+  </div>
 </div>
 </div>
 
@@ -695,7 +718,7 @@ a:hover{text-decoration:underline}
         <div class="hw-label">1. Парсинг Otodom — <span class="hw-code">scrape_listings.py</span> + <span class="hw-code">otodom_listings.py</span></div>
         <div class="hw-desc">
           <b>otodom_listings.py</b> парсит 4 поисковых URL: квартиры на первичном рынке в Познани, квартиры в познаньском повяте, дома в Познани, дома в повяте. Фильтры: 70–120 м², 600k–1 200k zł. Из встроенного JSON (<code>__NEXT_DATA__</code>) извлекаются: цена, площадь, комнаты, этаж, ЖК, координаты Otodom, слаг URL. Итог — <span class="hw-code">listings_latest.csv</span> (~700 строк).<br><br>
-          <b>scrape_listings.py</b> — оркестратор шага: запускает парсер, затем для каждого <em>нового</em> ID докачивает страницу объявления напрямую, чтобы получить координаты и фотографии (3 шт., индексы 1–3). Результаты кешируются в <span class="hw-code">coords_cache.json</span>. Координаты Otodom неточны (часто ставят пин у Ратуша или усредняют квартал) — поэтому они перезаписываются геокодером на следующем шаге. По итогам формируется <span class="hw-code">pending_notify.json</span> со списком новых ID для Telegram.
+          <b>scrape_listings.py</b> — оркестратор шага: запускает парсер, затем для каждого <em>нового</em> ID докачивает страницу объявления напрямую, чтобы получить координаты и фотографии (3 шт., индексы 1–3). Результаты кешируются в <span class="hw-code">coords_cache.json</span>. Координаты Otodom неточны (часто ставят пин у Ратуша или усредняют квартал) — поэтому они перезаписываются геокодером на следующем шаге. По итогам формируется <span class="hw-code">pending_notify.json</span> со списком новых ID для Telegram, а также <span class="hw-code">fresh_ids.json</span> — ID объявлений, которые не встречались ранее в <code>seen_ids.json</code>. Этот файл используется при сборке HTML для пометки новых объявлений бейджем NEW.
         </div>
       </div>
     </div>
@@ -705,13 +728,15 @@ a:hover{text-decoration:underline}
       <div class="hw-body">
         <div class="hw-label">2. Геокодинг — <span class="hw-code">geocode_coords.py</span></div>
         <div class="hw-desc">
-          Для каждого объявления без точных координат запускается 5-ступенчатый пайплайн:<br><br>
+          Для каждого объявления без точных координат запускается пайплайн с несколькими уровнями защиты от ошибок:<br><br>
           <b>① GPT-4o-mini (адресный анализ)</b> — читает польский текст объявления и возвращает JSON: <code>street</code>, <code>number</code> (номер дома), <code>city</code> (<em>фактическое</em> место, а не административный город — если в тексте упомянута деревня, GPT ставит её, не Познань), <code>district</code>, <code>confidence</code>. При low confidence обработка прекращается — объект остаётся с координатами Otodom.<br><br>
           <b>② Nominatim (OSM)</b> — структурированный запрос: <code>street=&lt;number&gt; &lt;street&gt;</code>, <code>city=&lt;city&gt;</code>, <code>country=pl</code>. Если геокодер вернул другой город — повтор без номера дома (улица + город).<br><br>
           <b>③ Photon (komoot.de)</b> — бесплатный geocoder на OSM. Запрос с геобиасом <code>lat=52.4&lon=16.9</code>, limit=5. Из результатов принимаются только объекты с <code>osm_key</code> в {place, highway, boundary, landuse} или <code>osm_value</code> в {residential, house, apartments, …} — иначе возвращаются POI (больницы, памятники) вместо адресов.<br><br>
           <b>④ OpenCage</b> — если Photon не дал результата, запрос к OpenCage API (бесплатно 2500 req/день) с <code>proximity=52.4,16.9</code> для приоритета Познаньского региона.<br><br>
           <b>⑤ Откат к центру города</b> — если ни один геокодер не нашёл улицу, но GPT определил населённый пункт, делается запрос «&lt;city&gt;, Polska» и объект ставится в центр деревни/посёлка.<br><br>
-          Все результаты кешируются в <span class="hw-code">coords_override.json</span> по ID объявления. Статусы: <code>ok</code>, <code>low_confidence</code>, <code>geocode_failed</code>, <code>geocode_too_vague</code>, <code>no_description</code>. Скорректированные координаты вписываются в CSV, а если населённый пункт изменился — обновляются <code>city</code> и <code>district</code>.
+          <b>⑥ Районный retry</b> — если геокодер вернул результат, но его район не совпадает с GPT-районом (например, GPT говорит «Stary Grunwald», геокодер возвращает «Osiedle Kopernika»), делается повторный запрос вида <code>«улица N, район, город, Polska»</code>. Это помогает разрешить неоднозначность для улиц, встречающихся в нескольких районах.<br><br>
+          <b>⑦ Лимит сдвига 5 км</b> — если у объявления уже есть конкретные координаты (дальше 800 м от Ратуша, то есть не заглушка Otodom), геокодированный результат принимается только если он не смещает объект более чем на 5 км. Защита от «мусорных» совпадений в OSM, когда геокодер находит похожее название улицы в другом районе города.<br><br>
+          Все результаты кешируются в <span class="hw-code">coords_override.json</span> по ID объявления. Статусы: <code>ok</code>, <code>low_confidence</code>, <code>geocode_failed</code>, <code>geocode_too_vague</code>, <code>no_description</code>, <code>geocoder_moved_too_far</code>. Скорректированные координаты вписываются в CSV, а если населённый пункт изменился — обновляются <code>city</code> и <code>district</code>.
         </div>
       </div>
     </div>
@@ -774,7 +799,7 @@ a:hover{text-decoration:underline}
       <div class="hw-body">
         <div class="hw-label">8. Коммит — <span class="hw-code">daily.yml</span></div>
         <div class="hw-desc">
-          Коммитит CSV, HTML, все JSON-кеши и <span class="hw-code">seen_ids.json</span>. Retry-цикл (3 попытки с <code>git pull --rebase --autostash</code>) защищает от конфликтов при ручных пушах — без него <span class="hw-code">seen_ids.json</span> не сохраняется и следующий прогон дублирует уведомления.
+          Коммитит CSV, HTML, все JSON-кеши, <span class="hw-code">seen_ids.json</span> и <span class="hw-code">fresh_ids.json</span>. Retry-цикл (3 попытки с <code>git pull --rebase --autostash</code>) защищает от конфликтов при ручных пушах — без него <span class="hw-code">seen_ids.json</span> не сохраняется и следующий прогон дублирует уведомления.
         </div>
       </div>
     </div>
@@ -1157,7 +1182,7 @@ return`<tr>
 <td style="text-align:center;white-space:nowrap">${sc_cell}</td>
 ${exp_cell}
 <td style="text-align:center;padding:0"><button class="info-btn" onclick="showScoreInfo(_rowMap.get('${r.id}'))">ℹ</button></td>
-<td style="text-align:center;padding:0">${r.is_new?'<span style="background:#dcfce7;color:#166534;font-size:9px;font-weight:700;padding:1px 4px;border-radius:3px;letter-spacing:.3px">NEW</span>':''}</td>
+<td style="text-align:center;padding:0 0 0 4px">${r.is_new?'<span style="background:#dcfce7;color:#166534;font-size:9px;font-weight:700;padding:1px 4px;border-radius:3px;letter-spacing:.3px">NEW</span>':''}</td>
 <td><a href="${r.url}" target="_blank" title="${r.title}">${r.title}</a></td>
 <td><span class="tp ${tc}">${tl}</span></td>
 <td style="white-space:nowrap">${ds_cell}</td>
