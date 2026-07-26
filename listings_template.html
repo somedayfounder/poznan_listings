@@ -1140,7 +1140,7 @@ for(const r of rs){
 groups.forEach(g=>g.sort((a,b)=>(b.score||0)-(a.score||0)));
 
 function rowHtml(r,toggle){
-const dc=r.dist_min!=null?`${r.dist_min} мин`:(r.dist!=null?r.dist.toFixed(1)+' км':'—');
+const dc=r.dist_min!=null?`🏛 ${r.dist_min} мин`:(r.dist!=null?r.dist.toFixed(1)+' км':'—');
 const dt_v=r.tram_min;
 const dt_c=dt_v==null?'#999':dt_v<=3?'#166534':dt_v<=7?'#1e40af':dt_v<=15?'#854d0e':'#991b1b';
 const dt_s=dt_v!=null?dt_v+' мин':'—';
@@ -1167,8 +1167,9 @@ const ds_c=ds>=8?'#166534':ds>=7?'#1e40af':ds>=5?'#854d0e':'#991b1b';
 const ds_label=r.district||r.city||'—';
 const ds_name_style=r.city==='Poznań'?'color:#166534':'color:#c2410c';
 const ds_anchor=`district-${ds_label.replace(/\s+/g,'-')}`;
-const proj_suffix=r.project?` <span style="color:#888;font-size:11px">(${r.project})</span>`:'';
-const ds_cell=`<a href="#${ds_anchor}" onclick="event.preventDefault();switchTab('districts');renderDistricts();setTimeout(()=>{const el=document.getElementById('${ds_anchor}');if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.style.background='#fef9c3';setTimeout(()=>el.style.background='',1500);}},50)" style="text-decoration:none;white-space:nowrap"><span style="color:${ds_c};font-weight:500">${ds}/10</span> <span style="${ds_name_style};font-size:11px">${ds_label}</span></a>${proj_suffix}`;
+const ds_full=ds_label+(r.project?` (${r.project})`:'');
+const ds_short=ds_full.length>30?ds_full.slice(0,29)+'…':ds_full;
+const ds_cell=`<a href="#${ds_anchor}" onclick="event.preventDefault();switchTab('districts');renderDistricts();setTimeout(()=>{const el=document.getElementById('${ds_anchor}');if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.style.background='#fef9c3';setTimeout(()=>el.style.background='',1500);}},50)" style="text-decoration:none" title="${ds_full}"><span style="color:${ds_c};font-weight:500">${ds}/10</span> <span style="${ds_name_style};font-size:11px">${ds_short}</span></a>`;
 const tram_cell=dt_v!=null?`<span style="color:${dt_c};font-weight:500">🚋 ${dt_s}</span>`:'—';
 const rail_cell=dr_v!=null?`<span style="color:${dr_c};font-weight:500">🚆 ${dr_s}</span>`:'—';
 const wk_v=r.walk;
