@@ -104,6 +104,7 @@ a:hover{text-decoration:underline}
   <th onclick="sort('score')" class="desc" style="min-width:60px">Оценка</th>
   <th style="width:28px;padding:0"></th>
   <th style="width:28px;padding:0"></th>
+  <th style="width:28px;padding:0"></th>
   <th onclick="sort('title')" style="min-width:220px">Объявление</th>
   <th onclick="sort('type')">Тип</th>
   <th onclick="sort('district_score')" style="min-width:100px">Район ★</th>
@@ -1130,8 +1131,7 @@ const FEAT_LABELS={'garage':'Гараж','parking':'Парковка','garden_m2
 const feats=r.features||{};
 const pos=Object.entries(feats).filter(([k,v])=>v===true||(k==='garden_m2'&&v>0)).map(([k])=>FEAT_LABELS[k]||k).join(', ');
 const neg=Object.entries(feats).filter(([k,v])=>v===true&&['needs_renovation','near_highway'].includes(k)).map(([k])=>FEAT_LABELS[k]||k).join(', ');
-const new_badge=r.is_new?`<span style="background:#dcfce7;color:#166534;font-size:9px;font-weight:700;padding:1px 4px;border-radius:3px;vertical-align:middle;margin-left:3px;letter-spacing:.3px">NEW</span>`:'';
-const sc_cell=`<span style="font-weight:600;color:${sc_c}">${sc}</span><span style="color:#999;font-size:11px">/10</span>${new_badge}`;
+const sc_cell=`<span style="font-weight:600;color:${sc_c}">${sc}</span><span style="color:#999;font-size:11px">/10</span>`;
 const ds=r.district_score!=null?r.district_score:6;
 const ds_c=ds>=8?'#166534':ds>=7?'#1e40af':ds>=5?'#854d0e':'#991b1b';
 const ds_label=r.district||r.city||'—';
@@ -1151,6 +1151,7 @@ return`<tr>
 <td style="text-align:center;white-space:nowrap">${sc_cell}</td>
 ${exp_cell}
 <td style="text-align:center;padding:0"><button class="info-btn" onclick="showScoreInfo(_rowMap.get('${r.id}'))">ℹ</button></td>
+<td style="text-align:center;padding:0">${r.is_new?'<span style="background:#dcfce7;color:#166534;font-size:9px;font-weight:700;padding:1px 4px;border-radius:3px;letter-spacing:.3px">NEW</span>':''}</td>
 <td><a href="${r.url}" target="_blank" title="${r.title}">${r.title}</a></td>
 <td><span class="tp ${tc}">${tl}</span></td>
 <td style="white-space:nowrap">${ds_cell}</td>
@@ -1169,8 +1170,7 @@ ${exp_cell}
 function subRowHtml(r,gid){
 const sc=r.score!=null?r.score:0;
 const sc_c=sc>=8?'#166534':sc>=6?'#1e40af':sc>=4?'#854d0e':'#991b1b';
-const new_badge=r.is_new?`<span style="background:#dcfce7;color:#166534;font-size:9px;font-weight:700;padding:1px 4px;border-radius:3px;vertical-align:middle;margin-left:3px;letter-spacing:.3px">NEW</span>`:'';
-const sc_cell=`<span style="font-weight:600;color:${sc_c}">${sc}</span><span style="color:#999;font-size:11px">/10</span>${new_badge}`;
+const sc_cell=`<span style="font-weight:600;color:${sc_c}">${sc}</span><span style="color:#999;font-size:11px">/10</span>`;
 const pr=r.price?r.price.toLocaleString('pl')+' zł':'—';
 const pm=r.price_m2?r.price_m2.toLocaleString('pl'):'—';
 const parts=[
@@ -1182,7 +1182,7 @@ const parts=[
 ].filter(Boolean).join(' · ');
 return`<tr class="tr-sub" data-g="${gid}">
 <td style="text-align:center;white-space:nowrap;padding-left:24px">${sc_cell}</td>
-<td colspan="14" style="color:#777"><a href="${r.url}" target="_blank" style="color:#666;margin-right:8px">${r.title}</a><span style="color:#aaa;font-size:11px">${parts}</span></td>
+<td colspan="15" style="color:#777"><a href="${r.url}" target="_blank" style="color:#666;margin-right:8px">${r.title}</a><span style="color:#aaa;font-size:11px">${parts}</span></td>
 </tr>`;}
 
 

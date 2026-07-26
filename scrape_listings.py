@@ -147,6 +147,7 @@ print(f'coords done, fetched={{fetched}}')
     (DATA_DIR / "fresh_ids.json").write_text(
         json.dumps({"ids": sorted(new_ids), "date": today}, ensure_ascii=False)
     )
+    print(f"Свежих объявлений (не было в seen_ids): {len(new_ids)}")
 
     print(f"Новых объявлений: {len(new_ids)}, всего: {len(all_ids)}")
 
