@@ -1130,7 +1130,8 @@ const FEAT_LABELS={'garage':'Гараж','parking':'Парковка','garden_m2
 const feats=r.features||{};
 const pos=Object.entries(feats).filter(([k,v])=>v===true||(k==='garden_m2'&&v>0)).map(([k])=>FEAT_LABELS[k]||k).join(', ');
 const neg=Object.entries(feats).filter(([k,v])=>v===true&&['needs_renovation','near_highway'].includes(k)).map(([k])=>FEAT_LABELS[k]||k).join(', ');
-const sc_cell=`<span style="font-weight:600;color:${sc_c}">${sc}</span><span style="color:#999;font-size:11px">/10</span>`;
+const new_badge=r.is_new?`<span style="background:#dcfce7;color:#166534;font-size:9px;font-weight:700;padding:1px 4px;border-radius:3px;vertical-align:middle;margin-left:3px;letter-spacing:.3px">NEW</span>`:'';
+const sc_cell=`<span style="font-weight:600;color:${sc_c}">${sc}</span><span style="color:#999;font-size:11px">/10</span>${new_badge}`;
 const ds=r.district_score!=null?r.district_score:6;
 const ds_c=ds>=8?'#166534':ds>=7?'#1e40af':ds>=5?'#854d0e':'#991b1b';
 const ds_label=r.district||r.city||'—';
