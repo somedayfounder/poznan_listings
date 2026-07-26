@@ -1169,7 +1169,7 @@ const ds_name_style=r.city==='Poznań'?'color:#166534':'color:#c2410c';
 const ds_anchor=`district-${ds_label.replace(/\s+/g,'-')}`;
 const ds_full=ds_label+(r.project?` (${r.project})`:'');
 const ds_short=ds_full.length>30?ds_full.slice(0,29)+'…':ds_full;
-const ds_cell=`<a href="#${ds_anchor}" onclick="event.preventDefault();switchTab('districts');renderDistricts();setTimeout(()=>{const el=document.getElementById('${ds_anchor}');if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.style.background='#fef9c3';setTimeout(()=>el.style.background='',1500);}},50)" style="text-decoration:none" title="${ds_full}"><span style="color:${ds_c};font-weight:500">${ds}/10</span> <span style="${ds_name_style};font-size:11px">${ds_short}</span></a>`;
+const ds_cell=`<a href="#${ds_anchor}" onclick="event.preventDefault();switchTab('districts');renderDistricts();setTimeout(()=>{const el=document.getElementById('${ds_anchor}');if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.style.background='#fef9c3';setTimeout(()=>el.style.background='',1500);}},50)" style="text-decoration:none" title="${ds_full}"><span style="color:${ds_c};font-weight:500">${ds}/10</span> <span style="${ds_name_style}">${ds_short}</span></a>`;
 const tram_cell=dt_v!=null?`<span style="color:${dt_c};font-weight:500">🚋 ${dt_s}</span>`:'—';
 const rail_cell=dr_v!=null?`<span style="color:${dr_c};font-weight:500">🚆 ${dr_s}</span>`:'—';
 const wk_v=r.walk;
