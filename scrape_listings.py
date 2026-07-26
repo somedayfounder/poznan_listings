@@ -143,6 +143,11 @@ print(f'coords done, fetched={{fetched}}')
         "date": today,
     }, ensure_ascii=False))
 
+    # fresh_ids.json — коммитится в репо, читается build_listings_html.py для пометки новых
+    (DATA_DIR / "fresh_ids.json").write_text(
+        json.dumps({"ids": sorted(new_ids), "date": today}, ensure_ascii=False)
+    )
+
     print(f"Новых объявлений: {len(new_ids)}, всего: {len(all_ids)}")
 
 

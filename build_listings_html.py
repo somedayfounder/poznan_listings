@@ -15,6 +15,10 @@ def _bearing_label(lat2, lon2):
 from pathlib import Path
 from score import score_from_jsrow, DISTRICT_SCORES, _DEFAULT_DISTRICT_SCORE, DISTRICT_DESCRIPTIONS, DISTRICT_SUMMARIES, DISTRICT_PROS, DISTRICT_CONS, _nuisance_penalty, _NUISANCE_SITES, _haversine, _noise_penalty
 
+_FRESH_FILE     = Path(__file__).parent / "fresh_ids.json"
+_fresh_raw      = json.loads(_FRESH_FILE.read_text()) if _FRESH_FILE.exists() else []
+_fresh_ids      = set(_fresh_raw["ids"] if isinstance(_fresh_raw, dict) else _fresh_raw)
+
 _RESCORE_FILE   = Path(__file__).parent / "rescore_results.json"
 _RESIDENT_FILE  = Path(__file__).parent / "resident_scores.json"
 _rescore   = json.loads(_RESCORE_FILE.read_text())  if _RESCORE_FILE.exists()  else {}
@@ -180,6 +184,7 @@ for r in rows:
         "walk_type": ("rail" if rail_walk_min and rail_walk_min < (tram_details["walk_stop"]["walk_min"] if tram_details and tram_details.get("walk_stop") else tram_walk_min or 9999) else "tram") if (tram_walk_min or rail_walk_min or (tram_details and tram_details.get("walk_stop"))) else None,
         "url": r["url"],
         "lat": lat, "lon": lon,
+        "is_new": r["id"] in _fresh_ids,
     }
     feat = _feat_cache.get(r["id"], {})
     bonus = feat.get("_bonus", 0.0)
