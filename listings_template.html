@@ -97,10 +97,10 @@ a:hover{text-decoration:underline}
     <option value="15">до 15 мин</option>
     <option value="20">до 20 мин</option>
   </select>
-  <label id="fnew-label" style="display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;color:#374151;cursor:pointer;height:30px;padding:5px 12px;border:1px solid #ccc;border-radius:6px;background:#fff;user-select:none">
-    <input type="checkbox" id="fnew" onchange="this.closest('label').style.background=this.checked?'#dcfce7':'#fff';this.closest('label').style.borderColor=this.checked?'#86efac':'#ccc';this.closest('label').style.color=this.checked?'#166534':'#374151';render()" style="width:13px;height:13px;cursor:pointer;accent-color:#16a34a">
-    Только новые
-  </label>
+  <select id="fnew" onchange="render()">
+    <option value="">Все объявления</option>
+    <option value="new">Только новые</option>
+  </select>
 </div>
 <div class="tbl-wrap">
 <table>
@@ -115,9 +115,8 @@ a:hover{text-decoration:underline}
   <th onclick="sort('area')">м²</th>
   <th onclick="sort('rooms')">Ком.</th>
   <th onclick="sort('floor')">Этаж</th>
-  <th onclick="sort('price')">Цена zł</th>
-  <th onclick="sort('price_m2')">zł/м²</th>
-  <th onclick="sort('project')" style="min-width:140px">Проект</th>
+  <th onclick="sort('price')" style="text-align:right">Цена</th>
+  <th onclick="sort('price_m2')" style="text-align:right">zł/м²</th>
   <th onclick="sort('dist_min')">До ратуши</th>
   <th onclick="sort('tram_min')">Трамвай</th>
   <th onclick="sort('rail_min')">Ж/д</th>
@@ -1104,7 +1103,7 @@ const q=(document.getElementById('sq').value||'').toLowerCase();
 const st=document.getElementById('st').value;
 const mtram=parseFloat(document.getElementById('stram').value)||Infinity;
 const mwalk=parseFloat(document.getElementById('swalk').value)||Infinity;
-const fnew=document.getElementById('fnew').checked;
+const fnew=document.getElementById('fnew').value==='new';
 let rs=D.filter(r=>{
   if(st&&r.type!==st)return false;
   if(mtram<Infinity&&(r.tram_min==null||r.tram_min>mtram))return false;
@@ -1141,8 +1140,7 @@ for(const r of rs){
 groups.forEach(g=>g.sort((a,b)=>(b.score||0)-(a.score||0)));
 
 function rowHtml(r,toggle){
-const bw=r.dist_min?Math.round(r.dist_min/60*55):0;
-const dc=r.dist_min!=null?`<span class="bar" style="width:${bw}px"></span>${r.dist_min} мин`:(r.dist!=null?r.dist.toFixed(1)+' км':'—');
+const dc=r.dist_min!=null?`${r.dist_min} мин`:(r.dist!=null?r.dist.toFixed(1)+' км':'—');
 const dt_v=r.tram_min;
 const dt_c=dt_v==null?'#999':dt_v<=3?'#166534':dt_v<=7?'#1e40af':dt_v<=15?'#854d0e':'#991b1b';
 const dt_s=dt_v!=null?dt_v+' мин':'—';
@@ -1152,7 +1150,7 @@ const dr_c=dr_v==null?'#999':dr_v<=5?'#166534':dr_v<=15?'#1e40af':dr_v<=30?'#854
 const dr_s=dr_v!=null?dr_v+' мин':'—';
 const dr=dr_v!=null?`<span style="color:${dr_c};font-weight:500" title="${r.rail_tip||''}">🚆 ${dr_s}</span>`:'';
 const transport=dt||dr?[dt,dr].filter(Boolean).join(' &nbsp;'):'—';
-const pr=r.price?r.price.toLocaleString('pl')+' zł':'—';
+const pr=r.price?r.price.toLocaleString('pl'):'—';
 const pm=r.price_m2?r.price_m2.toLocaleString('pl'):'—';
 const tc=r.type==='mieszkanie'?'m':'d';
 const tl=r.type==='mieszkanie'?'кв.':'дом';
@@ -1162,14 +1160,15 @@ const FEAT_LABELS={'garage':'Гараж','parking':'Парковка','garden_m2
 const feats=r.features||{};
 const pos=Object.entries(feats).filter(([k,v])=>v===true||(k==='garden_m2'&&v>0)).map(([k])=>FEAT_LABELS[k]||k).join(', ');
 const neg=Object.entries(feats).filter(([k,v])=>v===true&&['needs_renovation','near_highway'].includes(k)).map(([k])=>FEAT_LABELS[k]||k).join(', ');
-const sc_cell=`<span style="font-weight:600;color:${sc_c}">${sc}</span><span style="color:#999;font-size:11px">/10</span>`;
+const sc_fmt=sc%1===0?sc.toFixed(1):sc;
+const sc_cell=`<span style="font-weight:600;color:${sc_c}">${sc_fmt}</span><span style="color:#999;font-size:11px">/10</span>`;
 const ds=r.district_score!=null?r.district_score:6;
 const ds_c=ds>=8?'#166534':ds>=7?'#1e40af':ds>=5?'#854d0e':'#991b1b';
 const ds_label=r.district||r.city||'—';
 const ds_name_style=r.city==='Poznań'?'color:#166534':'color:#c2410c';
 const ds_anchor=`district-${ds_label.replace(/\s+/g,'-')}`;
-const ds_cell=`<a href="#${ds_anchor}" onclick="event.preventDefault();switchTab('districts');renderDistricts();setTimeout(()=>{const el=document.getElementById('${ds_anchor}');if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.style.background='#fef9c3';setTimeout(()=>el.style.background='',1500);}},50)" style="text-decoration:none"><span style="color:${ds_c};font-weight:500">${ds}/10</span> <span style="${ds_name_style};font-size:11px">${ds_label}</span></a>`;
-const proj_cell=r.project?`<span style="max-width:130px;overflow:hidden;text-overflow:ellipsis;color:#666;display:inline-block" title="${r.project}">${r.project}</span>`:'—';
+const proj_suffix=r.project?` <span style="color:#888;font-size:11px">(${r.project})</span>`:'';
+const ds_cell=`<a href="#${ds_anchor}" onclick="event.preventDefault();switchTab('districts');renderDistricts();setTimeout(()=>{const el=document.getElementById('${ds_anchor}');if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.style.background='#fef9c3';setTimeout(()=>el.style.background='',1500);}},50)" style="text-decoration:none;white-space:nowrap"><span style="color:${ds_c};font-weight:500">${ds}/10</span> <span style="${ds_name_style};font-size:11px">${ds_label}</span></a>${proj_suffix}`;
 const tram_cell=dt_v!=null?`<span style="color:${dt_c};font-weight:500">🚋 ${dt_s}</span>`:'—';
 const rail_cell=dr_v!=null?`<span style="color:${dr_c};font-weight:500">🚆 ${dr_s}</span>`:'—';
 const wk_v=r.walk;
@@ -1189,9 +1188,8 @@ ${exp_cell}
 <td>${r.area!=null?r.area:'—'}</td>
 <td>${r.rooms||'—'}</td>
 <td>${r.floor!=null?r.floor:'—'}</td>
-<td style="font-variant-numeric:tabular-nums">${pr}</td>
-<td style="font-variant-numeric:tabular-nums">${pm}</td>
-<td>${proj_cell}</td>
+<td style="font-variant-numeric:tabular-nums;text-align:right">${pr}</td>
+<td style="font-variant-numeric:tabular-nums;text-align:right">${pm}</td>
 <td style="white-space:nowrap">${dc}</td>
 <td style="white-space:nowrap">${tram_cell}</td>
 <td style="white-space:nowrap">${rail_cell}</td>
@@ -1201,19 +1199,20 @@ ${exp_cell}
 function subRowHtml(r,gid){
 const sc=r.score!=null?r.score:0;
 const sc_c=sc>=8?'#166534':sc>=6?'#1e40af':sc>=4?'#854d0e':'#991b1b';
-const sc_cell=`<span style="font-weight:600;color:${sc_c}">${sc}</span><span style="color:#999;font-size:11px">/10</span>`;
-const pr=r.price?r.price.toLocaleString('pl')+' zł':'—';
+const sc_fmt2=sc%1===0?sc.toFixed(1):sc;
+const sc_cell=`<span style="font-weight:600;color:${sc_c}">${sc_fmt2}</span><span style="color:#999;font-size:11px">/10</span>`;
+const pr=r.price?r.price.toLocaleString('pl'):'—';
 const pm=r.price_m2?r.price_m2.toLocaleString('pl'):'—';
 const parts=[
   r.area!=null?`${r.area} м²`:'',
   r.rooms?`${r.rooms} комн.`:'',
   r.floor!=null?`эт. ${r.floor}`:'',
-  r.price?pr:'',
+  r.price?pr+' zł':'',
   r.price_m2?`${pm}/м²`:'',
 ].filter(Boolean).join(' · ');
 return`<tr class="tr-sub" data-g="${gid}">
 <td style="text-align:center;white-space:nowrap;padding-left:24px">${sc_cell}</td>
-<td colspan="15" style="color:#777"><a href="${r.url}" target="_blank" style="color:#666;margin-right:8px">${r.title}</a><span style="color:#aaa;font-size:11px">${parts}</span></td>
+<td colspan="14" style="color:#777"><a href="${r.url}" target="_blank" style="color:#666;margin-right:8px">${r.title}</a><span style="color:#aaa;font-size:11px">${parts}</span></td>
 </tr>`;}
 
 
