@@ -1146,7 +1146,7 @@ const wk_c=wk_v==null?'#999':wk_v<=7?'#166534':wk_v<=15?'#1e40af':wk_v<=25?'#854
 const wk_icon=r.walk_type==='rail'?'🚆':'🚋';
 const walk_cell=wk_v!=null?`<span style="color:${wk_c};font-weight:500">${wk_icon} ${Math.round(wk_v)} мин</span>`:'—';
 
-const exp_cell=toggle?`<td style="text-align:center;padding:0">${toggle}</td>`:'<td></td>';
+const exp_cell=toggle?`<td style="text-align:center;padding:0 3px 0 0">${toggle}</td>`:'<td></td>';
 return`<tr>
 <td style="text-align:center;white-space:nowrap">${sc_cell}</td>
 ${exp_cell}
