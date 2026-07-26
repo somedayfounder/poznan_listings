@@ -79,6 +79,10 @@ a:hover{text-decoration:underline}
     <option value="mieszkanie">Квартиры</option>
     <option value="dom">Дома</option>
   </select>
+  <select id="fnew" onchange="render()">
+    <option value="">Все объявления</option>
+    <option value="new">Только новые</option>
+  </select>
   <select id="stram" onchange="render()">
     <option value="">До трамвая — любое</option>
     <option value="3">до 3 мин</option>
@@ -96,10 +100,6 @@ a:hover{text-decoration:underline}
     <option value="10">до 10 мин</option>
     <option value="15">до 15 мин</option>
     <option value="20">до 20 мин</option>
-  </select>
-  <select id="fnew" onchange="render()">
-    <option value="">Все объявления</option>
-    <option value="new">Только новые</option>
   </select>
 </div>
 <div class="tbl-wrap">
