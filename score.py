@@ -6,7 +6,7 @@ Weights:
   transport  20%  — drive time to tram stop (minutes, unified curve)
   price      15%  — ≤700k=10, 700–900k=10→7, 900k–1200k=7→0, >1200k=0
   area       20%  — 85–105m² ideal; <70 or >120 = 0
-  rooms      15%  — 4=10, 5=8, 3=7, 6=7, others=3
+  rooms      15%  — 4=10, 5=8, 3=5, 6=5, 1-2/7+=2, None=5
   type        0%  — neutral (9.0, does not affect score)
 
 Missing price or rooms: weight redistributed proportionally so the
@@ -883,8 +883,8 @@ def _score_rooms(rooms):
     if rooms == 5:
         return 8.0
     if rooms in (3, 6):
-        return 7.0
-    return 3.0  # ≤2 or 7+
+        return 5.0
+    return 2.0  # 1-2 or 7+
 
 
 def _score_transport(tp, tram_min, dist_center_min):
