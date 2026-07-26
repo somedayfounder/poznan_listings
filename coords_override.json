@@ -16456,5 +16456,428 @@
     "geo_city": "Poznań",
     "geo_district": "Jeżyce",
     "corrected": true
+  },
+  "96785905500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "poza miastem",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96777148500067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Cichej, Siekierki Wielkie, Polska",
+    "formatted": "Siekierki Wielkie, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Cichej",
+      "number": null,
+      "osiedle": "OSIEDLE CICHE",
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.38133,
+    "new_lon": 17.16391
+  },
+  "67391455": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Michalin",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67097211": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96736456000067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Północna, Pobiedziska, Polska",
+    "formatted": "Północna, Pobiedziska, Polska",
+    "addr": {
+      "street": "ul. Północna",
+      "number": null,
+      "osiedle": null,
+      "city": "Pobiedziska",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.491002,
+    "new_lon": 17.293875
+  },
+  "67693838": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66332469": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449057,
+    "new_lon": 16.960241,
+    "dist_m": 136,
+    "query": "ul. Bielicowa 4, Naramowice, Polska",
+    "formatted": "Bielicowa, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "4",
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "67893168": {
+    "skipped": "outside_bbox",
+    "query": "ul. św. Jana 1, Gwiazdowo, Polska",
+    "formatted": "Świętego Jana, 1, Gwiazdowo, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "number": "1",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.407361,
+    "new_lon": 17.212852
+  },
+  "96649370800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kostrzyn",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68250835": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68250455": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96813786000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96551547900067": {
+    "orig_lat": 52.28176,
+    "orig_lon": 16.61772,
+    "new_lat": 52.29473,
+    "new_lon": 16.629835,
+    "dist_m": 1661,
+    "query": "ul. Truskawkowa, Sapowice, Polska",
+    "formatted": "Truskawkowa, Sapowice, Polska",
+    "addr": {
+      "street": "ul. Truskawkowa",
+      "number": null,
+      "osiedle": "Osiedle nad Jeziorem",
+      "city": "Sapowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sapowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96810462500067": {
+    "orig_lat": 52.46231,
+    "orig_lon": 16.68282,
+    "new_lat": 52.46214,
+    "new_lon": 16.673124,
+    "dist_m": 657,
+    "query": "ul. Rolna, Tarnowo Podgórne, Polska",
+    "formatted": "Tarnowo Podgórne/Rolna n/ż, Poznańska, Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "ul. Rolna",
+      "number": null,
+      "osiedle": null,
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96668025400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Suchy Las",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96787892400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96402124000067": {
+    "orig_lat": 52.37246,
+    "orig_lon": 16.72698,
+    "new_lat": 52.372191,
+    "new_lon": 16.726914,
+    "dist_m": 30,
+    "query": "ul. Surfiniowej, Palędzie, Polska",
+    "formatted": "Surfiniowa, Palędzie, Polska",
+    "addr": {
+      "street": "ul. Surfiniowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Palędzie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Palędzie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96699717400067": {
+    "orig_lat": 52.31753,
+    "orig_lon": 16.85807,
+    "new_lat": 52.32055,
+    "new_lon": 16.8532,
+    "dist_m": 472,
+    "query": "ul. Łęczyckiej, Wiry, Polska",
+    "formatted": "Wiry, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Łęczyckiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Wiry",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Wiry",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96820868000067": {
+    "orig_lat": 52.44377,
+    "orig_lon": 16.89437,
+    "new_lat": 52.456781,
+    "new_lon": 16.887939,
+    "dist_m": 1511,
+    "query": "Podolany, Poznań, Polska",
+    "formatted": "Podolany, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "66416746": {
+    "orig_lat": 52.43822,
+    "orig_lon": 16.90979,
+    "new_lat": 52.438229,
+    "new_lon": 16.909791,
+    "dist_m": 1,
+    "query": "ul. Piątkowska 165 A-B, Poznań, Polska",
+    "formatted": "Piątkowska, 165A, Poznań, Polska",
+    "addr": {
+      "street": "ul. Piątkowska",
+      "number": "165 A-B",
+      "osiedle": "Witosa Park",
+      "city": "Poznań",
+      "district": "Winiary",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "96641674600067": {
+    "orig_lat": 52.43822,
+    "orig_lon": 16.90979,
+    "new_lat": 52.438229,
+    "new_lon": 16.909791,
+    "dist_m": 1,
+    "query": "ul. Piątkowska 165 A-B, Poznań, Polska",
+    "formatted": "Piątkowska, 165A, Poznań, Polska",
+    "addr": {
+      "street": "ul. Piątkowska",
+      "number": "165 A-B",
+      "osiedle": "Witosa Park",
+      "city": "Poznań",
+      "district": "Winiary",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "68251573": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96825157300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96821895900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96767548600067": {
+    "orig_lat": 52.38281,
+    "orig_lon": 16.84603,
+    "new_lat": 52.405248,
+    "new_lon": 16.900019,
+    "dist_m": 4432,
+    "query": "ul. Grunwaldzka, Poznań, Polska",
+    "formatted": "ulica Grunwaldzka/Matejki, Jana Matejki, 60-787 Poznań, Polska",
+    "addr": {
+      "street": "ul. Grunwaldzka",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Grunwald",
+    "corrected": true
+  },
+  "67761683": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 61,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka, 65, Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka",
+      "number": "65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "68000112": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28A, Grunwald, Polska",
+    "formatted": "Grunwald, Powiat ostródzki, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28A",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.48422,
+    "new_lon": 20.09425
+  },
+  "96784221500067": {
+    "orig_lat": 52.43946,
+    "orig_lon": 16.95715,
+    "new_lat": 52.44728,
+    "new_lon": 16.94977,
+    "dist_m": 1003,
+    "query": "ul. Maków Polnych 9, Naramowice, Polska",
+    "formatted": "Naramowice, Poznań, Polska",
+    "addr": {
+      "street": "ul. Maków Polnych",
+      "number": "9",
+      "osiedle": "FUELDA",
+      "city": "Naramowice",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Naramowice",
+    "geo_district": null,
+    "corrected": true
   }
 }
