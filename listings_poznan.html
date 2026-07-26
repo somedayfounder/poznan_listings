@@ -1181,8 +1181,8 @@ const exp_cell=toggle?`<td style="text-align:center;padding:0 3px 0 0">${toggle}
 return`<tr>
 <td style="text-align:center;white-space:nowrap">${sc_cell}</td>
 ${exp_cell}
-<td style="text-align:center;padding:0"><button class="info-btn" onclick="showScoreInfo(_rowMap.get('${r.id}'))">ℹ</button></td>
-<td style="text-align:center;padding:0 0 0 4px">${r.is_new?'<span style="background:#dcfce7;color:#166534;font-size:9px;font-weight:700;padding:1px 4px;border-radius:3px;letter-spacing:.3px">NEW</span>':''}</td>
+<td style="text-align:center;padding:0 4px 0 0"><button class="info-btn" onclick="showScoreInfo(_rowMap.get('${r.id}'))">ℹ</button></td>
+<td style="text-align:center;padding:0 4px 0 0">${r.is_new?'<span style="background:#dcfce7;color:#166534;font-size:9px;font-weight:700;padding:1px 4px;border-radius:3px;letter-spacing:.3px">NEW</span>':''}</td>
 <td><a href="${r.url}" target="_blank" title="${r.title}">${r.title}</a></td>
 <td><span class="tp ${tc}">${tl}</span></td>
 <td style="white-space:nowrap">${ds_cell}</td>
