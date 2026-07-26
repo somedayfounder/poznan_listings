@@ -113,10 +113,9 @@ a:hover{text-decoration:underline}
   <th onclick="sort('type')">Тип</th>
   <th onclick="sort('district_score')" style="min-width:100px">Район ★</th>
   <th onclick="sort('area')">м²</th>
-  <th onclick="sort('rooms')">Ком.</th>
-  <th onclick="sort('floor')">Этаж</th>
   <th onclick="sort('price')" style="text-align:right">Цена</th>
   <th onclick="sort('price_m2')" style="text-align:right">zł/м²</th>
+  <th onclick="sort('rooms')">Ком.</th>
   <th onclick="sort('dist_min')">До ратуши</th>
   <th onclick="sort('tram_min')">Трамвай</th>
   <th onclick="sort('rail_min')">Ж/д</th>
@@ -1187,10 +1186,9 @@ ${exp_cell}
 <td><span class="tp ${tc}">${tl}</span></td>
 <td style="white-space:nowrap">${ds_cell}</td>
 <td>${r.area!=null?r.area:'—'}</td>
-<td>${r.rooms||'—'}</td>
-<td>${r.floor!=null?r.floor:'—'}</td>
 <td style="font-variant-numeric:tabular-nums;text-align:right">${pr}</td>
 <td style="font-variant-numeric:tabular-nums;text-align:right">${pm}</td>
+<td>${r.rooms||'—'}</td>
 <td style="white-space:nowrap">${dc}</td>
 <td style="white-space:nowrap">${tram_cell}</td>
 <td style="white-space:nowrap">${rail_cell}</td>
@@ -1213,7 +1211,7 @@ const parts=[
 ].filter(Boolean).join(' · ');
 return`<tr class="tr-sub" data-g="${gid}">
 <td style="text-align:center;white-space:nowrap;padding-left:24px">${sc_cell}</td>
-<td colspan="14" style="color:#777"><a href="${r.url}" target="_blank" style="color:#666;margin-right:8px">${r.title}</a><span style="color:#aaa;font-size:11px">${parts}</span></td>
+<td colspan="13" style="color:#777"><a href="${r.url}" target="_blank" style="color:#666;margin-right:8px">${r.title}</a><span style="color:#aaa;font-size:11px">${parts}</span></td>
 </tr>`;}
 
 
