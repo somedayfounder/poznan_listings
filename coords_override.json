@@ -16879,5 +16879,654 @@
     "geo_city": "Naramowice",
     "geo_district": null,
     "corrected": true
+  },
+  "96745664700067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.40216,
+    "orig_lon": 16.85464,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 8757,
+    "orig_dist_to_center_m": 5398,
+    "query": "ul. Ptasiej, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Ptasiej",
+      "number": null,
+      "osiedle": "Ptasia Vita",
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    }
+  },
+  "67422357": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.443076,
+    "new_lon": 16.912969,
+    "dist_m": 227,
+    "query": "ul. Wojciechowskiego, Piątkowo, Polska",
+    "formatted": "Zygmunta Wojciechowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "null",
+      "osiedle": "Początek Piątkowo",
+      "city": "Piątkowo",
+      "district": "null",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "96795194000067": {
+    "orig_lat": 52.4457,
+    "orig_lon": 16.9119,
+    "new_lat": 52.444581,
+    "new_lon": 16.910307,
+    "dist_m": 165,
+    "query": "ul. Wojciechowskiego 7/17, Poznań, Polska",
+    "formatted": "Bricoman, Zygmunta Wojciechowskiego 7-17, 60-685 Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "7/17",
+      "osiedle": "Piątkowo Residence",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96795237800067": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.443076,
+    "new_lon": 16.912969,
+    "dist_m": 227,
+    "query": "ul. Wojciechowskiego, Poznań, Polska",
+    "formatted": "Zygmunta Wojciechowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": null,
+      "osiedle": "Początek Piątkowo",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "96818334800067": {
+    "orig_lat": 52.3841,
+    "orig_lon": 17.16786,
+    "new_lat": 52.371539,
+    "new_lon": 17.148337,
+    "dist_m": 1925,
+    "query": "ul. Szafirowa, Siekierki Wielkie, Polska",
+    "formatted": "Szafirowa, Siekierki Wielkie, Polska",
+    "addr": {
+      "street": "ul. Szafirowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": "gmina Kostrzyn",
+      "confidence": "high"
+    },
+    "geo_city": "Siekierki Wielkie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96352953400067": {
+    "orig_lat": 52.31547,
+    "orig_lon": 16.87666,
+    "new_lat": 52.314568,
+    "new_lon": 16.876111,
+    "dist_m": 107,
+    "query": "ul. Krzywej, Łęczyca, Polska",
+    "formatted": "Łęczyca Krzywa n/ż, Dworcowa, Łęczyca, Polska",
+    "addr": {
+      "street": "ul. Krzywej",
+      "number": null,
+      "osiedle": null,
+      "city": "Łęczyca",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łęczyca",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96748006000067": {
+    "orig_lat": 52.35456,
+    "orig_lon": 17.10923,
+    "new_lat": 52.354378,
+    "new_lon": 17.109029,
+    "dist_m": 24,
+    "query": "ul. Śnieżnej, Gowarzewo, Polska",
+    "formatted": "Śnieżna, Gowarzewo, Polska",
+    "addr": {
+      "street": "ul. Śnieżnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gowarzewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67329677": {
+    "orig_lat": 52.30313,
+    "orig_lon": 17.02308,
+    "new_lat": 52.307299,
+    "new_lon": 17.019376,
+    "dist_m": 528,
+    "query": "ul. Radiowa 33, Koninko, Polska",
+    "formatted": "Radiowa, 62-023 Koninko, Polska",
+    "addr": {
+      "street": "ul. Radiowa",
+      "number": "33",
+      "osiedle": "Inwestycja Koninko",
+      "city": "Koninko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Koninko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96816274200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96815614400067": {
+    "orig_lat": 52.41024,
+    "orig_lon": 17.07804,
+    "new_lat": 52.413242,
+    "new_lon": 17.116046,
+    "dist_m": 2599,
+    "query": "ul. Szkolna, Łowęcin, Polska",
+    "formatted": "Łowęcin Szkolna, Łowiecka, Łowęcin, Polska",
+    "addr": {
+      "street": "ul. Szkolna",
+      "number": null,
+      "osiedle": null,
+      "city": "Łowęcin",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łowęcin",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96661085300067": {
+    "orig_lat": 52.48588,
+    "orig_lon": 16.75904,
+    "new_lat": 52.477606,
+    "new_lon": 16.752574,
+    "dist_m": 1019,
+    "query": "osiedlu domów jednorodzinnych, Rogierówko, Polska",
+    "formatted": "Rogierówko, gmina Rokietnica, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "osiedlu domów jednorodzinnych",
+      "city": "Rogierówko",
+      "district": "gm. Rokietnica",
+      "confidence": "high"
+    },
+    "geo_city": "Rogierówko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96046279000067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Porzeczkowej, Bytków, Polska",
+    "formatted": "Bytków, gmina Rudna, powiat lubiński, województwo dolnośląskie, Polska",
+    "addr": {
+      "street": "ul. Porzeczkowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Bytków",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 51.531346,
+    "new_lon": 16.260085
+  },
+  "68252991": {
+    "orig_lat": 52.41689,
+    "orig_lon": 16.89925,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 449,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96495355400067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.49843,
+    "orig_lon": 16.77144,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 19557,
+    "orig_dist_to_center_m": 14880,
+    "query": "ul. Kierskiej, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Kierskiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68251970": {
+    "orig_lat": 52.43178,
+    "orig_lon": 16.94603,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 623,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "96821833100067": {
+    "orig_lat": 52.49334,
+    "orig_lon": 16.94365,
+    "new_lat": 52.48927,
+    "new_lon": 16.941774,
+    "dist_m": 470,
+    "query": "Lubczykowa Góra 3, Radojewo, Polska",
+    "formatted": "Rdestowa, Radojewo, Nowa Wieś Górna, Morasko-Radojewo, Poznań, województwo wielkopolskie, 61-680, Polska",
+    "addr": {
+      "street": "Lubczykowa Góra",
+      "number": "3",
+      "osiedle": "Lubczykowa Góra",
+      "city": "Radojewo",
+      "district": "null",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Morasko-Radojewo",
+    "corrected": true
+  },
+  "68252974": {
+    "orig_lat": 52.41669,
+    "orig_lon": 16.89925,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 430,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "67842743": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": "null",
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "96784274300067": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": "null",
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "68252982": {
+    "orig_lat": 52.41684,
+    "orig_lon": 16.89934,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 441,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "67842751": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "96819629700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "65407003": {
+    "orig_lat": 52.39177,
+    "orig_lon": 16.84631,
+    "new_lat": 52.39155,
+    "new_lon": 16.846851,
+    "dist_m": 44,
+    "query": "Jeleniogórska 5, Poznań, Polska",
+    "formatted": "5, Jeleniogórska, Junikowo, Poznań, województwo wielkopolskie, 60-179, Polska",
+    "addr": {
+      "street": "Jeleniogórska",
+      "number": "5",
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "medium"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "68251862": {
+    "orig_lat": 52.38071,
+    "orig_lon": 16.94631,
+    "new_lat": 52.382758,
+    "new_lon": 16.952265,
+    "dist_m": 464,
+    "query": "Nowe Miasto - Rataje, Poznań, Polska",
+    "formatted": "Straż Miejska Referat Nowe Miasto, 35A, Osiedle Bohaterów II Wojny Światowej, Rataje, Poznań, województwo wielkopolskie, 61-386, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Nowe Miasto - Rataje",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Rataje",
+    "corrected": true
+  },
+  "96824500200067": {
+    "orig_lat": 52.41024,
+    "orig_lon": 17.07804,
+    "new_lat": 52.416782,
+    "new_lon": 17.10164,
+    "dist_m": 1758,
+    "query": "ul. Gerberowej, Jasin, Polska",
+    "formatted": "Gerberowa, Jasin, Polska",
+    "addr": {
+      "street": "ul. Gerberowej",
+      "number": null,
+      "osiedle": "Gerberowa Park",
+      "city": "Jasin",
+      "district": "gmina Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Jasin",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68251972": {
+    "orig_lat": 52.43241,
+    "orig_lon": 16.94655,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 619,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "96807326300067": {
+    "orig_lat": 52.39769,
+    "orig_lon": 16.92545,
+    "new_lat": 52.397184,
+    "new_lon": 16.926392,
+    "dist_m": 85,
+    "query": "ul. Dolna Wilda 12, Poznań, Polska",
+    "formatted": "Dolna Wilda, 12, Poznań, Polska",
+    "addr": {
+      "street": "ul. Dolna Wilda",
+      "number": "12",
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "68252463": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96803061300067": {
+    "orig_lat": 52.45718,
+    "orig_lon": 16.88339,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 1674,
+    "query": "Jasielska 8C, Poznań, Polska",
+    "formatted": "8c, Jasielska, Podolany, Poznań, województwo wielkopolskie, 60-476, Polska",
+    "addr": {
+      "street": "Jasielska",
+      "number": "8C",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce/Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "67761685": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 61,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka, 65, Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka",
+      "number": "65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "68252647": {
+    "skipped": "geocode_city_only",
+    "query": "nowoczesnej inwestycji, Poznań, Polska",
+    "formatted": "Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "nowoczesnej inwestycji",
+      "city": "Poznań",
+      "district": "Grunwald - Marcelin",
+      "confidence": "high"
+    }
+  },
+  "96821042900067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Świerzawska, Marcelin, Polska",
+    "formatted": "Marcelin, gmina Szczecinek, powiat szczecinecki, województwo zachodniopomorskie, 78-422, Polska",
+    "addr": {
+      "street": "ul. Świerzawska",
+      "number": null,
+      "osiedle": null,
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.717545,
+    "new_lon": 16.744522
+  },
+  "96633327700067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Ptasia 28, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Ptasia",
+      "number": "28",
+      "osiedle": "Symfonia Ptasia",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "68121604": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67761662": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 61,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka, 65, Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka",
+      "number": "65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
   }
 }
