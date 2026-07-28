@@ -17528,5 +17528,537 @@
     "geo_city": "Poznań",
     "geo_district": "Winiary",
     "corrected": false
+  },
+  "67422320": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.443893,
+    "new_lon": 16.914164,
+    "dist_m": 161,
+    "query": "ul. Wojciechowskiego 4, Poznań, Polska",
+    "formatted": "Zygmunta Wojciechowskiego, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "4",
+      "osiedle": "Początek Piątkowo",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "67905057": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Pamiątkowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68256711": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Bylin",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96586631400067": {
+    "orig_lat": 52.4076,
+    "orig_lon": 17.07351,
+    "new_lat": 52.378827,
+    "new_lon": 17.093522,
+    "dist_m": 3476,
+    "query": "PARK Kruszewnia, Kruszewnia, Polska",
+    "formatted": "Park Kruszewnia, Kruszewnia, gmina Swarzędz, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "PARK Kruszewnia",
+      "city": "Kruszewnia",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Kruszewnia",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96796514700067": {
+    "orig_lat": 52.26485,
+    "orig_lon": 17.07377,
+    "new_lat": 52.26752,
+    "new_lon": 17.06543,
+    "dist_m": 641,
+    "query": "Aurum Development, Skrzynki, Polska",
+    "formatted": "Skrzynki, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Aurum Development",
+      "city": "Skrzynki",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Skrzynki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96801992100067": {
+    "orig_lat": 52.3558,
+    "orig_lon": 16.88343,
+    "new_lat": 52.356744,
+    "new_lon": 16.880542,
+    "dist_m": 222,
+    "query": "Ul. Świerczewska, Luboń, Polska",
+    "formatted": "Świerczewska, Luboń, Polska",
+    "addr": {
+      "street": "Ul. Świerczewska",
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Żabikowo",
+    "corrected": true
+  },
+  "96745686100067": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "96520464600067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wieruszowska 8L_2, Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8L_2",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68254703": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68256181": {
+    "orig_lat": 52.41204,
+    "orig_lon": 16.6791,
+    "new_lat": 52.4039,
+    "new_lon": 16.67696,
+    "dist_m": 917,
+    "query": "gmina Tarnowo Podgórne, Sierosław, Polska",
+    "formatted": "Sierosław, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Sierosław",
+      "district": "gmina Tarnowo Podgórne",
+      "confidence": "high"
+    },
+    "geo_city": "Sierosław",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67456782": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "96821545900067": {
+    "orig_lat": 52.29333,
+    "orig_lon": 17.00515,
+    "new_lat": 52.296071,
+    "new_lon": 17.007659,
+    "dist_m": 349,
+    "query": "ul. Choinkowa, Szczytniki, Polska",
+    "formatted": "Choinkowa, Szczytniki, Polska",
+    "addr": {
+      "street": "ul. Choinkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96813552500067": {
+    "orig_lat": 52.4922,
+    "orig_lon": 16.73335,
+    "new_lat": 52.491967,
+    "new_lon": 16.734856,
+    "dist_m": 105,
+    "query": "ul. Teatralnej, Napachanie, Polska",
+    "formatted": "Teatralna, Napachanie, Polska",
+    "addr": {
+      "street": "ul. Teatralnej",
+      "number": null,
+      "osiedle": "Osiedle Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68256172": {
+    "orig_lat": 52.48789,
+    "orig_lon": 16.9878,
+    "new_lat": 52.487733,
+    "new_lon": 16.987695,
+    "dist_m": 19,
+    "query": "ul. Szarotkowej, Miękowo, Polska",
+    "formatted": "Szarotkowa, Miękowo, Polska",
+    "addr": {
+      "street": "ul. Szarotkowej",
+      "number": null,
+      "osiedle": "Osiedle Brzozowe Parcele",
+      "city": "Miękowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Miękowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96824854300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67701074": {
+    "orig_lat": 52.44365,
+    "orig_lon": 16.8932,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 115,
+    "query": "ul. Jasielska 8C, Podolany, Polska",
+    "formatted": "Jasielska, 8c, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": "8C",
+      "osiedle": "Jasielska 8C",
+      "city": "Podolany",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "67701103": {
+    "orig_lat": 52.44365,
+    "orig_lon": 16.8932,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 115,
+    "query": "ul. Jasielska 8C, Poznań, Polska",
+    "formatted": "Jasielska, 8c, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": "8C",
+      "osiedle": "Park Podolany",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "68254099": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.40924,
+    "orig_lon": 16.8754,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 7824,
+    "orig_dist_to_center_m": 3949,
+    "query": "ul. Jesiennej 2, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jesiennej",
+      "number": "2",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    }
+  },
+  "96796254900067": {
+    "orig_lat": 52.43614,
+    "orig_lon": 16.83065,
+    "new_lat": 52.438189,
+    "new_lon": 16.830541,
+    "dist_m": 228,
+    "query": "Santocka 99, Smochowice, Polska",
+    "formatted": "Santocka, Smochowice, Krzyżowniki-Smochowice, Poznań, województwo wielkopolskie, 60-432, Polska",
+    "addr": {
+      "street": "Santocka",
+      "number": "99",
+      "osiedle": null,
+      "city": "Smochowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Smochowice",
+    "corrected": true
+  },
+  "68256918": {
+    "orig_lat": 52.29419,
+    "orig_lon": 17.08203,
+    "new_lat": 52.293827,
+    "new_lon": 17.08164,
+    "dist_m": 48,
+    "query": "Jałowcowa, Dachowa, Polska",
+    "formatted": "Jałowcowa, Dachowa, gmina Kórnik, powiat poznański, województwo wielkopolskie, 62-023, Polska",
+    "addr": {
+      "street": "Jałowcowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68256251": {
+    "orig_lat": 52.48789,
+    "orig_lon": 16.9878,
+    "new_lat": 52.487733,
+    "new_lon": 16.987695,
+    "dist_m": 19,
+    "query": "ul. Szarotkowej, Miękowo, Polska",
+    "formatted": "Szarotkowa, Miękowo, Polska",
+    "addr": {
+      "street": "ul. Szarotkowej",
+      "number": null,
+      "osiedle": "Osiedle Brzozowe Parcele",
+      "city": "Miękowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Miękowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68256218": {
+    "skipped": "geocode_failed",
+    "query": "Mięków, Polska",
+    "addr": {
+      "street": "ul. Szarotkowej",
+      "number": null,
+      "osiedle": "Brzozowe Parcele",
+      "city": "Mięków",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96825298200067": {
+    "orig_lat": 52.41684,
+    "orig_lon": 16.89934,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 441,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "66213382": {
+    "orig_lat": 52.4076,
+    "orig_lon": 17.07351,
+    "new_lat": 52.440706,
+    "new_lon": 17.028063,
+    "dist_m": 4801,
+    "query": "Asfaltowa, Janikowo, Polska",
+    "formatted": "Asfaltowa, Janikowo, gmina Swarzędz, powiat poznański, województwo wielkopolskie, 61-070, Polska",
+    "addr": {
+      "street": "Asfaltowa",
+      "number": null,
+      "osiedle": "Osiedle Olchowe Zacisze",
+      "city": "Janikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Janikowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96690220500067": {
+    "orig_lat": 52.44476,
+    "orig_lon": 16.89522,
+    "new_lat": 52.442458,
+    "new_lon": 16.893541,
+    "dist_m": 280,
+    "query": "ul. Jasielska, Poznań, Polska",
+    "formatted": "Jasielska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": null,
+      "osiedle": "JA_SIELSKA",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "96822358500067": {
+    "orig_lat": 52.41445,
+    "orig_lon": 16.89577,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 488,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96569875800067": {
+    "orig_lat": 52.38324,
+    "orig_lon": 16.84562,
+    "new_lat": 52.382766,
+    "new_lon": 16.845838,
+    "dist_m": 55,
+    "query": "Ziębicka 30, Poznań, Polska",
+    "formatted": "30, Ziębicka, Junikowo, Poznań, województwo wielkopolskie, 60-164, Polska",
+    "addr": {
+      "street": "Ziębicka",
+      "number": "30",
+      "osiedle": "Ziębicka 30",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "67842894": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "96776166200067": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 61,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka, 65, Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka",
+      "number": "65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "67968556": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
   }
 }
