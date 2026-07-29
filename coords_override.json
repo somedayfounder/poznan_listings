@@ -18060,5 +18060,662 @@
     },
     "new_lat": 53.485266,
     "new_lon": 20.091529
+  },
+  "68260385": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96797374800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68260386": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68260546": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68260547": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68258955": {
+    "skipped": "outside_bbox",
+    "query": "Promno, Promno, Polska",
+    "formatted": "Promno, 194, Promno-Stacja, Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, 62-007, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.471684,
+    "new_lon": 17.21483
+  },
+  "68260540": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96702717100067": {
+    "orig_lat": 52.35432,
+    "orig_lon": 17.1126,
+    "new_lat": 52.3616,
+    "new_lon": 17.132301,
+    "dist_m": 1564,
+    "query": "4 Pory Roku, Gowarzewo, Polska",
+    "formatted": "Gowarzewo, gmina Kleszczewo, powiat poznański, województwo wielkopolskie, 63-004, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "4 Pory Roku",
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gowarzewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67220149": {
+    "skipped": "geocode_city_only",
+    "query": "null 26/B, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "null",
+      "number": "26/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "67220153": {
+    "skipped": "geocode_city_only",
+    "query": "null 20/B, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "null",
+      "number": "20/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "68260545": {
+    "orig_lat": 52.29129,
+    "orig_lon": 16.96902,
+    "new_lat": 52.30002,
+    "new_lon": 16.95723,
+    "dist_m": 1259,
+    "query": "gmina Mosina, Daszewice, Polska",
+    "formatted": "Daszewice, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Daszewice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68260544": {
+    "orig_lat": 52.29129,
+    "orig_lon": 16.96902,
+    "new_lat": 52.30002,
+    "new_lon": 16.95723,
+    "dist_m": 1259,
+    "query": "gmina Mosina, Daszewice, Polska",
+    "formatted": "Daszewice, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Daszewice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68260390": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96801563500067": {
+    "orig_lat": 52.50458,
+    "orig_lon": 16.72952,
+    "new_lat": 52.510322,
+    "new_lon": 16.742124,
+    "dist_m": 1066,
+    "query": "ul. Leśnej, Rokietnica, Polska",
+    "formatted": "Rokietnica, gmina Rokietnica, powiat poznański, województwo wielkopolskie, 62-090, Polska",
+    "addr": {
+      "street": "ul. Leśnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68260543": {
+    "orig_lat": 52.29333,
+    "orig_lon": 17.00515,
+    "new_lat": 52.296071,
+    "new_lon": 17.007659,
+    "dist_m": 349,
+    "query": "ul. Choinkowa, Szczytniki, Polska",
+    "formatted": "Choinkowa, Szczytniki, Polska",
+    "addr": {
+      "street": "ul. Choinkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68260542": {
+    "orig_lat": 52.29333,
+    "orig_lon": 17.00515,
+    "new_lat": 52.296071,
+    "new_lon": 17.007659,
+    "dist_m": 349,
+    "query": "ul. Choinkowa, Szczytniki, Polska",
+    "formatted": "Choinkowa, Szczytniki, Polska",
+    "addr": {
+      "street": "ul. Choinkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68260548": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68260387": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96781781000067": {
+    "orig_lat": 52.47088,
+    "orig_lon": 16.98809,
+    "new_lat": 52.47088,
+    "new_lon": 16.988795,
+    "dist_m": 48,
+    "query": "ul. Wschodnia 14, Czerwonak, Polska",
+    "formatted": "Wschodnia, 14, Czerwonak, Polska",
+    "addr": {
+      "street": "ul. Wschodnia",
+      "number": "14",
+      "osiedle": null,
+      "city": "Czerwonak",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czerwonak",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96782237600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kruszewnia",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68257522": {
+    "orig_lat": 52.61476,
+    "orig_lon": 17.09083,
+    "new_lat": 52.61499,
+    "new_lon": 17.0905,
+    "dist_m": 34,
+    "query": "EKO-Łopuchowo, Łopuchowo, Polska",
+    "formatted": "Łopuchowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "EKO-Łopuchowo",
+      "city": "Łopuchowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łopuchowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96766865100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kostrzyn Wielkopolski",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67465223": {
+    "orig_lat": 52.44608,
+    "orig_lon": 16.89413,
+    "new_lat": 52.442458,
+    "new_lon": 16.893541,
+    "dist_m": 405,
+    "query": "ul. Jasielska, Podolany, Polska",
+    "formatted": "Jasielska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": null,
+      "osiedle": "Sielskie Podolany",
+      "city": "Podolany",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "68260383": {
+    "skipped": "outside_bbox",
+    "query": "ul. Owocowa, Kleszczewo, Polska",
+    "formatted": "Owocowa, Kleszczewo, Polska",
+    "addr": {
+      "street": "ul. Owocowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Kleszczewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.334722,
+    "new_lon": 17.174809
+  },
+  "68260379": {
+    "skipped": "outside_bbox",
+    "query": "ul. Owocowa, Kleszczewo, Polska",
+    "formatted": "Owocowa, Kleszczewo, Polska",
+    "addr": {
+      "street": "ul. Owocowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Kleszczewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.334722,
+    "new_lon": 17.174809
+  },
+  "96663191300067": {
+    "orig_lat": 52.44268,
+    "orig_lon": 16.69837,
+    "new_lat": 52.442614,
+    "new_lon": 16.698397,
+    "dist_m": 8,
+    "query": "ul. Plucińskiego 52/1, Lusowo, Polska",
+    "formatted": "Zygmunta Plucińskiego 52, 62-080 Lusowo, Polska",
+    "addr": {
+      "street": "ul. Plucińskiego",
+      "number": "52/1",
+      "osiedle": null,
+      "city": "Lusowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96647683400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Błażejewko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66317733": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67465195": {
+    "orig_lat": 52.44608,
+    "orig_lon": 16.89413,
+    "new_lat": 52.442458,
+    "new_lon": 16.893541,
+    "dist_m": 405,
+    "query": "ul. Jasielska 4, Podolany, Polska",
+    "formatted": "Jasielska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": "4",
+      "osiedle": "Sielskie Podolany",
+      "city": "Podolany",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "96777757200067": {
+    "orig_lat": 52.45807,
+    "orig_lon": 16.70256,
+    "new_lat": 52.458082,
+    "new_lon": 16.702503,
+    "dist_m": 4,
+    "query": "ul. Wesoła, Tarnowo Podgórne, Polska",
+    "formatted": "Wesoła, Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "ul. Wesoła",
+      "number": null,
+      "osiedle": null,
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": "Marianów",
+    "corrected": false
+  },
+  "68258822": {
+    "orig_lat": 52.41678,
+    "orig_lon": 17.10164,
+    "new_lat": 52.416782,
+    "new_lon": 17.10164,
+    "dist_m": 0,
+    "query": "Gerberowa Park, Jasin, Polska",
+    "formatted": "Gerberowa, Jasin, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Gerberowa Park",
+      "city": "Jasin",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jasin",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68258774": {
+    "orig_lat": 52.41678,
+    "orig_lon": 17.10164,
+    "new_lat": 52.416782,
+    "new_lon": 17.10164,
+    "dist_m": 0,
+    "query": "Gerberowa Park, Jasin, Polska",
+    "formatted": "Gerberowa, Jasin, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Gerberowa Park",
+      "city": "Jasin",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jasin",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96754384300067": {
+    "orig_lat": 52.44644,
+    "orig_lon": 16.95949,
+    "new_lat": 52.446071,
+    "new_lon": 16.953867,
+    "dist_m": 383,
+    "query": "ul. Sielawy, Naramowice, Polska",
+    "formatted": "Sielawy, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sielawy",
+      "number": null,
+      "osiedle": "Zielony Żurawiniec",
+      "city": "Naramowice",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": true
+  },
+  "96817688800067": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68258500": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67767311": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 61,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka, 65, Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka",
+      "number": "65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "67842882": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "66209394": {
+    "orig_lat": 52.44086,
+    "orig_lon": 17.02861,
+    "new_lat": 52.440706,
+    "new_lon": 17.028063,
+    "dist_m": 41,
+    "query": "Asfaltowa, Janikowo, Polska",
+    "formatted": "Asfaltowa, Janikowo, gmina Swarzędz, powiat poznański, województwo wielkopolskie, 61-070, Polska",
+    "addr": {
+      "street": "Asfaltowa",
+      "number": null,
+      "osiedle": "Osiedle Olchowe Zacisze",
+      "city": "Janikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Janikowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96789429000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96746929000067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Leśnych Skrzatów, Marcelin, Polska",
+    "formatted": "Marcelin, Powiat miński, Polska",
+    "addr": {
+      "street": "ul. Leśnych Skrzatów",
+      "number": null,
+      "osiedle": "Zacisze Marcelin",
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.3463,
+    "new_lon": 21.79482
+  },
+  "68259036": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67968584": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
   }
 }
