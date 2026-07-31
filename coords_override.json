@@ -19832,5 +19832,318 @@
     },
     "new_lat": 53.48422,
     "new_lon": 20.09425
+  },
+  "67893163": {
+    "skipped": "outside_bbox",
+    "query": "ul. św. Jana 3, Gwiazdowo, Polska",
+    "formatted": "Świętego Jana, 3, Gwiazdowo, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "number": "3",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.407294,
+    "new_lon": 17.21285
+  },
+  "96789316900067": {
+    "skipped": "outside_bbox",
+    "query": "ul. św. Jana 8, Gwiazdowo, Polska",
+    "formatted": "Gwiazdowo, Karwie, gmina Mrągowo, powiat mrągowski, województwo warmińsko-mazurskie, 11-700, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "number": "8",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.8243,
+    "new_lon": 21.286328
+  },
+  "96822117400067": {
+    "orig_lat": 52.4353,
+    "orig_lon": 17.06231,
+    "new_lat": 52.427159,
+    "new_lon": 17.068801,
+    "dist_m": 1007,
+    "query": "Ostoja Gruszczyn, Gruszczyn, Polska",
+    "formatted": "Ogrody Działkowe w Gruszczynie, Gruszczyn, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Ostoja Gruszczyn",
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gruszczyn",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68002303": {
+    "orig_lat": 52.54181,
+    "orig_lon": 16.9753,
+    "new_lat": 52.538956,
+    "new_lon": 16.971847,
+    "dist_m": 394,
+    "query": "ul. Obornicka, Bolechowo Osiedle, Polska",
+    "formatted": "Bolechowo-Osiedle, gmina Czerwonak, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Obornicka",
+      "number": null,
+      "osiedle": "Bolechowo Osiedle",
+      "city": "Bolechowo Osiedle",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Bolechowo-Osiedle",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96738905800067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.41363,
+    "orig_lon": 16.71411,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 18249,
+    "orig_dist_to_center_m": 14900,
+    "query": "ul. Agatowej, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Agatowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "94728604800067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Młyńskiej, Konarzewo, Polska",
+    "formatted": "Konarzewo, gmina Nowogard, powiat goleniowski, województwo zachodniopomorskie, 72-207, Polska",
+    "addr": {
+      "street": "ul. Młyńskiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": "gm. Dopiewo",
+      "confidence": "high"
+    },
+    "new_lat": 53.699863,
+    "new_lon": 15.225413
+  },
+  "68265855": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96819628900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68267630": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96806926600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96814595800067": {
+    "orig_lat": 52.36803,
+    "orig_lon": 16.8325,
+    "new_lat": 52.366348,
+    "new_lon": 16.818122,
+    "dist_m": 994,
+    "query": "ul. Bursztynowa, Plewiska, Polska",
+    "formatted": "Bursztynowa, Plewiska, Polska",
+    "addr": {
+      "street": "ul. Bursztynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Plewiska",
+    "geo_district": "Aniołowo",
+    "corrected": true
+  },
+  "96822011200067": {
+    "orig_lat": 52.40827,
+    "orig_lon": 16.93352,
+    "new_lat": 52.48927,
+    "new_lon": 16.941774,
+    "dist_m": 9024,
+    "query": "Lubczykowa Góra 3, Radojewo, Polska",
+    "formatted": "Rdestowa, Radojewo, Nowa Wieś Górna, Morasko-Radojewo, Poznań, województwo wielkopolskie, 61-680, Polska",
+    "addr": {
+      "street": "Lubczykowa Góra",
+      "number": "3",
+      "osiedle": "Lubczykowa Góra",
+      "city": "Radojewo",
+      "district": "null",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Morasko-Radojewo",
+    "corrected": true
+  },
+  "96805395100067": {
+    "orig_lat": 52.44339,
+    "orig_lon": 16.9183,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 0,
+    "query": "Lechicka 65, Poznań, Polska",
+    "formatted": "65, Lechicka, Piątkowo, Poznań, województwo wielkopolskie, 61-693, Polska",
+    "addr": {
+      "street": "Lechicka",
+      "number": "65",
+      "osiedle": "Lechicka 65",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96628858300067": {
+    "orig_lat": 52.43822,
+    "orig_lon": 16.90979,
+    "new_lat": 52.438229,
+    "new_lon": 16.909791,
+    "dist_m": 1,
+    "query": "ul. Piątkowska 165 A-B, Poznań, Polska",
+    "formatted": "Piątkowska, 165A, Poznań, Polska",
+    "addr": {
+      "street": "ul. Piątkowska",
+      "number": "165 A-B",
+      "osiedle": "Witosa Park",
+      "city": "Poznań",
+      "district": "Winiary",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "68026480": {
+    "orig_lat": 52.38217,
+    "orig_lon": 16.91298,
+    "new_lat": 52.392373,
+    "new_lon": 16.920046,
+    "dist_m": 1232,
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "number": null,
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "67927219": {
+    "skipped": "outside_bbox",
+    "query": "ul. Leśnych Skrzatów, Marcelin, Polska",
+    "formatted": "Marcelin, Powiat miński, Polska",
+    "addr": {
+      "street": "ul. Leśnych Skrzatów",
+      "number": null,
+      "osiedle": "Zacisze Marcelin",
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.3463,
+    "new_lon": 21.79482
+  },
+  "96665007200067": {
+    "orig_lat": 52.41873,
+    "orig_lon": 16.90318,
+    "new_lat": 52.415748,
+    "new_lon": 16.903088,
+    "dist_m": 332,
+    "query": "ul. Barańczaka, Poznań, Polska",
+    "formatted": "Stanisława Barańczaka, Poznań, Polska",
+    "addr": {
+      "street": "ul. Barańczaka",
+      "number": null,
+      "osiedle": "Goplana",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96817534700067": {
+    "orig_lat": 52.35473,
+    "orig_lon": 17.03026,
+    "new_lat": 52.354989,
+    "new_lon": 17.030268,
+    "dist_m": 29,
+    "query": "ul. Szczepankowo 137, Poznań, Polska",
+    "formatted": "Szczepankowo 137, 61-313 Poznań, Polska",
+    "addr": {
+      "street": "ul. Szczepankowo",
+      "number": "137",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Szczepankowo",
+    "corrected": false
   }
 }
