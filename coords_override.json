@@ -20517,5 +20517,369 @@
     "geo_city": "Poznań",
     "geo_district": "Stare Miasto",
     "corrected": false
+  },
+  "96742232000067": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.443893,
+    "new_lon": 16.914164,
+    "dist_m": 161,
+    "query": "ul. Wojciechowskiego 4, Poznań, Polska",
+    "formatted": "Zygmunta Wojciechowskiego, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "4",
+      "osiedle": "Początek Piątkowo",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96670701300067": {
+    "orig_lat": 52.38921,
+    "orig_lon": 16.85909,
+    "new_lat": 52.389515,
+    "new_lon": 16.859701,
+    "dist_m": 54,
+    "query": "ul. Smardzewska 8, Poznań, Polska",
+    "formatted": "Smardzewska, 60-159 Poznań, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": "8",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Stary Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Osiedle Mikołaja Kopernika",
+    "corrected": false
+  },
+  "67951935": {
+    "orig_lat": 52.4457,
+    "orig_lon": 16.9119,
+    "new_lat": 52.444581,
+    "new_lon": 16.910307,
+    "dist_m": 165,
+    "query": "ul. Wojciechowskiego 7/17, Poznań, Polska",
+    "formatted": "Bricoman, Zygmunta Wojciechowskiego 7-17, 60-685 Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "7/17",
+      "osiedle": "Piątkowo Residence",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96773045900067": {
+    "orig_lat": 52.37571,
+    "orig_lon": 17.10255,
+    "new_lat": 52.378827,
+    "new_lon": 17.093522,
+    "dist_m": 704,
+    "query": "PARK Kruszewnia, Kruszewnia, Polska",
+    "formatted": "Park Kruszewnia, Kruszewnia, gmina Swarzędz, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "PARK Kruszewnia",
+      "city": "Kruszewnia",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Kruszewnia",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96826038600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96818314100067": {
+    "orig_lat": 52.29129,
+    "orig_lon": 16.96902,
+    "new_lat": 52.30002,
+    "new_lon": 16.95723,
+    "dist_m": 1259,
+    "query": "gmina Mosina, Daszewice, Polska",
+    "formatted": "Daszewice, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Daszewice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96819629400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96821849800067": {
+    "orig_lat": 52.40827,
+    "orig_lon": 16.93352,
+    "new_lat": 52.48927,
+    "new_lon": 16.941774,
+    "dist_m": 9024,
+    "query": "Lubczykowa Góra 3, Radojewo, Polska",
+    "formatted": "Rdestowa, Radojewo, Nowa Wieś Górna, Morasko-Radojewo, Poznań, województwo wielkopolskie, 61-680, Polska",
+    "addr": {
+      "street": "Lubczykowa Góra",
+      "number": "3",
+      "osiedle": "Lubczykowa Góra",
+      "city": "Radojewo",
+      "district": "null",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Morasko-Radojewo",
+    "corrected": true
+  },
+  "96824897500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96811867900067": {
+    "orig_lat": 52.51359,
+    "orig_lon": 16.74704,
+    "new_lat": 52.507308,
+    "new_lon": 16.728857,
+    "dist_m": 1415,
+    "query": "ul. Tarninowa 792/3, Mrowino, Polska",
+    "formatted": "Tarninowa, 62-090 Mrowino, Polska",
+    "addr": {
+      "street": "ul. Tarninowa",
+      "number": "792/3",
+      "osiedle": null,
+      "city": "Mrowino",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Mrowino",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96789554300067": {
+    "orig_lat": 52.18225,
+    "orig_lon": 17.01761,
+    "new_lat": 52.182642,
+    "new_lon": 17.021477,
+    "dist_m": 267,
+    "query": "ul. Magnoliowej, Czmoniec, Polska",
+    "formatted": "Magnoliowa, Czmoniec, Polska",
+    "addr": {
+      "street": "ul. Magnoliowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Czmoniec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czmoniec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96712471700067": {
+    "orig_lat": 52.47544,
+    "orig_lon": 16.66278,
+    "new_lat": 52.47533,
+    "new_lon": 16.660072,
+    "dist_m": 184,
+    "query": "ul. Rzymska 3E, Tarnowo Podgórne, Polska",
+    "formatted": "Rzymska 3, 62-080 Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "ul. Rzymska",
+      "number": "3E",
+      "osiedle": "Osiedle Nowe Tarnowo",
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": "Osiedle Zielony Gród",
+    "corrected": false
+  },
+  "96787922900067": {
+    "orig_lat": 52.51359,
+    "orig_lon": 16.74704,
+    "new_lat": 52.515148,
+    "new_lon": 16.761269,
+    "dist_m": 978,
+    "query": "ul. Olszynowa, Rokietnica, Polska",
+    "formatted": "Olszynowa, Rokietnica, Polska",
+    "addr": {
+      "street": "ul. Olszynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96826206100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "X",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96575732800067": {
+    "orig_lat": 52.36663,
+    "orig_lon": 16.73126,
+    "new_lat": 52.366794,
+    "new_lon": 16.733098,
+    "dist_m": 126,
+    "query": "ul. Krajobrazowa, Palędzie, Polska",
+    "formatted": "Krajobrazowa, Palędzie, Polska",
+    "addr": {
+      "street": "ul. Krajobrazowa",
+      "number": null,
+      "osiedle": "OSIEDLE HORYZONT",
+      "city": "Palędzie",
+      "district": "gmina Dopiewo",
+      "confidence": "high"
+    },
+    "geo_city": "Palędzie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67171123": {
+    "orig_lat": 52.41158,
+    "orig_lon": 16.965,
+    "new_lat": 52.407943,
+    "new_lon": 16.96225,
+    "dist_m": 445,
+    "query": "Świętego Michała etap 2, Poznań, Polska",
+    "formatted": "Świętego Michała, Komandoria-Pomet, Berdychowo, Ostrów Tumski-Śródka-Zawady-Komandoria, Poznań, województwo wielkopolskie, 61-113, Polska",
+    "addr": {
+      "street": null,
+      "number": "34_50",
+      "osiedle": "Świętego Michała etap 2",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Komandoria-Pomet",
+    "corrected": true
+  },
+  "67560219": {
+    "orig_lat": 52.3987,
+    "orig_lon": 16.91978,
+    "new_lat": 52.398539,
+    "new_lon": 16.919867,
+    "dist_m": 19,
+    "query": "ul. Niedziałkowskiego, Poznań, Polska",
+    "formatted": "Niedziałkowskiego Park, Poznań, Polska",
+    "addr": {
+      "street": "ul. Niedziałkowskiego",
+      "number": null,
+      "osiedle": "Niedziałkowskiego Park",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "96756021900067": {
+    "orig_lat": 52.3987,
+    "orig_lon": 16.91978,
+    "new_lat": 52.398539,
+    "new_lon": 16.919867,
+    "dist_m": 19,
+    "query": "ul. Niedziałkowskiego, Poznań, Polska",
+    "formatted": "Niedziałkowskiego Park, Poznań, Polska",
+    "addr": {
+      "street": "ul. Niedziałkowskiego",
+      "number": null,
+      "osiedle": "Niedziałkowskiego Park",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "96807811600067": {
+    "orig_lat": 52.43375,
+    "orig_lon": 16.95734,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 2855,
+    "query": "Lechicka 65, Poznań, Polska",
+    "formatted": "65, Lechicka, Piątkowo, Poznań, województwo wielkopolskie, 61-693, Polska",
+    "addr": {
+      "street": "Lechicka",
+      "number": "65",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "96784219200067": {
+    "orig_lat": 52.40827,
+    "orig_lon": 16.93352,
+    "new_lat": 52.44728,
+    "new_lon": 16.94977,
+    "dist_m": 4475,
+    "query": "ul. Maków Polnych 9, Naramowice, Polska",
+    "formatted": "Naramowice, Poznań, Polska",
+    "addr": {
+      "street": "ul. Maków Polnych",
+      "number": "9",
+      "osiedle": "FUELDA",
+      "city": "Naramowice",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Naramowice",
+    "geo_district": null,
+    "corrected": true
   }
 }
