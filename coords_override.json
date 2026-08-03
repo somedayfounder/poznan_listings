@@ -20881,5 +20881,312 @@
     "geo_city": "Naramowice",
     "geo_district": null,
     "corrected": true
+  },
+  "96661535700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Ceradz Dolny",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68185560": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96818556000067": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96826585500067": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96708924300067": {
+    "orig_lat": 52.49561,
+    "orig_lon": 16.79521,
+    "new_lat": 52.492966,
+    "new_lon": 16.794361,
+    "dist_m": 300,
+    "query": "ul. Stajenna 1, Pawłowice, Polska",
+    "formatted": "Stajenna, 1, Pawłowice, Polska",
+    "addr": {
+      "street": "ul. Stajenna",
+      "number": "1",
+      "osiedle": "Forall Osiedle Harmonia",
+      "city": "Pawłowice",
+      "district": "Rokietnica",
+      "confidence": "high"
+    },
+    "geo_city": "Pawłowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68273673": {
+    "orig_lat": 52.41066,
+    "orig_lon": 16.82059,
+    "new_lat": 52.41186,
+    "new_lon": 16.872603,
+    "dist_m": 3530,
+    "query": "ul. Bukowska, Poznań, Polska",
+    "formatted": "Bukowska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bukowska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Grunwald Północ",
+    "corrected": true
+  },
+  "96827367300067": {
+    "orig_lat": 52.41066,
+    "orig_lon": 16.82059,
+    "new_lat": 52.41186,
+    "new_lon": 16.872603,
+    "dist_m": 3530,
+    "query": "ul. Bukowska, Poznań, Polska",
+    "formatted": "Bukowska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bukowska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Grunwald Północ",
+    "corrected": true
+  },
+  "68272920": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96814154000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96822316800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67842901": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "96804774700067": {
+    "orig_lat": 52.40277,
+    "orig_lon": 16.67953,
+    "new_lat": 52.4039,
+    "new_lon": 16.67696,
+    "dist_m": 215,
+    "query": "gmina Tarnowo Podgórne, Sierosław, Polska",
+    "formatted": "Sierosław, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Sierosław",
+      "district": "gmina Tarnowo Podgórne",
+      "confidence": "high"
+    },
+    "geo_city": "Sierosław",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96825691800067": {
+    "orig_lat": 52.29419,
+    "orig_lon": 17.08203,
+    "new_lat": 52.293827,
+    "new_lon": 17.08164,
+    "dist_m": 48,
+    "query": "Jałowcowa, Dachowa, Polska",
+    "formatted": "Jałowcowa, Dachowa, gmina Kórnik, powiat poznański, województwo wielkopolskie, 62-023, Polska",
+    "addr": {
+      "street": "Jałowcowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96823978300067": {
+    "orig_lat": 52.41526,
+    "orig_lon": 16.89158,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 786,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68238851": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "96819629800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68273135": {
+    "orig_lat": 52.5241,
+    "orig_lon": 17.02602,
+    "new_lat": 52.513926,
+    "new_lon": 16.972517,
+    "dist_m": 3793,
+    "query": "ul. Jabłoniowej, Owińska, Polska",
+    "formatted": "Owińska, gmina Czerwonak, powiat poznański, województwo wielkopolskie, 62-009, Polska",
+    "addr": {
+      "street": "ul. Jabłoniowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Owińska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Owińska",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96813398500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
   }
 }
