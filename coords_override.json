@@ -21188,5 +21188,433 @@
       "district": null,
       "confidence": "low"
     }
+  },
+  "96670704800067": {
+    "orig_lat": 52.38921,
+    "orig_lon": 16.85909,
+    "new_lat": 52.389515,
+    "new_lon": 16.859701,
+    "dist_m": 54,
+    "query": "ul. Smardzewska 8, Poznań, Polska",
+    "formatted": "Smardzewska, 60-159 Poznań, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": "8",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "Stary Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Osiedle Mikołaja Kopernika",
+    "corrected": false
+  },
+  "68097632": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96818744300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66327817": {
+    "orig_lat": 52.40396,
+    "orig_lon": 17.06483,
+    "new_lat": 52.404345,
+    "new_lon": 17.072578,
+    "dist_m": 527,
+    "query": "ul. Tabaki, Swarzędz, Polska",
+    "formatted": "Swarzędz Węzeł Przesiadkowy, Antoniego Tabaki, Swarzędz, Polska",
+    "addr": {
+      "street": "ul. Tabaki",
+      "number": null,
+      "osiedle": "ATAL Idea Swarzędz",
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Swarzędz",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96632781700067": {
+    "orig_lat": 52.40396,
+    "orig_lon": 17.06483,
+    "new_lat": 52.404345,
+    "new_lon": 17.072578,
+    "dist_m": 527,
+    "query": "ul. Tabaki, Swarzędz, Polska",
+    "formatted": "Swarzędz Węzeł Przesiadkowy, Antoniego Tabaki, Swarzędz, Polska",
+    "addr": {
+      "street": "ul. Tabaki",
+      "number": null,
+      "osiedle": "ATAL Idea Swarzędz",
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Swarzędz",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96647781800067": {
+    "orig_lat": 52.38372,
+    "orig_lon": 16.83917,
+    "new_lat": 52.383936,
+    "new_lon": 16.840557,
+    "dist_m": 97,
+    "query": "ul. Wieruszowska 2, Junikowo, Polska",
+    "formatted": "Wieruszowska, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "2",
+      "osiedle": "Inwestycja Wieruszowska 2",
+      "city": "Junikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "96722015800067": {
+    "skipped": "geocode_city_only",
+    "query": "null 18/B, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "null",
+      "number": "18/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "96722014800067": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Zagajnik, Poznań, Polska",
+    "formatted": "Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": "21/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Poznań",
+      "district": "Umultowo",
+      "confidence": "high"
+    }
+  },
+  "68277599": {
+    "orig_lat": 52.43825,
+    "orig_lon": 16.94034,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 400,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68278033": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Łódź pod Mosiną",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96827803300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Łódź pod Mosiną",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96566759200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68277643": {
+    "orig_lat": 52.4375,
+    "orig_lon": 16.94047,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 326,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68277909": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96827790900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68002971": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96800297100067": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "68277861": {
+    "orig_lat": 52.42658,
+    "orig_lon": 16.93625,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 932,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "96631773300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67842827": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "96822773400067": {
+    "orig_lat": 52.42661,
+    "orig_lon": 17.10624,
+    "new_lat": 52.428889,
+    "new_lon": 17.134167,
+    "dist_m": 1910,
+    "query": "Oaza Gortatowo, Gortatowo, Polska",
+    "formatted": "Gortatowo-Huby, Gortatowo, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Oaza Gortatowo",
+      "city": "Gortatowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gortatowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68002936": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96826166100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68275783": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68277897": {
+    "orig_lat": 52.42658,
+    "orig_lon": 16.93625,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 932,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68029250": {
+    "orig_lat": 52.38217,
+    "orig_lon": 16.91298,
+    "new_lat": 52.392373,
+    "new_lon": 16.920046,
+    "dist_m": 1232,
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "number": null,
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "68137605": {
+    "skipped": "geocode_failed",
+    "query": "ul. Naramowickiej 369, Poznań, Polska",
+    "addr": {
+      "street": "ul. Naramowickiej",
+      "number": "369",
+      "osiedle": "Naramowickie Tarasy",
+      "city": "Poznań",
+      "district": "Umultowo",
+      "confidence": "high"
+    }
   }
 }
