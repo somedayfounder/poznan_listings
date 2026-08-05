@@ -5,7 +5,7 @@ Weights:
   district   30%  — neighborhood quality (NPS + resident surveys)
   transport  20%  — drive time to tram stop (minutes, unified curve)
   price      15%  — ≤700k=10, 700–900k=10→7, 900k–1200k=7→0, >1200k=0
-  area       20%  — 85–105m² ideal; <70 or >120 = 0
+  area       20%  — 85–105m² ideal; <70 or >140 = 0
   rooms      15%  — 4=10, 5=8, 3=5, 6=5, 1-2/7+=2, None=5
   type        0%  — neutral (9.0, does not affect score)
 
@@ -876,7 +876,7 @@ def _score_price(price):
 def _score_area(area):
     if area is None:
         return 5.0
-    if area < 70 or area > 120:
+    if area < 70 or area > 140:
         return 0.0
     if 85 <= area <= 105:
         return 10.0
