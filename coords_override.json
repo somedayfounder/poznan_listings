@@ -21616,5 +21616,646 @@
       "district": "Umultowo",
       "confidence": "high"
     }
+  },
+  "96795242400067": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.443893,
+    "new_lon": 16.914164,
+    "dist_m": 161,
+    "query": "ul. Wojciechowskiego 4, Poznań, Polska",
+    "formatted": "Zygmunta Wojciechowskiego, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "4",
+      "osiedle": "Początek Piątkowo",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96633592000067": {
+    "orig_lat": 52.30313,
+    "orig_lon": 17.02308,
+    "new_lat": 52.308644,
+    "new_lon": 17.017161,
+    "dist_m": 733,
+    "query": "ul. Radiowa, Koninko, Polska",
+    "formatted": "Radiowa, Koninko, Polska",
+    "addr": {
+      "street": "ul. Radiowa",
+      "number": null,
+      "osiedle": "Inwestycja Koninko",
+      "city": "Koninko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Koninko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96826206300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "X",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68279481": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jabłonowej, Siekierki Wielkie, Polska",
+    "formatted": "Siekierki Wielkie, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Jabłonowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": "Kostrzyn",
+      "confidence": "high"
+    },
+    "new_lat": 52.38133,
+    "new_lon": 17.16391
+  },
+  "96556592900067": {
+    "orig_lat": 52.30419,
+    "orig_lon": 17.10051,
+    "new_lat": 52.294349,
+    "new_lon": 17.074577,
+    "dist_m": 2075,
+    "query": "Nowina, Dachowa, Polska",
+    "formatted": "Nowina, Osiedle Azaliowe, Robakowo - Osiedle, Dachowa, gmina Kórnik, powiat poznański, województwo wielkopolskie, 62-023, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Nowina",
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96789316700067": {
+    "skipped": "outside_bbox",
+    "query": "ul. św. Jana 7, Gwiazdowo, Polska",
+    "formatted": "Świętego Jana, 7, Gwiazdowo, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "number": "7",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.407177,
+    "new_lon": 17.21285
+  },
+  "65204665": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Wieruszowska 8H_1, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, województwo lubuskie, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8H_1",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68279211": {
+    "orig_lat": 52.24541,
+    "orig_lon": 16.84706,
+    "new_lat": 52.245583,
+    "new_lon": 16.847259,
+    "dist_m": 24,
+    "query": "ul. Kamiennej, Mosina, Polska",
+    "formatted": "Mosina, gmina Mosina, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Kamiennej",
+      "number": null,
+      "osiedle": null,
+      "city": "Mosina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Mosina",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68282333": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68281431": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "ciche osiedle",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68281695": {
+    "orig_lat": 52.43562,
+    "orig_lon": 16.94934,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 750,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "96820322800067": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "68281763": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36435,
+    "orig_lon": 16.70384,
+    "new_lat": 52.41186,
+    "new_lon": 16.872603,
+    "dist_m": 12613,
+    "orig_dist_to_center_m": 16337,
+    "query": "ul. Bukowska, Poznań, Polska",
+    "formatted": "Bukowska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bukowska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68281249": {
+    "orig_lat": 52.51884,
+    "orig_lon": 16.74983,
+    "new_lat": 52.519407,
+    "new_lon": 16.748156,
+    "dist_m": 130,
+    "query": "ul. Rubinowa, Rokietnica, Polska",
+    "formatted": "Rubinowa, Rokietnica, Polska",
+    "addr": {
+      "street": "ul. Rubinowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96826038300067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Owocowa, Kleszczewo, Polska",
+    "formatted": "Owocowa, Kleszczewo, Polska",
+    "addr": {
+      "street": "ul. Owocowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Kleszczewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.334722,
+    "new_lon": 17.174809
+  },
+  "96823314800067": {
+    "orig_lat": 52.41678,
+    "orig_lon": 17.10164,
+    "new_lat": 52.416782,
+    "new_lon": 17.10164,
+    "dist_m": 0,
+    "query": "Gerberowa Park, Jasin, Polska",
+    "formatted": "Gerberowa, Jasin, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Gerberowa Park",
+      "city": "Jasin",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jasin",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96821811000067": {
+    "orig_lat": 52.36803,
+    "orig_lon": 16.8325,
+    "new_lat": 52.366348,
+    "new_lon": 16.818122,
+    "dist_m": 994,
+    "query": "ul. Bursztynowa, Plewiska, Polska",
+    "formatted": "Bursztynowa, Plewiska, Polska",
+    "addr": {
+      "street": "ul. Bursztynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Plewiska",
+    "geo_district": "Aniołowo",
+    "corrected": true
+  },
+  "96770107400067": {
+    "orig_lat": 52.44365,
+    "orig_lon": 16.8932,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 115,
+    "query": "ul. Jasielska 8C, Podolany, Polska",
+    "formatted": "Jasielska, 8c, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": "8C",
+      "osiedle": "Jasielska 8C",
+      "city": "Podolany",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "96826957700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "65204699": {
+    "skipped": "outside_bbox",
+    "query": "ul. Wieruszowska 8G_4, Grunwald, Polska",
+    "formatted": "Grunwald, Powiat ostródzki, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8G_4",
+      "osiedle": "Grunwald Park",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.48422,
+    "new_lon": 20.09425
+  },
+  "68001577": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Wieruszowska 8G_12, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, województwo lubuskie, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8G_12",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68280738": {
+    "orig_lat": 52.38967,
+    "orig_lon": 16.86027,
+    "new_lat": 52.404197,
+    "new_lon": 16.88215,
+    "dist_m": 2194,
+    "query": "Grunwald, Poznań, Polska",
+    "formatted": "Stary Grunwald, Grunwald, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Grunwald",
+    "corrected": true
+  },
+  "68280638": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68281529": {
+    "orig_lat": 52.39886,
+    "orig_lon": 16.96841,
+    "new_lat": 52.398864,
+    "new_lon": 16.968229,
+    "dist_m": 12,
+    "query": "ul. Klemensa Mikuły, Poznań, Polska",
+    "formatted": "Klemensa Mikuły, Poznań, Polska",
+    "addr": {
+      "street": "ul. Klemensa Mikuły",
+      "number": null,
+      "osiedle": "Malta Wołkowyska",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Rataje",
+    "corrected": false
+  },
+  "68282206": {
+    "orig_lat": 52.41657,
+    "orig_lon": 16.90001,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 392,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96776374500067": {
+    "orig_lat": 52.38381,
+    "orig_lon": 16.89437,
+    "new_lat": 52.384124,
+    "new_lon": 16.894016,
+    "dist_m": 42,
+    "query": "ul. R. Dmowskiego 103, Poznań, Polska",
+    "formatted": "Romana Dmowskiego, 103, Poznań, Polska",
+    "addr": {
+      "street": "ul. R. Dmowskiego",
+      "number": "103",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Górczyn",
+    "corrected": false
+  },
+  "96799879000067": {
+    "orig_lat": 52.4176,
+    "orig_lon": 16.89492,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 704,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68282228": {
+    "orig_lat": 52.41657,
+    "orig_lon": 16.89959,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 407,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68281562": {
+    "orig_lat": 52.43469,
+    "orig_lon": 16.94067,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 158,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": false
+  },
+  "68269753": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68280776": {
+    "orig_lat": 52.38967,
+    "orig_lon": 16.86027,
+    "new_lat": 52.404197,
+    "new_lon": 16.88215,
+    "dist_m": 2194,
+    "query": "Grunwald, Poznań, Polska",
+    "formatted": "Stary Grunwald, Grunwald, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Grunwald",
+    "corrected": true
+  },
+  "68009688": {
+    "orig_lat": 52.38217,
+    "orig_lon": 16.91298,
+    "new_lat": 52.393305,
+    "new_lon": 16.921161,
+    "dist_m": 1357,
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "number": null,
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "68004070": {
+    "orig_lat": 52.37622,
+    "orig_lon": 16.95347,
+    "new_lat": 52.376396,
+    "new_lon": 16.952555,
+    "dist_m": 65,
+    "query": "Panoramiqa 2, Poznań, Polska",
+    "formatted": "Panoramiqa, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Panoramiqa 2",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "68281601": {
+    "orig_lat": 52.43587,
+    "orig_lon": 16.94045,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 181,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": false
+  },
+  "96824863600067": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96809004600067": {
+    "orig_lat": 52.41653,
+    "orig_lon": 16.89969,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 399,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
   }
 }
