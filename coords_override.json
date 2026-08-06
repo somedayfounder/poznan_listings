@@ -23964,5 +23964,443 @@
       "district": null,
       "confidence": "medium"
     }
+  },
+  "96723274700067": {
+    "orig_lat": 52.39885,
+    "orig_lon": 16.91957,
+    "new_lat": 52.399107,
+    "new_lon": 16.919155,
+    "dist_m": 40,
+    "query": "Vilda Arte, Poznań, Polska",
+    "formatted": "Vilda Arte, Wilda, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Vilda Arte",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "96713591700067": {
+    "orig_lat": 52.54238,
+    "orig_lon": 16.94762,
+    "new_lat": 52.54217,
+    "new_lon": 16.9443,
+    "dist_m": 226,
+    "query": "ul. Jesionowa 3_M02, Biedrusko, Polska",
+    "formatted": "Biedrusko, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Jesionowa",
+      "number": "3_M02",
+      "osiedle": "Biedrusko Osiedle Jesionowe",
+      "city": "Biedrusko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Biedrusko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96713591600067": {
+    "orig_lat": 52.54238,
+    "orig_lon": 16.94762,
+    "new_lat": 52.54217,
+    "new_lon": 16.9443,
+    "dist_m": 226,
+    "query": "ul. Jesionowa 3_M05, Biedrusko, Polska",
+    "formatted": "Biedrusko, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Jesionowa",
+      "number": "3_M05",
+      "osiedle": "Biedrusko Osiedle Jesionowe",
+      "city": "Biedrusko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Biedrusko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96566366200067": {
+    "orig_lat": 52.3204,
+    "orig_lon": 16.92448,
+    "new_lat": 52.320386,
+    "new_lon": 16.924468,
+    "dist_m": 2,
+    "query": "Zaciszna 3, Czapury, Polska",
+    "formatted": "3, Zaciszna, Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-160, Polska",
+    "addr": {
+      "street": "Zaciszna",
+      "number": "3",
+      "osiedle": "Osiedle Zacisze",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96826054600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68285390": {
+    "orig_lat": 52.20625,
+    "orig_lon": 16.81437,
+    "new_lat": 52.21103,
+    "new_lon": 16.82642,
+    "dist_m": 978,
+    "query": "gmina Mosina, Drużyna, Polska",
+    "formatted": "Drużyna, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Drużyna",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Drużyna",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96819647700067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "96800295200067": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96722015100067": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Zagajnik, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": "32/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "96705189100067": {
+    "orig_lat": 52.29356,
+    "orig_lon": 16.96056,
+    "new_lat": 52.291365,
+    "new_lon": 16.957827,
+    "dist_m": 307,
+    "query": "ul. Wesoła, Daszewice, Polska",
+    "formatted": "Wesoła, Daszewice, Polska",
+    "addr": {
+      "street": "ul. Wesoła",
+      "number": null,
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Daszewice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96756251600067": {
+    "skipped": "outside_bbox",
+    "query": "Dachowa, Dachowa, Polska",
+    "formatted": "Dachowa, gmina Sochaczew, powiat sochaczewski, województwo mazowieckie, 96-502, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Dachowa",
+      "city": "Dachowa",
+      "district": "gm. Kórnik",
+      "confidence": "high"
+    },
+    "new_lat": 52.212451,
+    "new_lon": 20.192937
+  },
+  "65204668": {
+    "skipped": "outside_bbox",
+    "query": "ul. Wieruszowska 8F_13, Grunwald, Polska",
+    "formatted": "Grunwald, Powiat ostródzki, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8F_13",
+      "osiedle": "Grunwald Park",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.48422,
+    "new_lon": 20.09425
+  },
+  "96520466800067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Wieruszowska 8F_13, Grunwald, Polska",
+    "formatted": "Grunwald, Powiat ostródzki, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8F_13",
+      "osiedle": "Grunwald Park",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.48422,
+    "new_lon": 20.09425
+  },
+  "96822392300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "65229445": {
+    "orig_lat": 52.42961,
+    "orig_lon": 16.9519,
+    "new_lat": 52.429872,
+    "new_lon": 16.951968,
+    "dist_m": 29,
+    "query": "Wilczak 16 A, Poznań, Polska",
+    "formatted": "16a, Wilczak, Szeląg, Stare Winogrady, Winogrady, Poznań, województwo wielkopolskie, 61-623, Polska",
+    "addr": {
+      "street": "Wilczak",
+      "number": "16 A",
+      "osiedle": "Tarasy Wilczak",
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": false
+  },
+  "96822846300067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.48798,
+    "orig_lon": 16.98359,
+    "new_lat": 52.381336,
+    "new_lon": 16.815192,
+    "dist_m": 16460,
+    "orig_dist_to_center_m": 9496,
+    "query": "Osiedle Wzgórze Zawilcowa, Poznań, Polska",
+    "formatted": "Zawilcowa, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Wzgórze Zawilcowa",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68284269": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68284475": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68283862": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "65698750": {
+    "orig_lat": 52.38324,
+    "orig_lon": 16.84562,
+    "new_lat": 52.382766,
+    "new_lon": 16.845838,
+    "dist_m": 55,
+    "query": "Ziębicka 30, Poznań, Polska",
+    "formatted": "30, Ziębicka, Junikowo, Poznań, województwo wielkopolskie, 60-164, Polska",
+    "addr": {
+      "street": "Ziębicka",
+      "number": "30",
+      "osiedle": "Ziębicka 30",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "96569875000067": {
+    "orig_lat": 52.38324,
+    "orig_lon": 16.84562,
+    "new_lat": 52.382766,
+    "new_lon": 16.845838,
+    "dist_m": 55,
+    "query": "Ziębicka 30, Poznań, Polska",
+    "formatted": "30, Ziębicka, Junikowo, Poznań, województwo wielkopolskie, 60-164, Polska",
+    "addr": {
+      "street": "Ziębicka",
+      "number": "30",
+      "osiedle": "Ziębicka 30",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "96782010000067": {
+    "skipped": "geocode_failed",
+    "query": "Czerwonak, Kicina, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kicina",
+      "district": "Czerwonak",
+      "confidence": "high"
+    }
+  },
+  "67968633": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "96796863300067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "96807328200067": {
+    "orig_lat": 52.39769,
+    "orig_lon": 16.92545,
+    "new_lat": 52.397184,
+    "new_lon": 16.926392,
+    "dist_m": 85,
+    "query": "ul. Dolna Wilda 12, Poznań, Polska",
+    "formatted": "Dolna Wilda, 12, Poznań, Polska",
+    "addr": {
+      "street": "ul. Dolna Wilda",
+      "number": "12",
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "68208844": {
+    "orig_lat": 52.45285,
+    "orig_lon": 16.73113,
+    "new_lat": 52.452385,
+    "new_lon": 16.731501,
+    "dist_m": 57,
+    "query": "ul. Lotosowej, Sady, Polska",
+    "formatted": "Lotosowa, Sady, Polska",
+    "addr": {
+      "street": "ul. Lotosowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Sady",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sady",
+    "geo_district": "Dębina",
+    "corrected": false
   }
 }
