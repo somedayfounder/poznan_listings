@@ -24402,5 +24402,419 @@
     "geo_city": "Sady",
     "geo_district": "Dębina",
     "corrected": false
+  },
+  "96781908600067": {
+    "orig_lat": 52.3993,
+    "orig_lon": 16.92926,
+    "new_lat": 52.401987,
+    "new_lon": 16.922892,
+    "dist_m": 525,
+    "query": "ul. Królowej Jadwigi 51, Poznań, Polska",
+    "formatted": "Parking LOK Kościuszki/Ratajczaka Poznań ul. Niezłomnych 1, Królowej Jadwigi, Święty Marcin, Stare Miasto, Poznań, województwo wielkopolskie, 61-894, Polska",
+    "addr": {
+      "street": "ul. Królowej Jadwigi",
+      "number": "51",
+      "osiedle": "Inwestycja Królowej Jadwigi 51",
+      "city": "Poznań",
+      "district": "Stare Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Stare Miasto",
+    "corrected": true
+  },
+  "67076689": {
+    "orig_lat": 52.44002,
+    "orig_lon": 16.61879,
+    "new_lat": 52.441282,
+    "new_lon": 16.618099,
+    "dist_m": 148,
+    "query": "ul. Folwark 13, Jankowice, Polska",
+    "formatted": "Folwark, 13, Jankowice, Polska",
+    "addr": {
+      "street": "ul. Folwark",
+      "number": "13",
+      "osiedle": "Folwark Jankowice",
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": "Edmundowo",
+    "corrected": false
+  },
+  "96707668900067": {
+    "orig_lat": 52.44002,
+    "orig_lon": 16.61879,
+    "new_lat": 52.441282,
+    "new_lon": 16.618099,
+    "dist_m": 148,
+    "query": "ul. Folwark 13, Jankowice, Polska",
+    "formatted": "Folwark, 13, Jankowice, Polska",
+    "addr": {
+      "street": "ul. Folwark",
+      "number": "13",
+      "osiedle": "Folwark Jankowice",
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": "Edmundowo",
+    "corrected": false
+  },
+  "96828539000067": {
+    "orig_lat": 52.20625,
+    "orig_lon": 16.81437,
+    "new_lat": 52.21103,
+    "new_lon": 16.82642,
+    "dist_m": 978,
+    "query": "gmina Mosina, Drużyna, Polska",
+    "formatted": "Drużyna, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Drużyna",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Drużyna",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96722015300067": {
+    "skipped": "geocode_city_only",
+    "query": "null 20/B, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "null",
+      "number": "20/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "96826368000067": {
+    "orig_lat": 52.29333,
+    "orig_lon": 17.00515,
+    "new_lat": 52.296071,
+    "new_lon": 17.007659,
+    "dist_m": 349,
+    "query": "ul. Choinkowa, Szczytniki, Polska",
+    "formatted": "Choinkowa, Szczytniki, Polska",
+    "addr": {
+      "street": "ul. Choinkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68002959": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96826152500067": {
+    "orig_lat": 52.29688,
+    "orig_lon": 17.07484,
+    "new_lat": 52.296579,
+    "new_lon": 17.074321,
+    "dist_m": 49,
+    "query": "ul. Kwitnącej Wiśni, Robakowo, Polska",
+    "formatted": "Kwitnącej Wiśni, Robakowo, Polska",
+    "addr": {
+      "street": "ul. Kwitnącej Wiśni",
+      "number": null,
+      "osiedle": null,
+      "city": "Robakowo",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": "Robakowo - Osiedle",
+    "corrected": false
+  },
+  "68289583": {
+    "orig_lat": 52.37461,
+    "orig_lon": 16.95043,
+    "new_lat": 52.374071,
+    "new_lon": 16.951708,
+    "dist_m": 105,
+    "query": "ul. Unii Lubelskiej, Poznań, Polska",
+    "formatted": "Agrobex Unii Lubelskiej 4 (budowa), Unii Lubelskiej, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Unii Lubelskiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "68288644": {
+    "orig_lat": 52.36676,
+    "orig_lon": 16.73245,
+    "new_lat": 52.366794,
+    "new_lon": 16.733098,
+    "dist_m": 44,
+    "query": "Krajobrazowa, Palędzie, Polska",
+    "formatted": "Krajobrazowa, Palędzie, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-070, Polska",
+    "addr": {
+      "street": "Krajobrazowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Palędzie",
+      "district": "Dopiewo",
+      "confidence": "high"
+    },
+    "geo_city": "Palędzie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67803578": {
+    "orig_lat": 52.43612,
+    "orig_lon": 16.64226,
+    "new_lat": 52.436082,
+    "new_lon": 16.642458,
+    "dist_m": 14,
+    "query": "ul. Bosmańska, Lusówko, Polska",
+    "formatted": "Bosmańska, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Bosmańska",
+      "number": null,
+      "osiedle": null,
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67842779": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "68009627": {
+    "orig_lat": 52.38217,
+    "orig_lon": 16.91298,
+    "new_lat": 52.393305,
+    "new_lon": 16.921161,
+    "dist_m": 1357,
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "number": null,
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": "historyczna dzielnica",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "96820033900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Wiry",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68289887": {
+    "orig_lat": 52.4151,
+    "orig_lon": 16.89929,
+    "new_lat": 52.415905,
+    "new_lon": 16.890163,
+    "dist_m": 625,
+    "query": "ul. Jana Henryka Dąbrowskiego, Poznań, Polska",
+    "formatted": "Hop & go, Jana Henryka Dąbrowskiego, 60-543 Poznań, Polska",
+    "addr": {
+      "street": "ul. Jana Henryka Dąbrowskiego",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Ogrody",
+    "corrected": true
+  },
+  "68288666": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68289100": {
+    "orig_lat": 52.41321,
+    "orig_lon": 16.90233,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 43,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": false
+  },
+  "68253209": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96825320900067": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96746933600067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Leśnych Skrzatów, Marcelin, Polska",
+    "formatted": "Marcelin, Powiat miński, Polska",
+    "addr": {
+      "street": "ul. Leśnych Skrzatów",
+      "number": null,
+      "osiedle": "Zacisze Marcelin",
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.3463,
+    "new_lon": 21.79482
+  },
+  "67968560": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "68170839": {
+    "orig_lat": 52.45285,
+    "orig_lon": 16.73113,
+    "new_lat": 52.452385,
+    "new_lon": 16.731501,
+    "dist_m": 57,
+    "query": "ul. Lotosowej, Sady, Polska",
+    "formatted": "Lotosowa, Sady, Polska",
+    "addr": {
+      "street": "ul. Lotosowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Sady",
+      "district": "Tarnowo Podgórne",
+      "confidence": "high"
+    },
+    "geo_city": "Sady",
+    "geo_district": "Dębina",
+    "corrected": false
   }
 }
