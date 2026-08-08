@@ -24816,5 +24816,666 @@
     "geo_city": "Sady",
     "geo_district": "Dębina",
     "corrected": false
+  },
+  "96670709700067": {
+    "orig_lat": 52.38921,
+    "orig_lon": 16.85909,
+    "new_lat": 52.389515,
+    "new_lon": 16.859701,
+    "dist_m": 54,
+    "query": "ul. Smardzewska 8, Poznań, Polska",
+    "formatted": "Smardzewska, 60-159 Poznań, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": "8",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Stary Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Osiedle Mikołaja Kopernika",
+    "corrected": false
+  },
+  "67076981": {
+    "orig_lat": 52.44002,
+    "orig_lon": 16.61879,
+    "new_lat": 52.439311,
+    "new_lon": 16.618869,
+    "dist_m": 79,
+    "query": "ul. Folwark 53, Jankowice, Polska",
+    "formatted": "Folwark, 53, Jankowice, Polska",
+    "addr": {
+      "street": "ul. Folwark",
+      "number": "53",
+      "osiedle": "Folwark Jankowice",
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": "Edmundowo",
+    "corrected": false
+  },
+  "68293517": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "68257251": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96825725100067": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96079225700067": {
+    "skipped": "outside_bbox",
+    "query": "Enklawa Nad Jeziorem, Tarnowo, Polska",
+    "formatted": "Tarnowo Pałuckie, gmina Wągrowiec, powiat wągrowiecki, województwo wielkopolskie, 62-105, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Enklawa Nad Jeziorem",
+      "city": "Tarnowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.831753,
+    "new_lon": 17.2767
+  },
+  "96781002100067": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Biesiadnej 12/1, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Biesiadnej",
+      "number": "12/1",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96778468900067": {
+    "orig_lat": 52.35294,
+    "orig_lon": 17.02679,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 4212,
+    "query": "ul. Przyjaznej, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Przyjaznej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Żegrze",
+    "corrected": true
+  },
+  "68292072": {
+    "skipped": "outside_bbox",
+    "query": "Leśny Zakątek, Koziegłowy, Polska",
+    "formatted": "Koziegłowy, gmina Koziegłowy, powiat myszkowski, województwo śląskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Leśny Zakątek",
+      "city": "Koziegłowy",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 50.597871,
+    "new_lon": 19.16152
+  },
+  "96829207200067": {
+    "skipped": "outside_bbox",
+    "query": "Leśny Zakątek, Koziegłowy, Polska",
+    "formatted": "Koziegłowy, gmina Koziegłowy, powiat myszkowski, województwo śląskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Leśny Zakątek",
+      "city": "Koziegłowy",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 50.597871,
+    "new_lon": 19.16152
+  },
+  "68290489": {
+    "orig_lat": 52.36086,
+    "orig_lon": 16.74484,
+    "new_lat": 52.360971,
+    "new_lon": 16.744903,
+    "dist_m": 13,
+    "query": "ul. Fiołkowej, Gołuski, Polska",
+    "formatted": "Fiołkowa, Gołuski, Polska",
+    "addr": {
+      "street": "ul. Fiołkowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gołuski",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96829048900067": {
+    "orig_lat": 52.36086,
+    "orig_lon": 16.74484,
+    "new_lat": 52.360971,
+    "new_lon": 16.744903,
+    "dist_m": 13,
+    "query": "ul. Fiołkowej, Gołuski, Polska",
+    "formatted": "Fiołkowa, Gołuski, Polska",
+    "addr": {
+      "street": "ul. Fiołkowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gołuski",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96808828100067": {
+    "orig_lat": 52.49688,
+    "orig_lon": 16.73531,
+    "new_lat": 52.48518,
+    "new_lon": 16.72617,
+    "dist_m": 1441,
+    "query": "Rokietnica, Napachanie, Polska",
+    "formatted": "Napachanie, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Napachanie",
+      "district": "Rokietnica",
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68290482": {
+    "skipped": "geocode_city_only",
+    "query": "małym, kameralnym osiedlu, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "małym, kameralnym osiedlu",
+      "city": "Poznań",
+      "district": "Szczepankowo- Spławie- Krzesiny",
+      "confidence": "high"
+    }
+  },
+  "68293870": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68292501": {
+    "orig_lat": 52.37266,
+    "orig_lon": 16.7756,
+    "new_lat": 52.360665,
+    "new_lon": 16.745623,
+    "dist_m": 2433,
+    "query": "Irysowa, Gołuski, Polska",
+    "formatted": "Irysowa, Gołuski, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-069, Polska",
+    "addr": {
+      "street": "Irysowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gołuski",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68292499": {
+    "orig_lat": 52.37266,
+    "orig_lon": 16.7756,
+    "new_lat": 52.360665,
+    "new_lon": 16.745623,
+    "dist_m": 2433,
+    "query": "Irysowa, Gołuski, Polska",
+    "formatted": "Irysowa, Gołuski, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-069, Polska",
+    "addr": {
+      "street": "Irysowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gołuski",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68291860": {
+    "orig_lat": 52.37266,
+    "orig_lon": 16.7756,
+    "new_lat": 52.360665,
+    "new_lon": 16.745623,
+    "dist_m": 2433,
+    "query": "Irysowa, Gołuski, Polska",
+    "formatted": "Irysowa, Gołuski, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-069, Polska",
+    "addr": {
+      "street": "Irysowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gołuski",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96808743300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "wioska",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68290488": {
+    "orig_lat": 52.35997,
+    "orig_lon": 16.74547,
+    "new_lat": 52.360665,
+    "new_lon": 16.745623,
+    "dist_m": 78,
+    "query": "Irysowa, Gołuski, Polska",
+    "formatted": "Irysowa, Gołuski, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-069, Polska",
+    "addr": {
+      "street": "Irysowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": "Dopiewo",
+      "confidence": "high"
+    },
+    "geo_city": "Gołuski",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68293736": {
+    "orig_lat": 52.36803,
+    "orig_lon": 16.8325,
+    "new_lat": 52.366348,
+    "new_lon": 16.818122,
+    "dist_m": 994,
+    "query": "ul. Bursztynowa, Plewiska, Polska",
+    "formatted": "Bursztynowa, Plewiska, Polska",
+    "addr": {
+      "street": "ul. Bursztynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Plewiska",
+    "geo_district": "Aniołowo",
+    "corrected": true
+  },
+  "68293737": {
+    "orig_lat": 52.36803,
+    "orig_lon": 16.8325,
+    "new_lat": 52.366348,
+    "new_lon": 16.818122,
+    "dist_m": 994,
+    "query": "ul. Bursztynowa, Plewiska, Polska",
+    "formatted": "Bursztynowa, Plewiska, Polska",
+    "addr": {
+      "street": "ul. Bursztynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Plewiska",
+    "geo_district": "Aniołowo",
+    "corrected": true
+  },
+  "96829373700067": {
+    "orig_lat": 52.36803,
+    "orig_lon": 16.8325,
+    "new_lat": 52.366348,
+    "new_lon": 16.818122,
+    "dist_m": 994,
+    "query": "ul. Bursztynowa, Plewiska, Polska",
+    "formatted": "Bursztynowa, Plewiska, Polska",
+    "addr": {
+      "street": "ul. Bursztynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Plewiska",
+    "geo_district": "Aniołowo",
+    "corrected": true
+  },
+  "96820846500067": {
+    "orig_lat": 52.34811,
+    "orig_lon": 17.09943,
+    "new_lat": 52.348224,
+    "new_lon": 17.099853,
+    "dist_m": 31,
+    "query": "ul. Szafirowa, Tulce, Polska",
+    "formatted": "Szafirowa, Tulce, Polska",
+    "addr": {
+      "street": "ul. Szafirowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Tulce",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tulce",
+    "geo_district": "Zadęby",
+    "corrected": false
+  },
+  "96808828200067": {
+    "skipped": "outside_bbox",
+    "query": "Osiedle Przyjazna, Szczepankowo, Polska",
+    "formatted": "Szczepankowo, gmina Śniadowo, powiat łomżyński, województwo podlaskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Przyjazna",
+      "city": "Szczepankowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "new_lat": 53.120417,
+    "new_lon": 21.949858
+  },
+  "65204651": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, województwo lubuskie, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": null,
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96520465100067": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, województwo lubuskie, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": null,
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68054551": {
+    "orig_lat": 52.3852,
+    "orig_lon": 17.06398,
+    "new_lat": 52.385993,
+    "new_lon": 17.063267,
+    "dist_m": 101,
+    "query": "ul. Jana Heweliusza, Zalasewo, Polska",
+    "formatted": "Jana Heweliusza, Zalasewo, Polska",
+    "addr": {
+      "street": "ul. Jana Heweliusza",
+      "number": null,
+      "osiedle": "Leśne Tarasy III B",
+      "city": "Zalasewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Zalasewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96805455100067": {
+    "orig_lat": 52.3852,
+    "orig_lon": 17.06398,
+    "new_lat": 52.385993,
+    "new_lon": 17.063267,
+    "dist_m": 101,
+    "query": "ul. Jana Heweliusza, Zalasewo, Polska",
+    "formatted": "Jana Heweliusza, Zalasewo, Polska",
+    "addr": {
+      "street": "ul. Jana Heweliusza",
+      "number": null,
+      "osiedle": "Leśne Tarasy III B",
+      "city": "Zalasewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Zalasewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96779874400067": {
+    "orig_lat": 52.38786,
+    "orig_lon": 17.11767,
+    "new_lat": 52.387903,
+    "new_lon": 17.106933,
+    "dist_m": 729,
+    "query": "Osiedle Tercja, Rabowice, Polska",
+    "formatted": "Osiedle Świerkowe Tarasy, Rabowice, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Tercja",
+      "city": "Rabowice",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96813212500067": {
+    "orig_lat": 52.43008,
+    "orig_lon": 17.0735,
+    "new_lat": 52.438257,
+    "new_lon": 17.088359,
+    "dist_m": 1357,
+    "query": "zamknięte osiedle, Gruszczyn, Polska",
+    "formatted": "Osiedle Nowy Gruszczyn, Gruszczyn, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "zamknięte osiedle",
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gruszczyn",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68292202": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36016,
+    "orig_lon": 16.98206,
+    "new_lat": 52.420526,
+    "new_lon": 16.938923,
+    "dist_m": 7323,
+    "orig_dist_to_center_m": 6273,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "96825264700067": {
+    "skipped": "geocode_city_only",
+    "query": "nowoczesnej inwestycji, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "nowoczesnej inwestycji",
+      "city": "Poznań",
+      "district": "Grunwald - Marcelin",
+      "confidence": "high"
+    }
+  },
+  "68293443": {
+    "orig_lat": 52.48475,
+    "orig_lon": 17.04103,
+    "new_lat": 52.465348,
+    "new_lon": 17.01961,
+    "dist_m": 2600,
+    "query": "Czerwonak, Kicin, Polska",
+    "formatted": "Poczta Polska, 2a, Nowe Osiedle, Kicin, gmina Czerwonak, powiat poznański, województwo wielkopolskie, 62-008, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kicin",
+      "district": "Czerwonak",
+      "confidence": "high"
+    },
+    "geo_city": "Kicin",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68239237": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "96810279900067": {
+    "orig_lat": 52.39595,
+    "orig_lon": 16.92411,
+    "new_lat": 52.389793,
+    "new_lon": 16.924329,
+    "dist_m": 685,
+    "query": "Dolna Wilda, Poznań, Polska",
+    "formatted": "Dolna Wilda, Wilda, Poznań, województwo wielkopolskie, 61-545, Polska",
+    "addr": {
+      "street": "Dolna Wilda",
+      "number": null,
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "68293524": {
+    "orig_lat": 52.48281,
+    "orig_lon": 17.04057,
+    "new_lat": 52.48654,
+    "new_lon": 17.05761,
+    "dist_m": 1226,
+    "query": "Czerwonak, Kliny, Polska",
+    "formatted": "Kliny, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kliny",
+      "district": "Czerwonak",
+      "confidence": "high"
+    },
+    "geo_city": "Kliny",
+    "geo_district": null,
+    "corrected": true
   }
 }
