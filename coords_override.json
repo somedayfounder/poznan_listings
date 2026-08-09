@@ -25477,5 +25477,350 @@
     "geo_city": "Kliny",
     "geo_district": null,
     "corrected": true
+  },
+  "96779875300067": {
+    "orig_lat": 52.36988,
+    "orig_lon": 17.14877,
+    "new_lat": 52.369875,
+    "new_lon": 17.148063,
+    "dist_m": 48,
+    "query": "ul. Borówkowa, Gowarzewo, Polska",
+    "formatted": "Gowarzewo Borówkowa n/ż, Siekierecka, Gowarzewo, Polska",
+    "addr": {
+      "street": "ul. Borówkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gowarzewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96800004100067": {
+    "orig_lat": 52.51897,
+    "orig_lon": 16.71284,
+    "new_lat": 52.518287,
+    "new_lon": 16.713719,
+    "dist_m": 96,
+    "query": "ul. Słonecznikowa, Mrowino, Polska",
+    "formatted": "Słonecznikowa, Mrowino, Polska",
+    "addr": {
+      "street": "ul. Słonecznikowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Mrowino",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Mrowino",
+    "geo_district": null,
+    "corrected": false
+  },
+  "60789610": {
+    "skipped": "outside_bbox",
+    "query": "Enklawa Nad Jeziorem, Tarnowo, Polska",
+    "formatted": "Tarnowo Pałuckie, gmina Wągrowiec, powiat wągrowiecki, województwo wielkopolskie, 62-105, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Enklawa Nad Jeziorem",
+      "city": "Tarnowo",
+      "district": "Kostrzyn",
+      "confidence": "high"
+    },
+    "new_lat": 52.831753,
+    "new_lon": 17.2767
+  },
+  "68134230": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96779090900067": {
+    "orig_lat": 52.56839,
+    "orig_lon": 16.99011,
+    "new_lat": 52.566978,
+    "new_lon": 16.99676,
+    "dist_m": 476,
+    "query": "Zielone Wzgórza, Murowana Goślina, Polska",
+    "formatted": "Zielone Wzgórza, Murowana Goślina, gmina Murowana Goślina, powiat poznański, województwo wielkopolskie, 62-095, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Zielone Wzgórza",
+      "city": "Murowana Goślina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Murowana Goślina",
+    "geo_district": "Zielone Wzgórza",
+    "corrected": true
+  },
+  "96792645600067": {
+    "orig_lat": 52.35622,
+    "orig_lon": 16.88329,
+    "new_lat": 52.356744,
+    "new_lon": 16.880542,
+    "dist_m": 196,
+    "query": "Ul. Świerczewska, Luboń, Polska",
+    "formatted": "Świerczewska, Luboń, Polska",
+    "addr": {
+      "street": "Ul. Świerczewska",
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Żabikowo",
+    "corrected": false
+  },
+  "96778152800067": {
+    "orig_lat": 52.52413,
+    "orig_lon": 16.7159,
+    "new_lat": 52.523996,
+    "new_lon": 16.715885,
+    "dist_m": 15,
+    "query": "ul. Jachtowa, Pamiątkowo, Polska",
+    "formatted": "Jachtowa, Pamiątkowo, Polska",
+    "addr": {
+      "street": "ul. Jachtowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Pamiątkowo",
+      "district": "gmina Szamotuły",
+      "confidence": "high"
+    },
+    "geo_city": "Pamiątkowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96722015000067": {
+    "skipped": "geocode_city_only",
+    "query": "null 28/B, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "null",
+      "number": "28/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "96633222300067": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449057,
+    "new_lon": 16.960241,
+    "dist_m": 136,
+    "query": "ul. Bielicowa 4, Naramowice, Polska",
+    "formatted": "Bielicowa, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "4",
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "67630535": {
+    "skipped": "outside_bbox",
+    "query": "ul. Zwierzyniecka, Konarzewo, Polska",
+    "formatted": "Konarzewo, gmina Nowogard, powiat goleniowski, województwo zachodniopomorskie, 72-207, Polska",
+    "addr": {
+      "street": "ul. Zwierzyniecka",
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.699863,
+    "new_lon": 15.225413
+  },
+  "96815169000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68238772": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "96815511800067": {
+    "orig_lat": 52.50689,
+    "orig_lon": 16.74096,
+    "new_lat": 52.505483,
+    "new_lon": 16.749602,
+    "dist_m": 605,
+    "query": "TARASY ROKIETNICY, Rokietnica, Polska",
+    "formatted": "Parafia Chrystusa Króla w Rokietnicy, Rokietnica, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "TARASY ROKIETNICY",
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96829344300067": {
+    "orig_lat": 52.48475,
+    "orig_lon": 17.04103,
+    "new_lat": 52.465348,
+    "new_lon": 17.01961,
+    "dist_m": 2600,
+    "query": "Czerwonak, Kicin, Polska",
+    "formatted": "Poczta Polska, 2a, Nowe Osiedle, Kicin, gmina Czerwonak, powiat poznański, województwo wielkopolskie, 62-008, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kicin",
+      "district": "Czerwonak",
+      "confidence": "high"
+    },
+    "geo_city": "Kicin",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68287224": {
+    "orig_lat": 52.42872,
+    "orig_lon": 16.95132,
+    "new_lat": 52.429902,
+    "new_lon": 16.952328,
+    "dist_m": 148,
+    "query": "ul. Wilczak 12A-B, Poznań, Polska",
+    "formatted": "Ulica Wilczak, Osiedla Szeląg, Stare Winogrady, Winogrady, Poznań, województwo wielkopolskie, 61-623, Polska",
+    "addr": {
+      "street": "ul. Wilczak",
+      "number": "12A-B",
+      "osiedle": "Dobry Szeląg",
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": false
+  },
+  "68293441": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "66650091": {
+    "orig_lat": 52.41873,
+    "orig_lon": 16.90318,
+    "new_lat": 52.415748,
+    "new_lon": 16.903088,
+    "dist_m": 332,
+    "query": "ul. Barańczaka, Poznań, Polska",
+    "formatted": "Stanisława Barańczaka, Poznań, Polska",
+    "addr": {
+      "street": "ul. Barańczaka",
+      "number": null,
+      "osiedle": "Goplana",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96825903600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96823978500067": {
+    "orig_lat": 52.41505,
+    "orig_lon": 16.89167,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 774,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
   }
 }
