@@ -26376,5 +26376,672 @@
     "geo_city": "Sady",
     "geo_district": "Dębina",
     "corrected": false
+  },
+  "96795239400067": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.443076,
+    "new_lon": 16.912969,
+    "dist_m": 227,
+    "query": "ul. Wojciechowskiego, Piątkowo, Polska",
+    "formatted": "Zygmunta Wojciechowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "null",
+      "osiedle": "Początek Piątkowo",
+      "city": "Piątkowo",
+      "district": "null",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "66324965": {
+    "orig_lat": 52.37413,
+    "orig_lon": 16.95236,
+    "new_lat": 52.374071,
+    "new_lon": 16.951708,
+    "dist_m": 45,
+    "query": "ul. Unii Lubelskiej 4, Starołęka, Polska",
+    "formatted": "Agrobex Unii Lubelskiej 4 (budowa), Unii Lubelskiej, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Unii Lubelskiej",
+      "number": "4",
+      "osiedle": "Inwestycja Unii Lubelskiej 4",
+      "city": "Starołęka",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "96632496500067": {
+    "orig_lat": 52.37413,
+    "orig_lon": 16.95236,
+    "new_lat": 52.374071,
+    "new_lon": 16.951708,
+    "dist_m": 45,
+    "query": "ul. Unii Lubelskiej 4, Starołęka, Polska",
+    "formatted": "Agrobex Unii Lubelskiej 4 (budowa), Unii Lubelskiej, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Unii Lubelskiej",
+      "number": "4",
+      "osiedle": "Inwestycja Unii Lubelskiej 4",
+      "city": "Starołęka",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "96566239100067": {
+    "orig_lat": 52.51811,
+    "orig_lon": 16.66318,
+    "new_lat": 52.520574,
+    "new_lon": 16.663002,
+    "dist_m": 274,
+    "query": "ul.Kolejowej, Przybroda, Polska",
+    "formatted": "Przybroda/Kolejowa n/ż, Kaźmierska, Przybroda, Polska",
+    "addr": {
+      "street": "ul.Kolejowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Przybroda",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przybroda",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67483154": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Tarnów",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96787597900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96816152800067": {
+    "orig_lat": 52.49199,
+    "orig_lon": 16.84185,
+    "new_lat": 52.486842,
+    "new_lon": 16.853434,
+    "dist_m": 971,
+    "query": "ul. Obornicka, Złotniki, Polska",
+    "formatted": "Złotniki/Złotnicka n/ż, Obornicka, Złotniki, Polska",
+    "addr": {
+      "street": "ul. Obornicka",
+      "number": null,
+      "osiedle": "Złotniki Park",
+      "city": "Złotniki",
+      "district": "gmina Suchy Las",
+      "confidence": "high"
+    },
+    "geo_city": "Złotniki",
+    "geo_district": "Grzybowe",
+    "corrected": true
+  },
+  "68297960": {
+    "orig_lat": 52.57594,
+    "orig_lon": 17.02093,
+    "new_lat": 52.574874,
+    "new_lon": 17.02223,
+    "dist_m": 148,
+    "query": "Sienkiewicza, Murowana Goślina, Polska",
+    "formatted": "Osiedle Sienkiewicza, Murowana Goślina, gmina Murowana Goślina, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Sienkiewicza",
+      "city": "Murowana Goślina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Murowana Goślina",
+    "geo_district": "Osiedle Sienkiewicza",
+    "corrected": false
+  },
+  "96829626400067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "96744094100067": {
+    "orig_lat": 52.52362,
+    "orig_lon": 16.98328,
+    "new_lat": 52.51182,
+    "new_lon": 16.98077,
+    "dist_m": 1323,
+    "query": "Tarasy nad stawem, Owińska, Polska",
+    "formatted": "Owińska, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Tarasy nad stawem",
+      "city": "Owińska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Owińska",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96818217400067": {
+    "orig_lat": 52.34617,
+    "orig_lon": 16.87738,
+    "new_lat": 52.34705,
+    "new_lon": 16.89267,
+    "dist_m": 1043,
+    "query": "Lokum Luboń, Luboń, Polska",
+    "formatted": "Luboń, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Lokum Luboń",
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68222600": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66118913": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96800295900067": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "68300578": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96821832700067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.34314,
+    "orig_lon": 17.07574,
+    "new_lat": 52.3387,
+    "new_lon": 16.81063,
+    "dist_m": 18017,
+    "orig_dist_to_center_m": 12060,
+    "query": "gm. Kleszczewo, Komorniki, Polska",
+    "formatted": "Komorniki, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": "gm. Kleszczewo",
+      "confidence": "high"
+    }
+  },
+  "68214106": {
+    "orig_lat": 52.38372,
+    "orig_lon": 16.83917,
+    "new_lat": 52.383936,
+    "new_lon": 16.840557,
+    "dist_m": 97,
+    "query": "ul. Wieruszowska 2, Junikowo, Polska",
+    "formatted": "Wieruszowska, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "2",
+      "osiedle": "Inwestycja Wieruszowska 2",
+      "city": "Junikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "67272644": {
+    "orig_lat": 52.47544,
+    "orig_lon": 16.66278,
+    "new_lat": 52.475709,
+    "new_lon": 16.66162,
+    "dist_m": 84,
+    "query": "ul. Rzymska 2D, Tarnowo Podgórne, Polska",
+    "formatted": "Rzymska 2, 62-080 Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "ul. Rzymska",
+      "number": "2D",
+      "osiedle": "Osiedle Nowe Tarnowo",
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": "Osiedle Zielony Gród",
+    "corrected": false
+  },
+  "96752613900067": {
+    "orig_lat": 52.34841,
+    "orig_lon": 16.77379,
+    "new_lat": 52.348377,
+    "new_lon": 16.773793,
+    "dist_m": 4,
+    "query": "ul. Pogodnej, Głuchowo, Polska",
+    "formatted": "Pogodna, Głuchowo, Polska",
+    "addr": {
+      "street": "ul. Pogodnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Głuchowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Głuchowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96790795300067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Życzliwa 10, null, Polska",
+    "addr": {
+      "street": "ul. Życzliwa",
+      "number": "10",
+      "osiedle": "Osiedle Życzliwe",
+      "city": "null",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "68238805": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "96823880500067": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "96827968900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Tulce",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "64775359": {
+    "orig_lat": 52.42962,
+    "orig_lon": 17.11302,
+    "new_lat": 52.42671,
+    "new_lon": 17.11026,
+    "dist_m": 374,
+    "query": "Swarzędz, Gortatowo, Polska",
+    "formatted": "Gortatowo, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gortatowo",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Gortatowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96776164200067": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 61,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka, 65, Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka",
+      "number": "65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "68296955": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68297665": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96829766500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67842816": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "96826167500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Wirach",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66338049": {
+    "orig_lat": 52.38746,
+    "orig_lon": 16.897,
+    "new_lat": 52.385117,
+    "new_lon": 16.893972,
+    "dist_m": 332,
+    "query": "ul. Dmowskiego 64, Poznań, Polska",
+    "formatted": "Górczyn, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Dmowskiego",
+      "number": "64",
+      "osiedle": "Inwestycja Dmowskiego 64",
+      "city": "Poznań",
+      "district": "Łazarz",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Górczyn",
+    "corrected": true
+  },
+  "96438955600067": {
+    "orig_lat": 52.4076,
+    "orig_lon": 17.07351,
+    "new_lat": 52.387903,
+    "new_lon": 17.106933,
+    "dist_m": 3153,
+    "query": "Osiedle Tercja, Rabowice, Polska",
+    "formatted": "Osiedle Świerkowe Tarasy, Rabowice, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Tercja",
+      "city": "Rabowice",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96819608000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Wirach",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67687603": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96802925000067": {
+    "orig_lat": 52.38217,
+    "orig_lon": 16.91298,
+    "new_lat": 52.393305,
+    "new_lon": 16.921161,
+    "dist_m": 1357,
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "number": null,
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "68170845": {
+    "orig_lat": 52.45285,
+    "orig_lon": 16.73113,
+    "new_lat": 52.452385,
+    "new_lon": 16.731501,
+    "dist_m": 57,
+    "query": "ul. Lotosowej, Sady, Polska",
+    "formatted": "Lotosowa, Sady, Polska",
+    "addr": {
+      "street": "ul. Lotosowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Sady",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sady",
+    "geo_district": "Dębina",
+    "corrected": false
+  },
+  "96772958500067": {
+    "orig_lat": 52.45695,
+    "orig_lon": 16.94658,
+    "new_lat": 52.44728,
+    "new_lon": 16.94977,
+    "dist_m": 1097,
+    "query": "ul. Maków Polnych 9, Naramowice, Polska",
+    "formatted": "Naramowice, Poznań, Polska",
+    "addr": {
+      "street": "ul. Maków Polnych",
+      "number": "9",
+      "osiedle": "FUELDA",
+      "city": "Naramowice",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Naramowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68298011": {
+    "orig_lat": 52.45656,
+    "orig_lon": 16.88343,
+    "new_lat": 52.455466,
+    "new_lon": 16.882133,
+    "dist_m": 150,
+    "query": "ul. Heleny Rzepeckiej, Poznań, Polska",
+    "formatted": "Heleny Rzepeckiej, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Rzepeckiej",
+      "number": null,
+      "osiedle": "Os. Podolany",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "96829801100067": {
+    "orig_lat": 52.45656,
+    "orig_lon": 16.88343,
+    "new_lat": 52.455466,
+    "new_lon": 16.882133,
+    "dist_m": 150,
+    "query": "ul. Heleny Rzepeckiej, Poznań, Polska",
+    "formatted": "Heleny Rzepeckiej, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Rzepeckiej",
+      "number": null,
+      "osiedle": "Os. Podolany",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
   }
 }
