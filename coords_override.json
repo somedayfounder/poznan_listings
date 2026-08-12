@@ -27043,5 +27043,342 @@
     "geo_city": "Poznań",
     "geo_district": "Podolany",
     "corrected": false
+  },
+  "68303870": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96818749000067": {
+    "orig_lat": 52.46202,
+    "orig_lon": 16.89833,
+    "new_lat": 52.464025,
+    "new_lon": 16.9008,
+    "dist_m": 279,
+    "query": "Ul. Teofila Mateckiego 20E, Poznań, Polska",
+    "formatted": "Teofila Mateckiego, 20E, Poznań, Polska",
+    "addr": {
+      "street": "Ul. Teofila Mateckiego",
+      "number": "20E",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo Północ",
+    "corrected": true
+  },
+  "96828262800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "65204769": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wieruszowska 8F_37, Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8F_37",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68301360": {
+    "skipped": "outside_bbox",
+    "query": "ul. Rolnej, Wielka Wieś, Polska",
+    "formatted": "Wielka Wieś, gmina Główczyce, powiat słupski, województwo pomorskie, 76-220, Polska",
+    "addr": {
+      "street": "ul. Rolnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Wielka Wieś",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 54.56771,
+    "new_lon": 17.359887
+  },
+  "96823829200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96826440400067": {
+    "orig_lat": 52.42659,
+    "orig_lon": 16.93611,
+    "new_lat": 52.425165,
+    "new_lon": 16.942943,
+    "dist_m": 490,
+    "query": "Winogrady, Winogrady, Polska",
+    "formatted": "Winogrady, Osiedle Na Murawie, Stare Winogrady, Winogrady, Poznań, województwo wielkopolskie, 61-626, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Winogrady",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68295656": {
+    "orig_lat": 52.34363,
+    "orig_lon": 16.69366,
+    "new_lat": 52.343634,
+    "new_lon": 16.693658,
+    "dist_m": 0,
+    "query": "ul. Lazurowa, Konarzewo, Polska",
+    "formatted": "Lazurowa, Konarzewo, Polska",
+    "addr": {
+      "street": "ul. Lazurowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Konarzewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96661433100067": {
+    "orig_lat": 52.57181,
+    "orig_lon": 17.02344,
+    "new_lat": 52.57196,
+    "new_lon": 17.022495,
+    "dist_m": 66,
+    "query": "ul. Gnieźnieńska, Murowana Goślina, Polska",
+    "formatted": "Gnieźnieńska, Murowana Goślina, Polska",
+    "addr": {
+      "street": "ul. Gnieźnieńska",
+      "number": null,
+      "osiedle": "Osiedle Makowe",
+      "city": "Murowana Goślina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Murowana Goślina",
+    "geo_district": "Zielone Wzgórza",
+    "corrected": false
+  },
+  "68304882": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96830488200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96830057800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "65204679": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wieruszowska 8G_8, Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8G_8",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96520467900067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wieruszowska 8G_8, Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8G_8",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96763311600067": {
+    "orig_lat": 52.33162,
+    "orig_lon": 16.83324,
+    "new_lat": 52.310996,
+    "new_lon": 16.858512,
+    "dist_m": 2865,
+    "query": "null, Wirach, Polska",
+    "formatted": "Parafia Świętego Floriana w Wirach, Wiry, gmina Komorniki, powiat poznański, województwo wielkopolskie, 62-051, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Wirach",
+      "district": "Komorniki",
+      "confidence": "high"
+    },
+    "geo_city": "Wiry",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68302221": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67761686": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 61,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka, 65, Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka",
+      "number": "65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "96805438700067": {
+    "orig_lat": 52.44339,
+    "orig_lon": 16.9183,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 0,
+    "query": "Lechicka 65, Poznań, Polska",
+    "formatted": "65, Lechicka, Piątkowo, Poznań, województwo wielkopolskie, 61-693, Polska",
+    "addr": {
+      "street": "Lechicka",
+      "number": "65",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96809042800067": {
+    "orig_lat": 52.45285,
+    "orig_lon": 16.73113,
+    "new_lat": 52.452385,
+    "new_lon": 16.731501,
+    "dist_m": 57,
+    "query": "ul. Lotosowej, Sady, Polska",
+    "formatted": "Lotosowa, Sady, Polska",
+    "addr": {
+      "street": "ul. Lotosowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Sady",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sady",
+    "geo_district": "Dębina",
+    "corrected": false
+  },
+  "67280940": {
+    "orig_lat": 52.41353,
+    "orig_lon": 16.93944,
+    "new_lat": 52.406608,
+    "new_lon": 16.937226,
+    "dist_m": 784,
+    "query": "ul. Garbary, Poznań, Polska",
+    "formatted": "Garbary, Poznań, Polska",
+    "addr": {
+      "street": "ul. Garbary",
+      "number": null,
+      "osiedle": "Apartamenty Esencja II",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Stare Miasto",
+    "corrected": true
+  },
+  "96784218500067": {
+    "orig_lat": 52.45528,
+    "orig_lon": 16.91912,
+    "new_lat": 52.44728,
+    "new_lon": 16.94977,
+    "dist_m": 2260,
+    "query": "ul. Maków Polnych 9, Naramowice, Polska",
+    "formatted": "Naramowice, Poznań, Polska",
+    "addr": {
+      "street": "ul. Maków Polnych",
+      "number": "9",
+      "osiedle": "FUELDA",
+      "city": "Naramowice",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Naramowice",
+    "geo_district": null,
+    "corrected": true
   }
 }
