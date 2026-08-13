@@ -27380,5 +27380,593 @@
     "geo_city": "Naramowice",
     "geo_district": null,
     "corrected": true
+  },
+  "96795238600067": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.443165,
+    "new_lon": 16.913001,
+    "dist_m": 217,
+    "query": "ul. Wojciechowskiego, Piątkowo, Polska",
+    "formatted": "Zygmunta Wojciechowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "null",
+      "osiedle": "Początek Piątkowo",
+      "city": "Piątkowo",
+      "district": "null",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "68302609": {
+    "orig_lat": 52.44002,
+    "orig_lon": 16.61879,
+    "new_lat": 52.439623,
+    "new_lon": 16.618801,
+    "dist_m": 44,
+    "query": "ul. Folwark 48, Jankowice, Polska",
+    "formatted": "Folwark, 48, Jankowice, Polska",
+    "addr": {
+      "street": "ul. Folwark",
+      "number": "48",
+      "osiedle": "Folwark Jankowice",
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": "Edmundowo",
+    "corrected": false
+  },
+  "96822118100067": {
+    "orig_lat": 52.4353,
+    "orig_lon": 17.06231,
+    "new_lat": 52.427159,
+    "new_lon": 17.068801,
+    "dist_m": 1007,
+    "query": "Ostoja Gruszczyn, Gruszczyn, Polska",
+    "formatted": "Ogrody Działkowe w Gruszczynie, Gruszczyn, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Ostoja Gruszczyn",
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gruszczyn",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96809763200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "65367667": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68306944": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Pamiątkowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96665690900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "nowa inwestycja deweloperska",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96792085200067": {
+    "orig_lat": 52.39103,
+    "orig_lon": 16.59958,
+    "new_lat": 52.390895,
+    "new_lon": 16.599518,
+    "dist_m": 16,
+    "query": "ul. Malinowa 15, Niepruszewo, Polska",
+    "formatted": "Malinowa, 15, Niepruszewo, Polska",
+    "addr": {
+      "street": "ul. Malinowa",
+      "number": "15",
+      "osiedle": null,
+      "city": "Niepruszewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Niepruszewo",
+    "geo_district": "Niepruszewo-Huby",
+    "corrected": false
+  },
+  "67457032": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "96822125400067": {
+    "orig_lat": 52.51425,
+    "orig_lon": 16.77852,
+    "new_lat": 52.514029,
+    "new_lon": 16.778556,
+    "dist_m": 25,
+    "query": "ul. Golfowa, Bytkowo, Polska",
+    "formatted": "Golfowa, Bytkowo, Polska",
+    "addr": {
+      "street": "ul. Golfowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Bytkowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Bytkowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96812781500067": {
+    "orig_lat": 52.37378,
+    "orig_lon": 16.68017,
+    "new_lat": 52.373026,
+    "new_lon": 16.678723,
+    "dist_m": 129,
+    "query": "Bajkowa, Dopiewiec, Polska",
+    "formatted": "Bajkowa, Dopiewiec, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-070, Polska",
+    "addr": {
+      "street": "Bajkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewiec",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68305959": {
+    "orig_lat": 52.35294,
+    "orig_lon": 17.02679,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 4212,
+    "query": "ul. Przyjaznej, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Przyjaznej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Żegrze",
+    "corrected": true
+  },
+  "96830595900067": {
+    "orig_lat": 52.35294,
+    "orig_lon": 17.02679,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 4212,
+    "query": "ul. Przyjaznej, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Przyjaznej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Żegrze",
+    "corrected": true
+  },
+  "96744545800067": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.448685,
+    "new_lon": 16.89088,
+    "dist_m": 33,
+    "query": "Strzeszyńska 77, Poznań, Polska",
+    "formatted": "77, Strzeszyńska, Podolany, Poznań, województwo wielkopolskie, 60-479, Polska",
+    "addr": {
+      "street": "Strzeszyńska",
+      "number": "77",
+      "osiedle": "Strzeszyńska 77",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "68305482": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68308612": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Puszcza Zielonka",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68305958": {
+    "orig_lat": 52.4922,
+    "orig_lon": 16.73335,
+    "new_lat": 52.490808,
+    "new_lon": 16.73516,
+    "dist_m": 197,
+    "query": "ul. Teatralnej, Napachanie, Polska",
+    "formatted": "Teatralna, Napachanie, Polska",
+    "addr": {
+      "street": "ul. Teatralnej",
+      "number": null,
+      "osiedle": "Osiedle Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68305957": {
+    "orig_lat": 52.49081,
+    "orig_lon": 16.73514,
+    "new_lat": 52.485086,
+    "new_lon": 16.727616,
+    "dist_m": 815,
+    "query": "Zielone Wzgórze, Napachanie, Polska",
+    "formatted": "Napachanie, gmina Rokietnica, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68305487": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96746522300067": {
+    "orig_lat": 52.44608,
+    "orig_lon": 16.89413,
+    "new_lat": 52.442458,
+    "new_lon": 16.893541,
+    "dist_m": 405,
+    "query": "ul. Jasielska, Podolany, Polska",
+    "formatted": "Jasielska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": null,
+      "osiedle": "Sielskie Podolany",
+      "city": "Podolany",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "96829603000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": "53",
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96828124900067": {
+    "orig_lat": 52.51884,
+    "orig_lon": 16.74983,
+    "new_lat": 52.519407,
+    "new_lon": 16.748156,
+    "dist_m": 130,
+    "query": "ul. Rubinowa, Rokietnica, Polska",
+    "formatted": "Rubinowa, Rokietnica, Polska",
+    "addr": {
+      "street": "ul. Rubinowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96801446800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Jelonek",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96792769400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96825625100067": {
+    "orig_lat": 52.48789,
+    "orig_lon": 16.9878,
+    "new_lat": 52.487733,
+    "new_lon": 16.987695,
+    "dist_m": 19,
+    "query": "ul. Szarotkowej, Miękowo, Polska",
+    "formatted": "Szarotkowa, Miękowo, Polska",
+    "addr": {
+      "street": "ul. Szarotkowej",
+      "number": null,
+      "osiedle": "Osiedle Brzozowe Parcele",
+      "city": "Miękowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Miękowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68305481": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68305960": {
+    "orig_lat": 52.34628,
+    "orig_lon": 17.02224,
+    "new_lat": 52.345667,
+    "new_lon": 17.021638,
+    "dist_m": 79,
+    "query": "Przyjazna, Poznań, Polska",
+    "formatted": "Przyjazna, Spławie, Szczepankowo-Spławie-Krzesinki, Poznań, województwo wielkopolskie, 61-324, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przyjazna",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Spławie",
+    "corrected": false
+  },
+  "68308854": {
+    "skipped": "geocode_failed",
+    "query": "ul. Agatowej 8/2, Siersław, Polska",
+    "addr": {
+      "street": "ul. Agatowej",
+      "number": "8/2",
+      "osiedle": null,
+      "city": "Siersław",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68307796": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Łacina",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67842904": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "68305480": {
+    "orig_lat": 52.34787,
+    "orig_lon": 16.90373,
+    "new_lat": 52.34787,
+    "new_lon": 16.90355,
+    "dist_m": 12,
+    "query": "ul. Jana Henryka Dąbrowskiego 20a, Luboń, Polska",
+    "formatted": "Jana Henryka Dąbrowskiego, 20A, Luboń, Polska",
+    "addr": {
+      "street": "ul. Jana Henryka Dąbrowskiego",
+      "number": "20a",
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Stary Luboń",
+    "corrected": false
+  },
+  "96828447500067": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68238781": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "66616532": {
+    "orig_lat": 52.30267,
+    "orig_lon": 17.08468,
+    "new_lat": 52.302893,
+    "new_lon": 17.073376,
+    "dist_m": 769,
+    "query": "ul. Radosnej, Dachowa, Polska",
+    "formatted": "Radosna, Dachowa, Polska",
+    "addr": {
+      "street": "ul. Radosnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68307992": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
