@@ -27968,5 +27968,388 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "96742236100067": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.443893,
+    "new_lon": 16.914164,
+    "dist_m": 161,
+    "query": "ul. Wojciechowskiego 4, Poznań, Polska",
+    "formatted": "Zygmunta Wojciechowskiego, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "4",
+      "osiedle": "Początek Piątkowo",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96114601400067": {
+    "orig_lat": 52.5713,
+    "orig_lon": 17.02807,
+    "new_lat": 52.57463,
+    "new_lon": 17.00933,
+    "dist_m": 1319,
+    "query": "ul. Gnieźnieńskiej 47, Murowana Goślina, Polska",
+    "formatted": "Murowana Goślina, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Gnieźnieńskiej",
+      "number": "47",
+      "osiedle": null,
+      "city": "Murowana Goślina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Murowana Goślina",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68311276": {
+    "orig_lat": 52.48398,
+    "orig_lon": 16.76856,
+    "new_lat": 52.500713,
+    "new_lon": 16.747833,
+    "dist_m": 2330,
+    "query": "ul. Poznańska 36, Kiekrz, Polska",
+    "formatted": "Poznańska, 62-090 Kiekrz, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "36",
+      "osiedle": null,
+      "city": "Kiekrz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Kiekrz",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96652883200067": {
+    "orig_lat": 52.28883,
+    "orig_lon": 16.96249,
+    "new_lat": 52.288693,
+    "new_lon": 16.962423,
+    "dist_m": 16,
+    "query": "ul. Rogalińska 11, Daszewice, Polska",
+    "formatted": "Rogalińska, 11J, Daszewice, Polska",
+    "addr": {
+      "street": "ul. Rogalińska",
+      "number": "11",
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Daszewice",
+    "geo_district": null,
+    "corrected": false
+  },
+  "65204680": {
+    "skipped": "outside_bbox",
+    "query": "ul. Wieruszowska, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": null,
+      "osiedle": "Grunwald Park",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "66801006": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "68309290": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kobylniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68309157": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96808576000067": {
+    "orig_lat": 52.51236,
+    "orig_lon": 16.69303,
+    "new_lat": 52.513931,
+    "new_lon": 16.701117,
+    "dist_m": 574,
+    "query": "Rokietnica, Mrowino, Polska",
+    "formatted": "Mrowino, gmina Rokietnica, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Mrowino",
+      "district": "Rokietnica",
+      "confidence": "high"
+    },
+    "geo_city": "Mrowino",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96830885400067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Agatowej 8/2, Siersław, Polska",
+    "addr": {
+      "street": "ul. Agatowej",
+      "number": "8/2",
+      "osiedle": null,
+      "city": "Siersław",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68303804": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96830380400067": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96830779600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Łacina",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96677968200067": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "96813412500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68238855": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68287154": {
+    "orig_lat": 52.42872,
+    "orig_lon": 16.95132,
+    "new_lat": 52.429902,
+    "new_lon": 16.952328,
+    "dist_m": 148,
+    "query": "ul. Wilczak 12A-B, Poznań, Polska",
+    "formatted": "Ulica Wilczak, Osiedla Szeląg, Stare Winogrady, Winogrady, Poznań, województwo wielkopolskie, 61-623, Polska",
+    "addr": {
+      "street": "ul. Wilczak",
+      "number": "12A-B",
+      "osiedle": "Dobry Szeląg",
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": false
+  },
+  "96828715400067": {
+    "orig_lat": 52.42872,
+    "orig_lon": 16.95132,
+    "new_lat": 52.429902,
+    "new_lon": 16.952328,
+    "dist_m": 148,
+    "query": "ul. Wilczak 12A-B, Poznań, Polska",
+    "formatted": "Ulica Wilczak, Osiedla Szeląg, Stare Winogrady, Winogrady, Poznań, województwo wielkopolskie, 61-623, Polska",
+    "addr": {
+      "street": "ul. Wilczak",
+      "number": "12A-B",
+      "osiedle": "Dobry Szeląg",
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": false
+  },
+  "68238922": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68303807": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96826327000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96822389000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Paczków",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96822674500067": {
+    "orig_lat": 52.35482,
+    "orig_lon": 17.03039,
+    "new_lat": 52.351152,
+    "new_lon": 17.02422,
+    "dist_m": 585,
+    "query": "Nowe Spławie, Poznań, Polska",
+    "formatted": "Spławie, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": "16",
+      "osiedle": "Nowe Spławie",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
   }
 }
