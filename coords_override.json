@@ -28351,5 +28351,375 @@
     "geo_city": "Poznań",
     "geo_district": null,
     "corrected": true
+  },
+  "96670705200067": {
+    "orig_lat": 52.38921,
+    "orig_lon": 16.85909,
+    "new_lat": 52.389515,
+    "new_lon": 16.859701,
+    "dist_m": 54,
+    "query": "ul. Smardzewska 8, Poznań, Polska",
+    "formatted": "Smardzewska, 60-159 Poznań, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": "8",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Stary Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Osiedle Mikołaja Kopernika",
+    "corrected": false
+  },
+  "68302608": {
+    "orig_lat": 52.44002,
+    "orig_lon": 16.61879,
+    "new_lat": 52.439599,
+    "new_lon": 16.618699,
+    "dist_m": 47,
+    "query": "ul. Folwark 47, Jankowice, Polska",
+    "formatted": "Folwark, 47, Jankowice, Polska",
+    "addr": {
+      "street": "ul. Folwark",
+      "number": "47",
+      "osiedle": "Folwark Jankowice",
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": "Edmundowo",
+    "corrected": false
+  },
+  "66799439": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68313448": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96822484400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Karolewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96819723400067": {
+    "skipped": "outside_bbox",
+    "query": "Orkiszowa 9/2, Gortatów, Polska",
+    "formatted": "Gortatów, Florentynów, gmina Parzęczew, powiat zgierski, województwo łódzkie, 95-045, Polska",
+    "addr": {
+      "street": "Orkiszowa",
+      "number": "9/2",
+      "osiedle": null,
+      "city": "Gortatów",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 51.897778,
+    "new_lon": 19.210833
+  },
+  "96829602700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96822656900067": {
+    "orig_lat": 52.47427,
+    "orig_lon": 16.74805,
+    "new_lat": 52.47128,
+    "new_lon": 16.72334,
+    "dist_m": 1706,
+    "query": "gmina Rokietnica, Kobylniki, Polska",
+    "formatted": "Kobylniki, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kobylniki",
+      "district": "gmina Rokietnica",
+      "confidence": "high"
+    },
+    "geo_city": "Kobylniki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96812799200067": {
+    "orig_lat": 52.30969,
+    "orig_lon": 17.06432,
+    "new_lat": 52.301737,
+    "new_lon": 17.07147,
+    "dist_m": 1009,
+    "query": "ul. Osiedle Życzliwe 29, Dachowa, Polska",
+    "formatted": "Osiedle Życzliwe, 29, Dachowa, Polska",
+    "addr": {
+      "street": "ul. Osiedle Życzliwe",
+      "number": "29",
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96825752200067": {
+    "orig_lat": 52.61476,
+    "orig_lon": 17.09083,
+    "new_lat": 52.61499,
+    "new_lon": 17.0905,
+    "dist_m": 34,
+    "query": "EKO-Łopuchowo, Łopuchowo, Polska",
+    "formatted": "Łopuchowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "EKO-Łopuchowo",
+      "city": "Łopuchowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łopuchowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96829048200067": {
+    "skipped": "geocode_city_only",
+    "query": "małym, kameralnym osiedlu, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "małym, kameralnym osiedlu",
+      "city": "Poznań",
+      "district": "Szczepankowo- Spławie- Krzesiny",
+      "confidence": "high"
+    }
+  },
+  "68312951": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96829048800067": {
+    "orig_lat": 52.35997,
+    "orig_lon": 16.74547,
+    "new_lat": 52.360665,
+    "new_lon": 16.745623,
+    "dist_m": 78,
+    "query": "Irysowa, Gołuski, Polska",
+    "formatted": "Irysowa, Gołuski, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-069, Polska",
+    "addr": {
+      "street": "Irysowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": "Dopiewo",
+      "confidence": "high"
+    },
+    "geo_city": "Gołuski",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96826168000067": {
+    "orig_lat": 52.36803,
+    "orig_lon": 16.8325,
+    "new_lat": 52.366348,
+    "new_lon": 16.818122,
+    "dist_m": 994,
+    "query": "ul. Bursztynowa, Plewiska, Polska",
+    "formatted": "Bursztynowa, Plewiska, Polska",
+    "addr": {
+      "street": "ul. Bursztynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Plewiska",
+    "geo_district": "Aniołowo",
+    "corrected": true
+  },
+  "68314674": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.6849,
+    "new_lat": 52.46214,
+    "new_lon": 16.673124,
+    "dist_m": 801,
+    "query": "ul. Rolna, Tarnowo Podgórne, Polska",
+    "formatted": "Tarnowo Podgórne/Rolna n/ż, Poznańska, Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "ul. Rolna",
+      "number": null,
+      "osiedle": null,
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96825621800067": {
+    "skipped": "geocode_failed",
+    "query": "Mięków, Polska",
+    "addr": {
+      "street": "ul. Szarotkowej",
+      "number": null,
+      "osiedle": "Brzozowe Parcele",
+      "city": "Mięków",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66801242": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "96794914100067": {
+    "orig_lat": 52.43993,
+    "orig_lon": 17.02575,
+    "new_lat": 52.440706,
+    "new_lon": 17.028063,
+    "dist_m": 179,
+    "query": "Asfaltowa, Janikowo, Polska",
+    "formatted": "Asfaltowa, Janikowo, gmina Swarzędz, powiat poznański, województwo wielkopolskie, 61-070, Polska",
+    "addr": {
+      "street": "Asfaltowa",
+      "number": null,
+      "osiedle": "Osiedle Olchowe Zacisze",
+      "city": "Janikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Janikowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96800962700067": {
+    "orig_lat": 52.38217,
+    "orig_lon": 16.91298,
+    "new_lat": 52.392651,
+    "new_lon": 16.920178,
+    "dist_m": 1264,
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "number": null,
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "68314011": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96828910000067": {
+    "orig_lat": 52.41321,
+    "orig_lon": 16.90233,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 43,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": false
+  },
+  "96827789700067": {
+    "orig_lat": 52.42658,
+    "orig_lon": 16.93625,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 932,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
   }
 }
