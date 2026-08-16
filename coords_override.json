@@ -28721,5 +28721,233 @@
     "geo_city": "Poznań",
     "geo_district": "Winogrady",
     "corrected": true
+  },
+  "96789316500067": {
+    "skipped": "outside_bbox",
+    "query": "ul. św. Jana 4, Gwiazdowo, Polska",
+    "formatted": "Gwiazdowo, Karwie, gmina Mrągowo, powiat mrągowski, województwo warmińsko-mazurskie, 11-700, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "number": "4",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.8243,
+    "new_lon": 21.286328
+  },
+  "96829611000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68315782": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96800411900067": {
+    "orig_lat": 52.37622,
+    "orig_lon": 16.95347,
+    "new_lat": 52.376396,
+    "new_lon": 16.952555,
+    "dist_m": 65,
+    "query": "Panoramiqa 2, Poznań, Polska",
+    "formatted": "Panoramiqa, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Panoramiqa 2",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "96829186000067": {
+    "orig_lat": 52.37266,
+    "orig_lon": 16.7756,
+    "new_lat": 52.360665,
+    "new_lon": 16.745623,
+    "dist_m": 2433,
+    "query": "Irysowa, Gołuski, Polska",
+    "formatted": "Irysowa, Gołuski, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-069, Polska",
+    "addr": {
+      "street": "Irysowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gołuski",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96828958300067": {
+    "orig_lat": 52.37461,
+    "orig_lon": 16.95043,
+    "new_lat": 52.374577,
+    "new_lon": 16.953591,
+    "dist_m": 215,
+    "query": "ul. Unii Lubelskiej, Poznań, Polska",
+    "formatted": "Unii Lubelskiej, Poznań, Polska",
+    "addr": {
+      "street": "ul. Unii Lubelskiej",
+      "number": null,
+      "osiedle": "RATAJE",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "96827920900067": {
+    "orig_lat": 52.34811,
+    "orig_lon": 17.09943,
+    "new_lat": 52.348224,
+    "new_lon": 17.099853,
+    "dist_m": 31,
+    "query": "ul. Szafirowa, Tulce, Polska",
+    "formatted": "Szafirowa, Tulce, Polska",
+    "addr": {
+      "street": "ul. Szafirowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Tulce",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tulce",
+    "geo_district": "Zadęby",
+    "corrected": false
+  },
+  "96830596000067": {
+    "orig_lat": 52.34628,
+    "orig_lon": 17.02224,
+    "new_lat": 52.345667,
+    "new_lon": 17.021638,
+    "dist_m": 79,
+    "query": "Przyjazna, Poznań, Polska",
+    "formatted": "Przyjazna, Spławie, Szczepankowo-Spławie-Krzesinki, Poznań, województwo wielkopolskie, 61-324, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przyjazna",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Spławie",
+    "corrected": false
+  },
+  "96784275100067": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "96800857600067": {
+    "orig_lat": 52.43087,
+    "orig_lon": 16.79302,
+    "new_lat": 52.42745,
+    "new_lon": 16.78375,
+    "dist_m": 735,
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68315842": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96826208600067": {
+    "orig_lat": 52.41916,
+    "orig_lon": 16.63423,
+    "new_lat": 52.416497,
+    "new_lon": 16.630809,
+    "dist_m": 376,
+    "query": "ul. Róży, Lusówko, Polska",
+    "formatted": "Róży, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Róży",
+      "number": null,
+      "osiedle": null,
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Rozalin",
+    "corrected": true
+  },
+  "96818091400067": {
+    "orig_lat": 52.40918,
+    "orig_lon": 17.12186,
+    "new_lat": 52.40682,
+    "new_lon": 17.13859,
+    "dist_m": 1165,
+    "query": "ul. Owocowej 12A, Łowęcin, Polska",
+    "formatted": "Łowęcin, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Owocowej",
+      "number": "12A",
+      "osiedle": null,
+      "city": "Łowęcin",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łowęcin",
+    "geo_district": null,
+    "corrected": true
   }
 }
