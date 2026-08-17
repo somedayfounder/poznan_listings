@@ -28949,5 +28949,159 @@
     "geo_city": "Łowęcin",
     "geo_district": null,
     "corrected": true
+  },
+  "96747988900067": {
+    "orig_lat": 52.36452,
+    "orig_lon": 17.12451,
+    "new_lat": 52.354378,
+    "new_lon": 17.109029,
+    "dist_m": 1542,
+    "query": "ul. Śnieżna, Gowarzewo, Polska",
+    "formatted": "Śnieżna, Gowarzewo, Polska",
+    "addr": {
+      "street": "ul. Śnieżna",
+      "number": null,
+      "osiedle": null,
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gowarzewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96810311000067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Rolnej, Tarnów Podgórny, Polska",
+    "addr": {
+      "street": "ul. Rolnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Tarnów Podgórny",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96693260900067": {
+    "orig_lat": 52.47544,
+    "orig_lon": 16.66278,
+    "new_lat": 52.475709,
+    "new_lon": 16.66162,
+    "dist_m": 84,
+    "query": "ul. Rzymska 2E, Tarnowo Podgórne, Polska",
+    "formatted": "Rzymska 2, 62-080 Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "ul. Rzymska",
+      "number": "2E",
+      "osiedle": "Osiedle Nowe Tarnowo",
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": "Osiedle Zielony Gród",
+    "corrected": false
+  },
+  "96566140300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Czmoniec",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68316954": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96813836300067": {
+    "orig_lat": 52.28611,
+    "orig_lon": 16.68288,
+    "new_lat": 52.279354,
+    "new_lon": 16.699933,
+    "dist_m": 1382,
+    "query": "ul. Kwiatowej, Stęszew, Polska",
+    "formatted": "Stęszew, gmina Stęszew, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Kwiatowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Stęszew",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Stęszew",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96829352400067": {
+    "orig_lat": 52.48281,
+    "orig_lon": 17.04057,
+    "new_lat": 52.48654,
+    "new_lon": 17.05761,
+    "dist_m": 1226,
+    "query": "Czerwonak, Kliny, Polska",
+    "formatted": "Kliny, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kliny",
+      "district": "Czerwonak",
+      "confidence": "high"
+    },
+    "geo_city": "Kliny",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96800407000067": {
+    "orig_lat": 52.37622,
+    "orig_lon": 16.95347,
+    "new_lat": 52.376396,
+    "new_lon": 16.952555,
+    "dist_m": 65,
+    "query": "Panoramiqa 2, Poznań, Polska",
+    "formatted": "Panoramiqa, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Panoramiqa 2",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "96828160100067": {
+    "orig_lat": 52.43587,
+    "orig_lon": 16.94045,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 181,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": false
   }
 }
