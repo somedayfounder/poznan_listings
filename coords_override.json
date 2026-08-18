@@ -29103,5 +29103,375 @@
     "geo_city": "Poznań",
     "geo_district": "Winogrady",
     "corrected": false
+  },
+  "96824343500067": {
+    "orig_lat": 52.48972,
+    "orig_lon": 16.83026,
+    "new_lat": 52.486842,
+    "new_lon": 16.853434,
+    "dist_m": 1601,
+    "query": "ul. Obornicka, Złotniki, Polska",
+    "formatted": "Złotniki/Złotnicka n/ż, Obornicka, Złotniki, Polska",
+    "addr": {
+      "street": "ul. Obornicka",
+      "number": null,
+      "osiedle": "Złotniki Park",
+      "city": "Złotniki",
+      "district": "gmina Suchy Las",
+      "confidence": "high"
+    },
+    "geo_city": "Złotniki",
+    "geo_district": "Grzybowe",
+    "corrected": true
+  },
+  "66666182": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.4596,
+    "orig_lon": 16.66523,
+    "new_lat": 52.427138,
+    "new_lon": 16.574088,
+    "dist_m": 7155,
+    "orig_dist_to_center_m": 19070,
+    "query": "ul. Spokojna, Ceradz Dolny, Polska",
+    "formatted": "Spokojna, Ceradz Dolny, Polska",
+    "addr": {
+      "street": "ul. Spokojna",
+      "number": null,
+      "osiedle": null,
+      "city": "Ceradz Dolny",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68320724": {
+    "orig_lat": 52.4639,
+    "orig_lon": 16.9005,
+    "new_lat": 52.489231,
+    "new_lon": 16.909592,
+    "dist_m": 2883,
+    "query": "Osiedle Mateckiego, Morasko, Polska",
+    "formatted": "Morasko, Morasko-Radojewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Mateckiego",
+      "city": "Morasko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Morasko",
+    "corrected": true
+  },
+  "68322903": {
+    "orig_lat": 52.42659,
+    "orig_lon": 16.93611,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 221,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "96832290300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Winogrady",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96821253100067": {
+    "orig_lat": 52.29489,
+    "orig_lon": 17.00743,
+    "new_lat": 52.296071,
+    "new_lon": 17.007659,
+    "dist_m": 132,
+    "query": "Choinkowa, Szczytniki, Polska",
+    "formatted": "Choinkowa, Szczytniki, gmina Kórnik, powiat poznański, województwo wielkopolskie, 62-023, Polska",
+    "addr": {
+      "street": "Choinkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68322836": {
+    "orig_lat": 52.41684,
+    "orig_lon": 16.89925,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 444,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68318941": {
+    "skipped": "outside_bbox",
+    "query": "prywatne osiedle, Kostrzyn, Polska",
+    "formatted": "Kostrzyn, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "prywatne osiedle",
+      "city": "Kostrzyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.39847,
+    "new_lon": 17.22811
+  },
+  "68322901": {
+    "orig_lat": 52.42659,
+    "orig_lon": 16.93611,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 221,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68322894": {
+    "orig_lat": 52.42659,
+    "orig_lon": 16.93611,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 221,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68322898": {
+    "orig_lat": 52.42659,
+    "orig_lon": 16.93611,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 221,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68321468": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96754523300067": {
+    "orig_lat": 52.34841,
+    "orig_lon": 16.77379,
+    "new_lat": 52.348377,
+    "new_lon": 16.773793,
+    "dist_m": 4,
+    "query": "ul. Pogodnej, Głuchowo, Polska",
+    "formatted": "Pogodna, Głuchowo, Polska",
+    "addr": {
+      "street": "ul. Pogodnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Głuchowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Głuchowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68322852": {
+    "orig_lat": 52.41669,
+    "orig_lon": 16.89959,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 418,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96825877400067": {
+    "orig_lat": 52.41678,
+    "orig_lon": 17.10164,
+    "new_lat": 52.413677,
+    "new_lon": 17.101509,
+    "dist_m": 345,
+    "query": "Gerberowa Park, Jasin, Polska",
+    "formatted": "Gerberowa, Jasin, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Gerberowa Park",
+      "city": "Jasin",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jasin",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96829685400067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.46167,
+    "orig_lon": 16.98391,
+    "new_lat": 52.52336,
+    "new_lon": 17.02593,
+    "dist_m": 7426,
+    "orig_dist_to_center_m": 6854,
+    "query": "Czerwonak, Potasze, Polska",
+    "formatted": "Potasze, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Potasze",
+      "district": "Czerwonak",
+      "confidence": "high"
+    }
+  },
+  "68322881": {
+    "orig_lat": 52.41679,
+    "orig_lon": 16.89968,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 424,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68320252": {
+    "skipped": "outside_bbox",
+    "query": "ul. Świerzawska, Marcelin, Polska",
+    "formatted": "Marcelin, gmina Szczecinek, powiat szczecinecki, województwo zachodniopomorskie, 78-422, Polska",
+    "addr": {
+      "street": "ul. Świerzawska",
+      "number": null,
+      "osiedle": null,
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.717545,
+    "new_lon": 16.744522
+  },
+  "68322832": {
+    "orig_lat": 52.41684,
+    "orig_lon": 16.89925,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 444,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68318851": {
+    "orig_lat": 52.35472,
+    "orig_lon": 17.03022,
+    "new_lat": 52.351152,
+    "new_lon": 17.02422,
+    "dist_m": 569,
+    "query": "Nowe Spławie, Poznań, Polska",
+    "formatted": "Spławie, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": "16",
+      "osiedle": "Nowe Spławie",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
   }
 }
