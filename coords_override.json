@@ -29473,5 +29473,416 @@
     "geo_city": "Poznań",
     "geo_district": null,
     "corrected": true
+  },
+  "96713592200067": {
+    "orig_lat": 52.54238,
+    "orig_lon": 16.94762,
+    "new_lat": 52.54217,
+    "new_lon": 16.9443,
+    "dist_m": 226,
+    "query": "ul. Jesionowa 3_M18, Biedrusko, Polska",
+    "formatted": "Biedrusko, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Jesionowa",
+      "number": "3_M18",
+      "osiedle": "Biedrusko Osiedle Jesionowe",
+      "city": "Biedrusko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Biedrusko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96780948000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Czerlejno",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68321304": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96832130400067": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68324343": {
+    "skipped": "outside_bbox",
+    "query": "ul. Brzoskwiniowa, Siekierki Wielkie, Polska",
+    "formatted": "Brzoskwiniowa, Siekierki Wielkie, Polska",
+    "addr": {
+      "street": "ul. Brzoskwiniowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.390348,
+    "new_lon": 17.168341
+  },
+  "96796391000067": {
+    "orig_lat": 52.37384,
+    "orig_lon": 16.68235,
+    "new_lat": 52.373842,
+    "new_lon": 16.682427,
+    "dist_m": 5,
+    "query": "ul. Krasnoludków, Dopiewiec, Polska",
+    "formatted": "Krasnoludków, Dopiewiec, Polska",
+    "addr": {
+      "street": "ul. Krasnoludków",
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewiec",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68324128": {
+    "orig_lat": 52.23283,
+    "orig_lon": 16.82917,
+    "new_lat": 52.245583,
+    "new_lon": 16.847259,
+    "dist_m": 1878,
+    "query": "ul. Strzeleckiej, Mosina, Polska",
+    "formatted": "Mosina, gmina Mosina, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Strzeleckiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Mosina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Mosina",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68327242": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96832724200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96829610800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68327188": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96827764300067": {
+    "orig_lat": 52.4375,
+    "orig_lon": 16.94047,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 326,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "65229417": {
+    "orig_lat": 52.42961,
+    "orig_lon": 16.9519,
+    "new_lat": 52.429872,
+    "new_lon": 16.951968,
+    "dist_m": 29,
+    "query": "Wilczak 16 A, Poznań, Polska",
+    "formatted": "16a, Wilczak, Szeląg, Stare Winogrady, Winogrady, Poznań, województwo wielkopolskie, 61-623, Polska",
+    "addr": {
+      "street": "Wilczak",
+      "number": "16 A",
+      "osiedle": "Tarasy Wilczak",
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": false
+  },
+  "96522941700067": {
+    "orig_lat": 52.42961,
+    "orig_lon": 16.9519,
+    "new_lat": 52.429872,
+    "new_lon": 16.951968,
+    "dist_m": 29,
+    "query": "Wilczak 16 A, Poznań, Polska",
+    "formatted": "16a, Wilczak, Szeląg, Stare Winogrady, Winogrady, Poznań, województwo wielkopolskie, 61-623, Polska",
+    "addr": {
+      "street": "Wilczak",
+      "number": "16 A",
+      "osiedle": "Tarasy Wilczak",
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": false
+  },
+  "67445451": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.448685,
+    "new_lon": 16.89088,
+    "dist_m": 33,
+    "query": "Strzeszyńska 77, Poznań, Polska",
+    "formatted": "77, Strzeszyńska, Podolany, Poznań, województwo wielkopolskie, 60-479, Polska",
+    "addr": {
+      "street": "Strzeszyńska",
+      "number": "77",
+      "osiedle": "Strzeszyńska 77",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "68326545": {
+    "orig_lat": 52.28568,
+    "orig_lon": 17.04525,
+    "new_lat": 52.285276,
+    "new_lon": 17.046901,
+    "dist_m": 121,
+    "query": "Poznańska, Borówiec, Polska",
+    "formatted": "Poznańska, Borówiec, gmina Kórnik, powiat poznański, województwo wielkopolskie, 62-023, Polska",
+    "addr": {
+      "street": "Poznańska",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68324131": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68319672": {
+    "orig_lat": 52.492,
+    "orig_lon": 16.74119,
+    "new_lat": 52.491755,
+    "new_lon": 16.741418,
+    "dist_m": 31,
+    "query": "ul. Afiszowej, Napachanie, Polska",
+    "formatted": "Afiszowa, Napachanie, Polska",
+    "addr": {
+      "street": "ul. Afiszowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68326256": {
+    "orig_lat": 52.43173,
+    "orig_lon": 16.94596,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 622,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "67968613": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "96786830400067": {
+    "orig_lat": 52.37305,
+    "orig_lon": 16.90062,
+    "new_lat": 52.371519,
+    "new_lon": 16.90032,
+    "dist_m": 171,
+    "query": "ul. Świerkowa, Poznań, Polska",
+    "formatted": "Świerkowa, Poznań, Polska",
+    "addr": {
+      "street": "ul. Świerkowa",
+      "number": null,
+      "osiedle": "EKO Grabowa",
+      "city": "Poznań",
+      "district": "Dębiec",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Świerczewo",
+    "corrected": false
+  },
+  "68326255": {
+    "skipped": "geocode_city_only",
+    "query": "nowoczesnej inwestycji, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "nowoczesnej inwestycji",
+      "city": "Poznań",
+      "district": "Grunwald - Marcelin",
+      "confidence": "high"
+    }
+  },
+  "96818090000067": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96768760300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68324155": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczepankowo",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
