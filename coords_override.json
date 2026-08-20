@@ -29884,5 +29884,306 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "68331155": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Karolewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96833115500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Karolewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96729733700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Czmoń",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68329757": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96646821100067": {
+    "orig_lat": 52.28176,
+    "orig_lon": 16.61772,
+    "new_lat": 52.29473,
+    "new_lon": 16.629835,
+    "dist_m": 1661,
+    "query": "ul. Truskawkowa, Sapowice, Polska",
+    "formatted": "Truskawkowa, Sapowice, Polska",
+    "addr": {
+      "street": "ul. Truskawkowa",
+      "number": null,
+      "osiedle": "Osiedle nad Jeziorem",
+      "city": "Sapowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sapowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96832072400067": {
+    "orig_lat": 52.4639,
+    "orig_lon": 16.9005,
+    "new_lat": 52.489231,
+    "new_lon": 16.909592,
+    "dist_m": 2883,
+    "query": "Osiedle Mateckiego, Morasko, Polska",
+    "formatted": "Morasko, Morasko-Radojewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Mateckiego",
+      "city": "Morasko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Morasko",
+    "corrected": true
+  },
+  "65204693": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, województwo lubuskie, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": null,
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96826152600067": {
+    "orig_lat": 52.30969,
+    "orig_lon": 17.06432,
+    "new_lat": 52.301737,
+    "new_lon": 17.07147,
+    "dist_m": 1009,
+    "query": "ul. Osiedle Życzliwe 29, Dachowa, Polska",
+    "formatted": "Osiedle Życzliwe, 29, Dachowa, Polska",
+    "addr": {
+      "street": "ul. Osiedle Życzliwe",
+      "number": "29",
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68331072": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96829373600067": {
+    "orig_lat": 52.36803,
+    "orig_lon": 16.8325,
+    "new_lat": 52.366348,
+    "new_lon": 16.818122,
+    "dist_m": 994,
+    "query": "ul. Bursztynowa, Plewiska, Polska",
+    "formatted": "Bursztynowa, Plewiska, Polska",
+    "addr": {
+      "street": "ul. Bursztynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Plewiska",
+    "geo_district": "Aniołowo",
+    "corrected": true
+  },
+  "68328964": {
+    "orig_lat": 52.39344,
+    "orig_lon": 16.84466,
+    "new_lat": 52.390169,
+    "new_lon": 16.848049,
+    "dist_m": 430,
+    "query": "ul. Jeleniogórska, Poznań, Polska",
+    "formatted": "Jeleniogórska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": true
+  },
+  "68238763": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "96823876300067": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68329037": {
+    "orig_lat": 52.39378,
+    "orig_lon": 16.84389,
+    "new_lat": 52.390169,
+    "new_lon": 16.848049,
+    "dist_m": 491,
+    "query": "ul. Jeleniogórska, Poznań, Polska",
+    "formatted": "Jeleniogórska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": true
+  },
+  "68327458": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68329721": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96830548000067": {
+    "orig_lat": 52.34787,
+    "orig_lon": 16.90373,
+    "new_lat": 52.34787,
+    "new_lon": 16.90355,
+    "dist_m": 12,
+    "query": "ul. Jana Henryka Dąbrowskiego 20a, Luboń, Polska",
+    "formatted": "Jana Henryka Dąbrowskiego, 20A, Luboń, Polska",
+    "addr": {
+      "street": "ul. Jana Henryka Dąbrowskiego",
+      "number": "20a",
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Stary Luboń",
+    "corrected": false
+  },
+  "67842909": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "68328432": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
   }
 }
