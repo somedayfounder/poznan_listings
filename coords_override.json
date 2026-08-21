@@ -30185,5 +30185,389 @@
       "district": null,
       "confidence": "low"
     }
+  },
+  "68328805": {
+    "orig_lat": 52.44002,
+    "orig_lon": 16.61879,
+    "new_lat": 52.439574,
+    "new_lon": 16.618597,
+    "dist_m": 51,
+    "query": "ul. Folwark 46, Jankowice, Polska",
+    "formatted": "Folwark, 46, Jankowice, Polska",
+    "addr": {
+      "street": "ul. Folwark",
+      "number": "46",
+      "osiedle": "Folwark Jankowice",
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": "Edmundowo",
+    "corrected": false
+  },
+  "96789316300067": {
+    "skipped": "outside_bbox",
+    "query": "ul. św. Jana 3, Gwiazdowo, Polska",
+    "formatted": "Świętego Jana, 3, Gwiazdowo, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "number": "3",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.407294,
+    "new_lon": 17.21285
+  },
+  "68112128": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96811212800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68334383": {
+    "skipped": "geocode_failed",
+    "query": "null, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Zielone Wzgórze",
+      "city": "null",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68333262": {
+    "orig_lat": 52.4922,
+    "orig_lon": 16.73335,
+    "new_lat": 52.490808,
+    "new_lon": 16.73516,
+    "dist_m": 197,
+    "query": "ul. Teatralnej, Napachanie, Polska",
+    "formatted": "Teatralna, Napachanie, Polska",
+    "addr": {
+      "street": "ul. Teatralnej",
+      "number": null,
+      "osiedle": "Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68331551": {
+    "orig_lat": 52.37523,
+    "orig_lon": 16.9526,
+    "new_lat": 52.39013,
+    "new_lon": 16.953591,
+    "dist_m": 1658,
+    "query": "Rataje, Poznań, Polska",
+    "formatted": "Rataje, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Rataje",
+    "corrected": true
+  },
+  "67859695": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96826166900067": {
+    "orig_lat": 52.37266,
+    "orig_lon": 16.7756,
+    "new_lat": 52.360665,
+    "new_lon": 16.745623,
+    "dist_m": 2433,
+    "query": "Irysowa, Gołuski, Polska",
+    "formatted": "Irysowa, Gołuski, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-069, Polska",
+    "addr": {
+      "street": "Irysowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gołuski",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96829695500067": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68331878": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67679298": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "podmiejska okolica",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68332360": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68238783": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68332988": {
+    "orig_lat": 52.39419,
+    "orig_lon": 16.72483,
+    "new_lat": 52.397325,
+    "new_lon": 16.715074,
+    "dist_m": 748,
+    "query": "ul. Wiązowa, Zakrzewo, Polska",
+    "formatted": "Wiązowa, Zakrzewo, Polska",
+    "addr": {
+      "street": "ul. Wiązowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Zakrzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Zakrzewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68332406": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96793538200067": {
+    "orig_lat": 52.34184,
+    "orig_lon": 16.72316,
+    "new_lat": 52.341008,
+    "new_lon": 16.72111,
+    "dist_m": 167,
+    "query": "Frezjowa, Konarzewo, Polska",
+    "formatted": "Frezjowa, Konarzewo, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-070, Polska",
+    "addr": {
+      "street": "Frezjowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Konarzewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68332351": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68207171": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96820717100067": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96676234200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96661653200067": {
+    "orig_lat": 52.30267,
+    "orig_lon": 17.08468,
+    "new_lat": 52.302893,
+    "new_lon": 17.073376,
+    "dist_m": 769,
+    "query": "ul. Radosnej, Dachowa, Polska",
+    "formatted": "Radosna, Dachowa, Polska",
+    "addr": {
+      "street": "ul. Radosnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96816881000067": {
+    "orig_lat": 52.47018,
+    "orig_lon": 16.94736,
+    "new_lat": 52.463684,
+    "new_lon": 16.947918,
+    "dist_m": 723,
+    "query": "Naramowice/Umultowo, Poznań, Polska",
+    "formatted": "Planowana Trasa Tramwajowa na Naramowice - etap III, Bogumiła Krygowskiego, Różany Potok, Umultowo, Poznań, województwo wielkopolskie, 61-606, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Naramowice/Umultowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Umultowo",
+    "corrected": true
   }
 }
