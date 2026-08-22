@@ -30569,5 +30569,228 @@
     "geo_city": "Poznań",
     "geo_district": "Umultowo",
     "corrected": true
+  },
+  "96830694400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Pamiątkowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96819638100067": {
+    "orig_lat": 52.62072,
+    "orig_lon": 17.11817,
+    "new_lat": 52.620241,
+    "new_lon": 17.118724,
+    "dist_m": 65,
+    "query": "ulica Pieczarkowa, Łopuchowo, Polska",
+    "formatted": "Pieczarkowa, Łopuchowo, Polska",
+    "addr": {
+      "street": "ulica Pieczarkowa",
+      "number": null,
+      "osiedle": "Osiedle Przy Puszczy",
+      "city": "Łopuchowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łopuchowo",
+    "geo_district": "Gać",
+    "corrected": false
+  },
+  "66316026": {
+    "orig_lat": 52.44821,
+    "orig_lon": 16.96004,
+    "new_lat": 52.4493,
+    "new_lon": 16.958531,
+    "dist_m": 159,
+    "query": "ul. Bielicowa 2, Poznań, Polska",
+    "formatted": "Bielicowa, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "2",
+      "osiedle": "Osiedle Witaj",
+      "city": "Poznań",
+      "district": "Naramowice",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "67995781": {
+    "orig_lat": 52.44821,
+    "orig_lon": 16.96004,
+    "new_lat": 52.4493,
+    "new_lon": 16.958531,
+    "dist_m": 159,
+    "query": "ul. Bielicowa 2, Poznań, Polska",
+    "formatted": "Bielicowa, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "2",
+      "osiedle": "Osiedle Witaj",
+      "city": "Poznań",
+      "district": "Naramowice",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "96827921100067": {
+    "orig_lat": 52.24541,
+    "orig_lon": 16.84706,
+    "new_lat": 52.245583,
+    "new_lon": 16.847259,
+    "dist_m": 24,
+    "query": "ul. Kamiennej, Mosina, Polska",
+    "formatted": "Mosina, gmina Mosina, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Kamiennej",
+      "number": null,
+      "osiedle": null,
+      "city": "Mosina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Mosina",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68337943": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.43845,
+    "orig_lon": 16.94816,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 7415,
+    "orig_dist_to_center_m": 3506,
+    "query": "ul. Naramowickiej, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Naramowickiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    }
+  },
+  "96812517000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67842780": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "96833236000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96776169000067": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 61,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka, 65, Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka",
+      "number": "65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "96826166800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Wirach",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68336737": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68017146": {
+    "orig_lat": 52.38217,
+    "orig_lon": 16.91298,
+    "new_lat": 52.392373,
+    "new_lon": 16.920046,
+    "dist_m": 1232,
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "number": null,
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
   }
 }
