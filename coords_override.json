@@ -30792,5 +30792,267 @@
     "geo_city": "Poznań",
     "geo_district": "Wilda",
     "corrected": true
+  },
+  "96818887700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Biedrusko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "65845244": {
+    "skipped": "outside_bbox",
+    "query": "ul. Cichej, Siekierki Wielkie, Polska",
+    "formatted": "Siekierki Wielkie, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Cichej",
+      "number": null,
+      "osiedle": "OSIEDLE CICHE",
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.38133,
+    "new_lon": 17.16391
+  },
+  "68329655": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96827948100067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jabłonowej, Siekierki Wielkie, Polska",
+    "formatted": "Siekierki Wielkie, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Jabłonowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": "Kostrzyn",
+      "confidence": "high"
+    },
+    "new_lat": 52.38133,
+    "new_lon": 17.16391
+  },
+  "96520476900067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wieruszowska 8F_37, Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8F_37",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96815965300067": {
+    "orig_lat": 52.37851,
+    "orig_lon": 16.7515,
+    "new_lat": 52.378621,
+    "new_lon": 16.752181,
+    "dist_m": 48,
+    "query": "ul. Skarbcowa, Dąbrówka, Polska",
+    "formatted": "Skarbcowa, Dąbrówka, Polska",
+    "addr": {
+      "street": "ul. Skarbcowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dąbrówka",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dąbrówka",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96763053500067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Zwierzyniecka, Konarzewo, Polska",
+    "formatted": "Konarzewo, gmina Nowogard, powiat goleniowski, województwo zachodniopomorskie, 72-207, Polska",
+    "addr": {
+      "street": "ul. Zwierzyniecka",
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.699863,
+    "new_lon": 15.225413
+  },
+  "96826827900067": {
+    "orig_lat": 52.49081,
+    "orig_lon": 16.73514,
+    "new_lat": 52.485086,
+    "new_lon": 16.727616,
+    "dist_m": 815,
+    "query": "Osiedle Zielone Wzgórze, Napachanie, Polska",
+    "formatted": "Napachanie, gmina Rokietnica, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67423460": {
+    "orig_lat": 52.35675,
+    "orig_lon": 16.66652,
+    "new_lat": 52.356319,
+    "new_lon": 16.665448,
+    "dist_m": 87,
+    "query": "Czerwcowa, Dopiewo, Polska",
+    "formatted": "Czerwcowa, Dopiewo, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-070, Polska",
+    "addr": {
+      "street": "Czerwcowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96832289400067": {
+    "orig_lat": 52.42659,
+    "orig_lon": 16.93611,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 221,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68339764": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96790736100067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Życzliwa 10, null, Polska",
+    "addr": {
+      "street": "ul. Życzliwa",
+      "number": "10",
+      "osiedle": "Osiedle Życzliwe",
+      "city": "null",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96800407200067": {
+    "orig_lat": 52.37622,
+    "orig_lon": 16.95347,
+    "new_lat": 52.376396,
+    "new_lon": 16.952555,
+    "dist_m": 65,
+    "query": "Panoramiqa 2, Poznań, Polska",
+    "formatted": "Panoramiqa, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Panoramiqa 2",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "96830222100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96802319900067": {
+    "orig_lat": 52.43224,
+    "orig_lon": 16.76998,
+    "new_lat": 52.432209,
+    "new_lon": 16.76975,
+    "dist_m": 16,
+    "query": "ul. Derkaczowej, Przeźmierowo, Polska",
+    "formatted": "Derkaczowa, Przeźmierowo, Polska",
+    "addr": {
+      "street": "ul. Derkaczowej",
+      "number": null,
+      "osiedle": "Lotników",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96704546500067": {
+    "orig_lat": 52.47362,
+    "orig_lon": 16.65548,
+    "new_lat": 52.473424,
+    "new_lon": 16.656265,
+    "dist_m": 57,
+    "query": "ul. Cicha, Tarnowo Podgórne, Polska",
+    "formatted": "Cicha, Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "ul. Cicha",
+      "number": null,
+      "osiedle": null,
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": null,
+    "corrected": false
   }
 }
