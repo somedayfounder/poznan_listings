@@ -31353,5 +31353,355 @@
     "geo_city": "Poznań",
     "geo_district": "Smochowice",
     "corrected": false
+  },
+  "96775127900067": {
+    "skipped": "outside_bbox",
+    "query": "osiedle domów w Gwiazdowie, Gwiazdowo, Polska",
+    "formatted": "Gwiazdowo, Karwie, gmina Mrągowo, powiat mrągowski, województwo warmińsko-mazurskie, 11-700, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "osiedle domów w Gwiazdowie",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.8243,
+    "new_lon": 21.286328
+  },
+  "96832975700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96834066100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68314323": {
+    "orig_lat": 52.34363,
+    "orig_lon": 16.69366,
+    "new_lat": 52.343634,
+    "new_lon": 16.693658,
+    "dist_m": 0,
+    "query": "ul. Lazurowa, Konarzewo, Polska",
+    "formatted": "Lazurowa, Konarzewo, Polska",
+    "addr": {
+      "street": "ul. Lazurowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Konarzewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68344706": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68342672": {
+    "orig_lat": 52.44412,
+    "orig_lon": 16.89438,
+    "new_lat": 52.46125,
+    "new_lon": 16.82787,
+    "dist_m": 4893,
+    "query": "kameryalna dzielnica, Strzeszynek, Polska",
+    "formatted": "Strzeszynek, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Strzeszynek",
+      "district": "kameryalna dzielnica",
+      "confidence": "high"
+    },
+    "geo_city": null,
+    "geo_district": "Strzeszynek",
+    "corrected": true
+  },
+  "68343637": {
+    "orig_lat": 52.38953,
+    "orig_lon": 16.85972,
+    "new_lat": 52.404197,
+    "new_lon": 16.88215,
+    "dist_m": 2231,
+    "query": "Stary Grunwald, Poznań, Polska",
+    "formatted": "Stary Grunwald, Grunwald, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Stary Grunwald",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Grunwald",
+    "corrected": true
+  },
+  "68344148": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96831584200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68344211": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68345843": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96825246300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68020610": {
+    "orig_lat": 52.38217,
+    "orig_lon": 16.91298,
+    "new_lat": 52.392373,
+    "new_lon": 16.920046,
+    "dist_m": 1232,
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "number": null,
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": "historyczna dzielnica",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "96802061000067": {
+    "orig_lat": 52.38217,
+    "orig_lon": 16.91298,
+    "new_lat": 52.392373,
+    "new_lon": 16.920046,
+    "dist_m": 1232,
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "number": null,
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "96832025200067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Świerzawska, Marcelin, Polska",
+    "formatted": "Marcelin, gmina Szczecinek, powiat szczecinecki, województwo zachodniopomorskie, 78-422, Polska",
+    "addr": {
+      "street": "ul. Świerzawska",
+      "number": null,
+      "osiedle": null,
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.717545,
+    "new_lon": 16.744522
+  },
+  "96825091600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rosnowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96665009100067": {
+    "orig_lat": 52.41873,
+    "orig_lon": 16.90318,
+    "new_lat": 52.415748,
+    "new_lon": 16.903088,
+    "dist_m": 332,
+    "query": "ul. Barańczaka, Poznań, Polska",
+    "formatted": "Stanisława Barańczaka, Poznań, Polska",
+    "addr": {
+      "street": "ul. Barańczaka",
+      "number": null,
+      "osiedle": "Goplana",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68343824": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "67469289": {
+    "skipped": "outside_bbox",
+    "query": "ul. Leśnych Skrzatów, Marcelin, Polska",
+    "formatted": "Marcelin, Powiat miński, Polska",
+    "addr": {
+      "street": "ul. Leśnych Skrzatów",
+      "number": null,
+      "osiedle": "Zacisze Marcelin",
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.3463,
+    "new_lon": 21.79482
+  },
+  "68342811": {
+    "orig_lat": 52.38108,
+    "orig_lon": 16.83545,
+    "new_lat": 52.3811,
+    "new_lon": 16.83535,
+    "dist_m": 7,
+    "query": "ul. Żmigrodzka 26, Poznań, Polska",
+    "formatted": "Żmigrodzka, 26, Poznań, Polska",
+    "addr": {
+      "street": "ul. Żmigrodzka",
+      "number": "26",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "96770287700067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Smardzewska, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": null,
+      "osiedle": "Grunwald Między Drzewami",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "96820147800067": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Limonkowa, Naramowice, Polska",
+    "formatted": "Naramowice, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Limonkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
