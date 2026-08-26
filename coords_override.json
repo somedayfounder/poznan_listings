@@ -31703,5 +31703,435 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "96821943000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Zimin",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68346918": {
+    "orig_lat": 52.3559,
+    "orig_lon": 16.88314,
+    "new_lat": 52.356744,
+    "new_lon": 16.880542,
+    "dist_m": 200,
+    "query": "ul. Świerczewska, Luboń, Polska",
+    "formatted": "Świerczewska, Luboń, Polska",
+    "addr": {
+      "street": "ul. Świerczewska",
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Żabikowo",
+    "corrected": false
+  },
+  "96722015700067": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Zagajnik, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": "19/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "63840416": {
+    "skipped": "outside_bbox",
+    "query": "Goślińska 42, Pobiedziska, Polska",
+    "formatted": "42, Goślińska, Pobiedziska, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, 62-010, Polska",
+    "addr": {
+      "street": "Goślińska",
+      "number": "42",
+      "osiedle": null,
+      "city": "Pobiedziska",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.48216,
+    "new_lon": 17.27425
+  },
+  "96744545200067": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.450464,
+    "new_lon": 16.890746,
+    "dist_m": 179,
+    "query": "Strzeszyńska 77D, Poznań, Polska",
+    "formatted": "Strzeszyńska, Podolany, Poznań, województwo wielkopolskie, 60-479, Polska",
+    "addr": {
+      "street": "Strzeszyńska",
+      "number": "77D",
+      "osiedle": "Strzeszyńska 77",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "68350038": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Morasko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96835003800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Morasko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96830595700067": {
+    "orig_lat": 52.49081,
+    "orig_lon": 16.73514,
+    "new_lat": 52.485086,
+    "new_lon": 16.727616,
+    "dist_m": 815,
+    "query": "Zielone Wzgórze, Napachanie, Polska",
+    "formatted": "Napachanie, gmina Rokietnica, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96831432300067": {
+    "orig_lat": 52.34363,
+    "orig_lon": 16.69366,
+    "new_lat": 52.343634,
+    "new_lon": 16.693658,
+    "dist_m": 0,
+    "query": "ul. Lazurowa, Konarzewo, Polska",
+    "formatted": "Lazurowa, Konarzewo, Polska",
+    "addr": {
+      "street": "ul. Lazurowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Konarzewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68349559": {
+    "orig_lat": 52.46348,
+    "orig_lon": 16.69669,
+    "new_lat": 52.46642,
+    "new_lon": 16.66326,
+    "dist_m": 2288,
+    "query": "ul. Rolnej 89, Tarnowo Podgórne, Polska",
+    "formatted": "Tarnowo Podgórne, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Rolnej",
+      "number": "89",
+      "osiedle": null,
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96833155100067": {
+    "skipped": "geocode_failed",
+    "query": "nowa inwestycja na poznańskich Ratajach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "nowa inwestycja na poznańskich Ratajach",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    }
+  },
+  "96821945600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96833107200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96819251700067": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "68349984": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Morasko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68004142": {
+    "orig_lat": 52.37622,
+    "orig_lon": 16.95347,
+    "new_lat": 52.376396,
+    "new_lon": 16.952555,
+    "dist_m": 65,
+    "query": "Panoramiqa 2, Poznań, Polska",
+    "formatted": "Panoramiqa, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Panoramiqa 2",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "68344803": {
+    "orig_lat": 52.23388,
+    "orig_lon": 16.83312,
+    "new_lat": 52.234664,
+    "new_lon": 16.833012,
+    "dist_m": 87,
+    "query": "ul. Juliana Ursyna Niemcewicza, Mosina, Polska",
+    "formatted": "Juliana Ursyna Niemcewicza, Mosina, Polska",
+    "addr": {
+      "street": "ul. Juliana Ursyna Niemcewicza",
+      "number": null,
+      "osiedle": null,
+      "city": "Mosina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Mosina",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96834414800067": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96831967200067": {
+    "orig_lat": 52.492,
+    "orig_lon": 16.74119,
+    "new_lat": 52.491755,
+    "new_lon": 16.741418,
+    "dist_m": 31,
+    "query": "ul. Afiszowej, Napachanie, Polska",
+    "formatted": "Afiszowa, Napachanie, Polska",
+    "addr": {
+      "street": "ul. Afiszowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67967904": {
+    "orig_lat": 52.37332,
+    "orig_lon": 16.95109,
+    "new_lat": 52.372807,
+    "new_lon": 16.946816,
+    "dist_m": 296,
+    "query": "Przy Unii, Poznań, Polska",
+    "formatted": "Osiedle Przy Unii Etap III, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przy Unii",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "96796790400067": {
+    "orig_lat": 52.37332,
+    "orig_lon": 16.95109,
+    "new_lat": 52.372807,
+    "new_lon": 16.946816,
+    "dist_m": 296,
+    "query": "Przy Unii, Poznań, Polska",
+    "formatted": "Osiedle Przy Unii Etap III, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przy Unii",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68348055": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68346581": {
+    "skipped": "geocode_failed",
+    "query": "nowo powstającej, prestiżowej inwestycji na poznańskich Jeżycach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "nowo powstającej, prestiżowej inwestycji na poznańskich Jeżycach",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    }
+  },
+  "96832288100067": {
+    "orig_lat": 52.41679,
+    "orig_lon": 16.89968,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 424,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96773832200067": {
+    "orig_lat": 52.38381,
+    "orig_lon": 16.89437,
+    "new_lat": 52.384124,
+    "new_lon": 16.894016,
+    "dist_m": 42,
+    "query": "ul. R. Dmowskiego 103, Poznań, Polska",
+    "formatted": "Romana Dmowskiego, 103, Poznań, Polska",
+    "addr": {
+      "street": "ul. R. Dmowskiego",
+      "number": "103",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Górczyn",
+    "corrected": false
+  },
+  "68238898": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
   }
 }
