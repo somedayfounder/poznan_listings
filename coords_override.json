@@ -32133,5 +32133,338 @@
     "geo_city": "Poznań",
     "geo_district": "Starołęka Mała",
     "corrected": true
+  },
+  "96670701400067": {
+    "orig_lat": 52.38921,
+    "orig_lon": 16.85909,
+    "new_lat": 52.389515,
+    "new_lon": 16.859701,
+    "dist_m": 54,
+    "query": "ul. Smardzewska 8, Poznań, Polska",
+    "formatted": "Smardzewska, 60-159 Poznań, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": "8",
+      "osiedle": "Smardzewska 8",
+      "city": "Poznań",
+      "district": "Stary Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Osiedle Mikołaja Kopernika",
+    "corrected": false
+  },
+  "68353319": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68351718": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Pamiątkowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68356507": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96835650700067": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68353830": {
+    "orig_lat": 52.39113,
+    "orig_lon": 16.59948,
+    "new_lat": 52.390895,
+    "new_lon": 16.599518,
+    "dist_m": 26,
+    "query": "ul. Malinowa 15, Niepruszewo, Polska",
+    "formatted": "Malinowa, 15, Niepruszewo, Polska",
+    "addr": {
+      "street": "ul. Malinowa",
+      "number": "15",
+      "osiedle": null,
+      "city": "Niepruszewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Niepruszewo",
+    "geo_district": "Niepruszewo-Huby",
+    "corrected": false
+  },
+  "68353320": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96832434300067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Brzoskwiniowa, Siekierki Wielkie, Polska",
+    "formatted": "Brzoskwiniowa, Siekierki Wielkie, Polska",
+    "addr": {
+      "street": "ul. Brzoskwiniowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.390348,
+    "new_lon": 17.168341
+  },
+  "96631602600067": {
+    "orig_lat": 52.44821,
+    "orig_lon": 16.96004,
+    "new_lat": 52.4493,
+    "new_lon": 16.958531,
+    "dist_m": 159,
+    "query": "ul. Bielicowa 2, Poznań, Polska",
+    "formatted": "Bielicowa, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "2",
+      "osiedle": "Osiedle Witaj",
+      "city": "Poznań",
+      "district": "Naramowice",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "68352406": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68350800": {
+    "skipped": "outside_bbox",
+    "query": "ul. Sezamowej, Gortatów, Polska",
+    "formatted": "Gortatów, Florentynów, gmina Parzęczew, powiat zgierski, województwo łódzkie, 95-045, Polska",
+    "addr": {
+      "street": "ul. Sezamowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Gortatów",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 51.897778,
+    "new_lon": 19.210833
+  },
+  "68353456": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kiekrz-Rogierówko-Starzyny",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96832718800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96822119800067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Kórnickiej, Kostrzyn Wielkopolski, Polska",
+    "addr": {
+      "street": "ul. Kórnickiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Kostrzyn Wielkopolski",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68353886": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dąbrowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68351879": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68351508": {
+    "orig_lat": 52.35975,
+    "orig_lon": 17.01966,
+    "new_lat": 52.36474,
+    "new_lon": 17.005845,
+    "dist_m": 1090,
+    "query": "Szczepankowo, Poznań, Polska",
+    "formatted": "Szczepankowo, Szczepankowo-Spławie-Krzesinki, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Szczepankowo",
+    "corrected": true
+  },
+  "68353210": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96829249900067": {
+    "orig_lat": 52.37266,
+    "orig_lon": 16.7756,
+    "new_lat": 52.360665,
+    "new_lon": 16.745623,
+    "dist_m": 2433,
+    "query": "Irysowa, Gołuski, Polska",
+    "formatted": "Irysowa, Gołuski, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-069, Polska",
+    "addr": {
+      "street": "Irysowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gołuski",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96826995200067": {
+    "orig_lat": 52.44242,
+    "orig_lon": 16.98681,
+    "new_lat": 52.442345,
+    "new_lon": 16.98688,
+    "dist_m": 10,
+    "query": "ul. Żwirowa, Koziegłowy, Polska",
+    "formatted": "Żwirowa, Koziegłowy, Polska",
+    "addr": {
+      "street": "ul. Żwirowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Koziegłowy",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Koziegłowy",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68354241": {
+    "skipped": "geocode_failed",
+    "query": "nowo powstającej inwestycji, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "nowo powstającej inwestycji",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    }
+  },
+  "68350468": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "wioska",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
