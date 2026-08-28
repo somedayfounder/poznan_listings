@@ -32466,5 +32466,375 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "96795194400067": {
+    "orig_lat": 52.4457,
+    "orig_lon": 16.9119,
+    "new_lat": 52.444581,
+    "new_lon": 16.910307,
+    "dist_m": 165,
+    "query": "ul. Wojciechowskiego 7/17, Poznań, Polska",
+    "formatted": "Bricoman, Zygmunta Wojciechowskiego 7-17, 60-685 Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "7/17",
+      "osiedle": "Piątkowo Residence",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "67952416": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.443893,
+    "new_lon": 16.914164,
+    "dist_m": 161,
+    "query": "ul. Wojciechowskiego 4, Poznań, Polska",
+    "formatted": "Zygmunta Wojciechowskiego, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "4",
+      "osiedle": "Początek Piątkowo",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "67952417": {
+    "skipped": "outside_bbox",
+    "query": "ul. Wojciechowskiego, Piátkowo, Polska",
+    "formatted": "Piątkowo, gmina Karsin, powiat kościerski, województwo pomorskie, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "null",
+      "osiedle": "Początek Piątkowo",
+      "city": "Piátkowo",
+      "district": "null",
+      "confidence": "high"
+    },
+    "new_lat": 53.917136,
+    "new_lon": 17.827529
+  },
+  "96795241700067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Wojciechowskiego, Piátkowo, Polska",
+    "formatted": "Piątkowo, gmina Karsin, powiat kościerski, województwo pomorskie, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "null",
+      "osiedle": "Początek Piątkowo",
+      "city": "Piátkowo",
+      "district": "null",
+      "confidence": "high"
+    },
+    "new_lat": 53.917136,
+    "new_lon": 17.827529
+  },
+  "68357749": {
+    "skipped": "outside_bbox",
+    "query": "ul. Zimowej, Paczkowo, Polska",
+    "formatted": "Zimowa, Paczkowo, Polska",
+    "addr": {
+      "street": "ul. Zimowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Paczkowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.40156,
+    "new_lon": 17.15394
+  },
+  "96764021300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Strykowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96814382000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "wioska",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96732967900067": {
+    "orig_lat": 52.30313,
+    "orig_lon": 17.02308,
+    "new_lat": 52.307299,
+    "new_lon": 17.019376,
+    "dist_m": 528,
+    "query": "ul. Radiowa 32, Koninko, Polska",
+    "formatted": "Radiowa, 62-023 Koninko, Polska",
+    "addr": {
+      "street": "ul. Radiowa",
+      "number": "32",
+      "osiedle": "Inwestycja Koninko",
+      "city": "Koninko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Koninko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96835383000067": {
+    "orig_lat": 52.39113,
+    "orig_lon": 16.59948,
+    "new_lat": 52.390895,
+    "new_lon": 16.599518,
+    "dist_m": 26,
+    "query": "ul. Malinowa 15, Niepruszewo, Polska",
+    "formatted": "Malinowa, 15, Niepruszewo, Polska",
+    "addr": {
+      "street": "ul. Malinowa",
+      "number": "15",
+      "osiedle": null,
+      "city": "Niepruszewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Niepruszewo",
+    "geo_district": "Niepruszewo-Huby",
+    "corrected": false
+  },
+  "96722014700067": {
+    "orig_lat": 52.46978,
+    "orig_lon": 16.9417,
+    "new_lat": 52.467915,
+    "new_lon": 16.935683,
+    "dist_m": 457,
+    "query": "null 30/B, Umultowo, Polska",
+    "formatted": "Umultowska, 102b, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "30/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Umultowo",
+    "corrected": true
+  },
+  "68359786": {
+    "orig_lat": 52.29129,
+    "orig_lon": 16.96902,
+    "new_lat": 52.30002,
+    "new_lon": 16.95723,
+    "dist_m": 1259,
+    "query": "gmina Mosina, Daszewice, Polska",
+    "formatted": "Daszewice, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Daszewice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96825618100067": {
+    "orig_lat": 52.41204,
+    "orig_lon": 16.6791,
+    "new_lat": 52.4039,
+    "new_lon": 16.67696,
+    "dist_m": 917,
+    "query": "gmina Tarnowo Podgórne, Sierosław, Polska",
+    "formatted": "Sierosław, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Sierosław",
+      "district": "gmina Tarnowo Podgórne",
+      "confidence": "high"
+    },
+    "geo_city": "Sierosław",
+    "geo_district": null,
+    "corrected": true
+  },
+  "62856680": {
+    "skipped": "geocode_failed",
+    "query": "Rogierówek, Polska",
+    "addr": {
+      "street": "ul. Polnej",
+      "number": null,
+      "osiedle": "Zielony Zakątek",
+      "city": "Rogierówek",
+      "district": "gm. Rokietnica",
+      "confidence": "high"
+    }
+  },
+  "96831578200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68356938": {
+    "orig_lat": 52.36803,
+    "orig_lon": 16.8325,
+    "new_lat": 52.366348,
+    "new_lon": 16.818122,
+    "dist_m": 994,
+    "query": "ul. Bursztynowa, Plewiska, Polska",
+    "formatted": "Bursztynowa, Plewiska, Polska",
+    "addr": {
+      "street": "ul. Bursztynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Plewiska",
+    "geo_district": "Aniołowo",
+    "corrected": true
+  },
+  "68357637": {
+    "orig_lat": 52.28622,
+    "orig_lon": 16.68301,
+    "new_lat": 52.279354,
+    "new_lon": 16.699933,
+    "dist_m": 1381,
+    "query": "ul. Kwiatowej, Stęszew, Polska",
+    "formatted": "Stęszew, gmina Stęszew, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Kwiatowej",
+      "number": null,
+      "osiedle": "mikroosiedla",
+      "city": "Stęszew",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Stęszew",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67767310": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 61,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka, 65, Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka",
+      "number": "65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "96834421100067": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96828222800067": {
+    "orig_lat": 52.41657,
+    "orig_lon": 16.89959,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 407,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96834055900067": {
+    "orig_lat": 52.43653,
+    "orig_lon": 16.81566,
+    "new_lat": 52.435594,
+    "new_lon": 16.816331,
+    "dist_m": 114,
+    "query": "ul. Kościerzyńska, Poznań, Polska",
+    "formatted": "Kościerzyńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Kościerzyńska",
+      "number": null,
+      "osiedle": "SMOCHY",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Smochowice",
+    "corrected": false
+  },
+  "96790977800067": {
+    "orig_lat": 52.45285,
+    "orig_lon": 16.73113,
+    "new_lat": 52.446972,
+    "new_lon": 16.727275,
+    "dist_m": 704,
+    "query": "Tarnowo Podgórne, Sady, Polska",
+    "formatted": "Cardan Polska, Sady, gmina Tarnowo Podgórne, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Sady",
+      "district": "Tarnowo Podgórne",
+      "confidence": "high"
+    },
+    "geo_city": "Sady",
+    "geo_district": null,
+    "corrected": true
   }
 }
