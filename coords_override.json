@@ -32836,5 +32836,240 @@
     "geo_city": "Sady",
     "geo_district": null,
     "corrected": true
+  },
+  "96795193500067": {
+    "orig_lat": 52.4457,
+    "orig_lon": 16.9119,
+    "new_lat": 52.444581,
+    "new_lon": 16.910307,
+    "dist_m": 165,
+    "query": "ul. Wojciechowskiego 7/17, Poznań, Polska",
+    "formatted": "Bricoman, Zygmunta Wojciechowskiego 7-17, 60-685 Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "7/17",
+      "osiedle": "Piątkowo Residence",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "68358660": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96631604800067": {
+    "orig_lat": 52.44821,
+    "orig_lon": 16.96004,
+    "new_lat": 52.4493,
+    "new_lon": 16.958531,
+    "dist_m": 159,
+    "query": "ul. Bielicowa 2, Poznań, Polska",
+    "formatted": "Bielicowa, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "2",
+      "osiedle": "Osiedle Witaj",
+      "city": "Poznań",
+      "district": "Naramowice",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "96804644400067": {
+    "orig_lat": 52.51359,
+    "orig_lon": 16.74704,
+    "new_lat": 52.504066,
+    "new_lon": 16.740546,
+    "dist_m": 1147,
+    "query": "Osiedle Gardenia, Rokietnica, Polska",
+    "formatted": "Osiedle Kalinowe, Rokietnica, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Gardenia",
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68361001": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96828233300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96825617200067": {
+    "orig_lat": 52.48789,
+    "orig_lon": 16.9878,
+    "new_lat": 52.487733,
+    "new_lon": 16.987695,
+    "dist_m": 19,
+    "query": "ul. Szarotkowej, Miękowo, Polska",
+    "formatted": "Szarotkowa, Miękowo, Polska",
+    "addr": {
+      "street": "ul. Szarotkowej",
+      "number": null,
+      "osiedle": "Brzozowe Parcele",
+      "city": "Miękowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Miękowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68360751": {
+    "orig_lat": 52.37859,
+    "orig_lon": 16.95072,
+    "new_lat": 52.382758,
+    "new_lon": 16.952265,
+    "dist_m": 475,
+    "query": "Nowe Miasto - Rataje, Poznań, Polska",
+    "formatted": "Straż Miejska Referat Nowe Miasto, 35A, Osiedle Bohaterów II Wojny Światowej, Rataje, Poznań, województwo wielkopolskie, 61-386, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Nowe Miasto - Rataje",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Rataje",
+    "corrected": true
+  },
+  "68360823": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96833976400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96700314000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Błażejewko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96800414200067": {
+    "orig_lat": 52.37622,
+    "orig_lon": 16.95347,
+    "new_lat": 52.376396,
+    "new_lon": 16.952555,
+    "dist_m": 65,
+    "query": "Panoramiqa 2, Poznań, Polska",
+    "formatted": "Panoramiqa, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Panoramiqa 2",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "96790497200067": {
+    "orig_lat": 52.40689,
+    "orig_lon": 17.10572,
+    "new_lat": 52.413677,
+    "new_lon": 17.101509,
+    "dist_m": 807,
+    "query": "ul. Geberowa, Jasin, Polska",
+    "formatted": "Gerberowa, Jasin, Polska",
+    "addr": {
+      "street": "ul. Geberowa",
+      "number": null,
+      "osiedle": "Gerberowa Park",
+      "city": "Jasin",
+      "district": "gmina Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Jasin",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96811380700067": {
+    "orig_lat": 52.39769,
+    "orig_lon": 16.92545,
+    "new_lat": 52.397184,
+    "new_lon": 16.926392,
+    "dist_m": 85,
+    "query": "ul. Dolna Wilda 12, Poznań, Polska",
+    "formatted": "Dolna Wilda, 12, Poznań, Polska",
+    "addr": {
+      "street": "ul. Dolna Wilda",
+      "number": "12",
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
   }
 }
