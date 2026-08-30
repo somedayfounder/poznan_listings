@@ -33071,5 +33071,210 @@
     "geo_city": "Poznań",
     "geo_district": "Wilda",
     "corrected": false
+  },
+  "68297186": {
+    "orig_lat": 52.46202,
+    "orig_lon": 16.89833,
+    "new_lat": 52.464025,
+    "new_lon": 16.9008,
+    "dist_m": 279,
+    "query": "ul. Teofila Mateckiego 20E, Poznań, Polska",
+    "formatted": "Teofila Mateckiego, 20E, Poznań, Polska",
+    "addr": {
+      "street": "ul. Teofila Mateckiego",
+      "number": "20E",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo Północ",
+    "corrected": true
+  },
+  "96711161800067": {
+    "orig_lat": 52.36452,
+    "orig_lon": 17.12451,
+    "new_lat": 52.354378,
+    "new_lon": 17.109029,
+    "dist_m": 1542,
+    "query": "ul. Śnieżna, Gowarzewo, Polska",
+    "formatted": "Śnieżna, Gowarzewo, Polska",
+    "addr": {
+      "street": "ul. Śnieżna",
+      "number": null,
+      "osiedle": "GOVARIA",
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gowarzewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96836100100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96830929000067": {
+    "orig_lat": 52.47427,
+    "orig_lon": 16.74805,
+    "new_lat": 52.47128,
+    "new_lon": 16.72334,
+    "dist_m": 1706,
+    "query": "gmina Rokietnica, Kobylniki, Polska",
+    "formatted": "Kobylniki, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kobylniki",
+      "district": "gmina Rokietnica",
+      "confidence": "high"
+    },
+    "geo_city": "Kobylniki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96835187900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68362436": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96660500000067": {
+    "orig_lat": 52.57119,
+    "orig_lon": 17.01329,
+    "new_lat": 52.57463,
+    "new_lon": 17.00933,
+    "dist_m": 467,
+    "query": "ul. Krótkiej, Murowana Goślina, Polska",
+    "formatted": "Murowana Goślina, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Krótkiej",
+      "number": null,
+      "osiedle": "Osiedle Makowe",
+      "city": "Murowana Goślina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Murowana Goślina",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96833187800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68361812": {
+    "orig_lat": 52.37853,
+    "orig_lon": 16.94986,
+    "new_lat": 52.382758,
+    "new_lon": 16.952265,
+    "dist_m": 498,
+    "query": "Nowe Miasto - Rataje, Poznań, Polska",
+    "formatted": "Straż Miejska Referat Nowe Miasto, 35A, Osiedle Bohaterów II Wojny Światowej, Rataje, Poznań, województwo wielkopolskie, 61-386, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Nowe Miasto - Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Rataje",
+    "corrected": true
+  },
+  "68361908": {
+    "orig_lat": 52.43204,
+    "orig_lon": 16.94613,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 614,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "96828331300067": {
+    "orig_lat": 52.41935,
+    "orig_lon": 16.89617,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 792,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96776168600067": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 61,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka, 65, Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka",
+      "number": "65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
   }
 }
