@@ -33276,5 +33276,264 @@
     "geo_city": "Poznań",
     "geo_district": "Winiary",
     "corrected": false
+  },
+  "63607814": {
+    "skipped": "outside_bbox",
+    "query": "NOWY TRZEK, NOWY TRZEK, Polska",
+    "formatted": "Trzek, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "NOWY TRZEK",
+      "city": "NOWY TRZEK",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.35105,
+    "new_lon": 17.17238
+  },
+  "65872291": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Śródka",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96791056800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96828143100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68364469": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96822122200067": {
+    "orig_lat": 52.41702,
+    "orig_lon": 17.10156,
+    "new_lat": 52.410373,
+    "new_lon": 17.077104,
+    "dist_m": 1816,
+    "query": "ul. Gerberowa, Swarzędz, Polska",
+    "formatted": "Swarzędz, gmina Swarzędz, powiat poznański, województwo wielkopolskie, 62-020, Polska",
+    "addr": {
+      "street": "ul. Gerberowa",
+      "number": null,
+      "osiedle": "Gerberowa Park",
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Swarzędz",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68238773": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "96673159100067": {
+    "orig_lat": 52.34381,
+    "orig_lon": 16.71622,
+    "new_lat": 52.346804,
+    "new_lon": 16.689921,
+    "dist_m": 1817,
+    "query": "Dopiewo, Konarzewo, Polska",
+    "formatted": "Dopiewo Wyzwolenia, Wyzwolenia, Konarzewo, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-070, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": "Dopiewo",
+      "confidence": "high"
+    },
+    "geo_city": "Konarzewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96832285200067": {
+    "orig_lat": 52.41669,
+    "orig_lon": 16.89959,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 418,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96822121300067": {
+    "orig_lat": 52.429,
+    "orig_lon": 17.06372,
+    "new_lat": 52.438257,
+    "new_lon": 17.088359,
+    "dist_m": 1962,
+    "query": "Osiedle Laurowym, Gruszczyn, Polska",
+    "formatted": "Osiedle Nowy Gruszczyn, Gruszczyn, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Laurowym",
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gruszczyn",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68004140": {
+    "orig_lat": 52.37622,
+    "orig_lon": 16.95347,
+    "new_lat": 52.376396,
+    "new_lon": 16.952555,
+    "dist_m": 65,
+    "query": "Panoramiqa 2, Poznań, Polska",
+    "formatted": "Panoramiqa, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Panoramiqa 2",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "96834382400067": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96834281100067": {
+    "orig_lat": 52.38108,
+    "orig_lon": 16.83545,
+    "new_lat": 52.3811,
+    "new_lon": 16.83535,
+    "dist_m": 7,
+    "query": "ul. Żmigrodzka 26, Poznań, Polska",
+    "formatted": "Żmigrodzka, 26, Poznań, Polska",
+    "addr": {
+      "street": "ul. Żmigrodzka",
+      "number": "26",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "66439496": {
+    "orig_lat": 52.40876,
+    "orig_lon": 16.93839,
+    "new_lat": 52.408764,
+    "new_lon": 16.938462,
+    "dist_m": 5,
+    "query": "Garbary 68, Poznań, Polska",
+    "formatted": "68, Garbary, Chwaliszewo, Stare Miasto, Poznań, województwo wielkopolskie, 61-758, Polska",
+    "addr": {
+      "street": "Garbary",
+      "number": "68",
+      "osiedle": "Kamienica Garbary",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Stare Miasto",
+    "corrected": false
+  },
+  "66439528": {
+    "orig_lat": 52.40876,
+    "orig_lon": 16.93839,
+    "new_lat": 52.408764,
+    "new_lon": 16.938462,
+    "dist_m": 5,
+    "query": "Garbary 68, Poznań, Polska",
+    "formatted": "68, Garbary, Chwaliszewo, Stare Miasto, Poznań, województwo wielkopolskie, 61-758, Polska",
+    "addr": {
+      "street": "Garbary",
+      "number": "68",
+      "osiedle": "Kamienica Garbary",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Stare Miasto",
+    "corrected": false
   }
 }
