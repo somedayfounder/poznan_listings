@@ -33535,5 +33535,416 @@
     "geo_city": "Poznań",
     "geo_district": "Stare Miasto",
     "corrected": false
+  },
+  "96829657100067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Rolnej, Wielka Wieś, Polska",
+    "formatted": "Wielka Wieś, gmina Główczyce, powiat słupski, województwo pomorskie, 76-220, Polska",
+    "addr": {
+      "street": "ul. Rolnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Wielka Wieś",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 54.56771,
+    "new_lon": 17.359887
+  },
+  "96814420300067": {
+    "orig_lat": 52.29489,
+    "orig_lon": 17.00743,
+    "new_lat": 52.296071,
+    "new_lon": 17.007659,
+    "dist_m": 132,
+    "query": "ul. Choinkowej, Szczytniki, Polska",
+    "formatted": "Choinkowa, Szczytniki, Polska",
+    "addr": {
+      "street": "ul. Choinkowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96826054500067": {
+    "orig_lat": 52.29129,
+    "orig_lon": 16.96902,
+    "new_lat": 52.30002,
+    "new_lon": 16.95723,
+    "dist_m": 1259,
+    "query": "gmina Mosina, Daszewice, Polska",
+    "formatted": "Daszewice, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Daszewice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65204669": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wieruszowska 8H_8, Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8H_8",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96520466900067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Wieruszowska 8H_8, Grunwald, Polska",
+    "formatted": "Grunwald, Powiat ostródzki, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8H_8",
+      "osiedle": "Grunwald Park",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.48422,
+    "new_lon": 20.09425
+  },
+  "96829602800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68368751": {
+    "skipped": "outside_bbox",
+    "query": "ul. Huby, Czołowo, Polska",
+    "formatted": "Czołowo, gmina Koło, powiat kolski, województwo wielkopolskie, 62-600, Polska",
+    "addr": {
+      "street": "ul. Huby",
+      "number": null,
+      "osiedle": null,
+      "city": "Czołowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.24248,
+    "new_lon": 18.65099
+  },
+  "68367701": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.35555,
+    "orig_lon": 16.75349,
+    "new_lat": 52.41186,
+    "new_lon": 16.872603,
+    "dist_m": 10225,
+    "orig_dist_to_center_m": 13554,
+    "query": "ul. Bukowska, Poznań, Polska",
+    "formatted": "Bukowska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bukowska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96836875100067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Huby, Czołowo, Polska",
+    "formatted": "Czołowo, gmina Koło, powiat kolski, województwo wielkopolskie, 62-600, Polska",
+    "addr": {
+      "street": "ul. Huby",
+      "number": null,
+      "osiedle": null,
+      "city": "Czołowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.24248,
+    "new_lon": 18.65099
+  },
+  "96832146800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67701052": {
+    "orig_lat": 52.44365,
+    "orig_lon": 16.8932,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 115,
+    "query": "ul. Jasielska 8C, Poznań, Polska",
+    "formatted": "Jasielska, 8c, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": "8C",
+      "osiedle": "Jasielska 8C",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "96826167300067": {
+    "orig_lat": 52.36803,
+    "orig_lon": 16.8325,
+    "new_lat": 52.366348,
+    "new_lon": 16.818122,
+    "dist_m": 994,
+    "query": "ul. Bursztynowa, Plewiska, Polska",
+    "formatted": "Bursztynowa, Plewiska, Polska",
+    "addr": {
+      "street": "ul. Bursztynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Plewiska",
+    "geo_district": "Aniołowo",
+    "corrected": true
+  },
+  "67250598": {
+    "skipped": "outside_bbox",
+    "query": "Na Murawie, Buk, Polska",
+    "formatted": "Na Murawie, Buk, gmina Buk, powiat poznański, województwo wielkopolskie, 64-320, Polska",
+    "addr": {
+      "street": "Na Murawie",
+      "number": null,
+      "osiedle": null,
+      "city": "Buk",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.360469,
+    "new_lon": 16.523104
+  },
+  "68368131": {
+    "orig_lat": 52.41689,
+    "orig_lon": 16.89959,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 437,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96834480300067": {
+    "orig_lat": 52.23388,
+    "orig_lon": 16.83312,
+    "new_lat": 52.234664,
+    "new_lon": 16.833012,
+    "dist_m": 87,
+    "query": "ul. Juliana Ursyna Niemcewicza, Mosina, Polska",
+    "formatted": "Juliana Ursyna Niemcewicza, Mosina, Polska",
+    "addr": {
+      "street": "ul. Juliana Ursyna Niemcewicza",
+      "number": null,
+      "osiedle": null,
+      "city": "Mosina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Mosina",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96816643400067": {
+    "skipped": "geocode_failed",
+    "query": "null, Polska",
+    "addr": {
+      "street": "Jeleniogórska",
+      "number": "5",
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68368472": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Palędziu",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96834805500067": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68368114": {
+    "orig_lat": 52.41689,
+    "orig_lon": 16.89934,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 446,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68367036": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.416803,
+    "new_lon": 16.639468,
+    "dist_m": 2933,
+    "query": "osiedle rozalin, Lusówko, Polska",
+    "formatted": "Osiedle Rozalin, Rozalin, Lusówko, gmina Tarnowo Podgórne, powiat poznański, województwo wielkopolskie, 62-080, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "osiedle rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Osiedle Rozalin",
+    "corrected": true
+  },
+  "68368135": {
+    "orig_lat": 52.41689,
+    "orig_lon": 16.89985,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 429,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68368137": {
+    "orig_lat": 52.41674,
+    "orig_lon": 16.89968,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 420,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68342638": {
+    "orig_lat": 52.35213,
+    "orig_lon": 17.03594,
+    "new_lat": 52.354989,
+    "new_lon": 17.030268,
+    "dist_m": 499,
+    "query": "ul. Szczepankowo 137 16, Poznań, Polska",
+    "formatted": "Szczepankowo 137, 61-313 Poznań, Polska",
+    "addr": {
+      "street": "ul. Szczepankowo 137",
+      "number": "16",
+      "osiedle": "Inwestycja Nowe Spławie",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Szczepankowo",
+    "corrected": true
+  },
+  "96834263800067": {
+    "orig_lat": 52.35213,
+    "orig_lon": 17.03594,
+    "new_lat": 52.354989,
+    "new_lon": 17.030268,
+    "dist_m": 499,
+    "query": "ul. Szczepankowo 137 16, Poznań, Polska",
+    "formatted": "Szczepankowo 137, 61-313 Poznań, Polska",
+    "addr": {
+      "street": "ul. Szczepankowo 137",
+      "number": "16",
+      "osiedle": "Inwestycja Nowe Spławie",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Szczepankowo",
+    "corrected": true
   }
 }
