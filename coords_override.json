@@ -33946,5 +33946,350 @@
     "geo_city": "Poznań",
     "geo_district": "Szczepankowo",
     "corrected": true
+  },
+  "96742235700067": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.443165,
+    "new_lon": 16.913001,
+    "dist_m": 217,
+    "query": "ul. Wojciechowskiego, Piątkowo, Polska",
+    "formatted": "Zygmunta Wojciechowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "null",
+      "osiedle": "Początek Piątkowo",
+      "city": "Piątkowo",
+      "district": "null",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "96723273700067": {
+    "orig_lat": 52.39885,
+    "orig_lon": 16.91957,
+    "new_lat": 52.398539,
+    "new_lon": 16.919867,
+    "dist_m": 40,
+    "query": "ul. Niedziałkowskiego, Poznań, Polska",
+    "formatted": "Niedziałkowskiego Park, Poznań, Polska",
+    "addr": {
+      "street": "ul. Niedziałkowskiego",
+      "number": null,
+      "osiedle": "Vilda Arte",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "68371622": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kostrzyn",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96796273700067": {
+    "orig_lat": 52.24321,
+    "orig_lon": 16.85196,
+    "new_lat": 52.217089,
+    "new_lon": 16.804546,
+    "dist_m": 4343,
+    "query": "ul. Lawendowa, Borkowice, Polska",
+    "formatted": "Lawendowa, Borkowice, Polska",
+    "addr": {
+      "street": "ul. Lawendowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Borkowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borkowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96723239800067": {
+    "orig_lat": 52.51717,
+    "orig_lon": 16.73825,
+    "new_lat": 52.510322,
+    "new_lon": 16.742124,
+    "dist_m": 805,
+    "query": "ul. Koszycy, Rokietnica, Polska",
+    "formatted": "Rokietnica, gmina Rokietnica, powiat poznański, województwo wielkopolskie, 62-090, Polska",
+    "addr": {
+      "street": "ul. Koszycy",
+      "number": null,
+      "osiedle": "nowa inwestycja",
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96830548200067": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96830595800067": {
+    "orig_lat": 52.4922,
+    "orig_lon": 16.73335,
+    "new_lat": 52.490808,
+    "new_lon": 16.73516,
+    "dist_m": 197,
+    "query": "ul. Teatralnej, Napachanie, Polska",
+    "formatted": "Teatralna, Napachanie, Polska",
+    "addr": {
+      "street": "ul. Teatralnej",
+      "number": null,
+      "osiedle": "Osiedle Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "66932613": {
+    "orig_lat": 52.47544,
+    "orig_lon": 16.66278,
+    "new_lat": 52.47533,
+    "new_lon": 16.660072,
+    "dist_m": 184,
+    "query": "ul. Rzymska 3C, Tarnowo Podgórne, Polska",
+    "formatted": "Rzymska 3, 62-080 Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "ul. Rzymska",
+      "number": "3C",
+      "osiedle": "Osiedle Nowe Tarnowo",
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": "Osiedle Zielony Gród",
+    "corrected": false
+  },
+  "96831695400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68369196": {
+    "skipped": "outside_bbox",
+    "query": "ul. Huby, Czołowo, Polska",
+    "formatted": "Czołowo, gmina Koło, powiat kolski, województwo wielkopolskie, 62-600, Polska",
+    "addr": {
+      "street": "ul. Huby",
+      "number": null,
+      "osiedle": null,
+      "city": "Czołowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.24248,
+    "new_lon": 18.65099
+  },
+  "96752645600067": {
+    "orig_lat": 52.38035,
+    "orig_lon": 16.60985,
+    "new_lat": 52.38843,
+    "new_lon": 16.58459,
+    "dist_m": 1936,
+    "query": "Leśna 26, Niepruszewo, Polska",
+    "formatted": "26, Leśna, Niepruszewo-Huby, Niepruszewo, gmina Buk, powiat poznański, województwo wielkopolskie, 64-320, Polska",
+    "addr": {
+      "street": "Leśna",
+      "number": "26",
+      "osiedle": "Inwestycja Leśna",
+      "city": "Niepruszewo",
+      "district": "Buk",
+      "confidence": "high"
+    },
+    "geo_city": "Niepruszewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96832413100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68371814": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.41909,
+    "new_lon": 16.635052,
+    "dist_m": 2791,
+    "query": "ul. Agawy, Lusówko, Polska",
+    "formatted": "Agawy, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Agawy",
+      "number": null,
+      "osiedle": "Osiedle Rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Rozalin",
+    "corrected": true
+  },
+  "96780357800067": {
+    "orig_lat": 52.43612,
+    "orig_lon": 16.64226,
+    "new_lat": 52.436082,
+    "new_lon": 16.642458,
+    "dist_m": 14,
+    "query": "ul. Bosmańska, Lusówko, Polska",
+    "formatted": "Bosmańska, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Bosmańska",
+      "number": null,
+      "osiedle": null,
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68370291": {
+    "orig_lat": 52.39865,
+    "orig_lon": 16.96358,
+    "new_lat": 52.399537,
+    "new_lon": 16.959365,
+    "dist_m": 303,
+    "query": "Polanka 21, Poznań, Polska",
+    "formatted": "21, Polanka, Miasteczko, Łacina, Rataje, Poznań, województwo wielkopolskie, 61-131, Polska",
+    "addr": {
+      "street": "Polanka 21",
+      "number": null,
+      "osiedle": "Polanka 21",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łacina",
+    "corrected": true
+  },
+  "68371062": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Potasze",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96353673200067": {
+    "orig_lat": 52.38786,
+    "orig_lon": 17.11767,
+    "new_lat": 52.387903,
+    "new_lon": 17.106933,
+    "dist_m": 729,
+    "query": "Osiedle Tercja, Rabowice, Polska",
+    "formatted": "Osiedle Świerkowe Tarasy, Rabowice, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Tercja",
+      "city": "Rabowice",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96822651500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96792721900067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Leśnych Skrzatów, Marcelin, Polska",
+    "formatted": "Marcelin, Powiat miński, Polska",
+    "addr": {
+      "street": "ul. Leśnych Skrzatów",
+      "number": null,
+      "osiedle": "Zacisze Marcelin",
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.3463,
+    "new_lon": 21.79482
+  },
+  "96784274900067": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
   }
 }
