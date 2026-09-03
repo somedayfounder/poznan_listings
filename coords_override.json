@@ -34291,5 +34291,294 @@
     "geo_city": "Poznań",
     "geo_district": "Warszawskie-Pomet-Maltańskie",
     "corrected": true
+  },
+  "68326716": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96587229100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Śródka",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68375957": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gortatów",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96829626300067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "96739058000067": {
+    "orig_lat": 52.34897,
+    "orig_lon": 17.02047,
+    "new_lat": 52.348989,
+    "new_lon": 17.020898,
+    "dist_m": 29,
+    "query": "ul. Biesiadna, Poznań, Polska",
+    "formatted": "Biesiadna, Poznań, Polska",
+    "addr": {
+      "street": "ul. Biesiadna",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Spławie",
+    "corrected": false
+  },
+  "68297214": {
+    "orig_lat": 52.46202,
+    "orig_lon": 16.89833,
+    "new_lat": 52.464025,
+    "new_lon": 16.9008,
+    "dist_m": 279,
+    "query": "ul. Teofila Mateckiego 20E, Poznań, Polska",
+    "formatted": "Teofila Mateckiego, 20E, Poznań, Polska",
+    "addr": {
+      "street": "ul. Teofila Mateckiego",
+      "number": "20E",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo Północ",
+    "corrected": true
+  },
+  "96835240600067": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "67876299": {
+    "skipped": "outside_bbox",
+    "query": "ul. Aleja Flensa, Biernatki, Polska",
+    "formatted": "Biernatki, gmina Augustów, powiat augustowski, województwo podlaskie, Polska",
+    "addr": {
+      "street": "ul. Aleja Flensa",
+      "number": null,
+      "osiedle": null,
+      "city": "Biernatki",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.87199,
+    "new_lon": 22.84521
+  },
+  "68374731": {
+    "orig_lat": 52.29688,
+    "orig_lon": 17.07484,
+    "new_lat": 52.296579,
+    "new_lon": 17.074321,
+    "dist_m": 49,
+    "query": "ul. Kwitnącej Wiśni, Robakowo, Polska",
+    "formatted": "Kwitnącej Wiśni, Robakowo, Polska",
+    "addr": {
+      "street": "ul. Kwitnącej Wiśni",
+      "number": null,
+      "osiedle": null,
+      "city": "Robakowo",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": "Robakowo - Osiedle",
+    "corrected": false
+  },
+  "68375780": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96837578000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68375783": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96785969500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96826166200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96826346800067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.35324,
+    "orig_lon": 16.99449,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 8351,
+    "orig_dist_to_center_m": 7378,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68373688": {
+    "orig_lat": 52.4151,
+    "orig_lon": 16.89929,
+    "new_lat": 52.415905,
+    "new_lon": 16.890163,
+    "dist_m": 625,
+    "query": "ul. Jana Henryka Dąbrowskiego, Poznań, Polska",
+    "formatted": "Hop & go, Jana Henryka Dąbrowskiego, 60-543 Poznań, Polska",
+    "addr": {
+      "street": "ul. Jana Henryka Dąbrowskiego",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Ogrody",
+    "corrected": true
+  },
+  "68375770": {
+    "orig_lat": 52.4349,
+    "orig_lon": 16.81177,
+    "new_lat": 52.434933,
+    "new_lon": 16.811761,
+    "dist_m": 4,
+    "query": "ul. Sianowska 139A, Poznań Smochowice, Polska",
+    "formatted": "Sianowska, 139A, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sianowska",
+      "number": "139A",
+      "osiedle": null,
+      "city": "Poznań Smochowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Smochowice",
+    "corrected": false
+  },
+  "68373355": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68375281": {
+    "orig_lat": 52.4148,
+    "orig_lon": 16.89431,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 594,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
   }
 }
