@@ -34580,5 +34580,464 @@
     "geo_city": "Poznań",
     "geo_district": "Jeżyce",
     "corrected": true
+  },
+  "96795242200067": {
+    "orig_lat": 52.44512,
+    "orig_lon": 16.91291,
+    "new_lat": 52.443165,
+    "new_lon": 16.913001,
+    "dist_m": 217,
+    "query": "ul. Wojciechowskiego, Piątkowo, Polska",
+    "formatted": "Zygmunta Wojciechowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": null,
+      "osiedle": "Początek Piątkowo",
+      "city": "Piątkowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "66293366": {
+    "orig_lat": 52.36733,
+    "orig_lon": 16.90355,
+    "new_lat": 52.367257,
+    "new_lon": 16.902715,
+    "dist_m": 57,
+    "query": "ul. 28 czerwca 1956 r. 346, Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, 346, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 czerwca 1956 r.",
+      "number": "346",
+      "osiedle": "Osiedle 28 Czerwca 1956 r.",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Zielony Dębiec",
+    "corrected": false
+  },
+  "68380616": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "68380462": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "X",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96789316600067": {
+    "skipped": "outside_bbox",
+    "query": "ul. św. Jana 6, Gwiazdowo, Polska",
+    "formatted": "Świętego Jana, Gwiazdowo, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "number": "6",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.407221,
+    "new_lon": 17.212669
+  },
+  "68380615": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "68380614": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "68380617": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "68380335": {
+    "skipped": "outside_bbox",
+    "query": "gmina Mosina, Żabinek, Polska",
+    "formatted": "Żabinek, woj. warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Żabinek",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "new_lat": 54.33333,
+    "new_lon": 22.03333
+  },
+  "96750812700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Zieliniec",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96497680100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "pod Poznaniem",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68380424": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68380206": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": "53",
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68380205": {
+    "skipped": "outside_bbox",
+    "query": "ul. Owocowa, Kleszczewo, Polska",
+    "formatted": "Owocowa, Kleszczewo, Polska",
+    "addr": {
+      "street": "ul. Owocowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Kleszczewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.334722,
+    "new_lon": 17.174809
+  },
+  "96836919600067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Huby, Czołowo, Polska",
+    "formatted": "Czołowo, gmina Koło, powiat kolski, województwo wielkopolskie, 62-600, Polska",
+    "addr": {
+      "street": "ul. Huby",
+      "number": null,
+      "osiedle": null,
+      "city": "Czołowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.24248,
+    "new_lon": 18.65099
+  },
+  "96834267200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Strzeszynek",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68380842": {
+    "orig_lat": 52.33417,
+    "orig_lon": 16.8405,
+    "new_lat": 52.341619,
+    "new_lon": 16.849052,
+    "dist_m": 1012,
+    "query": "ul. Nowiny 54/1, Luboń-Lasek, Polska",
+    "formatted": "Nowiny, 1c, Luboń, Polska",
+    "addr": {
+      "street": "ul. Nowiny",
+      "number": "54/1",
+      "osiedle": null,
+      "city": "Luboń-Lasek",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Lasek",
+    "corrected": true
+  },
+  "68380204": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68358586": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68380008": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96826342900067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36027,
+    "orig_lon": 16.98289,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7321,
+    "orig_dist_to_center_m": 6292,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68020746": {
+    "orig_lat": 52.38217,
+    "orig_lon": 16.91298,
+    "new_lat": 52.392651,
+    "new_lon": 16.920178,
+    "dist_m": 1264,
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "number": null,
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "96835046800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "wioska",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68379408": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68239220": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "96784290900067": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "66650136": {
+    "orig_lat": 52.41873,
+    "orig_lon": 16.90318,
+    "new_lat": 52.415748,
+    "new_lon": 16.903088,
+    "dist_m": 332,
+    "query": "ul. Barańczaka, Poznań, Polska",
+    "formatted": "Stanisława Barańczaka, Poznań, Polska",
+    "addr": {
+      "street": "ul. Barańczaka",
+      "number": null,
+      "osiedle": "Goplana",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96665013600067": {
+    "orig_lat": 52.41873,
+    "orig_lon": 16.90318,
+    "new_lat": 52.415748,
+    "new_lon": 16.903088,
+    "dist_m": 332,
+    "query": "ul. Barańczaka, Poznań, Polska",
+    "formatted": "Stanisława Barańczaka, Poznań, Polska",
+    "addr": {
+      "street": "ul. Barańczaka",
+      "number": null,
+      "osiedle": "Goplana",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68379354": {
+    "skipped": "geocode_failed",
+    "query": "nowo powstającej inwestycji na poznańskich Jeżycach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "nowo powstającej inwestycji na poznańskich Jeżycach",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    }
   }
 }
