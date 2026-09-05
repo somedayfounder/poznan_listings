@@ -35039,5 +35039,312 @@
       "district": "Jeżyce",
       "confidence": "high"
     }
+  },
+  "96707668300067": {
+    "orig_lat": 52.44002,
+    "orig_lon": 16.61879,
+    "new_lat": 52.441293,
+    "new_lon": 16.61849,
+    "dist_m": 143,
+    "query": "ul. Folwark 10, Jankowice, Polska",
+    "formatted": "Folwark, 10, Jankowice, Polska",
+    "addr": {
+      "street": "ul. Folwark",
+      "number": "10",
+      "osiedle": "Folwark Jankowice",
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": "Edmundowo",
+    "corrected": false
+  },
+  "68385102": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96834691800067": {
+    "orig_lat": 52.3559,
+    "orig_lon": 16.88314,
+    "new_lat": 52.356744,
+    "new_lon": 16.880542,
+    "dist_m": 200,
+    "query": "ul. Świerczewska, Luboń, Polska",
+    "formatted": "Świerczewska, Luboń, Polska",
+    "addr": {
+      "street": "ul. Świerczewska",
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Żabikowo",
+    "corrected": false
+  },
+  "96835978600067": {
+    "orig_lat": 52.29129,
+    "orig_lon": 16.96902,
+    "new_lat": 52.30002,
+    "new_lon": 16.95723,
+    "dist_m": 1259,
+    "query": "gmina Mosina, Daszewice, Polska",
+    "formatted": "Daszewice, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Daszewice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96787629900067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Aleja Flensa, Biernatki, Polska",
+    "formatted": "Biernatki, gmina Augustów, powiat augustowski, województwo podlaskie, Polska",
+    "addr": {
+      "street": "ul. Aleja Flensa",
+      "number": null,
+      "osiedle": null,
+      "city": "Biernatki",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.87199,
+    "new_lon": 22.84521
+  },
+  "96625696800067": {
+    "orig_lat": 52.28176,
+    "orig_lon": 16.61772,
+    "new_lat": 52.29473,
+    "new_lon": 16.629835,
+    "dist_m": 1661,
+    "query": "ul. Truskawkowa, Sapowice, Polska",
+    "formatted": "Truskawkowa, Sapowice, Polska",
+    "addr": {
+      "street": "ul. Truskawkowa",
+      "number": null,
+      "osiedle": "Osiedle nad Jeziorem",
+      "city": "Sapowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sapowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68385051": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Morasko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68385089": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.6849,
+    "new_lat": 52.46214,
+    "new_lon": 16.673124,
+    "dist_m": 801,
+    "query": "ul. Rolna, Tarnowo Podgórne, Polska",
+    "formatted": "Tarnowo Podgórne/Rolna n/ż, Poznańska, Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "ul. Rolna",
+      "number": null,
+      "osiedle": null,
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68381799": {
+    "orig_lat": 52.30181,
+    "orig_lon": 17.08765,
+    "new_lat": 52.30343,
+    "new_lon": 17.098,
+    "dist_m": 726,
+    "query": "gmina Kórnik, Dachowa, Polska",
+    "formatted": "Dachowa, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96838179900067": {
+    "orig_lat": 52.30181,
+    "orig_lon": 17.08765,
+    "new_lat": 52.30343,
+    "new_lon": 17.098,
+    "dist_m": 726,
+    "query": "gmina Kórnik, Dachowa, Polska",
+    "formatted": "Dachowa, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68385107": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68385074": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96836190800067": {
+    "orig_lat": 52.43204,
+    "orig_lon": 16.94613,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 614,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "96833235100067": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68382471": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68385142": {
+    "skipped": "outside_bbox",
+    "query": "Jabłkowa, Kleszczewo, Polska",
+    "formatted": "Jabłkowa, Kleszczewo, gmina Kleszczewo, powiat poznański, województwo wielkopolskie, 63-005, Polska",
+    "addr": {
+      "street": "Jabłkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Kleszczewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.33555,
+    "new_lon": 17.173112
+  },
+  "68385096": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68366401": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96820611300067": {
+    "orig_lat": 52.49334,
+    "orig_lon": 16.94365,
+    "new_lat": 52.47639,
+    "new_lon": 16.906877,
+    "dist_m": 3123,
+    "query": "Poznań, Radojewo, Polska",
+    "formatted": "Osusz.pl lokalizacja wycieków Poznań, osuszanie, 36, Morasko, Morasko-Radojewo, Poznań, województwo wielkopolskie, 61-680, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Radojewo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Morasko-Radojewo",
+    "corrected": true
   }
 }
