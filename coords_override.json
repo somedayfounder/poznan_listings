@@ -35346,5 +35346,202 @@
     "geo_city": "Poznań",
     "geo_district": "Morasko-Radojewo",
     "corrected": true
+  },
+  "66706998": {
+    "orig_lat": 52.38921,
+    "orig_lon": 16.85909,
+    "new_lat": 52.389515,
+    "new_lon": 16.859701,
+    "dist_m": 54,
+    "query": "ul. Smardzewska 8, Poznań, Polska",
+    "formatted": "Smardzewska, 60-159 Poznań, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": "8",
+      "osiedle": "Smardzewska 8",
+      "city": "Poznań",
+      "district": "Stary Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Osiedle Mikołaja Kopernika",
+    "corrected": false
+  },
+  "67076684": {
+    "orig_lat": 52.44002,
+    "orig_lon": 16.61879,
+    "new_lat": 52.441282,
+    "new_lon": 16.618099,
+    "dist_m": 148,
+    "query": "ul. Folwark 13, Jankowice, Polska",
+    "formatted": "Folwark, 13, Jankowice, Polska",
+    "addr": {
+      "street": "ul. Folwark",
+      "number": "13",
+      "osiedle": "Folwark Jankowice",
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": "Edmundowo",
+    "corrected": false
+  },
+  "66106152": {
+    "orig_lat": 52.4089,
+    "orig_lon": 17.08117,
+    "new_lat": 52.408421,
+    "new_lon": 17.080772,
+    "dist_m": 60,
+    "query": "SVARAN, Swarzędz, Polska",
+    "formatted": "Svaran - mieszkania, Swarzędz, gmina Swarzędz, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "SVARAN",
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Swarzędz",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96610615200067": {
+    "orig_lat": 52.4089,
+    "orig_lon": 17.08117,
+    "new_lat": 52.408421,
+    "new_lon": 17.080772,
+    "dist_m": 60,
+    "query": "SVARAN, Swarzędz, Polska",
+    "formatted": "Svaran - mieszkania, Swarzędz, gmina Swarzędz, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "SVARAN",
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Swarzędz",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96804639500067": {
+    "orig_lat": 52.51359,
+    "orig_lon": 16.74704,
+    "new_lat": 52.504066,
+    "new_lon": 16.740546,
+    "dist_m": 1147,
+    "query": "Osiedle Gardenia, Rokietnica, Polska",
+    "formatted": "Osiedle Kalinowe, Rokietnica, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Gardenia",
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96830861200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Puszcza Zielonka",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96753649200067": {
+    "orig_lat": 52.48474,
+    "orig_lon": 16.65797,
+    "new_lat": 52.484736,
+    "new_lon": 16.657972,
+    "dist_m": 0,
+    "query": "ul. Podgórna, Góra, Polska",
+    "formatted": "Podgórna, Góra, Polska",
+    "addr": {
+      "street": "ul. Podgórna",
+      "number": null,
+      "osiedle": null,
+      "city": "Góra",
+      "district": "Tarnowo Podgórne",
+      "confidence": "high"
+    },
+    "geo_city": "Góra",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96725059800067": {
+    "skipped": "outside_bbox",
+    "query": "Na Murawie, Buk, Polska",
+    "formatted": "Na Murawie, Buk, gmina Buk, powiat poznański, województwo wielkopolskie, 64-320, Polska",
+    "addr": {
+      "street": "Na Murawie",
+      "number": null,
+      "osiedle": null,
+      "city": "Buk",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.360469,
+    "new_lon": 16.523104
+  },
+  "96758398300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kruszewnia",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96586635700067": {
+    "orig_lat": 52.4076,
+    "orig_lon": 17.07351,
+    "new_lat": 52.378827,
+    "new_lon": 17.093522,
+    "dist_m": 3476,
+    "query": "PARK Kruszewnia, Kruszewnia, Polska",
+    "formatted": "Park Kruszewnia, Kruszewnia, gmina Swarzędz, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "PARK Kruszewnia",
+      "city": "Kruszewnia",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Kruszewnia",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96837528100067": {
+    "orig_lat": 52.4148,
+    "orig_lon": 16.89431,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 594,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
   }
 }
