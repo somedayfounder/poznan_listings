@@ -35543,5 +35543,406 @@
     "geo_city": "Poznań",
     "geo_district": "Jeżyce",
     "corrected": true
+  },
+  "96832880500067": {
+    "orig_lat": 52.44002,
+    "orig_lon": 16.61879,
+    "new_lat": 52.439574,
+    "new_lon": 16.618597,
+    "dist_m": 51,
+    "query": "ul. Folwark 46, Jankowice, Polska",
+    "formatted": "Folwark, 46, Jankowice, Polska",
+    "addr": {
+      "street": "ul. Folwark",
+      "number": "46",
+      "osiedle": "Folwark Jankowice",
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": "Edmundowo",
+    "corrected": false
+  },
+  "96800230300067": {
+    "orig_lat": 52.54181,
+    "orig_lon": 16.9753,
+    "new_lat": 52.538956,
+    "new_lon": 16.971847,
+    "dist_m": 394,
+    "query": "ul. Obornicka, Bolechowo Osiedle, Polska",
+    "formatted": "Bolechowo-Osiedle, gmina Czerwonak, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Obornicka",
+      "number": null,
+      "osiedle": "Bolechowo Osiedle",
+      "city": "Bolechowo Osiedle",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Bolechowo-Osiedle",
+    "geo_district": null,
+    "corrected": true
+  },
+  "60792312": {
+    "skipped": "outside_bbox",
+    "query": "Enklawa Nad Jeziorem, Tarnowo, Polska",
+    "formatted": "Tarnowo Pałuckie, gmina Wągrowiec, powiat wągrowiecki, województwo wielkopolskie, 62-105, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Enklawa Nad Jeziorem",
+      "city": "Tarnowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.831753,
+    "new_lon": 17.2767
+  },
+  "68387911": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Węgierskie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68389389": {
+    "orig_lat": 52.35612,
+    "orig_lon": 16.88159,
+    "new_lat": 52.356744,
+    "new_lon": 16.880542,
+    "dist_m": 99,
+    "query": "ul. Świerczewska, Luboń, Polska",
+    "formatted": "Świerczewska, Luboń, Polska",
+    "addr": {
+      "street": "ul. Świerczewska",
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Żabikowo",
+    "corrected": false
+  },
+  "96838938900067": {
+    "orig_lat": 52.35612,
+    "orig_lon": 16.88159,
+    "new_lat": 52.356744,
+    "new_lon": 16.880542,
+    "dist_m": 99,
+    "query": "ul. Świerczewska, Luboń, Polska",
+    "formatted": "Świerczewska, Luboń, Polska",
+    "addr": {
+      "street": "ul. Świerczewska",
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Żabikowo",
+    "corrected": false
+  },
+  "96801366700067": {
+    "skipped": "geocode_failed",
+    "query": "osiedlu nowych domów, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "osiedlu nowych domów",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96838084200067": {
+    "orig_lat": 52.33417,
+    "orig_lon": 16.8405,
+    "new_lat": 52.31996,
+    "new_lon": 16.87918,
+    "dist_m": 3067,
+    "query": "ul. Nowiny 54AA1, Luboń-Lasek, Polska",
+    "formatted": "Lasek, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Nowiny",
+      "number": "54AA1",
+      "osiedle": null,
+      "city": "Luboń-Lasek",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lasek",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96744545100067": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.448685,
+    "new_lon": 16.89088,
+    "dist_m": 33,
+    "query": "Strzeszyńska 77, Poznań, Polska",
+    "formatted": "77, Strzeszyńska, Podolany, Poznań, województwo wielkopolskie, 60-479, Polska",
+    "addr": {
+      "street": "Strzeszyńska",
+      "number": "77",
+      "osiedle": "Strzeszyńska 77",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "96827955100067": {
+    "orig_lat": 52.32956,
+    "orig_lon": 16.88295,
+    "new_lat": 52.331703,
+    "new_lon": 16.882156,
+    "dist_m": 244,
+    "query": "ul. Rydla, Luboń, Polska",
+    "formatted": "Luboń Rydla n/ż, Platanowa, Luboń, Polska",
+    "addr": {
+      "street": "ul. Rydla",
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Lasek",
+    "corrected": true
+  },
+  "68387266": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68387264": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "67842922": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "68238780": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68389044": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.40924,
+    "orig_lon": 16.8754,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 7824,
+    "orig_dist_to_center_m": 3949,
+    "query": "ul. Jesiennej 2, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jesiennej",
+      "number": "2",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    }
+  },
+  "68389110": {
+    "skipped": "outside_bbox",
+    "query": "ul. Długa, Góra, Polska",
+    "formatted": "Lisia Góra - ul. Długa, Długa, Lisia Góra, Polska",
+    "addr": {
+      "street": "ul. Długa",
+      "number": null,
+      "osiedle": null,
+      "city": "Góra",
+      "district": "gm. Tarnowo Podgórne",
+      "confidence": "high"
+    },
+    "new_lat": 50.07849,
+    "new_lon": 21.053374
+  },
+  "68002916": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96800291600067": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96824550100067": {
+    "orig_lat": 52.42794,
+    "orig_lon": 16.79522,
+    "new_lat": 52.42745,
+    "new_lon": 16.78375,
+    "dist_m": 780,
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68389692": {
+    "orig_lat": 52.491,
+    "orig_lon": 16.7327,
+    "new_lat": 52.490808,
+    "new_lon": 16.73516,
+    "dist_m": 168,
+    "query": "ul. Teatralnej, Napachanie, Polska",
+    "formatted": "Teatralna, Napachanie, Polska",
+    "addr": {
+      "street": "ul. Teatralnej",
+      "number": null,
+      "osiedle": "Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96838000800067": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96837106200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Potasze",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67968578": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
   }
 }
