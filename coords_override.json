@@ -35944,5 +35944,747 @@
     },
     "new_lat": 53.485266,
     "new_lon": 20.091529
+  },
+  "96781441500067": {
+    "orig_lat": 52.40216,
+    "orig_lon": 16.85464,
+    "new_lat": 52.398629,
+    "new_lon": 16.862538,
+    "dist_m": 664,
+    "query": "ul. Ptasia, Poznań, Polska",
+    "formatted": "Ptasia, Poznań, Polska",
+    "addr": {
+      "street": "ul. Ptasia",
+      "number": null,
+      "osiedle": "Ptasia Vita",
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Ławica",
+    "corrected": true
+  },
+  "68393209": {
+    "skipped": "outside_bbox",
+    "query": "gmina Stęszew, Stryków, Polska",
+    "formatted": "Stryków, Powiat zgierski, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Stryków",
+      "district": "gmina Stęszew",
+      "confidence": "high"
+    },
+    "new_lat": 51.90224,
+    "new_lon": 19.60536
+  },
+  "68392842": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96812781300067": {
+    "orig_lat": 52.3672,
+    "orig_lon": 16.66729,
+    "new_lat": 52.365241,
+    "new_lon": 16.669909,
+    "dist_m": 281,
+    "query": "Więckowska, Dopiewo, Polska",
+    "formatted": "Więckowska, Dopiewo, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-070, Polska",
+    "addr": {
+      "street": "Więckowska",
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68393207": {
+    "skipped": "outside_bbox",
+    "query": "Czempiń, Sierniki, Polska",
+    "formatted": "Sierniki, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Sierniki",
+      "district": "Czempiń",
+      "confidence": "high"
+    },
+    "new_lat": 52.7413,
+    "new_lon": 17.0775
+  },
+  "68390997": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68391009": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96830387000067": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68319514": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68391465": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68391010": {
+    "orig_lat": 52.24535,
+    "orig_lon": 16.84699,
+    "new_lat": 52.21103,
+    "new_lon": 16.82642,
+    "dist_m": 4065,
+    "query": "gmina Mosina, Drużyna, Polska",
+    "formatted": "Drużyna, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Drużyna",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Drużyna",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96839101000067": {
+    "orig_lat": 52.24535,
+    "orig_lon": 16.84699,
+    "new_lat": 52.21103,
+    "new_lon": 16.82642,
+    "dist_m": 4065,
+    "query": "gmina Mosina, Drużyna, Polska",
+    "formatted": "Drużyna, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Drużyna",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Drużyna",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96771844800067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Rolna, Kostrzyn, Polska",
+    "formatted": "Rolna, Kostrzyn, Polska",
+    "addr": {
+      "street": "ul. Rolna",
+      "number": null,
+      "osiedle": null,
+      "city": "Kostrzyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.403722,
+    "new_lon": 17.21167
+  },
+  "68391006": {
+    "orig_lat": 52.29129,
+    "orig_lon": 16.96902,
+    "new_lat": 52.30002,
+    "new_lon": 16.95723,
+    "dist_m": 1259,
+    "query": "gmina Mosina, Daszewice, Polska",
+    "formatted": "Daszewice, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Daszewice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68389866": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68392840": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68390996": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68393746": {
+    "skipped": "outside_bbox",
+    "query": "ul. Rolnej, Wielka Wieś, Polska",
+    "formatted": "Wielka Wieś, gmina Główczyce, powiat słupski, województwo pomorskie, 76-220, Polska",
+    "addr": {
+      "street": "ul. Rolnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Wielka Wieś",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 54.56771,
+    "new_lon": 17.359887
+  },
+  "68391464": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68389844": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96797441700067": {
+    "orig_lat": 52.4986,
+    "orig_lon": 16.73566,
+    "new_lat": 52.490808,
+    "new_lon": 16.73516,
+    "dist_m": 867,
+    "query": "ul. Teatralnej, Napachanie, Polska",
+    "formatted": "Teatralna, Napachanie, Polska",
+    "addr": {
+      "street": "ul. Teatralnej",
+      "number": null,
+      "osiedle": "Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68391869": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dąbrowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68390995": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68392361": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68391870": {
+    "orig_lat": 52.37266,
+    "orig_lon": 16.7756,
+    "new_lat": 52.360665,
+    "new_lon": 16.745623,
+    "dist_m": 2433,
+    "query": "Irysowa, Gołuski, Polska",
+    "formatted": "Irysowa, Gołuski, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-069, Polska",
+    "addr": {
+      "street": "Irysowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gołuski",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68391008": {
+    "skipped": "outside_bbox",
+    "query": "ul. Owocowa, Kleszczewo, Polska",
+    "formatted": "Owocowa, Kleszczewo, Polska",
+    "addr": {
+      "street": "ul. Owocowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Kleszczewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.334722,
+    "new_lon": 17.174809
+  },
+  "68390998": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": "53",
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68389906": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96838505100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Morasko",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68391003": {
+    "orig_lat": 52.36803,
+    "orig_lon": 16.8325,
+    "new_lat": 52.366348,
+    "new_lon": 16.818122,
+    "dist_m": 994,
+    "query": "ul. Bursztynowa, Plewiska, Polska",
+    "formatted": "Bursztynowa, Plewiska, Polska",
+    "addr": {
+      "street": "ul. Bursztynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Plewiska",
+    "geo_district": "Aniołowo",
+    "corrected": true
+  },
+  "68391000": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Tulce",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68393250": {
+    "orig_lat": 52.37388,
+    "orig_lon": 16.95043,
+    "new_lat": 52.374577,
+    "new_lon": 16.953591,
+    "dist_m": 228,
+    "query": "ul. Unii Lubelskiej, Poznań, Polska",
+    "formatted": "Unii Lubelskiej, Poznań, Polska",
+    "addr": {
+      "street": "ul. Unii Lubelskiej",
+      "number": null,
+      "osiedle": "RATAJE",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "96838904400067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.40924,
+    "orig_lon": 16.8754,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 7824,
+    "orig_dist_to_center_m": 3949,
+    "query": "ul. Jesiennej 2, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jesiennej",
+      "number": "2",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    }
+  },
+  "68391016": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68391002": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68389886": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Suchy Las",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68391017": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.41909,
+    "new_lon": 16.635052,
+    "dist_m": 2791,
+    "query": "ul. Agawy, Lusówko, Polska",
+    "formatted": "Agawy, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Agawy",
+      "number": null,
+      "osiedle": "Osiedle Rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Rozalin",
+    "corrected": true
+  },
+  "68390994": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68391868": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Wirach",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68390993": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68391004": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.416803,
+    "new_lon": 16.639468,
+    "dist_m": 2933,
+    "query": "osiedle rozalin, Lusówko, Polska",
+    "formatted": "Osiedle Rozalin, Rozalin, Lusówko, gmina Tarnowo Podgórne, powiat poznański, województwo wielkopolskie, 62-080, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "osiedle rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Osiedle Rozalin",
+    "corrected": true
+  },
+  "68391873": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Wirach",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68391867": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Wirach",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96826345700067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36012,
+    "orig_lon": 16.98193,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7313,
+    "orig_dist_to_center_m": 6272,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "96802266100067": {
+    "orig_lat": 52.38217,
+    "orig_lon": 16.91298,
+    "new_lat": 52.392651,
+    "new_lon": 16.920178,
+    "dist_m": 1264,
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "number": null,
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": "historyczna dzielnica",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "68390559": {
+    "orig_lat": 52.4151,
+    "orig_lon": 16.90047,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 239,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68391362": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68391001": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Skórzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96819451100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Czmoń",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68391541": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68390786": {
+    "skipped": "geocode_failed",
+    "query": "nowoczesnego osiedla na Jeżycach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "nowoczesnego osiedla na Jeżycach",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    }
   }
 }
