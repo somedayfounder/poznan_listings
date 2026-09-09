@@ -36686,5 +36686,416 @@
       "district": "Jeżyce",
       "confidence": "high"
     }
+  },
+  "68396800": {
+    "skipped": "outside_bbox",
+    "query": "ul. Rolnej, Wielka Wieś, Polska",
+    "formatted": "Wielka Wieś / ul. Kielecka (szkoła) / 10, Kielecka, Wielka Wieś, Polska",
+    "addr": {
+      "street": "ul. Rolnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Wielka Wieś",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 51.069729,
+    "new_lon": 20.972349
+  },
+  "68396190": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Pamiątkowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96838061400067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "67963251": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68396813": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66801154": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "68396812": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68394939": {
+    "skipped": "outside_bbox",
+    "query": "ul. Klonowa, Kostrzyn Wielkopolski, Polska",
+    "formatted": "Klonowa, Kostrzyn, Polska",
+    "addr": {
+      "street": "ul. Klonowa",
+      "number": "null",
+      "osiedle": "Klonowy Zakątek",
+      "city": "Kostrzyn Wielkopolski",
+      "district": "null",
+      "confidence": "high"
+    },
+    "new_lat": 52.389769,
+    "new_lon": 17.239052
+  },
+  "96835345600067": {
+    "orig_lat": 52.47973,
+    "orig_lon": 16.75052,
+    "new_lat": 52.49355,
+    "new_lon": 16.7557,
+    "dist_m": 1576,
+    "query": "ul. Poznańskiej, Kiekrz-Rogierówko-Starzyny, Polska",
+    "formatted": "Starzyny, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Poznańskiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Kiekrz-Rogierówko-Starzyny",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Starzyny",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96839099500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68396388": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68354356": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66801181": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "68395211": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68396374": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96836181200067": {
+    "orig_lat": 52.37853,
+    "orig_lon": 16.94986,
+    "new_lat": 52.398522,
+    "new_lon": 16.960366,
+    "dist_m": 2335,
+    "query": "Nowe Miasto - Rataje, Poznań, Polska",
+    "formatted": "Komisariat Policji Poznań - Nowe Miasto, Sowia, Miasteczko, Łacina, Rataje, Poznań, województwo wielkopolskie, 61-131, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Nowe Miasto - Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łacina",
+    "corrected": true
+  },
+  "68396778": {
+    "orig_lat": 52.492,
+    "orig_lon": 16.74119,
+    "new_lat": 52.491755,
+    "new_lon": 16.741418,
+    "dist_m": 31,
+    "query": "ul. Afiszowej, Napachanie, Polska",
+    "formatted": "Afiszowa, Napachanie, Polska",
+    "addr": {
+      "street": "ul. Afiszowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96832745800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68396672": {
+    "orig_lat": 52.37104,
+    "orig_lon": 16.72286,
+    "new_lat": 52.372021,
+    "new_lon": 16.722589,
+    "dist_m": 111,
+    "query": "ul. Ślimakowej, Palędzie, Polska",
+    "formatted": "Ślimakowa, Palędzie, Polska",
+    "addr": {
+      "street": "ul. Ślimakowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Palędzie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Palędzie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96827313500067": {
+    "orig_lat": 52.5241,
+    "orig_lon": 17.02602,
+    "new_lat": 52.513926,
+    "new_lon": 16.972517,
+    "dist_m": 3793,
+    "query": "ul. Jabłoniowej, Owińska, Polska",
+    "formatted": "Owińska, gmina Czerwonak, powiat poznański, województwo wielkopolskie, 62-009, Polska",
+    "addr": {
+      "street": "ul. Jabłoniowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Owińska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Owińska",
+    "geo_district": null,
+    "corrected": true
+  },
+  "66288710": {
+    "orig_lat": 52.43822,
+    "orig_lon": 16.90979,
+    "new_lat": 52.438229,
+    "new_lon": 16.909791,
+    "dist_m": 1,
+    "query": "ul. Piątkowska 165 A-B, Poznań, Polska",
+    "formatted": "Piątkowska, 165A, Poznań, Polska",
+    "addr": {
+      "street": "ul. Piątkowska",
+      "number": "165 A-B",
+      "osiedle": "Witosa Park",
+      "city": "Poznań",
+      "district": "Winiary",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "96834109400067": {
+    "skipped": "geocode_city_only",
+    "query": "nowoczesnej inwestycji, Poznań, Polska",
+    "formatted": "Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "nowoczesnej inwestycji",
+      "city": "Poznań",
+      "district": "Grunwald - Marcelin",
+      "confidence": "high"
+    }
+  },
+  "67761682": {
+    "orig_lat": 52.44329,
+    "orig_lon": 16.91919,
+    "new_lat": 52.443389,
+    "new_lon": 16.918298,
+    "dist_m": 61,
+    "query": "ul. Lechicka 65, Poznań, Polska",
+    "formatted": "Lechicka, 65, Poznań, Polska",
+    "addr": {
+      "street": "ul. Lechicka",
+      "number": "65",
+      "osiedle": "Inwestycja Lechicka 65",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "96665003500067": {
+    "orig_lat": 52.41873,
+    "orig_lon": 16.90318,
+    "new_lat": 52.415748,
+    "new_lon": 16.903088,
+    "dist_m": 332,
+    "query": "ul. Barańczaka, Poznań, Polska",
+    "formatted": "Stanisława Barańczaka, Poznań, Polska",
+    "addr": {
+      "street": "ul. Barańczaka",
+      "number": null,
+      "osiedle": "Goplana",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68395104": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "67968599": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
   }
 }
