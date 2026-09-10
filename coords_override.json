@@ -37097,5 +37097,293 @@
     },
     "new_lat": 53.485266,
     "new_lon": 20.091529
+  },
+  "96831951400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68399206": {
+    "orig_lat": 52.62074,
+    "orig_lon": 17.11815,
+    "new_lat": 52.620241,
+    "new_lon": 17.118724,
+    "dist_m": 68,
+    "query": "ulica Pieczarkowa, Łopuchowo, Polska",
+    "formatted": "Pieczarkowa, Łopuchowo, Polska",
+    "addr": {
+      "street": "ulica Pieczarkowa",
+      "number": null,
+      "osiedle": "Osiedle Przy Puszczy",
+      "city": "Łopuchowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łopuchowo",
+    "geo_district": "Gać",
+    "corrected": false
+  },
+  "65204690": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wieruszowska 8L_7, Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8L_7",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96838984400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96836446900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68401777": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68400434": {
+    "orig_lat": 52.41676,
+    "orig_lon": 16.89967,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 422,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68400292": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96838911000067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Długa, Góra, Polska",
+    "formatted": "Lisia Góra - ul. Długa, Długa, Lisia Góra, Polska",
+    "addr": {
+      "street": "ul. Długa",
+      "number": null,
+      "osiedle": null,
+      "city": "Góra",
+      "district": "gm. Tarnowo Podgórne",
+      "confidence": "high"
+    },
+    "new_lat": 50.07849,
+    "new_lon": 21.053374
+  },
+  "96803932100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Wies",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96540700900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": "Jeleniogórska",
+      "number": "5",
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96832903700067": {
+    "orig_lat": 52.39378,
+    "orig_lon": 16.84389,
+    "new_lat": 52.390169,
+    "new_lon": 16.848049,
+    "dist_m": 491,
+    "query": "ul. Jeleniogórska, Poznań, Polska",
+    "formatted": "Jeleniogórska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": true
+  },
+  "68400579": {
+    "orig_lat": 52.37848,
+    "orig_lon": 16.94663,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 1996,
+    "query": "ul. Wagrowskiej, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wagrowskiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Żegrze",
+    "corrected": true
+  },
+  "68401973": {
+    "orig_lat": 52.27554,
+    "orig_lon": 17.00965,
+    "new_lat": 52.276726,
+    "new_lon": 17.023288,
+    "dist_m": 937,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96663147600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68399546": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kostrzyn",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68400403": {
+    "orig_lat": 52.41676,
+    "orig_lon": 16.89947,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 429,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68398729": {
+    "orig_lat": 52.52046,
+    "orig_lon": 17.01234,
+    "new_lat": 52.52336,
+    "new_lon": 17.02593,
+    "dist_m": 974,
+    "query": "Czerwonak, Potasze, Polska",
+    "formatted": "Potasze, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Potasze",
+      "district": "Czerwonak",
+      "confidence": "high"
+    },
+    "geo_city": "Potasze",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96838509600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68399318": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
