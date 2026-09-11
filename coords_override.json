@@ -37385,5 +37385,235 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "96797801300067": {
+    "orig_lat": 52.36424,
+    "orig_lon": 16.55127,
+    "new_lat": 52.35579,
+    "new_lon": 16.57717,
+    "dist_m": 1994,
+    "query": "gm. Buk, Otusz, Polska",
+    "formatted": "Otusz, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Otusz",
+      "district": "gm. Buk",
+      "confidence": "high"
+    },
+    "geo_city": "Otusz",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96584524400067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Cichej, Siekierki Wielkie, Polska",
+    "formatted": "Siekierki Wielkie, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Cichej",
+      "number": null,
+      "osiedle": "OSIEDLE CICHE",
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.38133,
+    "new_lon": 17.16391
+  },
+  "96670264000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68405801": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68403095": {
+    "orig_lat": 52.41671,
+    "orig_lon": 16.90011,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 403,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96839100000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Tulce",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68404835": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Mrowino",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96786835400067": {
+    "orig_lat": 52.37305,
+    "orig_lon": 16.90062,
+    "new_lat": 52.371519,
+    "new_lon": 16.90032,
+    "dist_m": 171,
+    "query": "ul. Świerkowa, Poznań, Polska",
+    "formatted": "Świerkowa, Poznań, Polska",
+    "addr": {
+      "street": "ul. Świerkowa",
+      "number": null,
+      "osiedle": "EKO Grabowa",
+      "city": "Poznań",
+      "district": "Dębiec",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Świerczewo",
+    "corrected": false
+  },
+  "68403181": {
+    "orig_lat": 52.41662,
+    "orig_lon": 16.89964,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 410,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68404711": {
+    "orig_lat": 52.41321,
+    "orig_lon": 16.90233,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 43,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": false
+  },
+  "68402944": {
+    "orig_lat": 52.45353,
+    "orig_lon": 16.72225,
+    "new_lat": 52.45299,
+    "new_lon": 16.724939,
+    "dist_m": 192,
+    "query": "ul. Kwiatowa, Sady, Polska",
+    "formatted": "Kwiatowa, Sady, Polska",
+    "addr": {
+      "street": "ul. Kwiatowa",
+      "number": null,
+      "osiedle": "Osiedle Nowe Sady",
+      "city": "Sady",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sady",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68073270": {
+    "orig_lat": 52.39769,
+    "orig_lon": 16.92545,
+    "new_lat": 52.397184,
+    "new_lon": 16.926392,
+    "dist_m": 85,
+    "query": "ul. Dolna Wilda 12, Poznań, Polska",
+    "formatted": "Dolna Wilda, 12, Poznań, Polska",
+    "addr": {
+      "street": "ul. Dolna Wilda",
+      "number": "12",
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "96807327000067": {
+    "orig_lat": 52.39769,
+    "orig_lon": 16.92545,
+    "new_lat": 52.397184,
+    "new_lon": 16.926392,
+    "dist_m": 85,
+    "query": "ul. Dolna Wilda 12, Poznań, Polska",
+    "formatted": "Dolna Wilda, 12, Poznań, Polska",
+    "addr": {
+      "street": "ul. Dolna Wilda",
+      "number": "12",
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "68334329": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
