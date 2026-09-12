@@ -37615,5 +37615,277 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "96633246900067": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449057,
+    "new_lon": 16.960241,
+    "dist_m": 136,
+    "query": "ul. Bielicowa 4, Naramowice, Polska",
+    "formatted": "Bielicowa, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "4",
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "66332177": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449503,
+    "new_lon": 16.957893,
+    "dist_m": 301,
+    "query": "ul. Bielicowa, Naramowice, Polska",
+    "formatted": "Bielicowa, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "null",
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": "null",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": true
+  },
+  "96633217700067": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449503,
+    "new_lon": 16.957893,
+    "dist_m": 301,
+    "query": "ul. Bielicowa, Naramowice, Polska",
+    "formatted": "Bielicowa, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "null",
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": "null",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": true
+  },
+  "96838033500067": {
+    "skipped": "outside_bbox",
+    "query": "gmina Mosina, Żabinek, Polska",
+    "formatted": "Żabinek, woj. warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Żabinek",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "new_lat": 54.33333,
+    "new_lon": 22.03333
+  },
+  "96680115400067": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "68409437": {
+    "orig_lat": 52.3567,
+    "orig_lon": 16.88142,
+    "new_lat": 52.34705,
+    "new_lon": 16.89267,
+    "dist_m": 1317,
+    "query": "Opolska, Luboń, Polska",
+    "formatted": "Luboń, Powiat poznański, Polska",
+    "addr": {
+      "street": "Opolska",
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65204731": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wieruszowska 8F_29, Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8F_29",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96639666400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Robakowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68407669": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Trzcielin",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68408090": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.415045,
+    "new_lon": 16.910038,
+    "dist_m": 1003,
+    "query": "Osiedle Jeżyc, Poznań, Polska",
+    "formatted": "Jeżyckie Osiedle, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Jeżyc",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96839101600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96730125300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "podmiejski dom",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68406886": {
+    "orig_lat": 52.37054,
+    "orig_lon": 16.74283,
+    "new_lat": 52.372102,
+    "new_lon": 16.726942,
+    "dist_m": 1093,
+    "query": "ul. Surfiniowej, Palędzie, Polska",
+    "formatted": "Surfiniowa, Palędzie, Polska",
+    "addr": {
+      "street": "ul. Surfiniowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Palędzie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Palędzie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96828077600067": {
+    "orig_lat": 52.38967,
+    "orig_lon": 16.86027,
+    "new_lat": 52.404197,
+    "new_lon": 16.88215,
+    "dist_m": 2194,
+    "query": "Grunwald, Poznań, Polska",
+    "formatted": "Stary Grunwald, Jeżyce, Grunwald, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96807327800067": {
+    "orig_lat": 52.39769,
+    "orig_lon": 16.92545,
+    "new_lat": 52.397184,
+    "new_lon": 16.926392,
+    "dist_m": 85,
+    "query": "ul. Dolna Wilda 12, Poznań, Polska",
+    "formatted": "Dolna Wilda, 12, Poznań, Polska",
+    "addr": {
+      "street": "ul. Dolna Wilda",
+      "number": "12",
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "96796859900067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "96830799200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
