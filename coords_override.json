@@ -37887,5 +37887,179 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "96839284200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68383790": {
+    "skipped": "outside_bbox",
+    "query": "osiedle domów w Gwiazdowie, Gwiazdowo, Polska",
+    "formatted": "Gwiazdowo, Karwie, gmina Mrągowo, powiat mrągowski, województwo warmińsko-mazurskie, 11-700, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "osiedle domów w Gwiazdowie",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.8243,
+    "new_lon": 21.286328
+  },
+  "96831127600067": {
+    "orig_lat": 52.48398,
+    "orig_lon": 16.76856,
+    "new_lat": 52.500713,
+    "new_lon": 16.747833,
+    "dist_m": 2330,
+    "query": "ul. Poznańska 36, Kiekrz, Polska",
+    "formatted": "Poznańska, 62-090 Kiekrz, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "36",
+      "osiedle": null,
+      "city": "Kiekrz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Kiekrz",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96799578100067": {
+    "orig_lat": 52.44821,
+    "orig_lon": 16.96004,
+    "new_lat": 52.4493,
+    "new_lon": 16.958531,
+    "dist_m": 159,
+    "query": "ul. Bielicowa 2, Poznań, Polska",
+    "formatted": "Bielicowa, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "2",
+      "osiedle": "Osiedle Witaj",
+      "city": "Poznań",
+      "district": "Naramowice",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "96829565600067": {
+    "orig_lat": 52.34363,
+    "orig_lon": 16.69366,
+    "new_lat": 52.343634,
+    "new_lon": 16.693658,
+    "dist_m": 0,
+    "query": "ul. Lazurowa, Konarzewo, Polska",
+    "formatted": "Lazurowa, Konarzewo, Polska",
+    "addr": {
+      "street": "ul. Lazurowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Konarzewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96830548700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68411247": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96766382600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Laurowe",
+      "city": "null",
+      "district": "null",
+      "confidence": "low"
+    }
+  },
+  "66801215": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "96840318100067": {
+    "orig_lat": 52.41662,
+    "orig_lon": 16.89964,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 410,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96807328400067": {
+    "orig_lat": 52.39769,
+    "orig_lon": 16.92545,
+    "new_lat": 52.397184,
+    "new_lon": 16.926392,
+    "dist_m": 85,
+    "query": "ul. Dolna Wilda 12, Poznań, Polska",
+    "formatted": "Dolna Wilda, 12, Poznań, Polska",
+    "addr": {
+      "street": "ul. Dolna Wilda",
+      "number": "12",
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
   }
 }
