@@ -38061,5 +38061,589 @@
     "geo_city": "Poznań",
     "geo_district": "Wilda",
     "corrected": false
+  },
+  "68413740": {
+    "skipped": "outside_bbox",
+    "query": "ul. Zimowej, Paczków, Polska",
+    "formatted": "Paczków ul. Wojska Polskiego / PSP2, Wojska Polskiego, Paczków, Polska",
+    "addr": {
+      "street": "ul. Zimowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Paczków",
+      "district": "gmina Kostrzyn",
+      "confidence": "high"
+    },
+    "new_lat": 50.461611,
+    "new_lon": 17.015438
+  },
+  "68415334": {
+    "skipped": "outside_bbox",
+    "query": "ul. Brzoskwiniowa, Siekierki Wielkie, Polska",
+    "formatted": "Brzoskwiniowa, Siekierki Wielkie, Polska",
+    "addr": {
+      "street": "ul. Brzoskwiniowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.390348,
+    "new_lon": 17.168341
+  },
+  "67278093": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96841533400067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Brzoskwiniowa, Siekierki Wielkie, Polska",
+    "formatted": "Brzoskwiniowa, Siekierki Wielkie, Polska",
+    "addr": {
+      "street": "ul. Brzoskwiniowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.390348,
+    "new_lon": 17.168341
+  },
+  "96839920600067": {
+    "orig_lat": 52.62074,
+    "orig_lon": 17.11815,
+    "new_lat": 52.620241,
+    "new_lon": 17.118724,
+    "dist_m": 68,
+    "query": "ul. Pieczarkowa, Łopuchowo, Polska",
+    "formatted": "Pieczarkowa, Łopuchowo, Polska",
+    "addr": {
+      "street": "ul. Pieczarkowa",
+      "number": null,
+      "osiedle": "Osiedle Przy Puszczy",
+      "city": "Łopuchowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łopuchowo",
+    "geo_district": "Gać",
+    "corrected": false
+  },
+  "96780169900067": {
+    "orig_lat": 52.50471,
+    "orig_lon": 16.72862,
+    "new_lat": 52.510322,
+    "new_lon": 16.742124,
+    "dist_m": 1107,
+    "query": "ul. Leśnej, Rokietnica, Polska",
+    "formatted": "Rokietnica, gmina Rokietnica, powiat poznański, województwo wielkopolskie, 62-090, Polska",
+    "addr": {
+      "street": "ul. Leśnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68412741": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Niepruszewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96839146400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68414429": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Winogrady",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96832290100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Winogrady",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68414427": {
+    "orig_lat": 52.42659,
+    "orig_lon": 16.93611,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 221,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68413661": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96726609700067": {
+    "orig_lat": 52.4431,
+    "orig_lon": 16.87385,
+    "new_lat": 52.450589,
+    "new_lon": 16.869863,
+    "dist_m": 875,
+    "query": "ul. Literacka, Strzeszyn, Polska",
+    "formatted": "Literacka, Poznań, Polska",
+    "addr": {
+      "street": "ul. Literacka",
+      "number": null,
+      "osiedle": "Literacka Skwer – etap C",
+      "city": "Strzeszyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Strzeszyn",
+    "corrected": true
+  },
+  "96800299000067": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "68413714": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96784282700067": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "68415216": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68414109": {
+    "orig_lat": 52.27554,
+    "orig_lon": 17.00965,
+    "new_lat": 52.276726,
+    "new_lon": 17.023288,
+    "dist_m": 937,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68414108": {
+    "orig_lat": 52.27554,
+    "orig_lon": 17.00965,
+    "new_lat": 52.276726,
+    "new_lon": 17.023288,
+    "dist_m": 937,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68413915": {
+    "orig_lat": 52.27746,
+    "orig_lon": 17.02377,
+    "new_lat": 52.276726,
+    "new_lon": 17.023288,
+    "dist_m": 88,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68413000": {
+    "orig_lat": 52.27554,
+    "orig_lon": 17.00965,
+    "new_lat": 52.276726,
+    "new_lon": 17.023288,
+    "dist_m": 937,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68412999": {
+    "orig_lat": 52.27554,
+    "orig_lon": 17.00965,
+    "new_lat": 52.276726,
+    "new_lon": 17.023288,
+    "dist_m": 937,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68412696": {
+    "orig_lat": 52.27746,
+    "orig_lon": 17.02377,
+    "new_lat": 52.276726,
+    "new_lon": 17.023288,
+    "dist_m": 88,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68413611": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96784277900067": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "68413375": {
+    "orig_lat": 52.4156,
+    "orig_lon": 16.90102,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 265,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68414719": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Palędziu",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96780352100067": {
+    "orig_lat": 52.43631,
+    "orig_lon": 16.64045,
+    "new_lat": 52.436082,
+    "new_lon": 16.642458,
+    "dist_m": 138,
+    "query": "ul. Bosmańska, Lusówko, Polska",
+    "formatted": "Bosmańska, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Bosmańska",
+      "number": null,
+      "osiedle": null,
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68413903": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68415302": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "65020675": {
+    "orig_lat": 52.38893,
+    "orig_lon": 16.9174,
+    "new_lat": 52.387711,
+    "new_lon": 16.916725,
+    "dist_m": 143,
+    "query": "ul. 28 czerwca 1956 r. 156, Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, 156, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 czerwca 1956 r.",
+      "number": "156",
+      "osiedle": "Wilda Story",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "96815393700067": {
+    "orig_lat": 52.43926,
+    "orig_lon": 16.64476,
+    "new_lat": 52.427909,
+    "new_lon": 16.64578,
+    "dist_m": 1264,
+    "query": "ul. Tarnowska, Lusówko, Polska",
+    "formatted": "Tarnowska, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Tarnowska",
+      "number": null,
+      "osiedle": null,
+      "city": "Lusówko",
+      "district": "gmina Tarnowo Podgórne",
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68415204": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczepankowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96841520400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczepankowo",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
