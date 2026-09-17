@@ -39245,5 +39245,243 @@
     "geo_city": "Poznań",
     "geo_district": "Jeżyce",
     "corrected": true
+  },
+  "96670699800067": {
+    "orig_lat": 52.38921,
+    "orig_lon": 16.85909,
+    "new_lat": 52.389515,
+    "new_lon": 16.859701,
+    "dist_m": 54,
+    "query": "ul. Smardzewska 8, Poznań, Polska",
+    "formatted": "Smardzewska, 60-159 Poznań, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": "8",
+      "osiedle": "Smardzewska 8",
+      "city": "Poznań",
+      "district": "Stary Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Osiedle Mikołaja Kopernika",
+    "corrected": false
+  },
+  "96629336600067": {
+    "orig_lat": 52.36733,
+    "orig_lon": 16.90355,
+    "new_lat": 52.367257,
+    "new_lon": 16.902715,
+    "dist_m": 57,
+    "query": "ul. 28 czerwca 1956 r. 346, Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, 346, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 czerwca 1956 r.",
+      "number": "346",
+      "osiedle": "Osiedle 28 Czerwca 1956 r.",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Zielony Dębiec",
+    "corrected": false
+  },
+  "96842426900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "wioska",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68074294": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68028771": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96806656700067": {
+    "skipped": "geocode_failed",
+    "query": "null, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle EKO",
+      "city": "null",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "65204761": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Wieruszowska 8G_13, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, województwo lubuskie, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8G_13",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68425612": {
+    "skipped": "outside_bbox",
+    "query": "ul. Szczepankowskiej, Szczepankowo, Polska",
+    "formatted": "Szczepankowo, gmina Śniadowo, powiat łomżyński, województwo podlaskie, Polska",
+    "addr": {
+      "street": "ul. Szczepankowskiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczepankowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "new_lat": 53.120417,
+    "new_lon": 21.949858
+  },
+  "65204647": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, województwo lubuskie, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": null,
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68425882": {
+    "orig_lat": 52.37054,
+    "orig_lon": 16.74283,
+    "new_lat": 52.372102,
+    "new_lon": 16.726942,
+    "dist_m": 1093,
+    "query": "ul. Surfiniowej, Palędzie, Polska",
+    "formatted": "Surfiniowa, Palędzie, Polska",
+    "addr": {
+      "street": "ul. Surfiniowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Palędzie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Palędzie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68427464": {
+    "skipped": "geocode_failed",
+    "query": "ul. Deszczowej 7, Borówca, Polska",
+    "addr": {
+      "street": "ul. Deszczowej",
+      "number": "7",
+      "osiedle": null,
+      "city": "Borówca",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96840197300067": {
+    "orig_lat": 52.27554,
+    "orig_lon": 17.00965,
+    "new_lat": 52.276726,
+    "new_lon": 17.023288,
+    "dist_m": 937,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96839186800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Wirach",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68426454": {
+    "orig_lat": 52.41627,
+    "orig_lon": 16.88584,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 1191,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68425926": {
+    "orig_lat": 52.38565,
+    "orig_lon": 16.89524,
+    "new_lat": 52.384124,
+    "new_lon": 16.894016,
+    "dist_m": 189,
+    "query": "ul. R. Dmowskiego 103, Poznań, Polska",
+    "formatted": "Romana Dmowskiego, 103, Poznań, Polska",
+    "addr": {
+      "street": "ul. R. Dmowskiego",
+      "number": "103",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Górczyn",
+    "corrected": false
   }
 }
