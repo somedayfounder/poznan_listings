@@ -39906,5 +39906,345 @@
     },
     "new_lat": 52.3463,
     "new_lon": 21.79482
+  },
+  "68434696": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Pamiątkowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96498402500067": {
+    "orig_lat": 52.27787,
+    "orig_lon": 16.98515,
+    "new_lat": 52.277847,
+    "new_lon": 16.984973,
+    "dist_m": 12,
+    "query": "ul. Waniliowa, Kamionki, Polska",
+    "formatted": "Waniliowa, Kamionki, Polska",
+    "addr": {
+      "street": "ul. Waniliowa",
+      "number": null,
+      "osiedle": "Osiedle Waniliowe",
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Kamionki",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68437177": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96668309400067": {
+    "orig_lat": 52.44821,
+    "orig_lon": 16.96004,
+    "new_lat": 52.4493,
+    "new_lon": 16.958531,
+    "dist_m": 159,
+    "query": "ul. Bielicowa 2, Poznań, Polska",
+    "formatted": "Bielicowa, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "2",
+      "osiedle": "Osiedle Witaj",
+      "city": "Poznań",
+      "district": "Naramowice",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "96839146500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96806334600067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.44068,
+    "orig_lon": 16.64444,
+    "new_lat": 52.473916,
+    "new_lon": 16.700384,
+    "dist_m": 5294,
+    "orig_dist_to_center_m": 19937,
+    "query": "Tarnowska, Tarnowo Podgórne, Polska",
+    "formatted": "Tarnowska, Karolewo, Tarnowo Podgórne, gmina Tarnowo Podgórne, powiat poznański, województwo wielkopolskie, 62-079, Polska",
+    "addr": {
+      "street": "Tarnowska",
+      "number": null,
+      "osiedle": null,
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68436694": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Biskupice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68436693": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Biskupice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68433730": {
+    "skipped": "geocode_failed",
+    "query": "nowoczesnej inwestycji na poznańskich Ratajach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "nowoczesnej inwestycji na poznańskich Ratajach",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    }
+  },
+  "68435759": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96839325000067": {
+    "orig_lat": 52.37388,
+    "orig_lon": 16.95043,
+    "new_lat": 52.374577,
+    "new_lon": 16.953591,
+    "dist_m": 228,
+    "query": "ul. Unii Lubelskiej, Poznań, Polska",
+    "formatted": "Unii Lubelskiej, Poznań, Polska",
+    "addr": {
+      "street": "ul. Unii Lubelskiej",
+      "number": null,
+      "osiedle": "RATAJE",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "96838508900067": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.6849,
+    "new_lat": 52.46214,
+    "new_lon": 16.673124,
+    "dist_m": 801,
+    "query": "ul. Rolna, Tarnowo Podgórne, Polska",
+    "formatted": "Tarnowo Podgórne/Rolna n/ż, Poznańska, Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "ul. Rolna",
+      "number": null,
+      "osiedle": null,
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": null,
+    "corrected": true
+  },
+  "95321617200067": {
+    "orig_lat": 52.31368,
+    "orig_lon": 16.91477,
+    "new_lat": 52.313928,
+    "new_lon": 16.91468,
+    "dist_m": 28,
+    "query": "ul. Spokojna, Czapury, Polska",
+    "formatted": "Spokojna, Czapury, Polska",
+    "addr": {
+      "street": "ul. Spokojna",
+      "number": null,
+      "osiedle": null,
+      "city": "Czapury",
+      "district": "gm. Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68436125": {
+    "orig_lat": 52.45678,
+    "orig_lon": 16.85045,
+    "new_lat": 52.460139,
+    "new_lon": 16.866163,
+    "dist_m": 1128,
+    "query": "Poznań, Strzeszyn, Polska",
+    "formatted": "Poznań Strzeszyn, Poli Gojawiczyńskiej, Strzeszyn, Poznań, województwo wielkopolskie, 60-464, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Strzeszyn",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Strzeszyn",
+    "corrected": true
+  },
+  "68437101": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Janikowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68213799": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68433994": {
+    "orig_lat": 52.45718,
+    "orig_lon": 16.88339,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 1674,
+    "query": "Jasielska 8C, Poznań, Polska",
+    "formatted": "8c, Jasielska, Podolany, Poznań, województwo wielkopolskie, 60-476, Polska",
+    "addr": {
+      "street": "Jasielska",
+      "number": "8C",
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "68436382": {
+    "skipped": "geocode_failed",
+    "query": "ul. Deszczowej 7, Borówca, Polska",
+    "addr": {
+      "street": "ul. Deszczowej",
+      "number": "7",
+      "osiedle": null,
+      "city": "Borówca",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68435703": {
+    "orig_lat": 52.39591,
+    "orig_lon": 16.872,
+    "new_lat": 52.40169,
+    "new_lon": 16.856126,
+    "dist_m": 1254,
+    "query": "Symfonia Ptasia 28, Poznań, Polska",
+    "formatted": "Ptasia, 28, Poznań, Polska",
+    "addr": {
+      "street": "Symfonia Ptasia",
+      "number": "28",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Ławica",
+    "corrected": true
+  },
+  "68287233": {
+    "orig_lat": 52.42872,
+    "orig_lon": 16.95132,
+    "new_lat": 52.429902,
+    "new_lon": 16.952328,
+    "dist_m": 148,
+    "query": "ul. Wilczak 12A-B, Poznań, Polska",
+    "formatted": "Ulica Wilczak, Osiedla Szeląg, Stare Winogrady, Winogrady, Poznań, województwo wielkopolskie, 61-623, Polska",
+    "addr": {
+      "street": "ul. Wilczak",
+      "number": "12A-B",
+      "osiedle": "Dobry Szeląg",
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": false
+  },
+  "68433900": {
+    "orig_lat": 52.45718,
+    "orig_lon": 16.88339,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 1674,
+    "query": "Jasielska 8C, Poznań, Polska",
+    "formatted": "8c, Jasielska, Podolany, Poznań, województwo wielkopolskie, 60-476, Polska",
+    "addr": {
+      "street": "Jasielska",
+      "number": "8C",
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
   }
 }
