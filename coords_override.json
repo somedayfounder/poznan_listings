@@ -40246,5 +40246,192 @@
     "geo_city": "Poznań",
     "geo_district": "Podolany",
     "corrected": true
+  },
+  "68297600": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96842426800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "wioska",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96682356000067": {
+    "orig_lat": 52.4591,
+    "orig_lon": 16.62191,
+    "new_lat": 52.462132,
+    "new_lon": 16.624033,
+    "dist_m": 367,
+    "query": "ul. Szkolna 6, Rumianek, Polska",
+    "formatted": "Rumianek/Szkolna n/ż, Szkolna, Rumianek, Polska",
+    "addr": {
+      "street": "ul. Szkolna",
+      "number": "6",
+      "osiedle": null,
+      "city": "Rumianek",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rumianek",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96842087600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68437952": {
+    "skipped": "outside_bbox",
+    "query": "Gardenia, Grzebienisko, Polska",
+    "formatted": "Grzebienisko, Powiat szamotulski, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Gardenia",
+      "city": "Grzebienisko",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.43325,
+    "new_lon": 16.5297
+  },
+  "68437930": {
+    "skipped": "outside_bbox",
+    "query": "Gardenia, Grzebienisko, Polska",
+    "formatted": "Grzebienisko, Powiat szamotulski, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Gardenia",
+      "city": "Grzebienisko",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.43325,
+    "new_lon": 16.5297
+  },
+  "68438651": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96840766900067": {
+    "orig_lat": 52.35646,
+    "orig_lon": 16.67792,
+    "new_lat": 52.321358,
+    "new_lon": 16.678721,
+    "dist_m": 3904,
+    "query": "Dopiewo, Trzcielin, Polska",
+    "formatted": "Trzcielin, gmina Dopiewo, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Trzcielin",
+      "district": "Dopiewo",
+      "confidence": "high"
+    },
+    "geo_city": "Trzcielin",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96836243600067": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96556623200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Bnińskie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96836811400067": {
+    "orig_lat": 52.41689,
+    "orig_lon": 16.89934,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 446,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "67967470": {
+    "skipped": "outside_bbox",
+    "query": "ul. Leśnych Skrzatów, Marcelin, Polska",
+    "formatted": "Marcelin, Powiat miński, Polska",
+    "addr": {
+      "street": "ul. Leśnych Skrzatów",
+      "number": null,
+      "osiedle": "Zacisze Marcelin",
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.3463,
+    "new_lon": 21.79482
+  },
+  "67968653": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
   }
 }
