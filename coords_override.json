@@ -40433,5 +40433,287 @@
     },
     "new_lat": 53.485266,
     "new_lon": 20.091529
+  },
+  "68439922": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Poznań Malarska, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Poznań Malarska",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68441046": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68439850": {
+    "orig_lat": 52.35899,
+    "orig_lon": 16.75316,
+    "new_lat": 52.362141,
+    "new_lon": 16.748924,
+    "dist_m": 453,
+    "query": "ul. Dopiewska, Gołuski, Polska",
+    "formatted": "Dopiewska, Gołuski, Polska",
+    "addr": {
+      "street": "ul. Dopiewska",
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gołuski",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68439283": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96836082300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68441150": {
+    "orig_lat": 52.29419,
+    "orig_lon": 17.08203,
+    "new_lat": 52.293827,
+    "new_lon": 17.08164,
+    "dist_m": 48,
+    "query": "Jałowcowa, Dachowa, Polska",
+    "formatted": "Jałowcowa, Dachowa, gmina Kórnik, powiat poznański, województwo wielkopolskie, 62-023, Polska",
+    "addr": {
+      "street": "Jałowcowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96838988600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Suchy Las",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68441488": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96839637400067": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "66649914": {
+    "orig_lat": 52.41873,
+    "orig_lon": 16.90318,
+    "new_lat": 52.415748,
+    "new_lon": 16.903088,
+    "dist_m": 332,
+    "query": "ul. Barańczaka, Poznań, Polska",
+    "formatted": "Stanisława Barańczaka, Poznań, Polska",
+    "addr": {
+      "street": "ul. Barańczaka",
+      "number": null,
+      "osiedle": "Goplana",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "67700972": {
+    "orig_lat": 52.44365,
+    "orig_lon": 16.8932,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 115,
+    "query": "ul. Jasielska 8C, Poznań, Polska",
+    "formatted": "Jasielska, 8c, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": "8C",
+      "osiedle": "Jasielska 8C",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "96823905300067": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68441797": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96502067500067": {
+    "orig_lat": 52.38893,
+    "orig_lon": 16.9174,
+    "new_lat": 52.387711,
+    "new_lon": 16.916725,
+    "dist_m": 143,
+    "query": "ul. 28 czerwca 1956 r. 156, Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, 156, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 czerwca 1956 r.",
+      "number": "156",
+      "osiedle": "Wilda Story",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "96839078600067": {
+    "skipped": "geocode_failed",
+    "query": "nowoczesnego osiedla na Jeżycach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "nowoczesnego osiedla na Jeżycach",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    }
+  },
+  "66650141": {
+    "orig_lat": 52.41873,
+    "orig_lon": 16.90318,
+    "new_lat": 52.415748,
+    "new_lon": 16.903088,
+    "dist_m": 332,
+    "query": "ul. Barańczaka, Poznań, Polska",
+    "formatted": "Stanisława Barańczaka, Poznań, Polska",
+    "addr": {
+      "street": "ul. Barańczaka",
+      "number": null,
+      "osiedle": "Goplana",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96665014100067": {
+    "orig_lat": 52.41873,
+    "orig_lon": 16.90318,
+    "new_lat": 52.415748,
+    "new_lon": 16.903088,
+    "dist_m": 332,
+    "query": "ul. Barańczaka, Poznań, Polska",
+    "formatted": "Stanisława Barańczaka, Poznań, Polska",
+    "addr": {
+      "street": "ul. Barańczaka",
+      "number": null,
+      "osiedle": "Goplana",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96837335500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
