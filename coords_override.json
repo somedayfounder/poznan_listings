@@ -40715,5 +40715,544 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "96843992200067": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Poznań Malarska, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Poznań Malarska",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68443370": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96839619000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Pamiątkowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96078961000067": {
+    "skipped": "outside_bbox",
+    "query": "Enklawa Nad Jeziorem, Tarnowo, Polska",
+    "formatted": "Tarnowo Pałuckie, gmina Wągrowiec, powiat wągrowiecki, województwo wielkopolskie, 62-105, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Enklawa Nad Jeziorem",
+      "city": "Tarnowo",
+      "district": "Kostrzyn",
+      "confidence": "high"
+    },
+    "new_lat": 52.831753,
+    "new_lon": 17.2767
+  },
+  "68444454": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68445865": {
+    "orig_lat": 52.42659,
+    "orig_lon": 16.93611,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 221,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68445866": {
+    "orig_lat": 52.42659,
+    "orig_lon": 16.93611,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 221,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "96520476100067": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Wieruszowska 8G_13, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, województwo lubuskie, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8G_13",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "65204724": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wieruszowska 8F_21, Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8F_21",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68446074": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68443833": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96838042400067": {
+    "orig_lat": 52.41066,
+    "orig_lon": 16.82059,
+    "new_lat": 52.41186,
+    "new_lon": 16.872603,
+    "dist_m": 3530,
+    "query": "ul. Bukowska, Poznań, Polska",
+    "formatted": "Bukowska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bukowska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96838726600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68445872": {
+    "orig_lat": 52.41679,
+    "orig_lon": 16.90011,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 2841,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68445869": {
+    "orig_lat": 52.41684,
+    "orig_lon": 16.89976,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 2861,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68445864": {
+    "orig_lat": 52.42659,
+    "orig_lon": 16.93611,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 221,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68442911": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rusałka",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68442369": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96844236900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96739681000067": {
+    "orig_lat": 52.33583,
+    "orig_lon": 16.80778,
+    "new_lat": 52.330118,
+    "new_lon": 16.819036,
+    "dist_m": 994,
+    "query": "ul. Widokowa, Komorniki, Polska",
+    "formatted": "Komorniki Widokowa nż., Młyńska, Komorniki, Polska",
+    "addr": {
+      "street": "ul. Widokowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Komorniki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68442769": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68445870": {
+    "orig_lat": 52.41674,
+    "orig_lon": 16.90019,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 2838,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "96843399400067": {
+    "orig_lat": 52.45718,
+    "orig_lon": 16.88339,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 1674,
+    "query": "Jasielska 8C, Poznań, Polska",
+    "formatted": "8c, Jasielska, Podolany, Poznań, województwo wielkopolskie, 60-476, Polska",
+    "addr": {
+      "street": "Jasielska",
+      "number": "8C",
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "96833298800067": {
+    "orig_lat": 52.39419,
+    "orig_lon": 16.72483,
+    "new_lat": 52.397325,
+    "new_lon": 16.715074,
+    "dist_m": 748,
+    "query": "ul. Wiązowa, Zakrzewo, Polska",
+    "formatted": "Wiązowa, Zakrzewo, Polska",
+    "addr": {
+      "street": "ul. Wiązowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Zakrzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Zakrzewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68287157": {
+    "orig_lat": 52.42872,
+    "orig_lon": 16.95132,
+    "new_lat": 52.429902,
+    "new_lon": 16.952328,
+    "dist_m": 148,
+    "query": "ul. Wilczak 12A-B, Poznań, Polska",
+    "formatted": "Ulica Wilczak, Osiedla Szeląg, Stare Winogrady, Winogrady, Poznań, województwo wielkopolskie, 61-623, Polska",
+    "addr": {
+      "street": "ul. Wilczak",
+      "number": "12A-B",
+      "osiedle": "Dobry Szeląg",
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": false
+  },
+  "68444427": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.38364,
+    "orig_lon": 16.84493,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 8898,
+    "orig_dist_to_center_m": 6607,
+    "query": "ul. Ziębickiej, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Ziębickiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96795699700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Koninko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68404522": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68239186": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "67790170": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kórnik",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96779017000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kórnik",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "65120268": {
+    "orig_lat": 52.39811,
+    "orig_lon": 16.90758,
+    "new_lat": 52.398166,
+    "new_lon": 16.906942,
+    "dist_m": 44,
+    "query": "Kolejowa 1, Poznań, Polska",
+    "formatted": "1, Kolejowa, Łazarz, Poznań, województwo wielkopolskie, 60-704, Polska",
+    "addr": {
+      "street": "Kolejowa",
+      "number": "1",
+      "osiedle": "Kolejova 1",
+      "city": "Poznań",
+      "district": "Łazarz",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łazarz",
+    "corrected": false
+  },
+  "96512026800067": {
+    "orig_lat": 52.39811,
+    "orig_lon": 16.90758,
+    "new_lat": 52.398166,
+    "new_lon": 16.906942,
+    "dist_m": 44,
+    "query": "Kolejowa 1, Poznań, Polska",
+    "formatted": "1, Kolejowa, Łazarz, Poznań, województwo wielkopolskie, 60-704, Polska",
+    "addr": {
+      "street": "Kolejowa",
+      "number": "1",
+      "osiedle": "Kolejova 1",
+      "city": "Poznań",
+      "district": "Łazarz",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łazarz",
+    "corrected": false
+  },
+  "96746932200067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Leśnych Skrzatów, Marcelin, Polska",
+    "formatted": "Marcelin, Powiat miński, Polska",
+    "addr": {
+      "street": "ul. Leśnych Skrzatów",
+      "number": null,
+      "osiedle": "Zacisze Marcelin",
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.3463,
+    "new_lon": 21.79482
   }
 }
