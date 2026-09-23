@@ -41254,5 +41254,415 @@
     },
     "new_lat": 52.3463,
     "new_lon": 21.79482
+  },
+  "96789317100067": {
+    "skipped": "outside_bbox",
+    "query": "ul. św. Jana 9, Gwiazdowo, Polska",
+    "formatted": "Świętego Jana, 9, Gwiazdowo, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "number": "9",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.407119,
+    "new_lon": 17.212851
+  },
+  "68448647": {
+    "skipped": "outside_bbox",
+    "query": "ul. Główna, Pobiedziska, Polska",
+    "formatted": "Główna, Pobiedziska, Polska",
+    "addr": {
+      "street": "ul. Główna",
+      "number": null,
+      "osiedle": null,
+      "city": "Pobiedziska",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.48879,
+    "new_lon": 17.292192
+  },
+  "68448527": {
+    "skipped": "outside_bbox",
+    "query": "ul. Główna, Pobiedziska, Polska",
+    "formatted": "Główna, Pobiedziska, Polska",
+    "addr": {
+      "street": "ul. Główna",
+      "number": null,
+      "osiedle": null,
+      "city": "Pobiedziska",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.48879,
+    "new_lon": 17.292192
+  },
+  "68448394": {
+    "skipped": "outside_bbox",
+    "query": "ul. Główna, Pobiedziska, Polska",
+    "formatted": "Główna, Pobiedziska, Polska",
+    "addr": {
+      "street": "ul. Główna",
+      "number": null,
+      "osiedle": null,
+      "city": "Pobiedziska",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.48879,
+    "new_lon": 17.292192
+  },
+  "96839099700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96837595700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Paczków",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66332487": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449057,
+    "new_lon": 16.960241,
+    "dist_m": 136,
+    "query": "ul. Bielicowa 4, Naramowice, Polska",
+    "formatted": "Bielicowa, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "4",
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "68448466": {
+    "orig_lat": 52.55308,
+    "orig_lon": 16.96321,
+    "new_lat": 52.552995,
+    "new_lon": 16.96322,
+    "dist_m": 9,
+    "query": "ul. Wierzbowej, Promnice, Polska",
+    "formatted": "Wierzbowa, Promnice, Polska",
+    "addr": {
+      "street": "ul. Wierzbowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Promnice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Promnice",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96520473100067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Wieruszowska 8F_29, Zielona Góra, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "8F_29",
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68450797": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "pod miastem",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96845079700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "pod miastem",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96822723100067": {
+    "orig_lat": 52.37703,
+    "orig_lon": 16.95468,
+    "new_lat": 52.366435,
+    "new_lon": 16.944098,
+    "dist_m": 1380,
+    "query": "Starołęka, Poznań, Polska",
+    "formatted": "Starołęka, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, 61-357, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Starołęka",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68447809": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96843307900067": {
+    "orig_lat": 52.45718,
+    "orig_lon": 16.88339,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 1674,
+    "query": "Jasielska 8C, Poznań, Polska",
+    "formatted": "8c, Jasielska, Podolany, Poznań, województwo wielkopolskie, 60-476, Polska",
+    "addr": {
+      "street": "Jasielska",
+      "number": "8C",
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "68448828": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68449107": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96834584300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66288546": {
+    "orig_lat": 52.43822,
+    "orig_lon": 16.90979,
+    "new_lat": 52.438229,
+    "new_lon": 16.909791,
+    "dist_m": 1,
+    "query": "ul. Piątkowska 165 A-B, Poznań, Polska",
+    "formatted": "Piątkowska, 165A, Poznań, Polska",
+    "addr": {
+      "street": "ul. Piątkowska",
+      "number": "165 A-B",
+      "osiedle": "Witosa Park",
+      "city": "Poznań",
+      "district": "Winiary",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "96628854600067": {
+    "orig_lat": 52.43822,
+    "orig_lon": 16.90979,
+    "new_lat": 52.438229,
+    "new_lon": 16.909791,
+    "dist_m": 1,
+    "query": "ul. Piątkowska 165 A-B, Poznań, Polska",
+    "formatted": "Piątkowska, 165A, Poznań, Polska",
+    "addr": {
+      "street": "ul. Piątkowska",
+      "number": "165 A-B",
+      "osiedle": "Witosa Park",
+      "city": "Poznań",
+      "district": "Winiary",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winiary",
+    "corrected": false
+  },
+  "68448426": {
+    "orig_lat": 52.34067,
+    "orig_lon": 16.8629,
+    "new_lat": 52.33984,
+    "new_lon": 16.86329,
+    "dist_m": 96,
+    "query": "ul. Poprzecznej 19, Luboń, Polska",
+    "formatted": "Poprzeczna, 19, Luboń, Polska",
+    "addr": {
+      "street": "ul. Poprzecznej",
+      "number": "19",
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Żabikowo",
+    "corrected": false
+  },
+  "68238893": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "96784288200067": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "68448712": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68429601": {
+    "skipped": "outside_bbox",
+    "query": "ul. Smardzewska, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": null,
+      "osiedle": "Grunwald Między Drzewami",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "68429602": {
+    "skipped": "outside_bbox",
+    "query": "ul. Smardzewska, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": null,
+      "osiedle": "Grunwald Między Drzewami",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "96841792700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Suchy Las",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
