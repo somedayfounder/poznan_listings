@@ -42039,5 +42039,408 @@
     "geo_city": "Poznań",
     "geo_district": "Szczepankowo",
     "corrected": false
+  },
+  "67076675": {
+    "orig_lat": 52.44002,
+    "orig_lon": 16.61879,
+    "new_lat": 52.440937,
+    "new_lon": 16.61909,
+    "dist_m": 104,
+    "query": "ul. Folwark 6, Jankowice, Polska",
+    "formatted": "Folwark, 6, Jankowice, Polska",
+    "addr": {
+      "street": "ul. Folwark",
+      "number": "6",
+      "osiedle": "Folwark Jankowice",
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": "Edmundowo",
+    "corrected": false
+  },
+  "96707667500067": {
+    "orig_lat": 52.44002,
+    "orig_lon": 16.61879,
+    "new_lat": 52.440937,
+    "new_lon": 16.61909,
+    "dist_m": 104,
+    "query": "ul. Folwark 6, Jankowice, Polska",
+    "formatted": "Folwark, 6, Jankowice, Polska",
+    "addr": {
+      "street": "ul. Folwark",
+      "number": "6",
+      "osiedle": "Folwark Jankowice",
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": "Edmundowo",
+    "corrected": false
+  },
+  "68457389": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68459628": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68456732": {
+    "orig_lat": 52.51425,
+    "orig_lon": 16.77852,
+    "new_lat": 52.514029,
+    "new_lon": 16.778556,
+    "dist_m": 25,
+    "query": "ul. Golfowa, Bytkowo, Polska",
+    "formatted": "Golfowa, Bytkowo, Polska",
+    "addr": {
+      "street": "ul. Golfowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Bytkowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Bytkowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96845962800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68457560": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Pamiątkowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68456001": {
+    "skipped": "geocode_failed",
+    "query": "Rostworów, Polska",
+    "addr": {
+      "street": "Sobocka",
+      "number": null,
+      "osiedle": null,
+      "city": "Rostworów",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68459288": {
+    "orig_lat": 52.24535,
+    "orig_lon": 16.84699,
+    "new_lat": 52.245583,
+    "new_lon": 16.847259,
+    "dist_m": 32,
+    "query": "ul. Rolna, Mosina, Polska",
+    "formatted": "Mosina, gmina Mosina, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Rolna",
+      "number": null,
+      "osiedle": null,
+      "city": "Mosina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Mosina",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68458833": {
+    "orig_lat": 52.20042,
+    "orig_lon": 16.81972,
+    "new_lat": 52.200604,
+    "new_lon": 16.820013,
+    "dist_m": 29,
+    "query": "ul. Rolna, Nowinki, Polska",
+    "formatted": "Rolna, Nowinki, Polska",
+    "addr": {
+      "street": "ul. Rolna",
+      "number": null,
+      "osiedle": null,
+      "city": "Nowinki",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Nowinki",
+    "geo_district": "Grzybno-Leśniczówka",
+    "corrected": false
+  },
+  "96841274100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Niepruszewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96831894100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kostrzyn",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68455496": {
+    "skipped": "outside_bbox",
+    "query": "Gardenia, Grzebienisko, Polska",
+    "formatted": "Grzebienisko, Powiat szamotulski, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Gardenia",
+      "city": "Grzebienisko",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.43325,
+    "new_lon": 16.5297
+  },
+  "68458065": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96843037600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68455730": {
+    "orig_lat": 52.36803,
+    "orig_lon": 16.8325,
+    "new_lat": 52.366348,
+    "new_lon": 16.818122,
+    "dist_m": 994,
+    "query": "ul. Bursztynowa, Plewiska, Polska",
+    "formatted": "Bursztynowa, Plewiska, Polska",
+    "addr": {
+      "street": "ul. Bursztynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Plewiska",
+    "geo_district": "Aniołowo",
+    "corrected": true
+  },
+  "68002923": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "96800292300067": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "68456429": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96787437300067": {
+    "orig_lat": 52.50992,
+    "orig_lon": 16.7633,
+    "new_lat": 52.510609,
+    "new_lon": 16.762995,
+    "dist_m": 79,
+    "query": "Przyjemna, Rokietnica, Polska",
+    "formatted": "Przyjemna, Rokietnica, gmina Rokietnica, powiat poznański, województwo wielkopolskie, 62-090, Polska",
+    "addr": {
+      "street": "Przyjemna",
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96844276900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96839521100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96838514200067": {
+    "skipped": "outside_bbox",
+    "query": "Jabłkowa, Kleszczewo, Polska",
+    "formatted": "Jabłkowa, Kleszczewo, gmina Kleszczewo, powiat poznański, województwo wielkopolskie, 63-005, Polska",
+    "addr": {
+      "street": "Jabłkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Kleszczewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.33555,
+    "new_lon": 17.173112
+  },
+  "68457359": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dąbrowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68459240": {
+    "orig_lat": 52.35592,
+    "orig_lon": 16.87198,
+    "new_lat": 52.353257,
+    "new_lon": 16.864653,
+    "dist_m": 579,
+    "query": "ul. Niezłomnych, Luboń, Polska",
+    "formatted": "Niezłomnych, Luboń, Polska",
+    "addr": {
+      "street": "ul. Niezłomnych",
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Żabikowo",
+    "corrected": true
+  },
+  "96845924000067": {
+    "orig_lat": 52.35592,
+    "orig_lon": 16.87198,
+    "new_lat": 52.353257,
+    "new_lon": 16.864653,
+    "dist_m": 579,
+    "query": "ul. Niezłomnych, Luboń, Polska",
+    "formatted": "Niezłomnych, Luboń, Polska",
+    "addr": {
+      "street": "ul. Niezłomnych",
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Żabikowo",
+    "corrected": true
   }
 }
