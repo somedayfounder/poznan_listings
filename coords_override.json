@@ -42871,5 +42871,224 @@
     "geo_city": "Poznań",
     "geo_district": "Żegrze",
     "corrected": true
+  },
+  "68463535": {
+    "orig_lat": 52.5437,
+    "orig_lon": 16.94215,
+    "new_lat": 52.543689,
+    "new_lon": 16.942151,
+    "dist_m": 1,
+    "query": "ul. Piaskowej 7, Biedrusko, Polska",
+    "formatted": "Piaskowa, 7, Biedrusko, Polska",
+    "addr": {
+      "street": "ul. Piaskowej",
+      "number": "7",
+      "osiedle": null,
+      "city": "Biedrusko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Biedrusko",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96846353500067": {
+    "orig_lat": 52.5437,
+    "orig_lon": 16.94215,
+    "new_lat": 52.543689,
+    "new_lon": 16.942151,
+    "dist_m": 1,
+    "query": "ul. Piaskowej 7, Biedrusko, Polska",
+    "formatted": "Piaskowa, 7, Biedrusko, Polska",
+    "addr": {
+      "street": "ul. Piaskowej",
+      "number": "7",
+      "osiedle": null,
+      "city": "Biedrusko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Biedrusko",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96835774900067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Zimowej, Paczkowo, Polska",
+    "formatted": "Zimowa, Paczkowo, Polska",
+    "addr": {
+      "street": "ul. Zimowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Paczkowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.40156,
+    "new_lon": 17.15394
+  },
+  "68464227": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68463377": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96840809000067": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.415045,
+    "new_lon": 16.910038,
+    "dist_m": 1003,
+    "query": "Osiedle Jeżyc, Poznań, Polska",
+    "formatted": "Jeżyckie Osiedle, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Jeżyc",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68463518": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68463553": {
+    "orig_lat": 52.39846,
+    "orig_lon": 16.86278,
+    "new_lat": 52.40486,
+    "new_lon": 16.887642,
+    "dist_m": 1831,
+    "query": "Grunwald - Marcelin, Poznań, Polska",
+    "formatted": "Marcelińska, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Grunwald - Marcelin",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Grunwald",
+    "corrected": true
+  },
+  "96843570300067": {
+    "orig_lat": 52.39591,
+    "orig_lon": 16.872,
+    "new_lat": 52.40169,
+    "new_lon": 16.856126,
+    "dist_m": 1254,
+    "query": "Symfonia Ptasia 28, Poznań, Polska",
+    "formatted": "Ptasia, 28, Poznań, Polska",
+    "addr": {
+      "street": "Symfonia Ptasia",
+      "number": "28",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Ławica",
+    "corrected": true
+  },
+  "67701036": {
+    "orig_lat": 52.44365,
+    "orig_lon": 16.8932,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 115,
+    "query": "ul. Jasielska 8C, Poznań, Polska",
+    "formatted": "Jasielska, 8c, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": "8C",
+      "osiedle": "Jasielska 8C",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "67599146": {
+    "orig_lat": 52.4276,
+    "orig_lon": 16.77569,
+    "new_lat": 52.41152,
+    "new_lon": 16.782031,
+    "dist_m": 1839,
+    "query": "ul. Wysogotowska 33, Wysogotowo, Polska",
+    "formatted": "Wysogotowo, gmina Tarnowo Podgórne, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Wysogotowska",
+      "number": "33",
+      "osiedle": null,
+      "city": "Wysogotowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Wysogotowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68457305": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96843080100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "okoliczne miejscowości",
+      "district": null,
+      "confidence": "medium"
+    }
   }
 }
