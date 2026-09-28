@@ -43090,5 +43090,526 @@
       "district": null,
       "confidence": "medium"
     }
+  },
+  "68466441": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Niepruszewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96780984000067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Biesiadnej 12/2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Biesiadnej",
+      "number": "12/2",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96360781400067": {
+    "skipped": "outside_bbox",
+    "query": "NOWY TRZEK, NOWY TRZEK, Polska",
+    "formatted": "Trzek, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "NOWY TRZEK",
+      "city": "NOWY TRZEK",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.35105,
+    "new_lon": 17.17238
+  },
+  "68465272": {
+    "orig_lat": 52.43699,
+    "orig_lon": 16.94594,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 566,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68465236": {
+    "orig_lat": 52.43634,
+    "orig_lon": 16.94737,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 633,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68467188": {
+    "orig_lat": 52.45528,
+    "orig_lon": 16.91912,
+    "new_lat": 52.463035,
+    "new_lon": 16.898115,
+    "dist_m": 1664,
+    "query": "Mateckiego 4ALL, Piątkowo, Polska",
+    "formatted": "Teofila Mateckiego, Poznań, Polska",
+    "addr": {
+      "street": "Mateckiego",
+      "number": "4ALL",
+      "osiedle": null,
+      "city": "Piątkowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "68465263": {
+    "orig_lat": 52.43625,
+    "orig_lon": 16.9459,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 534,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68466418": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96837578300067": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96840580100067": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96839099800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": "53",
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96837473100067": {
+    "orig_lat": 52.29688,
+    "orig_lon": 17.07484,
+    "new_lat": 52.296579,
+    "new_lon": 17.074321,
+    "dist_m": 49,
+    "query": "ul. Kwitnącej Wiśni, Robakowo, Polska",
+    "formatted": "Kwitnącej Wiśni, Robakowo, Polska",
+    "addr": {
+      "street": "ul. Kwitnącej Wiśni",
+      "number": null,
+      "osiedle": null,
+      "city": "Robakowo",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": "Robakowo - Osiedle",
+    "corrected": false
+  },
+  "68466296": {
+    "orig_lat": 52.41695,
+    "orig_lon": 16.89951,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 446,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "66932612": {
+    "orig_lat": 52.47544,
+    "orig_lon": 16.66278,
+    "new_lat": 52.47533,
+    "new_lon": 16.660072,
+    "dist_m": 184,
+    "query": "ul. Rzymska 3D, Tarnowo Podgórne, Polska",
+    "formatted": "Rzymska 3, 62-080 Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "ul. Rzymska",
+      "number": "3D",
+      "osiedle": "Osiedle Nowe Tarnowo",
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": "Osiedle Zielony Gród",
+    "corrected": false
+  },
+  "68467303": {
+    "orig_lat": 52.45528,
+    "orig_lon": 16.91912,
+    "new_lat": 52.463035,
+    "new_lon": 16.898115,
+    "dist_m": 1664,
+    "query": "Mateckiego 4ALL, Piątkowo, Polska",
+    "formatted": "Teofila Mateckiego, Poznań, Polska",
+    "addr": {
+      "street": "Mateckiego",
+      "number": "4ALL",
+      "osiedle": null,
+      "city": "Piątkowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "96846730300067": {
+    "orig_lat": 52.45528,
+    "orig_lon": 16.91912,
+    "new_lat": 52.463035,
+    "new_lon": 16.898115,
+    "dist_m": 1664,
+    "query": "Mateckiego 4ALL, Piątkowo, Polska",
+    "formatted": "Teofila Mateckiego, Poznań, Polska",
+    "addr": {
+      "street": "Mateckiego",
+      "number": "4ALL",
+      "osiedle": null,
+      "city": "Piątkowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "96844115000067": {
+    "orig_lat": 52.29419,
+    "orig_lon": 17.08203,
+    "new_lat": 52.293827,
+    "new_lon": 17.08164,
+    "dist_m": 48,
+    "query": "Jałowcowa, Dachowa, Polska",
+    "formatted": "Jałowcowa, Dachowa, gmina Kórnik, powiat poznański, województwo wielkopolskie, 62-023, Polska",
+    "addr": {
+      "street": "Jałowcowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68467015": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kostrzyn Wielkopolski",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66801269": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "96680126900067": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "68466693": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67171107": {
+    "orig_lat": 52.41158,
+    "orig_lon": 16.965,
+    "new_lat": 52.408996,
+    "new_lon": 16.963002,
+    "dist_m": 318,
+    "query": "Świętego Michała etap 2, Poznań, Polska",
+    "formatted": "Świętego Michała, Komandoria-Pomet, Berdychowo, Ostrów Tumski-Śródka-Zawady-Komandoria, Poznań, województwo wielkopolskie, 61-116, Polska",
+    "addr": {
+      "street": null,
+      "number": "34_25",
+      "osiedle": "Świętego Michała etap 2",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Komandoria-Pomet",
+    "corrected": true
+  },
+  "68466609": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36031,
+    "orig_lon": 16.98203,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7296,
+    "orig_dist_to_center_m": 6258,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68466707": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36034,
+    "orig_lon": 16.9822,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7297,
+    "orig_dist_to_center_m": 6261,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68466663": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36033,
+    "orig_lon": 16.98213,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7296,
+    "orig_dist_to_center_m": 6260,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68466567": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.3603,
+    "orig_lon": 16.98213,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7299,
+    "orig_dist_to_center_m": 6262,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "96846670700067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36034,
+    "orig_lon": 16.9822,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7297,
+    "orig_dist_to_center_m": 6261,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68465561": {
+    "orig_lat": 52.43553,
+    "orig_lon": 16.94601,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 524,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68465532": {
+    "orig_lat": 52.43384,
+    "orig_lon": 16.94733,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 619,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "96719637600067": {
+    "orig_lat": 52.40506,
+    "orig_lon": 16.92931,
+    "new_lat": 52.405258,
+    "new_lon": 16.930293,
+    "dist_m": 70,
+    "query": "ul. Szymańskiego, Poznań, Polska",
+    "formatted": "Romana Szymańskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Szymańskiego",
+      "number": null,
+      "osiedle": "Rezydencja San Petrus",
+      "city": "Poznań",
+      "district": "Stare Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Stare Miasto",
+    "corrected": false
   }
 }
