@@ -44100,5 +44100,300 @@
     "geo_city": "Poznań",
     "geo_district": "Stare Miasto",
     "corrected": true
+  },
+  "68474756": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68473439": {
+    "orig_lat": 52.29489,
+    "orig_lon": 17.00743,
+    "new_lat": 52.296071,
+    "new_lon": 17.007659,
+    "dist_m": 132,
+    "query": "ul. Choinkowej, Szczytniki, Polska",
+    "formatted": "Choinkowa, Szczytniki, Polska",
+    "addr": {
+      "street": "ul. Choinkowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68474688": {
+    "orig_lat": 52.36631,
+    "orig_lon": 17.15121,
+    "new_lat": 52.370267,
+    "new_lon": 17.148618,
+    "dist_m": 474,
+    "query": "ul. Borówkowej, Gowarzewo, Polska",
+    "formatted": "Gowarzewo Borówkowa n/ż, Siekierecka, Gowarzewo, Polska",
+    "addr": {
+      "street": "ul. Borówkowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gowarzewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96797710800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66328917": {
+    "orig_lat": 52.40396,
+    "orig_lon": 17.06483,
+    "new_lat": 52.405083,
+    "new_lon": 17.061718,
+    "dist_m": 245,
+    "query": "ul. Tabaki, Swarzędz, Polska",
+    "formatted": "Antoniego Tabaki, Swarzędz, Polska",
+    "addr": {
+      "street": "ul. Tabaki",
+      "number": null,
+      "osiedle": "ATAL Idea Swarzędz",
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Swarzędz",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68473911": {
+    "orig_lat": 52.2533,
+    "orig_lon": 17.05329,
+    "new_lat": 52.254105,
+    "new_lon": 17.053241,
+    "dist_m": 90,
+    "query": "Topolowe, Mościenica, Polska",
+    "formatted": "Osiedle Topolowe, Mościenica, gmina Kórnik, powiat poznański, województwo wielkopolskie, 62-035, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Topolowe",
+      "city": "Mościenica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Mościenica",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96841912000067": {
+    "orig_lat": 52.41066,
+    "orig_lon": 16.82059,
+    "new_lat": 52.41186,
+    "new_lon": 16.872603,
+    "dist_m": 3530,
+    "query": "ul. Bukowska, Poznań, Polska",
+    "formatted": "Bukowska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bukowska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96784290100067": {
+    "orig_lat": 52.41118,
+    "orig_lon": 16.99536,
+    "new_lat": 52.410123,
+    "new_lon": 16.991362,
+    "dist_m": 296,
+    "query": "ul. Mogileńska, Poznań, Polska",
+    "formatted": "Mogileńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Mogileńska",
+      "number": null,
+      "osiedle": "ATAL Parkowa",
+      "city": "Poznań",
+      "district": "Nowe Miasto",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Warszawskie-Pomet-Maltańskie",
+    "corrected": true
+  },
+  "96843612500067": {
+    "orig_lat": 52.45678,
+    "orig_lon": 16.85045,
+    "new_lat": 52.460139,
+    "new_lon": 16.866163,
+    "dist_m": 1128,
+    "query": "Poznań, Strzeszyn, Polska",
+    "formatted": "Poznań Strzeszyn, Poli Gojawiczyńskiej, Strzeszyn, Poznań, województwo wielkopolskie, 60-464, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Strzeszyn",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Strzeszyn",
+    "corrected": true
+  },
+  "96841269600067": {
+    "orig_lat": 52.27746,
+    "orig_lon": 17.02377,
+    "new_lat": 52.276726,
+    "new_lon": 17.023288,
+    "dist_m": 88,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96844910700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96838247100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96796861300067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "68472903": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68475475": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "pod miastem",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96842142100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Morasko",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96833432900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68472324": {
+    "orig_lat": 52.37772,
+    "orig_lon": 16.91707,
+    "new_lat": 52.398539,
+    "new_lon": 16.919867,
+    "dist_m": 2323,
+    "query": "ul. Niedziałkowskiego, Poznań, Polska",
+    "formatted": "Niedziałkowskiego Park, Poznań, Polska",
+    "addr": {
+      "street": "ul. Niedziałkowskiego",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "68474397": {
+    "skipped": "geocode_failed",
+    "query": "Słowackiego, в деревне рядом с Muzeum Arkadego Fiedlera, Polska",
+    "addr": {
+      "street": "Słowackiego",
+      "number": null,
+      "osiedle": null,
+      "city": "в деревне рядом с Muzeum Arkadego Fiedlera",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
