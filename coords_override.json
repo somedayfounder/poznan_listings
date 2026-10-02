@@ -44799,5 +44799,299 @@
     "geo_city": "Poznań",
     "geo_district": "Stare Miasto",
     "corrected": true
+  },
+  "96506133900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "pod Poznaniem",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68419006": {
+    "skipped": "outside_bbox",
+    "query": "Poznań, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Grunwald",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "68481578": {
+    "orig_lat": 52.34532,
+    "orig_lon": 17.02144,
+    "new_lat": 52.372033,
+    "new_lon": 16.990713,
+    "dist_m": 3630,
+    "query": "Poznań, Szczepankowo, Polska",
+    "formatted": "Poznań Franowo PFD, Ostrowska, Szczepankowo, Szczepankowo-Spławie-Krzesinki, Poznań, województwo wielkopolskie, 61-309, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczepankowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Szczepankowo",
+    "corrected": true
+  },
+  "96742346000067": {
+    "orig_lat": 52.35675,
+    "orig_lon": 16.66652,
+    "new_lat": 52.356319,
+    "new_lon": 16.665448,
+    "dist_m": 87,
+    "query": "Czerwcowa, Dopiewo, Polska",
+    "formatted": "Czerwcowa, Dopiewo, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 62-070, Polska",
+    "addr": {
+      "street": "Czerwcowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96844383300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68483238": {
+    "orig_lat": 52.46231,
+    "orig_lon": 16.68282,
+    "new_lat": 52.46214,
+    "new_lon": 16.673124,
+    "dist_m": 657,
+    "query": "ul. Rolna, Tarnowo Podgórne, Polska",
+    "formatted": "Tarnowo Podgórne/Rolna n/ż, Poznańska, Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "ul. Rolna",
+      "number": null,
+      "osiedle": null,
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67908042": {
+    "orig_lat": 52.38654,
+    "orig_lon": 17.0794,
+    "new_lat": 52.386247,
+    "new_lon": 17.079867,
+    "dist_m": 45,
+    "query": "ul. Szczęśliwa 51, Zalasewo, Polska",
+    "formatted": "Szczęśliwa, 62-020 Zalasewo, Polska",
+    "addr": {
+      "street": "ul. Szczęśliwa",
+      "number": "51",
+      "osiedle": "Projekt Zalasewo",
+      "city": "Zalasewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Zalasewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96843710100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Janikowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96846556100067": {
+    "orig_lat": 52.43553,
+    "orig_lon": 16.94601,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 524,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "96796854500067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "96842558400067": {
+    "orig_lat": 52.41958,
+    "orig_lon": 16.89455,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 879,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68482388": {
+    "orig_lat": 52.40277,
+    "orig_lon": 16.67953,
+    "new_lat": 52.411664,
+    "new_lon": 16.678482,
+    "dist_m": 992,
+    "query": "ul. Agatowa 82/30, Sierosław, Polska",
+    "formatted": "Agatowa, 62-080 Sierosław, Polska",
+    "addr": {
+      "street": "ul. Agatowa",
+      "number": "82/30",
+      "osiedle": null,
+      "city": "Sierosław",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sierosław",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68482411": {
+    "orig_lat": 52.43653,
+    "orig_lon": 16.81566,
+    "new_lat": 52.435594,
+    "new_lon": 16.816331,
+    "dist_m": 114,
+    "query": "ul. Kościerzyńska 6, Poznań, Polska",
+    "formatted": "Kościerzyńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Kościerzyńska",
+      "number": "6",
+      "osiedle": "S M O C H Y . P L",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Smochowice",
+    "corrected": false
+  },
+  "68003243": {
+    "orig_lat": 52.45741,
+    "orig_lon": 16.78133,
+    "new_lat": 52.452385,
+    "new_lon": 16.731501,
+    "dist_m": 3422,
+    "query": "ul. Lotosowej, Sady, Polska",
+    "formatted": "Lotosowa, Sady, Polska",
+    "addr": {
+      "street": "ul. Lotosowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Sady",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sady",
+    "geo_district": "Dębina",
+    "corrected": true
+  },
+  "96848241100067": {
+    "orig_lat": 52.43653,
+    "orig_lon": 16.81566,
+    "new_lat": 52.435594,
+    "new_lon": 16.816331,
+    "dist_m": 114,
+    "query": "ul. Kościerzyńska 6, Poznań, Polska",
+    "formatted": "Kościerzyńska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Kościerzyńska",
+      "number": "6",
+      "osiedle": "S M O C H Y . P L",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Smochowice",
+    "corrected": false
+  },
+  "96817084500067": {
+    "orig_lat": 52.45285,
+    "orig_lon": 16.73113,
+    "new_lat": 52.452385,
+    "new_lon": 16.731501,
+    "dist_m": 57,
+    "query": "ul. Lotosowej, Sady, Polska",
+    "formatted": "Lotosowa, Sady, Polska",
+    "addr": {
+      "street": "ul. Lotosowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Sady",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sady",
+    "geo_district": "Dębina",
+    "corrected": false
+  },
+  "68480153": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
   }
 }
