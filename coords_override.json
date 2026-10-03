@@ -45093,5 +45093,434 @@
       "district": null,
       "confidence": "medium"
     }
+  },
+  "68486991": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96724335600067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Śródka",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68485949": {
+    "skipped": "outside_bbox",
+    "query": "ul. Zimowej, Paczkowo, Polska",
+    "formatted": "Zimowa, Paczkowo, Polska",
+    "addr": {
+      "street": "ul. Zimowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Paczkowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.40156,
+    "new_lon": 17.15394
+  },
+  "68485585": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.32888,
+    "orig_lon": 16.74975,
+    "new_lat": 52.29473,
+    "new_lon": 16.629835,
+    "dist_m": 8993,
+    "orig_dist_to_center_m": 15284,
+    "query": "ul. Truskawkowa, Sapowice, Polska",
+    "formatted": "Truskawkowa, Sapowice, Polska",
+    "addr": {
+      "street": "ul. Truskawkowa",
+      "number": null,
+      "osiedle": "Osiedle nad Jeziorem",
+      "city": "Sapowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96845535400067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "68406833": {
+    "orig_lat": 52.46202,
+    "orig_lon": 16.89833,
+    "new_lat": 52.464025,
+    "new_lon": 16.9008,
+    "dist_m": 279,
+    "query": "ul. Teofila Mateckiego 20E, Poznań, Polska",
+    "formatted": "Teofila Mateckiego, 20E, Poznań, Polska",
+    "addr": {
+      "street": "ul. Teofila Mateckiego",
+      "number": "20E",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo Północ",
+    "corrected": true
+  },
+  "68487115": {
+    "orig_lat": 52.52401,
+    "orig_lon": 16.71587,
+    "new_lat": 52.523996,
+    "new_lon": 16.715885,
+    "dist_m": 2,
+    "query": "ul. Jachtowa, Pamiątkowo, Polska",
+    "formatted": "Jachtowa, Pamiątkowo, Polska",
+    "addr": {
+      "street": "ul. Jachtowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Pamiątkowo",
+      "district": "gmina Szamotuły",
+      "confidence": "high"
+    },
+    "geo_city": "Pamiątkowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68485976": {
+    "orig_lat": 52.48608,
+    "orig_lon": 16.7591,
+    "new_lat": 52.47808,
+    "new_lon": 16.75278,
+    "dist_m": 987,
+    "query": "Rokietnica, Rogierówko, Polska",
+    "formatted": "Rogierówko, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rogierówko",
+      "district": "Rokietnica",
+      "confidence": "high"
+    },
+    "geo_city": "Rogierówko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96846239500067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Przyjaznej, Szczepankowo, Polska",
+    "formatted": "Szczepankowo, gmina Śniadowo, powiat łomżyński, województwo podlaskie, Polska",
+    "addr": {
+      "street": "ul. Przyjaznej",
+      "number": null,
+      "osiedle": "Osiedle Przyjazna",
+      "city": "Szczepankowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "new_lat": 53.120417,
+    "new_lon": 21.949858
+  },
+  "96693261300067": {
+    "orig_lat": 52.47544,
+    "orig_lon": 16.66278,
+    "new_lat": 52.47533,
+    "new_lon": 16.660072,
+    "dist_m": 184,
+    "query": "ul. Rzymska 3C, Tarnowo Podgórne, Polska",
+    "formatted": "Rzymska 3, 62-080 Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "ul. Rzymska",
+      "number": "3C",
+      "osiedle": "Osiedle Nowe Tarnowo",
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": "Osiedle Zielony Gród",
+    "corrected": false
+  },
+  "96841442700067": {
+    "orig_lat": 52.42659,
+    "orig_lon": 16.93611,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 221,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "96846526300067": {
+    "orig_lat": 52.43625,
+    "orig_lon": 16.9459,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 534,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68486554": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96840029200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96842588200067": {
+    "orig_lat": 52.37054,
+    "orig_lon": 16.74283,
+    "new_lat": 52.372102,
+    "new_lon": 16.726942,
+    "dist_m": 1093,
+    "query": "ul. Surfiniowej, Palędzie, Polska",
+    "formatted": "Surfiniowa, Palędzie, Polska",
+    "addr": {
+      "street": "ul. Surfiniowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Palędzie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Palędzie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68487416": {
+    "orig_lat": 52.27554,
+    "orig_lon": 17.00965,
+    "new_lat": 52.277454,
+    "new_lon": 17.023775,
+    "dist_m": 984,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68485415": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Strzeszyn",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96842645400067": {
+    "orig_lat": 52.41627,
+    "orig_lon": 16.88584,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 1191,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68487415": {
+    "orig_lat": 52.27554,
+    "orig_lon": 17.00965,
+    "new_lat": 52.277454,
+    "new_lon": 17.023775,
+    "dist_m": 984,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96839100400067": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.416803,
+    "new_lon": 16.639468,
+    "dist_m": 2933,
+    "query": "osiedlu rozalin, Lusówko, Polska",
+    "formatted": "Osiedle Rozalin, Lusówko, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "osiedlu rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Rozalin",
+    "corrected": true
+  },
+  "68485814": {
+    "orig_lat": 52.36577,
+    "orig_lon": 16.84637,
+    "new_lat": 52.366061,
+    "new_lon": 16.846612,
+    "dist_m": 36,
+    "query": "ul. Wojnowicka, Poznań, Polska",
+    "formatted": "Wojnowicka, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojnowicka",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Fabianowo",
+    "corrected": false
+  },
+  "68486090": {
+    "orig_lat": 52.43445,
+    "orig_lon": 16.61745,
+    "new_lat": 52.453057,
+    "new_lon": 16.647427,
+    "dist_m": 2900,
+    "query": "Tarnowo Podgórne, Jankowice, Polska",
+    "formatted": "Imperial Tobacco Polska S.A., 1, Przemysłowa, Jankowice, gmina Tarnowo Podgórne, powiat poznański, województwo wielkopolskie, 62-080, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Jankowice",
+      "district": "Tarnowo Podgórne",
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96844442700067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.38364,
+    "orig_lon": 16.84493,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 8898,
+    "orig_dist_to_center_m": 6607,
+    "query": "ul. Ziębickiej, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Ziębickiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96847773500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Skórzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96800324300067": {
+    "orig_lat": 52.45741,
+    "orig_lon": 16.78133,
+    "new_lat": 52.452385,
+    "new_lon": 16.731501,
+    "dist_m": 3422,
+    "query": "ul. Lotosowej, Sady, Polska",
+    "formatted": "Lotosowa, Sady, Polska",
+    "addr": {
+      "street": "ul. Lotosowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Sady",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sady",
+    "geo_district": "Dębina",
+    "corrected": true
   }
 }
