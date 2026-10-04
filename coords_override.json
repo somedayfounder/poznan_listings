@@ -45522,5 +45522,246 @@
     "geo_city": "Sady",
     "geo_district": "Dębina",
     "corrected": true
+  },
+  "96830260800067": {
+    "orig_lat": 52.44002,
+    "orig_lon": 16.61879,
+    "new_lat": 52.439599,
+    "new_lon": 16.618699,
+    "dist_m": 47,
+    "query": "ul. Folwark 47, Jankowice, Polska",
+    "formatted": "Folwark, 47, Jankowice, Polska",
+    "addr": {
+      "street": "ul. Folwark",
+      "number": "47",
+      "osiedle": "Folwark Jankowice",
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": "Edmundowo",
+    "corrected": false
+  },
+  "68488617": {
+    "skipped": "outside_bbox",
+    "query": "ul. Rolnej, Wielka Wieś, Polska",
+    "formatted": "Wielka Wieś / ul. Kielecka (szkoła) / 10, Kielecka, Wielka Wieś, Polska",
+    "addr": {
+      "street": "ul. Rolnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Wielka Wieś",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 51.069729,
+    "new_lon": 20.972349
+  },
+  "96839100900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96845738900067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66106160": {
+    "orig_lat": 52.4089,
+    "orig_lon": 17.08117,
+    "new_lat": 52.408421,
+    "new_lon": 17.080772,
+    "dist_m": 60,
+    "query": "SVARAN, Swarzędz, Polska",
+    "formatted": "Svaran - mieszkania, Swarzędz, gmina Swarzędz, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "SVARAN",
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Swarzędz",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96610616000067": {
+    "orig_lat": 52.4089,
+    "orig_lon": 17.08117,
+    "new_lat": 52.408421,
+    "new_lon": 17.080772,
+    "dist_m": 60,
+    "query": "SVARAN, Swarzędz, Polska",
+    "formatted": "Svaran - mieszkania, Swarzędz, gmina Swarzędz, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "SVARAN",
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Swarzędz",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68488545": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "pod miastem",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68489091": {
+    "skipped": "outside_bbox",
+    "query": "ul. Aleja Flensa, Biernatki, Polska",
+    "formatted": "Biernatki, gmina Augustów, powiat augustowski, województwo podlaskie, Polska",
+    "addr": {
+      "street": "ul. Aleja Flensa",
+      "number": null,
+      "osiedle": null,
+      "city": "Biernatki",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.87199,
+    "new_lon": 22.84521
+  },
+  "96848909100067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Aleja Flensa, Biernatki, Polska",
+    "formatted": "Biernatki, gmina Augustów, powiat augustowski, województwo podlaskie, Polska",
+    "addr": {
+      "street": "ul. Aleja Flensa",
+      "number": null,
+      "osiedle": null,
+      "city": "Biernatki",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.87199,
+    "new_lon": 22.84521
+  },
+  "96836075100067": {
+    "orig_lat": 52.37859,
+    "orig_lon": 16.95072,
+    "new_lat": 52.398522,
+    "new_lon": 16.960366,
+    "dist_m": 2311,
+    "query": "Nowe Miasto - Rataje, Poznań, Polska",
+    "formatted": "Komisariat Policji Poznań - Nowe Miasto, Sowia, Miasteczko, Łacina, Rataje, Poznań, województwo wielkopolskie, 61-131, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Nowe Miasto - Rataje",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łacina",
+    "corrected": true
+  },
+  "68488674": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96842945700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67560242": {
+    "orig_lat": 52.3987,
+    "orig_lon": 16.91978,
+    "new_lat": 52.398539,
+    "new_lon": 16.919867,
+    "dist_m": 19,
+    "query": "ul. Niedziałkowskiego, Poznań, Polska",
+    "formatted": "Niedziałkowskiego Park, Poznań, Polska",
+    "addr": {
+      "street": "ul. Niedziałkowskiego",
+      "number": null,
+      "osiedle": "Niedziałkowskiego Park",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "68488500": {
+    "orig_lat": 52.4349,
+    "orig_lon": 16.81177,
+    "new_lat": 52.434933,
+    "new_lon": 16.811761,
+    "dist_m": 4,
+    "query": "ul. Sianowska 139A, Poznań Smochowice, Polska",
+    "formatted": "Sianowska, 139A, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sianowska",
+      "number": "139A",
+      "osiedle": null,
+      "city": "Poznań Smochowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Smochowice",
+    "corrected": false
+  },
+  "96848850000067": {
+    "orig_lat": 52.4349,
+    "orig_lon": 16.81177,
+    "new_lat": 52.434933,
+    "new_lon": 16.811761,
+    "dist_m": 4,
+    "query": "ul. Sianowska 139A, Poznań Smochowice, Polska",
+    "formatted": "Sianowska, 139A, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sianowska",
+      "number": "139A",
+      "osiedle": null,
+      "city": "Poznań Smochowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Smochowice",
+    "corrected": false
   }
 }
