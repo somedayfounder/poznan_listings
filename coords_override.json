@@ -45763,5 +45763,304 @@
     "geo_city": "Poznań",
     "geo_district": "Smochowice",
     "corrected": false
+  },
+  "68489804": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Niepruszewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96845600100067": {
+    "skipped": "geocode_failed",
+    "query": "Rostworów, Polska",
+    "addr": {
+      "street": "Sobocka",
+      "number": null,
+      "osiedle": null,
+      "city": "Rostworów",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96847391100067": {
+    "orig_lat": 52.2533,
+    "orig_lon": 17.05329,
+    "new_lat": 52.254849,
+    "new_lon": 17.053195,
+    "dist_m": 172,
+    "query": "Topolowe, Mościenica, Polska",
+    "formatted": "Osiedle Topolowe, Mościenica, gmina Kórnik, powiat poznański, województwo wielkopolskie, 62-035, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Topolowe",
+      "city": "Mościenica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Mościenica",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68490285": {
+    "orig_lat": 52.4165,
+    "orig_lon": 16.89998,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 386,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68490386": {
+    "orig_lat": 52.42659,
+    "orig_lon": 16.93611,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 221,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "96843373000067": {
+    "skipped": "geocode_failed",
+    "query": "nowoczesnej inwestycji na poznańskich Ratajach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "nowoczesnej inwestycji na poznańskich Ratajach",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    }
+  },
+  "68490334": {
+    "orig_lat": 52.42659,
+    "orig_lon": 16.93611,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 221,
+    "query": "Winograd, Winogrady, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Winogrady",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68490181": {
+    "orig_lat": 52.41663,
+    "orig_lon": 16.90006,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 396,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96842746400067": {
+    "skipped": "geocode_failed",
+    "query": "ul. Deszczowej 7, Borówca, Polska",
+    "addr": {
+      "street": "ul. Deszczowej",
+      "number": "7",
+      "osiedle": null,
+      "city": "Borówca",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96841361100067": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68489392": {
+    "orig_lat": 52.50679,
+    "orig_lon": 16.74042,
+    "new_lat": 52.513099,
+    "new_lon": 16.730991,
+    "dist_m": 948,
+    "query": "ul. Trakt Napoleoński, Rokietnica, Polska",
+    "formatted": "Rokietnica Trakt Napoleoński, Szamotulska, Rokietnica, Polska",
+    "addr": {
+      "street": "ul. Trakt Napoleoński",
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68490214": {
+    "orig_lat": 52.41652,
+    "orig_lon": 16.89993,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 390,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96717110700067": {
+    "orig_lat": 52.41158,
+    "orig_lon": 16.965,
+    "new_lat": 52.412388,
+    "new_lon": 16.964939,
+    "dist_m": 90,
+    "query": "Świętego Michała etap 2, Poznań, Polska",
+    "formatted": "Świętego Michała, Komandoria-Pomet, Berdychowo, Ostrów Tumski-Śródka-Zawady-Komandoria, Poznań, województwo wielkopolskie, 61-118, Polska",
+    "addr": {
+      "street": null,
+      "number": "34_25",
+      "osiedle": "Świętego Michała etap 2",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Komandoria-Pomet",
+    "corrected": false
+  },
+  "96834658100067": {
+    "skipped": "geocode_failed",
+    "query": "nowo powstającej, prestiżowej inwestycji na poznańskich Jeżycach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "nowo powstającej, prestiżowej inwestycji na poznańskich Jeżycach",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    }
+  },
+  "68489922": {
+    "orig_lat": 52.44377,
+    "orig_lon": 16.89437,
+    "new_lat": 52.456781,
+    "new_lon": 16.887939,
+    "dist_m": 1511,
+    "query": "Podolany, Poznań, Polska",
+    "formatted": "Podolany, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "68489921": {
+    "orig_lat": 52.44377,
+    "orig_lon": 16.89437,
+    "new_lat": 52.456781,
+    "new_lon": 16.887939,
+    "dist_m": 1511,
+    "query": "Podolany, Poznań, Polska",
+    "formatted": "Podolany, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "96639140900067": {
+    "orig_lat": 52.46367,
+    "orig_lon": 16.94614,
+    "new_lat": 52.463441,
+    "new_lon": 16.944032,
+    "dist_m": 145,
+    "query": "ul. Maków Polnych 11, Umultowo, Polska",
+    "formatted": "Maków Polnych, 11, Poznań, Polska",
+    "addr": {
+      "street": "ul. Maków Polnych",
+      "number": "11",
+      "osiedle": "Fuelda",
+      "city": "Umultowo",
+      "district": "null",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Umultowo",
+    "corrected": false
   }
 }
