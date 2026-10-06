@@ -46062,5 +46062,384 @@
     "geo_city": "Poznań",
     "geo_district": "Umultowo",
     "corrected": false
+  },
+  "66293411": {
+    "orig_lat": 52.36733,
+    "orig_lon": 16.90355,
+    "new_lat": 52.367257,
+    "new_lon": 16.902715,
+    "dist_m": 57,
+    "query": "ul. 28 czerwca 1956 r. 346, Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, 346, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 czerwca 1956 r.",
+      "number": "346",
+      "osiedle": "Osiedle 28 Czerwca 1956 r.",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Zielony Dębiec",
+    "corrected": false
+  },
+  "68493034": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68495821": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96846644100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Niepruszewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96848558500067": {
+    "orig_lat": 52.28176,
+    "orig_lon": 16.61772,
+    "new_lat": 52.29473,
+    "new_lon": 16.629835,
+    "dist_m": 1661,
+    "query": "ul. Truskawkowa, Sapowice, Polska",
+    "formatted": "Truskawkowa, Sapowice, Polska",
+    "addr": {
+      "street": "ul. Truskawkowa",
+      "number": null,
+      "osiedle": "Osiedle nad Jeziorem",
+      "city": "Sapowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sapowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68495823": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68494312": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Radzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68493681": {
+    "orig_lat": 52.36545,
+    "orig_lon": 16.70587,
+    "new_lat": 52.3621,
+    "new_lon": 16.70981,
+    "dist_m": 459,
+    "query": "ul. Wierzbowej 17, Dopiewiec, Polska",
+    "formatted": "Dopiewiec, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Wierzbowej",
+      "number": "17",
+      "osiedle": null,
+      "city": "Dopiewiec",
+      "district": "powiat poznański",
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68492719": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "63118449": {
+    "orig_lat": 52.32782,
+    "orig_lon": 16.91068,
+    "new_lat": 52.3313,
+    "new_lon": 16.916514,
+    "dist_m": 554,
+    "query": "Borowikowa, Czapury, Polska",
+    "formatted": "Borowikowa, Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-343, Polska",
+    "addr": {
+      "street": "Borowikowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68493105": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68444239": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96844423900067": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68493031": {
+    "orig_lat": 52.27554,
+    "orig_lon": 17.00965,
+    "new_lat": 52.277454,
+    "new_lon": 17.023775,
+    "dist_m": 984,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96841300000067": {
+    "orig_lat": 52.27554,
+    "orig_lon": 17.00965,
+    "new_lat": 52.277454,
+    "new_lon": 17.023775,
+    "dist_m": 984,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96846215200067": {
+    "orig_lat": 52.5241,
+    "orig_lon": 17.02602,
+    "new_lat": 52.52336,
+    "new_lon": 17.02593,
+    "dist_m": 83,
+    "query": "Czerwonak, Potasze, Polska",
+    "formatted": "Potasze, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Potasze",
+      "district": "Czerwonak",
+      "confidence": "high"
+    },
+    "geo_city": "Potasze",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68496923": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68493030": {
+    "orig_lat": 52.27554,
+    "orig_lon": 17.00965,
+    "new_lat": 52.277454,
+    "new_lon": 17.023775,
+    "dist_m": 984,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68496491": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96839187300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Wirach",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68496904": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68494641": {
+    "orig_lat": 52.46594,
+    "orig_lon": 16.93795,
+    "new_lat": 52.465829,
+    "new_lon": 16.938669,
+    "dist_m": 50,
+    "query": "Plac Degi, Poznań, Polska",
+    "formatted": "Plac Wiktora Degi, Różany Potok, Umultowo, Poznań, województwo wielkopolskie, 61-606, Polska",
+    "addr": {
+      "street": "Plac Degi",
+      "number": null,
+      "osiedle": "Różany Potok",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Umultowo",
+    "corrected": false
+  },
+  "96848015300067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
   }
 }
