@@ -46441,5 +46441,675 @@
       "district": null,
       "confidence": "medium"
     }
+  },
+  "68500311": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68500295": {
+    "skipped": "outside_bbox",
+    "query": "Czempiń, Sierniki, Polska",
+    "formatted": "Sierniki, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Sierniki",
+      "district": "Czempiń",
+      "confidence": "high"
+    },
+    "new_lat": 52.7413,
+    "new_lon": 17.0775
+  },
+  "68500876": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.26591,
+    "orig_lon": 17.02173,
+    "new_lat": 52.293108,
+    "new_lon": 16.960261,
+    "dist_m": 5161,
+    "orig_dist_to_center_m": 16917,
+    "query": "ul. Wesołej, Daszewice, Polska",
+    "formatted": "Wesoła, Daszewice, Polska",
+    "addr": {
+      "street": "ul. Wesołej",
+      "number": null,
+      "osiedle": null,
+      "city": "Daszewice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96842341200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68500302": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68500105": {
+    "skipped": "outside_bbox",
+    "query": "gmina Mosina, Żabinek, Polska",
+    "formatted": "Żabinek, woj. warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Żabinek",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "new_lat": 54.33333,
+    "new_lon": 22.03333
+  },
+  "68500104": {
+    "orig_lat": 52.24535,
+    "orig_lon": 16.84699,
+    "new_lat": 52.21103,
+    "new_lon": 16.82642,
+    "dist_m": 4065,
+    "query": "gmina Mosina, Drużyna, Polska",
+    "formatted": "Drużyna, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Drużyna",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Drużyna",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96840943700067": {
+    "orig_lat": 52.3567,
+    "orig_lon": 16.88142,
+    "new_lat": 52.34705,
+    "new_lon": 16.89267,
+    "dist_m": 1317,
+    "query": "ul. Świerczewska, Luboń, Polska",
+    "formatted": "Luboń, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Świerczewska",
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68501057": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96850105700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96846527200067": {
+    "orig_lat": 52.43699,
+    "orig_lon": 16.94594,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 566,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68500309": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68500451": {
+    "orig_lat": 52.45718,
+    "orig_lon": 16.88339,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 1674,
+    "query": "Jasielska 8C, Poznań, Polska",
+    "formatted": "8c, Jasielska, Podolany, Poznań, województwo wielkopolskie, 60-476, Polska",
+    "addr": {
+      "street": "Jasielska",
+      "number": "8C",
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "96842561200067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Szczepankowskiej, Szczepankowo, Polska",
+    "formatted": "Szczepankowo, gmina Śniadowo, powiat łomżyński, województwo podlaskie, Polska",
+    "addr": {
+      "street": "ul. Szczepankowskiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczepankowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "new_lat": 53.120417,
+    "new_lon": 21.949858
+  },
+  "68497494": {
+    "orig_lat": 52.37128,
+    "orig_lon": 16.70205,
+    "new_lat": 52.3621,
+    "new_lon": 16.70981,
+    "dist_m": 1149,
+    "query": "ul. Wierzbowej 17, Dopiewiec, Polska",
+    "formatted": "Dopiewiec, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Wierzbowej",
+      "number": "17",
+      "osiedle": "Osiedle Wierzbowe",
+      "city": "Dopiewiec",
+      "district": "powiat poznański",
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68500303": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68501009": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68500310": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68500296": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": "53",
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68500106": {
+    "skipped": "outside_bbox",
+    "query": "ul. Owocowa, Kleszczewo, Polska",
+    "formatted": "Owocowa, Kleszczewo, Polska",
+    "addr": {
+      "street": "ul. Owocowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Kleszczewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.334722,
+    "new_lon": 17.174809
+  },
+  "67726144": {
+    "orig_lat": 52.29635,
+    "orig_lon": 17.07443,
+    "new_lat": 52.296581,
+    "new_lon": 17.074044,
+    "dist_m": 37,
+    "query": "ul. Kwitnącej Wiśni 4/1, Robakowo, Polska",
+    "formatted": "Kwitnącej Wiśni, 4, Robakowo, Polska",
+    "addr": {
+      "street": "ul. Kwitnącej Wiśni",
+      "number": "4/1",
+      "osiedle": "Osiedle Kwitnącej Wiśni",
+      "city": "Robakowo",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": "Robakowo - Osiedle",
+    "corrected": false
+  },
+  "68499392": {
+    "orig_lat": 52.41694,
+    "orig_lon": 17.1008,
+    "new_lat": 52.410373,
+    "new_lon": 17.077104,
+    "dist_m": 1765,
+    "query": "Gerberowa, Swarzędz, Polska",
+    "formatted": "Swarzędz, gmina Swarzędz, powiat poznański, województwo wielkopolskie, 62-020, Polska",
+    "addr": {
+      "street": "Gerberowa",
+      "number": null,
+      "osiedle": "nowej inwestycji",
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Swarzędz",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68498684": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68497922": {
+    "orig_lat": 52.44377,
+    "orig_lon": 16.89437,
+    "new_lat": 52.456781,
+    "new_lon": 16.887939,
+    "dist_m": 1511,
+    "query": "Podolany, Poznań, Polska",
+    "formatted": "Podolany, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "68500306": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Tulce",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68500294": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Tulce",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68500300": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96850030000067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68498303": {
+    "orig_lat": 52.3854,
+    "orig_lon": 16.87281,
+    "new_lat": 52.384124,
+    "new_lon": 16.894016,
+    "dist_m": 1446,
+    "query": "ul. R. Dmowskiego 103, Poznań, Polska",
+    "formatted": "Romana Dmowskiego, 103, Poznań, Polska",
+    "addr": {
+      "street": "ul. R. Dmowskiego",
+      "number": "103",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Górczyn",
+    "corrected": true
+  },
+  "68497784": {
+    "orig_lat": 52.38381,
+    "orig_lon": 16.89437,
+    "new_lat": 52.384124,
+    "new_lon": 16.894016,
+    "dist_m": 42,
+    "query": "ul. R. Dmowskiego 103, Poznań, Polska",
+    "formatted": "Romana Dmowskiego, 103, Poznań, Polska",
+    "addr": {
+      "street": "ul. R. Dmowskiego",
+      "number": "103",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Górczyn",
+    "corrected": false
+  },
+  "68500299": {
+    "orig_lat": 52.27554,
+    "orig_lon": 17.00965,
+    "new_lat": 52.277454,
+    "new_lon": 17.023775,
+    "dist_m": 984,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96841391500067": {
+    "orig_lat": 52.27746,
+    "orig_lon": 17.02377,
+    "new_lat": 52.277454,
+    "new_lon": 17.023775,
+    "dist_m": 1,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68500991": {
+    "orig_lat": 52.44071,
+    "orig_lon": 17.02806,
+    "new_lat": 52.440581,
+    "new_lon": 17.025066,
+    "dist_m": 203,
+    "query": "Olchowe Zacisze, Janikowo, Polska",
+    "formatted": "Olchowe Zacisze, Janikowo, gmina Swarzędz, powiat poznański, województwo wielkopolskie, 61-070, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Olchowe Zacisze",
+      "city": "Janikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Janikowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68500298": {
+    "orig_lat": 52.27554,
+    "orig_lon": 17.00965,
+    "new_lat": 52.277454,
+    "new_lon": 17.023775,
+    "dist_m": 984,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96847719700067": {
+    "orig_lat": 52.27554,
+    "orig_lon": 17.00965,
+    "new_lat": 52.277454,
+    "new_lon": 17.023775,
+    "dist_m": 984,
+    "query": "ul. Zapomniana, Borówiec, Polska",
+    "formatted": "Zapomniana, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Zapomniana",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96735450500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kórnik",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68238864": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68500585": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68498002": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36022,
+    "orig_lon": 16.98188,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7301,
+    "orig_dist_to_center_m": 6261,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68491013": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36028,
+    "orig_lon": 16.98227,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7305,
+    "orig_dist_to_center_m": 6269,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "96845468100067": {
+    "skipped": "outside_bbox",
+    "query": "Chmielna, Siekierki Wielkie, Polska",
+    "formatted": "Chmielna, Siekierki Wielkie, gmina Kostrzyn, powiat poznański, województwo wielkopolskie, 62-021, Polska",
+    "addr": {
+      "street": "Chmielna",
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.385903,
+    "new_lon": 17.1574
+  },
+  "68500520": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68501033": {
+    "orig_lat": 52.45285,
+    "orig_lon": 16.73113,
+    "new_lat": 52.452385,
+    "new_lon": 16.731501,
+    "dist_m": 57,
+    "query": "ul. Lotosowej, Sady, Polska",
+    "formatted": "Lotosowa, Sady, Polska",
+    "addr": {
+      "street": "ul. Lotosowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Sady",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sady",
+    "geo_district": "Dębina",
+    "corrected": false
   }
 }
