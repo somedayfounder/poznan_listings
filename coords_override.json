@@ -47820,5 +47820,318 @@
     "geo_city": "Poznań",
     "geo_district": "Szczepankowo",
     "corrected": false
+  },
+  "96850031100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96301067700067": {
+    "orig_lat": 52.31342,
+    "orig_lon": 16.91627,
+    "new_lat": 52.313928,
+    "new_lon": 16.91468,
+    "dist_m": 122,
+    "query": "ul. Spokojna, Czapury, Polska",
+    "formatted": "Spokojna, Czapury, Polska",
+    "addr": {
+      "street": "ul. Spokojna",
+      "number": null,
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96845479800067": {
+    "orig_lat": 52.41802,
+    "orig_lon": 16.89299,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 835,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96843793000067": {
+    "skipped": "outside_bbox",
+    "query": "Gardenia, Grzebienisko, Polska",
+    "formatted": "Grzebienisko, Powiat szamotulski, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Gardenia",
+      "city": "Grzebienisko",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.43325,
+    "new_lon": 16.5297
+  },
+  "96844607400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68509774": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96843299100067": {
+    "skipped": "geocode_failed",
+    "query": "Winogradach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogradach",
+      "confidence": "high"
+    }
+  },
+  "68507747": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96847624600067": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "96841656900067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.38463,
+    "orig_lon": 16.74441,
+    "new_lat": 52.41186,
+    "new_lon": 16.872603,
+    "dist_m": 9210,
+    "orig_dist_to_center_m": 13101,
+    "query": "ul. Bukowska, Poznań, Polska",
+    "formatted": "Bukowska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bukowska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96844586400067": {
+    "orig_lat": 52.42659,
+    "orig_lon": 16.93611,
+    "new_lat": 52.425974,
+    "new_lon": 16.939207,
+    "dist_m": 221,
+    "query": "Winograd, Poznań, Polska",
+    "formatted": "Stare Winogrady, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winograd",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "96835763700067": {
+    "orig_lat": 52.28622,
+    "orig_lon": 16.68301,
+    "new_lat": 52.279354,
+    "new_lon": 16.699933,
+    "dist_m": 1381,
+    "query": "ul. Kwiatowej, Stęszew, Polska",
+    "formatted": "Stęszew, gmina Stęszew, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Kwiatowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Stęszew",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Stęszew",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68507273": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68509894": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.41909,
+    "new_lon": 16.635052,
+    "dist_m": 2791,
+    "query": "ul. Agawy, Lusówko, Polska",
+    "formatted": "Agawy, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Agawy",
+      "number": null,
+      "osiedle": "Osiedle Rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Rozalin",
+    "corrected": true
+  },
+  "68508840": {
+    "orig_lat": 52.41729,
+    "orig_lon": 16.63122,
+    "new_lat": 52.417299,
+    "new_lon": 16.631224,
+    "dist_m": 1,
+    "query": "ul. Agawy 61, Lusówko, Polska",
+    "formatted": "Agawy, 61, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Agawy",
+      "number": "61",
+      "osiedle": "Osiedle Rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Rozalin",
+    "corrected": false
+  },
+  "96849021400067": {
+    "orig_lat": 52.41652,
+    "orig_lon": 16.89993,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 390,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68506531": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.415045,
+    "new_lon": 16.910038,
+    "dist_m": 1003,
+    "query": "Osiedle Jeżyc, Poznań, Polska",
+    "formatted": "Jeżyckie Osiedle, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Jeżyc",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68509895": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.416803,
+    "new_lon": 16.639468,
+    "dist_m": 2933,
+    "query": "osiedle rozalin, Lusówko, Polska",
+    "formatted": "Osiedle Rozalin, Rozalin, Lusówko, gmina Tarnowo Podgórne, powiat poznański, województwo wielkopolskie, 62-080, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "osiedle rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Osiedle Rozalin",
+    "corrected": true
+  },
+  "68507279": {
+    "orig_lat": 52.46505,
+    "orig_lon": 16.93933,
+    "new_lat": 52.467977,
+    "new_lon": 16.937811,
+    "dist_m": 341,
+    "query": "ul. Różany Potok, Poznań, Polska",
+    "formatted": "Różany Potok, Poznań, Polska",
+    "addr": {
+      "street": "ul. Różany Potok",
+      "number": null,
+      "osiedle": "Różany Potok",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Umultowo",
+    "corrected": true
   }
 }
