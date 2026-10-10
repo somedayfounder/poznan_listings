@@ -48133,5 +48133,509 @@
     "geo_city": "Poznań",
     "geo_district": "Umultowo",
     "corrected": true
+  },
+  "68512077": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Radzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96847814900067": {
+    "orig_lat": 52.48908,
+    "orig_lon": 16.93817,
+    "new_lat": 52.488138,
+    "new_lon": 16.910242,
+    "dist_m": 1894,
+    "query": "ul. Franciszka Jaśkowiaka, Radojewo, Polska",
+    "formatted": "Franciszka Jaśkowiaka, Poznań, Polska",
+    "addr": {
+      "street": "ul. Franciszka Jaśkowiaka",
+      "number": null,
+      "osiedle": null,
+      "city": "Radojewo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Morasko-Radojewo",
+    "corrected": true
+  },
+  "68512561": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96840683300067": {
+    "orig_lat": 52.46202,
+    "orig_lon": 16.89833,
+    "new_lat": 52.464025,
+    "new_lon": 16.9008,
+    "dist_m": 279,
+    "query": "ul. Teofila Mateckiego 20E, Poznań, Polska",
+    "formatted": "Teofila Mateckiego, 20E, Poznań, Polska",
+    "addr": {
+      "street": "ul. Teofila Mateckiego",
+      "number": "20E",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo Północ",
+    "corrected": true
+  },
+  "96848980400067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Niepruszewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96846753900067": {
+    "orig_lat": 52.45528,
+    "orig_lon": 16.91912,
+    "new_lat": 52.463035,
+    "new_lon": 16.898115,
+    "dist_m": 1664,
+    "query": "Mateckiego 4ALL, Piątkowo, Polska",
+    "formatted": "Teofila Mateckiego, Poznań, Polska",
+    "addr": {
+      "street": "Mateckiego",
+      "number": "4ALL",
+      "osiedle": null,
+      "city": "Piątkowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "66800596": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "65204656": {
+    "skipped": "outside_bbox",
+    "query": "ul. Wieruszowska, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": null,
+      "osiedle": "Grunwald Park",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "96766196300067": {
+    "skipped": "outside_bbox",
+    "query": "Osiedle Kórnickie, Kostrzyn, Polska",
+    "formatted": "Kostrzyn, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Kórnickie",
+      "city": "Kostrzyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.39847,
+    "new_lon": 17.22811
+  },
+  "65204644": {
+    "skipped": "geocode_city_only",
+    "query": "ul. Wieruszowska, Zielona Góra, Polska",
+    "formatted": "Zielona Góra, województwo lubuskie, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": null,
+      "osiedle": "Grunwald Park",
+      "city": "Zielona Góra",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68512354": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "68511597": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": "53",
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68511598": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": "53",
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68510882": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.34314,
+    "orig_lon": 17.07574,
+    "new_lat": 52.3387,
+    "new_lon": 16.81063,
+    "dist_m": 18017,
+    "orig_dist_to_center_m": 12060,
+    "query": "gm. Kleszczewo, Komorniki, Polska",
+    "formatted": "Komorniki, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": "gm. Kleszczewo",
+      "confidence": "high"
+    }
+  },
+  "96772614400067": {
+    "orig_lat": 52.29635,
+    "orig_lon": 17.07443,
+    "new_lat": 52.296581,
+    "new_lon": 17.074044,
+    "dist_m": 37,
+    "query": "ul. Kwitnącej Wiśni 4/1, Robakowo, Polska",
+    "formatted": "Kwitnącej Wiśni, 4, Robakowo, Polska",
+    "addr": {
+      "street": "ul. Kwitnącej Wiśni",
+      "number": "4/1",
+      "osiedle": "Osiedle Kwitnącej Wiśni",
+      "city": "Robakowo",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": "Robakowo - Osiedle",
+    "corrected": false
+  },
+  "96845642900067": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68511599": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Tulce",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68511596": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Tulce",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68510881": {
+    "orig_lat": 52.34811,
+    "orig_lon": 17.09943,
+    "new_lat": 52.348224,
+    "new_lon": 17.099853,
+    "dist_m": 31,
+    "query": "ul. Szafirowa, Tulce, Polska",
+    "formatted": "Szafirowa, Tulce, Polska",
+    "addr": {
+      "street": "ul. Szafirowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Tulce",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tulce",
+    "geo_district": "Zadęby",
+    "corrected": false
+  },
+  "68511844": {
+    "orig_lat": 52.39886,
+    "orig_lon": 16.96841,
+    "new_lat": 52.398864,
+    "new_lon": 16.968229,
+    "dist_m": 12,
+    "query": "ul. Klemensa Mikuły, Poznań, Polska",
+    "formatted": "Klemensa Mikuły, Poznań, Polska",
+    "addr": {
+      "street": "ul. Klemensa Mikuły",
+      "number": null,
+      "osiedle": "Malta Wołkowyska",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Rataje",
+    "corrected": false
+  },
+  "96633259800067": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449057,
+    "new_lon": 16.960241,
+    "dist_m": 136,
+    "query": "ul. Bielicowa 4, Naramowice, Polska",
+    "formatted": "Bielicowa, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "4",
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "96621338200067": {
+    "orig_lat": 52.4076,
+    "orig_lon": 17.07351,
+    "new_lat": 52.440706,
+    "new_lon": 17.028063,
+    "dist_m": 4801,
+    "query": "Asfaltowa, Janikowo, Polska",
+    "formatted": "Asfaltowa, Janikowo, gmina Swarzędz, powiat poznański, województwo wielkopolskie, 61-070, Polska",
+    "addr": {
+      "street": "Asfaltowa",
+      "number": null,
+      "osiedle": "Osiedle Olchowe Zacisze",
+      "city": "Janikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Janikowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96846887300067": {
+    "orig_lat": 52.42794,
+    "orig_lon": 16.79522,
+    "new_lat": 52.42745,
+    "new_lon": 16.78375,
+    "dist_m": 780,
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96826888400067": {
+    "orig_lat": 52.42794,
+    "orig_lon": 16.79522,
+    "new_lat": 52.42745,
+    "new_lon": 16.78375,
+    "dist_m": 780,
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68510405": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68510423": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Atria",
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96850198700067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Wirach",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68510727": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Atria",
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96850058500067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "96423662700067": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.38265,
+    "orig_lon": 16.84567,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 8835,
+    "orig_dist_to_center_m": 6608,
+    "query": "ul. Ziębickiej 30, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Ziębickiej",
+      "number": "30",
+      "osiedle": "Osiedle Ziębicka 30",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68510417": {
+    "orig_lat": 52.38217,
+    "orig_lon": 16.91298,
+    "new_lat": 52.392651,
+    "new_lon": 16.920178,
+    "dist_m": 1264,
+    "query": "ul. 28 Czerwca 1956 r., Poznań, Polska",
+    "formatted": "28 Czerwca 1956 roku, Poznań, Polska",
+    "addr": {
+      "street": "ul. 28 Czerwca 1956 r.",
+      "number": null,
+      "osiedle": "Nowy Cegielski",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "96842960200067": {
+    "skipped": "outside_bbox",
+    "query": "ul. Smardzewska, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": null,
+      "osiedle": "Grunwald Między Drzewami",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
   }
 }
