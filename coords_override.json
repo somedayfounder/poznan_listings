@@ -48841,5 +48841,363 @@
     "geo_city": "Poznań",
     "geo_district": "Jeżyce",
     "corrected": true
+  },
+  "96792769500067": {
+    "skipped": "outside_bbox",
+    "query": "ul. św. Jana 10, Gwiazdowo, Polska",
+    "formatted": "Gwiazdowo, Karwie, gmina Mrągowo, powiat mrągowski, województwo warmińsko-mazurskie, 11-700, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "number": "10",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.8243,
+    "new_lon": 21.286328
+  },
+  "68045828": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Pamiątkowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96802373600067": {
+    "orig_lat": 52.4119,
+    "orig_lon": 16.68185,
+    "new_lat": 52.411664,
+    "new_lon": 16.678482,
+    "dist_m": 230,
+    "query": "ul. Agatowej, Sierosław, Polska",
+    "formatted": "Agatowa, Sierosław, Polska",
+    "addr": {
+      "street": "ul. Agatowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Sierosław",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sierosław",
+    "geo_district": null,
+    "corrected": true
+  },
+  "96845883300067": {
+    "orig_lat": 52.20042,
+    "orig_lon": 16.81972,
+    "new_lat": 52.200604,
+    "new_lon": 16.820013,
+    "dist_m": 29,
+    "query": "ul. Rolna, Nowinki, Polska",
+    "formatted": "Rolna, Nowinki, Polska",
+    "addr": {
+      "street": "ul. Rolna",
+      "number": null,
+      "osiedle": null,
+      "city": "Nowinki",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Nowinki",
+    "geo_district": "Grzybno-Leśniczówka",
+    "corrected": false
+  },
+  "96849792200067": {
+    "orig_lat": 52.44377,
+    "orig_lon": 16.89437,
+    "new_lat": 52.456781,
+    "new_lon": 16.887939,
+    "dist_m": 1511,
+    "query": "Podolany, Poznań, Polska",
+    "formatted": "Podolany, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "96846718800067": {
+    "orig_lat": 52.45528,
+    "orig_lon": 16.91912,
+    "new_lat": 52.463035,
+    "new_lon": 16.898115,
+    "dist_m": 1664,
+    "query": "Mateckiego 4ALL, Piątkowo, Polska",
+    "formatted": "Teofila Mateckiego, Poznań, Polska",
+    "addr": {
+      "street": "Mateckiego",
+      "number": "4ALL",
+      "osiedle": null,
+      "city": "Piątkowo",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": true
+  },
+  "96648426500067": {
+    "orig_lat": 52.44947,
+    "orig_lon": 16.67143,
+    "new_lat": 52.48296,
+    "new_lon": 16.657156,
+    "dist_m": 3847,
+    "query": "ul. Ustronna 10/1, Góra, Polska",
+    "formatted": "Ustronna, 10, Góra, Polska",
+    "addr": {
+      "street": "ul. Ustronna",
+      "number": "10/1",
+      "osiedle": "Osiedle Góra",
+      "city": "Góra",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Góra",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68516020": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.3789,
+    "orig_lon": 16.74309,
+    "new_lat": 52.41186,
+    "new_lon": 16.872603,
+    "dist_m": 9521,
+    "orig_dist_to_center_m": 13331,
+    "query": "ul. Bukowska, Poznań, Polska",
+    "formatted": "Bukowska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bukowska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68514926": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68514924": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96846629600067": {
+    "orig_lat": 52.41695,
+    "orig_lon": 16.89951,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 446,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "96787221100067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "96851327900067": {
+    "skipped": "geocode_failed",
+    "query": "Winogradach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogradach",
+      "confidence": "high"
+    }
+  },
+  "66801339": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "68516021": {
+    "orig_lat": 52.44377,
+    "orig_lon": 16.89437,
+    "new_lat": 52.456781,
+    "new_lon": 16.887939,
+    "dist_m": 1511,
+    "query": "Podolany, Poznań, Polska",
+    "formatted": "Podolany, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "68516024": {
+    "orig_lat": 52.44377,
+    "orig_lon": 16.89437,
+    "new_lat": 52.456781,
+    "new_lon": 16.887939,
+    "dist_m": 1511,
+    "query": "Podolany, Poznań, Polska",
+    "formatted": "Podolany, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "68399591": {
+    "orig_lat": 52.34067,
+    "orig_lon": 16.8629,
+    "new_lat": 52.33984,
+    "new_lon": 16.86329,
+    "dist_m": 96,
+    "query": "ul. Poprzecznej 19, Luboń, Polska",
+    "formatted": "Poprzeczna, 19, Luboń, Polska",
+    "addr": {
+      "street": "ul. Poprzecznej",
+      "number": "19",
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Żabikowo",
+    "corrected": false
+  },
+  "68514650": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kleszczewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67908040": {
+    "orig_lat": 52.38654,
+    "orig_lon": 17.0794,
+    "new_lat": 52.386247,
+    "new_lon": 17.079867,
+    "dist_m": 45,
+    "query": "ul. Szczęśliwa 46, Zalasewo, Polska",
+    "formatted": "Szczęśliwa, 62-020 Zalasewo, Polska",
+    "addr": {
+      "street": "ul. Szczęśliwa",
+      "number": "46",
+      "osiedle": "Projekt Zalasewo",
+      "city": "Zalasewo",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Zalasewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "96841530200067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96836112800067": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "96819235300067": {
+    "orig_lat": 52.47018,
+    "orig_lon": 16.94736,
+    "new_lat": 52.470967,
+    "new_lon": 16.941329,
+    "dist_m": 418,
+    "query": "Naramowice/Umultowo, Poznań, Polska",
+    "formatted": "Planowana Trasa Tramwajowa na Naramowice - etap III, Zagajnikowa, Różany Potok, Umultowo, Poznań, województwo wielkopolskie, 61-606, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Naramowice/Umultowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Umultowo",
+    "corrected": true
   }
 }
