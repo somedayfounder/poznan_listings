@@ -49367,5 +49367,149 @@
     "geo_city": "Poznań",
     "geo_district": "Podolany",
     "corrected": false
+  },
+  "9000062221": {
+    "orig_lat": 52.37413,
+    "orig_lon": 16.95236,
+    "new_lat": 52.374071,
+    "new_lon": 16.951709,
+    "dist_m": 45,
+    "query": "ul. Unii Lubelskiej 4, Starołęka, Polska",
+    "formatted": "Agrobex Unii Lubelskiej 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Unii Lubelskiej",
+      "number": "4",
+      "osiedle": "Inwestycja Unii Lubelskiej 4",
+      "city": "Starołęka",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": false
+  },
+  "68524138": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "wieś",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68525401": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "65229426": {
+    "orig_lat": 52.42961,
+    "orig_lon": 16.9519,
+    "new_lat": 52.429872,
+    "new_lon": 16.951968,
+    "dist_m": 29,
+    "query": "Wilczak 16 A, Poznań, Polska",
+    "formatted": "16a, Wilczak, Szeląg, Stare Winogrady, Winogrady, Poznań, województwo wielkopolskie, 61-623, Polska",
+    "addr": {
+      "street": "Wilczak",
+      "number": "16 A",
+      "osiedle": "Tarasy Wilczak",
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": false
+  },
+  "68525611": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68523816": {
+    "orig_lat": 52.40568,
+    "orig_lon": 16.93128,
+    "new_lat": 52.442458,
+    "new_lon": 16.893541,
+    "dist_m": 4824,
+    "query": "ul. Jasielska, Poznań, Polska",
+    "formatted": "Jasielska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "68523206": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68525448": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68501051": {
+    "orig_lat": 52.45285,
+    "orig_lon": 16.73113,
+    "new_lat": 52.452385,
+    "new_lon": 16.731501,
+    "dist_m": 57,
+    "query": "ul. Lotosowej, Sady, Polska",
+    "formatted": "Lotosowa, Sady, Polska",
+    "addr": {
+      "street": "ul. Lotosowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Sady",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sady",
+    "geo_district": "Dębina",
+    "corrected": false
   }
 }
