@@ -49511,5 +49511,231 @@
     "geo_city": "Sady",
     "geo_district": "Dębina",
     "corrected": false
+  },
+  "9000062224": {
+    "orig_lat": 52.4457,
+    "orig_lon": 16.9119,
+    "new_lat": 52.444581,
+    "new_lon": 16.910307,
+    "dist_m": 165,
+    "query": "ul. Wojciechowskiego 7/17, Poznań, Polska",
+    "formatted": "Bricoman, Zygmunta Wojciechowskiego 7-17, 60-685 Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "7/17",
+      "osiedle": "Piątkowo Residence",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "63839695": {
+    "skipped": "outside_bbox",
+    "query": "ul. Czereśniowa, Trzek, Polska",
+    "formatted": "Czereśniowa, Trzek, Polska",
+    "addr": {
+      "street": "ul. Czereśniowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Trzek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.357734,
+    "new_lon": 17.161558
+  },
+  "68525686": {
+    "orig_lat": 52.40827,
+    "orig_lon": 16.93352,
+    "new_lat": 52.61499,
+    "new_lon": 17.0905,
+    "dist_m": 25322,
+    "query": "EKO-Łopuchowo, Łopuchowo, Polska",
+    "formatted": "Łopuchowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "EKO-Łopuchowo",
+      "city": "Łopuchowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łopuchowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68527909": {
+    "orig_lat": 52.41066,
+    "orig_lon": 16.82059,
+    "new_lat": 52.41186,
+    "new_lon": 16.872603,
+    "dist_m": 3530,
+    "query": "ul. Bukowska, Poznań, Polska",
+    "formatted": "Bukowska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bukowska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68527643": {
+    "orig_lat": 52.37895,
+    "orig_lon": 16.94978,
+    "new_lat": 52.398522,
+    "new_lon": 16.960366,
+    "dist_m": 2292,
+    "query": "Nowe Miasto - Rataje, Poznań, Polska",
+    "formatted": "Komisariat Policji Poznań - Nowe Miasto, Sowia, Miasteczko, Łacina, Rataje, Poznań, województwo wielkopolskie, 61-131, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Nowe Miasto - Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łacina",
+    "corrected": true
+  },
+  "68527361": {
+    "orig_lat": 52.36803,
+    "orig_lon": 16.8325,
+    "new_lat": 52.366348,
+    "new_lon": 16.818122,
+    "dist_m": 994,
+    "query": "ul. Bursztynowa, Plewiska, Polska",
+    "formatted": "Bursztynowa, Plewiska, Polska",
+    "addr": {
+      "street": "ul. Bursztynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Plewiska",
+    "geo_district": "Aniołowo",
+    "corrected": true
+  },
+  "68528407": {
+    "orig_lat": 52.42574,
+    "orig_lon": 16.65648,
+    "new_lat": 52.42723,
+    "new_lon": 16.64618,
+    "dist_m": 718,
+    "query": "ul. Tarnowskiej 72, Lusówko, Polska",
+    "formatted": "Lusówko, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Tarnowskiej",
+      "number": "72",
+      "osiedle": null,
+      "city": "Lusówko",
+      "district": "Jankowice",
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68516233": {
+    "orig_lat": 52.38372,
+    "orig_lon": 16.83917,
+    "new_lat": 52.383936,
+    "new_lon": 16.840557,
+    "dist_m": 97,
+    "query": "ul. Wieruszowska 2, Junikowo, Polska",
+    "formatted": "Wieruszowska, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "2",
+      "osiedle": "Inwestycja Wieruszowska 2",
+      "city": "Junikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "68526823": {
+    "orig_lat": 52.43655,
+    "orig_lon": 16.84479,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 4696,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68526746": {
+    "orig_lat": 52.43655,
+    "orig_lon": 16.84479,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 4696,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68526110": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68528422": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczepankowo",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
