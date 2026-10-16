@@ -49737,5 +49737,293 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "68531705": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68532985": {
+    "orig_lat": 52.30969,
+    "orig_lon": 17.06432,
+    "new_lat": 52.301737,
+    "new_lon": 17.07147,
+    "dist_m": 1009,
+    "query": "ul. Osiedle Życzliwe 29, Dachowa, Polska",
+    "formatted": "Osiedle Życzliwe, 29, Dachowa, Polska",
+    "addr": {
+      "street": "ul. Osiedle Życzliwe",
+      "number": "29",
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68532982": {
+    "orig_lat": 52.30151,
+    "orig_lon": 17.08691,
+    "new_lat": 52.301737,
+    "new_lon": 17.07147,
+    "dist_m": 1050,
+    "query": "ul. Osiedle Życzliwe 29, Dachowa, Polska",
+    "formatted": "Osiedle Życzliwe, 29, Dachowa, Polska",
+    "addr": {
+      "street": "ul. Osiedle Życzliwe",
+      "number": "29",
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68533190": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68532983": {
+    "orig_lat": 52.30151,
+    "orig_lon": 17.08691,
+    "new_lat": 52.296579,
+    "new_lon": 17.074321,
+    "dist_m": 1017,
+    "query": "ul. Kwitnącej Wiśni, Robakowo, Polska",
+    "formatted": "Kwitnącej Wiśni, Robakowo, Polska",
+    "addr": {
+      "street": "ul. Kwitnącej Wiśni",
+      "number": null,
+      "osiedle": null,
+      "city": "Robakowo",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": "Robakowo - Osiedle",
+    "corrected": true
+  },
+  "68532981": {
+    "orig_lat": 52.30969,
+    "orig_lon": 17.06432,
+    "new_lat": 52.296579,
+    "new_lon": 17.074321,
+    "dist_m": 1609,
+    "query": "ul. Kwitnącej Wiśni, Robakowo, Polska",
+    "formatted": "Kwitnącej Wiśni, Robakowo, Polska",
+    "addr": {
+      "street": "ul. Kwitnącej Wiśni",
+      "number": null,
+      "osiedle": null,
+      "city": "Robakowo",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": "Robakowo - Osiedle",
+    "corrected": true
+  },
+  "68516229": {
+    "orig_lat": 52.38372,
+    "orig_lon": 16.83917,
+    "new_lat": 52.384545,
+    "new_lon": 16.840628,
+    "dist_m": 135,
+    "query": "ul. Wieruszowska, Junikowo, Polska",
+    "formatted": "Wieruszowska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": null,
+      "osiedle": "Inwestycja Wieruszowska 2",
+      "city": "Junikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "68532996": {
+    "orig_lat": 52.30969,
+    "orig_lon": 17.06432,
+    "new_lat": 52.293827,
+    "new_lon": 17.08164,
+    "dist_m": 2121,
+    "query": "Jałowcowa, Dachowa, Polska",
+    "formatted": "Jałowcowa, Dachowa, gmina Kórnik, powiat poznański, województwo wielkopolskie, 62-023, Polska",
+    "addr": {
+      "street": "Jałowcowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68532723": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68530495": {
+    "orig_lat": 52.43081,
+    "orig_lon": 16.7945,
+    "new_lat": 52.42745,
+    "new_lon": 16.78375,
+    "dist_m": 819,
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68530808": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68532777": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "67700966": {
+    "orig_lat": 52.44365,
+    "orig_lon": 16.8932,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 115,
+    "query": "ul. Jasielska 8C, Poznań, Polska",
+    "formatted": "Jasielska, 8c, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": "8C",
+      "osiedle": "Jasielska 8C",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "68532816": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68491973": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "9000062227": {
+    "skipped": "outside_bbox",
+    "query": "ul. Smardzewska, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": null,
+      "osiedle": "Grunwald Między Drzewami",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
   }
 }
