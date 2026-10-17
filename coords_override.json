@@ -50025,5 +50025,206 @@
     },
     "new_lat": 53.485266,
     "new_lon": 20.091529
+  },
+  "68537196": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68537198": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68537035": {
+    "orig_lat": 52.29489,
+    "orig_lon": 17.00743,
+    "new_lat": 52.296071,
+    "new_lon": 17.007659,
+    "dist_m": 132,
+    "query": "ul. Choinkowej, Szczytniki, Polska",
+    "formatted": "Choinkowa, Szczytniki, Polska",
+    "addr": {
+      "street": "ul. Choinkowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68531715": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68533683": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68533682": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68534992": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68534706": {
+    "orig_lat": 52.38381,
+    "orig_lon": 16.89437,
+    "new_lat": 52.384124,
+    "new_lon": 16.894016,
+    "dist_m": 42,
+    "query": "ul. R. Dmowskiego 103, Poznań, Polska",
+    "formatted": "Romana Dmowskiego, 103, Poznań, Polska",
+    "addr": {
+      "street": "ul. R. Dmowskiego",
+      "number": "103",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Górczyn",
+    "corrected": false
+  },
+  "68516983": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68535495": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68534826": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.414803,
+    "new_lon": 16.894242,
+    "dist_m": 268,
+    "query": "ul. Janickiego, Poznań, Polska",
+    "formatted": "Klemensa Janickiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Janickiego",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68535399": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "9000062230": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
   }
 }
