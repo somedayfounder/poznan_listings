@@ -50226,5 +50226,96 @@
     },
     "new_lat": 53.485266,
     "new_lon": 20.091529
+  },
+  "68538253": {
+    "orig_lat": 52.43611,
+    "orig_lon": 16.64417,
+    "new_lat": 52.436082,
+    "new_lon": 16.642458,
+    "dist_m": 116,
+    "query": "ul. Bosmańska, Lusówko, Polska",
+    "formatted": "Bosmańska, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Bosmańska",
+      "number": null,
+      "osiedle": null,
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68538730": {
+    "orig_lat": 52.39901,
+    "orig_lon": 16.96222,
+    "new_lat": 52.396824,
+    "new_lon": 16.960993,
+    "dist_m": 257,
+    "query": "Łacina, Poznań, Polska",
+    "formatted": "Łacina, Rataje, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Łacina",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łacina",
+    "corrected": true
+  },
+  "9000062233": {
+    "orig_lat": 52.39901,
+    "orig_lon": 16.96222,
+    "new_lat": 52.396824,
+    "new_lon": 16.960993,
+    "dist_m": 257,
+    "query": "Łacina, Poznań, Polska",
+    "formatted": "Łacina, Rataje, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Łacina",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łacina",
+    "corrected": true
+  },
+  "68321093": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68531767": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Plewiska",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
