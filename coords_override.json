@@ -51066,5 +51066,268 @@
     "geo_city": "Poznań",
     "geo_district": "Jeżyce",
     "corrected": true
+  },
+  "68550311": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68550321": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68544644": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Radzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68550071": {
+    "orig_lat": 52.43655,
+    "orig_lon": 16.84479,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 4696,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "9000062245": {
+    "skipped": "geocode_city_only",
+    "query": "null 29/B, Umultowo, Polska",
+    "formatted": "Umultowo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "null",
+      "number": "29/B",
+      "osiedle": "Osiedle Zagajnik",
+      "city": "Umultowo",
+      "district": "Poznań",
+      "confidence": "high"
+    }
+  },
+  "68552045": {
+    "orig_lat": 52.42954,
+    "orig_lon": 17.12501,
+    "new_lat": 52.430669,
+    "new_lon": 17.126,
+    "dist_m": 142,
+    "query": "ul. Sezamowej, Gortatowo, Polska",
+    "formatted": "Sezamowa, Gortatowo, Polska",
+    "addr": {
+      "street": "ul. Sezamowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Gortatowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gortatowo",
+    "geo_district": "Gortatowo-Huby",
+    "corrected": false
+  },
+  "68552806": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67124716": {
+    "orig_lat": 52.47544,
+    "orig_lon": 16.66278,
+    "new_lat": 52.47533,
+    "new_lon": 16.660072,
+    "dist_m": 184,
+    "query": "ul. Rzymska 3B, Tarnowo Podgórne, Polska",
+    "formatted": "Rzymska 3, 62-080 Tarnowo Podgórne, Polska",
+    "addr": {
+      "street": "ul. Rzymska",
+      "number": "3B",
+      "osiedle": "Osiedle Nowe Tarnowo",
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": "Osiedle Zielony Gród",
+    "corrected": false
+  },
+  "68550230": {
+    "orig_lat": 52.4151,
+    "orig_lon": 16.89929,
+    "new_lat": 52.415905,
+    "new_lon": 16.890163,
+    "dist_m": 625,
+    "query": "ul. Jana Henryka Dąbrowskiego, Poznań, Polska",
+    "formatted": "Hop & go, Jana Henryka Dąbrowskiego, 60-575 Poznań, Polska",
+    "addr": {
+      "street": "ul. Jana Henryka Dąbrowskiego",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Ogrody",
+    "corrected": true
+  },
+  "68550002": {
+    "orig_lat": 52.43655,
+    "orig_lon": 16.84479,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 4696,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68550611": {
+    "orig_lat": 52.42909,
+    "orig_lon": 16.82703,
+    "new_lat": 52.42745,
+    "new_lon": 16.78375,
+    "dist_m": 2940,
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68549989": {
+    "orig_lat": 52.43655,
+    "orig_lon": 16.84479,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 4696,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68551375": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68550544": {
+    "orig_lat": 52.47494,
+    "orig_lon": 16.8096,
+    "new_lat": 52.476143,
+    "new_lon": 16.812149,
+    "dist_m": 218,
+    "query": "ul. Golęczewska, Poznań, Polska",
+    "formatted": "Golęczewska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Golęczewska",
+      "number": null,
+      "osiedle": "Osiedle Przy Jeziorach",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Kiekrz",
+    "corrected": true
+  },
+  "68552694": {
+    "skipped": "outside_bbox",
+    "query": "ul. Radosnej, Dachowy, Polska",
+    "formatted": "Dachowa, gmina Sochaczew, powiat sochaczewski, województwo mazowieckie, Polska",
+    "addr": {
+      "street": "ul. Radosnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowy",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.212116,
+    "new_lon": 20.183918
+  },
+  "68551696": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
