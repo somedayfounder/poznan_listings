@@ -51329,5 +51329,1674 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "67930047": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Łódź",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66629195": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "pod miastem",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "66447555": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68512094": {
+    "orig_lat": 52.24811,
+    "orig_lon": 17.08378,
+    "new_lat": 52.22458,
+    "new_lon": 17.03715,
+    "dist_m": 4114,
+    "query": "Nowe Młyny Radzewa, Konarskie, Polska",
+    "formatted": "Konarskie, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Nowe Młyny Radzewa",
+      "city": "Konarskie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Konarskie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68478914": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68545260": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": "PARKOWA",
+      "number": "6B",
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68451474": {
+    "orig_lat": 52.54355,
+    "orig_lon": 16.9482,
+    "new_lat": 52.543653,
+    "new_lon": 16.948459,
+    "dist_m": 21,
+    "query": "PARKOWA 6B, Poznań, Polska",
+    "formatted": "6B, Parkowa, Biedrusko, gmina Suchy Las, powiat poznański, województwo wielkopolskie, 62-003, Polska",
+    "addr": {
+      "street": "PARKOWA",
+      "number": "6B",
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Biedrusko",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68348618": {
+    "skipped": "geocode_failed",
+    "query": "Nowe Młyny Radzewa – Domy pod Lasem, Radzewa, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Nowe Młyny Radzewa – Domy pod Lasem",
+      "city": "Radzewa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68263878": {
+    "orig_lat": 52.36329,
+    "orig_lon": 17.13183,
+    "new_lat": 52.3616,
+    "new_lon": 17.132301,
+    "dist_m": 191,
+    "query": "ul. Miłej, Gowarzewo, Polska",
+    "formatted": "Gowarzewo, gmina Kleszczewo, powiat poznański, województwo wielkopolskie, 63-004, Polska",
+    "addr": {
+      "street": "ul. Miłej",
+      "number": null,
+      "osiedle": "Bliskie Gowarzewo",
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gowarzewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67939723": {
+    "orig_lat": 52.3915,
+    "orig_lon": 17.11746,
+    "new_lat": 52.390712,
+    "new_lon": 17.117511,
+    "dist_m": 88,
+    "query": "ul. Frezjowa, Rabowice, Polska",
+    "formatted": "Frezjowa, Rabowice, Polska",
+    "addr": {
+      "street": "ul. Frezjowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67971318": {
+    "orig_lat": 52.39111,
+    "orig_lon": 17.11728,
+    "new_lat": 52.390712,
+    "new_lon": 17.117511,
+    "dist_m": 47,
+    "query": "ul. Frezjowa, Rabowice, Polska",
+    "formatted": "Frezjowa, Rabowice, Polska",
+    "addr": {
+      "street": "ul. Frezjowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68348642": {
+    "skipped": "geocode_failed",
+    "query": "Nowe Młyny Radzewa – Domy pod Lasem, Radzewa, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Nowe Młyny Radzewa – Domy pod Lasem",
+      "city": "Radzewa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68221087": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.24811,
+    "orig_lon": 17.08378,
+    "new_lat": 52.20763,
+    "new_lon": 17.02362,
+    "dist_m": 6087,
+    "orig_dist_to_center_m": 20519,
+    "query": "gmina Kórnik, Radzewo, Polska",
+    "formatted": "Radzewo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Radzewo",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    }
+  },
+  "68244610": {
+    "orig_lat": 52.20874,
+    "orig_lon": 17.02413,
+    "new_lat": 52.20763,
+    "new_lon": 17.02362,
+    "dist_m": 128,
+    "query": "gmina Kórnik, Radzewo, Polska",
+    "formatted": "Radzewo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Radzewo",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Radzewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67961172": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.24811,
+    "orig_lon": 17.08378,
+    "new_lat": 52.20763,
+    "new_lon": 17.02362,
+    "dist_m": 6087,
+    "orig_dist_to_center_m": 20519,
+    "query": "gmina Kórnik, Radzewo, Polska",
+    "formatted": "Radzewo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Radzewo",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    }
+  },
+  "67961138": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Radzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68484836": {
+    "orig_lat": 52.30962,
+    "orig_lon": 17.07944,
+    "new_lat": 52.31048,
+    "new_lon": 17.07524,
+    "dist_m": 301,
+    "query": "Makowe Pola, Robakowo, Polska",
+    "formatted": "Robakowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Makowe Pola",
+      "city": "Robakowo",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68485120": {
+    "orig_lat": 52.30962,
+    "orig_lon": 17.07944,
+    "new_lat": 52.31048,
+    "new_lon": 17.07524,
+    "dist_m": 301,
+    "query": "Makowe Pola, Robakowo, Polska",
+    "formatted": "Robakowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Makowe Pola",
+      "city": "Robakowo",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68476825": {
+    "orig_lat": 52.30962,
+    "orig_lon": 17.07944,
+    "new_lat": 52.31048,
+    "new_lon": 17.07524,
+    "dist_m": 301,
+    "query": "Makowe Pola, Robakowo, Polska",
+    "formatted": "Robakowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Makowe Pola",
+      "city": "Robakowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68476729": {
+    "orig_lat": 52.30962,
+    "orig_lon": 17.07944,
+    "new_lat": 52.300385,
+    "new_lon": 17.062529,
+    "dist_m": 1542,
+    "query": "Osiedle Makowe Pola, Robakowo, Polska",
+    "formatted": "Robakowo - Osiedle, Robakowo, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Makowe Pola",
+      "city": "Robakowo",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68232037": {
+    "orig_lat": 52.61476,
+    "orig_lon": 17.09083,
+    "new_lat": 52.61499,
+    "new_lon": 17.0905,
+    "dist_m": 34,
+    "query": "EKO-Łopuchowo, Łopuchowo, Polska",
+    "formatted": "Łopuchowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "EKO-Łopuchowo",
+      "city": "Łopuchowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łopuchowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "47932016": {
+    "orig_lat": 52.40255,
+    "orig_lon": 16.68012,
+    "new_lat": 52.402899,
+    "new_lon": 16.6793,
+    "dist_m": 68,
+    "query": "ul. Pokrzywnicka, Sierosław, Polska",
+    "formatted": "Pokrzywnicka, Sierosław, Polska",
+    "addr": {
+      "street": "ul. Pokrzywnicka",
+      "number": null,
+      "osiedle": null,
+      "city": "Sierosław",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sierosław",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68525340": {
+    "orig_lat": 52.29021,
+    "orig_lon": 16.97017,
+    "new_lat": 52.287882,
+    "new_lon": 16.969798,
+    "dist_m": 260,
+    "query": "Dożynkowa, Kamionki, Polska",
+    "formatted": "Dożynkowa, Kamionki, gmina Kórnik, powiat poznański, województwo wielkopolskie, 61-327, Polska",
+    "addr": {
+      "street": "Dożynkowa",
+      "number": null,
+      "osiedle": "Osiedle na Wzgórzu Kamionki",
+      "city": "Kamionki",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Kamionki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68307988": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Sapowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "53862336": {
+    "orig_lat": 52.22435,
+    "orig_lon": 17.08657,
+    "new_lat": 52.225784,
+    "new_lon": 17.090387,
+    "dist_m": 305,
+    "query": "ul. Krauthofera, Kórnik, Polska",
+    "formatted": "Jakuba Krauthofera, Kórnik, Polska",
+    "addr": {
+      "street": "ul. Krauthofera",
+      "number": null,
+      "osiedle": null,
+      "city": "Kórnik",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Kórnik",
+    "geo_district": "Bnin",
+    "corrected": true
+  },
+  "63824262": {
+    "orig_lat": 52.40277,
+    "orig_lon": 16.67953,
+    "new_lat": 52.402899,
+    "new_lon": 16.6793,
+    "dist_m": 21,
+    "query": "ul. Pokrzywnicka, Sierosław, Polska",
+    "formatted": "Pokrzywnicka, Sierosław, Polska",
+    "addr": {
+      "street": "ul. Pokrzywnicka",
+      "number": null,
+      "osiedle": null,
+      "city": "Sierosław",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sierosław",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68061337": {
+    "orig_lat": 52.61476,
+    "orig_lon": 17.09083,
+    "new_lat": 52.61499,
+    "new_lon": 17.0905,
+    "dist_m": 34,
+    "query": "EKO-Łopuchowo, Łopuchowo, Polska",
+    "formatted": "Łopuchowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "EKO-Łopuchowo",
+      "city": "Łopuchowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łopuchowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68534021": {
+    "skipped": "geocode_failed",
+    "query": "Kórnik, Dachowo, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowo",
+      "district": "Kórnik",
+      "confidence": "high"
+    }
+  },
+  "66941532": {
+    "skipped": "outside_bbox",
+    "query": "ul. Mazowieckiej, Radzewo, Polska",
+    "formatted": "Radzewo, gmina Tychowo, powiat białogardzki, województwo zachodniopomorskie, 78-221, Polska",
+    "addr": {
+      "street": "ul. Mazowieckiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Radzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.91716,
+    "new_lon": 16.17008
+  },
+  "68067566": {
+    "orig_lat": 52.51359,
+    "orig_lon": 16.74704,
+    "new_lat": 52.512348,
+    "new_lon": 16.741802,
+    "dist_m": 380,
+    "query": "ul. Szamotulska, Rokietnica, Polska",
+    "formatted": "Rokietnica/ROS, Szamotulska, Rokietnica, Polska",
+    "addr": {
+      "street": "ul. Szamotulska",
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": true
+  },
+  "61431562": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Bolechówko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "61431566": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Bolechówko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68533684": {
+    "orig_lat": 52.3009,
+    "orig_lon": 17.06736,
+    "new_lat": 52.30343,
+    "new_lon": 17.098,
+    "dist_m": 2102,
+    "query": "gmina Kórnik, Dachowa, Polska",
+    "formatted": "Dachowa, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68500301": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68164397": {
+    "skipped": "geocode_failed",
+    "query": "Dachowana, Polska",
+    "addr": {
+      "street": "Tęczowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowana",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68533685": {
+    "orig_lat": 52.3009,
+    "orig_lon": 17.06736,
+    "new_lat": 52.30343,
+    "new_lon": 17.098,
+    "dist_m": 2102,
+    "query": "gmina Kórnik, Dachowa, Polska",
+    "formatted": "Dachowa, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68532984": {
+    "skipped": "geocode_failed",
+    "query": "Dachowana, Polska",
+    "addr": {
+      "street": "Tęczowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowana",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68500297": {
+    "orig_lat": 52.3009,
+    "orig_lon": 17.06736,
+    "new_lat": 52.30343,
+    "new_lon": 17.098,
+    "dist_m": 2102,
+    "query": "gmina Kórnik, Dachowa, Polska",
+    "formatted": "Dachowa, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65248035": {
+    "orig_lat": 52.44724,
+    "orig_lon": 16.68974,
+    "new_lat": 52.447578,
+    "new_lon": 16.689863,
+    "dist_m": 38,
+    "query": "ul. Stanisława Bobkowskiego 15/2, Lusowo, Polska",
+    "formatted": "Stanisława Bobkowskiego, 15, Lusowo, Polska",
+    "addr": {
+      "street": "ul. Stanisława Bobkowskiego",
+      "number": "15/2",
+      "osiedle": null,
+      "city": "Lusowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusowo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68441151": {
+    "skipped": "geocode_failed",
+    "query": "Dachowana, Polska",
+    "addr": {
+      "street": "Tęczowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowana",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67283154": {
+    "orig_lat": 52.4076,
+    "orig_lon": 17.07351,
+    "new_lat": 52.38891,
+    "new_lon": 17.12116,
+    "dist_m": 3843,
+    "query": "ul. Dworcowa 4b/1, Rabowice, Polska",
+    "formatted": "Rabowice, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Dworcowa",
+      "number": "4b/1",
+      "osiedle": "os. Barwne",
+      "city": "Rabowice",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67382787": {
+    "orig_lat": 52.38786,
+    "orig_lon": 17.11767,
+    "new_lat": 52.38891,
+    "new_lon": 17.12116,
+    "dist_m": 264,
+    "query": "ul. Dworcowa 4b/1, Rabowice, Polska",
+    "formatted": "Rabowice, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Dworcowa",
+      "number": "4b/1",
+      "osiedle": "os. Barwne",
+      "city": "Rabowice",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67382107": {
+    "orig_lat": 52.4076,
+    "orig_lon": 17.07351,
+    "new_lat": 52.38891,
+    "new_lon": 17.12116,
+    "dist_m": 3843,
+    "query": "ul. Dworcowa 4b/1, Rabowice, Polska",
+    "formatted": "Rabowice, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Dworcowa",
+      "number": "4b/1",
+      "osiedle": "os. Barwne",
+      "city": "Rabowice",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68538914": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68537036": {
+    "orig_lat": 52.2949,
+    "orig_lon": 17.00743,
+    "new_lat": 52.296071,
+    "new_lon": 17.007659,
+    "dist_m": 131,
+    "query": "Choinkowa, Szczytniki, Polska",
+    "formatted": "Choinkowa, Szczytniki, gmina Kórnik, powiat poznański, województwo wielkopolskie, 62-023, Polska",
+    "addr": {
+      "street": "Choinkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68537197": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68537199": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68500305": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68473438": {
+    "orig_lat": 52.2949,
+    "orig_lon": 17.00743,
+    "new_lat": 52.296071,
+    "new_lon": 17.007659,
+    "dist_m": 131,
+    "query": "Choinkowa, Szczytniki, Polska",
+    "formatted": "Choinkowa, Szczytniki, gmina Kórnik, powiat poznański, województwo wielkopolskie, 62-023, Polska",
+    "addr": {
+      "street": "Choinkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68474757": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68464226": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68155062": {
+    "orig_lat": 52.36452,
+    "orig_lon": 17.12451,
+    "new_lat": 52.3616,
+    "new_lon": 17.132301,
+    "dist_m": 621,
+    "query": "ul. Miłej, Gowarzewo, Polska",
+    "formatted": "Gowarzewo, gmina Kleszczewo, powiat poznański, województwo wielkopolskie, 63-004, Polska",
+    "addr": {
+      "street": "ul. Miłej",
+      "number": null,
+      "osiedle": "Bliskie Gowarzewo",
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gowarzewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68500109": {
+    "skipped": "outside_bbox",
+    "query": "gmina Mosina, Żabinek, Polska",
+    "formatted": "Żabinek, woj. warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Żabinek",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "new_lat": 54.33333,
+    "new_lon": 22.03333
+  },
+  "68407168": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68468357": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65405687": {
+    "skipped": "outside_bbox",
+    "query": "ul. Magnoliowej, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Magnoliowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "68015926": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67246319": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "KROSINKO",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67649529": {
+    "orig_lat": 52.30029,
+    "orig_lon": 17.07803,
+    "new_lat": 52.30343,
+    "new_lon": 17.098,
+    "dist_m": 1402,
+    "query": "Nova Dachowa, Dachowa, Polska",
+    "formatted": "Dachowa, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Nova Dachowa",
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": true
+  },
+  "66645961": {
+    "orig_lat": 52.50897,
+    "orig_lon": 16.97666,
+    "new_lat": 52.51182,
+    "new_lon": 16.98077,
+    "dist_m": 422,
+    "query": "Tarasy nad stawem, Owińska, Polska",
+    "formatted": "Owińska, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Tarasy nad stawem",
+      "city": "Owińska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Owińska",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68466914": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67279479": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68526479": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kleszczewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "65672765": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Śródka",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68485680": {
+    "orig_lat": 52.28176,
+    "orig_lon": 16.61772,
+    "new_lat": 52.29473,
+    "new_lon": 16.629835,
+    "dist_m": 1661,
+    "query": "ul. Truskawkowa, Sapowice, Polska",
+    "formatted": "Truskawkowa, Sapowice, Polska",
+    "addr": {
+      "street": "ul. Truskawkowa",
+      "number": null,
+      "osiedle": "Osiedle nad Jeziorem",
+      "city": "Sapowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sapowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68485171": {
+    "orig_lat": 52.30962,
+    "orig_lon": 17.07944,
+    "new_lat": 52.31048,
+    "new_lon": 17.07524,
+    "dist_m": 301,
+    "query": "Makowe Pola, Robakowo, Polska",
+    "formatted": "Robakowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Makowe Pola",
+      "city": "Robakowo",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68484257": {
+    "orig_lat": 52.30962,
+    "orig_lon": 17.07944,
+    "new_lat": 52.31048,
+    "new_lon": 17.07524,
+    "dist_m": 301,
+    "query": "Makowe Pola, Robakowo, Polska",
+    "formatted": "Robakowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Makowe Pola",
+      "city": "Robakowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68476900": {
+    "orig_lat": 52.30962,
+    "orig_lon": 17.07944,
+    "new_lat": 52.31048,
+    "new_lon": 17.07524,
+    "dist_m": 301,
+    "query": "Makowe Pola, Robakowo, Polska",
+    "formatted": "Robakowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Makowe Pola",
+      "city": "Robakowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68476681": {
+    "orig_lat": 52.30962,
+    "orig_lon": 17.07944,
+    "new_lat": 52.31048,
+    "new_lon": 17.07524,
+    "dist_m": 301,
+    "query": "Makowe Pola, Robakowo, Polska",
+    "formatted": "Robakowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Makowe Pola",
+      "city": "Robakowo",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Robakowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68125321": {
+    "orig_lat": 52.35657,
+    "orig_lon": 16.57496,
+    "new_lat": 52.35579,
+    "new_lon": 16.57717,
+    "dist_m": 173,
+    "query": "Krętej, Otusz, Polska",
+    "formatted": "Otusz, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "Krętej",
+      "number": null,
+      "osiedle": null,
+      "city": "Otusz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Otusz",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68153752": {
+    "skipped": "outside_bbox",
+    "query": "Kostrzyn, Wróblewo, Polska",
+    "formatted": "Wróblewo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Wróblewo",
+      "district": "Kostrzyn",
+      "confidence": "high"
+    },
+    "new_lat": 52.66362,
+    "new_lon": 16.30809
+  },
+  "68519054": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68555408": {
+    "orig_lat": 52.22677,
+    "orig_lon": 17.0818,
+    "new_lat": 52.249275,
+    "new_lon": 17.090124,
+    "dist_m": 2566,
+    "query": "ul. Czołowskiej, Kórnik, Polska",
+    "formatted": "Kórnik, gmina Kórnik, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Czołowskiej",
+      "number": null,
+      "osiedle": "Osiedle Pszeniczne",
+      "city": "Kórnik",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Kórnik",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65739080": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "59422849": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "48105272": {
+    "orig_lat": 52.38651,
+    "orig_lon": 17.11615,
+    "new_lat": 52.387434,
+    "new_lon": 17.101124,
+    "dist_m": 1025,
+    "query": "ul. Olszynowa, Rabowice, Polska",
+    "formatted": "Olszynowa, Rabowice, Polska",
+    "addr": {
+      "street": "ul. Olszynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "66872589": {
+    "orig_lat": 52.23165,
+    "orig_lon": 16.84114,
+    "new_lat": 52.232111,
+    "new_lon": 16.839521,
+    "dist_m": 122,
+    "query": "ul. Cisowej, Mosina, Polska",
+    "formatted": "Mosina Cisowa, Leszczyńska, Mosina, Polska",
+    "addr": {
+      "street": "ul. Cisowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Mosina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Mosina",
+    "geo_district": "Budzyń",
+    "corrected": false
+  },
+  "68551119": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Bylin",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68551102": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Bylin",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68551075": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Bylin",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68550942": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Bylin",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67893170": {
+    "skipped": "outside_bbox",
+    "query": "ul. św. Jana 2, Gwiazdowo, Polska",
+    "formatted": "Gwiazdowo, Karwie, gmina Mrągowo, powiat mrągowski, województwo warmińsko-mazurskie, 11-700, Polska",
+    "addr": {
+      "street": "ul. św. Jana",
+      "number": "2",
+      "osiedle": "Forall Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.8243,
+    "new_lon": 21.286328
+  },
+  "64505581": {
+    "skipped": "outside_bbox",
+    "query": "ul. Kaczyńskiej/Lawendowej, Pobiedziska, Polska",
+    "formatted": "Pobiedziska, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Kaczyńskiej/Lawendowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Pobiedziska",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.47753,
+    "new_lon": 17.28767
+  },
+  "68500108": {
+    "skipped": "outside_bbox",
+    "query": "Czempiń, Sierniki, Polska",
+    "formatted": "Sierniki, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Sierniki",
+      "district": "Czempiń",
+      "confidence": "high"
+    },
+    "new_lat": 52.7413,
+    "new_lon": 17.0775
+  },
+  "67826989": {
+    "orig_lat": 52.43008,
+    "orig_lon": 17.0735,
+    "new_lat": 52.427159,
+    "new_lon": 17.068801,
+    "dist_m": 455,
+    "query": "Ostoja Gruszczyn, Gruszczyn, Polska",
+    "formatted": "Ogrody Działkowe w Gruszczynie, Gruszczyn, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Ostoja Gruszczyn",
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gruszczyn",
+    "geo_district": null,
+    "corrected": true
+  },
+  "56883828": {
+    "orig_lat": 52.5712,
+    "orig_lon": 17.02803,
+    "new_lat": 52.57463,
+    "new_lon": 17.00933,
+    "dist_m": 1320,
+    "query": "ul. Gnieźnieńskiej 47, Murowana Goślina, Polska",
+    "formatted": "Murowana Goślina, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Gnieźnieńskiej",
+      "number": "47",
+      "osiedle": null,
+      "city": "Murowana Goślina",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Murowana Goślina",
+    "geo_district": null,
+    "corrected": true
+  },
+  "56883976": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Bolechówko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68393206": {
+    "skipped": "outside_bbox",
+    "query": "Czempiń, Sierniki, Polska",
+    "formatted": "Sierniki, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Sierniki",
+      "district": "Czempiń",
+      "confidence": "high"
+    },
+    "new_lat": 52.7413,
+    "new_lon": 17.0775
+  },
+  "67179099": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "48225334": {
+    "orig_lat": 52.49724,
+    "orig_lon": 16.73331,
+    "new_lat": 52.509816,
+    "new_lon": 16.740122,
+    "dist_m": 1472,
+    "query": "ul. Szkolna, Rokietnica, Polska",
+    "formatted": "Rokietnica/Szkoła, Szkolna, Rokietnica, Polska",
+    "addr": {
+      "street": "ul. Szkolna",
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": true
+  },
+  "60506000": {
+    "orig_lat": 52.4976,
+    "orig_lon": 16.73348,
+    "new_lat": 52.509816,
+    "new_lon": 16.740122,
+    "dist_m": 1431,
+    "query": "ul. Szkolna, Rokietnica, Polska",
+    "formatted": "Rokietnica/Szkoła, Szkolna, Rokietnica, Polska",
+    "addr": {
+      "street": "ul. Szkolna",
+      "number": null,
+      "osiedle": null,
+      "city": "Rokietnica",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rokietnica",
+    "geo_district": null,
+    "corrected": true
+  },
+  "61335359": {
+    "orig_lat": 52.38691,
+    "orig_lon": 17.11409,
+    "new_lat": 52.387434,
+    "new_lon": 17.101124,
+    "dist_m": 882,
+    "query": "ul. Olszynowa, Rabowice, Polska",
+    "formatted": "Olszynowa, Rabowice, Polska",
+    "addr": {
+      "street": "ul. Olszynowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68221197": {
+    "skipped": "geocode_failed",
+    "query": "ul. Kórnickiej, Kostrzyn Wielkopolski, Polska",
+    "addr": {
+      "street": "ul. Kórnickiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Kostrzyn Wielkopolski",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68363119": {
+    "skipped": "outside_bbox",
+    "query": "Folwarczna, Wielka Wieś, Polska",
+    "formatted": "Folwarczna, Wielka Wieś, gmina Buk, powiat poznański, województwo wielkopolskie, 64-552, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Folwarczna",
+      "city": "Wielka Wieś",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.371285,
+    "new_lon": 16.491877
+  },
+  "68556476": {
+    "orig_lat": 52.33493,
+    "orig_lon": 16.84252,
+    "new_lat": 52.342885,
+    "new_lon": 16.849438,
+    "dist_m": 1002,
+    "query": "ul. Nowiny, Luboń, Polska",
+    "formatted": "Nowiny, Luboń, Polska",
+    "addr": {
+      "street": "ul. Nowiny",
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Lasek",
+    "corrected": true
+  },
+  "68556939": {
+    "orig_lat": 52.46376,
+    "orig_lon": 16.90032,
+    "new_lat": 52.489231,
+    "new_lon": 16.909592,
+    "dist_m": 2901,
+    "query": "Osiedle Mateckiego, Morasko, Polska",
+    "formatted": "Morasko, Morasko-Radojewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Mateckiego",
+      "city": "Morasko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Morasko",
+    "corrected": true
+  },
+  "68554983": {
+    "orig_lat": 52.4922,
+    "orig_lon": 16.73335,
+    "new_lat": 52.490808,
+    "new_lon": 16.73516,
+    "dist_m": 197,
+    "query": "ul. Teatralnej, Napachanie, Polska",
+    "formatted": "Teatralna, Napachanie, Polska",
+    "addr": {
+      "street": "ul. Teatralnej",
+      "number": null,
+      "osiedle": "Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68554201": {
+    "orig_lat": 52.41708,
+    "orig_lon": 16.89549,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 637,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68556028": {
+    "orig_lat": 52.43845,
+    "orig_lon": 16.94816,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 775,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68516351": {
+    "orig_lat": 52.38372,
+    "orig_lon": 16.83917,
+    "new_lat": 52.383936,
+    "new_lon": 16.840557,
+    "dist_m": 97,
+    "query": "ul. Wieruszowska 2, Junikowo, Polska",
+    "formatted": "Wieruszowska, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "2",
+      "osiedle": "Inwestycja Wieruszowska 2",
+      "city": "Junikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "68555130": {
+    "orig_lat": 52.4076,
+    "orig_lon": 17.07351,
+    "new_lat": 52.436549,
+    "new_lon": 17.068558,
+    "dist_m": 3236,
+    "query": "ul. Okrężna 28, Gruszczyn, Polska",
+    "formatted": "Okrężna, 62-006 Gruszczyn, Polska",
+    "addr": {
+      "street": "ul. Okrężna",
+      "number": "28",
+      "osiedle": "Osiedle przy Okrężnej",
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gruszczyn",
+    "geo_district": null,
+    "corrected": true
+  },
+  "9000062247": {
+    "orig_lat": 52.44365,
+    "orig_lon": 16.8932,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 115,
+    "query": "ul. Jasielska 8C, Poznań, Polska",
+    "formatted": "Jasielska, 8c, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": "8C",
+      "osiedle": "Jasielska 8C",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "68554920": {
+    "orig_lat": 52.43624,
+    "orig_lon": 17.06882,
+    "new_lat": 52.436549,
+    "new_lon": 17.068558,
+    "dist_m": 39,
+    "query": "ul. Okrężna 28, Gruszczyn, Polska",
+    "formatted": "Okrężna, 62-006 Gruszczyn, Polska",
+    "addr": {
+      "street": "ul. Okrężna",
+      "number": "28",
+      "osiedle": "Osiedle przy Okrężnej",
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gruszczyn",
+    "geo_district": null,
+    "corrected": false
   }
 }
