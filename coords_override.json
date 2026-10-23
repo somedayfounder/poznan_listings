@@ -52998,5 +52998,388 @@
     "geo_city": "Gruszczyn",
     "geo_district": null,
     "corrected": false
+  },
+  "68097528": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "65651021": {
+    "skipped": "geocode_failed",
+    "query": "Nowe Młyny Radzewa, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Nowe Młyny Radzewa",
+      "city": "Nowe Młyny Radzewa",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67964994": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "67425706": {
+    "skipped": "outside_bbox",
+    "query": "Kleszczewo, Poklatki, Polska",
+    "formatted": "Poklatki, gmina Kleszczewo, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poklatki",
+      "district": "Kleszczewo",
+      "confidence": "high"
+    },
+    "new_lat": 52.32875,
+    "new_lon": 17.202935
+  },
+  "67370417": {
+    "orig_lat": 52.61477,
+    "orig_lon": 17.08655,
+    "new_lat": 52.61499,
+    "new_lon": 17.0905,
+    "dist_m": 268,
+    "query": "Murowana Goślina, Łopuchowo, Polska",
+    "formatted": "Łopuchowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Łopuchowo",
+      "district": "Murowana Goślina",
+      "confidence": "high"
+    },
+    "geo_city": "Łopuchowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68041146": {
+    "orig_lat": 52.39083,
+    "orig_lon": 17.11859,
+    "new_lat": 52.390712,
+    "new_lon": 17.117511,
+    "dist_m": 74,
+    "query": "ul. Frezjowa, Rabowice, Polska",
+    "formatted": "Frezjowa, Rabowice, Polska",
+    "addr": {
+      "street": "ul. Frezjowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67965310": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Konarskie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66559466": {
+    "orig_lat": 52.24811,
+    "orig_lon": 17.08378,
+    "new_lat": 52.22458,
+    "new_lon": 17.03715,
+    "dist_m": 4114,
+    "query": "Kórnik, Konarskie, Polska",
+    "formatted": "Konarskie, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Konarskie",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Konarskie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68163972": {
+    "skipped": "geocode_failed",
+    "query": "Dachowana, Polska",
+    "addr": {
+      "street": "Tęczowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowana",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67973012": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kalwy",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68144204": {
+    "orig_lat": 52.2949,
+    "orig_lon": 17.00743,
+    "new_lat": 52.296071,
+    "new_lon": 17.007659,
+    "dist_m": 131,
+    "query": "Choinkowa, Szczytniki, Polska",
+    "formatted": "Choinkowa, Szczytniki, gmina Kórnik, powiat poznański, województwo wielkopolskie, 62-023, Polska",
+    "addr": {
+      "street": "Choinkowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67380186": {
+    "skipped": "outside_bbox",
+    "query": "Gwiazdowo, Gwiazdowo, Polska",
+    "formatted": "Gwiazdowo, dojazd pożarowy 6, Gwiazdówko, Gwiazdowo, gmina Sławno, powiat sławieński, województwo zachodniopomorskie, 76-124, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Gwiazdowo",
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 54.307218,
+    "new_lon": 16.751317
+  },
+  "67677985": {
+    "skipped": "outside_bbox",
+    "query": "Kostrzyn Wielkopolski, Gwiazdowo, Polska",
+    "formatted": "Gwiazdowo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gwiazdowo",
+      "district": "Kostrzyn Wielkopolski",
+      "confidence": "high"
+    },
+    "new_lat": 52.41643,
+    "new_lon": 17.2094
+  },
+  "68518632": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67039163": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Mosina",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67956801": {
+    "skipped": "outside_bbox",
+    "query": "ul. Kanałowej, Pobiedziska, Polska",
+    "formatted": "Pobiedziska, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Kanałowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Pobiedziska",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.477339,
+    "new_lon": 17.287035
+  },
+  "67078754": {
+    "orig_lat": 52.50891,
+    "orig_lon": 16.97872,
+    "new_lat": 52.51182,
+    "new_lon": 16.98077,
+    "dist_m": 352,
+    "query": "Tarasy nad Stawem, Owińska, Polska",
+    "formatted": "Owińska, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Tarasy nad Stawem",
+      "city": "Owińska",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Owińska",
+    "geo_district": null,
+    "corrected": true
+  },
+  "65673064": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Śródka",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67942966": {
+    "orig_lat": 52.35657,
+    "orig_lon": 16.57496,
+    "new_lat": 52.366963,
+    "new_lon": 16.567628,
+    "dist_m": 1258,
+    "query": "Kręta, Otusz, Polska",
+    "formatted": "Kręta, Huby, Otusz, gmina Buk, powiat poznański, województwo wielkopolskie, 64-320, Polska",
+    "addr": {
+      "street": "Kręta",
+      "number": null,
+      "osiedle": null,
+      "city": "Otusz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Otusz",
+    "geo_district": null,
+    "corrected": true
+  },
+  "56885088": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Bolechówko",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68065633": {
+    "orig_lat": 52.41244,
+    "orig_lon": 17.11721,
+    "new_lat": 52.413242,
+    "new_lon": 17.116046,
+    "dist_m": 119,
+    "query": "ul. Szkolna, Łowęcin, Polska",
+    "formatted": "Łowęcin Szkolna, Łowiecka, Łowęcin, Polska",
+    "addr": {
+      "street": "ul. Szkolna",
+      "number": null,
+      "osiedle": null,
+      "city": "Łowęcin",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Łowęcin",
+    "geo_district": null,
+    "corrected": false
+  },
+  "67352019": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Rabowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "52976631": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68328342": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "9000062248": {
+    "orig_lat": 52.39595,
+    "orig_lon": 16.92411,
+    "new_lat": 52.389793,
+    "new_lon": 16.924329,
+    "dist_m": 685,
+    "query": "Dolna Wilda, Poznań, Polska",
+    "formatted": "Dolna Wilda, Wilda, Poznań, województwo wielkopolskie, 61-501, Polska",
+    "addr": {
+      "street": "Dolna Wilda",
+      "number": null,
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
   }
 }
