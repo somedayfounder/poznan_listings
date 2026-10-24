@@ -53381,5 +53381,366 @@
     "geo_city": "Poznań",
     "geo_district": "Wilda",
     "corrected": true
+  },
+  "68558735": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.24811,
+    "orig_lon": 17.08378,
+    "new_lat": 52.20763,
+    "new_lon": 17.02362,
+    "dist_m": 6087,
+    "orig_dist_to_center_m": 20519,
+    "query": "Kórnik, Radzewo, Polska",
+    "formatted": "Radzewo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Radzewo",
+      "district": "Kórnik",
+      "confidence": "high"
+    }
+  },
+  "68558832": {
+    "orig_lat": 52.18146,
+    "orig_lon": 17.05355,
+    "new_lat": 52.20763,
+    "new_lon": 17.02362,
+    "dist_m": 3554,
+    "query": "Kórnik, Radzewo, Polska",
+    "formatted": "Radzewo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Radzewo",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Radzewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "66668798": {
+    "skipped": "outside_bbox",
+    "query": "Osiedle Czereśniowa, Trzek, Polska",
+    "formatted": "Czereśniowa, Trzek, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Czereśniowa",
+      "city": "Trzek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.357734,
+    "new_lon": 17.161558
+  },
+  "67748897": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gwiazdowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68560286": {
+    "orig_lat": 52.3081,
+    "orig_lon": 17.01802,
+    "new_lat": 52.30444,
+    "new_lon": 17.01027,
+    "dist_m": 666,
+    "query": "prestige and functional estate in Sypniewo Szczytniki, Sypniewo Szczytniki, Polska",
+    "formatted": "Szczytniki, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "prestige and functional estate in Sypniewo Szczytniki",
+      "city": "Sypniewo Szczytniki",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": true
+  },
+  "67280145": {
+    "skipped": "outside_bbox",
+    "query": "Osiedle Czereśniowa, Trzek, Polska",
+    "formatted": "Czereśniowa, Trzek, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Czereśniowa",
+      "city": "Trzek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.357734,
+    "new_lon": 17.161558
+  },
+  "63033691": {
+    "orig_lat": 52.38786,
+    "orig_lon": 17.11767,
+    "new_lat": 52.378827,
+    "new_lon": 17.115224,
+    "dist_m": 1018,
+    "query": "Zielone Rabowice, Rabowice, Polska",
+    "formatted": "Składowisko Odpadów Komunalnych w Rabowicach, Rabowice, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Zielone Rabowice",
+      "city": "Rabowice",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68558674": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.24811,
+    "orig_lon": 17.08378,
+    "new_lat": 52.20763,
+    "new_lon": 17.02362,
+    "dist_m": 6087,
+    "orig_dist_to_center_m": 20519,
+    "query": "Kórnik, Radzewo, Polska",
+    "formatted": "Radzewo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Radzewo",
+      "district": "Kórnik",
+      "confidence": "high"
+    }
+  },
+  "68551876": {
+    "orig_lat": 52.48909,
+    "orig_lon": 16.75746,
+    "new_lat": 52.47808,
+    "new_lon": 16.75278,
+    "dist_m": 1265,
+    "query": "Ul. Polna, Rogierówko, Polska",
+    "formatted": "Rogierówko, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "Ul. Polna",
+      "number": null,
+      "osiedle": "Polana Rogierówko",
+      "city": "Rogierówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rogierówko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68559289": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68553472": {
+    "orig_lat": 52.48917,
+    "orig_lon": 16.75727,
+    "new_lat": 52.47808,
+    "new_lon": 16.75278,
+    "dist_m": 1270,
+    "query": "Ul. Polna, Rogierówko, Polska",
+    "formatted": "Rogierówko, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "Ul. Polna",
+      "number": null,
+      "osiedle": "Polana Rogierówko",
+      "city": "Rogierówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Rogierówko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68558725": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68561083": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "9000062251": {
+    "orig_lat": 52.38372,
+    "orig_lon": 16.83917,
+    "new_lat": 52.383936,
+    "new_lon": 16.840557,
+    "dist_m": 97,
+    "query": "ul. Wieruszowska 2, Junikowo, Polska",
+    "formatted": "Wieruszowska, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "2",
+      "osiedle": "Inwestycja Wieruszowska 2",
+      "city": "Junikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "68559474": {
+    "skipped": "outside_bbox",
+    "query": "Osiedle o wyższym standardzie, Poznań, Polska",
+    "formatted": "Kardynała Stefana Wyszyńskiego, Stargard, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle o wyższym standardzie",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "new_lat": 53.339112,
+    "new_lon": 15.035117
+  },
+  "68516368": {
+    "orig_lat": 52.38372,
+    "orig_lon": 16.83917,
+    "new_lat": 52.383936,
+    "new_lon": 16.840557,
+    "dist_m": 97,
+    "query": "ul. Wieruszowska 2, Junikowo, Polska",
+    "formatted": "Wieruszowska, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "2",
+      "osiedle": "Inwestycja Wieruszowska 2",
+      "city": "Junikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "68559237": {
+    "orig_lat": 52.45293,
+    "orig_lon": 16.94769,
+    "new_lat": 52.453023,
+    "new_lon": 16.945772,
+    "dist_m": 130,
+    "query": "Bolka 9, Poznań, Polska",
+    "formatted": "Bolka, Osiedle Za Fortem, Naramowice, Poznań, województwo wielkopolskie, 61-611, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Bolka 9",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "68559491": {
+    "skipped": "outside_bbox",
+    "query": "Osiedle o wyższym standardzie, Poznań, Polska",
+    "formatted": "Kardynała Stefana Wyszyńskiego, Stargard, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle o wyższym standardzie",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "new_lat": 53.339112,
+    "new_lon": 15.035117
+  },
+  "68558132": {
+    "orig_lat": 52.43023,
+    "orig_lon": 16.79754,
+    "new_lat": 52.42745,
+    "new_lon": 16.78375,
+    "dist_m": 985,
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68559068": {
+    "orig_lat": 52.33788,
+    "orig_lon": 16.87578,
+    "new_lat": 52.337884,
+    "new_lon": 16.875777,
+    "dist_m": 0,
+    "query": "ul. Kalinowej 9, Luboń, Polska",
+    "formatted": "Kalinowa, 9, Luboń, Polska",
+    "addr": {
+      "street": "ul. Kalinowej",
+      "number": "9",
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Lasek",
+    "corrected": false
+  },
+  "68559174": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.46274,
+    "orig_lon": 16.94489,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 10097,
+    "orig_dist_to_center_m": 6113,
+    "query": "ul. Naramowickiej, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Naramowickiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
