@@ -53742,5 +53742,158 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "68541270": {
+    "orig_lat": 52.46202,
+    "orig_lon": 16.89833,
+    "new_lat": 52.464025,
+    "new_lon": 16.9008,
+    "dist_m": 279,
+    "query": "Ul. Teofila Mateckiego 20E, Poznań, Polska",
+    "formatted": "Teofila Mateckiego, 20E, Poznań, Polska",
+    "addr": {
+      "street": "Ul. Teofila Mateckiego",
+      "number": "20E",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo Północ",
+    "corrected": true
+  },
+  "68562317": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68562159": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "67701009": {
+    "orig_lat": 52.44365,
+    "orig_lon": 16.8932,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 115,
+    "query": "ul. Jasielska 8C, Poznań, Polska",
+    "formatted": "Jasielska, 8c, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": "8C",
+      "osiedle": "Jasielska 8C",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "68562724": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68562146": {
+    "orig_lat": 52.48604,
+    "orig_lon": 16.72483,
+    "new_lat": 52.510294,
+    "new_lon": 16.705806,
+    "dist_m": 2989,
+    "query": "ul. Południowej, Mrowino, Polska",
+    "formatted": "Południowa, Mrowino, Polska",
+    "addr": {
+      "street": "ul. Południowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Mrowino",
+      "district": "gmina Rokietnica",
+      "confidence": "high"
+    },
+    "geo_city": "Mrowino",
+    "geo_district": "Zmysłowo",
+    "corrected": true
+  },
+  "68562182": {
+    "orig_lat": 52.51359,
+    "orig_lon": 16.74704,
+    "new_lat": 52.510294,
+    "new_lon": 16.705806,
+    "dist_m": 2814,
+    "query": "ul. Południowej, Mrowino, Polska",
+    "formatted": "Południowa, Mrowino, Polska",
+    "addr": {
+      "street": "ul. Południowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Mrowino",
+      "district": "gmina Rokietnica",
+      "confidence": "high"
+    },
+    "geo_city": "Mrowino",
+    "geo_district": "Zmysłowo",
+    "corrected": true
+  },
+  "9000062254": {
+    "orig_lat": 52.40159,
+    "orig_lon": 16.85593,
+    "new_lat": 52.40169,
+    "new_lon": 16.856126,
+    "dist_m": 17,
+    "query": "ul. Ptasia 28, Poznań, Polska",
+    "formatted": "Ptasia, 28, Poznań, Polska",
+    "addr": {
+      "street": "ul. Ptasia",
+      "number": "28",
+      "osiedle": "Symfonia Ptasia",
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Ławica",
+    "corrected": false
+  },
+  "67700962": {
+    "orig_lat": 52.44365,
+    "orig_lon": 16.8932,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 115,
+    "query": "ul. Jasielska 8C, Poznań, Polska",
+    "formatted": "Jasielska, 8c, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": "8C",
+      "osiedle": "Jasielska 8C",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
   }
 }
