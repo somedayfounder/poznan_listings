@@ -53895,5 +53895,82 @@
     "geo_city": "Poznań",
     "geo_district": "Podolany",
     "corrected": false
+  },
+  "67135928": {
+    "orig_lat": 52.54238,
+    "orig_lon": 16.94762,
+    "new_lat": 52.54217,
+    "new_lon": 16.9443,
+    "dist_m": 226,
+    "query": "ul. Jesionowa 3_M28, Biedrusko, Polska",
+    "formatted": "Biedrusko, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Jesionowa",
+      "number": "3_M28",
+      "osiedle": "Biedrusko Osiedle Jesionowe",
+      "city": "Biedrusko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Biedrusko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "9000062257": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68563173": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68563184": {
+    "skipped": "geocode_failed",
+    "query": "Winogradach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogradach",
+      "confidence": "high"
+    }
+  },
+  "68563513": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68563180": {
+    "skipped": "geocode_failed",
+    "query": "Winogradach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogradach",
+      "confidence": "high"
+    }
   }
 }
