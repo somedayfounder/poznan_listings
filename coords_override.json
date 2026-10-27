@@ -53972,5 +53972,203 @@
       "district": "Winogradach",
       "confidence": "high"
     }
+  },
+  "67382175": {
+    "orig_lat": 52.4076,
+    "orig_lon": 17.07351,
+    "new_lat": 52.38891,
+    "new_lon": 17.12116,
+    "dist_m": 3843,
+    "query": "ul. Dworcowa 4b/1, Rabowice, Polska",
+    "formatted": "Rabowice, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Dworcowa",
+      "number": "4b/1",
+      "osiedle": "Osiedle Barwne",
+      "city": "Rabowice",
+      "district": "Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68551093": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Poznań Malarska, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Poznań Malarska",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "66477010": {
+    "orig_lat": 52.3852,
+    "orig_lon": 17.06398,
+    "new_lat": 52.385993,
+    "new_lon": 17.063267,
+    "dist_m": 101,
+    "query": "ul. Jana Heweliusza, Zalasewo, Polska",
+    "formatted": "Jana Heweliusza, Zalasewo, Polska",
+    "addr": {
+      "street": "ul. Jana Heweliusza",
+      "number": null,
+      "osiedle": "Leśne Tarasy 3",
+      "city": "Zalasewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Zalasewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68566553": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68566942": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68565745": {
+    "orig_lat": 52.44377,
+    "orig_lon": 16.89437,
+    "new_lat": 52.456781,
+    "new_lon": 16.887939,
+    "dist_m": 1511,
+    "query": "Podolany, Poznań, Polska",
+    "formatted": "Podolany, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "68565679": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68565842": {
+    "orig_lat": 52.43081,
+    "orig_lon": 16.7945,
+    "new_lat": 52.42745,
+    "new_lon": 16.78375,
+    "dist_m": 819,
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68568862": {
+    "skipped": "geocode_failed",
+    "query": "ul. Życzliwa 10, null, Polska",
+    "addr": {
+      "street": "ul. Życzliwa",
+      "number": "10",
+      "osiedle": "Osiedle Życzliwe",
+      "city": "null",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "68565748": {
+    "orig_lat": 52.44377,
+    "orig_lon": 16.89437,
+    "new_lat": 52.456781,
+    "new_lon": 16.887939,
+    "dist_m": 1511,
+    "query": "Podolany, Poznań, Polska",
+    "formatted": "Podolany, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "9000062260": {
+    "orig_lat": 52.38324,
+    "orig_lon": 16.84562,
+    "new_lat": 52.382766,
+    "new_lon": 16.845838,
+    "dist_m": 55,
+    "query": "Ziębicka 30, Poznań, Polska",
+    "formatted": "30, Ziębicka, Junikowo, Poznań, województwo wielkopolskie, 60-164, Polska",
+    "addr": {
+      "street": "Ziębicka",
+      "number": "30",
+      "osiedle": "Ziębicka 30",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "68566979": {
+    "orig_lat": 52.37832,
+    "orig_lon": 16.98658,
+    "new_lat": 52.399537,
+    "new_lon": 16.959365,
+    "dist_m": 2996,
+    "query": "Polanka 21, Poznań, Polska",
+    "formatted": "21, Polanka, Miasteczko, Łacina, Rataje, Poznań, województwo wielkopolskie, 61-131, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Polanka 21",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łacina",
+    "corrected": true
   }
 }
