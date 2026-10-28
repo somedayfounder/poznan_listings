@@ -54170,5 +54170,287 @@
     "geo_city": "Poznań",
     "geo_district": "Łacina",
     "corrected": true
+  },
+  "68551094": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Poznań Malarska, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Poznań Malarska",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68573259": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68572805": {
+    "orig_lat": 52.36852,
+    "orig_lon": 17.12561,
+    "new_lat": 52.36372,
+    "new_lon": 17.12505,
+    "dist_m": 535,
+    "query": "ul. Rabowickiej, Gowarzewo, Polska",
+    "formatted": "Gowarzewo, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Rabowickiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Gowarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gowarzewo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68573045": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "66332482": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449057,
+    "new_lon": 16.960241,
+    "dist_m": 136,
+    "query": "ul. Bielicowa 4, Naramowice, Polska",
+    "formatted": "Bielicowa, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "4",
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "9000062263": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.40924,
+    "orig_lon": 16.8754,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 7824,
+    "orig_dist_to_center_m": 3949,
+    "query": "ul. Jesiennej 2, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jesiennej",
+      "number": "2",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Grunwald",
+      "confidence": "high"
+    }
+  },
+  "68572024": {
+    "orig_lat": 52.42876,
+    "orig_lon": 16.82175,
+    "new_lat": 52.428764,
+    "new_lon": 16.821752,
+    "dist_m": 0,
+    "query": "ul. Skarszewska, Poznań, Polska",
+    "formatted": "Skarszewska, Poznań, Polska",
+    "addr": {
+      "street": "ul. Skarszewska",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Smochowice",
+    "corrected": false
+  },
+  "68570084": {
+    "orig_lat": 52.4157,
+    "orig_lon": 16.89178,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 787,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68573283": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Suchy Las",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68572397": {
+    "orig_lat": 52.4395,
+    "orig_lon": 16.62013,
+    "new_lat": 52.44958,
+    "new_lon": 16.647059,
+    "dist_m": 2142,
+    "query": "gmina Tarnowo Podgórne, Jankowice, Polska",
+    "formatted": "Brenntag Polska sp. z o.o., 2, Szumin, Jankowice, gmina Tarnowo Podgórne, powiat poznański, województwo wielkopolskie, 62-080, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Jankowice",
+      "district": "gmina Tarnowo Podgórne",
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68573816": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36034,
+    "orig_lon": 16.98179,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7287,
+    "orig_dist_to_center_m": 6246,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68574001": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36023,
+    "orig_lon": 16.98213,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7307,
+    "orig_dist_to_center_m": 6269,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68573885": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36022,
+    "orig_lon": 16.98201,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7305,
+    "orig_dist_to_center_m": 6266,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68573849": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36006,
+    "orig_lon": 16.98193,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7319,
+    "orig_dist_to_center_m": 6278,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "67171190": {
+    "orig_lat": 52.31753,
+    "orig_lon": 16.85807,
+    "new_lat": 52.310996,
+    "new_lon": 16.858512,
+    "dist_m": 727,
+    "query": "ul. Pułaskiego, Wirach, Polska",
+    "formatted": "Parafia Świętego Floriana w Wirach, Wiry, gmina Komorniki, powiat poznański, województwo wielkopolskie, 62-051, Polska",
+    "addr": {
+      "street": "ul. Pułaskiego",
+      "number": null,
+      "osiedle": null,
+      "city": "Wirach",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Wiry",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68569751": {
+    "orig_lat": 52.41531,
+    "orig_lon": 16.89156,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 789,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
   }
 }
