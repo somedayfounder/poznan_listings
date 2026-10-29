@@ -54452,5 +54452,248 @@
     "geo_city": "Poznań",
     "geo_district": "Jeżyce",
     "corrected": true
+  },
+  "67951906": {
+    "orig_lat": 52.4457,
+    "orig_lon": 16.9119,
+    "new_lat": 52.444581,
+    "new_lon": 16.910307,
+    "dist_m": 165,
+    "query": "ul. Wojciechowskiego 7/17, Poznań, Polska",
+    "formatted": "Bricoman, Zygmunta Wojciechowskiego 7-17, 60-685 Poznań, Polska",
+    "addr": {
+      "street": "ul. Wojciechowskiego",
+      "number": "7/17",
+      "osiedle": "Piątkowo Residence",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "68576458": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Śródka",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68551095": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Poznań Malarska, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Poznań Malarska",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68551100": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Poznań Malarska, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Poznań Malarska",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68575691": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68577761": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68577255": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68577859": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68567039": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68577725": {
+    "orig_lat": 52.41203,
+    "orig_lon": 16.66924,
+    "new_lat": 52.410658,
+    "new_lon": 16.668871,
+    "dist_m": 155,
+    "query": "ul. Wilka 45, Sierosław, Polska",
+    "formatted": "Wilka, 45, Sierosław, Polska",
+    "addr": {
+      "street": "ul. Wilka",
+      "number": "45",
+      "osiedle": null,
+      "city": "Sierosław",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sierosław",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68574883": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68577687": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "9000062266": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68238799": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68567081": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68564669": {
+    "orig_lat": 52.45285,
+    "orig_lon": 16.73113,
+    "new_lat": 52.452385,
+    "new_lon": 16.731501,
+    "dist_m": 57,
+    "query": "ul. Lotosowej, Sady, Polska",
+    "formatted": "Lotosowa, Sady, Polska",
+    "addr": {
+      "street": "ul. Lotosowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Sady",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sady",
+    "geo_district": "Dębina",
+    "corrected": false
   }
 }
