@@ -54695,5 +54695,275 @@
     "geo_city": "Sady",
     "geo_district": "Dębina",
     "corrected": false
+  },
+  "68551098": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Poznań Malarska, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Poznań Malarska",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68579540": {
+    "orig_lat": 52.38786,
+    "orig_lon": 17.11767,
+    "new_lat": 52.38891,
+    "new_lon": 17.12116,
+    "dist_m": 264,
+    "query": "Osiedle Zielone Rabowice III, Rabowice, Polska",
+    "formatted": "Rabowice, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Zielone Rabowice III",
+      "city": "Rabowice",
+      "district": "gmina Swarzędz",
+      "confidence": "high"
+    },
+    "geo_city": "Rabowice",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68578488": {
+    "orig_lat": 52.24616,
+    "orig_lon": 16.61258,
+    "new_lat": 52.24836,
+    "new_lon": 16.615293,
+    "dist_m": 307,
+    "query": "Pszenna, Strykowo, Polska",
+    "formatted": "Strykowo, gmina Stęszew, powiat poznański, województwo wielkopolskie, 62-062, Polska",
+    "addr": {
+      "street": "Pszenna",
+      "number": null,
+      "osiedle": null,
+      "city": "Strykowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Strykowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68579498": {
+    "orig_lat": 52.48972,
+    "orig_lon": 16.83026,
+    "new_lat": 52.490186,
+    "new_lon": 16.842782,
+    "dist_m": 849,
+    "query": "Złotniki Park, Złotniki, Polska",
+    "formatted": "Osiedle Złotniki Park, Złotniki Wieś, Złotniki, gmina Suchy Las, powiat poznański, województwo wielkopolskie, 62-002, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Złotniki Park",
+      "city": "Złotniki",
+      "district": "gmina Suchy Las",
+      "confidence": "high"
+    },
+    "geo_city": "Złotniki",
+    "geo_district": "Osiedle Złotniki Park",
+    "corrected": true
+  },
+  "68580085": {
+    "orig_lat": 52.41895,
+    "orig_lon": 16.90096,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 621,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "9000062269": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68578393": {
+    "skipped": "geocode_failed",
+    "query": "Winogradach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogradach",
+      "confidence": "high"
+    }
+  },
+  "68579775": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "68578974": {
+    "orig_lat": 52.48446,
+    "orig_lon": 16.87158,
+    "new_lat": 52.480654,
+    "new_lon": 16.868871,
+    "dist_m": 461,
+    "query": "ul. Fortecznej, Suchy Las, Polska",
+    "formatted": "Forteczna, Suchy Las, Polska",
+    "addr": {
+      "street": "ul. Fortecznej",
+      "number": null,
+      "osiedle": "Na Wzgórzu",
+      "city": "Suchy Las",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Suchy Las",
+    "geo_district": "Osiedle Suchy Las - Wschód",
+    "corrected": true
+  },
+  "68578513": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68580605": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Mosina",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68581550": {
+    "orig_lat": 52.36012,
+    "orig_lon": 16.71985,
+    "new_lat": 52.360586,
+    "new_lon": 16.70461,
+    "dist_m": 1036,
+    "query": "Szkolna/Przebiśniegowa, Dopiewiec, Polska",
+    "formatted": "Przebiśniegowa, Dopiewiec, Polska",
+    "addr": {
+      "street": "Szkolna/Przebiśniegowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dopiewiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68578245": {
+    "orig_lat": 52.43023,
+    "orig_lon": 16.79754,
+    "new_lat": 52.42745,
+    "new_lon": 16.78375,
+    "dist_m": 985,
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68578243": {
+    "orig_lat": 52.43023,
+    "orig_lon": 16.79754,
+    "new_lat": 52.42745,
+    "new_lon": 16.78375,
+    "dist_m": 985,
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68578244": {
+    "orig_lat": 52.43023,
+    "orig_lon": 16.79754,
+    "new_lat": 52.42745,
+    "new_lon": 16.78375,
+    "dist_m": 985,
+    "query": "Przeźmierowo Park, Przeźmierowo, Polska",
+    "formatted": "Przeźmierowo, Powiat poznański, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przeźmierowo Park",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68578537": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
