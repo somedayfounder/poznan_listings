@@ -55160,5 +55160,85 @@
     "geo_city": "Poznań",
     "geo_district": "Starołęka Mała",
     "corrected": false
+  },
+  "68585118": {
+    "orig_lat": 52.38693,
+    "orig_lon": 16.92332,
+    "new_lat": 52.377059,
+    "new_lon": 16.910396,
+    "dist_m": 1405,
+    "query": "Rolna/Tokarska/Wspólna, Poznań, Polska",
+    "formatted": "Tokarska n/ż, Wspólna, Poznań, Polska",
+    "addr": {
+      "street": "Rolna/Tokarska/Wspólna",
+      "number": null,
+      "osiedle": "Kolonia Wilda",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": true
+  },
+  "60016127": {
+    "orig_lat": 52.38937,
+    "orig_lon": 16.80716,
+    "new_lat": 52.389809,
+    "new_lon": 16.806768,
+    "dist_m": 56,
+    "query": "Cedrowa, Skórzewo, Polska",
+    "formatted": "Cedrowa, Skórzewo, gmina Dopiewo, powiat poznański, województwo wielkopolskie, 60-175, Polska",
+    "addr": {
+      "street": "Cedrowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Skórzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Skórzewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "9000062275": {
+    "orig_lat": 52.4157,
+    "orig_lon": 16.89178,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 787,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68584972": {
+    "orig_lat": 52.28067,
+    "orig_lon": 17.01932,
+    "new_lat": 52.280387,
+    "new_lon": 17.018818,
+    "dist_m": 46,
+    "query": "ul. Pieczarkowa 3, Borówiec, Polska",
+    "formatted": "Pieczarkowa, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Pieczarkowa",
+      "number": "3",
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": false
   }
 }
