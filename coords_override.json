@@ -55428,5 +55428,363 @@
     "geo_city": "Sady",
     "geo_district": "Dębina",
     "corrected": false
+  },
+  "68573297": {
+    "skipped": "outside_bbox",
+    "query": "Domy pod Lasem, Radzewo, Polska",
+    "formatted": "Radzewo, gmina Tychowo, powiat białogardzki, województwo zachodniopomorskie, 78-221, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Domy pod Lasem",
+      "city": "Radzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.91716,
+    "new_lon": 16.17008
+  },
+  "68575739": {
+    "skipped": "outside_bbox",
+    "query": "Domy pod Lasem, Radzewo, Polska",
+    "formatted": "Radzewo, gmina Tychowo, powiat białogardzki, województwo zachodniopomorskie, 78-221, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Domy pod Lasem",
+      "city": "Radzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.91716,
+    "new_lon": 16.17008
+  },
+  "68590812": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68573286": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Nowe Młyny Radzewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68541376": {
+    "orig_lat": 52.46202,
+    "orig_lon": 16.89833,
+    "new_lat": 52.464025,
+    "new_lon": 16.9008,
+    "dist_m": 279,
+    "query": "ul. Teofila Mateckiego 20E, Poznań, Polska",
+    "formatted": "Teofila Mateckiego, 20E, Poznań, Polska",
+    "addr": {
+      "street": "ul. Teofila Mateckiego",
+      "number": "20E",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo Północ",
+    "corrected": true
+  },
+  "68593016": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kostrzyn",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68592421": {
+    "orig_lat": 52.42658,
+    "orig_lon": 16.93625,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 932,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68593056": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Mrowino",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68592450": {
+    "orig_lat": 52.42658,
+    "orig_lon": 16.93625,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 932,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68591347": {
+    "skipped": "geocode_failed",
+    "query": "Winogradach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogradach",
+      "confidence": "high"
+    }
+  },
+  "68591202": {
+    "skipped": "geocode_failed",
+    "query": "Winogradach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogradach",
+      "confidence": "high"
+    }
+  },
+  "68591060": {
+    "orig_lat": 52.4922,
+    "orig_lon": 16.73335,
+    "new_lat": 52.490808,
+    "new_lon": 16.73516,
+    "dist_m": 197,
+    "query": "ul. Teatralnej, Napachanie, Polska",
+    "formatted": "Teatralna, Napachanie, Polska",
+    "addr": {
+      "street": "ul. Teatralnej",
+      "number": null,
+      "osiedle": "Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68002921": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "68592385": {
+    "orig_lat": 52.43818,
+    "orig_lon": 16.94767,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 731,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68592621": {
+    "orig_lat": 52.4627,
+    "orig_lon": 16.68607,
+    "new_lat": 52.465744,
+    "new_lon": 16.666445,
+    "dist_m": 1372,
+    "query": "ul. Rolnej, Tarnowo Podgórne, Polska",
+    "formatted": "Tarnowo Podgórne, gmina Tarnowo Podgórne, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Rolnej",
+      "number": null,
+      "osiedle": "Osiedle Świerkowe",
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Tarnowo Podgórne",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68593786": {
+    "orig_lat": 52.51359,
+    "orig_lon": 16.74704,
+    "new_lat": 52.491755,
+    "new_lon": 16.741418,
+    "dist_m": 2458,
+    "query": "ul. Afiszowa, Napachanie, Polska",
+    "formatted": "Afiszowa, Napachanie, Polska",
+    "addr": {
+      "street": "ul. Afiszowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68591593": {
+    "orig_lat": 52.43845,
+    "orig_lon": 16.94816,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 775,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogrady",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "66332924": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449503,
+    "new_lon": 16.957893,
+    "dist_m": 301,
+    "query": "ul. Bielicowa, Naramowice, Polska",
+    "formatted": "Bielicowa, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": null,
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": true
+  },
+  "9000062281": {
+    "orig_lat": 52.39769,
+    "orig_lon": 16.92545,
+    "new_lat": 52.397184,
+    "new_lon": 16.926392,
+    "dist_m": 85,
+    "query": "ul. Dolna Wilda 12, Poznań, Polska",
+    "formatted": "Dolna Wilda, 12, Poznań, Polska",
+    "addr": {
+      "street": "ul. Dolna Wilda",
+      "number": "12",
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "67971521": {
+    "orig_lat": 52.37332,
+    "orig_lon": 16.95109,
+    "new_lat": 52.372807,
+    "new_lon": 16.946816,
+    "dist_m": 296,
+    "query": "Przy Unii, Poznań, Polska",
+    "formatted": "Osiedle Przy Unii Etap III, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": "1_12",
+      "osiedle": "Przy Unii",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68592663": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kobylepole",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
