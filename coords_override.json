@@ -55786,5 +55786,446 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "68481533": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68551152": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Poznań Malarska, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Poznań Malarska",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68551153": {
+    "skipped": "geocode_city_only",
+    "query": "Osiedle Poznań Malarska, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Poznań Malarska",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68598516": {
+    "skipped": "outside_bbox",
+    "query": "ul. Rolnej, Wielka Wieś, Polska",
+    "formatted": "Wielka Wieś / ul. Kielecka (szkoła) / 10, Kielecka, Wielka Wieś, Polska",
+    "addr": {
+      "street": "ul. Rolnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Wielka Wieś",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 51.069729,
+    "new_lon": 20.972349
+  },
+  "68598452": {
+    "skipped": "outside_bbox",
+    "query": "ul. Rolnej, Buk, Polska",
+    "formatted": "Buk, gmina Buk, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Rolnej",
+      "number": null,
+      "osiedle": null,
+      "city": "Buk",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.357391,
+    "new_lon": 16.516701
+  },
+  "66328117": {
+    "orig_lat": 52.40396,
+    "orig_lon": 17.06483,
+    "new_lat": 52.405083,
+    "new_lon": 17.061718,
+    "dist_m": 245,
+    "query": "ul. Tabaki, Swarzędz, Polska",
+    "formatted": "Antoniego Tabaki, Swarzędz, Polska",
+    "addr": {
+      "street": "ul. Tabaki",
+      "number": null,
+      "osiedle": "ATAL Idea Swarzędz",
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Swarzędz",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68599219": {
+    "skipped": "outside_bbox",
+    "query": "ul. Aleja Flensa, Biernatki, Polska",
+    "formatted": "Biernatki, gmina Augustów, powiat augustowski, województwo podlaskie, Polska",
+    "addr": {
+      "street": "ul. Aleja Flensa",
+      "number": null,
+      "osiedle": null,
+      "city": "Biernatki",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.87199,
+    "new_lon": 22.84521
+  },
+  "68599733": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.41909,
+    "new_lon": 16.635052,
+    "dist_m": 2791,
+    "query": "ul. Agawy, Lusówko, Polska",
+    "formatted": "Agawy, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Agawy",
+      "number": null,
+      "osiedle": "Osiedle Rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Rozalin",
+    "corrected": true
+  },
+  "68596883": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "68598172": {
+    "orig_lat": 52.41684,
+    "orig_lon": 16.89985,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 424,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68598169": {
+    "orig_lat": 52.41679,
+    "orig_lon": 16.89985,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 419,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "66332624": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449057,
+    "new_lon": 16.960241,
+    "dist_m": 136,
+    "query": "ul. Bielicowa 4, Naramowice, Polska",
+    "formatted": "Bielicowa, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "4",
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "68599731": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.416497,
+    "new_lon": 16.630809,
+    "dist_m": 3173,
+    "query": "Róży, Lusówko, Polska",
+    "formatted": "Róży, Osiedle Rozalin, Rozalin, Lusówko, gmina Tarnowo Podgórne, powiat poznański, województwo wielkopolskie, 62-080, Polska",
+    "addr": {
+      "street": "Róży",
+      "number": null,
+      "osiedle": "osiedlu rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Osiedle Rozalin",
+    "corrected": true
+  },
+  "68595514": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68599730": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.41909,
+    "new_lon": 16.635052,
+    "dist_m": 2791,
+    "query": "ul. Agawy, Lusówko, Polska",
+    "formatted": "Agawy, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Agawy",
+      "number": null,
+      "osiedle": "Osiedle Rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Rozalin",
+    "corrected": true
+  },
+  "68598281": {
+    "orig_lat": 52.44071,
+    "orig_lon": 17.02806,
+    "new_lat": 52.440581,
+    "new_lon": 17.025066,
+    "dist_m": 203,
+    "query": "Olchowe Zacisze, Janikowo, Polska",
+    "formatted": "Olchowe Zacisze, Janikowo, gmina Swarzędz, powiat poznański, województwo wielkopolskie, 61-070, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Olchowe Zacisze",
+      "city": "Janikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Janikowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68598165": {
+    "orig_lat": 52.417,
+    "orig_lon": 16.90002,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 434,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "66332236": {
+    "orig_lat": 52.44846,
+    "orig_lon": 16.96199,
+    "new_lat": 52.449057,
+    "new_lon": 16.960241,
+    "dist_m": 136,
+    "query": "ul. Bielicowa 4, Naramowice, Polska",
+    "formatted": "Bielicowa, 4, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "4",
+      "osiedle": "Naramowice Odnova",
+      "city": "Naramowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "68595104": {
+    "skipped": "geocode_city_only",
+    "query": "osiedlu w Poznaniu, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "osiedlu w Poznaniu",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68598804": {
+    "orig_lat": 52.46561,
+    "orig_lon": 16.93856,
+    "new_lat": 52.464476,
+    "new_lon": 16.933036,
+    "dist_m": 395,
+    "query": "Różany Potok, Poznań, Polska",
+    "formatted": "Różany Potok, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Różany Potok",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68595233": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68595096": {
+    "skipped": "geocode_city_only",
+    "query": "osiedlu w Poznaniu, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "osiedlu w Poznaniu",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68595091": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68595106": {
+    "skipped": "geocode_city_only",
+    "query": "osiedlu w Poznaniu, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "osiedlu w Poznaniu",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "9000062284": {
+    "orig_lat": 52.44365,
+    "orig_lon": 16.8932,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 115,
+    "query": "ul. Jasielska 8C, Poznań, Polska",
+    "formatted": "Jasielska, 8c, Poznań, Polska",
+    "addr": {
+      "street": "ul. Jasielska",
+      "number": "8C",
+      "osiedle": "Jasielska 8C",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "68595101": {
+    "skipped": "geocode_city_only",
+    "query": "osiedlu w Poznaniu, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "osiedlu w Poznaniu",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68595093": {
+    "skipped": "geocode_city_only",
+    "query": "osiedlu w Poznaniu, Poznań, Polska",
+    "formatted": "Poznań, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "osiedlu w Poznaniu",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
