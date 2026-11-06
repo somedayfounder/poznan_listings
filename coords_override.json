@@ -56569,5 +56569,390 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "68607425": {
+    "skipped": "outside_bbox",
+    "query": "gmina Mosina, Żabinek, Polska",
+    "formatted": "Żabinek, woj. warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Żabinek",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "new_lat": 54.33333,
+    "new_lon": 22.03333
+  },
+  "68607422": {
+    "skipped": "outside_bbox",
+    "query": "Czempiń, Sierniki, Polska",
+    "formatted": "Sierniki, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Sierniki",
+      "district": "Czempiń",
+      "confidence": "high"
+    },
+    "new_lat": 52.7413,
+    "new_lon": 17.0775
+  },
+  "68607851": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "68607421": {
+    "skipped": "outside_bbox",
+    "query": "Czempiń, Sierniki, Polska",
+    "formatted": "Sierniki, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Sierniki",
+      "district": "Czempiń",
+      "confidence": "high"
+    },
+    "new_lat": 52.7413,
+    "new_lon": 17.0775
+  },
+  "68607845": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "68607423": {
+    "skipped": "outside_bbox",
+    "query": "gmina Mosina, Żabinek, Polska",
+    "formatted": "Żabinek, woj. warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Żabinek",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "new_lat": 54.33333,
+    "new_lon": 22.03333
+  },
+  "68607850": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "65510504": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Więckowice",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68607848": {
+    "skipped": "outside_bbox",
+    "query": "ul. Lipowa, Krosinek, Polska",
+    "formatted": "Krosinek, gmina Połajewo, powiat czarnkowsko-trzcianecki, województwo wielkopolskie, 64-711, Polska",
+    "addr": {
+      "street": "ul. Lipowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Krosinek",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.810468,
+    "new_lon": 16.682512
+  },
+  "68607424": {
+    "orig_lat": 52.24535,
+    "orig_lon": 16.84699,
+    "new_lat": 52.21103,
+    "new_lon": 16.82642,
+    "dist_m": 4065,
+    "query": "gmina Mosina, Drużyna, Polska",
+    "formatted": "Drużyna, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Drużyna",
+      "district": "gmina Mosina",
+      "confidence": "high"
+    },
+    "geo_city": "Drużyna",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68604873": {
+    "orig_lat": 52.34018,
+    "orig_lon": 16.88264,
+    "new_lat": 52.338789,
+    "new_lon": 16.877974,
+    "dist_m": 353,
+    "query": "ul. Ogrodowa, Luboń, Polska",
+    "formatted": "Ogrodowa, Luboń, Polska",
+    "addr": {
+      "street": "ul. Ogrodowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Luboń",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Luboń",
+    "geo_district": "Lasek",
+    "corrected": true
+  },
+  "68603923": {
+    "orig_lat": 52.46202,
+    "orig_lon": 16.89833,
+    "new_lat": 52.45321,
+    "new_lon": 16.91225,
+    "dist_m": 1360,
+    "query": "nowoczesne osiedle na poznańskim Piątkowie, Piątkowo, Polska",
+    "formatted": "Piątkowo, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "nowoczesne osiedle na poznańskim Piątkowie",
+      "city": "Piątkowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Piątkowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68607846": {
+    "skipped": "outside_bbox",
+    "query": "ul. Owocowa, Kleszczewo, Polska",
+    "formatted": "Owocowa, Kleszczewo, Polska",
+    "addr": {
+      "street": "ul. Owocowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Kleszczewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.334722,
+    "new_lon": 17.174809
+  },
+  "68607847": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": "53",
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68607853": {
+    "skipped": "outside_bbox",
+    "query": "ul. Owocowa, Kleszczewo, Polska",
+    "formatted": "Owocowa, Kleszczewo, Polska",
+    "addr": {
+      "street": "ul. Owocowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Kleszczewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.334722,
+    "new_lon": 17.174809
+  },
+  "68607843": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": "53",
+      "osiedle": null,
+      "city": "Komorniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68606002": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68605650": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Tarnowo Podgórne",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68606210": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68556965": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68604427": {
+    "orig_lat": 52.38381,
+    "orig_lon": 16.89437,
+    "new_lat": 52.384124,
+    "new_lon": 16.894016,
+    "dist_m": 42,
+    "query": "ul. R. Dmowskiego 103, Poznań, Polska",
+    "formatted": "Romana Dmowskiego, 103, Poznań, Polska",
+    "addr": {
+      "street": "ul. R. Dmowskiego",
+      "number": "103",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Górczyn",
+    "corrected": false
+  },
+  "68606880": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36021,
+    "orig_lon": 16.98227,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7312,
+    "orig_dist_to_center_m": 6276,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68606857": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36034,
+    "orig_lon": 16.98212,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7295,
+    "orig_dist_to_center_m": 6258,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68606485": {
+    "orig_lat": 52.35474,
+    "orig_lon": 17.03028,
+    "new_lat": 52.354989,
+    "new_lon": 17.030268,
+    "dist_m": 28,
+    "query": "ul. Szczepankowo 137 16, Poznań, Polska",
+    "formatted": "Szczepankowo 137, 61-313 Poznań, Polska",
+    "addr": {
+      "street": "ul. Szczepankowo 137",
+      "number": "16",
+      "osiedle": "Nowe Spławie",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Szczepankowo",
+    "corrected": false
+  },
+  "9000062290": {
+    "orig_lat": 52.41531,
+    "orig_lon": 16.89156,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 789,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
   }
 }
