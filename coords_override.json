@@ -57566,5 +57566,281 @@
     },
     "new_lat": 53.485266,
     "new_lon": 20.091529
+  },
+  "68615144": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68615282": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68614698": {
+    "skipped": "outside_bbox",
+    "query": "ul. Poznańska, Pobiedziska, Polska",
+    "formatted": "Zakład Komunalny w Pobiedziskach, Poznańska, Pobiedziska, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": null,
+      "osiedle": null,
+      "city": "Pobiedziska",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.475862,
+    "new_lon": 17.267527
+  },
+  "68612817": {
+    "skipped": "outside_bbox",
+    "query": "ul. Za Lasem 20, Wysoczka, Polska",
+    "formatted": "Za Lasem, 20, Wysoczka, Polska",
+    "addr": {
+      "street": "ul. Za Lasem",
+      "number": "20",
+      "osiedle": null,
+      "city": "Wysoczka",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.373512,
+    "new_lon": 16.533548
+  },
+  "68613163": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68614237": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68613067": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "68613162": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68615334": {
+    "orig_lat": 52.38953,
+    "orig_lon": 16.85972,
+    "new_lat": 52.404197,
+    "new_lon": 16.88215,
+    "dist_m": 2231,
+    "query": "Stary Grunwald, Poznań, Polska",
+    "formatted": "Stary Grunwald, Jeżyce, Grunwald, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Stary Grunwald",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68238837": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68613892": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "pod miastem",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68613000": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68238941": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68615226": {
+    "skipped": "outside_bbox",
+    "query": "Osiedle o wyższym standardzie, Poznań, Polska",
+    "formatted": "Kardynała Stefana Wyszyńskiego, Stargard, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle o wyższym standardzie",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "new_lat": 53.339112,
+    "new_lon": 15.035117
+  },
+  "68615264": {
+    "orig_lat": 52.41929,
+    "orig_lon": 16.89693,
+    "new_lat": 52.412255,
+    "new_lon": 16.909073,
+    "dist_m": 1136,
+    "query": "inwestycji w samym sercu Jeżyc, Poznań, Polska",
+    "formatted": "Nowe Serce Jeżyc, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "inwestycji w samym sercu Jeżyc",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "9000062299": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "68612998": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68614102": {
+    "orig_lat": 52.4167,
+    "orig_lon": 16.90038,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 394,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68612999": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
