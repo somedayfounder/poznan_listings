@@ -58327,5 +58327,113 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "68624298": {
+    "skipped": "geocode_failed",
+    "query": "Wielka Wieś pod Bukiem, Polska",
+    "addr": {
+      "street": "Rolna",
+      "number": null,
+      "osiedle": null,
+      "city": "Wielka Wieś pod Bukiem",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68623356": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Pobiedziska",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67445470": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.448685,
+    "new_lon": 16.89088,
+    "dist_m": 33,
+    "query": "Strzeszyńska 77, Poznań, Polska",
+    "formatted": "77, Strzeszyńska, Podolany, Poznań, województwo wielkopolskie, 60-479, Polska",
+    "addr": {
+      "street": "Strzeszyńska",
+      "number": "77",
+      "osiedle": "Strzeszyńska 77",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "67456735": {
+    "skipped": "outside_bbox",
+    "query": "Promno Park, Promno, Polska",
+    "formatted": "Promno, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Promno Park",
+      "city": "Promno",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.450839,
+    "new_lon": 17.245258
+  },
+  "68625073": {
+    "orig_lat": 52.41793,
+    "orig_lon": 16.8957,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 690,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "9000062308": {
+    "skipped": "outside_bbox",
+    "query": "ul. Smardzewska, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Smardzewska",
+      "number": null,
+      "osiedle": "Grunwald Między Drzewami",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "67968618": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska 28A, Grunwald, Polska",
+    "formatted": "Grunwald, Powiat ostródzki, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": "28A",
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.48422,
+    "new_lon": 20.09425
   }
 }
