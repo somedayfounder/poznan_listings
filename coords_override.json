@@ -58435,5 +58435,342 @@
     },
     "new_lat": 53.48422,
     "new_lon": 20.09425
+  },
+  "68629222": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kleszczewo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68626683": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Mosina",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68628088": {
+    "orig_lat": 52.41299,
+    "orig_lon": 16.90249,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 58,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": false
+  },
+  "68626682": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Mosina",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68214028": {
+    "orig_lat": 52.38372,
+    "orig_lon": 16.83917,
+    "new_lat": 52.383936,
+    "new_lon": 16.840557,
+    "dist_m": 97,
+    "query": "ul. Wieruszowska 2, Junikowo, Polska",
+    "formatted": "Wieruszowska, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Wieruszowska",
+      "number": "2",
+      "osiedle": "Inwestycja Wieruszowska 2",
+      "city": "Junikowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Junikowo",
+    "corrected": false
+  },
+  "68626539": {
+    "orig_lat": 52.41702,
+    "orig_lon": 17.10156,
+    "new_lat": 52.413677,
+    "new_lon": 17.101509,
+    "dist_m": 372,
+    "query": "Gerberowa Park, Jasin, Polska",
+    "formatted": "Gerberowa, Jasin, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Gerberowa Park",
+      "city": "Jasin",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jasin",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68625857": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.41909,
+    "new_lon": 16.635052,
+    "dist_m": 2791,
+    "query": "ul. Agawy, Lusówko, Polska",
+    "formatted": "Agawy, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Agawy",
+      "number": null,
+      "osiedle": "Osiedle Rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Rozalin",
+    "corrected": true
+  },
+  "68625858": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.416497,
+    "new_lon": 16.630809,
+    "dist_m": 3173,
+    "query": "Róży, Lusówko, Polska",
+    "formatted": "Róży, Osiedle Rozalin, Rozalin, Lusówko, gmina Tarnowo Podgórne, powiat poznański, województwo wielkopolskie, 62-080, Polska",
+    "addr": {
+      "street": "Róży",
+      "number": null,
+      "osiedle": "osiedlu rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Osiedle Rozalin",
+    "corrected": true
+  },
+  "68625860": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.416497,
+    "new_lon": 16.630809,
+    "dist_m": 3173,
+    "query": "Róży, Lusówko, Polska",
+    "formatted": "Róży, Osiedle Rozalin, Rozalin, Lusówko, gmina Tarnowo Podgórne, powiat poznański, województwo wielkopolskie, 62-080, Polska",
+    "addr": {
+      "street": "Róży",
+      "number": null,
+      "osiedle": "osiedlu rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Osiedle Rozalin",
+    "corrected": true
+  },
+  "68627109": {
+    "orig_lat": 52.41434,
+    "orig_lon": 16.8966,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 431,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68238956": {
+    "orig_lat": 52.37306,
+    "orig_lon": 16.9492,
+    "new_lat": 52.374245,
+    "new_lon": 16.95292,
+    "dist_m": 285,
+    "query": "ul. Heleny Tadeuszak, Poznań, Polska",
+    "formatted": "Heleny Tadeuszak, Poznań, Polska",
+    "addr": {
+      "street": "ul. Heleny Tadeuszak",
+      "number": null,
+      "osiedle": "Inwestycja Unii Lubelskiej",
+      "city": "Poznań",
+      "district": "Rataje",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68627182": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68625859": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.41909,
+    "new_lon": 16.635052,
+    "dist_m": 2791,
+    "query": "ul. Agawy, Lusówko, Polska",
+    "formatted": "Agawy, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Agawy",
+      "number": null,
+      "osiedle": "Osiedle Rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Rozalin",
+    "corrected": true
+  },
+  "68628053": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kobylepole",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68627319": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68073283": {
+    "orig_lat": 52.39769,
+    "orig_lon": 16.92545,
+    "new_lat": 52.397184,
+    "new_lon": 16.926392,
+    "dist_m": 85,
+    "query": "ul. Dolna Wilda 12, Poznań, Polska",
+    "formatted": "Dolna Wilda, 12, Poznań, Polska",
+    "addr": {
+      "street": "ul. Dolna Wilda",
+      "number": "12",
+      "osiedle": "Dolna Górna Wilda",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "68628678": {
+    "orig_lat": 52.34798,
+    "orig_lon": 17.01056,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 3752,
+    "query": "ul. Chrzanowskiej, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Chrzanowskiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Żegrze",
+    "corrected": true
+  },
+  "68628060": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Kobylepole",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68629740": {
+    "orig_lat": 52.39388,
+    "orig_lon": 16.90146,
+    "new_lat": 52.39462,
+    "new_lon": 16.901284,
+    "dist_m": 83,
+    "query": "ul. Rynek Łazarski, Poznań, Polska",
+    "formatted": "Rynek Łazarski, Poznań, Polska",
+    "addr": {
+      "street": "ul. Rynek Łazarski",
+      "number": null,
+      "osiedle": "Rynek Łazarski",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łazarz",
+    "corrected": false
+  },
+  "9000062311": {
+    "orig_lat": 52.39388,
+    "orig_lon": 16.90146,
+    "new_lat": 52.39462,
+    "new_lon": 16.901284,
+    "dist_m": 83,
+    "query": "ul. Rynek Łazarski, Poznań, Polska",
+    "formatted": "Rynek Łazarski, Poznań, Polska",
+    "addr": {
+      "street": "ul. Rynek Łazarski",
+      "number": null,
+      "osiedle": "Rynek Łazarski",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łazarz",
+    "corrected": false
   }
 }
