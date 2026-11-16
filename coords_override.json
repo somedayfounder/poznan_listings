@@ -59133,5 +59133,143 @@
     "geo_city": "Czapury",
     "geo_district": null,
     "corrected": true
+  },
+  "68638110": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68635582": {
+    "skipped": "outside_bbox",
+    "query": "Kórnik, Dachów, Polska",
+    "formatted": "Dachów, Województwo lubuskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dachów",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "new_lat": 51.91107,
+    "new_lon": 15.08977
+  },
+  "68636665": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68479153": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "66106173": {
+    "orig_lat": 52.4089,
+    "orig_lon": 17.08117,
+    "new_lat": 52.408421,
+    "new_lon": 17.080772,
+    "dist_m": 60,
+    "query": "SVARAN, Swarzędz, Polska",
+    "formatted": "Svaran - mieszkania, Swarzędz, gmina Swarzędz, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "SVARAN",
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Swarzędz",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68636619": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jagodowa, Bytków, Polska",
+    "formatted": "Bytków, gmina Rudna, powiat lubiński, województwo dolnośląskie, Polska",
+    "addr": {
+      "street": "ul. Jagodowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Bytków",
+      "district": "Rokietnica",
+      "confidence": "high"
+    },
+    "new_lat": 51.531346,
+    "new_lon": 16.260085
+  },
+  "68636446": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "9000062320": {
+    "skipped": "outside_bbox",
+    "query": "Osiedle o wyższym standardzie, Poznań, Polska",
+    "formatted": "Kardynała Stefana Wyszyńskiego, Stargard, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle o wyższym standardzie",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "new_lat": 53.339112,
+    "new_lon": 15.035117
+  },
+  "68607868": {
+    "orig_lat": 52.37332,
+    "orig_lon": 16.95109,
+    "new_lat": 52.372807,
+    "new_lon": 16.946816,
+    "dist_m": 296,
+    "query": "Przy Unii, Poznań, Polska",
+    "formatted": "Osiedle Przy Unii Etap III, Starołęka Mała, Starołęka-Minikowo-Marlewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Przy Unii",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
   }
 }
