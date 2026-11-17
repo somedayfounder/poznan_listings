@@ -59271,5 +59271,468 @@
     "geo_city": "Poznań",
     "geo_district": "Starołęka Mała",
     "corrected": true
+  },
+  "68619576": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68641493": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68641491": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68640176": {
+    "orig_lat": 52.2956,
+    "orig_lon": 17.0073,
+    "new_lat": 52.296071,
+    "new_lon": 17.007659,
+    "dist_m": 58,
+    "query": "ul. Choinkowej, Szczytniki, Polska",
+    "formatted": "Choinkowa, Szczytniki, Polska",
+    "addr": {
+      "street": "ul. Choinkowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68641492": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68641450": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68640178": {
+    "orig_lat": 52.2956,
+    "orig_lon": 17.0073,
+    "new_lat": 52.296071,
+    "new_lon": 17.007659,
+    "dist_m": 58,
+    "query": "ul. Choinkowej, Szczytniki, Polska",
+    "formatted": "Choinkowa, Szczytniki, Polska",
+    "addr": {
+      "street": "ul. Choinkowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Szczytniki",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68639457": {
+    "orig_lat": 52.41681,
+    "orig_lon": 16.89976,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 424,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68641738": {
+    "orig_lat": 52.45718,
+    "orig_lon": 16.88339,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 1674,
+    "query": "Jasielska 8C, Poznań, Polska",
+    "formatted": "8c, Jasielska, Podolany, Poznań, województwo wielkopolskie, 60-476, Polska",
+    "addr": {
+      "street": "Jasielska",
+      "number": "8C",
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "68641379": {
+    "orig_lat": 52.23011,
+    "orig_lon": 17.03289,
+    "new_lat": 52.22794,
+    "new_lon": 17.024053,
+    "dist_m": 648,
+    "query": "ul. do Wiatraka, Konarskie, Polska",
+    "formatted": "Do Wiatraka, Konarskie, Polska",
+    "addr": {
+      "street": "ul. do Wiatraka",
+      "number": null,
+      "osiedle": null,
+      "city": "Konarskie",
+      "district": "gm. Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Konarskie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "9000062323": {
+    "orig_lat": 52.42658,
+    "orig_lon": 16.93625,
+    "new_lat": 52.434865,
+    "new_lon": 16.938353,
+    "dist_m": 932,
+    "query": "Winogrady, Poznań, Polska",
+    "formatted": "Winogrady, Poznań, województwo wielkopolskie, 61-636, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Winogrady",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Winogrady",
+    "corrected": true
+  },
+  "68642644": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Murowana Goślina",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68639732": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.41909,
+    "new_lon": 16.635052,
+    "dist_m": 2791,
+    "query": "ul. Agawy, Lusówko, Polska",
+    "formatted": "Agawy, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Agawy",
+      "number": null,
+      "osiedle": "Osiedle Rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Rozalin",
+    "corrected": true
+  },
+  "68638896": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68643149": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 628,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68640033": {
+    "skipped": "geocode_failed",
+    "query": "Czołów, Polska",
+    "addr": {
+      "street": "Czołowska",
+      "number": null,
+      "osiedle": null,
+      "city": "Czołów",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68639731": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.416497,
+    "new_lon": 16.630809,
+    "dist_m": 3173,
+    "query": "Róży, Lusówko, Polska",
+    "formatted": "Róży, Osiedle Rozalin, Rozalin, Lusówko, gmina Tarnowo Podgórne, powiat poznański, województwo wielkopolskie, 62-080, Polska",
+    "addr": {
+      "street": "Róży",
+      "number": null,
+      "osiedle": "osiedlu rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Osiedle Rozalin",
+    "corrected": true
+  },
+  "68638735": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.415045,
+    "new_lon": 16.910038,
+    "dist_m": 1003,
+    "query": "Osiedle Jeżyc, Poznań, Polska",
+    "formatted": "Jeżyckie Osiedle, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Jeżyc",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68638723": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.412255,
+    "new_lon": 16.909073,
+    "dist_m": 1057,
+    "query": "inwestycji w samym sercu Jeżyc, Poznań, Polska",
+    "formatted": "Nowe Serce Jeżyc, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "inwestycji w samym sercu Jeżyc",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68642641": {
+    "orig_lat": 52.45718,
+    "orig_lon": 16.88339,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 1674,
+    "query": "Jasielska 8C, Poznań, Polska",
+    "formatted": "8c, Jasielska, Podolany, Poznań, województwo wielkopolskie, 60-476, Polska",
+    "addr": {
+      "street": "Jasielska",
+      "number": "8C",
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "68643214": {
+    "orig_lat": 52.43861,
+    "orig_lon": 17.06891,
+    "new_lat": 52.43072,
+    "new_lon": 17.07297,
+    "dist_m": 919,
+    "query": "ul. Marcepanowej, Gruszczyn, Polska",
+    "formatted": "Gruszczyn, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Marcepanowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Gruszczyn",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gruszczyn",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68642120": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68642780": {
+    "orig_lat": 52.45718,
+    "orig_lon": 16.88339,
+    "new_lat": 52.443035,
+    "new_lon": 16.891833,
+    "dist_m": 1674,
+    "query": "Jasielska 8C, Poznań, Polska",
+    "formatted": "8c, Jasielska, Podolany, Poznań, województwo wielkopolskie, 60-476, Polska",
+    "addr": {
+      "street": "Jasielska",
+      "number": "8C",
+      "osiedle": "Podolany",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": true
+  },
+  "68639730": {
+    "orig_lat": 52.44221,
+    "orig_lon": 16.65109,
+    "new_lat": 52.41909,
+    "new_lon": 16.635052,
+    "dist_m": 2791,
+    "query": "ul. Agawy, Lusówko, Polska",
+    "formatted": "Agawy, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Agawy",
+      "number": null,
+      "osiedle": "Osiedle Rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Rozalin",
+    "corrected": true
+  },
+  "67968575": {
+    "skipped": "outside_bbox",
+    "query": "ul. Jeleniogórska, Grunwald, Polska",
+    "formatted": "Grunwald, gmina Grunwald, powiat ostródzki, województwo warmińsko-mazurskie, Polska",
+    "addr": {
+      "street": "ul. Jeleniogórska",
+      "number": null,
+      "osiedle": "Leśny Marcelin",
+      "city": "Grunwald",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 53.485266,
+    "new_lon": 20.091529
+  },
+  "68639982": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68642575": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.46489,
+    "orig_lon": 16.9503,
+    "new_lat": 52.373811,
+    "new_lon": 16.975021,
+    "dist_m": 10265,
+    "orig_dist_to_center_m": 6404,
+    "query": "ul. Limonkowej, Poznań, Polska",
+    "formatted": "Poznań ul. Drewnowskiego 10, Kazimierza Drewnowskiego, Poznań, Polska",
+    "addr": {
+      "street": "ul. Limonkowej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
