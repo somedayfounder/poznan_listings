@@ -59734,5 +59734,118 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "68647803": {
+    "orig_lat": 52.43002,
+    "orig_lon": 16.57121,
+    "new_lat": 52.420432,
+    "new_lon": 16.569852,
+    "dist_m": 1070,
+    "query": "ul. Konwaliowej 1/2, Ceradz Dolny, Polska",
+    "formatted": "Ceradz Dolny, gmina Duszniki, powiat szamotulski, województwo wielkopolskie, 64-553, Polska",
+    "addr": {
+      "street": "ul. Konwaliowej",
+      "number": "1/2",
+      "osiedle": "OSIEDLE KWIATOVE",
+      "city": "Ceradz Dolny",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Ceradz Dolny",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68002966": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "9000062326": {
+    "orig_lat": 52.41684,
+    "orig_lon": 16.89994,
+    "new_lat": 52.413479,
+    "new_lon": 16.902793,
+    "dist_m": 421,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68647186": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "null",
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68646892": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Palędzie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68629510": {
+    "orig_lat": 52.40459,
+    "orig_lon": 16.89802,
+    "new_lat": 52.405248,
+    "new_lon": 16.900019,
+    "dist_m": 154,
+    "query": "ul. Grunwaldzka 22A, Poznań, Polska",
+    "formatted": "ulica Grunwaldzka/Matejki, Jana Matejki, Łazarz, Poznań, województwo wielkopolskie, 60-787, Polska",
+    "addr": {
+      "street": "ul. Grunwaldzka",
+      "number": "22A",
+      "osiedle": "Olimpia",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łazarz",
+    "corrected": false
+  },
+  "68644632": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Koninko",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
