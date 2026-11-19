@@ -59847,5 +59847,117 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "68650729": {
+    "skipped": "geocode_failed",
+    "query": "Dachowana, Polska",
+    "addr": {
+      "street": "Tęczowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowana",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "9000062329": {
+    "orig_lat": 52.44821,
+    "orig_lon": 16.96004,
+    "new_lat": 52.4493,
+    "new_lon": 16.958531,
+    "dist_m": 159,
+    "query": "ul. Bielicowa 2, Poznań, Polska",
+    "formatted": "Bielicowa, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "2",
+      "osiedle": "Osiedle Witaj",
+      "city": "Poznań",
+      "district": "Naramowice",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "68650044": {
+    "orig_lat": 52.30343,
+    "orig_lon": 17.01778,
+    "new_lat": 52.306207,
+    "new_lon": 17.021124,
+    "dist_m": 383,
+    "query": "LAZUROWE OGRODY, Koninko, Polska",
+    "formatted": "Koninko/Lazurowa, Radiowa, Koninko, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "LAZUROWE OGRODY",
+      "city": "Koninko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Koninko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68648315": {
+    "orig_lat": 52.4151,
+    "orig_lon": 16.89929,
+    "new_lat": 52.415905,
+    "new_lon": 16.890163,
+    "dist_m": 625,
+    "query": "ul. Jana Henryka Dąbrowskiego, Poznań, Polska",
+    "formatted": "Hop & go, Jana Henryka Dąbrowskiego, 60-543 Poznań, Polska",
+    "addr": {
+      "street": "ul. Jana Henryka Dąbrowskiego",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Ogrody",
+    "corrected": true
+  },
+  "68649799": {
+    "orig_lat": 52.41689,
+    "orig_lon": 16.89819,
+    "new_lat": 52.411936,
+    "new_lon": 16.903855,
+    "dist_m": 672,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68649291": {
+    "orig_lat": 52.46561,
+    "orig_lon": 16.93856,
+    "new_lat": 52.464476,
+    "new_lon": 16.933036,
+    "dist_m": 395,
+    "query": "Różany Potok, Poznań, Polska",
+    "formatted": "Różany Potok, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Różany Potok",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": null,
+    "corrected": true
   }
 }
