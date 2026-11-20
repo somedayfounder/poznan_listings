@@ -59959,5 +59959,262 @@
     "geo_city": "Poznań",
     "geo_district": null,
     "corrected": true
+  },
+  "68653741": {
+    "skipped": "geocode_failed",
+    "query": "Dachowana, Polska",
+    "addr": {
+      "street": "Tęczowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowana",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68654599": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Pobiedziska",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68655355": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Siekierki Wielkie",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68654558": {
+    "orig_lat": 52.41686,
+    "orig_lon": 16.90007,
+    "new_lat": 52.411936,
+    "new_lon": 16.903855,
+    "dist_m": 605,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68653231": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68653270": {
+    "skipped": "geocode_failed",
+    "query": "Winogradach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogradach",
+      "confidence": "high"
+    }
+  },
+  "68653268": {
+    "skipped": "geocode_failed",
+    "query": "Winogradach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogradach",
+      "confidence": "high"
+    }
+  },
+  "68653193": {
+    "skipped": "outside_bbox",
+    "query": "ul. Poznańska, Pobiedziska, Polska",
+    "formatted": "Zakład Komunalny w Pobiedziskach, Poznańska, Pobiedziska, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": null,
+      "osiedle": null,
+      "city": "Pobiedziska",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.475862,
+    "new_lon": 17.267527
+  },
+  "68655215": {
+    "orig_lat": 52.4922,
+    "orig_lon": 16.73335,
+    "new_lat": 52.485086,
+    "new_lon": 16.727616,
+    "dist_m": 881,
+    "query": "Zielone Wzgórze, Napachanie, Polska",
+    "formatted": "Napachanie, gmina Rokietnica, powiat poznański, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Zielone Wzgórze",
+      "city": "Napachanie",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Napachanie",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68655414": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68653246": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68653742": {
+    "orig_lat": 52.29419,
+    "orig_lon": 17.08203,
+    "new_lat": 52.293827,
+    "new_lon": 17.08164,
+    "dist_m": 48,
+    "query": "Jałowcowa, Dachowa, Polska",
+    "formatted": "Jałowcowa, Dachowa, gmina Kórnik, powiat poznański, województwo wielkopolskie, 62-023, Polska",
+    "addr": {
+      "street": "Jałowcowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Dachowa",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Dachowa",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68653251": {
+    "skipped": "geocode_failed",
+    "query": "Winogradach, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Winogradach",
+      "confidence": "high"
+    }
+  },
+  "68656516": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.47578,
+    "orig_lon": 16.8837,
+    "new_lat": 52.535702,
+    "new_lon": 16.810112,
+    "dist_m": 8319,
+    "orig_dist_to_center_m": 8241,
+    "query": "ul. Promienistej 11, Golęczewo, Polska",
+    "formatted": "Promienista, 11, Golęczewo, Polska",
+    "addr": {
+      "street": "ul. Promienistej",
+      "number": "11",
+      "osiedle": null,
+      "city": "Golęczewo",
+      "district": "Suchy Las",
+      "confidence": "high"
+    }
+  },
+  "68654491": {
+    "orig_lat": 52.41673,
+    "orig_lon": 16.89998,
+    "new_lat": 52.411936,
+    "new_lon": 16.903855,
+    "dist_m": 594,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "67560300": {
+    "orig_lat": 52.3987,
+    "orig_lon": 16.91978,
+    "new_lat": 52.398539,
+    "new_lon": 16.919867,
+    "dist_m": 19,
+    "query": "ul. Niedziałkowskiego, Poznań, Polska",
+    "formatted": "Niedziałkowskiego Park, Poznań, Polska",
+    "addr": {
+      "street": "ul. Niedziałkowskiego",
+      "number": null,
+      "osiedle": "Niedziałkowskiego Park",
+      "city": "Poznań",
+      "district": "Wilda",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Wilda",
+    "corrected": false
+  },
+  "9000062332": {
+    "orig_lat": 52.46767,
+    "orig_lon": 16.935,
+    "new_lat": 52.44728,
+    "new_lon": 16.94977,
+    "dist_m": 2478,
+    "query": "ul. Maków Polnych 9, Naramowice, Polska",
+    "formatted": "Naramowice, Poznań, Polska",
+    "addr": {
+      "street": "ul. Maków Polnych",
+      "number": "9",
+      "osiedle": "FUELDA",
+      "city": "Naramowice",
+      "district": "Poznań",
+      "confidence": "high"
+    },
+    "geo_city": "Naramowice",
+    "geo_district": null,
+    "corrected": true
   }
 }
