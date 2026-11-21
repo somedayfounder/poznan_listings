@@ -60216,5 +60216,232 @@
     "geo_city": "Naramowice",
     "geo_district": null,
     "corrected": true
+  },
+  "68658252": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68658251": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68657023": {
+    "orig_lat": 52.20226,
+    "orig_lon": 17.10571,
+    "new_lat": 52.19989,
+    "new_lon": 17.1106,
+    "dist_m": 425,
+    "query": "Kórnik, Błażejewko, Polska",
+    "formatted": "Błażejewko, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Błażejewko",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Błażejewko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68658253": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68658254": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68657518": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.411936,
+    "new_lon": 16.903855,
+    "dist_m": 797,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68658152": {
+    "orig_lat": 52.48406,
+    "orig_lon": 16.7686,
+    "new_lat": 52.48843,
+    "new_lon": 16.77664,
+    "dist_m": 730,
+    "query": "ul. Poznańskiej, Kiekrz, Polska",
+    "formatted": "Kiekrz, Poznań, Polska",
+    "addr": {
+      "street": "ul. Poznańskiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Kiekrz",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Kiekrz",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68657233": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.411936,
+    "new_lon": 16.903855,
+    "dist_m": 797,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "9000062335": {
+    "orig_lat": 52.44888,
+    "orig_lon": 16.89124,
+    "new_lat": 52.448685,
+    "new_lon": 16.89088,
+    "dist_m": 33,
+    "query": "Strzeszyńska 77, Poznań, Polska",
+    "formatted": "77, Strzeszyńska, Podolany, Poznań, województwo wielkopolskie, 60-479, Polska",
+    "addr": {
+      "street": "Strzeszyńska",
+      "number": "77",
+      "osiedle": "Strzeszyńska 77",
+      "city": "Poznań",
+      "district": "Podolany",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Podolany",
+    "corrected": false
+  },
+  "68657552": {
+    "skipped": "geocode_failed",
+    "query": "ul. Życzliwa 10, null, Polska",
+    "addr": {
+      "street": "ul. Życzliwa",
+      "number": "10",
+      "osiedle": "Osiedle Życzliwe",
+      "city": "null",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "68659541": {
+    "orig_lat": 52.33389,
+    "orig_lon": 16.70409,
+    "new_lat": 52.334854,
+    "new_lon": 16.703255,
+    "dist_m": 121,
+    "query": "ul. Słoneczna, Konarzewo, Polska",
+    "formatted": "Słoneczna, Konarzewo, Polska",
+    "addr": {
+      "street": "ul. Słoneczna",
+      "number": null,
+      "osiedle": null,
+      "city": "Konarzewo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Konarzewo",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68659362": {
+    "orig_lat": 52.35904,
+    "orig_lon": 16.75323,
+    "new_lat": 52.362141,
+    "new_lon": 16.748924,
+    "dist_m": 452,
+    "query": "ul. Dopiewska, Gołuski, Polska",
+    "formatted": "Dopiewska, Gołuski, Polska",
+    "addr": {
+      "street": "ul. Dopiewska",
+      "number": null,
+      "osiedle": null,
+      "city": "Gołuski",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Gołuski",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68639755": {
+    "orig_lat": 52.4279,
+    "orig_lon": 16.79495,
+    "new_lat": 52.42601,
+    "new_lon": 16.79675,
+    "dist_m": 243,
+    "query": "ul. Graniczna, Przeźmierowo, Polska",
+    "formatted": "Graniczna, Przeźmierowo, Polska",
+    "addr": {
+      "street": "ul. Graniczna",
+      "number": null,
+      "osiedle": "PRZEŹMIEROWO PARK",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68657562": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
   }
 }
