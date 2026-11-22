@@ -60443,5 +60443,111 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "68660153": {
+    "skipped": "outside_bbox",
+    "query": "ul. Poznańskiej, Pobiedziska, Polska",
+    "formatted": "Pobiedziska, Powiat poznański, Polska",
+    "addr": {
+      "street": "ul. Poznańskiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Pobiedziska",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.47753,
+    "new_lon": 17.28767
+  },
+  "68661158": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Murowana Goślina",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68002926": {
+    "orig_lat": 52.46281,
+    "orig_lon": 16.8983,
+    "new_lat": 52.462551,
+    "new_lon": 16.898112,
+    "dist_m": 31,
+    "query": "ul. Mateckiego 4D, Poznań, Polska",
+    "formatted": "Teofila Mateckiego 4, 60-689 Poznań, Polska",
+    "addr": {
+      "street": "ul. Mateckiego",
+      "number": "4D",
+      "osiedle": "Osiedle Mateckiego 4ALL",
+      "city": "Poznań",
+      "district": "Piątkowo",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Piątkowo",
+    "corrected": false
+  },
+  "68639838": {
+    "orig_lat": 52.4279,
+    "orig_lon": 16.79495,
+    "new_lat": 52.42601,
+    "new_lon": 16.79675,
+    "dist_m": 243,
+    "query": "ul. Graniczna, Przeźmierowo, Polska",
+    "formatted": "Graniczna, Przeźmierowo, Polska",
+    "addr": {
+      "street": "ul. Graniczna",
+      "number": null,
+      "osiedle": "PRZEŹMIEROWO PARK",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68660367": {
+    "orig_lat": 52.34454,
+    "orig_lon": 16.99176,
+    "new_lat": 52.344671,
+    "new_lon": 16.98856,
+    "dist_m": 218,
+    "query": "Krzesiny, Poznań, Polska",
+    "formatted": "Krzesiny, Krzesiny-Pokrzywno-Garaszewo, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Krzesiny",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Krzesiny",
+    "corrected": true
+  },
+  "9000062338": {
+    "orig_lat": 52.45148,
+    "orig_lon": 16.94834,
+    "new_lat": 52.451392,
+    "new_lon": 16.94899,
+    "dist_m": 45,
+    "query": "ul. Naramowicka 172, Poznań, Polska",
+    "formatted": "Osiedle Naramowicka 172, Poznań, Polska",
+    "addr": {
+      "street": "ul. Naramowicka",
+      "number": "172",
+      "osiedle": "Naramowicka 172",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
   }
 }
