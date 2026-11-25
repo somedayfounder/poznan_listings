@@ -61138,5 +61138,207 @@
       "district": null,
       "confidence": "high"
     }
+  },
+  "68670712": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68670264": {
+    "orig_lat": 52.32035,
+    "orig_lon": 16.92338,
+    "new_lat": 52.324884,
+    "new_lon": 16.911365,
+    "dist_m": 960,
+    "query": "Pastelowe Osiedle, Czapury, Polska",
+    "formatted": "Czapury, gmina Mosina, powiat poznański, województwo wielkopolskie, 61-106, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Pastelowe Osiedle",
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68670711": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Szczytniki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68670239": {
+    "orig_lat": 52.4361,
+    "orig_lon": 16.6441,
+    "new_lat": 52.436118,
+    "new_lon": 16.644001,
+    "dist_m": 7,
+    "query": "ul. Bosmańska 2, Lusówko, Polska",
+    "formatted": "Bosmańska, 2, Lusówko, Polska",
+    "addr": {
+      "street": "ul. Bosmańska",
+      "number": "2",
+      "osiedle": null,
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68673385": {
+    "orig_lat": 52.44154,
+    "orig_lon": 16.64486,
+    "new_lat": 52.441546,
+    "new_lon": 16.64492,
+    "dist_m": 4,
+    "query": "ul. Tarnowska 72, Jankowice, Polska",
+    "formatted": "Tarnowska, 72, Jankowice, Polska",
+    "addr": {
+      "street": "ul. Tarnowska",
+      "number": "72",
+      "osiedle": null,
+      "city": "Jankowice",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Jankowice",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68671490": {
+    "orig_lat": 52.28333,
+    "orig_lon": 17.03333,
+    "new_lat": 52.285276,
+    "new_lon": 17.046901,
+    "dist_m": 948,
+    "query": "ul. Poznańska, Borówiec, Polska",
+    "formatted": "Poznańska, Borówiec, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": null,
+      "osiedle": null,
+      "city": "Borówiec",
+      "district": "gmina Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Borówiec",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68671061": {
+    "orig_lat": 52.42728,
+    "orig_lon": 16.64645,
+    "new_lat": 52.416803,
+    "new_lon": 16.639468,
+    "dist_m": 1258,
+    "query": "Osiedle Rozalin, Lusówko, Polska",
+    "formatted": "Osiedle Rozalin, Rozalin, Lusówko, gmina Tarnowo Podgórne, powiat poznański, województwo wielkopolskie, 62-080, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Osiedle Rozalin",
+      "city": "Lusówko",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Lusówko",
+    "geo_district": "Osiedle Rozalin",
+    "corrected": true
+  },
+  "68640427": {
+    "orig_lat": 52.4279,
+    "orig_lon": 16.79495,
+    "new_lat": 52.42601,
+    "new_lon": 16.79675,
+    "dist_m": 243,
+    "query": "ul. Graniczna, Przeźmierowo, Polska",
+    "formatted": "Graniczna, Przeźmierowo, Polska",
+    "addr": {
+      "street": "ul. Graniczna",
+      "number": null,
+      "osiedle": "PRZEŹMIEROWO PARK",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68640457": {
+    "orig_lat": 52.4279,
+    "orig_lon": 16.79495,
+    "new_lat": 52.42601,
+    "new_lon": 16.79675,
+    "dist_m": 243,
+    "query": "ul. Graniczna, Przeźmierowo, Polska",
+    "formatted": "Graniczna, Przeźmierowo, Polska",
+    "addr": {
+      "street": "ul. Graniczna",
+      "number": null,
+      "osiedle": "PRZEŹMIEROWO PARK",
+      "city": "Przeźmierowo",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Przeźmierowo",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68673595": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.411936,
+    "new_lon": 16.903855,
+    "dist_m": 797,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "9000062347": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.411936,
+    "new_lon": 16.903855,
+    "dist_m": 797,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Jeżyce",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
   }
 }
