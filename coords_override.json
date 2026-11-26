@@ -61340,5 +61340,231 @@
     "geo_city": "Poznań",
     "geo_district": "Jeżyce",
     "corrected": true
+  },
+  "68676851": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68673933": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Gortatów",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68677663": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68675366": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Dopiewiec",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68677114": {
+    "orig_lat": 52.41746,
+    "orig_lon": 16.8957,
+    "new_lat": 52.411936,
+    "new_lon": 16.903855,
+    "dist_m": 827,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68677667": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Swarzędz",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68675122": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Biernatki",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68675933": {
+    "skipped": "outside_bbox",
+    "query": "Baśniowa, Biskupice, Polska",
+    "formatted": "Baśniowa, Biskupice Wielkopolskie, Biskupice, gmina Pobiedziska, powiat poznański, województwo wielkopolskie, 62-007, Polska",
+    "addr": {
+      "street": "Baśniowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Biskupice",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.458684,
+    "new_lon": 17.171322
+  },
+  "68674829": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "68677661": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "9000062350": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68677075": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": null,
+      "district": null,
+      "confidence": "low"
+    }
+  },
+  "68677636": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.412255,
+    "new_lon": 16.909073,
+    "dist_m": 1057,
+    "query": "inwestycji w samym sercu Jeżyc, Poznań, Polska",
+    "formatted": "Nowe Serce Jeżyc, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "inwestycji w samym sercu Jeżyc",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68668563": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68667942": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4A, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68651509": {
+    "orig_lat": 52.35485,
+    "orig_lon": 17.03034,
+    "new_lat": 52.354989,
+    "new_lon": 17.030268,
+    "dist_m": 16,
+    "query": "ul. Szczepankowo 137, Poznań, Polska",
+    "formatted": "Szczepankowo 137, 61-313 Poznań, Polska",
+    "addr": {
+      "street": "ul. Szczepankowo",
+      "number": "137",
+      "osiedle": "Nowe Spławie",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Szczepankowo",
+    "corrected": false
   }
 }
