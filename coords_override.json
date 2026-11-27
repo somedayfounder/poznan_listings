@@ -61566,5 +61566,291 @@
     "geo_city": "Poznań",
     "geo_district": "Szczepankowo",
     "corrected": false
+  },
+  "68676311": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "pod Poznaniem",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68677879": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "67995777": {
+    "orig_lat": 52.44821,
+    "orig_lon": 16.96004,
+    "new_lat": 52.4493,
+    "new_lon": 16.958531,
+    "dist_m": 159,
+    "query": "ul. Bielicowa 2, Poznań, Polska",
+    "formatted": "Bielicowa, 2, Poznań, Polska",
+    "addr": {
+      "street": "ul. Bielicowa",
+      "number": "2",
+      "osiedle": "Osiedle Witaj",
+      "city": "Poznań",
+      "district": "Naramowice",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Naramowice",
+    "corrected": false
+  },
+  "68681671": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Piątkowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "9000062353": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Piątkowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68679129": {
+    "orig_lat": 52.47973,
+    "orig_lon": 16.75052,
+    "new_lat": 52.47808,
+    "new_lon": 16.75278,
+    "dist_m": 239,
+    "query": "ul. Polna, Rogierówko, Polska",
+    "formatted": "Rogierówko, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": "ul. Polna",
+      "number": null,
+      "osiedle": null,
+      "city": "Rogierówko",
+      "district": "gmina Rokietnica",
+      "confidence": "high"
+    },
+    "geo_city": "Rogierówko",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68681331": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68678879": {
+    "orig_lat": 52.41683,
+    "orig_lon": 16.89998,
+    "new_lat": 52.411936,
+    "new_lon": 16.903855,
+    "dist_m": 604,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68677928": {
+    "orig_lat": 52.38565,
+    "orig_lon": 16.89524,
+    "new_lat": 52.384124,
+    "new_lon": 16.894016,
+    "dist_m": 189,
+    "query": "ul. R. Dmowskiego 103, Poznań, Polska",
+    "formatted": "Romana Dmowskiego, 103, Poznań, Polska",
+    "addr": {
+      "street": "ul. R. Dmowskiego",
+      "number": "103",
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Górczyn",
+    "corrected": false
+  },
+  "68678447": {
+    "orig_lat": 52.39957,
+    "orig_lon": 16.95859,
+    "new_lat": 52.399537,
+    "new_lon": 16.959365,
+    "dist_m": 53,
+    "query": "Polanka 21, Poznań, Polska",
+    "formatted": "21, Polanka, Miasteczko, Łacina, Rataje, Poznań, województwo wielkopolskie, 61-131, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "Polanka 21",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łacina",
+    "corrected": false
+  },
+  "68680693": {
+    "orig_lat": 52.39957,
+    "orig_lon": 16.95859,
+    "new_lat": 52.399537,
+    "new_lon": 16.959365,
+    "dist_m": 53,
+    "query": "Polanka 21, Poznań, Polska",
+    "formatted": "21, Polanka, Miasteczko, Łacina, Rataje, Poznań, województwo wielkopolskie, 61-131, Polska",
+    "addr": {
+      "street": "Polanka 21",
+      "number": null,
+      "osiedle": "Polanka 21",
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Łacina",
+    "corrected": false
+  },
+  "68680133": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36003,
+    "orig_lon": 16.98124,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7306,
+    "orig_dist_to_center_m": 6256,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68677868": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.412255,
+    "new_lon": 16.909073,
+    "dist_m": 1057,
+    "query": "inwestycji w samym sercu Jeżyc, Poznań, Polska",
+    "formatted": "Nowe Serce Jeżyc, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "inwestycji w samym sercu Jeżyc",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68680712": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36001,
+    "orig_lon": 16.98193,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7324,
+    "orig_dist_to_center_m": 6283,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68680172": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36013,
+    "orig_lon": 16.98232,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7322,
+    "orig_dist_to_center_m": 6285,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "68680143": {
+    "skipped": "geocoder_moved_too_far",
+    "orig_lat": 52.36028,
+    "orig_lon": 16.98198,
+    "new_lat": 52.421409,
+    "new_lon": 16.942841,
+    "dist_m": 7298,
+    "orig_dist_to_center_m": 6259,
+    "query": "ul. Sanockiej 15, Poznań, Polska",
+    "formatted": "Aleja 15 Pułku Ułanów Poznańskich, Poznań, Polska",
+    "addr": {
+      "street": "ul. Sanockiej",
+      "number": "15",
+      "osiedle": "Wille Sanocka",
+      "city": "Poznań",
+      "district": "Szczepankowo",
+      "confidence": "high"
+    }
+  },
+  "67469304": {
+    "skipped": "outside_bbox",
+    "query": "ul. Leśnych Skrzatów, Marcelin, Polska",
+    "formatted": "Marcelin, Powiat miński, Polska",
+    "addr": {
+      "street": "ul. Leśnych Skrzatów",
+      "number": null,
+      "osiedle": "Zacisze Marcelin",
+      "city": "Marcelin",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.3463,
+    "new_lon": 21.79482
   }
 }
