@@ -61852,5 +61852,298 @@
     },
     "new_lat": 52.3463,
     "new_lon": 21.79482
+  },
+  "68676149": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "pod Poznaniem",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68676085": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68682056": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Pamiątkowo",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68665205": {
+    "skipped": "outside_bbox",
+    "query": "ul. Potokowej, Pobiedziska, Polska",
+    "formatted": "Potokowa, Pobiedziska, Polska",
+    "addr": {
+      "street": "ul. Potokowej",
+      "number": null,
+      "osiedle": "Os. Słoneczna Polana",
+      "city": "Pobiedziska",
+      "district": null,
+      "confidence": "high"
+    },
+    "new_lat": 52.484782,
+    "new_lon": 17.289194
+  },
+  "68681855": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.412255,
+    "new_lon": 16.909073,
+    "dist_m": 1057,
+    "query": "inwestycji w samym sercu Jeżyc, Poznań, Polska",
+    "formatted": "Nowe Serce Jeżyc, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "inwestycji w samym sercu Jeżyc",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68683085": {
+    "orig_lat": 52.41746,
+    "orig_lon": 16.8957,
+    "new_lat": 52.411936,
+    "new_lon": 16.903855,
+    "dist_m": 827,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68681942": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.411936,
+    "new_lon": 16.903855,
+    "dist_m": 797,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68682069": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.411936,
+    "new_lon": 16.903855,
+    "dist_m": 797,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68681730": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "miasto",
+      "district": null,
+      "confidence": "medium"
+    }
+  },
+  "68682668": {
+    "skipped": "geocode_failed",
+    "query": "null, Poznań, Polska",
+    "addr": {
+      "street": "null",
+      "number": "null",
+      "osiedle": "null",
+      "city": "Poznań",
+      "district": "null",
+      "confidence": "high"
+    }
+  },
+  "9000062356": {
+    "orig_lat": 52.37387,
+    "orig_lon": 16.95123,
+    "new_lat": 52.375521,
+    "new_lon": 16.954483,
+    "dist_m": 287,
+    "query": "ul. Unii Lubelskiej, Poznań, Polska",
+    "formatted": "Unii Lubelskiej, Poznań, Polska",
+    "addr": {
+      "street": "ul. Unii Lubelskiej",
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Starołęka Mała",
+    "corrected": true
+  },
+  "68681707": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68681919": {
+    "orig_lat": 52.22371,
+    "orig_lon": 17.03933,
+    "new_lat": 52.22458,
+    "new_lon": 17.03715,
+    "dist_m": 177,
+    "query": "Kórnik, Konarskie, Polska",
+    "formatted": "Konarskie, Województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Konarskie",
+      "district": "Kórnik",
+      "confidence": "high"
+    },
+    "geo_city": "Konarskie",
+    "geo_district": null,
+    "corrected": false
+  },
+  "68681742": {
+    "skipped": "low_confidence",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": null,
+      "confidence": "high"
+    }
+  },
+  "68653667": {
+    "orig_lat": 52.35785,
+    "orig_lon": 16.92442,
+    "new_lat": 52.332364,
+    "new_lon": 16.910902,
+    "dist_m": 2979,
+    "query": "ul. Poznańska 4a, Czapury, Polska",
+    "formatted": "Poznańska, 4a, Czapury, Polska",
+    "addr": {
+      "street": "ul. Poznańska",
+      "number": "4a",
+      "osiedle": null,
+      "city": "Czapury",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Czapury",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68683234": {
+    "orig_lat": 52.44893,
+    "orig_lon": 16.72417,
+    "new_lat": 52.453437,
+    "new_lon": 16.722399,
+    "dist_m": 515,
+    "query": "ul. Kwiatowa, Sady, Polska",
+    "formatted": "Kwiatowa, Sady, Polska",
+    "addr": {
+      "street": "ul. Kwiatowa",
+      "number": null,
+      "osiedle": null,
+      "city": "Sady",
+      "district": null,
+      "confidence": "high"
+    },
+    "geo_city": "Sady",
+    "geo_district": null,
+    "corrected": true
+  },
+  "68681713": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.412255,
+    "new_lon": 16.909073,
+    "dist_m": 1057,
+    "query": "inwestycji w samym sercu Jeżyc, Poznań, Polska",
+    "formatted": "Nowe Serce Jeżyc, Poznań, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": "inwestycji w samym sercu Jeżyc",
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
+  },
+  "68681925": {
+    "orig_lat": 52.41706,
+    "orig_lon": 16.89563,
+    "new_lat": 52.411936,
+    "new_lon": 16.903855,
+    "dist_m": 797,
+    "query": "Jeżyce, Poznań, Polska",
+    "formatted": "Jeżyce, Poznań, województwo wielkopolskie, Polska",
+    "addr": {
+      "street": null,
+      "number": null,
+      "osiedle": null,
+      "city": "Poznań",
+      "district": "Jeżyce",
+      "confidence": "high"
+    },
+    "geo_city": "Poznań",
+    "geo_district": "Jeżyce",
+    "corrected": true
   }
 }
